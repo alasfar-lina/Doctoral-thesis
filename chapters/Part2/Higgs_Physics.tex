@@ -123,9 +123,13 @@ A_\mu &= \frac{1}{\sqrt{g_1^2+g_2^2}} \left(g_2 W^3_\mu+g_1B_\mu\right). \nonumb
  \end{align}
  From this, the electric change is identified as the coupling constant to the photon~$A_\mu$ 
  \begin{equation}
-     e=\frac{g_1}{\sqrt{g_1^2+g_2^2}}
+     e=\frac{g_1}{\sqrt{g_1^2+g_2^2}}.
  \end{equation}
-and we use the unitary gauge 
+ It is useful to define~\textbf{Weinberg angle}~$\theta_W$, an important EW parameter relating the electric chrage to the weak coupling~$g_2$ 
+ \begin{equation}
+     \sin \theta_W = \frac{e}{g_2} \approx 0.231214,
+ \end{equation}
+ typically the $\sin$ and $\cos$ of the Weinberg angle are denoted by $s_W$ and $c_W$, respectivly. \\ We use the unitary gauge, to absorb the Goldestone bosons into the $W^\pm$ and $Z$ longtitudinal polorisations. In this gauge the Higgs doublet can be written as
 \begin{equation}
     \phi \to \begin{pmatrix}
        0\\  \frac{1}{\sqrt{2}}(h+v).
@@ -136,7 +140,7 @@ With these substitutions, one can read off the masses of the gauge bosons their 
 \begin{align}
     m_W =& \frac{vg_2}{2} & m_Z&=\frac{v}{2}\sqrt{g_1^2+g_2^2} & m_A &= 0.
 \end{align}
-Since $\phi$ is a complex doublet. We have seen that it has four components,  and three of them correspond to the Goldstone bosons, thus one remains physical~$h$ which is what we now identify with the ``Higgs boson'' discovered in the Summer of 2012. The couplings between  the Higgs and the electroweak bosons is related to their mass via the vev 
+Since $\phi$ is a complex doublet. We have seen that it has four components,  and three of them correspond to the Goldstone bosons, thus one remains physical~$h$ which is what we now identify with the ``Higgs boson'' discovered in the Summer of 2012~\cite{CMS:2012qbp,ATLAS:2012yve}. The couplings between  the Higgs and the electroweak bosons is related to their mass via the vev 
 \begin{align}
     g_{hVV} =& \frac{2 m_V^2}{v}, & g_{hhVV}=& \frac{2 m_V^2}{v^2}.
 \end{align}
@@ -164,7 +168,7 @@ with $ \tilde{\phi}= i\sigma_2 \phi$ and $ y_e, y_d, y_u$ are $3\times 3$ matric
 \begin{equation}
     y_{q} \longrightarrow y^\prime_f= \mathcal{V}^\dagger_{q} \,y_q\, \mathcal{U}_{q} = \text{diag}\left(m_{q_1}, m_{q_2},m_{q_3}\right).
 \end{equation}
-However, the is no degeneracy here, the Hamiltonian does not commute with the quark flavour operator. This is because the transformation matrices for the up and down-type quarks are not the same.  The charged EW quark currents contains flavour mixing described by the Kabibbo-Kobayashi-Maskawa~(CKM) matrix~\cite{PhysRevLett.10.531,10.1143/PTP.49.652}. More details on the flavour sector of the SM is discussed in~\la{Update the section}\\
+However, the is no degeneracy here as the Hamiltonian does not commute with the quark flavour operator. This is because the transformation matrices for the up and down-type quarks are not the same.  The charged EW quark currents contains flavour mixing described by the Kabibbo-Kobayashi-Maskawa~(CKM) matrix~\cite{PhysRevLett.10.531,10.1143/PTP.49.652}. More details on the flavour sector of the SM is discussed in~\la{Update the section}\\
 \autoref{fig:SMcouplings} shows all the SM couplings' strengths, with the thickness of the chord is proportional to the strength of the coupling, on can see the Higgs couplings in orange. 
 %%%%
 \begin{figure}[htpb!]
@@ -175,3 +179,29 @@ However, the is no degeneracy here, the Hamiltonian does not commute with the qu
 %%%%
 %%%%
 \section{Theoretical constraints on the Higgs}
+\par Higgs physics is intertwined with the EW sector for example, the Higgs vev is determined from Fermi's constant~$v =(\sqrt{2}G_F)^{-1/2}$, and is fixed by muon lifetime measurements, and comparing it with the theoretical predictions~\cite{PhysRev.101.866,PhysRev.113.1652,Mohammad:1976qd,PhysRevLett.82.488} 
+\begin{equation}
+    \tau_\mu^{-1} = \frac{G_F^2 m_\mu^5}{192\pi^3}\left(1-\frac{8 m_e^2}{m_\mu}\right) \left[1-1.810\frac{\alpha}{\pi}+(6.701\pm0.002)\left(\frac{\alpha}{\pi}\right)^2\right],
+\end{equation}
+which leads to the numerical value of $G_F$~\cite{Zyla:2020zbs}
+\begin{equation}
+    G_F=1.1663787(6) \cdot 10^{-5} \si{\per\GeV\squared},
+\end{equation}
+given the value of the fine structure constant~$\alpha^{-1} =137.03599976 (50)$. 
+\par Another important EW precision observable is the ratio between the $W$ and $Z$ masses
+\begin{equation}
+    \rho = \frac{m_W^2}{c_W^2m_Z^2}.
+\end{equation}
+At leading order, this parameter is equal to unity in the SM. The $\rho$ parameter depends on the representation of the scalar sector of the EW model having $\phi_i$ scalars with $T_i$ weak isospin and $T_{3,i}$ being its third compopenet, and a vev $v_i$, via the relation~\cite{ROSS1975135,Djouadi:2005gi}
+\begin{equation}
+    \rho =\frac{\sum_i [T_{i}(T_{i}+1)-T_{3,i}^2]v_i^2}{2\sum_i T_{3,i}^2v_i^2}.
+    \label{rhohiggs}
+\end{equation}
+From~\eqref{rhohiggs} one can see that a real triplet scalar, for instance, would not fit the experimental EW measurment of $\rho$. Hence, a complex doublet is the simplest scalar possible for the EW symmetry breaking, and the Higgs boson was expected to be seen almost four decades before its discovery. However, radiative corrections to the EW gauge bosons mass from vacuum polirisation diagrams could potentially cause $\rho$ to deviate significantly from unity.  This is not the case, as the experimentally measured value of~$\rho$~\cite{Zyla:2020zbs}
+\begin{equation}
+    \rho_{\text{exp}} = 1.00038 \pm 0.00020
+\end{equation}
+Aditionally, it is possible to think of an extended Higgs sector, where there are multiple scalars with different $SU(2)_L$ multiplicities. Or, a composite Higgs sector, where the Higgs boson is a psedo Nambu-Goldestone boson, cf.~\cite{}. How can such models be built assuring the $\rho$ parameter is protected from change ? The answer to this question lies in a symmetry of the Higgs Lagrangian known as custodial symmetry. 
+\subsection{Custodial symmetry}
+After SSB, a residual global symmetry known as the custodial symmetry protects the $\rho$ parameter from obtabing large radiative corrections at higher orders in perturbation theory.  This symmetry must be kept in extended or composite Higgs models. 
+\par Before dicussing custodial symmetry, it is helpful to examin the radiative corrections that could contribute to the devation of $\rho$ from unity, i.e. $\Delta \rho$. 

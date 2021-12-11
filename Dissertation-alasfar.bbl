@@ -156,6 +156,21 @@ G.~S. Guralnik, ``{The History of the Guralnik, Hagen and Kibble development of
   \href{http://arxiv.org/abs/0907.3466}{{\ttfamily arXiv:0907.3466
   [physics.hist-ph]}}.
 
+\bibitem{CMS:2012qbp}
+{\bfseries CMS} Collaboration, S.~Chatrchyan {\em et~al.}, ``{Observation of a
+  New Boson at a Mass of 125 GeV with the CMS Experiment at the LHC},''
+  \href{http://dx.doi.org/10.1016/j.physletb.2012.08.021}{{\em Phys. Lett. B}
+  {\bfseries 716} (2012) 30--61},
+  \href{http://arxiv.org/abs/1207.7235}{{\ttfamily arXiv:1207.7235 [hep-ex]}}.
+
+\bibitem{ATLAS:2012yve}
+{\bfseries ATLAS} Collaboration, G.~Aad {\em et~al.}, ``{Observation of a new
+  particle in the search for the Standard Model Higgs boson with the ATLAS
+  detector at the LHC},''
+  \href{http://dx.doi.org/10.1016/j.physletb.2012.08.020}{{\em Phys. Lett. B}
+  {\bfseries 716} (2012) 1--29},
+  \href{http://arxiv.org/abs/1207.7214}{{\ttfamily arXiv:1207.7214 [hep-ex]}}.
+
 \bibitem{PhysRevLett.10.531}
 N.~Cabibbo, ``Unitary symmetry and leptonic decays,''
   \href{http://dx.doi.org/10.1103/PhysRevLett.10.531}{{\em Phys. Rev. Lett.}
@@ -169,5 +184,41 @@ M.~Kobayashi and T.~Maskawa, ``{CP-Violation in the Renormalizable Theory of
   \href{http://arxiv.org/abs/https://academic.oup.com/ptp/article-pdf/49/2/652/5257692/49-2-652.pdf}{{\ttfamily
   https://academic.oup.com/ptp/article-pdf/49/2/652/5257692/49-2-652.pdf}}.
   \url{https://doi.org/10.1143/PTP.49.652}.
+
+\bibitem{PhysRev.101.866}
+R.~E. Behrends, R.~J. Finkelstein, and A.~Sirlin, ``Radiative corrections to
+  decay processes,'' \href{http://dx.doi.org/10.1103/PhysRev.101.866}{{\em
+  Phys. Rev.} {\bfseries 101} (Jan, 1956) 866--873}.
+  \url{https://link.aps.org/doi/10.1103/PhysRev.101.866}.
+
+\bibitem{PhysRev.113.1652}
+T.~Kinoshita and A.~Sirlin, ``Radiative corrections to fermi interactions,''
+  \href{http://dx.doi.org/10.1103/PhysRev.113.1652}{{\em Phys. Rev.} {\bfseries
+  113} (Mar, 1959) 1652--1660}.
+  \url{https://link.aps.org/doi/10.1103/PhysRev.113.1652}.
+
+\bibitem{Mohammad:1976qd}
+I.~Mohammad and A.~Donnachie, ``{Radiative Corrections to Radiative Muon
+  Decay},''.
+
+\bibitem{PhysRevLett.82.488}
+T.~van Ritbergen and R.~G. Stuart, ``Complete 2-loop quantum electrodynamic
+  contributions to the muon lifetime in the fermi model,''
+  \href{http://dx.doi.org/10.1103/PhysRevLett.82.488}{{\em Phys. Rev. Lett.}
+  {\bfseries 82} (Jan, 1999) 488--491}.
+  \url{https://link.aps.org/doi/10.1103/PhysRevLett.82.488}.
+
+\bibitem{ROSS1975135}
+D.~Ross and M.~Veltman, ``Neutral currents and the higgs mechanism,''
+  \href{http://dx.doi.org/https://doi.org/10.1016/0550-3213(75)90485-X}{{\em
+  Nuclear Physics B} {\bfseries 95} no.~1, (1975) 135--147}.
+  \url{https://www.sciencedirect.com/science/article/pii/055032137590485X}.
+
+\bibitem{Djouadi:2005gi}
+A.~Djouadi, ``{The Anatomy of electro-weak symmetry breaking. I: The Higgs
+  boson in the standard model},''
+  \href{http://dx.doi.org/10.1016/j.physrep.2007.10.004}{{\em Phys. Rept.}
+  {\bfseries 457} (2008) 1--216},
+  \href{http://arxiv.org/abs/hep-ph/0503172}{{\ttfamily arXiv:hep-ph/0503172}}.
 
 \end{thebibliography}\endgroup

@@ -7,45 +7,45 @@ A level-1 auxiliary file: chapters/End/list_of_publications.aux
 Database file #1: bibliography.bib
 Warning--there's a number but no series in minlos2000introduction
 Warning--empty booktitle in Freed1993LecturesOT
-You've used 27 entries,
+You've used 35 entries,
             2328 wiz_defined-function locations,
-            802 strings with 9375 characters,
-and the built_in function-call counts, 9066 in all, are:
-= -- 1001
-> -- 187
+            870 strings with 10981 characters,
+and the built_in function-call counts, 11681 in all, are:
+= -- 1284
+> -- 250
 < -- 0
-+ -- 75
-- -- 48
-* -- 855
-:= -- 1036
-add.period$ -- 43
-call.type$ -- 27
-change.case$ -- 46
++ -- 99
+- -- 64
+* -- 1115
+:= -- 1341
+add.period$ -- 55
+call.type$ -- 35
+change.case$ -- 60
 chr.to.int$ -- 0
-cite$ -- 29
-duplicate$ -- 469
-empty$ -- 901
-format.name$ -- 48
-if$ -- 2343
+cite$ -- 37
+duplicate$ -- 594
+empty$ -- 1159
+format.name$ -- 64
+if$ -- 3012
 int.to.chr$ -- 0
-int.to.str$ -- 27
-missing$ -- 101
-newline$ -- 86
-num.names$ -- 27
-pop$ -- 119
+int.to.str$ -- 35
+missing$ -- 132
+newline$ -- 110
+num.names$ -- 35
+pop$ -- 150
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 351
+skip$ -- 444
 stack$ -- 0
-substring$ -- 664
-swap$ -- 239
+substring$ -- 861
+swap$ -- 301
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 2
-while$ -- 87
-width$ -- 29
-write$ -- 225
+while$ -- 115
+width$ -- 37
+write$ -- 289
 (There were 2 warnings)
