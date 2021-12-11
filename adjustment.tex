@@ -1,0 +1,171 @@
+\KOMAoptions{numbers=noenddot}
+\usepackage{amsmath,amssymb,amsfonts,amsthm,epigraph,scrpage2}
+\usepackage[ngerman,english]{babel}
+\usepackage{centernot} % f�r Durchstreichung
+\usepackage{multirow}
+\usepackage{pdfpages}
+
+
+\usepackage{currvita}
+\renewcommand*{\cvheadingfont}{\large\bfseries} % CV Titel
+\renewcommand*{\cvlistheadingfont}{\bfseries\sffamily} % sub-�berschriften
+\renewcommand*{\cvlabelfont}{\sffamily} % items
+
+\usepackage{placeins}
+\usepackage{booktabs}
+\usepackage{ragged2e}
+\usepackage{etoolbox}
+\usepackage{multirow}
+\usepackage{amssymb}
+\usepackage{bbold}
+\usepackage{lieart}
+\usepackage{booktabs,colortbl}
+\usepackage{slashbox}
+\usepackage[normalem]{ulem}
+%\usepackage{pict2e}
+\usepackage{url}
+\usepackage{multirow}
+\usepackage{siunitx}
+\usepackage{xcolor}
+
+
+\definecolor{Cayenne}{rgb}{0.502,0.0,0.0}
+\definecolor{Steel}{rgb}{0.4,0.4,0.4}
+\definecolor{Tri_blue}{rgb}{0.039,0.5098,0.8}
+\definecolor{Tri_yellow}{rgb}{0.5529,0.5451,0.0549}
+\newcommand{\la}[1]{\textcolor{Cayenne}{#1}}
+
+%\setcounter{secnumdepth}{3} % sub subsections numbering
+%\setcounter{tocdepth}{3} % subsubsections inTOC
+
+\usepackage[format=plain,singlelinecheck=false, font={sf,small},labelfont={bf,color=Steel}]{caption}
+\DeclareCaptionLabelSeparator{cayenne_period}{\textcolor{Cayenne}{.} }
+\captionsetup{labelsep=cayenne_period}
+
+% Colors
+\addtokomafont{chapter}{\color{Steel}}
+\addtokomafont{section}{\color{Steel}}
+\addtokomafont{subsection}{\color{Steel}}
+\addtokomafont{subsubsection}{\color{Steel}}
+\addtokomafont{paragraph}{\color{Steel}}
+\addtokomafont{disposition}{\color{Steel}}
+\addtokomafont{pagehead}{\color{Steel}}
+\renewcommand{\pnumfont}{\color{Steel}} 
+\addtokomafont{headsepline}{\color{Steel}} 
+\pagestyle{scrheadings}
+
+% Textcolor for chapters in TOC
+\makeatletter
+\let\stdl@chapter\l@chapter
+\renewcommand*{\l@chapter}[2]{%
+  \stdl@chapter{\textcolor{black}{#1}}{\textcolor{black}{#2}}}
+\makeatother
+
+%  labels in description environments
+\renewcommand{\descriptionlabel}{\hspace\labelsep{}\sffamily\small\bfseries{}\color{Steel}{}}
+
+%\makeatletter % dot after sections and all below
+%\let\std@sect\@sect
+%\def\@sect#1#2#3#4#5#6[#7]#8{\std@sect{#1}{#2}{#3}{#4}{#5}{#6}[#7.]{#8\color{Cayenne}{.}}}
+%\makeatother
+\usepackage{acronym}
+
+\usepackage[leftcaption]{sidecap} % inner, outer,left,right
+\sidecaptionvpos{figure}{t}
+
+% Papiergr��e
+%\setlength{\paperwidth}{21cm}
+%\setlength{\paperheight}{25cm}
+%\recalctypearea
+%\usepackage[pass]{geometry}
+%\usepackage[cross,a4,center]{crop}
+
+%% Flattersatz
+%\usepackage[document]{ragged2e} % Flattersatz
+%\setlength{\RaggedRightParindent}{1em} % evtl. parskip
+
+
+%% Sans Serif
+%\usepackage{cmbright}
+%\renewcommand{\familydefault}{\sfdefault}
+%% Palatino
+%\usepackage[sc]{mathpazo}
+%\linespread{1.05}         % Palatino needs more leading (space between lines)
+%\setkomafont{sectioning}{\normalcolor\bfseries} % Kapitel�berschriften
+
+%%% Kapitel�berschriften: Mit gro�en Zahlen
+%\usepackage{titlesec}
+%\titleformat{\chapter}[display]
+%{\bfseries\Large}
+%{ %\Huge\textsc{\chaptertitlename} % f�r das Wort 'Kapitel'
+%\hfill\fontsize{120}{70}\selectfont\color{lightgray}\textbf{\thechapter}}
+%{-2ex}
+%%{\filleft\fontsize{50}{70}\selectfont\scshape} % Kapit�lchen oder...
+%{\filleft\fontsize{50}{70}\selectfont\textbf} % ...oder keine Kapit�lchen
+%[\vspace{0ex}]
+%
+%%%% Part�berschriften
+%\titleformat{\part}[display]
+%{\bfseries\Large}
+%{ %\Huge\textsc{\chaptertitlename} % f�r das Wort 'Kapitel'
+%\hfill\fontsize{120}{70}\selectfont\color{lightgray}\textbf{\thepart}}
+%{-2ex}
+%{\filleft\fontsize{50}{70}\selectfont\scshape} % Kapit�lchen oder...
+%%{\filleft\fontsize{50}{70}\selectfont\textbf} % ...oder keine Kapit�lchen
+%[\vspace{0ex}]
+
+
+\newcommand{\ER}{Erd\H{o}s-R\'enyi }
+\newcommand{\BA}{Barab\'asi-Albert }
+\newcommand{\mean}[1]{\left< #1 \right>}
+\newcommand{\abs}[1]{\left| #1 \right|}
+\newcommand{\norm}[1]{\lVert#1\rVert}
+\newcommand{\mat}[1]{\mathbf{#1}}
+\newcommand{\tgraph}{\mathcal{G}}
+
+\theoremstyle{definition} % non-italic
+\newtheorem{annahme}{Annahme} % braucht amsthm
+\newtheorem{definition}{Definition}
+\newtheorem{theorem}{Theorem}
+\newtheorem{satz}{Satz}
+\newtheorem{frage}{Frage}
+%\input{watermarks/watermark.tex}
+\DeclareMathOperator{\nnz}{nnz}
+
+% + Graphicspath nach begin document
+
+% aus Doi hyperref machen
+%\newcommand*{\doi}[1]{\href{http://dx.doi.org/\detokenize{#1}}{doi: \detokenize{#1}}}
+
+% Colour Scheme
+\definecolor{myblue}{HTML}{003366}
+
+% Hyperlinks Setup
+\hypersetup{
+    unicode=false,          
+    pdftoolbar=true,        
+    pdfmenubar=true,        
+    pdffitwindow=false,     
+    pdfstartview={FitH},    
+    pdftitle={Resurrecting bbh with kinematic shapes},
+    pdfauthor={Lina Alasfar, Ramona Groeber, Christophe Grojean, Ayan Paul and Zhuoni Qian},
+    pdfkeywords={Future Colliders} {dihiggs} {Machine Learning} {Shapley Values},
+    pdfnewwindow=true,
+    colorlinks=true,
+    linkcolor=myblue,
+    citecolor=myblue,
+    filecolor=myblue,
+    urlcolor=myblue,
+    linktocpage=true
+}
+\newcommand{\SM}{\mathrm{SM}}
+\newcommand{\hc}{\mathrm{h.c.}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% autoref configuration
+\renewcommand{\sectionautorefname}{section}
+\renewcommand{\subsectionautorefname}{section}
+\renewcommand{\appendixautorefname}{appendix}
+\renewcommand{\tableautorefname}{table}
+\renewcommand{\figureautorefname}{figure}
+\def\equationautorefname~#1\null{Eq.\,(#1)\null}
+\newcommand{\appendixref}[1]{\hyperref[#1]{appendix~\ref{#1}}}

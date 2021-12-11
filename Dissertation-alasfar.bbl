@@ -1,0 +1,173 @@
+\providecommand{\href}[2]{#2}\begingroup\raggedright\begin{thebibliography}{10}
+
+\bibitem{minlos2000introduction}
+R.~A. Minlos, {\em Introduction to mathematical statistical physics}.
+\newblock No.~19. American Mathematical Soc., 2000.
+
+\bibitem{osti_4008239}
+M.~Gell-Mann, ``The eightfold way: A theory of strong interaction symmetry,''.
+  \url{https://www.osti.gov/biblio/4008239}.
+
+\bibitem{PhysRev.96.191}
+C.~N. Yang and R.~L. Mills, ``Conservation of isotopic spin and isotopic gauge
+  invariance,'' \href{http://dx.doi.org/10.1103/PhysRev.96.191}{{\em Phys.
+  Rev.} {\bfseries 96} (Oct, 1954) 191--195}.
+  \url{https://link.aps.org/doi/10.1103/PhysRev.96.191}.
+
+\bibitem{Zyla:2020zbs}
+{\bfseries Particle Data Group} Collaboration, P.~Zyla {\em et~al.}, ``{Review
+  of Particle Physics},'' \href{http://dx.doi.org/10.1093/ptep/ptaa104}{{\em
+  PTEP} {\bfseries 2020} no.~8, (2020) 083C01}.
+
+\bibitem{Freed1993LecturesOT}
+D.~S. Freed, ``Lectures on topological quantum field theory,''
+\newblock 1993.
+
+\bibitem{dijkgraaf1990topological}
+R.~Dijkgraaf and E.~Witten, ``Topological gauge theories and group
+  cohomology,'' {\em Communications in Mathematical Physics} {\bfseries 129}
+  no.~2, (1990) 393--429.
+
+\bibitem{salam1}
+A.~Salam and J.~C. Ward, ``On a gauge theory of elementary interactions,''
+  \href{http://dx.doi.org/10.1007/BF02812723}{{\em Il Nuovo Cimento
+  (1955-1965)} {\bfseries 19} no.~1, (1961) 165--170}.
+  \url{https://doi.org/10.1007/BF02812723}.
+
+\bibitem{salam2}
+A.~Salam and J.~C. Ward, ``Weak and electromagnetic interactions,''
+  \href{http://dx.doi.org/10.1007/BF02726525}{{\em Il Nuovo Cimento
+  (1955-1965)} {\bfseries 11} no.~4, (1959) 568--577}.
+  \url{https://doi.org/10.1007/BF02726525}.
+
+\bibitem{PhysRevLett.19.1264}
+S.~Weinberg, ``A model of leptons,''
+  \href{http://dx.doi.org/10.1103/PhysRevLett.19.1264}{{\em Phys. Rev. Lett.}
+  {\bfseries 19} (Nov, 1967) 1264--1266}.
+  \url{https://link.aps.org/doi/10.1103/PhysRevLett.19.1264}.
+
+\bibitem{Capozzi:2016rtj}
+F.~Capozzi, E.~Lisi, A.~Marrone, D.~Montanino, and A.~Palazzo, ``{Neutrino
+  masses and mixings: Status of known and unknown $3\nu$ parameters},''
+  \href{http://dx.doi.org/10.1016/j.nuclphysb.2016.02.016}{{\em Nucl. Phys. B}
+  {\bfseries 908} (2016) 218--234},
+  \href{http://arxiv.org/abs/1601.07777}{{\ttfamily arXiv:1601.07777
+  [hep-ph]}}.
+
+\bibitem{ALEPH:2005ab}
+{\bfseries ALEPH, DELPHI, L3, OPAL, SLD, LEP Electroweak Working Group, SLD
+  Electroweak Group, SLD Heavy Flavour Group} Collaboration, S.~Schael {\em
+  et~al.}, ``{Precision electroweak measurements on the $Z$ resonance},''
+  \href{http://dx.doi.org/10.1016/j.physrep.2005.12.006}{{\em Phys. Rept.}
+  {\bfseries 427} (2006) 257--454},
+  \href{http://arxiv.org/abs/hep-ex/0509008}{{\ttfamily arXiv:hep-ex/0509008}}.
+
+\bibitem{SLD:2000jop}
+{\bfseries SLD} Collaboration, K.~Abe {\em et~al.}, ``{First direct measurement
+  of the parity violating coupling of the Z0 to the s quark},''
+  \href{http://dx.doi.org/10.1103/PhysRevLett.85.5059}{{\em Phys. Rev. Lett.}
+  {\bfseries 85} (2000) 5059--5063},
+  \href{http://arxiv.org/abs/hep-ex/0006019}{{\ttfamily arXiv:hep-ex/0006019}}.
+
+\bibitem{Group:2012gb}
+{\bfseries CDF, D0} Collaboration, T.~E.~W. Group, ``{2012 Update of the
+  Combination of CDF and D0 Results for the Mass of the W Boson},''
+  \href{http://arxiv.org/abs/1204.0042}{{\ttfamily arXiv:1204.0042 [hep-ex]}}.
+
+\bibitem{ALEPH:2013dgf}
+{\bfseries ALEPH, DELPHI, L3, OPAL, LEP Electroweak} Collaboration, S.~Schael
+  {\em et~al.}, ``{Electroweak Measurements in Electron-Positron Collisions at
+  W-Boson-Pair Energies at LEP},''
+  \href{http://dx.doi.org/10.1016/j.physrep.2013.07.004}{{\em Phys. Rept.}
+  {\bfseries 532} (2013) 119--244},
+  \href{http://arxiv.org/abs/1302.3415}{{\ttfamily arXiv:1302.3415 [hep-ex]}}.
+
+\bibitem{2011baz}
+{\bfseries D\O} Collaboration, V.~M. Abazov {\em et~al.}, ``{Measurement of
+  $\sin^2\theta_{\mathrm{eff}}^{\ell}$ and $Z$-light quark couplings using the
+  forward-backward charge asymmetry in $p\bar{p} \to Z/\gamma^{*} \to
+  e^{+}e^{-}$ events with ${\cal L}=5.0$ fb$^{-1}$ at $\sqrt{s}=1.96$ TeV},''
+  \href{http://dx.doi.org/10.1103/PhysRevD.84.012007}{{\em Phys. Rev. D}
+  {\bfseries 84} (2011) 012007},
+  \href{http://arxiv.org/abs/1104.4590}{{\ttfamily arXiv:1104.4590 [hep-ex]}}.
+
+\bibitem{CMS:2014mgj}
+{\bfseries CMS} Collaboration, V.~Khachatryan {\em et~al.}, ``{Measurement of
+  the t-channel single-top-quark production cross section and of the $\mid
+  V_{tb} \mid$ CKM matrix element in pp collisions at $\sqrt{s}$= 8 TeV},''
+  \href{http://dx.doi.org/10.1007/JHEP06(2014)090}{{\em JHEP} {\bfseries 06}
+  (2014) 090}, \href{http://arxiv.org/abs/1403.7366}{{\ttfamily arXiv:1403.7366
+  [hep-ex]}}.
+
+\bibitem{ATLAS:2017rzl}
+{\bfseries ATLAS} Collaboration, M.~Aaboud {\em et~al.}, ``{Measurement of the
+  $W$-boson mass in pp collisions at $\sqrt{s}=7$ TeV with the ATLAS
+  detector},'' \href{http://dx.doi.org/10.1140/epjc/s10052-017-5475-4}{{\em
+  Eur. Phys. J. C} {\bfseries 78} no.~2, (2018) 110},
+  \href{http://arxiv.org/abs/1701.07240}{{\ttfamily arXiv:1701.07240
+  [hep-ex]}}. [Erratum: Eur.Phys.J.C 78, 898 (2018)].
+
+\bibitem{PhysRev.117.648}
+Y.~Nambu, ``Quasi-particles and gauge invariance in the theory of
+  superconductivity,'' \href{http://dx.doi.org/10.1103/PhysRev.117.648}{{\em
+  Phys. Rev.} {\bfseries 117} (Feb, 1960) 648--663}.
+  \url{https://link.aps.org/doi/10.1103/PhysRev.117.648}.
+
+\bibitem{goldstone}
+J.~Goldstone, ``Field theories with superconductor solutions,'' {\em Il Nuovo
+  Cimento (1955-1965)} {\bfseries 19} no.~1, (1961) 154--164.
+
+\bibitem{PhysRev.127.965}
+J.~Goldstone, A.~Salam, and S.~Weinberg, ``Broken symmetries,''
+  \href{http://dx.doi.org/10.1103/PhysRev.127.965}{{\em Phys. Rev.} {\bfseries
+  127} (Aug, 1962) 965--970}.
+  \url{https://link.aps.org/doi/10.1103/PhysRev.127.965}.
+
+\bibitem{PhysRev.130.439}
+P.~W. Anderson, ``Plasmons, gauge invariance, and mass,''
+  \href{http://dx.doi.org/10.1103/PhysRev.130.439}{{\em Phys. Rev.} {\bfseries
+  130} (Apr, 1963) 439--442}.
+  \url{https://link.aps.org/doi/10.1103/PhysRev.130.439}.
+
+\bibitem{PhysRevLett.13.321}
+F.~Englert and R.~Brout, ``Broken symmetry and the mass of gauge vector
+  mesons,'' \href{http://dx.doi.org/10.1103/PhysRevLett.13.321}{{\em Phys. Rev.
+  Lett.} {\bfseries 13} (Aug, 1964) 321--323}.
+  \url{https://link.aps.org/doi/10.1103/PhysRevLett.13.321}.
+
+\bibitem{PhysRevLett.13.508}
+P.~W. Higgs, ``Broken symmetries and the masses of gauge bosons,''
+  \href{http://dx.doi.org/10.1103/PhysRevLett.13.508}{{\em Phys. Rev. Lett.}
+  {\bfseries 13} (Oct, 1964) 508--509}.
+  \url{https://link.aps.org/doi/10.1103/PhysRevLett.13.508}.
+
+\bibitem{PhysRevLett.13.585}
+G.~S. Guralnik, C.~R. Hagen, and T.~W.~B. Kibble, ``Global conservation laws
+  and massless particles,''
+  \href{http://dx.doi.org/10.1103/PhysRevLett.13.585}{{\em Phys. Rev. Lett.}
+  {\bfseries 13} (Nov, 1964) 585--587}.
+  \url{https://link.aps.org/doi/10.1103/PhysRevLett.13.585}.
+
+\bibitem{Guralnik:2009jd}
+G.~S. Guralnik, ``{The History of the Guralnik, Hagen and Kibble development of
+  the Theory of Spontaneous Symmetry Breaking and Gauge Particles},''
+  \href{http://dx.doi.org/10.1142/S0217751X09045431}{{\em Int. J. Mod. Phys. A}
+  {\bfseries 24} (2009) 2601--2627},
+  \href{http://arxiv.org/abs/0907.3466}{{\ttfamily arXiv:0907.3466
+  [physics.hist-ph]}}.
+
+\bibitem{PhysRevLett.10.531}
+N.~Cabibbo, ``Unitary symmetry and leptonic decays,''
+  \href{http://dx.doi.org/10.1103/PhysRevLett.10.531}{{\em Phys. Rev. Lett.}
+  {\bfseries 10} (Jun, 1963) 531--533}.
+  \url{https://link.aps.org/doi/10.1103/PhysRevLett.10.531}.
+
+\bibitem{10.1143/PTP.49.652}
+M.~Kobayashi and T.~Maskawa, ``{CP-Violation in the Renormalizable Theory of
+  Weak Interaction},'' \href{http://dx.doi.org/10.1143/PTP.49.652}{{\em
+  Progress of Theoretical Physics} {\bfseries 49} no.~2, (02, 1973) 652--657},
+  \href{http://arxiv.org/abs/https://academic.oup.com/ptp/article-pdf/49/2/652/5257692/49-2-652.pdf}{{\ttfamily
+  https://academic.oup.com/ptp/article-pdf/49/2/652/5257692/49-2-652.pdf}}.
+  \url{https://doi.org/10.1143/PTP.49.652}.
+
+\end{thebibliography}\endgroup
