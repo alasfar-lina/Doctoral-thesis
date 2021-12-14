@@ -303,8 +303,11 @@ INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/lm/ec-lmssbx10.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/lm/ec-lmssbx10.tfm
 INPUT /Users/lina/Dropbox/My_Doctoral_thesis/Dissertation-alasfar.toc
 INPUT /Users/lina/Dropbox/My_Doctoral_thesis/Dissertation-alasfar.toc
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/lm/ec-lmssbx10.tfm
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/lm/ec-lmr12.tfm
 OUTPUT /Users/lina/Dropbox/My_Doctoral_thesis/Dissertation-alasfar.toc
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/lm/ec-lmro10.tfm
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/lm/ec-lmssbx10.tfm
 OUTPUT /Users/lina/Dropbox/My_Doctoral_thesis/chapters/Part2/Higgs_Physics.aux
 INPUT /Users/lina/Dropbox/My_Doctoral_thesis/chapters/Part2/Higgs_Physics.tex
 INPUT /Users/lina/Dropbox/My_Doctoral_thesis/chapters/Part2/Higgs_Physics.tex
@@ -350,7 +353,6 @@ INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam1
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
-INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/lm/ec-lmssbx10.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/lm/rm-lmbx9.tfm
 INPUT /Users/lina/Dropbox/My_Doctoral_thesis/./figures/SM.pdf
 INPUT /Users/lina/Dropbox/My_Doctoral_thesis/./figures/SM.pdf

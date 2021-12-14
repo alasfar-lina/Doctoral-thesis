@@ -1,51 +1,52 @@
 This is BibTeX, Version 0.99d (TeX Live 2020)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: Dissertation-alasfar.aux
-A level-1 auxiliary file: chapters/Part2/Higgs_Physics.aux
+A level-1 auxiliary file: chapters/Part1/Higgs_and_SM.aux
+A level-1 auxiliary file: chapters/Part1/Constraints_on_Higgs.aux
 The style file: utphys.bst
 A level-1 auxiliary file: chapters/End/list_of_publications.aux
 Database file #1: bibliography.bib
 Warning--there's a number but no series in minlos2000introduction
 Warning--empty booktitle in Freed1993LecturesOT
-You've used 35 entries,
+You've used 47 entries,
             2328 wiz_defined-function locations,
-            870 strings with 10981 characters,
-and the built_in function-call counts, 11681 in all, are:
-= -- 1284
-> -- 250
+            969 strings with 13588 characters,
+and the built_in function-call counts, 15435 in all, are:
+= -- 1692
+> -- 357
 < -- 0
-+ -- 99
-- -- 64
-* -- 1115
-:= -- 1341
-add.period$ -- 55
-call.type$ -- 35
-change.case$ -- 60
++ -- 139
+- -- 92
+* -- 1443
+:= -- 1790
+add.period$ -- 80
+call.type$ -- 47
+change.case$ -- 74
 chr.to.int$ -- 0
-cite$ -- 37
-duplicate$ -- 594
-empty$ -- 1159
-format.name$ -- 64
-if$ -- 3012
+cite$ -- 49
+duplicate$ -- 780
+empty$ -- 1545
+format.name$ -- 92
+if$ -- 3998
 int.to.chr$ -- 0
-int.to.str$ -- 35
-missing$ -- 132
-newline$ -- 110
-num.names$ -- 35
-pop$ -- 150
+int.to.str$ -- 47
+missing$ -- 172
+newline$ -- 150
+num.names$ -- 47
+pop$ -- 211
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 444
+skip$ -- 570
 stack$ -- 0
-substring$ -- 861
-swap$ -- 301
+substring$ -- 1087
+swap$ -- 380
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 2
-while$ -- 115
-width$ -- 37
-write$ -- 289
+while$ -- 149
+width$ -- 49
+write$ -- 392
 (There were 2 warnings)

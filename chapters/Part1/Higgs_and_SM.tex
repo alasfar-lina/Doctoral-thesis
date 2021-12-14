@@ -1,7 +1,10 @@
 %!TEX encoding = UTF-8 Unicode
 % !TeX spellcheck = en_GB
-\chapter{Higgs Physics }\label{chap:HiggsPhys}
-%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{The Standard Model Higgs boson }\label{chap:HiggsSM}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\epigraph{	It's very nice to be right sometimes... it has certainly been a long wait.}{\textit{Peter Higgs }}
+
 \section{Spontaneous symmetry breaking}
 \par Before talking about symmetry breaking, we need to discuss the concept of symmetry in physics. Symmetry has an essential role in studying physical systems. It manifests not only as a geometric feature of physical objects but also in the dynamics of physical systems. For example, one can find symmetries in the equation of motion, Lagrangians/Hamiltonians and actions. The magnetisation of materials is a good example of the role that symmetry plays in describing physical behaviour. For instance, \textbf{paramagnetic} materials have a positive magnetic susceptibility~$\chi_B$ due to the random arrangement of their electrons' spins.  The paramagnetic material spins arrangement will therefore possess rotational symmetry. The material has no \textit{ preferred direction} in space~\cite{minlos2000introduction}. On the contrary, \textbf{ferromagnetic} materials with the electrons' spins aligned in a certain direction, will not have such symmetry as there will be a preferred direction, see~\autoref{fig:paravsferro}. 
 %%%%
@@ -76,7 +79,7 @@ where $\gamma$ is a critical exponent. We see that if the metal temperature $T>T
 \end{theorem}
 This theorem first emerged from condensed matter physics, particularly superconductors~\cite{PhysRev.117.648,goldstone}. However, it soon got applied to relativistic quantum field theories~\cite{PhysRev.127.965}.
 %%%%%%
-\subsection{The Higgs mechanism}
+\section{The Higgs mechanism}
 %%%%%%
 In order to solve the aforementioned shortcomings of the Weinberg-Salam model, Nambu-Goldstone theorem has been first proposed by P.~W.~Anderson~\cite{PhysRev.130.439}. However, the way that Anderson formulated his theory was unfamiliar to particle physicists and used a non-relativistic picture to illustrate how photons could gain mass in an electron plasma with a plasma frequency $\omega_{p}$ 
 \begin{equation}
@@ -125,11 +128,11 @@ A_\mu &= \frac{1}{\sqrt{g_1^2+g_2^2}} \left(g_2 W^3_\mu+g_1B_\mu\right). \nonumb
  \begin{equation}
      e=\frac{g_1}{\sqrt{g_1^2+g_2^2}}.
  \end{equation}
- It is useful to define~\textbf{Weinberg angle}~$\theta_W$, an important EW parameter relating the electric chrage to the weak coupling~$g_2$ 
+ It is useful to define~\textbf{Weinberg angle}~$\theta_W$, an important EW parameter relating the electric charge to the weak coupling~$g_2$ 
  \begin{equation}
      \sin \theta_W = \frac{e}{g_2} \approx 0.231214,
  \end{equation}
- typically the $\sin$ and $\cos$ of the Weinberg angle are denoted by $s_W$ and $c_W$, respectivly. \\ We use the unitary gauge, to absorb the Goldestone bosons into the $W^\pm$ and $Z$ longtitudinal polorisations. In this gauge the Higgs doublet can be written as
+ typically the $\sin$ and $\cos$ of the Weinberg angle are denoted by $s_W$ and $c_W$, respectively. \\ We use the unitary gauge, to absorb the Goldstone bosons into the $W^\pm$ and $Z$ longitudinal polarisations. In this gauge the Higgs doublet can be written as
 \begin{equation}
     \phi \to \begin{pmatrix}
        0\\  \frac{1}{\sqrt{2}}(h+v).
@@ -144,21 +147,27 @@ Since $\phi$ is a complex doublet. We have seen that it has four components,  an
 \begin{align}
     g_{hVV} =& \frac{2 m_V^2}{v}, & g_{hhVV}=& \frac{2 m_V^2}{v^2}.
 \end{align}
-By substituting~\eqref{unitaryhiggs}, into the Higgs potential~\eqref{higgspot} one can write the mass of the physcial Higgs boson in terms of the vev
+By substituting~\eqref{unitaryhiggs}, into the Higgs potential~\eqref{higgspot} one can write the mass of the physical Higgs boson in terms of the vev
 \begin{align}
-  m_h =\sqrt{2 \lambda} v.
+  m_h =\sqrt{2 \lambda} v .
 \end{align}
+The physical Higgs mass is related to the $\mu$ parameter via the relation
+\begin{align}
+	m_h ^2 =-2 \mu^2,
+\end{align}
+One can see that the mass term after SSB changes its sign, characterising the order-parameter for this system,  analogous to the magnetic susceptibility for the magnetisation of materials example. 
 One could also identify the self-couplings of~$h$, the trilinear and quartic couplings 
 \begin{align}
     g_{hhh}&=3\lambda v =3\frac{m_h^2}{v}, & g_{hhhh}&= 3 \lambda = 3\frac{m_h^2}{v^2}.
 \end{align}
 %%%
-\subsection{Yukawa interaction}
+\section{Yukawa interaction}
 It is possible to also use the Higgs vev to give fermions their masses by introducing a Yukawa-interaction terms, first introduced by S. Weinberg~\cite{PhysRevLett.19.1264}
 \begin{equation}
     \mathcal{L}_{\mathrm{Yuk}}= -y_{e} \, \bar{L} \, \phi \, E 
 - y_{d} \, \bar{Q} \, \phi \, D
 - y_u \, \bar{Q} \, \tilde{\phi} \, U   \ + \hc,
+\label{lag-yuk}
 \end{equation}
 with $ \tilde{\phi}= i\sigma_2 \phi$ and $ y_e, y_d, y_u$ are $3\times 3$ matrices. These matrices are free parameters in the SM. As the Higgs boson acquires a the vev, the fermions will acquire a mass $m_f= vy^\prime_f$ and the Higgs boson coupling to the fermions is given by
 \begin{equation}
@@ -178,7 +187,7 @@ However, the is no degeneracy here as the Hamiltonian does not commute with the 
 \end{figure}
 %%%%
 %%%%
-\section{Theoretical constraints on the Higgs}
+\section{The Higgs and EW precision observables}
 \par Higgs physics is intertwined with the EW sector for example, the Higgs vev is determined from Fermi's constant~$v =(\sqrt{2}G_F)^{-1/2}$, and is fixed by muon lifetime measurements, and comparing it with the theoretical predictions~\cite{PhysRev.101.866,PhysRev.113.1652,Mohammad:1976qd,PhysRevLett.82.488} 
 \begin{equation}
     \tau_\mu^{-1} = \frac{G_F^2 m_\mu^5}{192\pi^3}\left(1-\frac{8 m_e^2}{m_\mu}\right) \left[1-1.810\frac{\alpha}{\pi}+(6.701\pm0.002)\left(\frac{\alpha}{\pi}\right)^2\right],
@@ -188,20 +197,110 @@ which leads to the numerical value of $G_F$~\cite{Zyla:2020zbs}
     G_F=1.1663787(6) \cdot 10^{-5} \si{\per\GeV\squared},
 \end{equation}
 given the value of the fine structure constant~$\alpha^{-1} =137.03599976 (50)$. 
-\par Another important EW precision observable is the ratio between the $W$ and $Z$ masses
+\par Another important EW precision observable~(EWPO) is the ratio between the $W$ and $Z$ masses
 \begin{equation}
     \rho = \frac{m_W^2}{c_W^2m_Z^2}.
 \end{equation}
-At leading order, this parameter is equal to unity in the SM. The $\rho$ parameter depends on the representation of the scalar sector of the EW model having $\phi_i$ scalars with $T_i$ weak isospin and $T_{3,i}$ being its third compopenet, and a vev $v_i$, via the relation~\cite{ROSS1975135,Djouadi:2005gi}
+At leading order, this parameter is equal to unity in the SM. The $\rho$ parameter depends on the representation of the scalar sector of the EW model having $\phi_i$ scalars with $T_i$ weak isospin and $T_{3,i}$ being its third component, and a vev $v_i$, via the relation~\cite{ROSS1975135,Djouadi:2005gi}
 \begin{equation}
     \rho =\frac{\sum_i [T_{i}(T_{i}+1)-T_{3,i}^2]v_i^2}{2\sum_i T_{3,i}^2v_i^2}.
     \label{rhohiggs}
 \end{equation}
-From~\eqref{rhohiggs} one can see that a real triplet scalar, for instance, would not fit the experimental EW measurment of $\rho$. Hence, a complex doublet is the simplest scalar possible for the EW symmetry breaking, and the Higgs boson was expected to be seen almost four decades before its discovery. However, radiative corrections to the EW gauge bosons mass from vacuum polirisation diagrams could potentially cause $\rho$ to deviate significantly from unity.  This is not the case, as the experimentally measured value of~$\rho$~\cite{Zyla:2020zbs}
+From~\eqref{rhohiggs} one can see that a real triplet scalar, for instance, would not fit the experimental EW measurement of $\rho$. Hence, a complex doublet is the simplest scalar possible for the EW symmetry breaking, and the Higgs boson was expected to be seen almost four decades before its discovery. However, radiative corrections to the EW gauge bosons mass from vacuum polarisation diagrams could potentially cause $\rho$ to deviate significantly from unity.  This is not the case, as the experimentally measured value of~$\rho$~\cite{Zyla:2020zbs}
 \begin{equation}
     \rho_{\text{exp}} = 1.00038 \pm 0.00020
+    \label{eq:rhoexp}
 \end{equation}
-Aditionally, it is possible to think of an extended Higgs sector, where there are multiple scalars with different $SU(2)_L$ multiplicities. Or, a composite Higgs sector, where the Higgs boson is a psedo Nambu-Goldestone boson, cf.~\cite{}. How can such models be built assuring the $\rho$ parameter is protected from change ? The answer to this question lies in a symmetry of the Higgs Lagrangian known as custodial symmetry. 
+Additionally, it is possible to think of an extended Higgs sector, where there are multiple scalars with different $SU(2)_L$ multiplicities. Or, a composite Higgs sector, where the Higgs boson is a pseudo Nambu-Goldstone boson, cf.~\cite{Dugan1985AnatomyOA,Hill:2002ap}. How can such models be built assuring the $\rho$ parameter is protected from change ? The answer to this question lies in a symmetry of the Higgs Lagrangian known as custodial symmetry. 
 \subsection{Custodial symmetry}
-After SSB, a residual global symmetry known as the custodial symmetry protects the $\rho$ parameter from obtabing large radiative corrections at higher orders in perturbation theory.  This symmetry must be kept in extended or composite Higgs models. 
-\par Before dicussing custodial symmetry, it is helpful to examin the radiative corrections that could contribute to the devation of $\rho$ from unity, i.e. $\Delta \rho$. 
+After SSB, a residual global symmetry known as the custodial symmetry protects the $\rho$ parameter from obtaining large radiative corrections at higher orders in perturbation theory.  This symmetry must be kept in extended or composite Higgs models. This symmetry can be seen by rewriting the Higgs potential as
+\begin{equation}
+	V = \frac{\lambda}{4} \left(å \phi_1^2+\phi^2_2+\phi_3^2+\phi^2_4 -2 \mu^2\right)^2.
+\end{equation}
+This potential is invariant under $SO(4)\simeq SU(2)_L \otimes SU(2)_R$ rotations. However, when the Higgs field squires a non-vanishing vev,  $ \phi_4 \to h+v$, the potential becomes
+ \begin{equation}
+ 	V = \frac{\lambda}{4} \left( \phi_1^2+\phi^2_2+\phi_3^2+ h^2+2vh+v^2 -2 \mu^2\right)^2,
+ \end{equation}
+which is only invariant under  $SO(3)\simeq SU(2)_V$ transformations, the diagonal part of the original group. This global SSB pattern comes alongside the EW SSB of the gauge group $SU(2)_L \otimes U(1)_Y$ as global $SU(2)_L$ is itself the gauged $SU(2)_L$  group. Additionally the $T^3$ component of the ~$SU(2)_R$ global group is the gauged $U(1)_Y$ and the~$T^3$ component of the custodial group~$SU(2)_V$ is gauged as well and identified to be the electric charge operator, i.e. the generator of $U(1)_Q$. 
+\begin{equation}
+	\underbrace{SU(2)_R}_{{\color{myblue} \supset\, U(1)_Y}} \otimes \overbrace{SU(2)_L}^{{\color{myblue} \text{gauged}}} \longrightarrow \underbrace{SU(2)_V}_{{\color{myblue} \supset\, U(1)_Q}} .
+\end{equation}
+This pattern indicates that the symmetry is already broken by the gauging of the diagonal part of $SU(2)_R$ ~(the hypercharge). The custodial symmetry is only \emph{approximate} in the limit of $ g_1 \to 0$, and $\rho=1$ is a consequence of $g_1\neq 0$ . The symmetry breaking pattern $\irrep{2} \otimes \irrep{2} = \irrep{3} \oplus \irrep{1}$ also allows us to identify the Goldstone bosons as the custodial triplet and the physical Higgs~$h$ as the custodial singlet, explaining the electric charge pattern they have.   \\
+ We could use the isomorphism between the special orthogonal and special unitary groups to parametrise the Higgs doublet as an 
+$SU(2)_L \otimes SU(2)_R$ bidoublet 
+\begin{equation}
+	\mathcal{H} =(\tilde{\phi} \,\,\, \phi) = \frac{1}{\sqrt{2}}\begin{pmatrix}
+		\phi_4-i\phi_3 & \phi_1+i\phi_2 \\
+		 \phi_1-i\phi_2 & \phi_4+i\phi_3
+	\end{pmatrix},
+\end{equation}
+with the bi-unitary transformations
+\begin{equation}
+	\mathcal{H} \longrightarrow \mathcal{U}_L \mathcal{H} \mathcal{U}^\dagger_R
+\end{equation}
+which leaves any traces of the form $\mathrm{Tr}(\mathcal{H}^\dagger\mathcal{H})$, invariant. The Higgs potential could be rewritten in terms of the bidoublet 
+\begin{equation}
+	V = -\frac{\mu^2}{2} \mathrm{Tr}(\mathcal{H}^\dagger\mathcal{H} + \frac{\lambda}{4}\left(  \mathrm{Tr}(\mathcal{H}^\dagger\mathcal{H} \right) ^2
+\end{equation}
+The vev is hence written in this representation as 
+\begin{equation}
+\langle \mathcal{H} \rangle  = \frac{v}{\sqrt{2}}\, \mathbb{1}_{2\times 2}.
+\end{equation}
+We can also look at the Yukawa sector, and observe that in the case where $ y_u =y_d =y $, we can also write the left-handed and right-handed quarks  as $SU(2)_L \otimes SU(2)_R$  bidoublets and $SU(2)_R$ doublets, respectively. Hence, the quark part of the Yukawa Lagrangian in~\eqref{lag-yuk} becomes
+\begin{equation}
+	\mathcal{L}_{yuk} \supset \frac{y}{\sqrt{2}}  (\bar u_L\,\,\, \bar d_L)  \begin{pmatrix}
+		\phi_4-i\phi_3 & \phi_1+i\phi_2 \\
+		\phi_1-i\phi_2 & \phi_4+i\phi_3  
+	\end{pmatrix}  \begin{pmatrix}  u_R \\ d_R	\end{pmatrix} ,
+\end{equation}
+which is invariant under custodial transformations, but when~$ y_u \neq y_d$, this Lagrangian term breaks custodial symmetry. Thus, the differences between the up-type and down-type quark masses $m_u-m_d$ are considered \textbf{spurions} of the  custodial symmetry and one expects to see radiative corrections to $\rho$ being proportional to these spurions.
+\par In order to see this more concretely, we start by examining the radiative corrections that could contribute to the deviation of $\rho$ from unity, i.e. $\Delta \rho$ these corrections are known as the \textbf{oblique correction}. These oblique corrections come from electroweak vacuum polarisations~$\Pi_{VV}(p^2)$, as shown in ~\autoref{fig:oblique}, for more details on these corrections and their calculation see Refs..~\cite{schwartz2014quantum,peskin1995introduction} \\
+%%%%
+\begin{figure}[htpb!]
+	\centering
+	\includegraphics[width=0.75\linewidth]{./figures/oblique_corrections}
+	\caption{The oblique corrections, are radiative correction with electroweak gauge bosons propagators. Namely vacuum polarisations of the $Z$, $W^\pm$ and $\gamma$ bosons. }  \label{fig:oblique}
+\end{figure}
+%%%%
+%%%%
+The 1-loop correction to the $\rho$ parameter is given in terms of the ~$\Pi_{VV}$  by
+\begin{equation}
+\Delta \rho = \frac{\Pi_{WW}(0)}{m_W^2}- \frac{\Pi_{ZZ}(0)}{m_Z^2}
+\end{equation}
+Where the dominant contributions are given by~\cite{EINHORN1981146}
+\begin{align}
+\Delta \rho & = \frac{3 G_F}{8\sqrt{2}\pi^2}\,\left((m_t^2+m_b^2)-\frac{2m_t^2m_b^2}{m_t^2-m_b^2}\ln \frac{m_t^2}{m_b^2} \right)+\dots.
+\label{eq:deltarho}
+\end{align}
+Since $m_b\ll m_t$, the correction is non-vanishing, and~\eqref{eq:deltarho} shows clearly how the radiative corrections are proportional to the spurions of the custodial symmetry. However, this radiative correction is absorbed into the SM definition of $\rho$, i.e. the $\MSbar$ definition of the $\rho$-parameter~$\rho^{\MSbar}$.
+\par One can study  new physics~(NP) effects that violates custodial symmetry, by looking at deviations from $\rho=1$ from it. Given the experimentally measured value of~$\rho$~\eqref{eq:rhoexp} many NP models violating custodial symmetry can already be excluded. Nevertheless, $\rho$ alone does not capture the full story of~EWPO's. For instance, adding a new quark doublet would not necessarily violate the custodial symmetry though it still can be excluded by EWPO. It is hence useful to introduce new parameters known as \textbf{Peskin-Takeuchi parameters}~\cite{PhysRevLett.65.964,Peskin91estimationof,peskin1995introduction}
+\begin{align}
+	S &:=\frac{4 c_W^2 s_W^2}{\alpha} \left[ \frac{\Pi_{ZZ}^{\NP} (m_Z^2)- \Pi_{ZZ}^{\NP} (0)}{m_Z^2}  - \frac{c_W^2-s_W^2}{c_Ws_W}\,\frac{\Pi_{Z\gamma}^\NP(m_Z^2)}{m_Z^2}-\frac{\Pi_{\gamma\gamma}^\NP(m_Z^2)}{m_Z^2}\right],  \nonumber \\
+	T &:=\frac{\rho^{\MSbar}-1}{\alpha}  = \frac{1}{\alpha} \left[ \frac{\Pi^\NP_{WW}(0)}{m_W^2}- \frac{\Pi^\NP_{ZZ}(0)}{m_Z^2} \right] , \\
+	U&:= \frac{4 s_W^2}{\alpha} \left[ \frac{\Pi_{WW}^{\NP} (m_W^2)- \Pi_{WW}^{\NP} (0)}{m_W^2}   - \frac{c_W}{s_W}\,\frac{\Pi_{Z\gamma}^\NP(m_Z^2)}{m_Z^2}-\frac{\Pi_{\gamma\gamma}^\NP(m_Z^2)}{m_Z^2}\right] -S .\nonumber 
+\end{align}
+The NP contributions to the EW vacuum polarisations $\Pi_{VV}^{\NP}(p^2)$) could either come from loop or tree-level effects. Typically both $T$ and $U$ are related to custodial symmetry violation. However, $U$ has an extra suppression factor of $m_\NP^2/m_Z^2$ compared to $T$ and $S$. The most recent fit result for these parameters is~\cite{Zyla:2020zbs}
+\begin{align}
+	S &=-0.01\pm0.10,  \nonumber \\
+	T &= 0.03\pm0.13, \\
+	U&:= 0.02\pm0.11.\nonumber 
+\end{align}
+But since $T$ and $S$ tend to give stronger constraint on NP, due to the suppression factor of $U$. One can preform a two-parameter fit of $S$ and $T$ setting $U=0$, thas shown in~\autoref{fig:stubound}, with the numerical values~\cite{Zyla:2020zbs}, \\
+ \begin{align}
+ 	S &=0.00\pm0.07,  \nonumber \\
+ 	T &= 0.05\pm0.06.
+ \end{align}
+%%%%
+\begin{figure}[t]
+	\centering
+	\includegraphics[width=0.65\linewidth]{./figures/stu-pdg}
+	\caption{ Fit results from various EWPO's for $T$ and $S$ setting $U=$. The contours show $1\,\sigma$ contours~(39.35\% for closed contours and 68\% for the rest). This plot is obtained from the PDG~\cite{Zyla:2020zbs}  }  \label{fig:stubound}
+\end{figure}
+%%%%
+%%%%
+The Peskin-Takeuchi parameters are important in constraining effective operators in the Higgs sector , namely
+ \begin{align}
+ \hat{O}_S &= \phi^\dagger \sigma_i \phi W^i_{\mu \nu} B^{\mu \nu}, \nonumber \\
+\hat{O}_T &= |\phi^\dagger D_\mu \phi|^2.
+\end{align}
+For example, $\hat{O}_S$ appears in Technicolour models causing large deviations of $S$ compared to its measured value~\cite{GOLDEN19913,HOLDOM199088,ALTARELLI19923,PhysRevLett.65.964}. Moreover, The constraints on $T$ parameter is important for top mass generation ans well as modifications to~$Z  b \bar{b}$ coupling in such models~\cite{PhysRevLett.69.575,Simmons:1995df}. We will revisit the $\hat{O}_T$ when we discuss the Higgs and effective field theories in section \la{update here}.
