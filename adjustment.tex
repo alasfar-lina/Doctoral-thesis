@@ -1,7 +1,7 @@
 \KOMAoptions{numbers=noenddot}
 \usepackage{amsmath,amssymb,amsfonts,amsthm,epigraph,scrpage2}
 \usepackage[ngerman,english]{babel}
-\usepackage{centernot} % f�r Durchstreichung
+\usepackage{centernot} 
 \usepackage{multirow}
 \usepackage{pdfpages}
 
@@ -170,3 +170,199 @@
 \renewcommand{\figureautorefname}{figure}
 \def\equationautorefname~#1\null{Eq.\,(#1)\null}
 \newcommand{\appendixref}[1]{\hyperref[#1]{appendix~\ref{#1}}}
+
+%%%%%%def
+%%%%%% def
+\newcommand{\pt}{p_{\scriptscriptstyle T}}
+
+\newcommand{\sssty}[1]{\scriptscriptstyle#1}
+
+\newcommand{\be}{\begin{equation}}
+	\newcommand{\ee}{\end{equation}}
+
+\newcommand{\mt}{m_t}
+
+\newcommand{\vev}[1]{\langle {#1} \rangle}
+\newcommand{\lsim}{\lesssim}
+\newcommand{\gsim}{\gtrsim}
+
+
+\newcommand{\nn}{\nonumber}
+\newcommand{\perc}{\%}
+\newcommand\sss{\scriptscriptstyle}
+
+\newcommand{\gev}{\,\textrm{GeV}}
+\newcommand{\mev}{\,\textrm{MeV}}
+\newcommand{\pb}{\,\textrm{pb}}
+\newcommand{\tev}{\,\textrm{TeV}}
+\newcommand{\TO}{\rightarrow}
+
+
+\newcommand{\gnote}[1]{\textbf{[G:} \textit{#1}\textbf{]}}
+\newcommand{\rnote}[1]{\textbf{[R:}\textit{#1}\textbf{]}}
+\newcommand{\ppgnote}[1]{\textbf{[PPG:}\textit{#1}\textbf{]}}
+\newcommand{\tth}{t\bar{t}H}
+\newcommand{\tthc}{\lambda_{\tth}}
+\newcommand{\pptth}{pp\TO\tth}
+\newcommand{\ggtth}{gg\TO\tth}
+\newcommand{\qqtth}{q\bar{q}\TO\tth}
+\newcommand{\qqtthg}{q\bar{q}\TO\tth g}
+\newcommand{\qgtthq}{qg\TO\tth q}
+\newcommand{\asa}[2]{\alpha_s^{#1}\alpha^{#2}}
+\newcommand{\ord}[1]{\mathcal{O}{(#1)}}
+\newcommand{\mh}{m_{ \sss H}}
+\newcommand{\mz}{m_{ \sss Z}}
+\newcommand{\dm}{\Delta_m}
+\newcommand{\Gfer}{G_{ \sss F}}
+
+
+\def\beq{\begin{equation}}
+	\def\bea{\begin{eqnarray}}
+		\def\eeq{\end{equation}}
+	\def\eea{\end{eqnarray}}
+\def\beqnl{\begin{align}}
+	\def\endal{\end{align}}
+\def\abs#1{\left|#1\right|}
+
+
+\newcommand\mydot{\!\cdot\!}
+\newcommand\ep{\epsilon}
+\newcommand\half{\frac{1}{2}}
+\newcommand\quarter{\frac{1}{4}}
+\newcommand\qb{\bar{q}}
+\newcommand\ub{\bar{u}}
+\newcommand\db{\bar{d}}
+\newcommand\bb{\bar{b}}
+\newcommand\tb{\bar{t}}
+\newcommand\sqs{\sqrt{s}}
+\newcommand\epem{e^+e^-}
+\newcommand\mpmm{\mu^+\mu^-}
+\newcommand\irmv{\remove{i}{0.18}}
+\newcommand\jrmv{\remove{j}{0.21}}
+\newcommand\irmvb{\removeb{i}{0.18}{0.18}}
+\newcommand\jrmvb{\removeb{j}{0.21}{0.17}}
+\newcommand\isubrmv{\remove{i}{0.125}}
+\newcommand\jsubrmv{\remove{j}{0.145}}
+\newcommand\FKSpairs{{\cal P}_{\sss\rm FKS}}
+\newcommand\FKSpairsred{\overline{{\cal P}}_{\sss\rm FKS}}
+\newcommand\FKSelem{N_{\sss\rm FKS}}
+\newcommand\FKSelemred{\overline{N}_{\sss\rm FKS}}
+\newcommand\nchannels{N_{\rm ch}}
+\newcommand\proc{\qqtth}
+\newcommand\procB{r_{\sss B}}
+\newcommand\procR{r_{\sss R}}
+\newcommand\allproc{{\cal R}}
+\newcommand\allprocnpo{\allproc_{n+1}}
+\newcommand\allprocn{\allproc_{n}}
+\newcommand\BornME{{\cal B}}
+\newcommand\nini{n_{\sss I}}
+\newcommand\nlight{n_{\sss L}}
+\newcommand\nlightB{\nlight^{\sss (B)}}
+\newcommand\nlightR{\nlight^{\sss (R)}}
+\newcommand\nlightBorR{\nlight^{\sss (B/R)}}
+\newcommand\nheavy{n_{\sss H}}
+\newcommand\nzero{n_\emptyset}
+\newcommand\ident{{\cal I}}
+\newcommand\numofgr{N_d}
+\newcommand\amp{{\cal A}}
+\newcommand\ampmt{\amp^{(m,0)}}
+\newcommand\ampnt{\amp^{\asa{1}{1/2}}}
+\newcommand\ampntb{\amp^{\alpha^{3/2}}}
+\newcommand\ampnpot{\amp^{\asa{3/2}{1/2}}}
+\newcommand\ampnpotb{\amp^{\asa{1/2}{3/2}}}
+\newcommand\ampnl{\amp_{\proc,~\text {Loop}}^{\asa{2}{1/2}}}
+\newcommand\ampnlb{\amp_{\proc,~\text {Loop}}^{\asa{1}{3/2}}}
+\newcommand\ampsq{{\cal M}}
+\newcommand\ampsqmt{\ampsq^{(m,0)}}
+\newcommand\ampsqnt{\ampsq^{(n,0)}}
+\newcommand\ampsqnpot{\ampsq^{(n+1,0)}}
+\newcommand\ampsqnl{\ampsq^{(n,1)}}
+\newcommand\vampsqnl{{\cal V}^{(n,1)}}
+\newcommand\hvampsqnl{\hat{\cal V}^{(n,1)}}
+\newcommand\vampsqnlF{{\cal V}^{(n,1)}_{\sss FIN}}
+\newcommand\hvampsqnlF{\hat{\cal V}^{(n,1)}_{\sss FIN}}
+\newcommand\tampsq{\widetilde{\cal M}}
+\newcommand\tampsqnt{\tampsq^{(n,0)}}
+\newcommand\tampsqnpot{\tampsq^{(n+1,0)}}
+\newcommand\rone{r_{[1]}}
+\newcommand\rtwo{r_{[2]}}
+\newcommand\Ione{\ident_1}
+\newcommand\Itwo{\ident_2}
+\newcommand\xii{\xi_i}
+\newcommand\yij{y_{ij}}
+\newcommand\phii{\varphi_i}
+\newcommand\yi{y_i}
+\newcommand\xic{\left(\frac{1}{\xii}\right)_c}
+\newcommand\lxic{\left(\frac{\log\xii}{\xii}\right)_c}
+\newcommand\omyijd{\left(\frac{1}{1-\yij}\right)_\delta}
+\newcommand\omyid{\left(\frac{1}{1-\yi}\right)_\delta}
+\newcommand\opyid{\left(\frac{1}{1+\yi}\right)_\delta}
+\newcommand\Dfun{{\cal D}}
+\newcommand\Sfun{{\cal S}}
+\newcommand\Sfunij{\Sfun_{ij}}
+\newcommand\asfun{a_{\Sfun}}
+\newcommand\bsfun{b_{\Sfun}}
+\newcommand\stepf{\Theta}
+\newcommand\phsp{d\phi}
+\newcommand\phspn{\phsp_{n}}
+\newcommand\phspnpo{\phsp_{n+1}}
+\newcommand\tphsp{d\widetilde{\phi}}
+\newcommand\tphspn{\tphsp_{n}}
+\newcommand\tphspnij{\tphsp_{n}^{ij}}
+\newcommand\as{\alpha_{\sss S}}
+\newcommand\asotwopi{\frac{\as}{2\pi}}
+\newcommand\gs{g_{\sss S}}
+\newcommand\aW{\alpha_{\sss W}}
+\newcommand\gW{g_{\sss W}}
+\newcommand\aem{\alpha}
+\newcommand\xicut{\xi_{cut}}
+\newcommand\ximax{\xi_{\rm max}}
+\newcommand\deltaO{\delta_{\sss O}}
+\newcommand\deltaI{\delta_{\sss I}}
+\newcommand\NC{N_{\sss c}}
+\newcommand\CA{C_{\sss A}}
+\newcommand\CF{C_{\sss F}}
+\newcommand\TF{T_{\sss F}}
+\newcommand\DA{D_{\sss A}}
+\newcommand\eikint{{\cal E}}
+\newcommand\eikintD{\hat{\cal E}}
+\newcommand\APdamp{\overline{P}}
+\newcommand\Qdamp{\overline{Q}}
+\newcommand\Qop{\vec{Q}}
+\newcommand\JetsB{J^{\nlightB}}
+\newcommand\JetsR{J^{\nlightB+1}}
+\newcommand\kin{\left\{k_k\right\}}
+\newcommand\velkl{v_{kl}}
+\newcommand\alkl{\alpha_{kl}}
+\newcommand\avg{{\cal N}}
+\newcommand\symm{\varsigma}
+\newcommand\symmnij{\symm_{ij}^{(n)}}
+\newcommand\symmnpoij{\symm_{ij}^{(n+1)}}
+\newcommand\veck{\vec{k}}
+\newcommand\kbar{\bar{k}}
+\newcommand\kkdotkl{k_k\mydot k_l}
+\newcommand\polv{\varepsilon}
+\newcommand\polP{{\cal T}}
+\newcommand\polQ{{\cal W}}
+\newcommand\muF{\mu_{\sss F}}
+\newcommand\muR{\mu_{\sss R}}
+\newcommand\clH{{\mathbb H}}
+\newcommand\clS{{\mathbb S}}
+\newcommand\bt{\bar{t}}
+\newcommand\bq{\bar{q}}
+\newcommand\bqp{\bar{q}^\prime}
+\newcommand\aNLO{{\sc\small MadGraph5\_aMC@NLO}}
+\newcommand\UFO{{\sc\small UFO}}
+\newcommand\MLf{{\sc\small MadLoop5}}
+\newcommand\ML{{\sc\small MadLoop}}
+\newcommand\CutTools{{\sc\small CutTools}}
+\newcommand\OL{{\sc\small OpenLoops}}
+\newcommand\MadFKS{{\sc\small MadFKS}}
+\newcommand{\Ht}{H_{\sss T}}
+%\newcommand{\GeV}{\si{\GeV}}
+%\newcommand{\TeV}{\si{\TeV}}
+%\newcommand{\invab}{\si{\per \atto\barn}}
+\newcommand{\femtobarn}{\si{\femto\barn}}
+\newcommand{\as}{\frac{\alpha_s^0}{4 \pi} }
+\newcommand{\Zas}{ Z_{\alpha_s} }
+\newcommand{\asr}{\frac{\alpha_s}{4 \pi} }

@@ -10,3 +10,30 @@
 \contentsline {subsection}{\numberline {1.4.1}Custodial symmetry}{12}{subsection.1.4.1}%
 \contentsline {chapter}{\numberline {2}Constraints on the Higgs properties}{17}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Theoretical constraints}{17}{section.2.1}%
+\contentsline {chapter}{\numberline {3}Higgs and effective field theories}{19}{chapter.3}%
+\contentsline {part}{\numberline {II}Single Higgs Processes at the LHC}{21}{part.2}%
+\contentsline {chapter}{\numberline {4}Overview of Higgs production at colliders}{23}{chapter.4}%
+\contentsline {chapter}{\numberline {5}Four top operator in Higgs production and decay}{25}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Associated $Zh$ production via gluon fusion at NLO}{27}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Overview}{27}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Definitions}{29}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Expansion in the transverse momentum}{31}{section.6.3}%
+\contentsline {section}{\numberline {6.4}LO Comparison}{33}{section.6.4}%
+\contentsline {section}{\numberline {6.5}Renormalisation}{35}{section.6.5}%
+\contentsline {subsection}{\numberline {6.5.1}Gluon wavefunction}{37}{subsection.6.5.1}%
+\contentsline {subsection}{\numberline {6.5.2}Strong coupling constant}{38}{subsection.6.5.2}%
+\contentsline {subsection}{\numberline {6.5.3}Top mass}{38}{subsection.6.5.3}%
+\contentsline {subsection}{\numberline {6.5.4}Larin counter-term}{38}{subsection.6.5.4}%
+\contentsline {subsection}{\numberline {6.5.5}All terms together}{38}{subsection.6.5.5}%
+\contentsline {section}{\numberline {6.6}IR subtraction}{39}{section.6.6}%
+\contentsline {section}{\numberline {6.7}Outline of the NLO Computation}{39}{section.6.7}%
+\contentsline {section}{\numberline {6.8}Conclusion }{40}{section.6.8}%
+\contentsline {part}{\numberline {III}Higgs Pair at Hadron Colliders}{43}{part.3}%
+\contentsline {chapter}{\numberline {7}Overview of Higgs pair production at colliders}{45}{chapter.7}%
+\contentsline {subsubsection}{\nonumberline Theoretical systematic uncertainties}{46}{section*.12}%
+\contentsline {subsubsection}{\nonumberline results}{47}{section*.13}%
+\contentsline {chapter}{\numberline {8}Higgs pair as a probe for light Yukawas}{49}{chapter.8}%
+\contentsline {chapter}{\numberline {9}Optimised search for Higgs pair via Interpretable machine learning}{51}{chapter.9}%
+\contentsline {chapter}{\numberline {A}Details of $Zh$ calculation}{53}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Orthogonal Projectors in $gg \to ZH$}{53}{section.A.1}%
+\contentsline {section}{\numberline {A.2}Two-loop Results}{54}{section.A.2}%

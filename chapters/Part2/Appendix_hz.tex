@@ -1,0 +1,109 @@
+%!TEX encoding = UTF-8 Unicode
+% !TeX spellcheck = en_GB
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{ Details of $Zh$ calculation }\label{app:hz}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Orthogonal Projectors in $gg \to ZH$}
+\label{app:uno}
+In this appendix we present
+the explicit expressions of the projectors  $\mathcal{P}_i^{\mu\nu\rho}$
+appearing in eq.(\ref{eq:amp}). The projectors are all normalized to 1.
+They  are:
+\bea
+\mathcal{P}_1^{\mu\nu\rho}&=&\frac{\mz}{\sqrt{2}s'\pt^2}\biggl[ p_1^\nu
+\epsilon^{\mu\rho p_1 p_2}-p_2^\mu \epsilon^{\nu\rho p_1 p_2}+
+q_t^\mu \epsilon^{\nu\rho p_2 p_3}\\
+&+&q_u^\nu \epsilon^{\mu\rho p_1 p_3}+s' \epsilon^{\mu\nu\rho p_2}-s'
+\epsilon^{\mu\nu\rho p_1}\biggr],\\
+\mathcal{P}_2^{\mu\nu\rho}&=&\frac{1}{\sqrt{2}s'\pt}
+\biggl[ q_u^\nu \epsilon^{\mu\rho p_1 p_3}+q_t^\mu\epsilon^{\nu\rho p_2 p_3}\biggr],\\
+\mathcal{P}_3^{\mu\nu\rho}&=&\frac{\sqrt{3}}{2s'\pt}
+\biggl[ s' \epsilon^{\mu\nu\rho p_1}+s' \epsilon^{\mu\nu\rho p_2}-
+p_1^\nu\epsilon^{\mu\rho p_1 p_2}-p_2^\mu \epsilon^{\nu\rho p_1 p_2} \nn \\
+&+& \left( q_u^\nu \epsilon^{\mu\rho p_1 p_3} -q_t^\mu \epsilon^{\nu\rho p_2 p_3}
+\right) \left(\frac13 + \frac{\mz^2}{\pt^2} \right) \nn\\ 
+&+& \frac{\mz^2}{\pt^2}\left( q_t^\mu\epsilon^{\nu\rho p_2 p_1}-
+q_u^\nu\epsilon^{\mu\rho p_1 p_2} \right) \biggr], \\
+\mathcal{P}_4^{\mu\nu\rho}&=&\frac{\mz}{\sqrt{2}s'\pt^2}
+\biggl[ q_t^\mu(\epsilon^{\nu\rho p_2 p_1}-\epsilon^{\nu\rho p_2 p_3})-
+q_u^\nu (\epsilon^{\mu\rho p_1 p_2}-\epsilon^{\mu\rho p_1 p_3})\biggr], \\
+\mathcal{P}_5^{\mu\nu\rho}&=&\frac{1}{\sqrt{6}s'\pt}
+\biggl[ q_t^\mu\epsilon^{\nu\rho p_2 p_3}-q_u^\nu \epsilon^{\mu\rho p_1 p_3}\biggr],\\
+\mathcal{P}_6^{\mu\nu\rho}&=&\frac1{s'\pt}\biggl[
+g^{\mu\nu} \epsilon^{\rho p_1 p_2 p_3}+s' \epsilon^{\mu\nu\rho p_3}+
+p_1^\nu \epsilon^{\mu\rho p_2 p_3}-p_2^\mu \epsilon^{\nu\rho p_1 p_3}-
+\frac{s'}2 \epsilon^{\mu\nu\rho p_2}  \nn \\
+&+&\frac12 \left( p_1^\nu\epsilon^{\mu\rho p_1 p_2}+p_2^\mu \epsilon^{\nu\rho p_1 p_2}+
+q_u^\nu \epsilon^{\mu\rho p_1 p_3}-q_t^\mu \epsilon^{\nu\rho p_2 p_3}
+- s' \epsilon^{\mu\nu\rho p_1} \right) \nn \\
+&+& \frac{\mz^2}{2\pt^2} (q_t^\mu\epsilon^{\nu\rho p_2 p_1}-
+q_u^\nu\epsilon^{\mu\rho p_1 p_2}+ q_u^\nu \epsilon^{\mu\rho p_1 p_3}-
+q_t^\mu \epsilon^{\nu\rho p_2 p_3})\biggr]~,
+\eea
+where we defined $q_t^\mu=(p_3^\mu-\frac{t'}{s'} p_2^\mu)$ and $q_u^\nu=(p_3^\nu-\frac{u'}{s'} p_1^\nu)$ and we used the shorthand notation $\epsilon^{\mu\nu\rho p_2}\equiv \epsilon^{\mu\nu\rho\sigma}p_2^\sigma$.
+
+Using these projectors we obtained the relations between the form factors
+$\amp_i$ defined in in eq.(\ref{eq:amp}) and those defined in
+section 2 of ref.\cite{Davies:2020drs}:
+\bea
+\amp_1&=&\frac{\pt^2}{2\sqrt{2}\mz(\pt^2+\mz^2)}
+\biggl[ (t'+u')F_{12}^+-(t'-u')F_{12}^- \biggr], \\
+\amp_2&=&-\frac{\pt}{2\sqrt{2}(\pt^2+\mz^2)} \biggl[
+(t'+u')F_{12}^+-(t'-u')F_{12}^- \nn \\
+&-&\frac{\pt^2+\mz^2}{2 s'}((t'+u')F_{3}^+-(t'-u')F_{3}^-) \biggr],\\
+\amp_3&=&\frac{\pt}{2\sqrt{3}(\pt^2+\mz^2)} \biggl[
+(t'+u')F_{12}^--(t'-u')F_{12}^+ \nn \\
+&+& (\pt^2+\mz^2)(F_{2}^-+F_4) \biggr],\\
+\amp_4&=&-\frac{\mz}{2\sqrt{2}(\pt^2+\mz^2)} \biggr[
+(t'+u')F_{12}^--(t'-u')F_{12}^+ \nn \\
+&+&(\pt^2+\mz^2)\left( (1-\frac{\pt^2}{\mz^2})F_2^-+2F_4 \right) \biggl],\\
+\amp_5&=&\frac{\pt}{2\sqrt{6}(\pt^2+\mz^2)} \biggr[
+(t'+u')F_{12}^--(t'-u')F_{12}^+ \nn \\
+&+& (\pt^2+\mz^2) \left(
+4(F_2^-+F_4)+\frac{3}{2s'}\left( (t'+u')F_{3}^--(t'-u')F_{3}^+ \right) \right)
+\biggr],\nn\\
+&& \\
+\amp_6&=&\frac{\pt}{2}F_4.
+\eea
+%%%
+\section{Two-loop Results}
+\label{app:due}
+
+The NLO amplitude can be written in terms of three contributions,
+namely the two-loop 1PI triangle, the two-loop 1PI box and the
+reducible double-triangle diagrams,
+\begin{equation}
+	\mathcal{A}_{i}^{(1)} = \mathcal{A}_{i}^{(1, \triangle) } +
+	\mathcal{A}_{i}^{(1, \square) } + \mathcal{A}_{i}^{(1, \bowtie) }~.
+\end{equation}
+We present here  the exact results for the  
+double-triangle and triangle contributions to all the form factors. We find
+\bea
+\mathcal{A}_{1}^{(1, \bowtie)} &=& -\frac{\mt^2 \pt^2}{4 \sqrt{2}~ \mz \left(\mz^2+\pt^2\right)^2} \Biggl[ F_t(\hat{t}) \left(G_t(\hat{t},\hat{u})-G_b(\hat{t},\hat{u})\right)+ (\hat{t} \leftrightarrow \hat{u}) \Biggr], \\
+\mathcal{A}_{2}^{(1, \bowtie)} &=& \frac{\mt^2 \pt}{4 \sqrt{2} \left(\mz^2+\pt^2\right)^2}  \Biggl[ F_t(\hat{t}) \left(G_t(\hat{t},\hat{u})-G_b(\hat{t},\hat{u})\right)+ (\hat{t} \leftrightarrow \hat{u})\Biggr], \\
+\mathcal{A}_{3}^{(1, \bowtie)} &=& \frac{\mt^2 \pt}{4 \sqrt{3} ~ \hat{s} \left(\mz^2+\pt^2\right)^2} \Biggl[\left(\mh^2-\hat{t}\right) F_t(\hat{t}) \left(G_t(\hat{t},\hat{u})-G_b(\hat{t},\hat{u})\right)- (\hat{t} \leftrightarrow \hat{u})\Biggr], \nn\\
+&&\\
+\mathcal{A}_{4}^{(1, \bowtie)} &=& -\frac{\mt^2}{4 \sqrt{2} ~ \mz  \hat{s}^2 \left(\mz^2+\pt^2\right)^2} \Biggl[ \Bigl(\mz^2 \left(\mh^2-\hat{t}\right)^2\nn \\
+& -&\hat{t} \left(\mz^2-\hat{u}\right)^2\Bigr) F_t(\hat{t})
+\left(G_t(\hat{t},\hat{u})-G_b(\hat{t},\hat{u})\right) 
+- (\hat{t} \leftrightarrow \hat{u})   \Biggr], \\
+\mathcal{A}_{5}^{(1, \bowtie)} &=& -\frac{\mt^2 \pt}{4 \sqrt{6} ~ \hat{s} \left(\mz^2+\pt^2\right)^2} \Biggl[  \left(4 \mz^2-\hat{s}-4
+\hat{u}\right) F_t(\hat{t}) \left(G_t(\hat{t},\hat{u})-G_b(\hat{t},\hat{u})\right)\nn \\
+&-& (\hat{t} \leftrightarrow \hat{u}) \Biggr], \\
+\mathcal{A}_{6}^{(1, \bowtie)} &=&  0,
+\eea
+where
+\bea
+F_t(\hat{t}) &=& \frac{1}{\left(\mh^2-\hat{t}\right)^2}
+\Biggl[2 \hat{t} \Bigl( B_0\left(\hat{t},\mt^2,\mt^2\right)-
+B_0\left(\mh^2,\mt^2,\mt^2\right) \Bigr)\nn \\
+& +&\left(\mh^2-\hat{t}\right)
+\Bigl(\left(\mh^2-4 \mt^2-\hat{t}\right)
+C_0\left(0,\mh^2,\hat{t},\mt^2,\mt^2,\mt^2\right)-2\Bigr)\Biggr], \nn\\
+&&\\
+G_x(\hat{t},\hat{u})   &=& \left(\mz^2-\hat{u}\right)  \Biggl[\mz^2
+\Bigl( B_0\left(\hat{t},m_x^2,m_x^2\right) -
+B_0\left(\mz^2,m_x^2,m_x^2\right) \Bigr) \nn\\
+& +&\left(\hat{t}-\mz^2\right) \Bigl(2 m_x^2
+C_0\left(0,\hat{t},\mz^2,m_x^2,m_x^2,m_x^2\right)+1\Bigr)\Biggr].
+\eea

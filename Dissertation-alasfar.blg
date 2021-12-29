@@ -3,50 +3,84 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: Dissertation-alasfar.aux
 A level-1 auxiliary file: chapters/Part1/Higgs_and_SM.aux
 A level-1 auxiliary file: chapters/Part1/Constraints_on_Higgs.aux
+A level-1 auxiliary file: chapters/Part1/EFT.aux
+A level-1 auxiliary file: chapters/Part2/single_higgs.aux
+A level-1 auxiliary file: chapters/Part2/single_higgs_4tops.aux
+A level-1 auxiliary file: chapters/Part2/hz_nlo.aux
+A level-1 auxiliary file: chapters/Part3/higgs_pair.aux
+A level-1 auxiliary file: chapters/Part3/dihiggs_yukawa_cut.aux
+A level-1 auxiliary file: chapters/Part3/dihiggs_yukawa_bdt.aux
+A level-1 auxiliary file: chapters/Part2/Appendix_hz.aux
 The style file: utphys.bst
 A level-1 auxiliary file: chapters/End/list_of_publications.aux
 Database file #1: bibliography.bib
+Repeated entry---line 1485 of file bibliography.bib
+ : @article{Cepeda:2019klc
+ :                        ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1918 of file bibliography.bib
+ : @article{Hahn:2000kx
+ :                     ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2754 of file bibliography.bib
+ : @article{Bonciani:2018omm
+ :                          ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 3461 of file bibliography.bib
+ : @article{Degrassi:2016vss
+ :                          ,
+I'm skipping whatever remains of this entry
+You're missing a field name---line 3941 of file bibliography.bib
+ :  
+ :  %url = "http://www.sciencedirect.com/science/article/pii/037026938491178X",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 3964 of file bibliography.bib
+ :  
+ :  %url = "http://www.sciencedirect.com/science/article/pii/0550321384903894",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
 Warning--there's a number but no series in minlos2000introduction
 Warning--empty booktitle in Freed1993LecturesOT
-You've used 47 entries,
+You've used 102 entries,
             2328 wiz_defined-function locations,
-            969 strings with 13588 characters,
-and the built_in function-call counts, 15435 in all, are:
-= -- 1692
-> -- 357
+            1428 strings with 25807 characters,
+and the built_in function-call counts, 33588 in all, are:
+= -- 3462
+> -- 999
 < -- 0
-+ -- 139
-- -- 92
-* -- 1443
-:= -- 1790
-add.period$ -- 80
-call.type$ -- 47
-change.case$ -- 74
++ -- 374
+- -- 272
+* -- 3382
+:= -- 3936
+add.period$ -- 158
+call.type$ -- 102
+change.case$ -- 131
 chr.to.int$ -- 0
-cite$ -- 49
-duplicate$ -- 780
-empty$ -- 1545
-format.name$ -- 92
-if$ -- 3998
+cite$ -- 104
+duplicate$ -- 1738
+empty$ -- 3287
+format.name$ -- 272
+if$ -- 8649
 int.to.chr$ -- 0
-int.to.str$ -- 47
-missing$ -- 172
-newline$ -- 150
-num.names$ -- 47
-pop$ -- 211
+int.to.str$ -- 102
+missing$ -- 385
+newline$ -- 353
+num.names$ -- 102
+pop$ -- 472
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 570
+skip$ -- 1250
 stack$ -- 0
-substring$ -- 1087
-swap$ -- 380
+substring$ -- 1941
+swap$ -- 875
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 2
-while$ -- 149
-width$ -- 49
-write$ -- 392
-(There were 2 warnings)
+while$ -- 289
+width$ -- 105
+write$ -- 845
+(There were 6 error messages)

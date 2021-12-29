@@ -1,4 +1,4 @@
-\providecommand{\href}[2]{#2}\begingroup\raggedright\begin{thebibliography}{10}
+\providecommand{\href}[2]{#2}\begingroup\raggedright\begin{thebibliography}{100}
 
 \bibitem{minlos2000introduction}
 R.~A. Minlos, {\em Introduction to mathematical statistical physics}.
@@ -293,5 +293,397 @@ E.~H. Simmons, R.~S. Chivukula, and J.~Terning, ``{Testing extended technicolor
   with R(b)},'' \href{http://dx.doi.org/10.1143/PTPS.123.87}{{\em Prog. Theor.
   Phys. Suppl.} {\bfseries 123} (1996) 87--96},
   \href{http://arxiv.org/abs/hep-ph/9509392}{{\ttfamily arXiv:hep-ph/9509392}}.
+
+\bibitem{Aaboud:2018zhk}
+{\bfseries ATLAS} Collaboration, M.~Aaboud {\em et~al.}, ``{Observation of $H
+  \rightarrow b\bar{b}$ decays and $VH$ production with the ATLAS detector},''
+  \href{http://dx.doi.org/10.1016/j.physletb.2018.09.013}{{\em Phys. Lett. B}
+  {\bfseries 786} (2018) 59--86},
+  \href{http://arxiv.org/abs/1808.08238}{{\ttfamily arXiv:1808.08238
+  [hep-ex]}}.
+
+\bibitem{Sirunyan:2018kst}
+{\bfseries CMS} Collaboration, A.~M. Sirunyan {\em et~al.}, ``{Observation of
+  Higgs boson decay to bottom quarks},''
+  \href{http://dx.doi.org/10.1103/PhysRevLett.121.121801}{{\em Phys. Rev.
+  Lett.} {\bfseries 121} no.~12, (2018) 121801},
+  \href{http://arxiv.org/abs/1808.08242}{{\ttfamily arXiv:1808.08242
+  [hep-ex]}}.
+
+\bibitem{Han:1991ia}
+T.~Han and S.~Willenbrock, ``{QCD correction to the p p ---\ensuremath{>} W H
+  and Z H total cross-sections},''
+  \href{http://dx.doi.org/10.1016/0370-2693(91)90572-8}{{\em Phys. Lett. B}
+  {\bfseries 273} (1991) 167--172}.
+
+\bibitem{Brein:2003wg}
+O.~Brein, A.~Djouadi, and R.~Harlander, ``{NNLO QCD corrections to the
+  Higgs-strahlung processes at hadron colliders},''
+  \href{http://dx.doi.org/10.1016/j.physletb.2003.10.112}{{\em Phys. Lett. B}
+  {\bfseries 579} (2004) 149--156},
+  \href{http://arxiv.org/abs/hep-ph/0307206}{{\ttfamily arXiv:hep-ph/0307206}}.
+
+\bibitem{Amoroso:2020lgh}
+S.~Amoroso {\em et~al.}, ``{Les Houches 2019: Physics at TeV Colliders:
+  Standard Model Working Group Report},'' in {\em {11th Les Houches Workshop on
+  Physics at TeV Colliders}: {PhysTeV Les Houches}}.
+\newblock 3, 2020.
+\newblock \href{http://arxiv.org/abs/2003.01700}{{\ttfamily arXiv:2003.01700
+  [hep-ph]}}.
+
+\bibitem{Cepeda:2019klc}
+M.~Cepeda {\em et~al.}, ``{Report from Working Group 2}: {Higgs Physics at the
+  HL-LHC and HE-LHC},''
+  \href{http://dx.doi.org/10.23731/CYRM-2019-007.221}{{\em CERN Yellow Rep.
+  Monogr.} {\bfseries 7} (2019) 221--584},
+  \href{http://arxiv.org/abs/1902.00134}{{\ttfamily arXiv:1902.00134
+  [hep-ph]}}.
+
+\bibitem{Englert:2013vua}
+C.~Englert, M.~McCullough, and M.~Spannowsky, ``{Gluon-initiated associated
+  production boosts Higgs physics},''
+  \href{http://dx.doi.org/10.1103/PhysRevD.89.013013}{{\em Phys. Rev. D}
+  {\bfseries 89} no.~1, (2014) 013013},
+  \href{http://arxiv.org/abs/1310.4828}{{\ttfamily arXiv:1310.4828 [hep-ph]}}.
+
+\bibitem{Englert:2016hvy}
+C.~Englert, R.~Rosenfeld, M.~Spannowsky, and A.~Tonero, ``{New physics and
+  signal-background interference in associated $pp\to HZ$ production},''
+  \href{http://dx.doi.org/10.1209/0295-5075/114/31001}{{\em EPL} {\bfseries
+  114} no.~3, (2016) 31001}, \href{http://arxiv.org/abs/1603.05304}{{\ttfamily
+  arXiv:1603.05304 [hep-ph]}}.
+
+\bibitem{Harlander:2013mla}
+R.~V. Harlander, S.~Liebler, and T.~Zirke, ``{Higgs Strahlung at the Large
+  Hadron Collider in the 2-Higgs-Doublet Model},''
+  \href{http://dx.doi.org/10.1007/JHEP02(2014)023}{{\em JHEP} {\bfseries 02}
+  (2014) 023}, \href{http://arxiv.org/abs/1307.8122}{{\ttfamily arXiv:1307.8122
+  [hep-ph]}}.
+
+\bibitem{Kniehl:1990iva}
+B.~A. Kniehl, ``{Associated Production of Higgs and Z Bosons From Gluon Fusion
+  in Hadron Collisions},''
+  \href{http://dx.doi.org/10.1103/PhysRevD.42.2253}{{\em Phys. Rev. D}
+  {\bfseries 42} (1990) 2253--2258}.
+
+\bibitem{Dicus:1988yh}
+D.~A. Dicus and C.~Kao, ``{Higgs Boson - $Z^0$ Production From Gluon Fusion},''
+  \href{http://dx.doi.org/10.1103/PhysRevD.38.1008}{{\em Phys. Rev. D}
+  {\bfseries 38} (1988) 1008}. [Erratum: Phys.Rev.D 42, 2412 (1990)].
+
+\bibitem{Altenkamp:2012sx}
+L.~Altenkamp, S.~Dittmaier, R.~V. Harlander, H.~Rzehak, and T.~J. Zirke,
+  ``{Gluon-induced Higgs-strahlung at next-to-leading order QCD},''
+  \href{http://dx.doi.org/10.1007/JHEP02(2013)078}{{\em JHEP} {\bfseries 02}
+  (2013) 078}, \href{http://arxiv.org/abs/1211.5015}{{\ttfamily arXiv:1211.5015
+  [hep-ph]}}.
+
+\bibitem{Harlander:2014wda}
+R.~V. Harlander, A.~Kulesza, V.~Theeuwes, and T.~Zirke, ``{Soft gluon
+  resummation for gluon-induced Higgs Strahlung},''
+  \href{http://dx.doi.org/10.1007/JHEP11(2014)082}{{\em JHEP} {\bfseries 11}
+  (2014) 082}, \href{http://arxiv.org/abs/1410.0217}{{\ttfamily arXiv:1410.0217
+  [hep-ph]}}.
+
+\bibitem{Hasselhuhn:2016rqt}
+A.~Hasselhuhn, T.~Luthe, and M.~Steinhauser, ``{On top quark mass effects to
+  $gg\to ZH$ at NLO},'' \href{http://dx.doi.org/10.1007/JHEP01(2017)073}{{\em
+  JHEP} {\bfseries 01} (2017) 073},
+  \href{http://arxiv.org/abs/1611.05881}{{\ttfamily arXiv:1611.05881
+  [hep-ph]}}.
+
+\bibitem{Harlander:2018yns}
+R.~Harlander, J.~Klappert, C.~Pandini, and A.~Papaefstathiou, ``{Exploiting the
+  WH/ZH symmetry in the search for New Physics},''
+  \href{http://dx.doi.org/10.1140/epjc/s10052-018-6234-x}{{\em Eur. Phys. J. C}
+  {\bfseries 78} no.~9, (2018) 760},
+  \href{http://arxiv.org/abs/1804.02299}{{\ttfamily arXiv:1804.02299
+  [hep-ph]}}.
+
+\bibitem{Hespel:2015zea}
+B.~Hespel, F.~Maltoni, and E.~Vryonidou, ``{Higgs and Z boson associated
+  production via gluon fusion in the SM and the 2HDM},''
+  \href{http://dx.doi.org/10.1007/JHEP06(2015)065}{{\em JHEP} {\bfseries 06}
+  (2015) 065}, \href{http://arxiv.org/abs/1503.01656}{{\ttfamily
+  arXiv:1503.01656 [hep-ph]}}.
+
+\bibitem{Davies:2020drs}
+J.~Davies, G.~Mishima, and M.~Steinhauser, ``{Virtual corrections to $gg\to ZH$
+  in the high-energy and large-$m_t$ limits},''
+  \href{http://arxiv.org/abs/2011.12314}{{\ttfamily arXiv:2011.12314
+  [hep-ph]}}.
+
+\bibitem{Chen:2020gae}
+L.~Chen, G.~Heinrich, S.~P. Jones, M.~Kerner, J.~Klappert, and J.~Schlenk,
+  ``{$ZH$ production in gluon fusion: two-loop amplitudes with full top quark
+  mass dependence},'' \href{http://arxiv.org/abs/2011.12325}{{\ttfamily
+  arXiv:2011.12325 [hep-ph]}}.
+
+\bibitem{Bonciani:2018omm}
+R.~Bonciani, G.~Degrassi, P.~P. Giardino, and R.~Gr\"ober, ``{Analytical Method
+  for Next-to-Leading-Order QCD Corrections to Double-Higgs Production},''
+  \href{http://dx.doi.org/10.1103/PhysRevLett.121.162003}{{\em Phys. Rev.
+  Lett.} {\bfseries 121} no.~16, (2018) 162003},
+  \href{http://arxiv.org/abs/1806.11564}{{\ttfamily arXiv:1806.11564
+  [hep-ph]}}.
+
+\bibitem{Landau:1948kw}
+L.~D. Landau, ``{On the angular momentum of a system of two photons},''
+  \href{http://dx.doi.org/10.1016/B978-0-08-010586-4.50070-5}{{\em Dokl. Akad.
+  Nauk SSSR} {\bfseries 60} no.~2, (1948) 207--209}.
+
+\bibitem{Yang:1950rg}
+C.-N. Yang, ``{Selection Rules for the Dematerialization of a Particle Into Two
+  Photons},'' \href{http://dx.doi.org/10.1103/PhysRev.77.242}{{\em Phys. Rev.}
+  {\bfseries 77} (1950) 242--245}.
+
+\bibitem{Spira:1995rr}
+M.~Spira, A.~Djouadi, D.~Graudenz, and P.~M. Zerwas, ``{Higgs boson production
+  at the LHC},'' \href{http://dx.doi.org/10.1016/0550-3213(95)00379-7}{{\em
+  Nucl. Phys. B} {\bfseries 453} (1995) 17--82},
+  \href{http://arxiv.org/abs/hep-ph/9504378}{{\ttfamily arXiv:hep-ph/9504378}}.
+
+\bibitem{Aglietti:2006tp}
+U.~Aglietti, R.~Bonciani, G.~Degrassi, and A.~Vicini, ``{Analytic Results for
+  Virtual QCD Corrections to Higgs Production and Decay},''
+  \href{http://dx.doi.org/10.1088/1126-6708/2007/01/021}{{\em JHEP} {\bfseries
+  01} (2007) 021}, \href{http://arxiv.org/abs/hep-ph/0611266}{{\ttfamily
+  arXiv:hep-ph/0611266}}.
+
+\bibitem{Degrassi:2010eu}
+G.~Degrassi and P.~Slavich, ``{NLO QCD bottom corrections to Higgs boson
+  production in the MSSM},''
+  \href{http://dx.doi.org/10.1007/JHEP11(2010)044}{{\em JHEP} {\bfseries 11}
+  (2010) 044}, \href{http://arxiv.org/abs/1007.3465}{{\ttfamily arXiv:1007.3465
+  [hep-ph]}}.
+
+\bibitem{Passarino:1978jh}
+G.~Passarino and M.~J.~G. Veltman, ``{One Loop corrections for $e^+ e^-$
+  annihilation into $\mu^+ \mu^-$ in the Weinberg Model},''
+\href{http://dx.doi.org/10.1016/0550-3213(79)90234-7}{{\em Nucl. Phys.}
+  {\bfseries B160} (1979) 151}.
+%%CITATION = NUPHA,B160,151;%%.
+
+\bibitem{Hahn:2000kx}
+T.~Hahn, ``{Generating Feynman diagrams and amplitudes with FeynArts 3},''
+  \href{http://dx.doi.org/10.1016/S0010-4655(01)00290-9}{{\em Comput. Phys.
+  Commun.} {\bfseries 140} (2001) 418--431},
+  \href{http://arxiv.org/abs/hep-ph/0012260}{{\ttfamily arXiv:hep-ph/0012260}}.
+
+\bibitem{Mertig:1990an}
+R.~Mertig, M.~Bohm, and A.~Denner, ``{FEYN CALC: Computer algebraic calculation
+  of Feynman amplitudes},''
+  \href{http://dx.doi.org/10.1016/0010-4655(91)90130-D}{{\em Comput. Phys.
+  Commun.} {\bfseries 64} (1991) 345--359}.
+
+\bibitem{Shtabovenko:2016sxi}
+V.~Shtabovenko, R.~Mertig, and F.~Orellana, ``{New Developments in FeynCalc
+  9.0},'' \href{http://dx.doi.org/10.1016/j.cpc.2016.06.008}{{\em Comput. Phys.
+  Commun.} {\bfseries 207} (2016) 432--444},
+  \href{http://arxiv.org/abs/1601.01167}{{\ttfamily arXiv:1601.01167
+  [hep-ph]}}.
+
+\bibitem{Larin:1993tq}
+S.~Larin, ``{The Renormalization of the axial anomaly in dimensional
+  regularization},'' \href{http://dx.doi.org/10.1016/0370-2693(93)90053-K}{{\em
+  Phys. Lett. B} {\bfseries 303} (1993) 113--118},
+  \href{http://arxiv.org/abs/hep-ph/9302240}{{\ttfamily arXiv:hep-ph/9302240}}.
+
+\bibitem{Degrassi:2011vq}
+G.~Degrassi, S.~Di~Vita, and P.~Slavich, ``{NLO QCD corrections to pseudoscalar
+  Higgs production in the MSSM},''
+  \href{http://dx.doi.org/10.1007/JHEP08(2011)128}{{\em JHEP} {\bfseries 08}
+  (2011) 128}, \href{http://arxiv.org/abs/1107.0914}{{\ttfamily arXiv:1107.0914
+  [hep-ph]}}.
+
+\bibitem{Abbott:1980hw}
+L.~F. Abbott, ``{The Background Field Method Beyond One Loop},''
+  \href{http://dx.doi.org/10.1016/0550-3213(81)90371-0}{{\em Nucl. Phys. B}
+  {\bfseries 185} (1981) 189--203}.
+
+\bibitem{Smirnov:2014hma}
+A.~V. Smirnov, ``{FIRE5: a C++ implementation of Feynman Integral REduction},''
+  \href{http://dx.doi.org/10.1016/j.cpc.2014.11.024}{{\em Comput. Phys.
+  Commun.} {\bfseries 189} (2015) 182--191},
+  \href{http://arxiv.org/abs/1408.2372}{{\ttfamily arXiv:1408.2372 [hep-ph]}}.
+
+\bibitem{Lee:2013mka}
+R.~N. Lee, ``{LiteRed 1.4: a powerful tool for reduction of multiloop
+  integrals},'' \href{http://dx.doi.org/10.1088/1742-6596/523/1/012059}{{\em J.
+  Phys. Conf. Ser.} {\bfseries 523} (2014) 012059},
+  \href{http://arxiv.org/abs/1310.1145}{{\ttfamily arXiv:1310.1145 [hep-ph]}}.
+
+\bibitem{vonManteuffel:2017hms}
+A.~von Manteuffel and L.~Tancredi, ``{A non-planar two-loop three-point
+  function beyond multiple polylogarithms},''
+  \href{http://dx.doi.org/10.1007/JHEP06(2017)127}{{\em JHEP} {\bfseries 06}
+  (2017) 127}, \href{http://arxiv.org/abs/1701.05905}{{\ttfamily
+  arXiv:1701.05905 [hep-ph]}}.
+
+\bibitem{Bonciani:2018uvv}
+R.~Bonciani, G.~Degrassi, P.~P. Giardino, and R.~Gr\"ober, ``{A Numerical
+  Routine for the Crossed Vertex Diagram with a Massive-Particle Loop},''
+  \href{http://dx.doi.org/10.1016/j.cpc.2019.03.014}{{\em Comput. Phys.
+  Commun.} {\bfseries 241} (2019) 122--131},
+  \href{http://arxiv.org/abs/1812.02698}{{\ttfamily arXiv:1812.02698
+  [hep-ph]}}.
+
+\bibitem{Degrassi:2016vss}
+G.~Degrassi, P.~P. Giardino, and R.~Gr\"ober, ``{On the two-loop virtual QCD
+  corrections to Higgs boson pair production in the Standard Model},''
+  \href{http://dx.doi.org/10.1140/epjc/s10052-016-4256-9}{{\em Eur. Phys. J. C}
+  {\bfseries 76} no.~7, (2016) 411},
+  \href{http://arxiv.org/abs/1603.00385}{{\ttfamily arXiv:1603.00385
+  [hep-ph]}}.
+
+\bibitem{EBOLI1987269}
+O.~Eboli, G.~Marques, S.~Novaes, and A.~Natale, ``Twin higgs-boson
+  production,''
+  \href{http://dx.doi.org/https://doi.org/10.1016/0370-2693(87)90381-9}{{\em
+  Physics Letters B} {\bfseries 197} no.~1, (1987) 269 -- 272}.
+
+\bibitem{GLOVER1988282}
+E.~Glover and J.~van~der Bij, ``Higgs boson pair production via gluon fusion,''
+  \href{http://dx.doi.org/https://doi.org/10.1016/0550-3213(88)90083-1}{{\em
+  Nuclear Physics B} {\bfseries 309} no.~2, (1988) 282 -- 294}.
+
+\bibitem{DICUS1988457}
+D.~A. Dicus, C.~Kao, and S.~S.~D. Willenbrock, ``{Higgs Boson Pair Production
+  From Gluon Fusion},''
+\href{http://dx.doi.org/10.1016/0370-2693(88)90202-X}{{\em Phys. Lett.}
+  {\bfseries B203} (1988) 457--461}.
+%%CITATION = PHLTA,B203,457;%%.
+
+\bibitem{Plehn:1996wb}
+T.~Plehn, M.~Spira, and P.~M. Zerwas, ``{Pair production of neutral Higgs
+  particles in gluon-gluon collisions},''
+  \href{http://dx.doi.org/10.1016/0550-3213(96)00418-X,
+  10.1016/S0550-3213(98)00406-4}{{\em Nucl. Phys.} {\bfseries B479} (1996)
+  46--64}, \href{http://arxiv.org/abs/hep-ph/9603205}{{\ttfamily
+  arXiv:hep-ph/9603205 [hep-ph]}}.
+[Erratum: Nucl. Phys.B531,655(1998)].
+%%CITATION = HEP-PH/9603205;%%.
+
+\bibitem{Dawson:1998py}
+S.~Dawson, S.~Dittmaier, and M.~Spira, ``{Neutral Higgs boson pair production
+  at hadron colliders: QCD corrections},''
+  \href{http://dx.doi.org/10.1103/PhysRevD.58.115012}{{\em Phys. Rev.}
+  {\bfseries D58} (1998) 115012},
+\href{http://arxiv.org/abs/hep-ph/9805244}{{\ttfamily arXiv:hep-ph/9805244
+  [hep-ph]}}.
+%%CITATION = HEP-PH/9805244;%%.
+
+\bibitem{Borowka:2016ypz}
+S.~Borowka, N.~Greiner, G.~Heinrich, S.~P. Jones, M.~Kerner, J.~Schlenk, and
+  T.~Zirke, ``{Full top quark mass dependence in Higgs boson pair production at
+  NLO},'' \href{http://dx.doi.org/10.1007/JHEP10(2016)107}{{\em JHEP}
+  {\bfseries 10} (2016) 107},
+\href{http://arxiv.org/abs/1608.04798}{{\ttfamily arXiv:1608.04798 [hep-ph]}}.
+%%CITATION = ARXIV:1608.04798;%%.
+
+\bibitem{Borowka:2016ehy}
+S.~Borowka, N.~Greiner, G.~Heinrich, S.~P. Jones, M.~Kerner, J.~Schlenk,
+  U.~Schubert, and T.~Zirke, ``{Higgs Boson Pair Production in Gluon Fusion at
+  Next-to-Leading Order with Full Top-Quark Mass Dependence},''
+  \href{http://dx.doi.org/10.1103/PhysRevLett.117.079901,
+  10.1103/PhysRevLett.117.012001}{{\em Phys. Rev. Lett.} {\bfseries 117} no.~1,
+  (2016) 012001}, \href{http://arxiv.org/abs/1604.06447}{{\ttfamily
+  arXiv:1604.06447 [hep-ph]}}.
+[Erratum: Phys. Rev. Lett.117,no.7,079901(2016)].
+%%CITATION = ARXIV:1604.06447;%%.
+
+\bibitem{Baglio:2018lrj}
+J.~Baglio, F.~Campanario, S.~Glaus, M.~Mühlleitner, M.~Spira, and
+  J.~Streicher, ``{Gluon fusion into Higgs pairs at NLO QCD and the top mass
+  scheme},'' \href{http://dx.doi.org/10.1140/epjc/s10052-019-6973-3}{{\em Eur.
+  Phys. J.} {\bfseries C79} no.~6, (2019) 459},
+\href{http://arxiv.org/abs/1811.05692}{{\ttfamily arXiv:1811.05692 [hep-ph]}}.
+%%CITATION = ARXIV:1811.05692;%%.
+
+\bibitem{Heinrich:2019bkc}
+G.~Heinrich, S.~P. Jones, M.~Kerner, G.~Luisoni, and L.~Scyboz, ``{Probing the
+  trilinear Higgs boson coupling in di-Higgs production at NLO QCD including
+  parton shower effects},''
+  \href{http://dx.doi.org/10.1007/JHEP06(2019)066}{{\em JHEP} {\bfseries 06}
+  (2019) 066},
+\href{http://arxiv.org/abs/1903.08137}{{\ttfamily arXiv:1903.08137 [hep-ph]}}.
+%%CITATION = ARXIV:1903.08137;%%.
+
+\bibitem{Davies:2019nhm}
+J.~Davies, R.~Gröber, A.~Maier, T.~Rauh, and M.~Steinhauser, ``{Top quark mass
+  dependence of the Higgs boson-gluon form factor at three loops},''
+  \href{http://dx.doi.org/10.1103/PhysRevD.100.034017}{{\em Phys. Rev.}
+  {\bfseries D100} no.~3, (2019) 034017},
+\href{http://arxiv.org/abs/1906.00982}{{\ttfamily arXiv:1906.00982 [hep-ph]}}.
+%%CITATION = ARXIV:1906.00982;%%.
+
+\bibitem{Grazzini:2018bsd}
+M.~Grazzini, G.~Heinrich, S.~Jones, S.~Kallweit, M.~Kerner, J.~M. Lindert, and
+  J.~Mazzitelli, ``{Higgs boson pair production at NNLO with top quark mass
+  effects},'' \href{http://dx.doi.org/10.1007/JHEP05(2018)059}{{\em JHEP}
+  {\bfseries 05} (2018) 059},
+\href{http://arxiv.org/abs/1803.02463}{{\ttfamily arXiv:1803.02463 [hep-ph]}}.
+%%CITATION = ARXIV:1803.02463;%%.
+
+\bibitem{Ball:2017nwa}
+{\bfseries NNPDF} Collaboration, R.~D. Ball {\em et~al.}, ``{Parton
+  distributions from high-precision collider data},''
+  \href{http://dx.doi.org/10.1140/epjc/s10052-017-5199-5}{{\em Eur. Phys. J.}
+  {\bfseries C77} no.~10, (2017) 663},
+\href{http://arxiv.org/abs/1706.00428}{{\ttfamily arXiv:1706.00428 [hep-ph]}}.
+%%CITATION = ARXIV:1706.00428;%%.
+
+\bibitem{Buckley:2014ana}
+A.~Buckley, J.~Ferrando, S.~Lloyd, K.~Nordström, B.~Page, M.~Rüfenacht,
+  M.~Schönherr, and G.~Watt, ``{LHAPDF6: parton density access in the LHC
+  precision era},''
+  \href{http://dx.doi.org/10.1140/epjc/s10052-015-3318-8}{{\em Eur. Phys. J.}
+  {\bfseries C75} (2015) 132},
+\href{http://arxiv.org/abs/1412.7420}{{\ttfamily arXiv:1412.7420 [hep-ph]}}.
+%%CITATION = ARXIV:1412.7420;%%.
+
+\bibitem{Denner:2014gla}
+A.~Denner, S.~Dittmaier, and L.~Hofer, ``{COLLIER - A fortran-library for
+  one-loop integrals},'' \href{http://dx.doi.org/10.22323/1.211.0071}{{\em PoS}
+  {\bfseries LL2014} (2014) 071},
+\href{http://arxiv.org/abs/1407.0087}{{\ttfamily arXiv:1407.0087 [hep-ph]}}.
+%%CITATION = ARXIV:1407.0087;%%.
+
+\bibitem{Dittmaier:2012vm}
+S.~Dittmaier {\em et~al.}, ``{Handbook of LHC Higgs Cross Sections: 2.
+  Differential Distributions},''
+\href{http://arxiv.org/abs/1201.3084}{{\ttfamily arXiv:1201.3084 [hep-ph]}}.
+%%CITATION = ARXIV:1201.3084;%%.
+
+\bibitem{deFlorian:2016spz}
+{\bfseries LHC Higgs Cross Section Working Group} Collaboration, D.~de~Florian
+  {\em et~al.}, ``{Handbook of LHC Higgs Cross Sections: 4. Deciphering the
+  Nature of the Higgs Sector},''
+\href{http://arxiv.org/abs/1610.07922}{{\ttfamily arXiv:1610.07922 [hep-ph]}}.
+%%CITATION = ARXIV:1610.07922;%%.
+
+\bibitem{Martin:2009bu}
+A.~D. Martin, W.~J. Stirling, R.~S. Thorne, and G.~Watt, ``{Uncertainties on
+  alpha(S) in global PDF analyses and implications for predicted hadronic cross
+  sections},'' \href{http://dx.doi.org/10.1140/epjc/s10052-009-1164-2}{{\em
+  Eur. Phys. J.} {\bfseries C64} (2009) 653--680},
+\href{http://arxiv.org/abs/0905.3531}{{\ttfamily arXiv:0905.3531 [hep-ph]}}.
+%%CITATION = ARXIV:0905.3531;%%.
+
+\bibitem{Demartin:2010er}
+F.~Demartin, S.~Forte, E.~Mariani, J.~Rojo, and A.~Vicini, ``{The impact of PDF
+  and alphas uncertainties on Higgs Production in gluon fusion at hadron
+  colliders},'' \href{http://dx.doi.org/10.1103/PhysRevD.82.014002}{{\em Phys.
+  Rev.} {\bfseries D82} (2010) 014002},
+\href{http://arxiv.org/abs/1004.0962}{{\ttfamily arXiv:1004.0962 [hep-ph]}}.
+%%CITATION = ARXIV:1004.0962;%%.
+
+\bibitem{Baglio:2012np}
+J.~Baglio, A.~Djouadi, R.~Gröber, M.~M. Mühlleitner, J.~Quevillon, and
+  M.~Spira, ``{The measurement of the Higgs self-coupling at the LHC:
+  theoretical status},'' \href{http://dx.doi.org/10.1007/JHEP04(2013)151}{{\em
+  JHEP} {\bfseries 04} (2013) 151},
+\href{http://arxiv.org/abs/1212.5581}{{\ttfamily arXiv:1212.5581 [hep-ph]}}.
+%%CITATION = ARXIV:1212.5581;%%.
 
 \end{thebibliography}\endgroup

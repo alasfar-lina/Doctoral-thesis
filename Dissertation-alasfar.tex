@@ -25,8 +25,8 @@
 % Upload:
 %    https://edoc.hu-berlin.de/cgi/dokupload/dokupload.cgi
 
-\documentclass[openright,twoside,headsepline]{scrbook}[2007/12/24]
-
+%\documentclass[openright,twoside,headsepline]{scrbook}[2007/12/24]
+\documentclass[openright,twoside,headsepline]{scrbook}
 % The following package is necessary.
 % To change the default options of the packages, use the key=value interface.
 % See the documentation for details.
@@ -34,11 +34,11 @@
 % within the options, use \hudisssetup{} after loading this package,
 % otherwise they will NOT work correctly.
 \usepackage[
-    inputenc=applemac, % default - latin1
+    inputenc=utf8, % default - latin1
     fontset=lmodern, % other possible parameters: lmodern, times, palatino
-%    natbib={round,authoryear}, %include to use the natbib-package % sort sortiert nach Name
-    % jurabib={}, %include to use the jurabib-package
-    % apacite={}, %include to use the apacite-package
+    %natbib={round,authoryear}, %include to use the natbib-package % sort sortiert nach Name
+  %   jurabib={}, %include to use the jurabib-package
+   %  apacite={}, %include to use the apacite-package
     hints=false, % set to 'false' for submission
     checktabu=false, % set to 'false' for submission
     draft=false, % set to 'false' for submission
@@ -86,7 +86,8 @@
 % put ALL of them in the following file:
 \input{adjustment.tex}
 
-
+%\usepackage[T1]{fontenc}
+%
 % The order of the parts in the document is only our suggestion,
 % you can change it, if you wish.
 % Don't put any other text between those commands.
@@ -119,13 +120,25 @@
         \part{Higgs Physics}
         \include{chapters/Part1/Higgs_and_SM}       
         \include{chapters/Part1/Constraints_on_Higgs}       
-        % Part 2 Constraints_on_Higgs
-        %\include{chapters/Part3/01-Introduction}
+        \include{chapters/Part1/EFT}       
+        % Part 2
+        \part{Single Higgs Processes at the LHC }
+        \include{chapters/Part2/single_higgs}
+         \include{chapters/Part2/single_higgs_4tops}
+        \include{chapters/Part2/hz_nlo}
+         % Part 3
+        \part{Higgs Pair at Hadron Colliders }
+        \include{chapters/Part3/higgs_pair}
+        \include{chapters/Part3/dihiggs_yukawa_cut}
+        \include{chapters/Part3/dihiggs_yukawa_bdt}
         %\include{chapters/Part3/10-Conclusion}
-
+      %  \part{Flavour Physics }
+         % \include{chapters/Part4/higgs_flavour}
+          %\include{chapters/Part4/flavour_anomalies}
     %\backmatter
+      % \include{chapters/End/conclusion}
         \appendix
-        %\include{chapters/Part4-app/Appendix}
+       \include{chapters/Part2/Appendix_hz}
         %\include{chapters/End/Acknowledgements}
         
         %\nocite{*}                
