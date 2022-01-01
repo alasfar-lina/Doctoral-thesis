@@ -8,41 +8,37 @@
 \BOOKMARK [2][-]{subsection.1.4.1}{1.4.1 Custodial symmetry}{section.1.4}% 8
 \BOOKMARK [0][-]{chapter.2}{2 Constraints on the Higgs properties}{part.1}% 9
 \BOOKMARK [1][-]{section.2.1}{2.1 Theoretical constraints}{chapter.2}% 10
-\BOOKMARK [1][-]{section.2.2}{2.2 Experimental}{chapter.2}% 11
-\BOOKMARK [0][-]{chapter.3}{3 Higgs and effective field theories}{part.1}% 12
-\BOOKMARK [-1][-]{part.2}{II Single Higgs Processes at the LHC}{}% 13
-\BOOKMARK [0][-]{chapter.4}{4 Overview of Higgs production at colliders}{part.2}% 14
-\BOOKMARK [0][-]{chapter.5}{5 Four top operator in Higgs production and decay}{part.2}% 15
-\BOOKMARK [1][-]{section.5.1}{5.1 Introduction}{chapter.5}% 16
-\BOOKMARK [1][-]{section.5.2}{5.2 Notation }{chapter.5}% 17
-\BOOKMARK [1][-]{section.5.3}{5.3 Contribution of four-fermion operators to Higgs production and decay }{chapter.5}% 18
-\BOOKMARK [2][-]{subsection.5.3.1}{5.3.1 Higgs coupling to gluons and photons}{section.5.3}% 19
-\BOOKMARK [2][-]{subsection.5.3.2}{5.3.2 Higgs decay to bottom quarks}{section.5.3}% 20
-\BOOKMARK [2][-]{subsection.5.3.3}{5.3.3 Associated production of a Higgs boson with top quarks}{section.5.3}% 21
-\BOOKMARK [2][-]{subsection.5.3.4}{5.3.4 Results}{section.5.3}% 22
-\BOOKMARK [1][-]{section.5.4}{5.4 Fit to Higgs observables }{chapter.5}% 23
-\BOOKMARK [2][-]{subsection.5.4.1}{5.4.1 Fit methodology}{section.5.4}% 24
-\BOOKMARK [2][-]{subsection.5.4.2}{5.4.2 Fit to LHC Run-II data}{section.5.4}% 25
-\BOOKMARK [2][-]{subsection.5.4.3}{5.4.3 Prospects for HL-LHC}{section.5.4}% 26
-\BOOKMARK [1][-]{section.5.5}{5.5 Summary and discussion }{chapter.5}% 27
-\BOOKMARK [1][-]{section.5.6}{5.6 Two parameter fits }{chapter.5}% 28
-\BOOKMARK [0][-]{chapter.6}{6 Associated Zh production via gluon fusion at NLO}{part.2}% 29
-\BOOKMARK [1][-]{section.6.1}{6.1 General notation }{chapter.6}% 30
-\BOOKMARK [1][-]{section.6.2}{6.2 The transverse momentum expansion}{chapter.6}% 31
-\BOOKMARK [1][-]{section.6.3}{6.3 LO Comparison}{chapter.6}% 32
-\BOOKMARK [1][-]{section.6.4}{6.4 NLO calculation}{chapter.6}% 33
-\BOOKMARK [2][-]{subsection.6.4.1}{6.4.1 Gluon wavefunction}{section.6.4}% 34
-\BOOKMARK [2][-]{subsection.6.4.2}{6.4.2 Strong coupling constant}{section.6.4}% 35
-\BOOKMARK [2][-]{subsection.6.4.3}{6.4.3 Top mass}{section.6.4}% 36
-\BOOKMARK [2][-]{subsection.6.4.4}{6.4.4 Larin counter-term}{section.6.4}% 37
-\BOOKMARK [2][-]{subsection.6.4.5}{6.4.5 All terms together}{section.6.4}% 38
-\BOOKMARK [1][-]{section.6.5}{6.5 IR subtraction}{chapter.6}% 39
-\BOOKMARK [1][-]{section.6.6}{6.6 Outline of the NLO Computation}{chapter.6}% 40
-\BOOKMARK [1][-]{section.6.7}{6.7 Conclusion }{chapter.6}% 41
-\BOOKMARK [-1][-]{part.3}{III Higgs Pair at Hadron Colliders}{}% 42
-\BOOKMARK [0][-]{chapter.7}{7 Overview of Higgs pair production at colliders}{part.3}% 43
-\BOOKMARK [0][-]{chapter.8}{8 Higgs pair as a probe for light Yukawas}{part.3}% 44
-\BOOKMARK [0][-]{chapter.9}{9 Optimised search for Higgs pair via Interpretable machine learning}{part.3}% 45
-\BOOKMARK [0][-]{appendix.A}{A Details of Zh calculation}{part.3}% 46
-\BOOKMARK [1][-]{section.A.1}{A.1 Orthogonal Projectors in gg ZH}{appendix.A}% 47
-\BOOKMARK [1][-]{section.A.2}{A.2 Two-loop Results}{appendix.A}% 48
+\BOOKMARK [2][-]{subsection.2.1.1}{2.1.1 Partial-wave unitarity}{section.2.1}% 11
+\BOOKMARK [1][-]{section.2.2}{2.2 Experimental}{chapter.2}% 12
+\BOOKMARK [0][-]{chapter.3}{3 Higgs and effective field theories}{part.1}% 13
+\BOOKMARK [-1][-]{part.2}{II Single Higgs Processes at the LHC}{}% 14
+\BOOKMARK [0][-]{chapter.4}{4 Overview of Higgs production at colliders}{part.2}% 15
+\BOOKMARK [0][-]{chapter.5}{5 Four top operator in Higgs production and decay}{part.2}% 16
+\BOOKMARK [1][-]{section.5.1}{5.1 Introduction}{chapter.5}% 17
+\BOOKMARK [1][-]{section.5.2}{5.2 Notation }{chapter.5}% 18
+\BOOKMARK [1][-]{section.5.3}{5.3 Contribution of four-fermion operators to Higgs production and decay }{chapter.5}% 19
+\BOOKMARK [2][-]{subsection.5.3.1}{5.3.1 Higgs coupling to gluons and photons}{section.5.3}% 20
+\BOOKMARK [2][-]{subsection.5.3.2}{5.3.2 Higgs decay to bottom quarks}{section.5.3}% 21
+\BOOKMARK [2][-]{subsection.5.3.3}{5.3.3 Associated production of a Higgs boson with top quarks}{section.5.3}% 22
+\BOOKMARK [2][-]{subsection.5.3.4}{5.3.4 Results}{section.5.3}% 23
+\BOOKMARK [1][-]{section.5.4}{5.4 Fit to Higgs observables }{chapter.5}% 24
+\BOOKMARK [2][-]{subsection.5.4.1}{5.4.1 Fit methodology}{section.5.4}% 25
+\BOOKMARK [2][-]{subsection.5.4.2}{5.4.2 Fit to LHC Run-II data}{section.5.4}% 26
+\BOOKMARK [2][-]{subsection.5.4.3}{5.4.3 Prospects for HL-LHC}{section.5.4}% 27
+\BOOKMARK [1][-]{section.5.5}{5.5 Summary and discussion }{chapter.5}% 28
+\BOOKMARK [1][-]{section.5.6}{5.6 Two parameter fits }{chapter.5}% 29
+\BOOKMARK [0][-]{chapter.6}{6 Virtual 2-loop calculation of Zh production via gluon fusion}{part.2}% 30
+\BOOKMARK [1][-]{section.6.1}{6.1 General notation }{chapter.6}% 31
+\BOOKMARK [2][-]{subsection.6.1.1}{6.1.1 The transverse momentum expansion}{section.6.1}% 32
+\BOOKMARK [1][-]{section.6.2}{6.2 Born cross-section in the pT-expansion}{chapter.6}% 33
+\BOOKMARK [1][-]{section.6.3}{6.3 NLO calculation}{chapter.6}% 34
+\BOOKMARK [1][-]{section.6.4}{6.4 NLO results}{chapter.6}% 35
+\BOOKMARK [1][-]{section.6.5}{6.5 Conclusion }{chapter.6}% 36
+\BOOKMARK [-1][-]{part.3}{III Higgs Pair at Hadron Colliders}{}% 37
+\BOOKMARK [0][-]{chapter.7}{7 Overview of Higgs pair production at colliders}{part.3}% 38
+\BOOKMARK [0][-]{chapter.8}{8 Higgs pair as a probe for light Yukawas}{part.3}% 39
+\BOOKMARK [0][-]{chapter.9}{9 Optimised search for Higgs pair via Interpretable machine learning}{part.3}% 40
+\BOOKMARK [1][-]{section.9.1}{9.1 Overview of Light Yukawa searches}{chapter.9}% 41
+\BOOKMARK [0][-]{appendix.A}{A Details of Zh calculation}{part.3}% 42
+\BOOKMARK [1][-]{section.A.1}{A.1 Orthogonal Projectors in gg ZH}{appendix.A}% 43
+\BOOKMARK [1][-]{section.A.2}{A.2 Two-loop Results}{appendix.A}% 44

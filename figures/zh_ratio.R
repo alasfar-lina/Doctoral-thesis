@@ -19,6 +19,7 @@ p1 <- ggplot(df)+
     geom_ribbon(mapping =aes(x=Energy , y= r,ymin=r-drlo,ymax=r+drup),alpha=0.3)+
    ylab(TeX("$\\frac{\\sigma_{gg}}{\\sigma_{q\\bar{q}}}\\,\\, \\lbrack\\%\\rbrack $"))+
    xlab(TeX("$\\sqrt{s}$ $\\lbrack TeV\\rbrack$"))+
-  theme(axis.ticks.length=unit(-0.25, "cm"), axis.ticks.margin=unit(0.5, "cm"))
+  theme(axis.ticks.length=unit(-0.25, "cm"), axis.ticks.margin=unit(0.5, "cm"))+ 
+  coord_cartesian(xlim=c(8, 26), ylim=c(NA, NA))
 
 p1 + theme_linedraw()

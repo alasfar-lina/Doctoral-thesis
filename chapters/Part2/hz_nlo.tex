@@ -1,7 +1,7 @@
 %!TEX encoding = UTF-8 Unicode
 % !TeX spellcheck = en_GB
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\chapter{ Associated $Zh$ production via gluon fusion at NLO }\label{chap:hz}
+\chapter{ Virtual 2-loop calculation of  $Zh$ production via gluon fusion}\label{chap:hz}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\section{Overview}
 \par As we have seen in the previous sections, Higgs couplings to the weak vector bosons, i.e. $Z$ and $W$ is approaching the precision level. Moreover, the associated Higgs production with these bosons is the first channel used to observer the Higgs decaying into beauty quarks   $h \rightarrow b \bar{b}$ by both ATLAS and CMS~\cite{Aaboud:2018zhk, Sirunyan:2018kst}. Hence, the $ Vh$ Higgs production channel is one of the important channels to look for in the future runs of the LHC for better measurement of the $VVh$ coupling as well as Higgs coupling to the beauty quark. As the statistical and systematic uncertainties coming from the experimental setup of the LHC get reduced in the future runs, due to higher integrated luminosity and uprated detectors and analysis techniques. There is a  need to reduce theoretical uncertainties emerging from the perturbative calculations of  cross-sections. In order to achieve that, one should include more terms in the perturbative expansion in the couplings, particularly the string coupling $\alpha_s$. In this chapter, we are interested in the channel $pp\to Zh$, which is quark-initiated tree-level process at LO interpreted as \textbf{Drell-Yan process}~ \cite{Han:1991ia,Brein:2003wg}. This process has been computed up to next-to-next-to-leading-order (NNLO) in QCD ($\sim \alpha_s^2$), and
@@ -13,9 +13,8 @@ and it can receive additional contributions from new particles \cite{Harlander:2
 %%
 \begin{figure}
 	\begin{center}
-		\includegraphics[width=10cm]{./figures/hz_ratio}
-		\caption{Examples of Feynman diagrams contributing to $gg \to ZH$ at  LO and
-			NLO.}
+		\includegraphics[width=9cm]{./figures/Rplot}
+		\caption{The ratio of the $LO$ gluon fusion production cross-section $ gg \to Zh$  $\sigma_{gg}$ with respect to the $NLO$ Drell-Yan process $ q\bar{q} \to Zh$ cross section $\sigma_{q\bar{q}}$ at a $pp$ collider with centre of mass energy $\sqrt{s}$. The error band captures the total theoretical uncertainties on both cross-sections.}
 		\label{fig:hzratio}
 	\end{center}
 \end{figure}
@@ -31,7 +30,7 @@ transverse momentum, $\pt$. This method was first used for Higgs pair production
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{General notation \label{chap6sec:GenNot} }
-The amplitude  $g^\mu_a(p_1)g^\nu_b(p_2)\to Z^\rho(p_3) h(p_4)$ can be written as
+\par The amplitude  $g^\mu_a(p_1)g^\nu_b(p_2)\to Z^\rho(p_3) h(p_4)$ can be written as
 \begin{align}
 &&\amp=i \sqrt{2}\frac{\mz \Gfer \as(\mu_R)}{\pi}\delta_{ab}\epsilon^a_\mu(p_1)
 \epsilon^b_\nu(p_2)\epsilon_\rho(p_3)\hat{\amp}^{\mu\nu\rho}(p_1,p_2,p_3 ),\\
@@ -43,7 +42,9 @@ The amplitude  $g^\mu_a(p_1)g^\nu_b(p_2)\to Z^\rho(p_3) h(p_4)$ can be written a
 where  $\mu_R$ is the renormalisation scale and
 $\epsilon^a_\mu(p_1)\epsilon^b_\nu(p_2)\epsilon_\rho(p_3)$ are the
 polarization vectors of the gluons and the $Z$ boson, respectively.  It is possible to decompose the amplitude into a maximum of $6$ Lorentz structures encapsulated by the 
-tensors $\mathcal{P}_i^{\mu\nu\rho}$, we can choose to an orthogonal basis explicitly shown in~\autoref{app:uno}, such that
+tensors $\mathcal{P}_i^{\mu\nu\rho}$. Due to the presence of the~$\gamma_5$ these projectors are
+proportional to the Levi-Civita total anti-symmetric tensor
+$\epsilon^{\alpha\beta\gamma\delta}$. One can choose to an orthogonal basis explicitly shown in~\autoref{app:uno}, such that
 \begin{equation}
 	\mathcal{P}_i^{\mu\nu\rho} \mathcal{P}_j\,_{\mu\nu\rho} = 0, \,\,\, \,\, \text{for}\, i \neq j 
 \end{equation}
@@ -60,7 +61,6 @@ the partonic Mandelstam variables
 where $\hat{s}+\hat{t}+\hat{u}=\mz^2+\mh^2$ and we took all the momenta to
 be incoming. By Bosonic symmetries, the form
 The form-factors~ $\amp_i$ can be perturbatively expanded in orders of~$\alpha_s$, 
-%%%%%%%
 \begin{equation}
 \amp_{i} = \sum_{k=0} \left(\frac{\as}{\pi} \right) ^k \amp_i^{(k)}
 \label{eq:ampexp}
@@ -75,61 +75,19 @@ where
 $\hat{t}^\pm=[-\hat{s}+\mh^2+\mz^2\pm\sqrt{(\hat{s}-\mh^2-\mz^2)^2-4\mh^2\mz^2}\,]/2$.
 \begin{figure}
 	\begin{center}
-		\includegraphics[width=12cm]{./figures/Feynman_LO_und_NLO.eps}
-		\caption{Examples of Feynman diagrams contributing to $gg \to ZH$ at  LO and
-			NLO.}
-		\label{fig:dia}
+		\includegraphics[width=12cm]{./figures/Feynman_LO}
+		\caption{Feynman diagrams type for the LO $gg \to Zh$ process. The triangle diagrams in a general $\xi$ gauge involve $Z$ and the neutral Goldstone~$G^0$ propagators. }
+		\label{fig:dialo}
 	\end{center}
 \end{figure}
-
-The Feynman diagrams that contribute to the $gg \to  ZH$ amplitude up to NLO
-can be separated into triangle, box and double-triangle
-contributions, the last type appearing for the first time at the
-NLO level. Examples of LO (NLO) triangle and box
-categories are shown in fig.\ref{fig:dia} $(a)$ - $(c)$
-($(d)$ - $(f)$).
-Due to the presence of a $\gamma_5$ in the axial coupling of the $Z$ boson to
-the fermions in the loop, the projectors $\mathcal{P}_i^{\mu\nu\rho}$ are
-proportional to the Levi-Civita total anti-symmetric tensor
-$\epsilon^{\alpha\beta\gamma\delta}$ (see appendix \ref{app:uno}),
-whose treatment in dimensional regularization is, as well known, delicate
-and will be discussed in section \ref{sec:quattro}.
-
-In our calculation we treat all the quarks but the top as massless.
-As a consequence, the contribution to the amplitude of the first two generations
-vanishes. Concerning the third generation, the contribution of the bottom
-is present  in the triangle diagrams with the exchange of a $Z$ boson
-(fig.\ref{fig:dia}$(b),(e)$) and in the double-triangle diagrams
-(fig.\ref{fig:dia}$(g)$).
-A nice observation in ref.\cite{Altenkamp:2012sx} allows to compute
-easily the full (top+bottom) triangle contribution. As noticed in that
-reference,
-the triangle contribution with a $Z$ exchange contains a $ggZ^*$ subamplitude
-which in the Landau gauge can be related to the decay of a massive vector boson
+\par The LO has two sets of diagrams, the triangle, and box diagrams shown in~\autoref{fig:dialo}. In (a), the triangle diagrams contains a neutral Goldstone boson~$G^0$, (b) the $Z$ boson in mediated. The interplay between these two diagram types depends on the~$\xi$ gauge. Moreover, the $Z$ boson is strictly off-shell. By looking at the subamplitude~$ggZ^*$ which in the Landau gauge can be related to the decay of a massive vector boson
 with mass $\sqrt{\hat{s}}$ into two massless ones, a process that is
-forbidden by
-the Landau-Yang theorem \cite{Landau:1948kw,Yang:1950rg}. As a consequence,
-the full triangle contribution can be obtained from the top triangle diagrams
-with the exchange of the unphysical scalar $G^0$, with the propagator of the
-$G^0$ evaluated in the Landau gauge. This part of the top triangle
-diagrams  can be obtained from the decay
-amplitude of a pseudoscalar boson into two gluons which is  known in
-the literature in the full mass dependence up to NLO terms \cite{Spira:1995rr,Aglietti:2006tp}. 
-
-Given the above observation, our calculation of the NLO corrections to
-the $gg \to ZH$ amplitude focuses on the analytic evaluation of the
-double-triangle (fig.\ref{fig:dia}$(g)$) and two-loop box contributions
-(fig.\ref{fig:dia}$(f)$). The former contribution is evaluated exactly.
-The latter is evaluated via two different expansions: i) via  a LME, following
-ref.\cite{Degrassi:2010eu}, up to and including ${\cal O}(1/\mt^6)$ terms,
-which is expected to work below the $2\, \mt$ threshold; ii) via an expansion in
-terms of the $Z$ transverse momentum, following ref.\cite{Bonciani:2018omm},
-whose details are presented in the next section.
-
-\section{The transverse momentum expansion}
-\label{sec:tre}
-The transverse momentum of the $Z$  boson can be written in
-terms of the Mandelstam variables as
+forbidden by the Landau-Yang theorem \cite{Landau:1948kw,Yang:1950rg}.
+The triangle diagrams are also proportional to the mass difference between the up and down type quarks. In this calculation, the first and second generation quarks are assumed to be massless, as well as the $b$ quark, hence light quarks loops  do not contribute to this process. The same would apply to the box diagrams (c), as they are proportional to the quark Yukawa coupling, and vanish in the massless quarks case. Moreover, triangle diagrams with $b-$ quark loops contribute to $ \sim 1\%$ of the total amplitude, when they are competed in the limit $m_b \to 0$.  
+%%%%%%%
+\subsection{The transverse momentum expansion}
+\label{sec:ptexp}
+\par Choosing to expand in small $\pt$ for the $Z$ boson, we start by expressing its transverse momentum in terms of the Mandelstam coefficients and masses 
 \beq
 \pt^2=\frac{\hat{t}\hat{u}-\mz^2\mh^2}{\hat{s}}.
 \label{ptdef}
@@ -144,17 +102,7 @@ where
 $\dm = (\mh^2 -\mz^2)/2$. Eq.(\ref{ptexp}) implies 
 $\pt^2/\hat{s} < 1$ that, together with the kinematical constraints
 $\mh^2/\hat{s}< 1$ and
-$\mz^2/\hat{s} < 1$,  allows the expansion of the amplitude in terms of these
-three ratios.
-
-
-A direct expansion in $\pt$ is not possible at amplitude level, since $\pt$
-itself does not appear in the amplitudes. However, as we argued in
-ref.\cite{Bonciani:2018omm}, the expansion in $\pt^2/\hat{s}\ll 1$ is equivalent
-to an expansion in terms of the ratio of the reduced Mandelstam variables
-$t^\prime/s^\prime\ll 1$ or $u^\prime/s^\prime\ll 1$, depending whether we are
-considering the process to be in a forward or backward kinematics. The
-$s^\prime,\,t^\prime$ and $u^\prime$  variables are defined as
+$\mz^2/\hat{s} < 1$. With these relations in mind, one can expand the amplitudes in terms of small  $\pt^2/\hat s$, $\mh^2/\hat{s}$ and $\mz^2/\hat{s}$, which is valid across $ 98\%$ of the phase space, contrary to the LME and HE limits.  The caveat for this expansion is that, the amplitude does not depend on $\pt$ explicitly. Instead, one would expand in the reduced Mandelstam variables~$t^\prime/s^\prime\ll 1$ or $u^\prime/s^\prime\ll 1$, defined as
 \beq
 s^\prime=p_1\cdot p_2=\frac{\hat{s}}{2},~~
 t^\prime=p_1\cdot p_3=\frac{\hat{t}-\mz^2}{2},~~ u^\prime =
@@ -164,59 +112,20 @@ and satisfy
 \beq
 s^\prime + t^\prime + u^\prime =\dm.
 \eeq
+The choice of the expansion parameter~$t^\prime$ or ~$u^\prime$  depends whether one expands in the forward or backwards kinematics. Because the process $gg \to Zh$, has two particles in the final states with different masses, the amplitude is not symmetric under the the exchange $ t^\prime \leftrightarrow u^\prime$. One therefore cannot compute the cross-section by integrating only the forward-expanded amplitude~\cite{Alasfar:2021ppe}, unlike what is done for the Higgs pair~\cite{Bonciani:2018omm}. In order to overcome this issue, one could further examine the projectors in~\autoref{app:uno} and observe that they can be split into symmetric and anti-symmetric parts w.r.t. the exchange $ t^\prime \leftrightarrow u^\prime$. Then, expand the symmetric part in the forward kinematics, like the Higgs pair case. For the anti-symmetric part, one can simply extract the antisymmetric factor by multiplying the form-factors by $1/(\hat{t}-\hat{u})$,
+written as $1/( 2 s^\prime - 4 t^\prime - 2 \dm)$, then perform the expansion in the forward kinematics and finally multiply back by $(\hat{t}-\hat{u})$.
 
-The cross section of a $2 \to 2$ process can always be expanded into
-a forward and backward contribution. Looking at the dependence of $\sigma$
-upon $t^\prime,\, u^\prime$ we can write
-\bea
-\sigma&\propto&\int^{t_f}_{t_i}dt^\prime\mathcal{F}(t^\prime,u^\prime)=
-\int^{t_m}_{t_i}dt^\prime\mathcal{F}(t^\prime,u^\prime)+
-\int^{t_f}_{t_m}dt^\prime\mathcal{F}(t^\prime,u^\prime) \nn \\
-&\sim&\int^{t_m}_{t_i}dt^\prime\mathcal{F}(t^\prime\sim0,u^\prime\sim-s^\prime)+
-\int^{t_f}_{t_m}dt^\prime \mathcal{F}(t^\prime\sim -s^\prime,u^\prime\sim0)
-\label{eq:forback}
-\eea
-where $t_i=(\hat{t}^--\mz^2)/2$, $t_f=(\hat{t}^+-\mz^2)/2$ and $t_m$ is the
-value of $t^\prime$ at which
-$t^\prime =u^\prime=(-s^\prime+\dm)/2$. The two terms in the second
-line of eq.(\ref{eq:forback}) represent the expansion in the forward and
-backward kinematics, respectively.\\
-If the amplitude is symmetric under $t^\prime\leftrightarrow u^\prime$
-exchange then
-\bea
-\sigma&\propto&\int^{t_m}_{t_i}dt^\prime\mathcal{F}(0,-s^\prime)+
-\int^{t_f}_{t_m}dt^\prime\mathcal{F}(-s^\prime,0)= \nn \\
-&& 
-\int^{t_m}_{t_i}dt^\prime\mathcal{F}(0,-s^\prime)+
-\int^{t_f}_{t_m}dt^\prime\mathcal{F}(0,-s^\prime)=
-\int^{t_f}_{t_i}dt^\prime\mathcal{F}(0,-s^\prime)
-\eea
-so that the expansion in the forward kinematics actually covers the entire
-phase space.
-
-In the case of $gg \to ZH$ the process itself is not symmetric
-under the $t^\prime\leftrightarrow u^\prime$ exchange. However, as
-can be seen from the explicit expressions of the projectors in appendix
-\ref{app:uno},  it can be written as a sum of symmetric and antisymmetric
-form factors. To perform only the expansion in the forward kinematics
-one can proceed in the following way.
-On the symmetric form factors the expansion can be directly performed. 
-For the antisymmetric ones,
-it is sufficient first  to extract  the overall antisymmetric factor
-$(\hat{t}-\hat{u})$  just by multiplying the form factor by $1/(\hat{t}-\hat{u})$,
-written as $1/( 2 s^\prime - 4 t^\prime - 2 \dm)$, 
-then perform the expansion in the forward
-kinematics and finally multiply back by $(\hat{t}-\hat{u})$.
-
-As discussed in ref.\cite{Bonciani:2018omm}, to implement the $\pt$-expansion
-at the level of Feynman diagrams it is convenient
-to introduce the  vector $r^\mu = p_1^\mu +p_3^\mu$, which satisfies
+\par In order to implement the $\pt$-expansion at the Feynman diagrams level we start by splitting the momenta into longitudinal and transverse w.r.t. to the beam direction, by introducing the vector~\cite{Bonciani:2018omm}, 
+\begin{align}
+r^\mu &= p_1^\mu +p_3^\mu,
+\end{align}
+ which satisfies
 \beq
 r^2= \hat{t},~~ r\cdot p_1=\frac{\hat{t}-\mz^2}{2},~~
 r\cdot p_2=-\frac{\hat{t}-\mh^2}{2},
 \label{rsp}
 \eeq
-and therefore can be also written as
+and hence can be also written as
 \beq
 r^\mu =-\frac{\hat{t}-\mh^2}{\hat{s}}p_1^\mu +
 \frac{\hat{t}-\mz^2}{\hat{s}} p_2^\mu + r_\perp^\mu =
@@ -228,8 +137,7 @@ where
 \beq
 r_\perp^2=-\pt^2.
 \eeq
-
-From eq.(\ref{ptdef}) one obtains
+substituting the definition of~$\pt$ from eq.\eqref{ptdef} one obtains
 \beq
 t^\prime = -\frac{s^\prime}2 \left\{ 1 - \frac{\dm}{s^\prime} \pm
 \sqrt{\left( 1 - \frac{\dm}{s^\prime} \right)^2 -
@@ -242,40 +150,22 @@ at the level of Feynman diagrams, by expanding the propagators
 in terms of the vector $r^\mu$ around $r^\mu \sim 0$ or, equivalently,
 $p_3^\mu \sim -p_1^\mu$, see eq.(\ref{rpp}). 
 
-The outcome  of the evaluation of the $gg \to ZH$ amplitude via a
-$\pt$-expansion is expressed in terms of a series of Master Integrals (MIs)
-that are functions of $\hat{s}$ and $\mt^2$ only, and whose coefficients can be
-organized in terms of powers of ratios of small  over large parameters
-where $\pt^2, \, \mh^2$ and $\mz^2$ are identified as the small parameters while
-$\mt^2$ and $\hat{s}$ as the large ones. 
-Thus, the range of validity of the expansion depends
-on  the condition that $\pt^2$ can be treated as a ``small parameter'' with
-respect to $\mt^2$ because all the other ratios, small over
-large, are always smaller than 1.
-
-\section{LO Comparison}
-\label{sec:Add}
-In order to investigate  the range of validity of the evaluation of the
-$gg \to ZH$ amplitude via a $\pt$-expansion,  we compare
-the exact result for the LO partonic cross
-section \cite{Kniehl:1990iva, Dicus:1988yh} with the result obtained
-via our $\pt$-expansion. The latter is expressed in terms of the same four MIs
-that enter into the analogous calculation of the
-$gg \to HH$ LO amplitude \cite{Bonciani:2018omm}, or
+\section{Born cross-section in the $\pt$-expansion }
+\label{sec:LOPtExp}
+\par As a baseline test for the validity and convergence behaviour of the~$\pt$ expansion we start by computing the LO amplitude, and consequently the Born partonic cross-section in the $\pt$ expansion then compare it with the exact results found in~\cite{Kniehl:1990iva, Dicus:1988yh} . \\ We start by defining the one-loop functions appearing in the similar calculation of the Born cross-section of ~$gg \to hh$ in the same expansion made in ref.~\cite{Bonciani:2018omm}
 \bea
 B_0[\hat{s},\mt^2,\mt^2] \equiv  B_0^+, &
 B_0[- \hat{s},\mt^2,\mt^2]  \equiv B_0^- , &\\
 C_0[0,0,\hat{s},\mt^2,\mt^2,\mt^2]  \equiv  C_0^+  ,& ~~~
 C_0[0,0,-\hat{s},\mt^2,\mt^2,\mt^2]  \equiv C_0^- &
 \eea
-where
 \beq
 B_0[q^2,m_1^2,m_2^2] = \frac1{i\pi^2}
-\int \frac{d^n k}{\mu^{n-4}} \frac1{(k^2 -m_1^2)((k+q)^2-m_2^2)}
+\int \frac{d^n k}{\mu^{n-4}} \frac1{(k^2 -m_1^2)((k+q)^2-m_2^2)},
 \label{Bzero}
 \eeq
 \begin{align}
-%	\specialcell
+	%	\specialcell
 	{ C_0[q_a^2,q_b^2,(q_a+q_b)^2, m_1^2,m_2^2,m_3^2] = \hfill }\nn  \\
 	\frac1{i\pi^2}  \int \frac{d^n k}{\mu^{n-4}} \frac1{[k^2 -m_1^2][(k+q_a)^2-m_2^2]
 		[(k-q_b)^2 - m_3^2]} &
@@ -283,22 +173,17 @@ B_0[q^2,m_1^2,m_2^2] = \frac1{i\pi^2}
 \end{align}
 are the Passarino-Veltman functions \cite{Passarino:1978jh},
 with $n$ the dimension of spacetime and $\mu$ the 't Hooft mass.
+%
+\par There re only two non-vanishing form-factors at LO, one is symmetric~${\cal A}_2$, and the other is antisymmetric~${\cal A}_6$, in the $\pt$-expansion, these form-factors are give by, up to order ~${\mathcal O}(\pt^2)$
 
-As an illustration of our LO result we present the explicit expressions for 
-one symmetric, ${\cal A}_2$, and one antisymmetric,
-${\cal A}_6$, form factor including the first correction in the ratio of
-small over large parameters which will be referred
-to as\footnote{With a slight abuse of notation we indicate the
-	counting of the orders in the expansion as
-	$\mathcal{O}(\pt^{2n})$ that  actually means the inclusion of terms that
-	scale   as $(x/y)^n$,   where $x=\pt^2,\, \mz^2,\,\mh^2$ and
-	$y=\hat{s},\,\mt^2$, with respect to the $\hat{s}, \mt^2 \to \infty$
-	contribution. The latter is indicated as $\mathcal{O}(\pt^0)$ and corresponds
-	to the first non zero contribution in the expansion of the diagrams
-	in terms of the vector $r^\mu$.} 
-${\mathcal O}(\pt^2)$.
-We divide the result into triangle ($\triangle$) and
-box ($\square$) contribution or
+%\footnote{With a slight abuse of notation we indicate the
+%	counting of the orders in the expansion as
+%	$\mathcal{O}(\pt^{2n})$ that  actually means the inclusion of terms that
+%	scale   as $(x/y)^n$,   where $x=\pt^2,\, \mz^2,\,\mh^2$ and
+%	$y=\hat{s},\,\mt^2$, with respect to the $\hat{s}, \mt^2 \to \infty$
+%	contribution. The latter is indicated as $\mathcal{O}(\pt^0)$ and corresponds
+%	to the first non zero contribution in the expansion of the diagrams
+%	in terms of the vector $r^\mu$.} 
 \bea
 \mathcal{A}_{2}^{(0, \triangle)} &=& -
 \frac{ \pt }{\sqrt{2} \left( \mz^2+\pt^2 \right)} (\hat{s}-\dm)\,
@@ -346,53 +231,34 @@ and
 +\frac{2 \mt^2-\hat{s}}{2} \mt^2 \,C_0^+  \Biggr],
 \label{Asb}
 \eea
-where in eqs.(\ref{Adb},\ref{Asb}) the $B_0$ functions are understood as the
-finite part of the integrals on the right hand side of eq.(\ref{Bzero}).
-
+where these form-factors were divided into triangle ($\triangle$) and
+box ($\square$) contributions, and $B_0$ functions are understood as the
+finite part of the integrals on the right hand side of eq.\eqref{Bzero}.
+\par Using several truncations of the $\pt$-expansion, and comparing it to the exact LO result, one can see in~\autoref{fig:LO} the exact Born partonic LO cross section (red line) as a function of the invariant mass of the $Zj$ system, $M_{Zh}$, in comparison to the $\pt$-expansions. 
+%For the numerical evaluation of the cross section here and in
+%the following, we used as SM input parameters
+%\begin{equation}
+%	\begin{split}
+%		\mz=91.1876 \,\gev, ~~\mh=125.1 \gev, ~~  \mt=173.21\, \gev, \nn\\
+%		m_b = 0 \, \gev, ~~G_F= 1.16637\,\gev^{-2},~~ \alpha_s(\mz)=0.118.
+%	\end{split}
+%\end{equation}
 \begin{figure}[t]
 	\centering
-	\includegraphics[width=\linewidth]{./figures/LO_ptexp_ratio_1000.pdf}
-	\caption{LO partonic cross section
-		as a function of the invariant mass $M_{ZH}$.
-		The full result (red line) is plotted together with results at
+	\includegraphics[width=0.8\linewidth]{./figures/LO_ptexp_ratio_1000.pdf}
+	\caption{The Born partonic cross-section
+		as a function of the invariant mass $M_{Zh}$.
+		The exact (red line) is plotted together with results at
 		different orders in the $\pt$-expansion (dashed lines). In the bottom part,
 		the ratio of the full result over the $\pt$-expanded one at
-		various orders is shown.}
+		various orders is shown. This plot has been already published in~\cite{Alasfar:2021ppe}}
 	\label{fig:LO}
 \end{figure}
-
-In fig.\ref{fig:LO} the exact partonic LO cross section (red line) is
-shown as a function of the invariant mass of the $ZH$ system, $M_{ZH}$, and
-compared to various $\pt$-expanded results. 
-For the numerical evaluation of the cross section here and in
-the following, we used as SM input parameters
-\begin{equation}
-	\begin{split}
-		\mz=91.1876 \,\gev, ~~\mh=125.1 \gev, ~~  \mt=173.21\, \gev, \nn\\
-		m_b = 0 \, \gev, ~~G_F= 1.16637\,\gev^{-2},~~ \alpha_s(\mz)=0.118.
-	\end{split}
-\end{equation}
-In the lower part of fig.\ref{fig:LO}  the ratio of the
-exact result over the $\pt$-expanded one is shown.  From this ratio
-one can see that 
-the $\mathcal{O}(\pt^0)$ contribution covers well the $ZH$ invariant mass
-region $M_{ZH}\lesssim 2\mt$, corresponding to the range of validity of an
-expansion in the large top quark mass. Furthermore, when the contributions up to
-$\mathcal{O}(\pt^4)$ are taken into account a remarkable agreement with the
-exact result is found up to $M_{ZH}\lesssim 750\gev$.
-This agreement is extended to
-sligthly higher values of $M_{ZH}$ when the $\mathcal{O}(\pt^6)$ contribution is
-included, a finding in close analogy to the result for di-Higgs
-production \cite{Bonciani:2018omm}. Similar conclusions can be drawn from table
-\ref{tab:partonic}, where it is shown that the partonic cross section
+From the ratio plotted in the lower panel of ~\autoref{fig:LO} , we observe that the~$\mathcal{O}(\pt^0)$ expansion is in good agreement with the exact result  when $M_{Zh}\lesssim 2\mt$. Inclusion of higher order terms up tp~$\mathcal{O}(\pt^6)$ extended the validity of the expansion to reach  $M_{Zh}\lesssim 750\gev$. This is the similar behaviour seen in ~\cite{Bonciani:2018omm} for Higgs pair.  Therefore, one would expect the $\pt$-expanded 2-loop virtual correction to be an accurate approximation with the exact (numerical) result for the region of the invariant mass of  $M_{Zh}\sim 700-750\gev$. 
+Similar conclusions can be seen more explicitly in~\autoref{tab:partonic}, where it is shown that the partonic cross-section
 at $\mathcal{O}(\pt^4)$ agrees with the full result for
 $M_{ZH} \lesssim 600 \gev$  on the permille level 
 and the agreement further improves when $\mathcal{O}(\pt^6)$ terms are included.
-As a final remark for this section, we notice that, from the comparison
-with the LO exact result, the $\pt$-expanded evaluation of the amplitude is  expected to provide an
-accurate result up to $M_{ZH}\sim 700-750\gev$ that corresponds, from
-eq.(\ref{ptexp}), to $\pt \lesssim 300-350\, \gev\approx 2\, \mt$.
-
 \begin{table}
 	\renewcommand{\arraystretch}{1.2}
 	\centering
@@ -407,82 +273,123 @@ eq.(\ref{ptexp}), to $\pt \lesssim 300-350\, \gev\approx 2\, \mt$.
 	\caption{The partonic cross section $\hat{\sigma}^{(0)}$ at
 		various orders in $\pt$ and the full computation for several values of $M_{ZH}$. \label{tab:partonic}}
 \end{table}
-
 %%%%
+%The outcome  of the evaluation of the $gg \to ZH$ amplitude via a
+%$\pt$-expansion is expressed in terms of a series of Master Integrals (MIs)
+%that are functions of $\hat{s}$ and $\mt^2$ only, and whose coefficients can be
+%organized in terms of powers of ratios of small  over large parameters
+%where $\pt^2, \, \mh^2$ and $\mz^2$ are identified as the small parameters while
+%$\mt^2$ and $\hat{s}$ as the large ones. 
+%Thus, the range of validity of the expansion depends
+%on  the condition that $\pt^2$ can be treated as a ``small parameter'' with
+%respect to $\mt^2$ because all the other ratios, small over
+%large, are always smaller than 1.
+
+%%%%%%%
+%The Feynman diagrams that contribute to the $gg \to  ZH$ amplitude up to NLO
+%can be separated into triangle, box and double-triangle
+%contributions, the last type appearing for the first time at the
+%NLO level. Examples of LO (NLO) triangle and box
+%categories are shown in fig.\ref{fig:dia} $(a)$ - $(c)$
+%($(d)$ - $(f)$).
+%
+%whose treatment in dimensional regularization is, as well known, delicate
+%and will be discussed in section \ref{sec:quattro}.
+%
+%In our calculation we treat all the quarks but the top as massless.
+%As a consequence, the contribution to the amplitude of the first two generations
+%vanishes. Concerning the third generation, the contribution of the bottom
+%is present  in the triangle diagrams with the exchange of a $Z$ boson
+%(fig.\ref{fig:dia}$(b),(e)$) and in the double-triangle diagrams
+%(fig.\ref{fig:dia}$(g)$).
+%A nice observation in ref.\cite{Altenkamp:2012sx} allows to compute
+%easily the full (top+bottom) triangle contribution. As noticed in that
+%reference,
+%the triangle contribution with a $Z$ exchange contains a $ggZ^*$ subamplitude
+%which in the Landau gauge can be related to the decay of a massive vector boson
+%with mass $\sqrt{\hat{s}}$ into two massless ones, a process that is
+%forbidden by
+%the Landau-Yang theorem \cite{Landau:1948kw,Yang:1950rg}. As a consequence,
+%the full triangle contribution can be obtained from the top triangle diagrams
+%with the exchange of the unphysical scalar $G^0$, with the propagator of the
+%$G^0$ evaluated in the Landau gauge. This part of the top triangle
+%diagrams  can be obtained from the decay
+%amplitude of a pseudoscalar boson into two gluons which is  known in
+%the literature in the full mass dependence up to NLO terms \cite{Spira:1995rr,Aglietti:2006tp}. 
+%
+%Given the above observation, our calculation of the NLO corrections to
+%the $gg \to ZH$ amplitude focuses on the analytic evaluation of the
+%double-triangle (fig.\ref{fig:dia}$(g)$) and two-loop box contributions
+%(fig.\ref{fig:dia}$(f)$). The former contribution is evaluated exactly.
+%The latter is evaluated via two different expansions: i) via  a LME, following
+%ref.\cite{Degrassi:2010eu}, up to and including ${\cal O}(1/\mt^6)$ terms,
+%which is expected to work below the $2\, \mt$ threshold; ii) via an expansion in
+%terms of the $Z$ transverse momentum, following ref.\cite{Bonciani:2018omm},
+%whose details are presented in the next section.
 \section{ NLO calculation }
-
-Recall that the bare amplitude  reads :
-
-\begin{align}
-	-i \mathcal{M} &=  \varepsilon_\mu(p_1) \varepsilon_\nu(p_2)  \,T_R\, \delta_{ab}  \mu_R^{2\epsilon} \as\,  \hat{\mathcal P}_{\mu\nu\rho} \nonumber \\
-	& \times S_{\epsilon} \left( \frac{\mu^2_R}{\hat s} \right) ^\epsilon \left[   \mathcal F ^{1 \ell} + \mu_R^{2\epsilon} \as \mu_R^{-2\epsilon} S_{\epsilon} \left( \frac{\mu^2_R}{\hat s} \right) ^\epsilon  \mathcal F ^{2 \ell}  \right]
-\end{align}
-Where $ \mathcal F^{n\ell}$ is the nth loop form factor, and $\hat{\mathcal P}_{\mu\nu\rho} $ is the normalised projector, written as
-\begin{align}
-	L^{(1)}_{\mu\nu\rho}  &=  \frac{\hat s}{2} \, \varepsilon_{\mu\nu\rho \xi} \, p_2^\xi -( p_2)_\mu\, \varepsilon_{\nu\rho \xi \lambda } \, p_1^\xi\, p_2 ^\lambda,  \nonumber \\
-	L^{(2)}_{\mu\nu\rho}  &= \frac{\hat s}{2} \, \varepsilon_{\mu\nu\rho \xi} \, p_1^\xi -( p_1)_\nu\, \varepsilon_{\mu\rho \xi \lambda } \, p_1^\xi\, p_2 ^\lambda,  \nonumber \\
-	\hat{\mathcal P}_{\mu\nu\rho}  &=  \frac{2}{\hat s^3} \left( 	L^{(1)}_{\mu\nu\rho} - 	L^{(2)}_{\mu\nu\rho}\right) .
-\end{align}
-The 1 loop form factor is given by
-\begin{equation}
-	\mathcal F ^{1 \ell}  = \frac{m^2}{\hat s} \, C_0(\hat s,0; m,m,m) - \frac{1}{4 \hat s},
-\end{equation}
-where the last term, not proportional to the mass is corresponding to  the chiral anomaly .
-The 2 loop form-factor, can be decomposed in terms of the colour Casimir invariants $ C_A$ and $ C_F$
-\begin{equation}
-	\mathcal F ^{2 \ell}   = C_F \mathcal F_{CF} ^{2 \ell}  + C_A \mathcal F_{CA} ^{2 \ell}
-\end{equation}
-The $CA$ part contains double pole $ \mathcal O( 1/\epsilon^2) $  and a single pole $ \mathcal O( 1/\epsilon) $, both  coming from the IR divergence. Whilst the $CF$ part contains a UV divergent pole that needs to be cured via mass renormalisation. The poles do not have a dependence on the renormalisation scale $ \mu_R$, however, there is a dependence on that scale in the finite part.
-\subsection{Gluon wavefunction}
-We start by the gluon wavefunction renormalisation of the incoming gluons  ( external legs) such that the amplitude is renormalised by $ Z_A^{1/2}$ for each gluon.
+\label{sec:quattro}
+The virtual 2-loop corrections to~$ gg\to Zh$ are shown in~\autoref{fig:dianlo}, which involve corrections to the triangle topology (a) and (b), corrections to the box diagrams (c) and a new topology with double triangle (d). Both 2-loop corrections to the triangles, and double triangle diagrams can be computed exactly analytically. However, the 2-loop box diagrams contain master-integrals~(MI's) that have no analytic solutions, so far. The 2-loop box diagrams will be hence computed in the $\pt$-expansion.
+\begin{figure}[htpb!]
+	\begin{center}
+		\includegraphics[width=12cm]{./figures/Feynman_NL0}
+		\caption{Feynman diagrams type for the LO $gg \to Zh$ process. The triangle diagrams in a general $\xi$ gauge involve $Z$ and the neutral Goldstone~$G^0$ propagators. }
+		\label{fig:dianlo}
+	\end{center}
+\end{figure}
+\subsubsection{Renormalisation}
+The 2-loop corrections to the triangle and box diagrams contain both UV and IR divergences. The first emerges from UV divergent sub-diagrams, such as top mass renormalisation and QCD vertex correction. While the lR divergences come from massless loops. In order to remove these divergences, one introduces adequate counter-terms. 
+\par  We start by the gluon wavefunction renormalisation of the incoming gluons  (external legs) such that the amplitude is renormalised by $ Z_A^{1/2}$ for each gluon.
 \begin{equation}
 	Z_A= 1+\as \frac{2}{3\epsilon} \left( \frac{\mu_R^2}{m_t^2} \right) ^\epsilon.
 \end{equation}
-\subsection{ Strong coupling constant}
-
-The strong couplings constant $ \alpha_s$ renormalisation is done via replacing the bare constant $\alpha_s^0$ with the renormalised one, hence it becomes  $ \alpha^0_s = \frac{\mu_R^{2\epsilon}}{S_\epsilon}  \Zas \alpha_s$, where
-\begin{equation}
-	\Zas = 1- \frac{\alpha_s}{4 \pi} \, \frac{1}{ \epsilon}\,  \left( \beta_0-\frac{2}{3} \right) \left(\frac{\mu_R^2}{m_t^2} \right) ^\epsilon,
-\end{equation}
-and the constant $ \beta_0 = \frac{11}{3} C_A -\frac{2}{3}N_f$, where $N_f$ is the number of "active" flavours. In the 5-flavour scheme $N_f=5$.
-\subsection{ Top mass}
-We use the $\bar{MS}$ scheme for the top mass renormalisation $ m_0 = Z_m m$ , replaced in the propagators, also can be done with multiplying $ \delta Z_m$ with the derivative of the 1 loop form-factor with respect to the  mass., here $Z_m$ is given by
+ The $\bar{MS}$ scheme for the top mass renormalisation has been used, in which the bare mass is replaced by the renormalised one~$ m_0 = Z_m m$  in the propagators. This can be done with multiplying $ \delta Z_m$ with the derivative of the 1-loop form-factor with respect to the  mass., here $Z_m$ is given by
 \begin{equation}
 	Z_m = 1+ C_F \frac{3}{\epsilon}.
 \end{equation}
 For the on-shell scheme we add the finite renormalisation term
 \begin{equation}
-	Z^{OS}_m = 1- 2 C_F
+	Z^{OS}_m = 1- 2 C_F,
 \end{equation}
-\subsection{ Larin counter-term}
-For the vertex $ -i \bar \psi \gamma_\rho \gamma_5 \psi$, we let $\gamma_5$ naively anti-commute with all $d$-dimensional $\gamma_\mu$'s and then correct that with the finite renormalisation constant
+here $C_F=(N_c^2-1)/2N_c$ is one of the two Casimir invariants of QCD along with~$ C_A=N_c$. 
+The $q \bar q g$ vertex correction involves a renormalisation of the strong couplings constant $ \alpha_s$ which is done via replacing the bare constant $\alpha_s^0$ with the renormalised one, hence it becomes  $ \alpha^0_s = \frac{\mu_R^{2\epsilon}}{S_\epsilon}  \Zas \alpha_s$, where
 \begin{equation}
-	Z_5 = 1- 2\, C_F
+	\Zas = 1- \frac{\alpha_s}{4 \pi} \, \frac{1}{ \epsilon}\,  \left( \beta_0-\frac{2}{3} \right) \left(\frac{\mu_R^2}{m_t^2} \right) ^\epsilon,
 \end{equation}
-
-\subsection{All terms together }
-The renormalised amplitude is written as
+and the constant $ \beta_0 = \frac{11}{3} C_A -\frac{2}{3}N_f$, where $N_f$ is the number of "active" flavours. In the 5-flavour scheme $N_f=5$ adopted here. 
+\par The loop integrals were evaluated via dimensional regularisation in $d= 4-2\epsilon$ dimensions. Which requires some caution when $\gamma_5$ is present in the amplitude. We let $\gamma_5$ naively anti-commute with all $d$-dimensional $\gamma_\mu$'s and then correct that with the finite renormalisation constant known as \textbf{ Larin counter-term}~\cite{Larin:1993tq}
+\begin{equation}
+	Z_5 = 1- 2\, C_F.
+\end{equation}
+We write renormalised amplitude as
 \begin{equation}
 	\mathcal M  (\alpha_s, m, \mu_R) = Z_A \mathcal M( \alpha_s^0, m^0).
 \end{equation}
 Putting all the above substitutions together, we get the renormalised  2 loop form-factor:
 \begin{align}
-	( \mathcal F ^{2 \ell})^R &= 	\mathcal F ^{2 \ell} -	\mathcal F_{UV} ^{1 \ell}- 	\mathcal F_{UV, m} ^{1 \ell} + \mathcal F_{\text{Larin}} ^{1 \ell}   \\
-	\mathcal F_{UV} ^{1 \ell} &= \asr\,\frac{\beta_0}{\epsilon} \left( \frac{\mu_R^2}{\hat s} \right) ^{ -\epsilon}.  \nonumber \\
-	\mathcal F_{UV, m} ^{1 \ell} &= \asr \, \left( \frac{3}{\epsilon} -2\right) C_F \left( \frac{\mu_R^2}{\hat s} \right) ^{ -\epsilon} m^0 \partial_m \mathcal F ^{1 \ell} . \nonumber \\
+	( \mathcal A ^{2 \ell})^R &= 	\mathcal A ^{2 \ell} -	\mathcal A_{UV} ^{1 \ell}- 	\mathcal A_{UV, m} ^{1 \ell} + \mathcal A_{\text{Larin}} ^{1 \ell}   \\
+	\mathcal A_{UV} ^{1 \ell} &= \asr\,\frac{\beta_0}{\epsilon} \left( \frac{\mu_R^2}{\hat s} \right) ^{ -\epsilon}.  \nonumber \\
+	\mathcal A_{UV, m} ^{1 \ell} &= \asr \, \left( \frac{3}{\epsilon} -2\right) C_F \left( \frac{\mu_R^2}{\hat s} \right) ^{ -\epsilon} m^0 \partial_m \mathcal A^{1 \ell} . \nonumber \\
 	\\
-	\mathcal	F_{\text{Larin}} ^{1 \ell}  &= - \asr \, C_F  \mathcal F ^{1 \ell} .\nonumber
+	\mathcal	A_{\text{Larin}} ^{1 \ell}  &= - \asr \, C_F  \mathcal A ^{1 \ell} .\nonumber
 \end{align}
-We expand the 1 loop for factor up to order $ \mathcal O(\epsilon) $.
-\section{ IR subtraction}
-We use the following IR-counter-term
+We use the following IR-counter-term in order to cancel the IR divergences.
 \begin{equation}
-	\mathcal F_{IR} ^{1 \ell}  = \frac{e^{\gamma_E \epsilon}}{\Gamma(1-\epsilon)} \, \asr \left( \frac{\beta_0}{\epsilon} + \frac{ C_A}{\epsilon^2} \right)  \, \left(  \frac{\mu_R^2}{\hat s}\right) ^{2\epsilon} \mathcal F ^{1 \ell}
+	\mathcal A_{IR} ^{1 \ell}  = \frac{e^{\gamma_E \epsilon}}{\Gamma(1-\epsilon)} \, \asr \left( \frac{\beta_0}{\epsilon} + \frac{ C_A}{\epsilon^2} \right)  \, \left(  \frac{\mu_R^2}{\hat s}\right) ^{2\epsilon} \mathcal A ^{1 \ell}
 \end{equation}
-Here, we expand the 1 loop up to order $ \mathcal O(\epsilon^2) $.
+The1-loop form-factors, need to be expanded up to order $ \mathcal O(\epsilon^2) $, for the UV and IR counter-terms.
+\subsubsection{Calculation of the exact virtual corrections}
+The 1 loop form factor is given by
+\begin{equation}
+	\mathcal F ^{1 \ell}  = \frac{m^2}{\hat s} \, C_0(\hat s,0; m,m,m) - \frac{1}{4 \hat s},
+\end{equation}
+where the last term, not proportional to the mass is corresponding to  the chiral anomaly .
+The 2 loop form-factor, can be decomposed in terms of the colour and $ C_F$
+\begin{equation}
+	\mathcal F ^{2 \ell}   = C_F \mathcal F_{CF} ^{2 \ell}  + C_A \mathcal F_{CA} ^{2 \ell}
+\end{equation}
+The $CA$ part contains double pole $ \mathcal O( 1/\epsilon^2) $  and a single pole $ \mathcal O( 1/\epsilon) $, both  coming from the IR divergence. Whilst the $CF$ part contains a UV divergent pole that needs to be cured via mass renormalisation. The poles do not have a dependence on the renormalisation scale $ \mu_R$, however, there is a dependence on that scale in the finite part.
+\subsubsection{Calculation of the $\pt$-expanded virtual corrections}
 %%%
-\section{Outline of the NLO Computation}
-\label{sec:quattro}
 In this section we discuss our evaluation of the three different types of
 diagrams that appear in the virtual corrections to the $gg \to ZH$ amplitude
 at the NLO.
@@ -555,6 +462,120 @@ two elliptic integrals \cite{vonManteuffel:2017hms, Bonciani:2018uvv}.
 The top quark mass was renormalized in the onshell scheme\footnote{Different choices
 	for the renormalized top mass can be easily implemented in our calculation.}
 and the IR poles were subtracted as in ref.\cite{Degrassi:2016vss}.
+
+\section{NLO results} \label{sec:sei}
+We now present our numerical results for the virtual corrections.
+We have implemented our results into a \texttt{FORTRAN} programme. 
+For the evaluation of the generalised harmonic polylogarithms we use 
+the code \texttt{handyG} \cite{Naterop:2019xaf}, while 
+the elliptic integrals are evaluated using the routines of
+ref.\cite{Bonciani:2018uvv}.
+In order to facilitate the comparison of our results with the ones
+presented in the literature,  we define the finite part of the virtual corrections
+as in
+ref.\cite{Davies:2020drs}\footnote{Our definition of the matrix elements
+	differs by a factor of
+	$\frac{1}{\hat{s}}$ from ref.\cite{Davies:2020drs}, \textit{cf}. also
+	appendix \ref{app:uno}.}
+\begin{equation}
+	\begin{split}
+		\mathcal{V}_{fin}&=\frac{G_F^2 m_Z^2}{16}\left(\frac{\as}{\pi}\right)^2
+		\left[ \sum_{i} \left|\mathcal{A}_i^{(0)} \right|^2\frac{C_A}{2}\left(\pi^2-
+		\log^2\left(\frac{\mu_R^2}{\hat{s}}\right)\right)\right. \\
+		& \left. +2\sum_i\text{Re}\left[\mathcal{A}_i^{(0)}\left(\mathcal{A}_i^{(1)}\right)^*\right]\right]\,
+		\label{eq:vfin}
+	\end{split}
+\end{equation}
+and in the numerical evaluation of eq.(\ref{eq:vfin}) we fixed
+$\mu_R= \sqrt{\hat{s}}$.
+
+First, both the triangle and box LME contributions to $\mathcal{A}_i^{(1)}$ up
+to $\mathcal{O}(1/\mt^6)$ terms  were checked, at the analytic level, against
+the results of refs.\cite{Hasselhuhn:2016rqt,Davies:2020drs} finding perfect
+agreement. Then,  the $\pt$-expanded results for low $M_{ZH}$ were
+confronted numerically with the LME ones, finding a  good numerical agreement.
+We recall that, at the same order in the expansion, 
+the $\pt$-expanded terms are more accurate than
+the LME ones, although computationally more demanding.
+
+In ref.\cite{Chen:2020gae} a numerical evaluation of eq.(\ref{eq:vfin})
+was presented. In that reference the exact NLO amplitude was reduced to a
+set of MIs that were evaluated numerically using the code \texttt{pySecDec}
+\cite{Borowka:2017idc,Borowka:2018goh}. Table 3 of that reference presents
+the numerical results %\footnote{The values in table 3 of ref.\cite{Chen:2020gae}
+	%are defined as $\mathcal{V}_{fin} 4/(\as^2 \alpha^2)$.\label{footnote1}} 
+for various points in the
+phase space. A comparison of the four points lying within the range of
+validity of our expansion is shown in table \ref{tab:comparison}
+using the same inputs as ref.\cite{Chen:2020gae}.
+As can be seen from the table the relative difference 
+between the two results is less than half a permille.
+%It should be noticed that  small differences
+%on the permille level can be explained not only by the different
+%approaches (exact vs. $\pt$-expanded) but also by the fact that
+%in ref.\cite{Chen:2020gae} the $\mz^2/\mt^2$ and $\mh^2/\mt^2$ ratios were
+%approximated by a ratio of two integer numbers.
+
+\begin{table}
+	\renewcommand{\arraystretch}{1.2}
+	\centering
+	\begin{tabular}{| c| c | c | c| } \hline
+		\rowcolor{lightgray}  $\hat{s}/m_t^2$ & $\hat{t}/m_t^2$ &  ref.\cite{Chen:2020gae} & $\mathcal{O}(\pt^6)$  \\ \hline 
+		\cellcolor{lightgray} 1.707133657190554 & \cellcolor{lightgray} -0.441203767016323 & 35.429092(6) & 35.430479 \\
+		\cellcolor{lightgray} 3.876056604162662 & \cellcolor{lightgray} -1.616287256345735 & 4339.045(1) & 4340.754 \\
+		\cellcolor{lightgray} 4.130574250302561 & \cellcolor{lightgray} -1.750372271104745 & 6912.361(3) & 6915.797 \\
+		\cellcolor{lightgray} 4.130574250302561 & \cellcolor{lightgray} -2.595461551488002 & 6981.09(2) & 6984.20  \\ \hline
+	\end{tabular}
+	\caption{Comparison of $\mathcal{V}_{fin} 4/(\as^2 \alpha^2)$ with the numerical results of ref.\cite{Chen:2020gae}. \label{tab:comparison}}
+\end{table}
+
+\begin{figure}[th]
+	\centering
+	\includegraphics[width=0.75\textwidth]{./figures/sigma_part_virt_LMEreweighted.pdf}
+	\caption{$\Delta \hat{\sigma}_{virt}$ defined by eq.\eqref{eq:deltasigma}, shown as a function of $M_{ZH}$. The various orders of the $\pt$-expansion are plotted as dashed lines, while the black and red continuous lines stand for the LME and  reweighted $m_t \rightarrow \infty$ results, respectively.}
+	\label{fig:deltasigma}
+\end{figure}
+In order to present our results we define a virtual part of the partonic cross section
+from the finite part of the virtual corrections in eq.\eqref{eq:vfin} by
+\begin{equation}
+	\Delta \hat{\sigma}_{virt}=
+	\int_{\hat{t}^-}^{\hat{t}^+} d\hat{t}
+	\frac{\alpha_s}{16\pi^2}\frac{1}{\hat{s}^2}\mathcal{V}_{fin}\,
+	\label{eq:deltasigma}
+\end{equation}
+and  show it in fig.\ref{fig:deltasigma}. The dashed lines in the
+plot show the different orders in our expansion. 
+For all parts of the matrix elements we use the best results
+available, i.e.~both $\mathcal{A}^{(0)}$ and the double-triangle
+contribution are evaluated  exactly, while for
+$\mathcal{A}^{(1)}$ we use the various orders in the $\pt$-expansion.
+For comparison, we show the results where
+$\mathcal{A}^{(1)}$ is replaced by the one computed in LME up to
+$\mathcal{O}(1/m_t^6)$ (full black line), which as mentioned before is valid
+up to $M_{ZH}< 2 \mt$. We see that within the validity of the LME our
+results agree well with it.
+Furthermore, we show the results in the infinite top
+mass limit reweighted by the full amplitudes squared (full red line), corresponding to the
+approach of ref.\cite{Altenkamp:2012sx}, keeping though the double triangle
+contribution in full top mass dependence. 
+Differently from the LME line, the $\mt \to \infty$ reweighted one
+shows a behaviour, for  $M_{ZH} \gtrsim 400\gev$, similar to the behaviour of
+the $\pt$ lines. Still,   the difference
+between the reweighted result and the $\pt$-expanded ones is  significant.
+The $\pt$-expanded results show
+very good convergence.  The zero order in our expansion agrees
+extremely well with the higher orders in the expansion, and all the
+three results are very close up to $M_{ZH} \sim 500\gev$.
+
+
+Finally, we note that the evaluation of $\mathcal{V}_{fin}$ requires a
+running time per phase space point less than
+one second. In addition, the integration over the $\hat{t}$ variable
+in eq.(\ref{eq:deltasigma}) converges very well, such that 
+fig.\ref{fig:deltasigma} could be produced on a standard laptop in a
+few hours. Thus, our computation of the two-loop virtual corrections
+in $gg \to ZH$ is suitable to be used within a Monte Carlo code.
+
 
 \section{Conclusion \label{sec:conclusion}}
 In this paper, we computed  the two-loop NLO virtual corrections to the 

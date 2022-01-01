@@ -944,11 +944,18 @@ C.-N. Yang, ``{Selection Rules for the Dematerialization of a Particle Into Two
   Photons},'' \href{http://dx.doi.org/10.1103/PhysRev.77.242}{{\em Phys. Rev.}
   {\bfseries 77} (1950) 242--245}.
 
-\bibitem{Spira:1995rr}
-M.~Spira, A.~Djouadi, D.~Graudenz, and P.~M. Zerwas, ``{Higgs boson production
-  at the LHC},'' \href{http://dx.doi.org/10.1016/0550-3213(95)00379-7}{{\em
-  Nucl. Phys. B} {\bfseries 453} (1995) 17--82},
-  \href{http://arxiv.org/abs/hep-ph/9504378}{{\ttfamily arXiv:hep-ph/9504378}}.
+\bibitem{Passarino:1978jh}
+G.~Passarino and M.~J.~G. Veltman, ``{One Loop corrections for $e^+ e^-$
+  annihilation into $\mu^+ \mu^-$ in the Weinberg Model},''
+\href{http://dx.doi.org/10.1016/0550-3213(79)90234-7}{{\em Nucl. Phys.}
+  {\bfseries B160} (1979) 151}.
+%%CITATION = NUPHA,B160,151;%%.
+
+\bibitem{Larin:1993tq}
+S.~Larin, ``{The Renormalization of the axial anomaly in dimensional
+  regularization},'' \href{http://dx.doi.org/10.1016/0370-2693(93)90053-K}{{\em
+  Phys. Lett. B} {\bfseries 303} (1993) 113--118},
+  \href{http://arxiv.org/abs/hep-ph/9302240}{{\ttfamily arXiv:hep-ph/9302240}}.
 
 \bibitem{Aglietti:2006tp}
 U.~Aglietti, R.~Bonciani, G.~Degrassi, and A.~Vicini, ``{Analytic Results for
@@ -956,20 +963,6 @@ U.~Aglietti, R.~Bonciani, G.~Degrassi, and A.~Vicini, ``{Analytic Results for
   \href{http://dx.doi.org/10.1088/1126-6708/2007/01/021}{{\em JHEP} {\bfseries
   01} (2007) 021}, \href{http://arxiv.org/abs/hep-ph/0611266}{{\ttfamily
   arXiv:hep-ph/0611266}}.
-
-\bibitem{Degrassi:2010eu}
-G.~Degrassi and P.~Slavich, ``{NLO QCD bottom corrections to Higgs boson
-  production in the MSSM},''
-  \href{http://dx.doi.org/10.1007/JHEP11(2010)044}{{\em JHEP} {\bfseries 11}
-  (2010) 044}, \href{http://arxiv.org/abs/1007.3465}{{\ttfamily arXiv:1007.3465
-  [hep-ph]}}.
-
-\bibitem{Passarino:1978jh}
-G.~Passarino and M.~J.~G. Veltman, ``{One Loop corrections for $e^+ e^-$
-  annihilation into $\mu^+ \mu^-$ in the Weinberg Model},''
-\href{http://dx.doi.org/10.1016/0550-3213(79)90234-7}{{\em Nucl. Phys.}
-  {\bfseries B160} (1979) 151}.
-%%CITATION = NUPHA,B160,151;%%.
 
 \bibitem{Mertig:1990an}
 R.~Mertig, M.~Bohm, and A.~Denner, ``{FEYN CALC: Computer algebraic calculation
@@ -983,12 +976,6 @@ V.~Shtabovenko, R.~Mertig, and F.~Orellana, ``{New Developments in FeynCalc
   Commun.} {\bfseries 207} (2016) 432--444},
   \href{http://arxiv.org/abs/1601.01167}{{\ttfamily arXiv:1601.01167
   [hep-ph]}}.
-
-\bibitem{Larin:1993tq}
-S.~Larin, ``{The Renormalization of the axial anomaly in dimensional
-  regularization},'' \href{http://dx.doi.org/10.1016/0370-2693(93)90053-K}{{\em
-  Phys. Lett. B} {\bfseries 303} (1993) 113--118},
-  \href{http://arxiv.org/abs/hep-ph/9302240}{{\ttfamily arXiv:hep-ph/9302240}}.
 
 \bibitem{Degrassi:2011vq}
 G.~Degrassi, S.~Di~Vita, and P.~Slavich, ``{NLO QCD corrections to pseudoscalar
@@ -1036,6 +1023,30 @@ G.~Degrassi, P.~P. Giardino, and R.~Gr\"ober, ``{On the two-loop virtual QCD
   {\bfseries 76} no.~7, (2016) 411},
   \href{http://arxiv.org/abs/1603.00385}{{\ttfamily arXiv:1603.00385
   [hep-ph]}}.
+
+\bibitem{Naterop:2019xaf}
+L.~Naterop, A.~Signer, and Y.~Ulrich, ``{handyG \textemdash{}Rapid numerical
+  evaluation of generalised polylogarithms in Fortran},''
+  \href{http://dx.doi.org/10.1016/j.cpc.2020.107165}{{\em Comput. Phys.
+  Commun.} {\bfseries 253} (2020) 107165},
+  \href{http://arxiv.org/abs/1909.01656}{{\ttfamily arXiv:1909.01656
+  [hep-ph]}}.
+
+\bibitem{Borowka:2017idc}
+S.~Borowka, G.~Heinrich, S.~Jahn, S.~P. Jones, M.~Kerner, J.~Schlenk, and
+  T.~Zirke, ``{pySecDec: a toolbox for the numerical evaluation of multi-scale
+  integrals},'' \href{http://dx.doi.org/10.1016/j.cpc.2017.09.015}{{\em Comput.
+  Phys. Commun.} {\bfseries 222} (2018) 313--326},
+  \href{http://arxiv.org/abs/1703.09692}{{\ttfamily arXiv:1703.09692
+  [hep-ph]}}.
+
+\bibitem{Borowka:2018goh}
+S.~Borowka, G.~Heinrich, S.~Jahn, S.~P. Jones, M.~Kerner, and J.~Schlenk, ``{A
+  GPU compatible quasi-Monte Carlo integrator interfaced to pySecDec},''
+  \href{http://dx.doi.org/10.1016/j.cpc.2019.02.015}{{\em Comput. Phys.
+  Commun.} {\bfseries 240} (2019) 120--137},
+  \href{http://arxiv.org/abs/1811.11720}{{\ttfamily arXiv:1811.11720
+  [physics.comp-ph]}}.
 
 \bibitem{EBOLI1987269}
 O.~Eboli, G.~Marques, S.~Novaes, and A.~Natale, ``Twin higgs-boson
@@ -1186,5 +1197,176 @@ J.~Baglio, A.~Djouadi, R.~Gröber, M.~M. Mühlleitner, J.~Quevillon, and
   JHEP} {\bfseries 04} (2013) 151},
 \href{http://arxiv.org/abs/1212.5581}{{\ttfamily arXiv:1212.5581 [hep-ph]}}.
 %%CITATION = ARXIV:1212.5581;%%.
+
+\bibitem{Brivio:2015fxa}
+I.~Brivio, F.~Goertz, and G.~Isidori, ``{Probing the Charm Quark Yukawa
+  Coupling in Higgs+Charm Production},''
+  \href{http://dx.doi.org/10.1103/PhysRevLett.115.211801}{{\em Phys. Rev.
+  Lett.} {\bfseries 115} no.~21, (2015) 211801},
+\href{http://arxiv.org/abs/1507.02916}{{\ttfamily arXiv:1507.02916 [hep-ph]}}.
+%%CITATION = ARXIV:1507.02916;%%.
+
+\bibitem{Soreq:2016rae}
+Y.~Soreq, H.~X. Zhu, and J.~Zupan, ``{Light quark Yukawa couplings from Higgs
+  kinematics},'' \href{http://dx.doi.org/10.1007/JHEP12(2016)045}{{\em JHEP}
+  {\bfseries 12} (2016) 045},
+\href{http://arxiv.org/abs/1606.09621}{{\ttfamily arXiv:1606.09621 [hep-ph]}}.
+%%CITATION = ARXIV:1606.09621;%%.
+
+\bibitem{Bishara:2016jga}
+F.~Bishara, U.~Haisch, P.~F. Monni, and E.~Re, ``{Constraining Light-Quark
+  Yukawa Couplings from Higgs Distributions},''
+  \href{http://dx.doi.org/10.1103/PhysRevLett.118.121801}{{\em Phys. Rev.
+  Lett.} {\bfseries 118} no.~12, (2017) 121801},
+\href{http://arxiv.org/abs/1606.09253}{{\ttfamily arXiv:1606.09253 [hep-ph]}}.
+%%CITATION = ARXIV:1606.09253;%%.
+
+\bibitem{Bonner:2016sdg}
+G.~Bonner and H.~E. Logan, ``{Constraining the Higgs couplings to up and down
+  quarks using production kinematics at the CERN Large Hadron Collider},''
+  \href{http://arxiv.org/abs/1608.04376}{{\ttfamily arXiv:1608.04376
+  [hep-ph]}}.
+
+\bibitem{CMS:2018rig}
+{\bfseries CMS} Collaboration, ``{Constraints on the Higgs boson self-coupling
+  from ttH+tH, H to gamma gamma differential measurements at the HL-LHC},''
+  Tech. Rep. CMS-PAS-FTR-18-020, 2018.
+
+\bibitem{Perez:2015lra}
+G.~Perez, Y.~Soreq, E.~Stamou, and K.~Tobioka, ``{Prospects for measuring the
+  Higgs boson coupling to light quarks},''
+  \href{http://dx.doi.org/10.1103/PhysRevD.93.013001}{{\em Phys. Rev.}
+  {\bfseries D93} no.~1, (2016) 013001},
+\href{http://arxiv.org/abs/1505.06689}{{\ttfamily arXiv:1505.06689 [hep-ph]}}.
+%%CITATION = ARXIV:1505.06689;%%.
+
+\bibitem{ATLAS-CONF-2021-021}
+{\bfseries ATLAS} Collaboration, ``{Direct constraint on the Higgs-charm
+  coupling from a search for Higgs boson decays to charm quarks with the ATLAS
+  detector},''.
+
+\bibitem{Bodwin:2013gca}
+G.~T. Bodwin, F.~Petriello, S.~Stoynev, and M.~Velasco, ``{Higgs boson decays
+  to quarkonia and the $H\bar{c}c$ coupling},''
+  \href{http://dx.doi.org/10.1103/PhysRevD.88.053003}{{\em Phys. Rev.}
+  {\bfseries D88} no.~5, (2013) 053003},
+\href{http://arxiv.org/abs/1306.5770}{{\ttfamily arXiv:1306.5770 [hep-ph]}}.
+%%CITATION = ARXIV:1306.5770;%%.
+
+\bibitem{Kagan:2014ila}
+A.~L. Kagan, G.~Perez, F.~Petriello, Y.~Soreq, S.~Stoynev, and J.~Zupan,
+  ``{Exclusive Window onto Higgs Yukawa Couplings},''
+  \href{http://dx.doi.org/10.1103/PhysRevLett.114.101802}{{\em Phys. Rev.
+  Lett.} {\bfseries 114} no.~10, (2015) 101802},
+\href{http://arxiv.org/abs/1406.1722}{{\ttfamily arXiv:1406.1722 [hep-ph]}}.
+%%CITATION = ARXIV:1406.1722;%%.
+
+\bibitem{Konig:2015qat}
+M.~K\"onig and M.~Neubert, ``{Exclusive Radiative Higgs Decays as Probes of
+  Light-Quark Yukawa Couplings},''
+  \href{http://dx.doi.org/10.1007/JHEP08(2015)012}{{\em JHEP} {\bfseries 08}
+  (2015) 012}, \href{http://arxiv.org/abs/1505.03870}{{\ttfamily
+  arXiv:1505.03870 [hep-ph]}}.
+
+\bibitem{CMS:2018gcm}
+{\bfseries CMS} Collaboration, A.~M. Sirunyan {\em et~al.}, ``{Search for rare
+  decays of Z and Higgs bosons to J$/\psi$ and a photon in proton-proton
+  collisions at $\sqrt{s} =$ 13 TeV},''
+  \href{http://dx.doi.org/10.1140/epjc/s10052-019-6562-5}{{\em Eur. Phys. J. C}
+  {\bfseries 79} no.~2, (2019) 94},
+  \href{http://arxiv.org/abs/1810.10056}{{\ttfamily arXiv:1810.10056
+  [hep-ex]}}.
+
+\bibitem{Yu:2017vul}
+F.~Yu, ``{Light Quark Yukawa Couplings and the $W^\pm h$ Charge Asymmetry},''
+  \href{http://dx.doi.org/10.1016/j.nuclphysbps.2017.03.022}{{\em Nucl. Part.
+  Phys. Proc.} {\bfseries 285-286} (2017) 123--125}.
+
+\bibitem{Aguilar-Saavedra:2020rgo}
+J.~A. Aguilar-Saavedra, J.~M. Cano, and J.~M. No, ``{More light on Higgs flavor
+  at the LHC: Higgs boson couplings to light quarks through $h+\gamma$
+  production},'' \href{http://dx.doi.org/10.1103/PhysRevD.103.095023}{{\em
+  Phys. Rev. D} {\bfseries 103} no.~9, (2021) 095023},
+  \href{http://arxiv.org/abs/2008.12538}{{\ttfamily arXiv:2008.12538
+  [hep-ph]}}.
+
+\bibitem{Falkowski:2020znk}
+A.~Falkowski, S.~Ganguly, P.~Gras, J.~M. No, K.~Tobioka, N.~Vignaroli, and
+  T.~You, ``{Light quark Yukawas in triboson final states},''
+  \href{http://dx.doi.org/10.1007/JHEP04(2021)023}{{\em JHEP} {\bfseries 04}
+  (2021) 023}, \href{http://arxiv.org/abs/2011.09551}{{\ttfamily
+  arXiv:2011.09551 [hep-ph]}}.
+
+\bibitem{Sciandra:2688061}
+{\bfseries ATLAS} Collaboration, A.~Sciandra, ``{Measurement of Triboson
+  Production and aQGCs with the ATLAS detector},''.
+
+\bibitem{CMS-PAS-SMP-19-014}
+{\bfseries CMS} Collaboration, ``{Observation of heavy triboson production in
+  leptonic final states in proton-proton collisions at
+  $\sqrt{s}=13~\mathrm{TeV}$},''.
+
+\bibitem{Binoth:2006ym}
+T.~Binoth, S.~Karg, N.~Kauer, and R.~Ruckl, ``{Multi-Higgs boson production in
+  the Standard Model and beyond},''
+  \href{http://dx.doi.org/10.1103/PhysRevD.74.113008}{{\em Phys. Rev.}
+  {\bfseries D74} (2006) 113008},
+\href{http://arxiv.org/abs/hep-ph/0608057}{{\ttfamily arXiv:hep-ph/0608057
+  [hep-ph]}}.
+%%CITATION = HEP-PH/0608057;%%.
+
+\bibitem{Contino:2012xk}
+R.~Contino, M.~Ghezzi, M.~Moretti, G.~Panico, F.~Piccinini, and A.~Wulzer,
+  ``{Anomalous Couplings in Double Higgs Production},''
+  \href{http://dx.doi.org/10.1007/JHEP08(2012)154}{{\em JHEP} {\bfseries 08}
+  (2012) 154},
+\href{http://arxiv.org/abs/1205.5444}{{\ttfamily arXiv:1205.5444 [hep-ph]}}.
+%%CITATION = ARXIV:1205.5444;%%.
+
+\bibitem{Alasfar:2019pmn}
+L.~Alasfar, R.~Corral~Lopez, and R.~Gr\"ober, ``{Probing Higgs couplings to
+  light quarks via Higgs pair production},''
+  \href{http://dx.doi.org/10.1007/JHEP11(2019)088}{{\em JHEP} {\bfseries 11}
+  (2019) 088}, \href{http://arxiv.org/abs/1909.05279}{{\ttfamily
+  arXiv:1909.05279 [hep-ph]}}.
+
+\bibitem{Bar-Shalom:2018rjs}
+S.~Bar-Shalom and A.~Soni, ``{Universally enhanced light-quarks Yukawa
+  couplings paradigm},''
+  \href{http://dx.doi.org/10.1103/PhysRevD.98.055001}{{\em Phys. Rev.}
+  {\bfseries D98} no.~5, (2018) 055001},
+\href{http://arxiv.org/abs/1804.02400}{{\ttfamily arXiv:1804.02400 [hep-ph]}}.
+%%CITATION = ARXIV:1804.02400;%%.
+
+\bibitem{Bauer:2017cov}
+M.~Bauer, M.~Carena, and A.~Carmona, ``{Higgs Pair Production as a Signal of
+  Enhanced Yukawa Couplings},''
+  \href{http://dx.doi.org/10.1103/PhysRevLett.121.021801}{{\em Phys. Rev.
+  Lett.} {\bfseries 121} no.~2, (2018) 021801},
+\href{http://arxiv.org/abs/1801.00363}{{\ttfamily arXiv:1801.00363 [hep-ph]}}.
+%%CITATION = ARXIV:1801.00363;%%.
+
+\bibitem{Egana-Ugrinovic:2021uew}
+D.~Egana-Ugrinovic, S.~Homiller, and P.~Meade, ``{Multi-Higgs Production Probes
+  Higgs Flavor},'' \href{http://dx.doi.org/10.1103/PhysRevD.103.115005}{{\em
+  Phys. Rev. D} {\bfseries 103} (2021) 115005},
+  \href{http://arxiv.org/abs/2101.04119}{{\ttfamily arXiv:2101.04119
+  [hep-ph]}}.
+
+\bibitem{Papaefstathiou:2047255}
+A.~Papaefstathiou and K.~Sakurai, ``{Triple Higgs boson production at a 100 TeV
+  proton-proton collider},''
+  \href{http://dx.doi.org/10.1007/JHEP02(2016)006}{{\em JHEP} {\bfseries 02}
+  (Aug, 2015) 006. 10 p}, \href{http://arxiv.org/abs/1508.06524}{{\ttfamily
+  arXiv:1508.06524}}. \url{https://cds.cern.ch/record/2047255}. Corrected
+  version of Figure 6.
+
+\bibitem{Delaunay:2016brc}
+C.~Delaunay, R.~Ozeri, G.~Perez, and Y.~Soreq, ``{Probing Atomic Higgs-like
+  Forces at the Precision Frontier},''
+  \href{http://dx.doi.org/10.1103/PhysRevD.96.093001}{{\em Phys. Rev.}
+  {\bfseries D96} no.~9, (2017) 093001},
+\href{http://arxiv.org/abs/1601.05087}{{\ttfamily arXiv:1601.05087 [hep-ph]}}.
+%%CITATION = ARXIV:1601.05087;%%.
 
 \end{thebibliography}\endgroup
