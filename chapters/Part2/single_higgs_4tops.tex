@@ -3,5 +3,523 @@
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\chapter{ Four top operator in Higgs production and decay}\label{chap:overviewSingleHiggs}
+\chapter{ Four top operator in Higgs production and decay}\label{chap:4topSingleHiggs}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Introduction}
+
+The precise determination of the Higgs boson properties is one of the main focus of the Large Hadron Collider (LHC) physics programme. Within the current experimental precision, the measurement of the Higgs couplings so far appear to be in agreement with the Standard Model (SM) prediction within an accuracy of, typically, ten percent \cite{Aad:2019mbh, Sirunyan:2018koj}. In many beyond the SM (BSM) scenarios, however, it is expected that new physics will introduce modifications in the Higgs properties. 
+%
+If the new BSM degrees of freedom are much heavier than the electroweak scale, a general description of potential new physics effects can be formulated in the language of an effective field theory (EFT). One possibility of such a parameterization is the so-called Standard Model EFT (SMEFT), in which new physics effects are given in terms of higher-dimensional operators involving only SM fields and that also respect the SM gauge symmetries.  The dominant effects on Higgs physics, electroweak physics and top quark physics stem from dimension-six operators, suppressed by the new physics scale $\Lambda$. This approach is justified in the limit 
+in which energy scales $E\ll \Lambda$ are probed. 
+\par
+In this paper we will consider a small subset of these operators, namely four-fermion operators of the third generation quarks.
+A direct measurement of the four-top quark operators requires the production of four top quarks. At the LHC, for $\sqrt{s}=13\;\text{TeV}$, and within the SM, this is a rather rare process, with a cross section of about 12 fb including NLO QCD and NLO electroweak (EW) corrections \cite{Frederix:2017wme}. This is due to the large phase space required for the production of four on-shell top quarks. First experimental measurements \cite{Aad:2020klt} indicate a slightly higher cross section than the SM prediction.\footnote{We note that a CMS combination from different LHC runs \cite{Sirunyan:2019nxl}, though having lower signal significance, shows agreement with the SM prediction.} Though four-top production gives direct access to four-top operators, the main effect comes from $\mathcal{O}(1/\Lambda^4)$ terms when computing the matrix element squared \cite{Hartland:2019bjb}, questioning whether one should neglect, in general, the effects of dimension-eight operators in the calculation of the amplitudes. At any rate, current experimental bounds on the four-top operators are rather weak. A significant improvement in constraining power would be expected, however, at a future 100 TeV $pp$ collider, due to the growth with the energy of the diagrams involving four-top operators \cite{Banelli:2020iau}. 
+The situation is rather similar for the operators leading to $t\bar{t}b\bar{b}$ contact interactions. They can be measured directly in $t\bar{t}b\bar{b}$ production, see \cite{Sirunyan:2020kgar, ATLAS:2018gug} for experimental analyses at $\sqrt{s}=13\text{ TeV}$, but also leading to rather weak limits in SMEFT fits \cite{DHondt:2018cww, Hartland:2019bjb}.
+\par
+Given the rather weak ``direct'' bounds on the $t\bar{t}t\bar{t}$ and $t\bar{t}b\bar{b}$ contact interactions, here we will discuss alternative probes, showing how these interactions can be constrained indirectly via their contributions to single Higgs observables.\footnote{Alternatively, other indirect probes of four-top quark interactions that have been proposed include top quark pair production \cite{Degrande:2020evl} and electroweak precision data \cite{deBlas:2015aea}. The latter mostly leads to bounds on operators that can be constrained only weakly from Higgs data.}
+These operators generate contributions to the effective couplings of the Higgs to gluons and photons via two-loop diagrams. At the one-loop level, they also modify associated production of a Higgs boson with top quarks and, in the case of a $t\bar{t}b\bar{b}$ operator, also the Higgs decay to bottom quarks. While the leading log results can be easily included by renormalisation group operator mixing effects \cite{Jenkins:2013zja, Jenkins:2013wua, Alonso:2013hga}, in this paper we will compute also the finite terms and show that they can be numerically important.
+\par
+In addition, we will study the interplay between the extraction of the Higgs self-coupling measurement from single Higgs production and decay and the four-fermion operators.
+It was previously proposed that competitive limits 
+to the ones from Higgs pair production on the trilinear Higgs self-coupling can be set using single Higgs data \cite{McCullough:2013rea, Gorbahn:2016uoy, Degrassi:2016wml, Bizon:2016wgr, Maltoni:2017ims, Degrassi:2019yix, Degrassi:2021uik, Haisch:2021hvy}.  A global fit including all operators entering in Higgs production and decay at tree-level plus the loop-modifications via the trilinear Higgs self-coupling has been performed in \cite{DiVita:2017eyz}. 
+Searches for modifications of the trilinear Higgs self-coupling via single Higgs production have been presented by the ATLAS  \cite{ATLAS:2019pbo} and CMS \cite{CMS:2020gsy} collaboration. Using the example of the four-quark operators, we will show that there are other weakly constrained dimension-six  operators, that enter at the loop level, that should be included in such analyses as they have a non-trivial interplay with the trilinear Higgs self-coupling extraction from single Higgs measurements. We will hence perform a combined fit of these operators together with the operator modifying the trilinear Higgs self-coupling. While our study does not consider a global fit to all operators entering Higgs data, the results of our computations can be easily used in global analyses. Our main point, namely that in a global fit all operators entering via loop contributions, if so far constrained only weakly (as it is the case for, e.g., four-top operators), should be included, is clearly demonstrated by our few parameters fit. 
+\par 
+The paper is structured as follows: in section \ref{sec:notation} we clarify the notation used for the effective Lagrangian in our analysis. In section \ref{sec:Higgs} we give the results of our computation of the loop contributions of the four-fermion operators. The results of a fit to data including the computed loop contributions are presented in section \ref{sec:fit}, 
+where we show results for both current data and projections at the High-Luminosity LHC (HL-LHC).
+We conclude in section \ref{sec:conclusion}. 
+Further details of our analysis and additional material derived from our results are presented in two appendices.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Notation \label{sec:notation}}
+
+In the presence of a gap between the electroweak scale and the scale of new physics, $\Lambda$, the effect of new particles below the new physics scale can be described by an EFT. In the case of the SMEFT, the SM Lagrangian is extended by a tower of higher-dimensional operators, ${\cal O}_i$, built using the SM symmetries and fields (with the Higgs field belonging to an $SU(2)_L$ doublet), and whose interaction strength is controlled by Wilson coefficients, $C_i$, suppressed by the corresponding inverse power of $\Lambda$. In a theory where baryon and lepton number are preserved, the leading order (LO) new physics effects are described by the dimension-six  SMEFT Lagrangian,
+%
+\begin{equation}
+	\mathcal{L}_{\mathrm{SMEFT}}^{d=6}=\mathcal{L}_{\SM} + \frac{1}{\Lambda^2}\sum_i C_i  {\cal O}_i.
+\end{equation}
+%
+A complete basis of independent dimension-six operators was presented for the first time in \cite{Grzadkowski:2010es}, the so-called \textit{ Warsaw basis}. In this work, we are interested in particular in the effect of four-fermion operators of the third generation. %that arise at dimension-six level. 
+These are, in the basis of \cite{Grzadkowski:2010es}, 
+%
+\begin{align}
+	\Delta \mathcal{L}_{\mathrm{SMEFT}}^{d=6}&=\frac{C_{tt}}{\Lambda^2}(\bar{t}_R \gamma_{\mu} t_R)(\bar{t}_R \gamma^{\mu} t_R)+\frac{C_{Qt}^{(1)}}{\Lambda^2}(\bar{Q}_L \gamma_{\mu} Q_L)(\bar{t}_R \gamma^{\mu} t_R)+\frac{C_{Qt}^{(8)}}{\Lambda^2}(\bar{Q}_L T^A\gamma_{\mu} Q_L)(\bar{t}_R T^A\gamma^{\mu} t_R) \nonumber\\ \label{eq:Lag}
+	&+\frac{C_{QQ}^{(1)}}{\Lambda^2}(\bar{Q}_L \gamma_{\mu} Q_L)(\bar{Q}_L \gamma^{\mu} Q_L)+\frac{C_{QQ}^{(3)}}{\Lambda^2}(\bar{Q}_L \sigma_a \gamma_{\mu} Q_L)(\bar{Q}_L  \sigma_a \gamma^{\mu} Q_L)\\ &+\left[\frac{C^{(1)}_{QtQb}}{\Lambda^2} (\bar{Q}_L t_R )i\sigma_2(\bar{Q}_L^\mathrm{ T} b_R) +\frac{C^{(8)}_{QtQb}}{\Lambda^2} (\bar{Q}_L T^A t_R) i\sigma_2 (\bar{Q}_L^{\mathrm {T}} T^A b_R) + \hc \right]\,\nonumber
+	%
+	\\
+	&+ \frac{C_{bb}}{\Lambda^2}(\bar{b}_R \gamma_{\mu} b_R)(\bar{b}_R \gamma^{\mu} b_R) +\frac{C_{tb}^{(1)}}{\Lambda^2}(\bar{t}_R \gamma_{\mu} t_R)(\bar{b}_R \gamma^{\mu} b_R)+\frac{C_{tb}^{(8)}}{\Lambda^2}(\bar{t}_R T^A\gamma_{\mu} t_R)(\bar{b}_R T^A\gamma^{\mu} b_R) \nonumber \\
+	%
+	& +\frac{C_{Qb}^{(1)}}{\Lambda^2}(\bar{Q}_L \gamma_{\mu} Q_L)(\bar{b}_R \gamma^{\mu} b_R)+\frac{C_{Qb}^{(8)}}{\Lambda^2}(\bar{Q}_L T^A\gamma_{\mu} Q_L)(\bar{b}_R T^A\gamma^{\mu} b_R) \,,\nonumber
+\end{align}
+%
+where we assume all Wilson coefficients to be real. In \eqref{eq:Lag}, $Q_L$, $t_R$ and $b_R$ refer to the third family quark left-handed doublet and right-handed singlets, respectively; $\sigma_{a}$ are the Pauli matrices; $T^{A}$ are the $SU(3)_c$ generators and ${}^{\mathrm{T}}$ denotes transposition of the $SU(2)_L$ indices.
+
+The largest effects in Higgs physics are typically expected to come from operators with the adequate chiral structure entering in top quark loops, as they will be proportional to the top quark mass/Yukawa coupling. 
+Conversely, we expect a suppression of operators including bottom quarks with the bottom Yukawa coupling. 
+As we will argue below, either because of their chirality or because they only enter in bottom loops, the operators with right-handed bottom quarks in the last two lines in \eqref{eq:Lag} are expected to give only very small effects, and will be neglected. 
+This is not the case for the operators  ${\cal O}_{QtQb}^{(1),(8)}$, which can have sizeable contributions to, e.g. Higgs to $b\bar{b}$ or gluon fusion rates, proportional to the top quark mass. 
+
+We will later on also compare with possible effects of a trilinear Higgs self-coupling modification with respect to the SM. In the dimension-six SMEFT, the only operator that modifies the Higgs self-interactions without affecting the single-Higgs couplings at tree level is
+%
+\begin{equation}
+	\Delta \mathcal{L}_{\mathrm{SMEFT}}^{d=6}=\frac{C_{\phi}}{\Lambda^2}(\phi^\dagger \phi)^3,
+\end{equation}
+%
+where $\phi$ stands for the usual $SU(2)_L$ scalar doublet, with $\phi=1/\sqrt{2}(0,v+h)^T$ in the unitary gauge.
+Furthermore, for later use we write down also the operators that modify the Higgs coupling to top and bottom quarks
+\begin{equation}
+	\begin{split}
+		\Delta \mathcal{L}_{\mathrm{SMEFT}}^{d=6}&= \left(\frac{C_{t\phi}}{\Lambda^2}\phi^\dagger \phi ~\!\bar{Q}_L\tilde{\phi}~\!t_R+\frac{C_{b\phi}}{\Lambda^2}\phi^\dagger \phi ~\!\bar{Q}_L \phi~\! b_R+\hc\right)\,,
+	\end{split}
+\end{equation}
+%
+with $\tilde{\phi}=i \sigma_2 \phi^*$.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Contribution of four-fermion operators to Higgs production and decay \label{sec:Higgs}}
+In this section, we discuss the contribution of the third generation four-fermion operators to various Higgs production mechanisms  and  Higgs decay channels.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Higgs coupling to gluons and photons}
+
+We start by discussing the calculation of the Higgs couplings to gluons and photons. The four-top-quark operators enter these couplings at the two-loop level. The diagrams are shown in \autoref{fig:ggh}. There are three classes of diagrams: (a) corrections to the top-quark propagator, (b) corrections to the Higgs Yukawa coupling and (c) corrections to the $t\bar{t}g$ and $t\bar{t}\gamma$ vertices. The latter turns out to be zero when the gluons or photons are on-shell.
+\begin{figure}[t!]
+	\begin{center}
+		\includegraphics[width=12cm]{fig/ggF-4F_NLO.pdf}
+		\caption{Example Feynman diagrams for four-fermion-operator contributions to the Higgs production via gluon fusion. The red box indicates the four-fermion operator.\label{fig:ggh} }
+	\end{center}
+\end{figure}
+The first and second type of corrections are left-right (LR) transitions hence the only contributions stem from the operators with Wilson coefficients $C_{Qt}^{(1),(8)}$ and $C^{(1),(8)}_{QtQb}$.
+As can be inferred from the diagrams in \autoref{fig:ggh} the result can be expressed as a product of one-loop integrals. We computed the diagrams in two independent calculations making use of different computer algebra tools such as \texttt{PackageX} \cite{Patel:2015tea}, \texttt{KIRA} \cite{Maierhoefer:2017hyi}, \texttt{Fire} \cite{Smirnov:2008iw}, \texttt{FeynRules} \cite{Alloul:2013bka} and \texttt{FeynArts} \cite{Hahn:2000kx}.\footnote{Note that the latter tool needed some manual adjustments to deal with four-fermion operators.}  
+We cross-checked the Feynman rules with ref.~\cite{Dedes:2017zog}.
+\\
+For the renormalisation procedure we adopt a mixed on-shell (OS)-$$\MSbar$$ -- scheme as proposed in \cite{Dawson:2018pyl}, in which we renormalise 
+the quark masses OS and the Wilson coefficients of the dimension-six operators using  the $\MSbar$\;scheme. 
+We hence renormalise the top/bottom mass as
+\begin{equation}
+	m_{t/b}^{\text{OS}}=m_{t/b}^{(0)}-\delta m_{t/b},
+\end{equation}
+%
+where the counterterms are given by
+\begin{align}
+	\delta m_t =&\frac{1}{16 \pi^2} \frac{C_{Qt}^{(1)}+c_F C_{Qt}^{(8)}}{\Lambda^2}m_t^3\left[ \frac{2}{\bar{\epsilon}} +2 \log\left(\frac{\mu_R^2}{m_t^2}\right)+1\right] \\ &+ \frac{1}{16 \pi^2}  \frac{(2 N_c+1) C_{QtQb}^{(1)}+c_F C_{QtQb}^{(8)}}{\Lambda^2}  \left[ \frac{1}{\bar{\epsilon}} +  \log\left(\frac{\mu_R^2}{m_b^2}\right)+1 \right]  m_b^3\,, \nonumber \\
+	\delta m_b=&\frac{1}{16 \pi^2} \frac{(2 N_c+1)C_{QtQb}^{(1)}+c_F C_{QtQb}^{(8)}}{\Lambda^2}\left[ \frac{1}{\bar{\epsilon}} +\log\left( \frac{\mu_R^2}{m_t^2}\right)+1\right] m_t^3\,,
+\end{align}
+with $\bar{\epsilon}^{-1} = \epsilon^{-1}- \gamma_E +\log(4 \pi)$, in dimensional regularization with $d=4-2\epsilon$, $N_c=3$ the number of colors, and $c_F=(N_c^2-1)/(2N_c)=4/3$ the $SU(3)$ quadratic Casimir in the fundamental representation. 
+We note that, for the calculations of the physical processes in this paper, the difference between using the OS or the $\MSbar$\;definitions of the top and bottom masss in SMEFT results in changes that are formally of $\mathcal{O}(1/\Lambda^4)$.\footnote{In the $\MSbar$\;scheme the mass counterterms become
+	\begin{align}
+		\delta m_t^{\bar{\text{MS}}} =&\frac{1}{8 \pi^2} \frac{C_{Qt}^{(1)}+c_F C_{Qt}^{(8)}}{\Lambda^2}m_t^3\frac{1}{\bar{\epsilon}}+ \frac{1}{16 \pi^2}  \frac{(2 N_c+1) C_{QtQb}^{(1)}+c_F C_{QtQb}^{(8)}}{\Lambda^2}   \frac{1}{\bar{\epsilon}}  m_b^3\,,  \\
+		\delta m_b^{\bar{\text{MS}}}=&\frac{1}{16 \pi^2} \frac{(2 N_c+1)C_{QtQb}^{(1)}+c_F C_{QtQb}^{(8)}}{\Lambda^2}\frac{1}{\bar{\epsilon}} m_t^3\,.
+	\end{align}
+}
+We note though that using a SM running $\MSbar$\;bottom mass instead of an OS one makes a relevant difference in the numerical results.
+In the results presented below we will use the OS bottom mass as an input.
+
+The coefficients of the dimension-six operators 
+are renormalised in the $\MSbar$ \;scheme.
+At one-loop level the only operators entering the Higgs to gluon or photon rates that mix with the four-quark operators are the ones that modify the top or bottom Yukawa couplings: ${\cal O}_{t\phi}$ and ${\cal O}_{b\phi}$, respectively. The coefficients of these operators are renormalized according to
+\begin{equation}
+	C^{\bar{\text{MS}}}_{t\phi/b\phi}=C^{(0)}_{t\phi/b\phi}+\delta C_{t\phi/b\phi}\quad\quad \text{   with   }\quad\quad \delta C_{t\phi/b\phi} = -\frac{1}{2\bar{\epsilon}}\frac{1}{16 \pi^2} \gamma^{j}_{t\phi/b\phi} C_j.
+\end{equation}
+The only four-quark Wilson coefficients contributing to $\gamma_{t\phi/b\phi}$ are the ones from ${\cal O}_{Qt}^{(1),(8)}$ and  ${\cal O}_{QtQb}^{(1),(8)}$. 
+The explicit expressions for the relevant one-loop anomalous dimension can be obtained from ref.~\cite{Jenkins:2013zja,Jenkins:2013wua}. 
+The Wilson coefficients $C_{t\phi/b\phi}$ modify the Higgs couplings to top quarks/bottom quarks as follows
+\begin{equation}
+	g_{ht\bar{t}/hb\bar{b}}=\frac{m_{t/b}}{v}-\frac{v^2}{\Lambda^2}\frac{C_{t\phi/b\phi}}{\sqrt{2}}\,.
+\end{equation}
+Hence, a modification of the Higgs couplings to bottom and top quarks is generated by operator mixing, even if $C_{t\phi/b\phi}$ are zero at $\Lambda$.
+\par
+The modification of the Higgs production rate in gluon fusion (ggF) can be written as
+\begin{equation}
+	\frac{\sigma_{ggF}}{\sigma_{ggF}^{\SM}}= 1+ \frac{ \sum_{i=t,b} 2 \Re(F_{\LO}^i F^*_{\NLO})}{\left| F_{\LO}^t+F_{\LO}^b  \right|^2} \label{eq:production}
+\end{equation}
+with 
+%
+\begin{equation}
+	F_{\LO}^i=-\frac{8m_i^2}{m_h^2}\left[1-\frac{1}{4}\log^2(x_i)\left(1-\frac{4m_i^2}{m_h^2}\right)\right]
+\end{equation}
+where $m_h$ is the Higgs mass,
+and
+%
+\begin{equation}
+	\begin{split}
+		F_{\NLO}=&\frac{ 1}{4\pi^2  \Lambda^2}(C_{Qt}^{(1)}+c_FC_{Qt}^{(8)})F_{\LO}^t \left[ 2 m_t^2  +\frac{1}{4} (m_h^2-4 m_t^2) \left( 3 +2 \sqrt{1-\frac{4 m_t^2}{m_h^2}} \log(x_t) \right)  \right. \\ & \left.
+		+\frac{1}{2} (m_h^2-4 m_t^2) \log\left(\frac{\mu_R^2}{m_t^2}\right)\right] \\ & + 
+		\frac{1}{32 \pi^2 \Lambda^2} ((2N_c+1)C_{QtQb}^{(1)}+c_FC_{QtQb}^{(8)}) \left[ F_{\LO}^b \frac{m_t}{m_b}\left( 4 m_t^2-2 m_h^2 \right. \right.\\ & \left. \left. - (m_h^2-4 m_t^2)\sqrt{1-\frac{4 m_t^2}{m_h^2}} \log(x_t)-(m_h^2-4 m_t^2)\log\left(\frac{\mu_R^2}{m_t^2}\right)\right) +(t\leftrightarrow b)\right]  \,. \label{eq:FNLO}
+	\end{split}
+\end{equation}
+Only top quark loops contribute to the parts proportional to $C_{Qt}^{(1),(8)}$. We have neglected the contributions of the operators with Wilson coefficient $C_{Qb}^{(1),(8)}$ as they would lead only to subleading contributions proportional to $m_b^3$.
+%
+The variable $x_i$ for a loop particle with mass $m_i$ is given by
+\begin{equation}
+	x_i=\frac{-1+\sqrt{1-\frac{4 m_i^2}{m_h^2}}}{1+\sqrt{1-\frac{4 m_i^2}{m_h^2}}}\,. \label{eq:xvariable}
+\end{equation} 
+In analogy to \eqref{eq:production}, we can write the modified decay rates of the Higgs boson to gluons as
+\begin{equation}
+	\frac{\Gamma_{h\to gg}}{\Gamma_{h\to gg}^{\SM}}= 1+ \frac{ \sum_{i=t,b} 2 \Re(F_{\LO}^i F^*_{\NLO})}{ |F_{\LO}^t+F_{\LO}^b|^2} 
+\end{equation}
+and 
+\begin{equation}
+	\frac{\Gamma_{h\to \gamma\gamma}}{\Gamma_{h\to \gamma\gamma}^{\SM}}= 1+ \frac{2 \Re(F_{\LO, \gamma} F^*_{\NLO,\gamma})}{  |F_{\LO, \gamma}|^2} .
+\end{equation}
+In the latter 
+\begin{equation}
+	F_{\LO, \gamma}= N_C\,Q_t^2 F_{\LO}^t+ N_C\,Q_b^2 F_{\LO}^b+F_{\LO}^W+ F^G_{LO} ,
+\end{equation}
+and $F_{\NLO, \gamma}$ is obtained from $F_{\NLO}$ by replacing the LO form factor that appears inside of it by  $ F_{\LO}^i \to N_c \,Q_i^2 F_{\LO}^i$,
+with the charges $Q_t=2/3$ and $Q_b=-1/3$. The $W$ boson contribution
+%
+\begin{equation}
+	F_{\LO}^W= 2 \left(1+6 \frac{m_W^2}{m_h^2}\right)-6 \frac{m_W^2}{  m_h^2} \left(1-2  \frac{m_W^2}{m_h^2}\right) \log^2(x_W),
+\end{equation}
+with $m_W$ the $W$ mass, and the Goldstone contribution
+%
+\begin{equation}
+	F_{\LO}^G=4\frac{m_W^2}{m_h^2} \left( 1+ \frac{m_W^2}{m_h^2} \,\log^2(x_W) \right)\,.
+\end{equation}
+\par
+
+The formulae presented above are valid under the assumption that, at the electroweak scale, the four-quark operators are the only new physics contributions in the dimension-six effective Lagrangian. If, on the other hand, one assumes that the four-quark operators are defined at some high scale $\Lambda$, e.g.~after matching with an specific ultraviolet (UV) model, further (logarithmic) contributions appear during the running to low energies, as a result of the mixing between these four-fermion interactions and those operators that would modify the processes at LO. 
+Those effects can be included via the renormalisation group equation (RGE) for the operators with Wilson coefficient $C_{t\phi}$  and $C_{b\phi}$  \cite{Jenkins:2013zja, Jenkins:2013wua}, that lead approximatively to 
+\begin{equation}
+	\begin{split}
+		C_{t\phi}(\mu_R)-C_{t\phi}(\Lambda)= &\frac{1}{16 \pi^2 v^2} \left[-2  y_t (m_h^2  -4 m_t^2) (C_{Qt}^{(1)}+c_F C_{Qt}^{(8)} )\log\left( \frac{\mu_R^2}{\Lambda^2}\right) \right.\\
+		& \left.+ \frac{y_b}{2} (m_h^2-4 m_b^2)\left(  (2N_c+1)  C_{QtQb}^{(1)}+   c_F C_{QtQb}^{(8)}\right)\log\left( \frac{\mu_R^2}{\Lambda^2}\right)\right] \label{eq:runningCuH}
+	\end{split}
+\end{equation}
+and
+\begin{equation}
+	\begin{split}
+		C_{b\phi}(\mu_R)-C_{b\phi}(\Lambda)= \frac{y_t}{32 \pi^2 v^2} \left[  (m_h^2-4 m_t^2)\left(  (2N_c+1)  C_{QtQb}^{(1)}+   c_F C_{QtQb}^{(8)}\right)\log\left( \frac{\mu_R^2}{\Lambda^2}\right)\right]\,, \label{eq:runningCdH}
+	\end{split}
+\end{equation}
+where $y_{t/b}=\sqrt{2} m_{t/b}/v$.
+Note that the combinations of Wilson coefficients  appearing in \eqref{eq:runningCuH}\eqref{eq:runningCdH} are the same as in $F_{NLO}$ in \eqref{eq:FNLO}.
+Effectively, we can then obtain the result under the assumption that the four-fermion operators are the only non-zero ones at the high scale by replacing in \eqref{eq:FNLO} $\mu_R \to \Lambda$, noting that we have renormalised the top and bottom quark mass in the OS scheme.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Higgs decay to bottom quarks}
+\begin{figure}[t!]
+	\vspace{-.5 cm}
+	\centering
+	\includegraphics[scale=0.85]{./fig/Hbb}
+	\caption{Feynman diagram contributing to the NLO   $h \to b \bar b$ process. }
+	\label{hbb}
+\end{figure}
+The dominant four-fermion contributions to decay channel $h \to b\bar b$ come from the operators with Wilson coefficients $C_{QtQb}^{(1),(8)}$. The corresponding diagram at NLO is shown in~fig~\ref{hbb}. 
+Adopting the same renormalisation procedure as outlined in the previous subsection, we obtain the following expression for the correction to 
+the $h \to b\bar b$ decay rate in the presence of ${\cal O}_{QtQb}^{(1),(8)}$,
+\begin{equation}
+	\begin{split}
+		\frac{\Gamma_{h\to b\bar{b}}}{\Gamma_{h\to b\bar{b}}^{\SM}}=& 1+ \frac{1}{16\pi^2}\frac{m_t}{m_b}(m_h^2-4m_t^2)\frac{(2 N_c+1) C_{QtQb}^{(1)}+c_F C_{QtQb}^{(8)}}{\Lambda^2} \\ & \times\left[ 2+\sqrt{1-\frac{4 m_t^2}{m_h^2}}\log(x_t)-\log\left(\frac{m_t^2}{\mu_R^2}\right) \right] \,,
+		\label{hbbnlo}
+	\end{split}
+\end{equation}
+which carries an enhancement factor of $m_t/m_b$ and is hence expected to be rather large.
+Again, we have neglected subdominant contributions suppressed by the bottom mass from the operators $\mathcal{O}_{Qb}^{(1),(8)}$. 
+Including the leading logarithmic running of $C_{b\phi}$ of \eqref{eq:runningCdH} from the high scale $\Lambda$ to the electroweak scale is achieved by setting in \eqref{hbbnlo} $\mu_R\to \Lambda$.
+The expression in \eqref{hbbnlo} agrees with results obtained from the full calculation of the NLO effects in the dimension-six SMEFT, first computed in~\cite{Gauld:2015lmb}. 
+
+This closes the discussion of the main effects that the third-generation four-quark operators can have in the different Higgs decay widths.\footnote{Four-fermion operators also affect the $h\to Z\gamma$ partial width. However, as in the diphoton case, the effect is expected to be small due to the dominance of the $W$ boson loop. Because of this, and given the smallness of the $h\to Z\gamma$ branching ratio and the relatively low precision expected in this channel at the LHC, we neglect the effects of four-fermion interactions in this decay.} Note also that these modifications of the Higgs decay rate to photons, gluons and, especially, bottom quarks, affect all the branching ratios (BRs) due to the modification of the Higgs total width, and therefore have an observable effect in all Higgs processes measured at the LHC.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Associated production of a Higgs boson with top quarks}
+
+\begin{figure}[t!]
+	\centering
+	\includegraphics[scale=0.85]{./fig/ggttH-4F_NLO}
+	\caption{Feynman diagrams including the four-fermion loop contributions to the $ gg \to t\bar{t} h$ subprocess.}
+	\label{ggtth}
+\end{figure}
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[scale=0.85]{./fig/qqttH-4F_NLO}
+	\caption{Feynman diagrams including the four-fermion loop contributions to the  $ q \bar{q} \to t\bar{t} h$ subprocess.}
+	\label{qqtth}
+\end{figure}
+
+The associated Higgs production with top quarks, $t\bar{t}h$, receives significant  NLO corrections from the singlet and octet operators $\mathcal{O}_{Qt}^{(1),(8)}$, while the contributions from $\mathcal{O}_{QtQb}^{(1),(8)}$ remain small. In addition, there are some small contributions from the singlet and triplet left-handed operators, $\mathcal{O}_{QQ}^{(1),(3)}$, and the right-handed four-top operator, $\mathcal{O}_{tt}$, as well.
+The $ t\bar{t} h$ process can be either initiated by gluons, see \autoref{ggtth}, or by a quark anti-quark pair, see \autoref{qqtth}.  The triangle and box topologies (shown as (d) and (e) in \autoref{ggtth} and as (b) in \autoref{qqtth}) are finite. While for Higgs production/decay in/to gluons only certain combinations of singlet/octet operators entered, leading to a degeneracy, this is not the case for $t\bar{t}h$ production, where the gluons no longer need to combine to a colour singlet state. 
+The degeneracy between the singlet and octet operators is mainly broken by the contributions from the triangle diagrams, where, for instance, the difference between the contributions of $\mathcal{O}_{Qt}^{(1)}$ and $\mathcal{O}_{Qt}^{(8)}$ does not follow the same color structure as other diagrams.
+
+We adopt a four-flavour scheme for the computation of the quark-initiated contributions. We note that within a five-flavour scheme operators containing both bottom and top quarks lead to a LO contribution from a direct contact diagram. Nevertheless, this gives an overall negligible correction as the $ b \bar b $ initiated $t\bar t h$ process is suppressed by the small bottom parton distribution functions. The effect of changing the flavour scheme results in an uncertainty of $1-2\%$.
+\par
+We have computed the NLO corrections using \texttt{Madgraph\_aMCNLO} \cite{Alwall:2014hca} (version  3.1.0) with the \texttt{SMEFTatNLO v1.0.2} model~\cite{Degrande:2020evl}. The results were cross-checked by an analytic computation\footnote{The \texttt{ FORTRAN} code containing this analytical calculation can be provided on request.}, based on the reduction of one-loop amplitudes via the method developed by G. Ossola, C.G. Papadopoulos and R. Pittau~(OPP reduction)~\cite{Ossola:2006us}.
+The OPP reduction was done using the \texttt{CutTools} programme~\cite{Ossola:2007ax}.
+%
+It reduces the one-loop amplitude into 1,2,3 and 4-point loop functions in four dimensions, keeping spurious terms from the $\epsilon$ part of the amplitude. To correct for such terms, one needs to compute the divergent UV counterterm as well as a finite rational terms, denoted $R_{2}$ as in Ref.~\cite{Ossola:2008xq}.\footnote{Another rational term ~$R_1$ appears due to the mismatch between the four and $d$ dimensional amplitudes, but this is computed automatically in \texttt{CutTools}. } The amplitudes were generated in the same way as for gluon fusion. The UV and $R_2$ counterterms, that need to be supplemented to \texttt{CutTools}, were computed manually following the method detailed in~\cite{Ossola:2008xq}.
+The UV counterterms are the same as for gluon fusion, in addition to a new one  that is needed to be introduced to renormalise diagrams of type (c) in \autoref{ggtth} and \autoref{qqtth}. This is due to the operator mixing of light -- heavy four-quark operators with heavy four-quark operators. Effectively, this leads to a counterterm 
+\begin{equation}
+	\includegraphics[width=0.13\linewidth]{fig/CT} =\frac{ig_s}{12 \pi^2\Lambda^2} T^{A}_{ij} p_g^2 \gamma^\mu \left( C_{tt} P_R+\left(C_{QQ}^{(1)} + C_{QQ}^{(3)}\right) P_L +\frac{ C_{Qt}^{(8)}}{4} \right) \left( \frac{1}{\bar{\epsilon}}-1 \right) . \label{eq:R2CT}
+\end{equation}
+%
+Since the singlet and octet operators $\mathcal{O}_{QtQb}^{(1),(8)}$ are not implemented in the current version of \texttt{SMEFTatNLO}, or in any other loop-capable \texttt{UFO} model available, we have modified the \texttt{SMEFTatNLO} model to include these operators, by including their Feynman rules and computing the UV and $R_2$ counterterms needed for the $t\bar t h$ calculation. 
+These $\mathcal{O}_{QtQb}^{(1),(8)}$ contributions are included for consistency, as they were relevant and thus included in the calculation of, e.g. $h\to b\bar{b}$. However, as we will argue below, their contribution to $t\bar{t}h$ is rather small. Similarly, other ``mixed'' bottom-top operators are expected
+to give also suppressed contributions, compared to those from four-top operators. Therefore we neglect their effects in our calculation.\footnote{Furthermore, we note that such operators are also currently not included in \texttt{SMEFTatNLO}. A computation of their contributions, while being beyond the scope of this paper, would require a similar strategy as for the $\mathcal{O}_{QtQb}^{(1),(8)}$ operator.}
+
+Again, to connect with specific models that may generate the four-quark operators at the new physics scale $\Lambda$, one needs to consider the contributions that come from the running from $\Lambda$ to low energies, and that mix these operators with those entering in $t\bar{t}h$ at the LO level. 
+For the gluon-initiated subprocess the relevant contributions are from the running of $C_{t\phi}$ in \eqref{eq:runningCuH}, while for the quark-initiated subprocess we need to account for the mixing of the third generation four-fermion operators with the ones connecting the third generation with the first two generations. The corresponding corrections can be obtained from the RGEs in refs. \cite{Jenkins:2013zja,Jenkins:2013wua,Alonso:2013hga}.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Results}
+
+Here we provide semi-analytical expressions for the results of our NLO calculations including the effects of the third generation four-quark operators. 
+These NLO contributions to the single Higgs rates, as a function of the four-heavy-quark Wilson coefficients, are denoted by
+\begin{equation}
+	\delta R(C_i) = R/R^{\SM} -1,
+	\label{eq:deltaR}
+\end{equation}
+where $R$ stands generically for partial width $\Gamma$ or cross section $\sigma$. They are summarised in~\autoref{table:res4top}. 
+The numbers consider only the linear contributions in $\Lambda^{-2}$.  
+The respective $\delta R(C_i) $ get a contribution from the computation of the finite corrections to the process and an additional contribution from operator mixing due to RGE running and can hence be split into two parts
+\begin{equation}
+	\delta R(C_i)= \frac{C_i}{\Lambda^2}\left(\delta R_{C_i}^{fin}+ \delta R_{C_i}^{log} \log\left(\frac{\mu_R^2}{\Lambda^2}\right)\right)\,.
+	\label{eq:deltar}
+\end{equation}
+%
+We note that the way we write our results corresponds to the finite part of the NLO correction taken at a typical process scale $\mu_R$ and a contribution obtained by solving the RGE of the dimension-six Wilson coefficients via the leading log approximation from the high scale $\Lambda$ to the low scale $\mu_R$.  Both the finite part dependence $\delta R_{C_i}^{fin}$ of these corrections on the  Wilson coefficient as well as the part proportional to the logarithm $\delta R_{C_i}^{log}$  are reported in table~\ref{table:res4top}.
+Our results can be improved by replacing the part proportional to the coefficients  $\delta R^{log}_{C_i}$ by solving the coupled system of RGEs. 
+For $ \Lambda =1$ TeV, and depending on the renormalisation scale of the process, the value of the logarithm in \eqref{eq:deltar} ranges between $\sim[-5.5,-2.9]$. With these numerical values in mind and by looking at $\delta R_{C_i}^{log}$ in table~\ref{table:res4top}, we see that the finite part of the NLO calculation, i.e. $\delta R_{C_i}^{fin}$, is usually of the same order  of magnitude or larger than the leading-log part, with the exception of the $C_{QtQb}^{(1),(8)}$ contributions to the $h\to b\bar{b}$. This underlines the importance of considering the full NLO computation in the determination of the Wilson coefficients for $C_{Qt}^{(1),(8)}$, whereas for $C_{QtQb}^{(1),(8)}$, where the limits are mainly driven by $h\to b\bar{b}$, they turn out to play less important role.
+\input{results4top}
+The numerical values were obtained using as input parameters
+\begin{equation}
+	\begin{split}
+		& G_F=1.166378 \cdot 10^{-5} \text{ GeV}^{-2}\,,  \; m_W=80.379\text{ GeV}\,, \;m_Z=91.1876\text{ GeV}\,, \\ &  m_t^{\text{OS}}=172.5 \text{ GeV}\,, \; m_b^{\text{OS}}=4.7\text{ GeV}\,,  \;m_h=125.1\text{ GeV}\,,
+	\end{split}
+\end{equation}
+and the NNPDF23 set at NLO \cite{Ball:2012cx}. 
+
+Looking at the results, first we note that the operators ${\cal O}_{QQ}^{(1),(3)} $ and ${\cal O}_{tt}$ only contribute to $t\bar t h$ production. 
+In this regard, however, it must be noted that the uncertainties of the renormalisation schemes, the scale uncertainty, the PDF+$\alpha_s$ uncertainty and the one of the flavour schemes of the $t\bar t h$ process are~$ \sim 5\%$. This is larger than the typical effects of $C_{QQ}^{(1),(3)} $ and $C_{tt}$ for ${\cal O}(1)$ coefficients. Therefore, all Higgs rates are expected to be relatively insensitive to these interactions 
+unless rather large values of these Wilson coefficients are allowed.  
+Secondly, from the analytic results, we observe that in the NLO corrections to Higgs rates, the Wilson coefficients $C_{QtQb}^{(1)} ,  C_{QtQb}^{(8)}$ always appear in a linear combination identical to the one seen in the RGE of the Wilson coefficients~$C_{t\phi}$ and~$C_{b\phi}$, i.e. 
+%
+\begin{equation}
+	C_{QtQb}^+= (2N_c+1 )C_{QtQb}^{(1)} + c_F   C_{QtQb}^{(8)}.
+	\label{eq:CQtQbplus}
+\end{equation}
+%
+The exception is the $t\bar t h$ process, which has a small finite part contribution that breaks this relation. However, this finite part is suppressed by the bottom quark mass and therefore it is very small. Thus, all single Higgs rates are mostly sensitive to the linear combination in \eqref{eq:CQtQbplus}.
+We finally note that apart from $\mathcal{O}_{Qt}^{(1),(8)}$ all the other operators produce only small contributions to the $t\bar{t}h$ process. In particular, the top-bottom operators $\mathcal{O}_{QtQb}^{(1),(8)}$ show a suppression with $m_b$, which also typically results in contributions below the theoretical uncertainties. (We explicitly checked this in our calculation and by setting $m_b=0$ in the \texttt{Madgraph\_aMCNLO} simulations.)  This is also expected for other ``mixed" top-bottom operators,
+which would contribute via bottom-quark loops and hence would be strongly suppressed, justifying that we did not consider them here. 
+
+%%%%%%%%%%%%%%%%%%%
+\section{Fit to Higgs observables \label{sec:fit}}
+%%%%%%%%%%%%%%%%%%%
+
+\par In this section we will show the results of a combined fit of the four-quark operators of the third generation and the operator that modifies the Higgs potential and hence the Higgs self-coupling. In ref.~\cite{Gorbahn:2016uoy, Degrassi:2016wml, Bizon:2016wgr, Maltoni:2017ims, Degrassi:2021uik} it was proposed to extract the trilinear Higgs self-coupling via its loop effects in single Higgs measurements. 
+%
+Within the assumptions of the SMEFT, a model-independent determination of the triple Higgs self-interaction, $\lambda_3$, should be considered within a global analysis considering all effective interactions that enter up to the same order in perturbation theory as $\lambda_3$.
+In particular, apart from the trilinear Higgs self-coupling modification, such a study must include those operators that enter at LO in Higgs production and decay~\cite{DiVita:2017eyz}. Furthermore, the sensitivity to the Higgs self-coupling modifications can also be diminished by other operators entering as the trilinear Higgs self-coupling via loop effects, if those operators are not yet strongly constrained experimentally by other processes. Such is the case for some of the four-quark operators considered in this paper. In order to show this, we have performed a combined fit to the operator with Wilson coefficient $C_{\phi}$ and the four-fermion operators considered in this study. A full global fit including all new physics effects would require the combination of Higgs data with that from other processes and is beyond the scope of this paper. 
+
+\subsection{Fit methodology}
+%
+
+For each experimentally observed channel with a signal strength~$\mu_{\mathrm{Exp}}\equiv \sigma_{\mathrm{Obs}}/\sigma_\SM$, one can build a theoretical prediction for this signal strength, $\mu_{\mathrm{Th}}\equiv \sigma_{\mathrm{Th}}/\sigma_\SM$, where $\sigma_{\mathrm{Th}}=\sigma_{\mathrm{Prod}}\times \mathrm{BR}$ includes the effects generated by the dimension-six operators. 
+The theory predictions for the signal strengths are then used to build a test statistic in the form of  a $\log$-likelihood of a Gaussian distribution 
+\begin{equation}
+	\log(L) = -\frac{1}{2}\left[  (\vec{\mu}_{\mathrm{Exp}} -\vec{\mu} ) ^{T} \cdot \mathbf{V}^{-1} \cdot ( \vec{\mu}_{\mathrm{Exp}} -\vec{\mu} )\right]  .
+	\label{eq:loglike}
+\end{equation}
+The covariance matrix~$\mathbf{V}$ is constructed from the experimental uncertainties $\delta \mu_{\mathrm{Exp}}$ and correlations\footnote{Correlations amongst channels of $< 10\%$ were ignored.},  as well as the theoretical uncertainties (scale, PDF, $\alpha_s$, \ldots).
+
+The $\log$-likelihood of \eqref{eq:loglike} was used together with flat priors~$ \pi(C_i)= const.$ in a Bayesian fit of the Wilson coefficients of interest.  A Markov chain Monte Carlo~(MCMC) using \texttt{pymc3}~\cite{Salvatier2016} was used to construct the posterior distribution. We use the \texttt{Arviz} Bayesian analysis package~\cite{arviz_2019} to extract the credible intervals (CIs) from the highest density posterior intervals~(HDPI) of the posterior distributions, where the intervals covering 95\% (68\%) of the posterior distribution are considered the 95\% (68\%) CIs. In the Gaussian limit, these  95\% (68\%) CIs should be interpreted as equivalent to the 95\%  (68\%) Frequentist  Confidence Level~(CL) two-sided bounds. To cross-check the MCMC Bayesian fit, a frequentist Pearson's $\chi^2$ fit was performed using~\texttt{iminuit}~\cite{James:1975dr,iminuit}, where the $\chi^2$ was taken to be 
+\begin{equation}
+	\chi^2 = - 2 \log(L).
+\end{equation}
+%
+Both fit results agreed on the 95\%  and 68\% CI (or CL)  bounds.\footnote{In order to plot the multidimensional posterior distributions and the forest plots we have used a code based on ~\texttt{corner.py}~\cite{corner}, \texttt{pygtc}~\cite{Bocquet2016} and \texttt{zEpid}~\cite{paul_zivich_2019_3339870}.}
+The code for the fit, experimental input and the analysis can be found in the repository \cite{GitHub}.
+\par
+In the theoretical predictions for the signal strengths, we will assume that the new physics corrections to the cross sections and the decay widths are linearised, i.e.
+%
+\begin{equation}
+	\mu(C_\phi,C_i)=\frac{\sigma_\mathrm{ Prod}(C_\phi,C_i) \times \mathrm{ BR}(C_\phi,C_i)}{\sigma_\mathrm{ Prod, SM}\times \mathrm{BR}_\mathrm{ SM}} \approx 1+\delta \sigma(C_\phi,C_i)+\delta\Gamma(C_\phi,C_i)-\delta \Gamma_h(C_\phi,C_i),
+	\label{linear-mu}
+\end{equation}
+%
+with $\delta \sigma$, $\delta \Gamma$, $\delta \Gamma_h$ ($\Gamma_h$ denotes the Higgs total width) being the NLO corrections%to the Higgs full width 
+, relative to the SM prediction as in \eqref{eq:deltaR}, 
+from the dimension-six operators with Wilson coefficients $C_\phi$ and $C_i$. Here, $C_i$ stands schematically for $C_{Qt}^{(1)}$, $C_{Qt}^{(8)}$, $C_{QtQb}^{(1)}$, $C_{QtQb}^{(8)}$, $C_{QQ}^{(1)}$, $C_{QQ}^{(3)}$ and $C_{tt}$.  As mentioned in the previous section, however, the sensitivity to $C_{QQ}^{(1),(3)}$ and $C_{tt}$ is rather small, typically below the theory uncertainty of the calculation, and we will ignore these Wilson coefficients in the fits presented in this section. 
+
+In particular, in \eqref{linear-mu} all the corrections from the four-quark operators to the cross sections and decay widths are fully linearised in $1/\Lambda^2$. 
+Given that current bounds on these operators are rather weak, one may wonder about the uncertainty in our fits associated to the truncation of the EFT.
+Note that, since the four-quark operators only enter into the virtual corrections at NLO, Higgs production and decay contain only linear terms in $1/\Lambda^{2}$ in the corresponding Wilson coefficients, i.e.~the quadratic terms coming from squaring the amplitudes are technically of next-to-NLO. 
+Hence, the quadratic effects in the signal strengths come from not linearising the corrections to the product $\sigma_\mathrm{ Prod} \times \mathrm{ BR}$~\!.  
+We explicitly checked that, for the fits we presented in the next section, the difference between including the full expression of the signal strength or the linearised version in \eqref{linear-mu} results in differences in the bounds at the $\lesssim10\%$ level. The results we present for the four-quark operator are, therefore, relatively stable with respect to the truncation of the EFT expansion. 
+For the ${\cal O}_{\phi}$ operator, however, there is an additional contribution to the virtual corrections stemming from the wave function renormalisation of the Higgs field. The correction to a given production cross section or decay width, again denoted generically by $R$, is given by
+
+\begin{equation}
+	\delta R_{\lambda_3}\equiv\frac{R_\mathrm{ NLO}(\lambda_3)-R_\mathrm{ NLO}(\lambda_3^\mathrm{{SM}})}{R_\mathrm{ LO}}=-2\frac{C_{\phi}v^4}{\Lambda^2 m_h^2}C_1 + \left(-4\frac{C_{\phi}v^4}{\Lambda^2 m_h^2}+4\frac{C_{\phi}^2 v^8}{m_h^4\Lambda^4}\right) C_2 . \;\;\;\;\;
+	\label{eq:degrassi}
+\end{equation}
+%
+In \eqref{eq:degrassi}, the coefficient $C_1$ corresponds to the contribution of the trilinear coupling to the single Higgs processes at one loop, adopting the same notation as~\cite{Degrassi:2016wml}. The values of $C_1$ for the different processes of interest for this paper are given in Appendix~\autoref{App:numinput}. The coefficient $C_2$ describes universal corrections and is given by
+\begin{equation}
+	C_2=\frac{\delta Z_h}{1-\left(1-\frac{2 C_\phi v^4}{\Lambda^2 m_h^2}\right)^2 \delta Z_h}\,, \label{eq:C2}
+\end{equation}
+%
+where the constant $\delta Z_h$ is the SM contribution from the Higgs loops to the wave function renormalisation of the Higgs boson,
+\begin{equation}
+	\delta Z_h =-\frac{9}{16}\,\frac{G_F m_h^2}{\sqrt{2}\pi^2}\left(\frac{2\pi}{3\sqrt{3}}-1\right).
+\end{equation}
+%
+The coefficient $C_2$ thus introduces additional $\mathcal{O}(1/\Lambda^4)$ (and higher order) terms in $\delta R_{\lambda_3}$.  
+In ref.~\cite{Degrassi:2016wml} considering the $\kappa$ formalism the full expression of \eqref{eq:C2} is kept, while we define two different descriptions: one in which we expand $\delta R_{\lambda_3}$ up to linear order and an alternative scheme in which we keep also terms up to $\mathcal{O}(1/\Lambda^4)$ in the EFT expansion. We explicitly checked that keeping the full expression in \eqref{eq:C2} and including terms up to $\mathcal{O}(1/\Lambda^4)$  in $C_2$ lead to nearly the same results in our fits.
+
+
+\subsection{Fit to LHC Run-II data}
+
+\par 
+For the fit we have used inclusive Higgs data from the LHC Run II for centre-of-mass energy of $\sqrt{s} = 13$ TeV and  integrated luminosity of $ 139\, \mathrm{fb}^{-1}$ for ATLAS and  $ 137\,\mathrm{fb}^{-1}$ for CMS.  The experimental input is summarised in ~\autoref{table:resHiggsExp} in Appendix~\ref{App:numinput}.  
+
+%
+\begin{figure}
+	\vspace*{-0.5cm}
+	\begin{center}
+		\includegraphics[width=0.75\linewidth]{fig/uebeblick_Cqt1}
+		\includegraphics[width=0.75\linewidth]{fig/uebeblick_Cqt8} 
+		\includegraphics[width=0.75\linewidth]{fig/uebeblick_Cqtqb1}
+		\includegraphics[width=0.75\linewidth]{fig/uebeblick_Cqtqb8}
+	\end{center}
+	\vspace*{-0.5cm}
+	\caption{Forest plots illustrating the means and 95\% CIs of the posteriors built from the four-fermion Wilson coefficients with $C_\phi$ marginalised.  The plots confront also the truncation of the EFT at $\mathcal{O}(1/\Lambda^2)$ and $\mathcal{O}(1/\Lambda^4)$ of $\delta R_{\lambda_3}$ as defined in \eqref{eq:degrassi}. The 95\% CI bounds stem from Higgs data. The last two rows for each operator show instead the limits obtained by a single parameter fit to top data, linear and quadratic. The top data results are taken from~\cite{Ethier:2021bye} for $C_{Qt}^{(1),(8)}$ and~\cite{Hartland:2019bjb} for $C_{QtQb}^{(1),(8)}$. }
+		\label{fig:summ4f}
+\end{figure}
+In \autoref{fig:summ4f} we show the limits of a two-parameter fit for various heavy quark Wilson coefficients $C_{i}$, marginalising over $C_\phi$. 
+We confront them also with the limits obtained from fits to top data \cite{Ethier:2021bye, Ellis:2020unq, Hartland:2019bjb, Brivio:2019ius,DHondt:2018cww, Zhang:2017mls}. 
+Note that, although our bounds do not come from a global fit, they can be compared with similar results from the the fits to top data that assume that
+only one operator is ``switched on'' at a time.
+In these cases, we find that our new bounds are more stringent or at least comparable to the 95\% CI bounds on the  $C_{i}$ operators fit results from top data. We also note that, while the limits from top data show a large uncertainty from the EFT truncation\footnote{In particular, for the $C_{QtQb}^{(1),(8)}$ operator the references only calculate contributions of order $\mathcal{O}(1/\Lambda^4)$. (The fit considering only linear terms would result in bounds of order  $\mathcal{O}(10^4)$.) Hence, in this case, we only quote the quadratic bounds.}, even when only one operator is considered at a time, our NLO results for the four-quark operators are quite stable if one considers quadratic effects, as mentioned above. 
+On the other hand, fig.~\ref{fig:summ4f} also shows that there is a rather large uncertainty associated to the EFT truncation of the effects of the $\mathcal{O}_{\phi}$ operator in the wave function renormalization of the Higgs boson. Furthermore, the plot diplays the bounds for two different assumptions for the scale at which the operators are defined. The lines showing $\delta R^{fin}$ assume that there are only the corresponding four-quark operator and $\mathcal{O}_{\phi}$ at the electroweak scale\footnote{We neglect in this case the small running between the scales involved in the different processes included in the fit.}, while the line corresponding to $\delta R$ shows the limits assuming that the four-fermion operators (and $\mathcal{O}_{\phi}$) are the only ones at a scale $\Lambda=1\text{ TeV}$. 
+We can again infere from the fact that the bounds remain the same order of magnitude between $\delta R^{fin}$ and $\delta R$ that the inclusion of the finite terms for the operators $\mathcal{O}_{Qt}^{(1),(8)}$ is important if the new physics scale is not extremely high. Instead, for the operators $\mathcal{O}_{QtQb}^{(1),(8)}$ the bounds become much stronger when including the logarithmic piece, so we can conclude that in that case the finite piece is less relevant.
+In all the fit results that we will present in what follows, we will assume that the Wilson coefficients are always evaluated at the scale $\Lambda=1$ TeV.
+
+In \autoref{fig:summcphi} we show the limits on $C_\phi$ for various two-parameter fits including the two different EFT truncations of $\delta R_{\lambda_3}$. 
+We also show the results from a single parameter fit on $C_{\phi}$. 
+For comparison, we show the ATLAS limits from full LHC run-II Higgs pair production in the final state~$b\bar{b} \gamma \gamma$~\cite{ATLAS:2021jki} where we have translated the bounds from $\kappa_\lambda\equiv\lambda_3/\lambda_3^{\SM}$ to the SMEFT, keeping both linear and quadratic terms.  While the limits on $C_{\phi}$ from single and double Higgs production are of similar size when keeping terms up to $\mathcal{O}(1/\Lambda^4)$ in the single Higgs fit, the limits from single Higgs become weaker if one keeps only terms up to $\mathcal{O}(1/\Lambda^2)$.  In this case, the fit remains questionable leading to limits beyond the perturbative unitarity bound of ref.~\cite{DiLuzio:2017tfn}. Instead, for Higgs pair production  is makes only a negligible effect  if linear or up to quadratic terms in the EFT expansion are kept  for the $C_\phi>0$ bound, while the bound weakens at linear order in $1/\Lambda^2$ for $C_\phi<0$~\cite{IML}.  We also see that the limits on $C_{\phi}$ become significantly weaker in a two-parameter fit with the four-quark operators, indicating that in a proper global SMEFT fit also the loop effects of other weakly constrained operators, such as these, need to be accounted for. 
+\begin{figure}[t!]
+	\begin{center}
+		\includegraphics[width=\linewidth]{fig/uebeblick_forest_cphi_LHC_RunII}
+	\end{center}
+	\caption{A forest plot illustrating the means and 95\% CIs of the posteriors built from the  $C_\phi$  in a two-parameter fit with the four-fermion operators marginalised. We compare the fit results for $C_\phi$ from full run-II Higgs data keeping terms up to $\mathcal{O}(1/\Lambda^2)$ or $\mathcal{O}(1/\Lambda^4)$ in $\delta R_{\lambda_3}$.  For comparison, also the 95\% CI and means for the single parameter fit for $C_\phi$ with the same single Higgs data is shown as well as the bounds on $C_{\phi}$ from the $139$ fb$^{-1}$ search for Higgs pair production~\cite{ATLAS:2021jki}. The horizontal grey band illustrates the perturbative unitarity bound~\cite{DiLuzio:2017tfn}. \label{fig:summcphi}  }
+\end{figure}
+
+One of the important aspects of multivariate studies is the correlation among variables. Apart from the two-parameter fits discussed above, here we also consider a four-parameter fit to $C_\phi$ plus the three directions in the four heavy-quark operator parameter space that the Higgs rates are
+mostly sensitive too, i.e. neglecting $C_{QQ}^{(1),(3) }$ and $C_{tt}$, and trading $C_{QtQb}^{(1)}$ and $C_{QtQb}^{(8)}$ by $C_{QtQb}^{+}$.
+%%%%%%%%%%
+\begin{figure}[t!]
+	\begin{center}
+		\vspace{-1.5cm}
+		\includegraphics[width=.6\linewidth]{fig/4param_fit_LHC_RunII_l3L_rge}\\
+		%
+		\includegraphics[width=.6\linewidth]{fig/4param_fit_LHC_RunII_l3Q_rge}
+		\vspace{-.5cm}
+	\end{center}
+	\caption{The marginalised 68\% and 95\% HDPI's for the four-parameter fits including the different four-quark Wilson coefficients and $C_\phi$. The numbers above the plots show the 95\% CI bounds while the correlations are given on the top-right side. 
+		These limits correspond to values of the Wilson coefficients evaluated at the scale $\Lambda=1$ TeV. 
+		The upper panel shows the fit including up to $\mathcal{O}(1/\Lambda^2)$ in $\delta R_{\lambda_3}$  while the lower one shows the fit with including also  $\mathcal{O}(1/\Lambda^4)$.  \label{fig:4param} }
+\end{figure}
+%
+When considering two- or four-parameter fits of $C_\phi$ and the four-heavy-quark Wilson coefficients, we observe a non-trivial correlation patterns amongst these coefficients.  Figure~\ref{fig:4param} illustrates these correlation patterns clearly for the four-parameter fit. 
+We observe that the Wilson coefficients $C_{Qt}^{(1),(8) }$ are strongly correlated because, in analogy to $C_{QtQb}^{(1),(8) }$, they only appear in  certain linear combination whenever correcting the Yukawa coupling. However,  unlike $C_{QtQb}^{(1),(8) }$ they are not completely degenerate because the main part of the NLO correction to $t\bar t h$ does not contain the aforementioned linear combination.  The four-parameter fit also reveals that the Wilson coefficients~$C_{Qt}^{(1),(8) }$ have a large correlation with ~$C_{QtQb}^{+}$ because all of the four Wilson coefficients appear in a linear combination in the NLO corrections except for $ h\to b\bar b$ and $ t\bar{t} h$. However, this correlation is not as strong due to the large NLO correction of the Higgs decay $h \to b \bar b$ from ~$C_{QtQb}^{(1),(8) }$. Moreover, the correlation between the four-heavy-quark Wilson coefficients  and $C_{\phi}$ depends on the $\delta R_{\lambda_3}$ truncation. In Appendix~\ref{App:fitplots}  we present similar correlation plots for various two-parameter fits, where the same behaviour of the change in the correlation with the inclusion of quadratic terms ~$\delta R_{\lambda_3}$ is found. The correlation in those cases are though generally stronger.
+%%%%%%%%%%%%
+\subsection{Prospects for HL-LHC}
+\begin{figure}[t!]
+	\begin{center}
+		\includegraphics[width=0.75\linewidth]{fig/uebeblick_forest_ci}
+	\end{center}
+	\caption{ Results of a single parameter fit showing the improvement in constraining power of the HL-LHC over the current bounds from Run-2 data. The limits correspond to values of the Wilson coefficients evaluated at the scale $\Lambda=1$ TeV. \label{fig:HLLHC} }
+\end{figure}
+
+\begin{figure}
+	\begin{center}
+		\includegraphics[width=0.75\linewidth]{fig/uebeblick_forest_cphi_singleparam}
+	\end{center}
+	\caption{A forest plot illustrating the means and 95\% CIs of the posteriors built from the  $C_\phi$  in a single-parameter fit, showing also the differences in including terms of $\mathcal{O}(1/\Lambda^2)$ or up to $\mathcal{O}(1/\Lambda^4)$ in the definition of $\delta R_{\lambda_3}$. For comparison, also the limits and projections from searches for Higgs pair production are shown.  \label{fig:summcphihl-lhc}  }
+\end{figure}
+We now turn to examine the potential of the HL-LHC. For this, we use the CMS projections for the single Higgs signal strengths provided in refs.~\cite{CMS-PAS-FTR-18-011,twiki} for a centre-of-mass energy of $\sqrt{s}=14$ TeV and integrated luminosity of $ 3\, \mathrm{ab}^{-1}$. We use the projections for the S2 scenario explained in~\cite{Cepeda:2019klc}. These assume the improvement on the systematics that is expected to be attained by the end of the HL-LHC physics programme, and that theory uncertainties are improved by a factor of two with respect to current values. 
+These projections are assumed to have their central values in the SM prediction with the total uncertainties summarised in table~\ref{table:resHiggsExp} in Appendix~\ref{App:numinput}.\footnote{The correlation matrix for the S2 scenario can be found on the webpage~\cite{twiki}.} 
+
+In \autoref{fig:HLLHC} we confront the results of the fits to Run-2 data with the projections for the HL-LHC for single parameter fits. For the operators $\mathcal{O}_{Qt}^{(1),(8)}$ the constraining power of the HL-LHC is roughly a factor two better as the current bounds we could set from single Higgs data, while for the operators $\mathcal{O}_{QtQb}^{(1),(8)}$ the improvement is a little less.
+In \autoref{fig:summcphihl-lhc} we show the limits on $C_{\phi}$ in a single parameter fit for Run-2 and the projections for the HL-LHC
+including in $\delta R_{\lambda_3}$ up to order $\mathcal{O}(1/\Lambda^2)$ or $\mathcal{O}(1/\Lambda^4)$. While for Run-2 data the inclusion of $\mathcal{O}(1/\Lambda^4)$ made a huge difference, this is less pronounced for the HL-LHC projections. Our results are very similar to the projections presented in a $\kappa_{\lambda}$ fit in \cite{DiMicco:2019ngk}. 
+We confront this also with data from searches for Higgs pair production $139$ fb$^{-1}$ \cite{ATLAS:2021jki}  and HL-LHC projections~\cite{CMS:2018ccd} on Higgs pair production, showing that Higgs pair production will still allow to set stronger limits on $C_{\phi}$. 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Summary and discussion \label{sec:conc}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+In this paper, we have computed the NLO corrections induced by third generation four-quark operators in Higgs observables that are relevant for its production and decay at the LHC. 
+Our results show that such processes are sensitive to the all possible chiral structures for the third generation four-quark operators in the dimension-six SMEFT, but in different degrees. 
+Operators with different chiralities are, for instance, the only ones that can contribute to Higgs production via gluon fusion, and the decay of the Higgs boson to gluons, photons and bottom quarks pairs.  The latter are particularly sensitive to the top-bottom operators $\mathcal{O}_{QtQb}^{(1),(8)}$, which then also significantly affect the total decay width. In the associate production of a Higgs boson with a top quark pair, on the other hand, all the third generation four-fermion operators enter.
+Sensitivity to four-quark operators where all fields have the same chirality, however, is only possible for large values of the Wilson coefficients, in a way that they can generate contributions beyond the size of current theory uncertainties. 
+%
+The $t\bar{t}h$ process is also rather important in setting limits on the four-quark operators $\mathcal{O}_{Qt}^{(1)}$ and $\mathcal{O}_{Qt}^{(8)}$, due to the comparatively large NLO corrections they induce in this process with respect to others. It also breaks a degeneracy among the Wilson coefficients of those two operators, which always appear in a single combination for all other processes. 
+\par
+To illustrate the constraining power of single Higgs processes in bounding these four-quark operators, we performed several simplified fits to these interactions and find that the resulting limits from our fits are, in some cases, comparable or better than similar results obtained from top data \cite{Ethier:2021bye, Hartland:2019bjb}.
+\par
+We have also performed a combined fit including the above-mentioned four-quark operators and the operator $\left(\phi^\dagger \phi\right)^3$, that modifies the Higgs potential and the trilinear Higgs self-coupling. Due to the lack of powerful constraints from top data, the inclusion of the four-fermion operators diminishes the power of setting limits on the trilinear Higgs self-coupling
+from single Higgs observables. 
+From our analysis we conclude that, in the absence of strong direct bounds on the third-generation four-quark operators, these should be included into a global fit on Higgs data, when attempting to obtain model-independent bounds on the trilinear Higgs self-coupling. The results of our calculations are presented such that they can be easily used by the reader in truly global fits including all other interactions entering at the LO. 
+We leave this, as well as the inclusion of differential Higgs data, to future work.
+%
+
+Finally, we also illustrated the increase in constraining power expected during the high-luminosity phase of the LHC by presenting the HL-LHC projections of the above-mentioned fits.  
+
+Moving beyond hadron colliders, it must be noted that the interplay between the Higgs trilinear and four heavy-quark operators in Higgs processes is expected to be less of an issue at future leptonic Higgs factories, such as the FCC-ee~\cite{FCC:2018byv,FCC:2018evy}, ILC~\cite{Bambade:2019fyw,LCCPhysicsWorkingGroup:2019fvj}, CEPC~\cite{An:2018dwb,CEPCStudyGroup:2018ghi} or CLIC~\cite{CLICdp:2018cto,deBlas:2018mhx}. At these machines, the effects of $C_\phi$ are still ``entangled'' with those
+of the four-fermion operators in the Higgs rates, but only through the decay process, i.e. via the contributions to the BRs. However, Higgs production is purely electroweak, namely via Higgs-strahlung ($Zh$: $e^+ e^- \to Zh$) or $W$ boson fusion, and receives no contributions from the four-quark operators at the same order in perturbation theory where $C_\phi$ modifies these processes, i.e. NLO. 
+Moreover, at any of these future $e^+ e^-$ Higgs factories there is the possibility of obtaining a sub-percent determination of the total $Zh$ cross section at $e^+ e^-$ colliders, by looking at events recoiling against the $Z$ decay products with a recoil mass around $m_h$. This observable is therefore completely insensitive to the four-quark operators, while still receiving NLO corrections from $C_\phi$. 
+Although, in practice, in a global fit one needs to use data from all the various Higgs rates at two different energies to constrain all possible couplings entering at LO in the Higgs processes and also obtain a precise determination of $C_\phi$ ~\cite{DiVita:2017vrr}, the previous reasons should facilitate the interpretation of the single-Higgs bounds on the Higgs self-coupling at $e^+e^-$ machines.
+
+We conclude this paper with a few words on the relevance of the results presented here when interpreted from the point of view of specific models of new physics. 
+In particular, one important question is \textit{ are there models where one expects large contributions to four-top operators while all other interactions entering in Higgs processes are kept small?}
+%
+Indeed, large contributions to four-top operators can be expected in various BSM scenarios.\footnote{Generically, models where four-top interactions are much larger than four-fermion operators of the first and second generation can be easily conceived from some UV dynamics coupling mostly to the third generation of quarks hence respecting the Yukawa hierarchies.} For instance, in Composite Higgs Models, in which the top quark couples to the strong dynamics by partial compositeness, one expects on dimensional grounds that some of the four-top quark operators are of order $1/f^2$, where $f$ indicates the scale of strong dynamics \cite{Banelli:2020iau}. 
+By its own nature, however, Composite Higgs models also predict sizeable contributions to the single Higgs couplings $\sim 1/f^2$. While, in general, sizeable modifications of the Higgs interactions are typically expected in scenarios motivated by ``naturalness'', this is not necessarily the case in other scenarios. 
+It is indeed possible to think of simple models where modifications of the Higgs self-interactions or contributions to four-quark operators are the only corrections induced by the dimension-six interactions at tree level, see~\cite{deBlas:2017xtg}.
+Thinking, for instance, in terms of scalar extensions of the SM, there are several types of colored scalars whose tree-level effects at low energies can be represented by four-quark operators only, e.g. for complex scalars in the $(6,1)_{\frac 1 3}$ and $(8,2)_{\frac 1 2}$ SM representations ($\Omega_1$ and $\Phi$ in the notation of \cite{deBlas:2017xtg}).  If these colored states are the only moderately heavy new particles, our results can provide another handle to constrain such extensions. 
+One must be careful, though, as a consistent interpretation of our results for any such models would require to include higher-order corrections in the matching to the SMEFT. At that level, as shown e.g. by the recent results in \cite{Anisha:2021hgc}, multiple contributions that modify Higgs processes at LO are generated at the one-loop level, and are therefore equally important as the NLO effects of the (tree-level) generated four-quark operators.\footnote{Furthermore, given that some SMEFT interactions induce tree-level contributions to Higgs processes that in the SM are generated at the loop level, e.g. ${\cal O}_{\phi G}$ in gluon fusion, a consistent interpretation in terms of new physics models may require to include up to two-loop effects in the matching for such operators, for which there are currently no results or tools available.}
+%
+In any case, one must note that, even if similar size contributions to single Higgs processes are generated, the four-top or Higgs trilinear effects can provide extra information on the model.
+%
+For instance, in some of the most common scalar extensions of the SM, with an extra Higgs doublet, $\varphi\sim (1,2)_{\frac 12}$, tree-level contributions to some of the four-heavy-quark operators discussed in this paper are generated together with modifications on the Higgs trilinear self-coupling.
+These two effects are independent but they are both correlated with the, also tree level, modifications of the single Higgs couplings. Essentially, the LO effects on Higgs observables are proportional to $\lambda_\varphi y_\varphi^f$, where $\lambda_\varphi $ is the scalar interaction strength of the $(\varphi^\dagger \phi)(\phi^\dagger \phi)$ operator and $y_\varphi^f$ the new scalar Yukawa interaction strength, whereas the NLO effects are proportional to the square of each separate coupling. Hence, these effects might help to resolve (even if only weakly) the flat directions in the model parameter space that would appear in a LO global fit.
+%
+At the end of the day, for a proper interpretation of the SMEFT results in terms of the widest possible class of BSM models, all the above simply remind us of the importance of being global in SMEFT analyses, to which our work contributes by including effects in Higgs physics that enter at the same order in perturbation theory as modifications of the Higgs self-coupling.
+ %%%%%%%%%%%%%%%%%%%
+\section{Two parameter fits \label{App:fitplots}}
+%%%%%%%%%%%%%%%%%%%
+
+We present in figs.~\ref{2param-cqt} and~\ref{2param-cqtqb} the $68\%$ and $ 95\%$  highest posterior density contours of the two-parameter posterior distributions and their marginalisation for the two-parameter fits involving $C_\phi$ and one of the four-heavy quark Wilson coefficients, evaluated at the scale $\Lambda=1$ TeV.  
+Both linearised and quadratically truncated $\delta R_{\lambda_3}$ fits are shown, and we observe that the $95\%$ CI bounds (shown on top of the panels) and correlations depends on the truncation.
+
+\begin{figure}[h!]
+	\begin{center}
+		\includegraphics[width=0.45\linewidth]{fig/Cqt1_LHC_RunII_linearl3_rge}
+		\includegraphics[width=0.45\linewidth]{fig/Cqt1_LHC_RunII_quadl3_rge} \\ 
+		\includegraphics[width=0.45\linewidth]{fig/Cqt8_LHC_RunII_linearl3_rge}
+		\includegraphics[width=0.45\linewidth]{fig/Cqt8_LHC_RunII_quadl3_rge} 
+	\end{center}
+	\caption{The 68\% and 95\% highest density posterior contours of the posterior distribution of $C_\phi$ with $C_{Qt}^{(1)}$ (up) and $C_\phi$ with $C_{Qt}^{(8)}$ (down) with the marginalised one-dimensional posteriors for each of the Wilson coefficients and their 68\% and 95\% HDPIs (shown above in numbers the 95\% CI bounds). 
+		The limits correspond to values of the Wilson coefficients evaluated at the scale $\Lambda=1$ TeV.
+		On the left we used the linear scheme in $\delta R_{\lambda_3}$ while on the right we keep up to quadratic terms in   $\delta R_{\lambda_3}$. \label{2param-cqt} } 
+\end{figure}
+
+\begin{figure}[h!]
+	\begin{center}
+		\includegraphics[width=0.45\linewidth]{fig/Cqtqb1_LHC_RunII_linearl3_rge}
+		\includegraphics[width=0.45\linewidth]{fig/Cqtqb1_LHC_RunII_quadl3_rge} \\ 
+		\includegraphics[width=0.45\linewidth]{fig/Cqtqb8_LHC_RunII_linearl3_rge}
+		\includegraphics[width=0.45\linewidth]{fig/Cqtqb8_LHC_RunII_quadl3_rge} 
+	\end{center}
+	\caption{The 68\% and 95\% highest density posterior contours of the posterior distribution of $C_\phi$ with $C_{QtQb}^{(1)}$ (up) and $C_\phi$ with $C_{QtQb}^{(8)}$ (down) with the marginalised one-dimensional posteriors for each of the Wilson coefficients. and their 68\% and 95\% HDPIs (shown above in numbers the 95\% CI bounds). 
+		The limits correspond to values of the Wilson coefficients evaluated at the scale $\Lambda=1$ TeV. 
+		Similar to $C_{Qt}^{(1),(8)}$, the left plot shows the linearised  $\delta R_{\lambda_3}$ while the right one shows the quadratic scheme in the trilinear Higgs self-coupling modification. Due to the degeneracy between these Wilson coefficients the posterior contours and their marginalised intervals look very similar for both of them (except for the range they cover).  \label{2param-cqtqb} }
+\end{figure}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.8.14)  29 DEC 2021 14:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.8.14)  31 DEC 2021 10:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -577,6 +577,16 @@ Package: currvita 1999/09/13 v0.9i Typesetting a Curriculum Vitae
 \cvlabelskip=\skip83
 \cvlabelwidth=\skip84
 )
+(/usr/local/texlive/2020/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip85
+\bibsep=\skip86
+LaTeX Info: Redefining \citet on input line 685.
+LaTeX Info: Redefining \citep on input line 691.
+LaTeX Info: Redefining \cite on input line 694.
+LaTeX Info: Redefining \citeauthor on input line 712.
+\c@NAT@ctr=\count281
+)
 (/usr/local/texlive/2020/texmf-dist/tex/latex/placeins/placeins.sty
 Package: placeins 2005/04/18  v 2.2
 )
@@ -592,12 +602,12 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \cmidrulesep=\dimen167
 \cmidrulekern=\dimen168
 \defaultaddspace=\dimen169
-\@cmidla=\count281
-\@cmidlb=\count282
+\@cmidla=\count282
+\@cmidlb=\count283
 \@aboverulesep=\dimen170
 \@belowrulesep=\dimen171
-\@thisruleclass=\count283
-\@lastruleclass=\count284
+\@thisruleclass=\count284
+\@lastruleclass=\count285
 \@thisrulewidth=\dimen172
 )
 (/usr/local/texlive/2020/texmf-dist/tex/latex/ragged2e/ragged2e.sty
@@ -606,29 +616,29 @@ Package: ragged2e 2019/07/28 v2.2 ragged2e Package (MS)
 (/usr/local/texlive/2020/texmf-dist/tex/latex/ms/everysel.sty
 Package: everysel 2011/10/28 v1.2 EverySelectfont Package (MS)
 )
-\CenteringLeftskip=\skip85
-\RaggedLeftLeftskip=\skip86
-\RaggedRightLeftskip=\skip87
-\CenteringRightskip=\skip88
-\RaggedLeftRightskip=\skip89
-\RaggedRightRightskip=\skip90
-\CenteringParfillskip=\skip91
-\RaggedLeftParfillskip=\skip92
-\RaggedRightParfillskip=\skip93
-\JustifyingParfillskip=\skip94
-\CenteringParindent=\skip95
-\RaggedLeftParindent=\skip96
-\RaggedRightParindent=\skip97
-\JustifyingParindent=\skip98
+\CenteringLeftskip=\skip87
+\RaggedLeftLeftskip=\skip88
+\RaggedRightLeftskip=\skip89
+\CenteringRightskip=\skip90
+\RaggedLeftRightskip=\skip91
+\RaggedRightRightskip=\skip92
+\CenteringParfillskip=\skip93
+\RaggedLeftParfillskip=\skip94
+\RaggedRightParfillskip=\skip95
+\JustifyingParfillskip=\skip96
+\CenteringParindent=\skip97
+\RaggedLeftParindent=\skip98
+\RaggedRightParindent=\skip99
+\JustifyingParindent=\skip100
 )
 (/usr/local/texlive/2020/texmf-dist/tex/latex/bbold/bbold.sty
 Package: bbold 1994/04/06 Bbold symbol package
 LaTeX Font Info:    Redeclaring math alphabet \mathbb on input line 42.
 ) (./lieart.sty
 Package: lieart 2019/06/30 v2.00 LieART Package
-\irrepwidth=\skip99
-\irrepbarthickness=\skip100
-\irrepbarheight=\skip101
+\irrepwidth=\skip101
+\irrepbarthickness=\skip102
+\irrepbarheight=\skip103
 )
 (/usr/local/texlive/2020/texmf-dist/tex/latex/colortbl/colortbl.sty
 Package: colortbl 2020/01/04 v1.0e Color table columns (DPC)
@@ -639,28 +649,28 @@ Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
 \ar@mcellbox=\box54
 \extrarowheight=\dimen174
 \NC@list=\toks37
-\extratabsurround=\skip102
-\backup@length=\skip103
+\extratabsurround=\skip104
+\backup@length=\skip105
 \ar@cellbox=\box55
 )
 \everycr=\toks38
-\minrowclearance=\skip104
+\minrowclearance=\skip106
 ) (./slashbox.sty
 slashbox style by K.Yasuoka, May 1993.
 \@slashboxa=\box56
 \@slashboxb=\box57
 \@slashboxc=\box58
-\@slashboxwd=\count285
-\@slashboxht=\count286
+\@slashboxwd=\count286
+\@slashboxht=\count287
 \@slashsepl=\dimen175
 \@slashsepr=\dimen176
 ) (/usr/local/texlive/2020/texmf-dist/tex/generic/ulem/ulem.sty
 \UL@box=\box59
 \UL@hyphenbox=\box60
-\UL@skip=\skip105
+\UL@skip=\skip107
 \UL@hook=\toks39
 \UL@height=\dimen177
-\UL@pe=\count287
+\UL@pe=\count288
 \UL@pixel=\dimen178
 \ULC@box=\box61
 Package: ulem 2019/11/18
@@ -674,29 +684,29 @@ Package: l3keys2e 2020-03-06 LaTeX2e option processing using LaTeX3 keys
 )
 \l__siunitx_tmp_box=\box62
 \l__siunitx_tmp_dim=\dimen180
-\l__siunitx_tmp_int=\count288
-\l__siunitx_number_mantissa_length_int=\count289
-\l__siunitx_number_uncert_length_int=\count290
-\l__siunitx_round_int=\count291
-\l__siunitx_process_decimal_int=\count292
-\l__siunitx_process_uncertainty_int=\count293
-\l__siunitx_process_fixed_int=\count294
-\l__siunitx_process_integer_min_int=\count295
-\l__siunitx_process_precision_int=\count296
-\l__siunitx_group_min_int=\count297
+\l__siunitx_tmp_int=\count289
+\l__siunitx_number_mantissa_length_int=\count290
+\l__siunitx_number_uncert_length_int=\count291
+\l__siunitx_round_int=\count292
+\l__siunitx_process_decimal_int=\count293
+\l__siunitx_process_uncertainty_int=\count294
+\l__siunitx_process_fixed_int=\count295
+\l__siunitx_process_integer_min_int=\count296
+\l__siunitx_process_precision_int=\count297
+\l__siunitx_group_min_int=\count298
 \l__siunitx_angle_marker_box=\box63
 \l__siunitx_angle_unit_box=\box64
 \l__siunitx_angle_marker_dim=\dimen181
 \l__siunitx_angle_unit_dim=\dimen182
-\l__siunitx_unit_int=\count298
-\l__siunitx_unit_denominator_int=\count299
-\l__siunitx_unit_numerator_int=\count300
-\l__siunitx_unit_prefix_int=\count301
-\l__siunitx_unit_prefix_base_int=\count302
-\l__siunitx_unit_prefix_gram_int=\count303
-\l__siunitx_number_product_int=\count304
-\c__siunitx_one_fill_skip=\skip106
-\l__siunitx_table_unit_align_skip=\skip107
+\l__siunitx_unit_int=\count299
+\l__siunitx_unit_denominator_int=\count300
+\l__siunitx_unit_numerator_int=\count301
+\l__siunitx_unit_prefix_int=\count302
+\l__siunitx_unit_prefix_base_int=\count303
+\l__siunitx_unit_prefix_gram_int=\count304
+\l__siunitx_number_product_int=\count305
+\c__siunitx_one_fill_skip=\skip108
+\l__siunitx_table_unit_align_skip=\skip109
 \l__siunitx_table_exponent_dim=\dimen183
 \l__siunitx_table_integer_dim=\dimen184
 \l__siunitx_table_mantissa_dim=\dimen185
@@ -710,8 +720,8 @@ Package: l3keys2e 2020-03-06 LaTeX2e option processing using LaTeX3 keys
 \l__siunitx_table_post_box=\box66
 \l__siunitx_table_mantissa_box=\box67
 \l__siunitx_table_result_box=\box68
-\l__siunitx_table_number_align_skip=\skip108
-\l__siunitx_table_text_align_skip=\skip109
+\l__siunitx_table_number_align_skip=\skip110
+\l__siunitx_table_text_align_skip=\skip111
 (/usr/local/texlive/2020/texmf-dist/tex/latex/translator/translator.sty
 Package: translator 2019-05-31 v1.12a Easy translation of strings in LaTeX
 ))
@@ -731,18 +741,18 @@ Package caption3 Info: TeX engine: e-TeX on input line 61.
 Package caption Info: KOMA-Script document class detected.
 )
 Package caption Info: KOMA-Script document class.
-\c@caption@flags=\count305
-\c@continuedfloat=\count306
+\c@caption@flags=\count306
+\c@continuedfloat=\count307
 Package caption Info: hyperref package is loaded.
 )
 Package scrkbase Info: You've told me to extend the font selection of the
 (scrkbase)             element `pagehead' that is an alias of element
-(scrkbase)             `pageheadfoot' on input line 51.
+(scrkbase)             `pageheadfoot' on input line 53.
 
 
 Package scrkbase Warning: `pagehead' is only an alias of `pageheadfoot'.
 (scrkbase)                Font of page foot may also be changed on input line 5
-1.
+3.
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/acronym/acronym.sty
 Package: acronym 2020/03/13 v1.46 Support for acronyms (Tobias Oetiker)
@@ -752,8 +762,8 @@ Package: suffix 2006/07/15 1.5a Variant command support
 )
 (/usr/local/texlive/2020/texmf-dist/tex/generic/xstring/xstring.sty
 (/usr/local/texlive/2020/texmf-dist/tex/generic/xstring/xstring.tex
-\integerpart=\count307
-\decimalpart=\count308
+\integerpart=\count308
+\decimalpart=\count309
 )
 Package: xstring 2019/02/06 v1.83 String manipulations (CT)
 )
@@ -765,43 +775,31 @@ Package: sidecap 2003/06/06 v1.6f SideCap Package (RN/HjG)
 \SC@CAPWD=\dimen256
 \SC@tempdima=\dimen257
 \SC@tempdimb=\dimen258
-\c@SC@C=\count309
+\c@SC@C=\count310
 \SC@BOX=\box69
 )
-\c@annahme=\count310
-\c@definition=\count311
-\c@theorem=\count312
-\c@satz=\count313
-\c@frage=\count314
-Package hyperref Info: Option `unicode' set `false' on input line 159.
-Package hyperref Info: Option `pdftoolbar' set `true' on input line 159.
-Package hyperref Info: Option `pdfmenubar' set `true' on input line 159.
-Package hyperref Info: Option `pdffitwindow' set `false' on input line 159.
-Package hyperref Info: Option `pdfnewwindow' set `true' on input line 159.
-Package hyperref Info: Option `colorlinks' set `true' on input line 159.
-Package hyperref Info: Option `linktocpage' set `true' on input line 159.
-
-
-! LaTeX Error: Command \as already defined.
-               Or name \end... illegal, see p.192 of the manual.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.366 \newcommand{\as}{\frac{\alpha_s^0}{4 \pi} }
-                                                 
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-) (./Dissertation-alasfar.aux (./chapters/Part1/Higgs_and_SM.aux)
+\c@annahme=\count311
+\c@definition=\count312
+\c@theorem=\count313
+\c@satz=\count314
+\c@frage=\count315
+Package hyperref Info: Option `unicode' set `false' on input line 161.
+Package hyperref Info: Option `pdftoolbar' set `true' on input line 161.
+Package hyperref Info: Option `pdfmenubar' set `true' on input line 161.
+Package hyperref Info: Option `pdffitwindow' set `false' on input line 161.
+Package hyperref Info: Option `pdfnewwindow' set `true' on input line 161.
+Package hyperref Info: Option `colorlinks' set `true' on input line 161.
+Package hyperref Info: Option `linktocpage' set `true' on input line 161.
+LaTeX Info: Redefining \bf on input line 255.
+LaTeX Info: Redefining \it on input line 256.
+LaTeX Info: Redefining \sl on input line 257.
+LaTeX Info: Redefining \sc on input line 258.
+LaTeX Info: Redefining \mit on input line 260.
+)
+(./Dissertation-alasfar.aux (./chapters/Part1/Higgs_and_SM.aux)
 (./chapters/Part1/Constraints_on_Higgs.aux) (./chapters/Part1/EFT.aux)
-(./chapters/Part2/single_higgs.aux) (./chapters/Part2/single_higgs_4tops.aux
-
-LaTeX Warning: Label `chap:overviewSingleHiggs' multiply defined.
-
-) (./chapters/Part2/hz_nlo.aux) (./chapters/Part3/higgs_pair.aux)
+(./chapters/Part2/single_higgs.aux) (./chapters/Part2/single_higgs_4tops.aux)
+(./chapters/Part2/hz_nlo.aux) (./chapters/Part3/higgs_pair.aux)
 (./chapters/Part3/dihiggs_yukawa_cut.aux
 
 LaTeX Warning: Label `chap:overviewDiHiggs' multiply defined.
@@ -836,16 +834,16 @@ File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 (/usr/local/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count315
+\scratchcounter=\count316
 \scratchdimen=\dimen259
 \scratchbox=\box70
-\nofMPsegments=\count316
-\nofMParguments=\count317
+\nofMPsegments=\count317
+\nofMParguments=\count318
 \everyMPshowfont=\toks41
-\MPscratchCnt=\count318
+\MPscratchCnt=\count319
 \MPscratchDim=\dimen260
-\MPnumerator=\count319
-\makeMPintoPDFobject=\count320
+\MPnumerator=\count320
+\makeMPintoPDFobject=\count321
 \everyMPtoPDFconversion=\toks42
 ) (/usr/local/texlive/2020/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -877,7 +875,7 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count321
+\c@section@level=\count322
 )
 LaTeX Info: Redefining \ref on input line 101.
 LaTeX Info: Redefining \pageref on input line 101.
@@ -971,8 +969,8 @@ LaTeX Font Info:    Trying to load font information for OT1+lmtt on input line
 (/usr/local/texlive/2020/texmf-dist/tex/latex/lm/ot1lmtt.fd
 File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) (./titlepage.tex
-\parindentbak=\skip110
-\parskipbak=\skip111
+\parindentbak=\skip112
+\parskipbak=\skip113
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 4
 0.
 
@@ -1018,7 +1016,7 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./figures/ferrvspara.pdf): P
 DF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<./figures/ferrvspara.pdf, id=217, 250.71867pt x 245.47006pt>
+<./figures/ferrvspara.pdf, id=282, 250.71867pt x 245.47006pt>
 File: ./figures/ferrvspara.pdf Graphic file (type pdf)
 <use ./figures/ferrvspara.pdf>
 Package pdftex.def Info: ./figures/ferrvspara.pdf  used on input line 13.
@@ -1040,7 +1038,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [8]
 [9]
-<./figures/SM.pdf, id=373, 505.89pt x 505.89pt>
+<./figures/SM.pdf, id=432, 505.89pt x 505.89pt>
 File: ./figures/SM.pdf Graphic file (type pdf)
 <use ./figures/SM.pdf>
 Package pdftex.def Info: ./figures/SM.pdf  used on input line 185.
@@ -1054,7 +1052,7 @@ LaTeX Font Info:    Trying to load font information for U+bbold on input line 2
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./figures/oblique_correction
 s.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allow
 ed
-<./figures/oblique_corrections.pdf, id=613, 557.24385pt x 167.13542pt>
+<./figures/oblique_corrections.pdf, id=668, 557.24385pt x 167.13542pt>
 File: ./figures/oblique_corrections.pdf Graphic file (type pdf)
 <use ./figures/oblique_corrections.pdf>
 Package pdftex.def Info: ./figures/oblique_corrections.pdf  used on input line 
@@ -1071,7 +1069,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 287--289
 
  []
 
-<./figures/stu-pdg.png, id=666, 1021.8175pt x 764.8575pt>
+<./figures/stu-pdg.png, id=722, 1021.8175pt x 764.8575pt>
 File: ./figures/stu-pdg.png Graphic file (type png)
 <use ./figures/stu-pdg.png>
 Package pdftex.def Info: ./figures/stu-pdg.png  used on input line 296.
@@ -1081,22 +1079,26 @@ Package pdftex.def Info: ./figures/stu-pdg.png  used on input line 296.
 
  (./chapters/Part1/Constraints_on_Higgs.tex
 chapter 2.
-) [17
+[17
 
 
 
 
-]
+] (./fitobservables.tex
+
+LaTeX Warning: Float too large for page by 33.68303pt on input line 132.
+
+)) [18]
 \openout2 = `chapters/Part1/EFT.aux'.
 
- (./chapters/Part1/EFT.tex [18
-
-
-
-
-]
+ (./chapters/Part1/EFT.tex
 chapter 3.
-) [19] [20
+) [19
+
+
+
+
+] [20
 
 
 
@@ -1124,15 +1126,255 @@ chapter 4.
 
 ]
 chapter 5.
-) [25]
+[25] [26]
+Overfull \hbox (29.05417pt too wide) detected at line 54
+[]
+ []
+
+[27]
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./fig/ggF-4F_NLO.pdf): PDF i
+nclusion: found PDF version <1.6>, but at most version <1.5> allowed
+<fig/ggF-4F_NLO.pdf, id=892, 468.71814pt x 434.37885pt>
+File: fig/ggF-4F_NLO.pdf Graphic file (type pdf)
+<use fig/ggF-4F_NLO.pdf>
+Package pdftex.def Info: fig/ggF-4F_NLO.pdf  used on input line 91.
+(pdftex.def)             Requested size: 341.43306pt x 316.43773pt.
+[28]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [29 <./fig/ggF-4F_NLO.pdf>] [30]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [31]
+<./fig/Hbb.pdf, id=1001, 175.88109pt x 111.45941pt>
+File: ./fig/Hbb.pdf Graphic file (type pdf)
+<use ./fig/Hbb.pdf>
+Package pdftex.def Info: ./fig/Hbb.pdf  used on input line 208.
+(pdftex.def)             Requested size: 149.49962pt x 94.74092pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [32]
+<./fig/ggttH-4F_NLO.pdf, id=1017, 403.3208pt x 398.87419pt>
+File: ./fig/ggttH-4F_NLO.pdf Graphic file (type pdf)
+<use ./fig/ggttH-4F_NLO.pdf>
+Package pdftex.def Info: ./fig/ggttH-4F_NLO.pdf  used on input line 234.
+(pdftex.def)             Requested size: 342.8243pt x 339.04465pt.
+<./fig/qqttH-4F_NLO.pdf, id=1018, 470.00293pt x 252.44112pt>
+File: ./fig/qqttH-4F_NLO.pdf Graphic file (type pdf)
+<use ./fig/qqttH-4F_NLO.pdf>
+Package pdftex.def Info: ./fig/qqttH-4F_NLO.pdf  used on input line 240.
+(pdftex.def)             Requested size: 399.50438pt x 214.57594pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [33 <./fig/Hbb.pdf>] [34 <./fig/ggttH-4F_NLO.pdf>] [35 <./fig/qqttH-4F_NLO.pdf
+>]
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./fig/CT.pdf): PDF inclusion
+: found PDF version <1.6>, but at most version <1.5> allowed
+<fig/CT.pdf, id=1181, 97.36977pt x 53.35242pt>
+File: fig/CT.pdf Graphic file (type pdf)
+<use fig/CT.pdf>
+Package pdftex.def Info: fig/CT.pdf  used on input line 257.
+(pdftex.def)             Requested size: 54.37526pt x 29.7941pt.
+[36 <./fig/CT.pdf>] (./results4top.tex
+
+Package amsmath Warning: Foreign command \over;
+(amsmath)                \frac or \genfrac should be used instead
+(amsmath)                 on input line 41.
+
+)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [37]
+[38] [39] [40]
+
+LaTeX Warning: Reference `App:numinput' on page 41 undefined on input line 362.
+
+
+
+LaTeX Warning: Reference `App:numinput' on page 41 undefined on input line 379.
+
+
+<fig/uebeblick_Cqt1.pdf, id=1275, 860.01299pt x 353.08281pt>
+File: fig/uebeblick_Cqt1.pdf Graphic file (type pdf)
+<use fig/uebeblick_Cqt1.pdf>
+Package pdftex.def Info: fig/uebeblick_Cqt1.pdf  used on input line 385.
+(pdftex.def)             Requested size: 313.69167pt x 128.78525pt.
+<fig/uebeblick_Cqt8.pdf, id=1276, 860.01299pt x 353.08281pt>
+File: fig/uebeblick_Cqt8.pdf Graphic file (type pdf)
+<use fig/uebeblick_Cqt8.pdf>
+Package pdftex.def Info: fig/uebeblick_Cqt8.pdf  used on input line 386.
+(pdftex.def)             Requested size: 313.69167pt x 128.78525pt.
+<fig/uebeblick_Cqtqb1.pdf, id=1277, 860.01299pt x 353.06973pt>
+File: fig/uebeblick_Cqtqb1.pdf Graphic file (type pdf)
+<use fig/uebeblick_Cqtqb1.pdf>
+Package pdftex.def Info: fig/uebeblick_Cqtqb1.pdf  used on input line 387.
+(pdftex.def)             Requested size: 313.69167pt x 128.78049pt.
+<fig/uebeblick_Cqtqb8.pdf, id=1278, 860.01299pt x 353.06973pt>
+File: fig/uebeblick_Cqtqb8.pdf Graphic file (type pdf)
+<use fig/uebeblick_Cqtqb8.pdf>
+Package pdftex.def Info: fig/uebeblick_Cqtqb8.pdf  used on input line 388.
+(pdftex.def)             Requested size: 313.69167pt x 128.78049pt.
+
+LaTeX Warning: Float too large for page by 18.845pt on input line 393.
+
+[41] [42 <./fig/uebeblick_Cqt1.pdf> <./fig/uebeblick_Cqt8.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./fig/uebeblick_Cqt8.pdf): P
+DF inclusion: multiple pdfs with page group included in a single page
+> <./fig/uebeblick_Cqtqb1.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./fig/uebeblick_Cqtqb1.pdf):
+ PDF inclusion: multiple pdfs with page group included in a single page
+> <./fig/uebeblick_Cqtqb8.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./fig/uebeblick_Cqtqb8.pdf):
+ PDF inclusion: multiple pdfs with page group included in a single page
+>]
+<fig/uebeblick_forest_cphi_LHC_RunII.pdf, id=1405, 1076.82304pt x 718.48062pt>
+File: fig/uebeblick_forest_cphi_LHC_RunII.pdf Graphic file (type pdf)
+<use fig/uebeblick_forest_cphi_LHC_RunII.pdf>
+Package pdftex.def Info: fig/uebeblick_forest_cphi_LHC_RunII.pdf  used on input
+ line 408.
+(pdftex.def)             Requested size: 418.25555pt x 279.06615pt.
+<fig/4param_fit_LHC_RunII_l3L_rge.pdf, id=1408, 827.54323pt x 780.83768pt>
+File: fig/4param_fit_LHC_RunII_l3L_rge.pdf Graphic file (type pdf)
+<use fig/4param_fit_LHC_RunII_l3L_rge.pdf>
+Package pdftex.def Info: fig/4param_fit_LHC_RunII_l3L_rge.pdf  used on input li
+ne 419.
+(pdftex.def)             Requested size: 250.95587pt x 236.79092pt.
+<fig/4param_fit_LHC_RunII_l3Q_rge.pdf, id=1409, 822.71912pt x 778.19438pt>
+File: fig/4param_fit_LHC_RunII_l3Q_rge.pdf Graphic file (type pdf)
+<use fig/4param_fit_LHC_RunII_l3Q_rge.pdf>
+Package pdftex.def Info: fig/4param_fit_LHC_RunII_l3Q_rge.pdf  used on input li
+ne 421.
+(pdftex.def)             Requested size: 250.95587pt x 237.36674pt.
+ [43]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [44 <./fig/uebeblick_forest_cphi_LHC_RunII.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [45 <./fig/4param_fit_LHC_RunII_l3L_rge.pdf> <./fig/4param_fit_LHC_RunII_l3Q_r
+ge.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./fig/4param_fit_LHC_RunII_l
+3Q_rge.pdf): PDF inclusion: multiple pdfs with page group included in a single 
+page
+>]
+<fig/uebeblick_forest_ci.pdf, id=1477, 860.01299pt x 500.46893pt>
+File: fig/uebeblick_forest_ci.pdf Graphic file (type pdf)
+<use fig/uebeblick_forest_ci.pdf>
+Package pdftex.def Info: fig/uebeblick_forest_ci.pdf  used on input line 435.
+(pdftex.def)             Requested size: 313.69167pt x 182.54364pt.
+<fig/uebeblick_forest_cphi_singleparam.pdf, id=1478, 860.01299pt x 500.41707pt>
+
+File: fig/uebeblick_forest_cphi_singleparam.pdf Graphic file (type pdf)
+<use fig/uebeblick_forest_cphi_singleparam.pdf>
+Package pdftex.def Info: fig/uebeblick_forest_cphi_singleparam.pdf  used on inp
+ut line 442.
+(pdftex.def)             Requested size: 313.69167pt x 182.52472pt.
+
+
+LaTeX Warning: Reference `App:numinput' on page 46 undefined on input line 447.
+
+
+[46 <./fig/uebeblick_forest_ci.pdf>] [47 <./fig/uebeblick_forest_cphi_singlepar
+am.pdf>] [48] [49]
+<fig/Cqt1_LHC_RunII_linearl3_rge.pdf, id=1578, 722.51854pt x 716.37633pt>
+File: fig/Cqt1_LHC_RunII_linearl3_rge.pdf Graphic file (type pdf)
+<use fig/Cqt1_LHC_RunII_linearl3_rge.pdf>
+Package pdftex.def Info: fig/Cqt1_LHC_RunII_linearl3_rge.pdf  used on input lin
+e 505.
+(pdftex.def)             Requested size: 188.21371pt x 186.60324pt.
+<fig/Cqt1_LHC_RunII_quadl3_rge.pdf, id=1579, 722.67862pt x 716.37633pt>
+File: fig/Cqt1_LHC_RunII_quadl3_rge.pdf Graphic file (type pdf)
+<use fig/Cqt1_LHC_RunII_quadl3_rge.pdf>
+Package pdftex.def Info: fig/Cqt1_LHC_RunII_quadl3_rge.pdf  used on input line 
+506.
+(pdftex.def)             Requested size: 188.21371pt x 186.57045pt.
+<fig/Cqt8_LHC_RunII_linearl3_rge.pdf, id=1580, 722.51854pt x 716.37633pt>
+File: fig/Cqt8_LHC_RunII_linearl3_rge.pdf Graphic file (type pdf)
+<use fig/Cqt8_LHC_RunII_linearl3_rge.pdf>
+Package pdftex.def Info: fig/Cqt8_LHC_RunII_linearl3_rge.pdf  used on input lin
+e 507.
+(pdftex.def)             Requested size: 188.21371pt x 186.60324pt.
+<fig/Cqt8_LHC_RunII_quadl3_rge.pdf, id=1581, 722.67862pt x 716.37633pt>
+File: fig/Cqt8_LHC_RunII_quadl3_rge.pdf Graphic file (type pdf)
+<use fig/Cqt8_LHC_RunII_quadl3_rge.pdf>
+Package pdftex.def Info: fig/Cqt8_LHC_RunII_quadl3_rge.pdf  used on input line 
+508.
+(pdftex.def)             Requested size: 188.21371pt x 186.57045pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<fig/Cqtqb1_LHC_RunII_linearl3_rge.pdf, id=1582, 722.67862pt x 716.34251pt>
+File: fig/Cqtqb1_LHC_RunII_linearl3_rge.pdf Graphic file (type pdf)
+<use fig/Cqtqb1_LHC_RunII_linearl3_rge.pdf>
+Package pdftex.def Info: fig/Cqtqb1_LHC_RunII_linearl3_rge.pdf  used on input l
+ine 517.
+(pdftex.def)             Requested size: 188.21371pt x 186.56165pt.
+<fig/Cqtqb1_LHC_RunII_quadl3_rge.pdf, id=1583, 721.04942pt x 716.34251pt>
+File: fig/Cqtqb1_LHC_RunII_quadl3_rge.pdf Graphic file (type pdf)
+<use fig/Cqtqb1_LHC_RunII_quadl3_rge.pdf>
+Package pdftex.def Info: fig/Cqtqb1_LHC_RunII_quadl3_rge.pdf  used on input lin
+e 518.
+(pdftex.def)             Requested size: 188.21371pt x 186.977pt.
+<fig/Cqtqb8_LHC_RunII_linearl3_rge.pdf, id=1584, 722.67862pt x 716.34251pt>
+File: fig/Cqtqb8_LHC_RunII_linearl3_rge.pdf Graphic file (type pdf)
+<use fig/Cqtqb8_LHC_RunII_linearl3_rge.pdf>
+Package pdftex.def Info: fig/Cqtqb8_LHC_RunII_linearl3_rge.pdf  used on input l
+ine 519.
+(pdftex.def)             Requested size: 188.21371pt x 186.56165pt.
+<fig/Cqtqb8_LHC_RunII_quadl3_rge.pdf, id=1585, 722.67862pt x 716.34251pt>
+File: fig/Cqtqb8_LHC_RunII_quadl3_rge.pdf Graphic file (type pdf)
+<use fig/Cqtqb8_LHC_RunII_quadl3_rge.pdf>
+Package pdftex.def Info: fig/Cqtqb8_LHC_RunII_quadl3_rge.pdf  used on input lin
+e 520.
+(pdftex.def)             Requested size: 188.21371pt x 186.56165pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+) [50] [51 <./fig/Cqt1_LHC_RunII_linearl3_rge.pdf> <./fig/Cqt1_LHC_RunII_quadl3
+_rge.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./fig/Cqt1_LHC_RunII_quadl3_
+rge.pdf): PDF inclusion: multiple pdfs with page group included in a single pag
+e
+> <./fig/Cqt8_LHC_RunII_linearl3_rge.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./fig/Cqt8_LHC_RunII_linearl
+3_rge.pdf): PDF inclusion: multiple pdfs with page group included in a single p
+age
+> <./fig/Cqt8_LHC_RunII_quadl3_rge.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./fig/Cqt8_LHC_RunII_quadl3_
+rge.pdf): PDF inclusion: multiple pdfs with page group included in a single pag
+e
+>] [52 <./fig/Cqtqb1_LHC_RunII_linearl3_rge.pdf> <./fig/Cqtqb1_LHC_RunII_quadl3
+_rge.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./fig/Cqtqb1_LHC_RunII_quadl
+3_rge.pdf): PDF inclusion: multiple pdfs with page group included in a single p
+age
+> <./fig/Cqtqb8_LHC_RunII_linearl3_rge.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./fig/Cqtqb8_LHC_RunII_linea
+rl3_rge.pdf): PDF inclusion: multiple pdfs with page group included in a single
+ page
+> <./fig/Cqtqb8_LHC_RunII_quadl3_rge.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./fig/Cqtqb8_LHC_RunII_quadl
+3_rge.pdf): PDF inclusion: multiple pdfs with page group included in a single p
+age
+>]
 \openout2 = `chapters/Part2/hz_nlo.aux'.
 
- (./chapters/Part2/hz_nlo.tex [26
-
-
-
-
-]
+ (./chapters/Part2/hz_nlo.tex
 chapter 6.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
@@ -1148,13 +1390,20 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <14.4> on input line 4.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <12> on input line 4.
-[27]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+<./figures/hz_ratio.pdf, id=1718, 433.62pt x 289.08pt>
+File: ./figures/hz_ratio.pdf Graphic file (type pdf)
+<use ./figures/hz_ratio.pdf>
+Package pdftex.def Info: ./figures/hz_ratio.pdf  used on input line 16.
+(pdftex.def)             Requested size: 284.52756pt x 189.69504pt.
+[53
 
- [28]
+
+
+
+] [54 <./figures/hz_ratio.pdf>] [55]
 
 LaTeX Warning: File `./figures/Feynman_LO_und_NLO.eps' not found on input line 
-108.
+78.
 
 Package epstopdf Info: Source file: <./figures/Feynman_LO_und_NLO.eps>
 (epstopdf)             Output file: <./figures/Feynman_LO_und_NLO-eps-converted
@@ -1163,53 +1412,51 @@ Package epstopdf Info: Source file: <./figures/Feynman_LO_und_NLO.eps>
 (epstopdf)                    size: 74735 bytes
 (epstopdf)             Command: <repstopdf --outfile=./figures/Feynman_LO_und_N
 LO-eps-converted-to.pdf ./figures/Feynman_LO_und_NLO.eps>
-(epstopdf)             \includegraphics on input line 108.
+(epstopdf)             \includegraphics on input line 78.
 Package epstopdf Info: Output file is already uptodate.
-<./figures/Feynman_LO_und_NLO-eps-converted-to.pdf, id=788, 593.21625pt x 539.0
-1375pt>
+<./figures/Feynman_LO_und_NLO-eps-converted-to.pdf, id=1781, 593.21625pt x 539.
+01375pt>
 File: ./figures/Feynman_LO_und_NLO-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./figures/Feynman_LO_und_NLO-eps-converted-to.pdf>
 Package pdftex.def Info: ./figures/Feynman_LO_und_NLO-eps-converted-to.pdf  use
-d on input line 108.
+d on input line 78.
 (pdftex.def)             Requested size: 341.43306pt x 310.24303pt.
-[29] [30 <./figures/Feynman_LO_und_NLO-eps-converted-to.pdf>]
+
+Underfull \vbox (badness 2913) has occurred while \output is active []
+
+ [56 <./figures/Feynman_LO_und_NLO-eps-converted-to.pdf>] [57]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [31]
+ [58]
+[59]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [32]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [33]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [34]
-<./figures/LO_ptexp_ratio_1000.pdf, id=880, 794.97pt x 650.43pt>
+ [60]
+<./figures/LO_ptexp_ratio_1000.pdf, id=1863, 794.97pt x 650.43pt>
 File: ./figures/LO_ptexp_ratio_1000.pdf Graphic file (type pdf)
 <use ./figures/LO_ptexp_ratio_1000.pdf>
 Package pdftex.def Info: ./figures/LO_ptexp_ratio_1000.pdf  used on input line 
-384.
+354.
 (pdftex.def)             Requested size: 418.25555pt x 342.21529pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [35]
+ [61]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [36 <./figures/LO_ptexp_ratio_1000.pdf>] [37]
+ [62 <./figures/LO_ptexp_ratio_1000.pdf>] [63]
 Underfull \vbox (badness 7486) has occurred while \output is active []
 
- [38]
-Overfull \hbox (2.8634pt too wide) in paragraph at lines 520--527
-[]\T1/lmr/m/n/10.95 The tri-an-gle con-tri-bu-tion (fig.[][]6.1[][]$\OT1/lmr/m/
+ [64]
+Overfull \hbox (8.3384pt too wide) in paragraph at lines 490--497
+[]\T1/lmr/m/n/10.95 The tri-an-gle con-tri-bu-tion (fig.[][]6.2[][]$\OT1/lmr/m/
 n/10.95 (\OML/lmm/m/it/10.95 d\OT1/lmr/m/n/10.95 )\OML/lmm/m/it/10.95 ; \OT1/lm
 r/m/n/10.95 (\OML/lmm/m/it/10.95 e\OT1/lmr/m/n/10.95 )$\T1/lmr/m/n/10.95 ) was 
 eval-u-ated us-ing the ob-ser-va-tion of ref.[[]],
  []
 
-[39] [40]) [41] [42
+[65] [66]) [67] [68
 
 
 
@@ -1218,17 +1465,17 @@ part III.
 Package scrkbase Info: You've told me to use the font selection of the element
 (scrkbase)             `partprefix' that is an alias of element `partnumber'
 (scrkbase)              on input line 130.
-[43] [44]
+[69] [70]
 \openout2 = `chapters/Part3/higgs_pair.aux'.
 
  (./chapters/Part3/higgs_pair.tex
 chapter 7.
-<./figures/ggfbox.pdf, id=1009, 569.05513pt x 302.30531pt>
+<./figures/ggfbox.pdf, id=1985, 569.05513pt x 302.30531pt>
 File: ./figures/ggfbox.pdf Graphic file (type pdf)
 <use ./figures/ggfbox.pdf>
 Package pdftex.def Info: ./figures/ggfbox.pdf  used on input line 11.
 (pdftex.def)             Requested size: 146.39198pt x 77.76721pt.
-<./figures/ggftri.pdf, id=1010, 682.86612pt x 299.66238pt>
+<./figures/ggftri.pdf, id=1986, 682.86612pt x 299.66238pt>
 File: ./figures/ggftri.pdf Graphic file (type pdf)
 <use ./figures/ggftri.pdf>
 Package pdftex.def Info: ./figures/ggftri.pdf  used on input line 13.
@@ -1243,54 +1490,54 @@ Package epstopdf Info: Source file: <./figures/gg_hh_lo.eps>
 verted-to.pdf ./figures/gg_hh_lo.eps>
 (epstopdf)             \includegraphics on input line 26.
 Package epstopdf Info: Output file is already uptodate.
-<./figures/gg_hh_lo-eps-converted-to.pdf, id=1024, 346.29375pt x 498.86375pt>
+<./figures/gg_hh_lo-eps-converted-to.pdf, id=1997, 346.29375pt x 498.86375pt>
 File: ./figures/gg_hh_lo-eps-converted-to.pdf Graphic file (type pdf)
 <use ./figures/gg_hh_lo-eps-converted-to.pdf>
 Package pdftex.def Info: ./figures/gg_hh_lo-eps-converted-to.pdf  used on input
  line 26.
 (pdftex.def)             Requested size: 167.29967pt x 241.01234pt.
-[45
+[71
 
 
 
- <./figures/ggfbox.pdf> <./figures/ggftri.pdf>] [46 <./figures/gg_hh_lo-eps-con
+ <./figures/ggfbox.pdf> <./figures/ggftri.pdf>] [72 <./figures/gg_hh_lo-eps-con
 verted-to.pdf>]
 
 Package caption Warning: \label without proper reference on input line 71.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `ggf_xsres' on page 47 undefined on input line 55.
+LaTeX Warning: Reference `ggf_xsres' on page 73 undefined on input line 55.
 
 
 Overfull \hbox (16.69936pt too wide) in paragraph at lines 59--72
  [][] 
  []
 
-) [47]
+) [73]
 \openout2 = `chapters/Part3/dihiggs_yukawa_cut.aux'.
 
- (./chapters/Part3/dihiggs_yukawa_cut.tex [48
+ (./chapters/Part3/dihiggs_yukawa_cut.tex [74
 
 
 
 
 ]
 chapter 8.
-) [49]
+) [75]
 \openout2 = `chapters/Part3/dihiggs_yukawa_bdt.aux'.
 
- (./chapters/Part3/dihiggs_yukawa_bdt.tex [50
+ (./chapters/Part3/dihiggs_yukawa_bdt.tex [76
 
 
 
 
 ]
 chapter 9.
-) [51]
+) [77]
 \openout2 = `chapters/Part2/Appendix_hz.aux'.
 
- (./chapters/Part2/Appendix_hz.tex [52
+ (./chapters/Part2/Appendix_hz.tex [78
 
 
 
@@ -1317,42 +1564,42 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 6.
 
-[53]
+[79]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [54])
-[55] (./Dissertation-alasfar.bbl [56
+ [80])
+[81] (./Dissertation-alasfar.bbl [82
 
 
 
-] [57] [58]
+] [83] [84]
 Overfull \hbox (15.1807pt too wide) in paragraph at lines 181--187
 [][]\T1/lmtt/m/n/10.95 https://academic.oup.com/ptp/article-pdf/49/2/652/525769
 2/49-2-652.pdf[][]\T1/lmr/m/n/10.95 . 
  []
 
-[59]
+[85]
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 2
 86.
  (/usr/local/texlive/2020/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) [60] [61]
-[62] [63] [64]) [65]
+) [86] [87]
+[88] [89] [90] [91] [92] [93] [94] [95] [96]) [97]
 \openout2 = `chapters/End/list_of_publications.aux'.
 
- (./chapters/End/list_of_publications.tex [66
+
+(./chapters/End/list_of_publications.tex [98
 
 
 
-]) [67]
+]) [99]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 152.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 152.
-
-(./Dissertation-alasfar.aux (./chapters/Part1/Higgs_and_SM.aux)
-(./chapters/Part1/Constraints_on_Higgs.aux) (./chapters/Part1/EFT.aux)
-(./chapters/Part2/single_higgs.aux) (./chapters/Part2/single_higgs_4tops.aux)
-(./chapters/Part2/hz_nlo.aux) (./chapters/Part3/higgs_pair.aux)
-(./chapters/Part3/dihiggs_yukawa_cut.aux)
+ (./Dissertation-alasfar.aux (./chapters/Part1/Higgs_and_SM.aux) (./chapters/Pa
+rt1/Constraints_on_Higgs.aux) (./chapters/Part1/EFT.aux) (./chapters/Part2/sing
+le_higgs.aux)
+(./chapters/Part2/single_higgs_4tops.aux) (./chapters/Part2/hz_nlo.aux)
+(./chapters/Part3/higgs_pair.aux) (./chapters/Part3/dihiggs_yukawa_cut.aux)
 (./chapters/Part3/dihiggs_yukawa_bdt.aux) (./chapters/Part2/Appendix_hz.aux)
 (./chapters/End/list_of_publications.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 152.
@@ -1437,6 +1684,7 @@ pdfpages.sty    2020/01/28 v0.5q Insert pages of external PDF documents (AM)
  eso-pic.sty    2018/04/12 v2.0h eso-pic (RN)
 pppdftex.def    2020/01/28 v0.5q Pdfpages driver for pdfTeX (AM)
 currvita.sty    1999/09/13 v0.9i Typesetting a Curriculum Vitae
+  natbib.sty    2010/09/13 8.31b (PWD, AO)
 placeins.sty    2005/04/18  v 2.2
 booktabs.sty    2020/01/12 v1.61803398 Publication quality tables
 ragged2e.sty    2019/07/28 v2.2 ragged2e Package (MS)
@@ -1488,10 +1736,35 @@ chapters/Part1/Higgs_and_SM.tex
 ./figures/oblique_corrections.pdf
 ./figures/stu-pdg.png
 chapters/Part1/Constraints_on_Higgs.tex
+fitobservables.tex
 chapters/Part1/EFT.tex
 chapters/Part2/single_higgs.tex
 chapters/Part2/single_higgs_4tops.tex
+fig/ggF-4F_NLO.pdf
+./fig/Hbb.pdf
+./fig/ggttH-4F_NLO.pdf
+./fig/qqttH-4F_NLO.pdf
+  fig/CT.pdf
+results4top.tex
+fig/uebeblick_Cqt1.pdf
+fig/uebeblick_Cqt8.pdf
+fig/uebeblick_Cqtqb1.pdf
+fig/uebeblick_Cqtqb8.pdf
+fig/uebeblick_forest_cphi_LHC_RunII.pdf
+fig/4param_fit_LHC_RunII_l3L_rge.pdf
+fig/4param_fit_LHC_RunII_l3Q_rge.pdf
+fig/uebeblick_forest_ci.pdf
+fig/uebeblick_forest_cphi_singleparam.pdf
+fig/Cqt1_LHC_RunII_linearl3_rge.pdf
+fig/Cqt1_LHC_RunII_quadl3_rge.pdf
+fig/Cqt8_LHC_RunII_linearl3_rge.pdf
+fig/Cqt8_LHC_RunII_quadl3_rge.pdf
+fig/Cqtqb1_LHC_RunII_linearl3_rge.pdf
+fig/Cqtqb1_LHC_RunII_quadl3_rge.pdf
+fig/Cqtqb8_LHC_RunII_linearl3_rge.pdf
+fig/Cqtqb8_LHC_RunII_quadl3_rge.pdf
 chapters/Part2/hz_nlo.tex
+./figures/hz_ratio.pdf
 ./figures/Feynman_LO_und_NLO-eps-converted-to.pdf
 ./figures/LO_ptexp_ratio_1000.pdf
 chapters/Part3/higgs_pair.tex
@@ -1508,7 +1781,7 @@ chapters/End/list_of_publications.tex
 
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 152.
 Package rerunfilecheck Info: File `Dissertation-alasfar.out' has not changed.
-(rerunfilecheck)             Checksum: AB221DC94B70CEDD31AF7AC7AE189FF2;2655.
+(rerunfilecheck)             Checksum: 56538E1CF1997B8551B3CE6BD713C5A1;3727.
 
 LaTeX Warning: There were undefined references.
 
@@ -1518,13 +1791,13 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 152.
  ) 
 Here is how much of TeX's memory you used:
- 19039 strings out of 480608
- 347552 string characters out of 5903630
- 742533 words of memory out of 5000000
- 34063 multiletter control sequences out of 15000+600000
- 708606 words of font info for 146 fonts, out of 8000000 for 9000
+ 20236 strings out of 480608
+ 371019 string characters out of 5903630
+ 765556 words of memory out of 5000000
+ 35040 multiletter control sequences out of 15000+600000
+ 714916 words of font info for 149 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 49i,17n,72p,10127b,1022s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 49i,19n,72p,10127b,1591s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/local
 /texlive/2020/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2020/
 texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2020/texmf-dist
@@ -1534,37 +1807,41 @@ athex.enc}</usr/local/texlive/2020/texmf-dist/fonts/type1/public/bbold-type1/bb
 old10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cm
 mi10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmm
 i12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr1
-0.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.
-pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.p
-fb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/l
-ocal/texlive/2020/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texl
-ive/2020/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2020/t
-exmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2020/texmf-dist/
-fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type
-1/public/lm/lmmi5.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm
-/lmmi6.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmmi7.pfb>
-</usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local
-/texlive/2020/texmf-dist/fonts/type1/public/lm/lmmi9.pfb></usr/local/texlive/20
-20/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2020/texmf-di
-st/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2020/texmf-dist/fonts/typ
-e1/public/lm/lmr7.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm
-/lmr8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmr9.pfb></
-usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/
-texlive/2020/texmf-dist/fonts/type1/public/lm/lmro10.pfb></usr/local/texlive/20
-20/texmf-dist/fonts/type1/public/lm/lmss10.pfb></usr/local/texlive/2020/texmf-d
-ist/fonts/type1/public/lm/lmss12.pfb></usr/local/texlive/2020/texmf-dist/fonts/
-type1/public/lm/lmssbx10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/pu
-blic/lm/lmsy10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lm
-sy6.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmsy7.pfb></u
-sr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/te
-xlive/2020/texmf-dist/fonts/type1/public/lm/lmsy9.pfb></usr/local/texlive/2020/
-texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/local/texlive/2020/texmf-dist
-/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2020/texmf-
-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Dissertation-alasfar.pdf (71 pages, 1304921 bytes).
+0.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.
+pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pf
+b></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
+></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/loc
+al/texlive/2020/texmf-dist/fonts/type1/public/lm/lmbx8.pfb></usr/local/texlive/
+2020/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2020/texm
+f-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2020/texmf-dist/fon
+ts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/p
+ublic/lm/lmmi12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/l
+mmi5.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></
+usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmmi7.pfb></usr/local/t
+exlive/2020/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2020
+/texmf-dist/fonts/type1/public/lm/lmmi9.pfb></usr/local/texlive/2020/texmf-dist
+/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type
+1/public/lm/lmr5.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/
+lmr6.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmr7.pfb></u
+sr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/tex
+live/2020/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/local/texlive/2020/te
+xmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2020/texmf-dist/f
+onts/type1/public/lm/lmro10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1
+/public/lm/lmss10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm
+/lmss12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmssbx10.
+pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/
+local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></usr/local/texli
+ve/2020/texmf-dist/fonts/type1/public/lm/lmsy7.pfb></usr/local/texlive/2020/tex
+mf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2020/texmf-dist/fon
+ts/type1/public/lm/lmsy9.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/pu
+blic/lm/lmtt10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lm
+tt9.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/symbols
+/msam10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/sym
+bols/msbm10.pfb>
+Output written on Dissertation-alasfar.pdf (103 pages, 2066156 bytes).
 PDF statistics:
- 1583 PDF objects out of 1728 (max. 8388607)
- 1344 compressed objects within 14 object streams
- 324 named destinations out of 1000 (max. 500000)
- 326 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2790 PDF objects out of 2984 (max. 8388607)
+ 2399 compressed objects within 24 object streams
+ 508 named destinations out of 1000 (max. 500000)
+ 545 words of extra memory for PDF output out of 10000 (max. 10000000)
 
