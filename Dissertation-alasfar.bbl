@@ -957,6 +957,12 @@ S.~Larin, ``{The Renormalization of the axial anomaly in dimensional
   Phys. Lett. B} {\bfseries 303} (1993) 113--118},
   \href{http://arxiv.org/abs/hep-ph/9302240}{{\ttfamily arXiv:hep-ph/9302240}}.
 
+\bibitem{Spira:1995rr}
+M.~Spira, A.~Djouadi, D.~Graudenz, and P.~M. Zerwas, ``{Higgs boson production
+  at the LHC},'' \href{http://dx.doi.org/10.1016/0550-3213(95)00379-7}{{\em
+  Nucl. Phys. B} {\bfseries 453} (1995) 17--82},
+  \href{http://arxiv.org/abs/hep-ph/9504378}{{\ttfamily arXiv:hep-ph/9504378}}.
+
 \bibitem{Aglietti:2006tp}
 U.~Aglietti, R.~Bonciani, G.~Degrassi, and A.~Vicini, ``{Analytic Results for
   Virtual QCD Corrections to Higgs Production and Decay},''
@@ -977,17 +983,42 @@ V.~Shtabovenko, R.~Mertig, and F.~Orellana, ``{New Developments in FeynCalc
   \href{http://arxiv.org/abs/1601.01167}{{\ttfamily arXiv:1601.01167
   [hep-ph]}}.
 
-\bibitem{Degrassi:2011vq}
-G.~Degrassi, S.~Di~Vita, and P.~Slavich, ``{NLO QCD corrections to pseudoscalar
-  Higgs production in the MSSM},''
-  \href{http://dx.doi.org/10.1007/JHEP08(2011)128}{{\em JHEP} {\bfseries 08}
-  (2011) 128}, \href{http://arxiv.org/abs/1107.0914}{{\ttfamily arXiv:1107.0914
+\bibitem{Patel:2016fam}
+H.~H. Patel, ``{Package-X 2.0: A Mathematica package for the analytic
+  calculation of one-loop integrals},''
+  \href{http://dx.doi.org/10.1016/j.cpc.2017.04.015}{{\em Comput. Phys.
+  Commun.} {\bfseries 218} (2017) 66--70},
+  \href{http://arxiv.org/abs/1612.00009}{{\ttfamily arXiv:1612.00009
   [hep-ph]}}.
 
-\bibitem{Abbott:1980hw}
-L.~F. Abbott, ``{The Background Field Method Beyond One Loop},''
-  \href{http://dx.doi.org/10.1016/0550-3213(81)90371-0}{{\em Nucl. Phys. B}
-  {\bfseries 185} (1981) 189--203}.
+\bibitem{Maierhofer:2017gsa}
+P.~Maierh\"ofer, J.~Usovitsch, and P.~Uwer, ``{Kira\textemdash{}A Feynman
+  integral reduction program},''
+  \href{http://dx.doi.org/10.1016/j.cpc.2018.04.012}{{\em Comput. Phys.
+  Commun.} {\bfseries 230} (2018) 99--112},
+  \href{http://arxiv.org/abs/1705.05610}{{\ttfamily arXiv:1705.05610
+  [hep-ph]}}.
+
+\bibitem{Bonciani:2003hc}
+R.~Bonciani, P.~Mastrolia, and E.~Remiddi, ``{Master integrals for the two loop
+  QCD virtual corrections to the forward backward asymmetry},''
+  \href{http://dx.doi.org/10.1016/j.nuclphysb.2004.04.011}{{\em Nucl. Phys. B}
+  {\bfseries 690} (2004) 138--176},
+  \href{http://arxiv.org/abs/hep-ph/0311145}{{\ttfamily arXiv:hep-ph/0311145}}.
+
+\bibitem{Borowka:2013cma}
+S.~Borowka and G.~Heinrich, ``{Massive non-planar two-loop four-point integrals
+  with SecDec 2.1},'' \href{http://dx.doi.org/10.1016/j.cpc.2013.05.022}{{\em
+  Comput. Phys. Commun.} {\bfseries 184} (2013) 2552--2561},
+  \href{http://arxiv.org/abs/1303.1157}{{\ttfamily arXiv:1303.1157 [hep-ph]}}.
+
+\bibitem{Borowka:2015mxa}
+S.~Borowka, G.~Heinrich, S.~P. Jones, M.~Kerner, J.~Schlenk, and T.~Zirke,
+  ``{SecDec-3.0: numerical evaluation of multi-scale integrals beyond one
+  loop},'' \href{http://dx.doi.org/10.1016/j.cpc.2015.05.022}{{\em Comput.
+  Phys. Commun.} {\bfseries 196} (2015) 470--491},
+  \href{http://arxiv.org/abs/1502.06595}{{\ttfamily arXiv:1502.06595
+  [hep-ph]}}.
 
 \bibitem{Smirnov:2014hma}
 A.~V. Smirnov, ``{FIRE5: a C++ implementation of Feynman Integral REduction},''
@@ -1016,14 +1047,6 @@ R.~Bonciani, G.~Degrassi, P.~P. Giardino, and R.~Gr\"ober, ``{A Numerical
   \href{http://arxiv.org/abs/1812.02698}{{\ttfamily arXiv:1812.02698
   [hep-ph]}}.
 
-\bibitem{Degrassi:2016vss}
-G.~Degrassi, P.~P. Giardino, and R.~Gr\"ober, ``{On the two-loop virtual QCD
-  corrections to Higgs boson pair production in the Standard Model},''
-  \href{http://dx.doi.org/10.1140/epjc/s10052-016-4256-9}{{\em Eur. Phys. J. C}
-  {\bfseries 76} no.~7, (2016) 411},
-  \href{http://arxiv.org/abs/1603.00385}{{\ttfamily arXiv:1603.00385
-  [hep-ph]}}.
-
 \bibitem{Naterop:2019xaf}
 L.~Naterop, A.~Signer, and Y.~Ulrich, ``{handyG \textemdash{}Rapid numerical
   evaluation of generalised polylogarithms in Fortran},''
@@ -1031,6 +1054,12 @@ L.~Naterop, A.~Signer, and Y.~Ulrich, ``{handyG \textemdash{}Rapid numerical
   Commun.} {\bfseries 253} (2020) 107165},
   \href{http://arxiv.org/abs/1909.01656}{{\ttfamily arXiv:1909.01656
   [hep-ph]}}.
+
+\bibitem{Buehler:2011ev}
+S.~Buehler and C.~Duhr, ``{CHAPLIN - Complex Harmonic Polylogarithms in
+  Fortran},'' \href{http://dx.doi.org/10.1016/j.cpc.2014.05.022}{{\em Comput.
+  Phys. Commun.} {\bfseries 185} (2014) 2703--2713},
+  \href{http://arxiv.org/abs/1106.5739}{{\ttfamily arXiv:1106.5739 [hep-ph]}}.
 
 \bibitem{Borowka:2017idc}
 S.~Borowka, G.~Heinrich, S.~Jahn, S.~P. Jones, M.~Kerner, J.~Schlenk, and

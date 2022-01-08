@@ -13,7 +13,7 @@ A level-1 auxiliary file: chapters/Part3/dihiggs_yukawa_bdt.aux
 A level-1 auxiliary file: chapters/Part2/Appendix_hz.aux
 The style file: utphys.bst
 A level-1 auxiliary file: chapters/End/list_of_publications.aux
-Reallocated field_info (elt_size=4) to 11400 items from 5000.
+Reallocated field_info (elt_size=4) to 11528 items from 5000.
 Database file #1: bibliography.bib
 I was expecting a `,' or a `}'---line 552 of file bibliography.bib
  :  title        
@@ -37,10 +37,6 @@ Repeated entry---line 2108 of file bibliography.bib
 I'm skipping whatever remains of this entry
 Repeated entry---line 2595 of file bibliography.bib
  : @article{Bonciani:2018omm
- :                          ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 3210 of file bibliography.bib
- : @article{Degrassi:2016vss
  :                          ,
 I'm skipping whatever remains of this entry
 You're missing a field name---line 3627 of file bibliography.bib
@@ -529,6 +525,10 @@ Repeated entry---line 7300 of file bibliography.bib
  : @article{Larin:1993tq
  :                      ,
 I'm skipping whatever remains of this entry
+Repeated entry---line 7336 of file bibliography.bib
+ : @article{Aglietti:2006tp
+ :                         ,
+I'm skipping whatever remains of this entry
 Warning--there's a number but no series in minlos2000introduction
 Warning--empty booktitle in Freed1993LecturesOT
 Warning--empty author in ATLAS:2020qdt
@@ -552,45 +552,45 @@ Warning--empty author in CMS:2018rig
 Warning--empty institution in CMS:2018rig
 Warning--empty author in ATLAS-CONF-2021-021
 Warning--empty author in CMS-PAS-SMP-19-014
-You've used 200 entries,
+You've used 204 entries,
             2328 wiz_defined-function locations,
-            2090 strings with 46495 characters,
-and the built_in function-call counts, 61413 in all, are:
-= -- 6096
-> -- 2047
+            2120 strings with 47263 characters,
+and the built_in function-call counts, 63166 in all, are:
+= -- 6277
+> -- 2097
 < -- 7
-+ -- 763
-- -- 563
-* -- 6467
-:= -- 7248
-add.period$ -- 277
-call.type$ -- 200
-change.case$ -- 241
++ -- 781
+- -- 577
+* -- 6661
+:= -- 7449
+add.period$ -- 281
+call.type$ -- 204
+change.case$ -- 245
 chr.to.int$ -- 0
-cite$ -- 223
-duplicate$ -- 3268
-empty$ -- 5982
-format.name$ -- 563
-if$ -- 15737
+cite$ -- 227
+duplicate$ -- 3342
+empty$ -- 6153
+format.name$ -- 577
+if$ -- 16171
 int.to.chr$ -- 0
-int.to.str$ -- 200
-missing$ -- 721
-newline$ -- 672
-num.names$ -- 187
-pop$ -- 942
+int.to.str$ -- 204
+missing$ -- 737
+newline$ -- 684
+num.names$ -- 191
+pop$ -- 955
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 2270
+skip$ -- 2333
 stack$ -- 0
-substring$ -- 2782
-swap$ -- 1610
+substring$ -- 2957
+swap$ -- 1652
 text.length$ -- 7
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 23
-while$ -- 476
-width$ -- 203
-write$ -- 1637
+while$ -- 496
+width$ -- 207
+write$ -- 1670
 (There were 127 error messages)
