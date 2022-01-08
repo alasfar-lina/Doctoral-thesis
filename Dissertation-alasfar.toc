@@ -16,35 +16,34 @@
 \contentsline {part}{\numberline {II}Single Higgs Processes at the LHC}{25}{part.2}%
 \contentsline {chapter}{\numberline {4}Overview of Higgs production at colliders}{27}{chapter.4}%
 \contentsline {chapter}{\numberline {5}Four top operator in Higgs production and decay}{29}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Introduction}{29}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Notation }{31}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Contribution of four-fermion operators to Higgs production and decay }{32}{section.5.3}%
-\contentsline {subsection}{\numberline {5.3.1}Higgs coupling to gluons and photons}{32}{subsection.5.3.1}%
-\contentsline {subsection}{\numberline {5.3.2}Higgs decay to bottom quarks}{37}{subsection.5.3.2}%
-\contentsline {subsection}{\numberline {5.3.3}Associated production of a Higgs boson with top quarks}{38}{subsection.5.3.3}%
-\contentsline {subsection}{\numberline {5.3.4}Results}{40}{subsection.5.3.4}%
-\contentsline {section}{\numberline {5.4}Fit to Higgs observables }{43}{section.5.4}%
-\contentsline {subsection}{\numberline {5.4.1}Fit methodology}{43}{subsection.5.4.1}%
-\contentsline {subsection}{\numberline {5.4.2}Fit to LHC Run-II data}{45}{subsection.5.4.2}%
-\contentsline {subsection}{\numberline {5.4.3}Prospects for HL-LHC}{50}{subsection.5.4.3}%
-\contentsline {section}{\numberline {5.5}Summary and discussion }{51}{section.5.5}%
-\contentsline {section}{\numberline {5.6}Two parameter fits }{54}{section.5.6}%
-\contentsline {chapter}{\numberline {6}Virtual two-loop calculation of $Zh$ production via gluon fusion}{57}{chapter.6}%
-\contentsline {section}{\numberline {6.1}General notation }{59}{section.6.1}%
-\contentsline {subsection}{\numberline {6.1.1}The transverse momentum expansion}{61}{subsection.6.1.1}%
-\contentsline {section}{\numberline {6.2}Born cross-section in the $p_{\scriptscriptstyle T}$-expansion}{62}{section.6.2}%
-\contentsline {section}{\numberline {6.3}NLO calculation}{64}{section.6.3}%
-\contentsline {subsection}{\numberline {6.3.1}Renormalisation}{65}{subsection.6.3.1}%
-\contentsline {subsection}{\numberline {6.3.2}Calculation of the exact virtual corrections}{68}{subsection.6.3.2}%
-\contentsline {subsection}{\numberline {6.3.3}Calculation of the $p_{\scriptscriptstyle T}$-expanded virtual corrections}{70}{subsection.6.3.3}%
-\contentsline {section}{\numberline {6.4}Results and conclusions}{70}{section.6.4}%
-\contentsline {part}{\numberline {III}Higgs Pair at Hadron Colliders}{75}{part.3}%
-\contentsline {chapter}{\numberline {7}Overview of Higgs pair production at colliders}{77}{chapter.7}%
-\contentsline {subsubsection}{\nonumberline Theoretical systematic uncertainties}{78}{section*.30}%
-\contentsline {subsubsection}{\nonumberline results}{79}{section*.31}%
-\contentsline {chapter}{\numberline {8}Higgs pair as a probe for light Yukawas}{81}{chapter.8}%
-\contentsline {chapter}{\numberline {9}Optimised search for Higgs pair via Interpretable machine learning}{83}{chapter.9}%
-\contentsline {section}{\numberline {9.1}Overview of Light Yukawa searches}{83}{section.9.1}%
-\contentsline {chapter}{\numberline {A}Details of $Zh$ calculation}{87}{appendix.A}%
-\contentsline {section}{\numberline {A.1}Orthogonal Projectors in $gg \to ZH$}{87}{section.A.1}%
-\contentsline {section}{\numberline {A.2}Two-loop Results}{88}{section.A.2}%
+\contentsline {section}{\numberline {5.1}Notation }{31}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Contribution of four-fermion operators to Higgs production and decay }{32}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Higgs coupling to gluons and photons}{32}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Higgs decay to bottom quarks}{36}{subsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.2.3}Associated production of a Higgs boson with top quarks}{37}{subsection.5.2.3}%
+\contentsline {subsection}{\numberline {5.2.4}Results}{40}{subsection.5.2.4}%
+\contentsline {section}{\numberline {5.3}Fit to Higgs observables }{43}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Fit methodology}{43}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}Fit to LHC Run-II data}{45}{subsection.5.3.2}%
+\contentsline {subsection}{\numberline {5.3.3}Two parameter fits }{47}{subsection.5.3.3}%
+\contentsline {subsection}{\numberline {5.3.4}Prospects for HL-LHC}{51}{subsection.5.3.4}%
+\contentsline {section}{\numberline {5.4}Summary and discussion }{51}{section.5.4}%
+\contentsline {chapter}{\numberline {6}Virtual two-loop calculation of $Zh$ production via gluon fusion}{59}{chapter.6}%
+\contentsline {section}{\numberline {6.1}General notation }{61}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}The transverse momentum expansion}{63}{subsection.6.1.1}%
+\contentsline {section}{\numberline {6.2}Born cross-section in the $p_{\scriptscriptstyle T}$-expansion}{64}{section.6.2}%
+\contentsline {section}{\numberline {6.3}NLO calculation}{66}{section.6.3}%
+\contentsline {subsection}{\numberline {6.3.1}Renormalisation}{67}{subsection.6.3.1}%
+\contentsline {subsection}{\numberline {6.3.2}Calculation of the exact virtual corrections}{70}{subsection.6.3.2}%
+\contentsline {subsection}{\numberline {6.3.3}Calculation of the $p_{\scriptscriptstyle T}$-expanded virtual corrections}{72}{subsection.6.3.3}%
+\contentsline {section}{\numberline {6.4}Results and conclusions}{72}{section.6.4}%
+\contentsline {part}{\numberline {III}Higgs Pair at Hadron Colliders }{77}{part.3}%
+\contentsline {chapter}{\numberline {7}Overview of Higgs pair production at colliders}{79}{chapter.7}%
+\contentsline {subsubsection}{\nonumberline Theoretical systematic uncertainties}{80}{section*.33}%
+\contentsline {subsubsection}{\nonumberline results}{81}{section*.34}%
+\contentsline {chapter}{\numberline {8}Higgs pair as a probe for light Yukawas}{83}{chapter.8}%
+\contentsline {chapter}{\numberline {9}Optimised search for Higgs pair via Interpretable machine learning}{85}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Overview of Light Yukawa searches}{85}{section.9.1}%
+\contentsline {chapter}{\numberline {A}Details of $Zh$ calculation}{89}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Orthogonal Projectors in $gg \to ZH$}{89}{section.A.1}%
+\contentsline {section}{\numberline {A.2}Two-loop Results}{90}{section.A.2}%

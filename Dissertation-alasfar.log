@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.8.14)  8 JAN 2022 10:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.8.14)  8 JAN 2022 18:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1204,8 +1204,11 @@ LaTeX Info: Redefining \mit on input line 296.
 )
 (./Dissertation-alasfar.aux (./chapters/Part1/Higgs_and_SM.aux)
 (./chapters/Part1/Constraints_on_Higgs.aux) (./chapters/Part1/EFT.aux)
-(./chapters/Part2/single_higgs.aux) (./chapters/Part2/single_higgs_4tops.aux)
-(./chapters/Part2/hz_nlo.aux) (./chapters/Part3/higgs_pair.aux)
+(./chapters/Part2/single_higgs.aux) (./chapters/Part2/single_higgs_4tops.aux
+
+LaTeX Warning: Label `fig:summcphihl-lhc' multiply defined.
+
+) (./chapters/Part2/hz_nlo.aux) (./chapters/Part3/higgs_pair.aux)
 (./chapters/Part3/dihiggs_yukawa_cut.aux
 
 LaTeX Warning: Label `chap:overviewDiHiggs' multiply defined.
@@ -1423,7 +1426,7 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./figures/ferrvspara.pdf): P
 DF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<./figures/ferrvspara.pdf, id=276, 250.71867pt x 245.47006pt>
+<./figures/ferrvspara.pdf, id=271, 250.71867pt x 245.47006pt>
 File: ./figures/ferrvspara.pdf Graphic file (type pdf)
 <use ./figures/ferrvspara.pdf>
 Package pdftex.def Info: ./figures/ferrvspara.pdf  used on input line 13.
@@ -1451,7 +1454,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [9]
-<./figures/SM.pdf, id=423, 505.89pt x 505.89pt>
+<./figures/SM.pdf, id=418, 505.89pt x 505.89pt>
 File: ./figures/SM.pdf Graphic file (type pdf)
 <use ./figures/SM.pdf>
 Package pdftex.def Info: ./figures/SM.pdf  used on input line 189.
@@ -1475,7 +1478,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./figures/oblique_correction
 s.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allow
 ed
-<./figures/oblique_corrections.pdf, id=670, 557.24385pt x 167.13542pt>
+<./figures/oblique_corrections.pdf, id=665, 557.24385pt x 167.13542pt>
 File: ./figures/oblique_corrections.pdf Graphic file (type pdf)
 <use ./figures/oblique_corrections.pdf>
 Package pdftex.def Info: ./figures/oblique_corrections.pdf  used on input line 
@@ -1486,7 +1489,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 291--293
 
  []
 
-<./figures/stu-pdg.png, id=712, 1021.8175pt x 764.8575pt>
+<./figures/stu-pdg.png, id=707, 1021.8175pt x 764.8575pt>
 File: ./figures/stu-pdg.png Graphic file (type png)
 <use ./figures/stu-pdg.png>
 Package pdftex.def Info: ./figures/stu-pdg.png  used on input line 300.
@@ -1533,10 +1536,19 @@ l.70 	\end{align}
 LaTeX Warning: Reference `unit' on page 19 undefined on input line 97.
 
 
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./figures/kaappa_higgs.pdf):
+ PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
+<figures/kaappa_higgs.pdf, id=766, 356.33125pt x 411.2685pt>
+File: figures/kaappa_higgs.pdf Graphic file (type pdf)
+<use figures/kaappa_higgs.pdf>
+Package pdftex.def Info: figures/kaappa_higgs.pdf  used on input line 106.
+(pdftex.def)             Requested size: 227.62204pt x 262.71518pt.
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [19]
-[20] (./fitobservables.tex
+[20 <./figures/kaappa_higgs.pdf>] (./fitobservables.tex
 
 LaTeX Warning: Float too large for page by 33.68303pt on input line 132.
 
@@ -1578,13 +1590,29 @@ chapter 4.
 
 ]
 chapter 5.
-[29]
 
-LaTeX Warning: Reference `sec:conclusion' on page 30 undefined on input line 30
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./figures/htoaa_nlo_ew.pdf):
+ PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
+<figures/htoaa_nlo_ew.pdf, id=925, 253.67874pt x 152.36523pt>
+File: figures/htoaa_nlo_ew.pdf Graphic file (type pdf)
+<use figures/htoaa_nlo_ew.pdf>
+Package pdftex.def Info: figures/htoaa_nlo_ew.pdf  used on input line 18.
+(pdftex.def)             Requested size: 188.21371pt x 113.04608pt.
+
+Package natbib Warning: Citation `for Hartland:2019bjb' on page 29 undefined on
+ input line 26.
+
+[29 <./figures/htoaa_nlo_ew.pdf>]
+
+LaTeX Warning: Reference `sec:conclusion' on page 30 undefined on input line 33
 .
 
-[30]
-Overfull \hbox (29.05417pt too wide) detected at line 54
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [30]
+Overfull \hbox (29.05417pt too wide) detected at line 57
 []
  []
 
@@ -1592,85 +1620,97 @@ Overfull \hbox (29.05417pt too wide) detected at line 54
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./fig/ggF-4F_NLO.pdf): PDF i
 nclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<fig/ggF-4F_NLO.pdf, id=925, 468.71814pt x 434.37885pt>
+<fig/ggF-4F_NLO.pdf, id=991, 468.71814pt x 434.37885pt>
 File: fig/ggF-4F_NLO.pdf Graphic file (type pdf)
 <use fig/ggF-4F_NLO.pdf>
-Package pdftex.def Info: fig/ggF-4F_NLO.pdf  used on input line 91.
+Package pdftex.def Info: fig/ggF-4F_NLO.pdf  used on input line 94.
 (pdftex.def)             Requested size: 341.43306pt x 316.43773pt.
 [32]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 1199) has occurred while \output is active []
 
  [33 <./fig/ggF-4F_NLO.pdf>] [34]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [35]
-<./fig/Hbb.pdf, id=1035, 175.88109pt x 111.45941pt>
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./fig/Hbb.pdf): PDF inclusio
+n: found PDF version <1.6>, but at most version <1.5> allowed
+<./fig/Hbb.pdf, id=1102, 175.88109pt x 111.45941pt>
 File: ./fig/Hbb.pdf Graphic file (type pdf)
 <use ./fig/Hbb.pdf>
-Package pdftex.def Info: ./fig/Hbb.pdf  used on input line 208.
+Package pdftex.def Info: ./fig/Hbb.pdf  used on input line 211.
 (pdftex.def)             Requested size: 149.49962pt x 94.74092pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [36]
-<./fig/ggttH-4F_NLO.pdf, id=1051, 403.3208pt x 398.87419pt>
+<./fig/ggttH-4F_NLO.pdf, id=1118, 403.3208pt x 398.87419pt>
 File: ./fig/ggttH-4F_NLO.pdf Graphic file (type pdf)
 <use ./fig/ggttH-4F_NLO.pdf>
-Package pdftex.def Info: ./fig/ggttH-4F_NLO.pdf  used on input line 234.
+Package pdftex.def Info: ./fig/ggttH-4F_NLO.pdf  used on input line 237.
 (pdftex.def)             Requested size: 342.8243pt x 339.04465pt.
-<./fig/qqttH-4F_NLO.pdf, id=1052, 470.00293pt x 252.44112pt>
+<./fig/qqttH-4F_NLO.pdf, id=1119, 470.00293pt x 252.44112pt>
 File: ./fig/qqttH-4F_NLO.pdf Graphic file (type pdf)
 <use ./fig/qqttH-4F_NLO.pdf>
-Package pdftex.def Info: ./fig/qqttH-4F_NLO.pdf  used on input line 240.
+Package pdftex.def Info: ./fig/qqttH-4F_NLO.pdf  used on input line 243.
 (pdftex.def)             Requested size: 399.50438pt x 214.57594pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [37 <./fig/Hbb.pdf>] [38 <./fig/ggttH-4F_NLO.pdf>] [39 <./fig/qqttH-4F_NLO.pdf
->]
+[37 <./fig/Hbb.pdf>] [38 <./fig/ggttH-4F_NLO.pdf>]
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./fig/CT.pdf): PDF inclusion
 : found PDF version <1.6>, but at most version <1.5> allowed
-<fig/CT.pdf, id=1215, 97.36977pt x 53.35242pt>
+<fig/CT.pdf, id=1235, 97.36977pt x 53.35242pt>
 File: fig/CT.pdf Graphic file (type pdf)
 <use fig/CT.pdf>
-Package pdftex.def Info: fig/CT.pdf  used on input line 257.
+Package pdftex.def Info: fig/CT.pdf  used on input line 260.
 (pdftex.def)             Requested size: 54.37526pt x 29.7941pt.
-[40 <./fig/CT.pdf>] (./results4top.tex)
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
+ [39 <./fig/qqttH-4F_NLO.pdf>]
+Underfull \vbox (badness 2521) has occurred while \output is active []
+
+ [40 <./fig/CT.pdf>] (./results4top.tex)
+Underfull \vbox (badness 5667) has occurred while \output is active []
+
  [41]
-[42] [43] [44]
+Underfull \vbox (badness 3965) has occurred while \output is active []
 
-LaTeX Warning: Reference `App:numinput' on page 45 undefined on input line 362.
+ [42]
+[43]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [44]
+
+LaTeX Warning: Reference `App:numinput' on page 45 undefined on input line 365.
 
 
 
-LaTeX Warning: Reference `App:numinput' on page 45 undefined on input line 379.
+LaTeX Warning: Reference `App:numinput' on page 45 undefined on input line 382.
 
 
-<fig/uebeblick_Cqt1.pdf, id=1308, 860.01299pt x 353.08281pt>
+<fig/uebeblick_Cqt1.pdf, id=1372, 860.01299pt x 353.08281pt>
 File: fig/uebeblick_Cqt1.pdf Graphic file (type pdf)
 <use fig/uebeblick_Cqt1.pdf>
-Package pdftex.def Info: fig/uebeblick_Cqt1.pdf  used on input line 385.
+Package pdftex.def Info: fig/uebeblick_Cqt1.pdf  used on input line 388.
 (pdftex.def)             Requested size: 313.69167pt x 128.78525pt.
-<fig/uebeblick_Cqt8.pdf, id=1309, 860.01299pt x 353.08281pt>
+<fig/uebeblick_Cqt8.pdf, id=1373, 860.01299pt x 353.08281pt>
 File: fig/uebeblick_Cqt8.pdf Graphic file (type pdf)
 <use fig/uebeblick_Cqt8.pdf>
-Package pdftex.def Info: fig/uebeblick_Cqt8.pdf  used on input line 386.
+Package pdftex.def Info: fig/uebeblick_Cqt8.pdf  used on input line 389.
 (pdftex.def)             Requested size: 313.69167pt x 128.78525pt.
-<fig/uebeblick_Cqtqb1.pdf, id=1310, 860.01299pt x 353.06973pt>
+<fig/uebeblick_Cqtqb1.pdf, id=1374, 860.01299pt x 353.06973pt>
 File: fig/uebeblick_Cqtqb1.pdf Graphic file (type pdf)
 <use fig/uebeblick_Cqtqb1.pdf>
-Package pdftex.def Info: fig/uebeblick_Cqtqb1.pdf  used on input line 387.
+Package pdftex.def Info: fig/uebeblick_Cqtqb1.pdf  used on input line 390.
 (pdftex.def)             Requested size: 313.69167pt x 128.78049pt.
-<fig/uebeblick_Cqtqb8.pdf, id=1311, 860.01299pt x 353.06973pt>
+<fig/uebeblick_Cqtqb8.pdf, id=1375, 860.01299pt x 353.06973pt>
 File: fig/uebeblick_Cqtqb8.pdf Graphic file (type pdf)
 <use fig/uebeblick_Cqtqb8.pdf>
-Package pdftex.def Info: fig/uebeblick_Cqtqb8.pdf  used on input line 388.
+Package pdftex.def Info: fig/uebeblick_Cqtqb8.pdf  used on input line 391.
 (pdftex.def)             Requested size: 313.69167pt x 128.78049pt.
 
-LaTeX Warning: Float too large for page by 18.845pt on input line 393.
+LaTeX Warning: Float too large for page by 18.845pt on input line 396.
 
 [45] [46 <./fig/uebeblick_Cqt1.pdf> <./fig/uebeblick_Cqt8.pdf
 
@@ -1685,113 +1725,88 @@ pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./fig/uebeblick_Cqtqb1.pdf):
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./fig/uebeblick_Cqtqb8.pdf):
  PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<fig/uebeblick_forest_cphi_LHC_RunII.pdf, id=1439, 1076.82304pt x 718.48062pt>
+<fig/uebeblick_forest_cphi_LHC_RunII.pdf, id=1504, 1076.82304pt x 718.48062pt>
 File: fig/uebeblick_forest_cphi_LHC_RunII.pdf Graphic file (type pdf)
 <use fig/uebeblick_forest_cphi_LHC_RunII.pdf>
 Package pdftex.def Info: fig/uebeblick_forest_cphi_LHC_RunII.pdf  used on input
- line 408.
+ line 411.
 (pdftex.def)             Requested size: 418.25555pt x 279.06615pt.
-<fig/4param_fit_LHC_RunII_l3L_rge.pdf, id=1442, 827.54323pt x 780.83768pt>
-File: fig/4param_fit_LHC_RunII_l3L_rge.pdf Graphic file (type pdf)
-<use fig/4param_fit_LHC_RunII_l3L_rge.pdf>
-Package pdftex.def Info: fig/4param_fit_LHC_RunII_l3L_rge.pdf  used on input li
-ne 419.
-(pdftex.def)             Requested size: 250.95587pt x 236.79092pt.
-<fig/4param_fit_LHC_RunII_l3Q_rge.pdf, id=1443, 822.71912pt x 778.19438pt>
-File: fig/4param_fit_LHC_RunII_l3Q_rge.pdf Graphic file (type pdf)
-<use fig/4param_fit_LHC_RunII_l3Q_rge.pdf>
-Package pdftex.def Info: fig/4param_fit_LHC_RunII_l3Q_rge.pdf  used on input li
-ne 421.
-(pdftex.def)             Requested size: 250.95587pt x 237.36674pt.
  [47]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [48 <./fig/uebeblick_forest_cphi_LHC_RunII.pdf>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [49 <./fig/4param_fit_LHC_RunII_l3L_rge.pdf> <./fig/4param_fit_LHC_RunII_l3Q_r
-ge.pdf
-
-pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./fig/4param_fit_LHC_RunII_l
-3Q_rge.pdf): PDF inclusion: multiple pdfs with page group included in a single 
-page
->]
-<fig/uebeblick_forest_ci.pdf, id=1511, 860.01299pt x 500.46893pt>
-File: fig/uebeblick_forest_ci.pdf Graphic file (type pdf)
-<use fig/uebeblick_forest_ci.pdf>
-Package pdftex.def Info: fig/uebeblick_forest_ci.pdf  used on input line 435.
-(pdftex.def)             Requested size: 313.69167pt x 182.54364pt.
-<fig/uebeblick_forest_cphi_singleparam.pdf, id=1512, 860.01299pt x 500.41707pt>
-
-File: fig/uebeblick_forest_cphi_singleparam.pdf Graphic file (type pdf)
-<use fig/uebeblick_forest_cphi_singleparam.pdf>
-Package pdftex.def Info: fig/uebeblick_forest_cphi_singleparam.pdf  used on inp
-ut line 442.
-(pdftex.def)             Requested size: 313.69167pt x 182.52472pt.
-
-
-LaTeX Warning: Reference `App:numinput' on page 50 undefined on input line 447.
-
-
-[50 <./fig/uebeblick_forest_ci.pdf>] [51 <./fig/uebeblick_forest_cphi_singlepar
-am.pdf>] [52] [53]
-<fig/Cqt1_LHC_RunII_linearl3_rge.pdf, id=1612, 722.51854pt x 716.37633pt>
+<fig/Cqt1_LHC_RunII_linearl3_rge.pdf, id=1520, 722.51854pt x 716.37633pt>
 File: fig/Cqt1_LHC_RunII_linearl3_rge.pdf Graphic file (type pdf)
 <use fig/Cqt1_LHC_RunII_linearl3_rge.pdf>
 Package pdftex.def Info: fig/Cqt1_LHC_RunII_linearl3_rge.pdf  used on input lin
-e 505.
+e 424.
 (pdftex.def)             Requested size: 188.21371pt x 186.60324pt.
-<fig/Cqt1_LHC_RunII_quadl3_rge.pdf, id=1613, 722.67862pt x 716.37633pt>
+<fig/Cqt1_LHC_RunII_quadl3_rge.pdf, id=1521, 722.67862pt x 716.37633pt>
 File: fig/Cqt1_LHC_RunII_quadl3_rge.pdf Graphic file (type pdf)
 <use fig/Cqt1_LHC_RunII_quadl3_rge.pdf>
 Package pdftex.def Info: fig/Cqt1_LHC_RunII_quadl3_rge.pdf  used on input line 
-506.
+425.
 (pdftex.def)             Requested size: 188.21371pt x 186.57045pt.
-<fig/Cqt8_LHC_RunII_linearl3_rge.pdf, id=1614, 722.51854pt x 716.37633pt>
+<fig/Cqt8_LHC_RunII_linearl3_rge.pdf, id=1522, 722.51854pt x 716.37633pt>
 File: fig/Cqt8_LHC_RunII_linearl3_rge.pdf Graphic file (type pdf)
 <use fig/Cqt8_LHC_RunII_linearl3_rge.pdf>
 Package pdftex.def Info: fig/Cqt8_LHC_RunII_linearl3_rge.pdf  used on input lin
-e 507.
+e 426.
 (pdftex.def)             Requested size: 188.21371pt x 186.60324pt.
-<fig/Cqt8_LHC_RunII_quadl3_rge.pdf, id=1615, 722.67862pt x 716.37633pt>
+<fig/Cqt8_LHC_RunII_quadl3_rge.pdf, id=1523, 722.67862pt x 716.37633pt>
 File: fig/Cqt8_LHC_RunII_quadl3_rge.pdf Graphic file (type pdf)
 <use fig/Cqt8_LHC_RunII_quadl3_rge.pdf>
 Package pdftex.def Info: fig/Cqt8_LHC_RunII_quadl3_rge.pdf  used on input line 
-508.
+427.
 (pdftex.def)             Requested size: 188.21371pt x 186.57045pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<fig/Cqtqb1_LHC_RunII_linearl3_rge.pdf, id=1616, 722.67862pt x 716.34251pt>
+<fig/Cqtqb1_LHC_RunII_linearl3_rge.pdf, id=1524, 722.67862pt x 716.34251pt>
 File: fig/Cqtqb1_LHC_RunII_linearl3_rge.pdf Graphic file (type pdf)
 <use fig/Cqtqb1_LHC_RunII_linearl3_rge.pdf>
 Package pdftex.def Info: fig/Cqtqb1_LHC_RunII_linearl3_rge.pdf  used on input l
-ine 517.
+ine 436.
 (pdftex.def)             Requested size: 188.21371pt x 186.56165pt.
-<fig/Cqtqb1_LHC_RunII_quadl3_rge.pdf, id=1617, 721.04942pt x 716.34251pt>
+<fig/Cqtqb1_LHC_RunII_quadl3_rge.pdf, id=1525, 721.04942pt x 716.34251pt>
 File: fig/Cqtqb1_LHC_RunII_quadl3_rge.pdf Graphic file (type pdf)
 <use fig/Cqtqb1_LHC_RunII_quadl3_rge.pdf>
 Package pdftex.def Info: fig/Cqtqb1_LHC_RunII_quadl3_rge.pdf  used on input lin
-e 518.
+e 437.
 (pdftex.def)             Requested size: 188.21371pt x 186.977pt.
-<fig/Cqtqb8_LHC_RunII_linearl3_rge.pdf, id=1618, 722.67862pt x 716.34251pt>
+<fig/Cqtqb8_LHC_RunII_linearl3_rge.pdf, id=1526, 722.67862pt x 716.34251pt>
 File: fig/Cqtqb8_LHC_RunII_linearl3_rge.pdf Graphic file (type pdf)
 <use fig/Cqtqb8_LHC_RunII_linearl3_rge.pdf>
 Package pdftex.def Info: fig/Cqtqb8_LHC_RunII_linearl3_rge.pdf  used on input l
-ine 519.
+ine 438.
 (pdftex.def)             Requested size: 188.21371pt x 186.56165pt.
-<fig/Cqtqb8_LHC_RunII_quadl3_rge.pdf, id=1619, 722.67862pt x 716.34251pt>
+<fig/Cqtqb8_LHC_RunII_quadl3_rge.pdf, id=1527, 722.67862pt x 716.34251pt>
 File: fig/Cqtqb8_LHC_RunII_quadl3_rge.pdf Graphic file (type pdf)
 <use fig/Cqtqb8_LHC_RunII_quadl3_rge.pdf>
 Package pdftex.def Info: fig/Cqtqb8_LHC_RunII_quadl3_rge.pdf  used on input lin
-e 520.
+e 439.
 (pdftex.def)             Requested size: 188.21371pt x 186.56165pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) [54] [55 <./fig/Cqt1_LHC_RunII_linearl3_rge.pdf> <./fig/Cqt1_LHC_RunII_quadl3
-_rge.pdf
+<fig/4param_fit_LHC_RunII_l3L_rge.pdf, id=1528, 827.54323pt x 780.83768pt>
+File: fig/4param_fit_LHC_RunII_l3L_rge.pdf Graphic file (type pdf)
+<use fig/4param_fit_LHC_RunII_l3L_rge.pdf>
+Package pdftex.def Info: fig/4param_fit_LHC_RunII_l3L_rge.pdf  used on input li
+ne 452.
+(pdftex.def)             Requested size: 250.95587pt x 236.79092pt.
+<fig/4param_fit_LHC_RunII_l3Q_rge.pdf, id=1529, 822.71912pt x 778.19438pt>
+File: fig/4param_fit_LHC_RunII_l3Q_rge.pdf Graphic file (type pdf)
+<use fig/4param_fit_LHC_RunII_l3Q_rge.pdf>
+Package pdftex.def Info: fig/4param_fit_LHC_RunII_l3Q_rge.pdf  used on input li
+ne 454.
+(pdftex.def)             Requested size: 250.95587pt x 237.36674pt.
+
+LaTeX Warning: Float too large for page by 2.15742pt on input line 460.
+
+[48 <./fig/uebeblick_forest_cphi_LHC_RunII.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [49 <./fig/Cqt1_LHC_RunII_linearl3_rge.pdf> <./fig/Cqt1_LHC_RunII_quadl3_rge.p
+df
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./fig/Cqt1_LHC_RunII_quadl3_
 rge.pdf): PDF inclusion: multiple pdfs with page group included in a single pag
@@ -1806,8 +1821,11 @@ age
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./fig/Cqt8_LHC_RunII_quadl3_
 rge.pdf): PDF inclusion: multiple pdfs with page group included in a single pag
 e
->] [56 <./fig/Cqtqb1_LHC_RunII_linearl3_rge.pdf> <./fig/Cqtqb1_LHC_RunII_quadl3
-_rge.pdf
+>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [50 <./fig/Cqtqb1_LHC_RunII_linearl3_rge.pdf> <./fig/Cqtqb1_LHC_RunII_quadl3_r
+ge.pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./fig/Cqtqb1_LHC_RunII_quadl
 3_rge.pdf): PDF inclusion: multiple pdfs with page group included in a single p
@@ -1823,9 +1841,53 @@ pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./fig/Cqtqb8_LHC_RunII_quadl
 3_rge.pdf): PDF inclusion: multiple pdfs with page group included in a single p
 age
 >]
+<fig/uebeblick_forest_ci.pdf, id=1671, 860.01299pt x 500.46893pt>
+File: fig/uebeblick_forest_ci.pdf Graphic file (type pdf)
+<use fig/uebeblick_forest_ci.pdf>
+Package pdftex.def Info: fig/uebeblick_forest_ci.pdf  used on input line 468.
+(pdftex.def)             Requested size: 313.69167pt x 182.54364pt.
+<fig/uebeblick_forest_cphi_singleparam.pdf, id=1672, 860.01299pt x 500.41707pt>
+
+File: fig/uebeblick_forest_cphi_singleparam.pdf Graphic file (type pdf)
+<use fig/uebeblick_forest_cphi_singleparam.pdf>
+Package pdftex.def Info: fig/uebeblick_forest_cphi_singleparam.pdf  used on inp
+ut line 475.
+(pdftex.def)             Requested size: 313.69167pt x 182.52472pt.
+
+
+LaTeX Warning: Reference `App:numinput' on page 51 undefined on input line 480.
+
+
+
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./figures/SMEFT_collection.p
+df): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
+<figures/SMEFT_collection.pdf, id=1684, 1081.62088pt x 708.14563pt>
+File: figures/SMEFT_collection.pdf Graphic file (type pdf)
+<use figures/SMEFT_collection.pdf>
+Package pdftex.def Info: figures/SMEFT_collection.pdf  used on input line 499.
+(pdftex.def)             Requested size: 313.69167pt x 205.37859pt.
+[51] [52]) [53] [54] [55 <./fig/4param_fit_LHC_RunII_l3L_rge.pdf> <./fig/4param
+_fit_LHC_RunII_l3Q_rge.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./fig/4param_fit_LHC_RunII_l
+3Q_rge.pdf): PDF inclusion: multiple pdfs with page group included in a single 
+page
+>] [56 <./fig/uebeblick_forest_ci.pdf> <./fig/uebeblick_forest_cphi_singleparam
+.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./fig/uebeblick_forest_cphi_
+singleparam.pdf): PDF inclusion: multiple pdfs with page group included in a si
+ngle page
+>] [57 <./figures/SMEFT_collection.pdf>]
 \openout2 = `chapters/Part2/hz_nlo.aux'.
 
- (./chapters/Part2/hz_nlo.tex
+ (./chapters/Part2/hz_nlo.tex [58
+
+
+
+
+]
 chapter 6.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
@@ -1841,18 +1903,13 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <14.4> on input line 4.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <12> on input line 4.
-<./figures/Rplot.png, id=1753, 451.6875pt x 315.1775pt>
+<./figures/Rplot.png, id=1836, 451.6875pt x 315.1775pt>
 File: ./figures/Rplot.png Graphic file (type png)
 <use ./figures/Rplot.png>
 Package pdftex.def Info: ./figures/Rplot.png  used on input line 14.
 (pdftex.def)             Requested size: 256.0748pt x 178.6912pt.
-[57
-
-
-
-
-] [58 <./figures/Rplot.png>] [59]
-<./figures/Feynman_LO.pdf, id=1812, 593.21625pt x 251.25267pt>
+[59] [60 <./figures/Rplot.png>] [61]
+<./figures/Feynman_LO.pdf, id=1895, 593.21625pt x 251.25267pt>
 File: ./figures/Feynman_LO.pdf Graphic file (type pdf)
 <use ./figures/Feynman_LO.pdf>
 Package pdftex.def Info: ./figures/Feynman_LO.pdf  used on input line 76.
@@ -1860,7 +1917,7 @@ Package pdftex.def Info: ./figures/Feynman_LO.pdf  used on input line 76.
 
 Underfull \vbox (badness 8151) has occurred while \output is active []
 
- [60 <./figures/Feynman_LO.pdf>] [61]
+ [62 <./figures/Feynman_LO.pdf>] [63]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 152.
@@ -1880,33 +1937,39 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 Underfull \vbox (badness 2512) has occurred while \output is active []
 
- [62]
+ [64]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [63]
-<./figures/LO_ptexp_ratio_1000.pdf, id=1882, 794.97pt x 650.43pt>
+ [65]
+<./figures/LO_ptexp_ratio_1000.pdf, id=1964, 794.97pt x 650.43pt>
 File: ./figures/LO_ptexp_ratio_1000.pdf Graphic file (type pdf)
 <use ./figures/LO_ptexp_ratio_1000.pdf>
 Package pdftex.def Info: ./figures/LO_ptexp_ratio_1000.pdf  used on input line 
 238.
 (pdftex.def)             Requested size: 334.60571pt x 273.77422pt.
-<./figures/Feynman_NL0.pdf, id=1889, 593.21625pt x 307.31714pt>
+<./figures/Feynman_NL0.pdf, id=1971, 593.21625pt x 307.31714pt>
 File: ./figures/Feynman_NL0.pdf Graphic file (type pdf)
 <use ./figures/Feynman_NL0.pdf>
 Package pdftex.def Info: ./figures/Feynman_NL0.pdf  used on input line 272.
 (pdftex.def)             Requested size: 341.43306pt x 176.88417pt.
 
-[64] [65 <./figures/LO_ptexp_ratio_1000.pdf>] [66 <./figures/Feynman_NL0.pdf>]
+[66] [67 <./figures/LO_ptexp_ratio_1000.pdf>] [68 <./figures/Feynman_NL0.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [67]
-<./figures/MI.pdf, id=1974, 518.88232pt x 489.1587pt>
+ [69]
+<./figures/MI.pdf, id=2058, 518.88232pt x 489.1587pt>
 File: ./figures/MI.pdf Graphic file (type pdf)
 <use ./figures/MI.pdf>
 Package pdftex.def Info: ./figures/MI.pdf  used on input line 331.
 (pdftex.def)             Requested size: 341.43306pt x 321.87543pt.
 
-[68] [69 <./figures/MI.pdf>]
+
+LaTeX Warning: Reference `app:due' on page 70 undefined on input line 341.
+
+
+LaTeX Warning: Reference `app:due' on page 70 undefined on input line 344.
+
+[70] [71 <./figures/MI.pdf>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 349.
@@ -1923,17 +1986,17 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 349.
 
-[70]
-<./figures/sigma_part_virt_LMEreweighted.pdf, id=2054, 794.97pt x 650.43pt>
+[72]
+<./figures/sigma_part_virt_LMEreweighted.pdf, id=2134, 794.97pt x 650.43pt>
 File: ./figures/sigma_part_virt_LMEreweighted.pdf Graphic file (type pdf)
 <use ./figures/sigma_part_virt_LMEreweighted.pdf>
 Package pdftex.def Info: ./figures/sigma_part_virt_LMEreweighted.pdf  used on i
 nput line 416.
 (pdftex.def)             Requested size: 292.7776pt x 239.55368pt.
- [71])
+ [73])
 Underfull \vbox (badness 1406) has occurred while \output is active []
 
- [72 <./figures/sigma_part_virt_LMEreweighted.pdf>] [73] [74
+ [74 <./figures/sigma_part_virt_LMEreweighted.pdf>] [75] [76
 
 
 
@@ -1942,17 +2005,17 @@ part III.
 Package scrkbase Info: You've told me to use the font selection of the element
 (scrkbase)             `partprefix' that is an alias of element `partnumber'
 (scrkbase)              on input line 130.
-[75] [76]
+[77] [78]
 \openout2 = `chapters/Part3/higgs_pair.aux'.
 
  (./chapters/Part3/higgs_pair.tex
 chapter 7.
-<./figures/ggfbox.pdf, id=2117, 569.05513pt x 302.30531pt>
+<./figures/ggfbox.pdf, id=2197, 569.05513pt x 302.30531pt>
 File: ./figures/ggfbox.pdf Graphic file (type pdf)
 <use ./figures/ggfbox.pdf>
 Package pdftex.def Info: ./figures/ggfbox.pdf  used on input line 11.
 (pdftex.def)             Requested size: 146.39198pt x 77.76721pt.
-<./figures/ggftri.pdf, id=2118, 682.86612pt x 299.66238pt>
+<./figures/ggftri.pdf, id=2198, 682.86612pt x 299.66238pt>
 File: ./figures/ggftri.pdf Graphic file (type pdf)
 <use ./figures/ggftri.pdf>
 Package pdftex.def Info: ./figures/ggftri.pdf  used on input line 13.
@@ -1967,61 +2030,61 @@ Package epstopdf Info: Source file: <./figures/gg_hh_lo.eps>
 verted-to.pdf ./figures/gg_hh_lo.eps>
 (epstopdf)             \includegraphics on input line 26.
 Package epstopdf Info: Output file is already uptodate.
-<./figures/gg_hh_lo-eps-converted-to.pdf, id=2129, 346.29375pt x 498.86375pt>
+<./figures/gg_hh_lo-eps-converted-to.pdf, id=2209, 346.29375pt x 498.86375pt>
 File: ./figures/gg_hh_lo-eps-converted-to.pdf Graphic file (type pdf)
 <use ./figures/gg_hh_lo-eps-converted-to.pdf>
 Package pdftex.def Info: ./figures/gg_hh_lo-eps-converted-to.pdf  used on input
  line 26.
 (pdftex.def)             Requested size: 167.29967pt x 241.01234pt.
-[77
+[79
 
 
 
- <./figures/ggfbox.pdf> <./figures/ggftri.pdf>] [78 <./figures/gg_hh_lo-eps-con
+ <./figures/ggfbox.pdf> <./figures/ggftri.pdf>] [80 <./figures/gg_hh_lo-eps-con
 verted-to.pdf>]
 
 Package caption Warning: \label without proper reference on input line 71.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `ggf_xsres' on page 79 undefined on input line 55.
+LaTeX Warning: Reference `ggf_xsres' on page 81 undefined on input line 55.
 
 
 Overfull \hbox (16.69936pt too wide) in paragraph at lines 59--72
  [][] 
  []
 
-) [79]
+) [81]
 \openout2 = `chapters/Part3/dihiggs_yukawa_cut.aux'.
 
- (./chapters/Part3/dihiggs_yukawa_cut.tex [80
+ (./chapters/Part3/dihiggs_yukawa_cut.tex [82
 
 
 
 
 ]
 chapter 8.
-) [81]
+) [83]
 \openout2 = `chapters/Part3/dihiggs_yukawa_bdt.aux'.
 
- (./chapters/Part3/dihiggs_yukawa_bdt.tex [82
+ (./chapters/Part3/dihiggs_yukawa_bdt.tex [84
 
 
 
 
 ]
 chapter 9.
-[83]
-<fig/ueberblick.pdf, id=2235, 805.31505pt x 392.03253pt>
+[85]
+<fig/ueberblick.pdf, id=2316, 805.31505pt x 392.03253pt>
 File: fig/ueberblick.pdf Graphic file (type pdf)
 <use fig/ueberblick.pdf>
 Package pdftex.def Info: fig/ueberblick.pdf  used on input line 18.
 (pdftex.def)             Requested size: 418.25555pt x 203.60684pt.
- [84 <./fig/ueberblick.pdf>]) [85]
+ [86 <./fig/ueberblick.pdf>]) [87]
 \openout2 = `chapters/Part2/Appendix_hz.aux'.
 
  (./chapters/Part2/Appendix_hz.tex
-[86
+[88
 
 
 
@@ -2048,45 +2111,48 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 6.
 
-[87]
+[89]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [88]
+ [90]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [89])
-[90] (./Dissertation-alasfar.bbl [91
+ [91])
+[92] (./Dissertation-alasfar.bbl [93
 
 
 
-] [92]
+] [94]
 Overfull \hbox (15.1807pt too wide) in paragraph at lines 181--187
 [][]\T1/lmtt/m/n/10.95 https://academic.oup.com/ptp/article-pdf/49/2/652/525769
 2/49-2-652.pdf[][]\T1/lmr/m/n/10.95 . 
  []
 
-[93]
+[95]
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 2
 86.
  (/usr/local/texlive/2020/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) [94] [95]
-[96] [97] [98] [99] [100] [101] [102] [103] [104] [105] [106] [107]) [108]
+) [96] [97]
+[98] [99] [100] [101] [102] [103] [104] [105] [106] [107] [108] [109]) [110]
 \openout2 = `chapters/End/list_of_publications.aux'.
 
 
-(./chapters/End/list_of_publications.tex) [109
+(./chapters/End/list_of_publications.tex) [111
 
 
 
 ]
+
+Package natbib Warning: There were undefined citations.
+
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 152.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 152.
- (./Dissertation-alasfar.aux
-(./chapters/Part1/Higgs_and_SM.aux) (./chapters/Part1/Constraints_on_Higgs.aux)
-(./chapters/Part1/EFT.aux) (./chapters/Part2/single_higgs.aux)
-(./chapters/Part2/single_higgs_4tops.aux) (./chapters/Part2/hz_nlo.aux)
-(./chapters/Part3/higgs_pair.aux) (./chapters/Part3/dihiggs_yukawa_cut.aux)
+(./Dissertation-alasfar.aux (./chapters/Part1/Higgs_and_SM.aux)
+(./chapters/Part1/Constraints_on_Higgs.aux) (./chapters/Part1/EFT.aux)
+(./chapters/Part2/single_higgs.aux) (./chapters/Part2/single_higgs_4tops.aux)
+(./chapters/Part2/hz_nlo.aux) (./chapters/Part3/higgs_pair.aux)
+(./chapters/Part3/dihiggs_yukawa_cut.aux)
 (./chapters/Part3/dihiggs_yukawa_bdt.aux) (./chapters/Part2/Appendix_hz.aux)
 (./chapters/End/list_of_publications.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 152.
@@ -2247,10 +2313,12 @@ chapters/Part1/Higgs_and_SM.tex
 ./figures/stu-pdg.png
 chapters/Part1/Constraints_on_Higgs.tex
     ueuf.fd    2013/01/14 v3.01 Euler Fraktur
+figures/kaappa_higgs.pdf
 fitobservables.tex
 chapters/Part1/EFT.tex
 chapters/Part2/single_higgs.tex
 chapters/Part2/single_higgs_4tops.tex
+figures/htoaa_nlo_ew.pdf
 fig/ggF-4F_NLO.pdf
 ./fig/Hbb.pdf
 ./fig/ggttH-4F_NLO.pdf
@@ -2262,10 +2330,6 @@ fig/uebeblick_Cqt8.pdf
 fig/uebeblick_Cqtqb1.pdf
 fig/uebeblick_Cqtqb8.pdf
 fig/uebeblick_forest_cphi_LHC_RunII.pdf
-fig/4param_fit_LHC_RunII_l3L_rge.pdf
-fig/4param_fit_LHC_RunII_l3Q_rge.pdf
-fig/uebeblick_forest_ci.pdf
-fig/uebeblick_forest_cphi_singleparam.pdf
 fig/Cqt1_LHC_RunII_linearl3_rge.pdf
 fig/Cqt1_LHC_RunII_quadl3_rge.pdf
 fig/Cqt8_LHC_RunII_linearl3_rge.pdf
@@ -2274,6 +2338,11 @@ fig/Cqtqb1_LHC_RunII_linearl3_rge.pdf
 fig/Cqtqb1_LHC_RunII_quadl3_rge.pdf
 fig/Cqtqb8_LHC_RunII_linearl3_rge.pdf
 fig/Cqtqb8_LHC_RunII_quadl3_rge.pdf
+fig/4param_fit_LHC_RunII_l3L_rge.pdf
+fig/4param_fit_LHC_RunII_l3Q_rge.pdf
+fig/uebeblick_forest_ci.pdf
+fig/uebeblick_forest_cphi_singleparam.pdf
+figures/SMEFT_collection.pdf
 chapters/Part2/hz_nlo.tex
 ./figures/Rplot.png
 ./figures/Feynman_LO.pdf
@@ -2296,7 +2365,7 @@ chapters/End/list_of_publications.tex
 
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 152.
 Package rerunfilecheck Info: File `Dissertation-alasfar.out' has not changed.
-(rerunfilecheck)             Checksum: C4FCA3BAB3E3CC90FB3C2459EFCAD16F;3710.
+(rerunfilecheck)             Checksum: 70BD5CE770B7CD9D04E36D6CDE69D23F;3657.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -2309,13 +2378,13 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 152.
  ) 
 Here is how much of TeX's memory you used:
- 40633 strings out of 480608
- 942678 string characters out of 5903630
- 1414192 words of memory out of 5000000
- 55012 multiletter control sequences out of 15000+600000
+ 40656 strings out of 480608
+ 943306 string characters out of 5903630
+ 1414463 words of memory out of 5000000
+ 55030 multiletter control sequences out of 15000+600000
  724531 words of font info for 161 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 79i,20n,107p,10127b,1735s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 79i,20n,107p,10127b,1731s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/local
 /texlive/2020/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2020/
 texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2020/texmf-dist
@@ -2362,10 +2431,10 @@ r/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
 </usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.
 pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfss1728.pf
 b>
-Output written on Dissertation-alasfar.pdf (113 pages, 2429194 bytes).
+Output written on Dissertation-alasfar.pdf (115 pages, 2789634 bytes).
 PDF statistics:
- 3113 PDF objects out of 3580 (max. 8388607)
- 2681 compressed objects within 27 object streams
- 569 named destinations out of 1000 (max. 500000)
- 561 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 3189 PDF objects out of 3580 (max. 8388607)
+ 2713 compressed objects within 28 object streams
+ 570 named destinations out of 1000 (max. 500000)
+ 568 words of extra memory for PDF output out of 10000 (max. 10000000)
 

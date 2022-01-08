@@ -13,7 +13,7 @@ A level-1 auxiliary file: chapters/Part3/dihiggs_yukawa_bdt.aux
 A level-1 auxiliary file: chapters/Part2/Appendix_hz.aux
 The style file: utphys.bst
 A level-1 auxiliary file: chapters/End/list_of_publications.aux
-Reallocated field_info (elt_size=4) to 11528 items from 5000.
+Reallocated field_info (elt_size=4) to 11464 items from 5000.
 Database file #1: bibliography.bib
 I was expecting a `,' or a `}'---line 552 of file bibliography.bib
  :  title        
@@ -48,10 +48,6 @@ You're missing a field name---line 3650 of file bibliography.bib
  :  
  :  %url         = {http://www.sciencedirect.com/science/article/pii/0550321384903894},
 (Error may have been on previous line)
-I'm skipping whatever remains of this entry
-Repeated entry---line 3911 of file bibliography.bib
- : @article{Aad:2019mbh
- :                     ,
 I'm skipping whatever remains of this entry
 Repeated entry---line 3934 of file bibliography.bib
  : @article{Patel:2015tea
@@ -88,14 +84,6 @@ I'm skipping whatever remains of this entry
 Repeated entry---line 4034 of file bibliography.bib
  : @article{Grzadkowski:2010es
  :                            ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 4047 of file bibliography.bib
- : @article{Aad:2019mbh
- :                     ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 4062 of file bibliography.bib
- : @article{Sirunyan:2018koj
- :                          ,
 I'm skipping whatever remains of this entry
 Repeated entry---line 4077 of file bibliography.bib
  : @article{Hartland:2019bjb
@@ -552,45 +540,45 @@ Warning--empty author in CMS:2018rig
 Warning--empty institution in CMS:2018rig
 Warning--empty author in ATLAS-CONF-2021-021
 Warning--empty author in CMS-PAS-SMP-19-014
-You've used 204 entries,
+You've used 202 entries,
             2328 wiz_defined-function locations,
-            2120 strings with 47263 characters,
-and the built_in function-call counts, 63166 in all, are:
-= -- 6277
-> -- 2097
+            2108 strings with 46820 characters,
+and the built_in function-call counts, 62542 in all, are:
+= -- 6216
+> -- 2081
 < -- 7
-+ -- 781
-- -- 577
-* -- 6661
-:= -- 7449
-add.period$ -- 281
-call.type$ -- 204
-change.case$ -- 245
++ -- 775
+- -- 573
+* -- 6587
+:= -- 7382
+add.period$ -- 279
+call.type$ -- 202
+change.case$ -- 243
 chr.to.int$ -- 0
-cite$ -- 227
-duplicate$ -- 3342
-empty$ -- 6153
-format.name$ -- 577
-if$ -- 16171
+cite$ -- 225
+duplicate$ -- 3304
+empty$ -- 6092
+format.name$ -- 573
+if$ -- 16007
 int.to.chr$ -- 0
-int.to.str$ -- 204
-missing$ -- 737
-newline$ -- 684
-num.names$ -- 191
-pop$ -- 955
+int.to.str$ -- 202
+missing$ -- 729
+newline$ -- 678
+num.names$ -- 189
+pop$ -- 947
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 2333
+skip$ -- 2302
 stack$ -- 0
-substring$ -- 2957
-swap$ -- 1652
+substring$ -- 2939
+swap$ -- 1630
 text.length$ -- 7
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 23
-while$ -- 496
-width$ -- 207
-write$ -- 1670
-(There were 127 error messages)
+while$ -- 492
+width$ -- 205
+write$ -- 1652
+(There were 124 error messages)
