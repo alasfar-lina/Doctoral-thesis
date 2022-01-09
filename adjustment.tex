@@ -4,8 +4,6 @@
 \usepackage{centernot} 
 \usepackage{multirow}
 \usepackage{pdfpages}
-
-
 \usepackage{currvita}
 \renewcommand*{\cvheadingfont}{\large\bfseries} % CV Titel
 \renewcommand*{\cvlistheadingfont}{\bfseries\sffamily} % sub-�berschriften
@@ -22,12 +20,15 @@
 \usepackage{booktabs,colortbl}
 \usepackage{slashbox}
 \usepackage[normalem]{ulem}
+\usepackage{mathrsfs}
+\usepackage{slashed,bbold}
 %\usepackage{pict2e}
 \usepackage{url}
 \usepackage{multirow}
 \usepackage{siunitx}
 \usepackage{xcolor}
 \usepackage{epigraph} 
+\usepackage{rotfloat}
 %%%%%%%%%%%%%%%%%%%
 % Colour Scheme
 \definecolor{myblue}{HTML}{003366}
@@ -285,7 +286,7 @@
 \newcommand{\NLO}{\textrm{NLO}}
 %%%%%%%%%%%%%
 
-%\DeclareOldFontCommand{\rm}{\normalfont\rmfamily}{\mathrm}
+\DeclareOldFontCommand{\rm}{\normalfont\rmfamily}{\mathrm}
 %\DeclareOldFontCommand{\sf}{\normalfont\sffamily}{\mathsf}
 %\DeclareOldFontCommand{\tt}{\normalfont\ttfamily}{\mathtt}
 \DeclareOldFontCommand{\bf}{\normalfont\bfseries}{\mathbf}
@@ -431,19 +432,54 @@
 \newcommand\OL{{\sc\small OpenLoops}}
 \newcommand\MadFKS{{\sc\small MadFKS}}
 \newcommand{\Ht}{H_{\sss T}}
-%\newcommand{\GeV}{\si{\GeV}}
-%\newcommand{\TeV}{\si{\TeV}}
+\newcommand{\GeV}{\si{\GeV}}
+\newcommand{\TeV}{\si{\TeV}}
 %\newcommand{\invab}{\si{\per \atto\barn}}
+ \newcommand{\ght}{g_{h t \bar t}}
+\newcommand{\ghht}{g_{hh t \bar t}}
+\newcommand{\cuh}{ C_{t\phi} }
+\newcommand{\cbh}{ C_{b\phi}}
+\newcommand{\cqu}{C_{Qt}}
+\newcommand{\cquqd}{C_{QtQb}}
+\newcommand{\eps}{\epsilon}
 \newcommand{\as}{\frac{\alpha_s^0}{4 \pi} }
 \newcommand{\Zas}{ Z_{\alpha_s} }
 \newcommand{\asr}{\frac{\alpha_s}{4 \pi} }
 \newcommand{\Red}[1]{{\color{nicered}{#1}}}
-\newcommand{\ght}{g_{h t \bar t}}
-\newcommand{\ghht}{g_{hh t \bar t}}
-\newcommand{\cuh}{ C_{tH} }
-\newcommand{\cbh}{ C_{bH}}
-\newcommand{\cqu}{C_{Qt}}
-\newcommand{\cquqd}{C_{QtQb}}
+%%%%%%%%%%%%% functions for eff  %%%%%%%%%%%
+% short-hands
+\newcommand*{\mg}{\texttt{MG5\_aMC@NLO}}
+\newcommand*{\fb}{\text{fb}}
+\newcommand*{\iab}{\ensuremath{\text{ab}^{-1}}}
+\DeclareMathOperator*{\cov}{cov}
+\newcommand{\inab}{\,{\rm ab}^{-1}}
+\newcommand{\infb}{\,{\rm fb}^{-1}}
+\newcommand{\bbh}{b\bar bh}
+\newcommand{\ggh}{gg\to h}
+\newcommand{\bbaa}{b\bar b\gamma\gamma}
+\newcommand{\tkab}{\tilde{\kappa}_b}
+\newcommand{\kab}{\kappa_b}
+\DeclareMathOperator{\BR}{BR}
+\newcommand{\La}{\mathcal{L} }
+\newcommand{\hhbox}{hh^{gg\rm F}_{\rm box}}
+\newcommand{\hhtri}{hh^{gg\rm F}_{\rm tri}}
+\newcommand{\hhint}{hh^{gg\rm F}_{\rm int}}
+\newcommand{\qqA}{q\bar q \rm A}
+\newcommand{\uuA}{u\bar u \rm A}
+\newcommand{\ddA}{d\bar d \rm A}
+\newcommand{\QQh}{Q\bar Q h}
+\newcommand{\HEPfit}{\texttt{HEPfit}}
+
+%%Maths stuff 
+\newcommand{\parenths}[1]{\left({#1}\right)\xspace}
+\newcommand{\braces}[1]{\left\{{#1}\right\}\xspace}
+\newcommand{\sqbracs}[1]{\left[{#1}\right]\xspace}
+\newcommand{\colvector}[1]{\begin{pmatrix}#1\end{pmatrix}\xspace}
+\newcommand{\expec}[1]{\langle #1\rangle}
+\newcommand{\Zp}{Z^\prime}
+\newcommand{\s}{\hat{s}}
+% number of expected events theoretical 289
+%%%
 \def\beq{\begin{equation}}
 	\def\bea{\begin{eqnarray}}
 		\def\eeq{\end{equation}}

@@ -1,33 +1,34 @@
 \babel@toc {ngerman}{}
 \babel@toc {english}{}
-\contentsline {part}{\numberline {I}Higgs Physics}{1}{part.1}%
-\contentsline {chapter}{\numberline {1}The Standard Model Higgs boson}{3}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Spontaneous symmetry breaking}{3}{section.1.1}%
-\contentsline {subsection}{\numberline {1.1.1}Nambu-Goldstone theorem}{6}{subsection.1.1.1}%
-\contentsline {section}{\numberline {1.2}The Higgs mechanism}{7}{section.1.2}%
-\contentsline {section}{\numberline {1.3}Yukawa interaction}{10}{section.1.3}%
-\contentsline {section}{\numberline {1.4}The Higgs and EW precision observables}{10}{section.1.4}%
-\contentsline {subsection}{\numberline {1.4.1}Custodial symmetry}{12}{subsection.1.4.1}%
-\contentsline {chapter}{\numberline {2}Constraints on the Higgs properties}{17}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Theoretical constraints}{17}{section.2.1}%
-\contentsline {subsection}{\numberline {2.1.1}Partial-wave unitarity}{17}{subsection.2.1.1}%
-\contentsline {section}{\numberline {2.2}Experimental}{20}{section.2.2}%
-\contentsline {chapter}{\numberline {3}Higgs and effective field theories}{23}{chapter.3}%
-\contentsline {part}{\numberline {II}Single Higgs Processes at the LHC}{25}{part.2}%
-\contentsline {chapter}{\numberline {4}Overview of Higgs production at colliders}{27}{chapter.4}%
-\contentsline {chapter}{\numberline {5}Four top operator in Higgs production and decay}{29}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Notation }{31}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Contribution of four-fermion operators to Higgs production and decay }{32}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}Higgs coupling to gluons and photons}{32}{subsection.5.2.1}%
-\contentsline {subsection}{\numberline {5.2.2}Higgs decay to bottom quarks}{36}{subsection.5.2.2}%
-\contentsline {subsection}{\numberline {5.2.3}Associated production of a Higgs boson with top quarks}{37}{subsection.5.2.3}%
-\contentsline {subsection}{\numberline {5.2.4}Results}{40}{subsection.5.2.4}%
-\contentsline {section}{\numberline {5.3}Fit to Higgs observables }{43}{section.5.3}%
-\contentsline {subsection}{\numberline {5.3.1}Fit methodology}{43}{subsection.5.3.1}%
-\contentsline {subsection}{\numberline {5.3.2}Fit to LHC Run-II data}{45}{subsection.5.3.2}%
-\contentsline {subsection}{\numberline {5.3.3}Two parameter fits }{47}{subsection.5.3.3}%
-\contentsline {subsection}{\numberline {5.3.4}Prospects for HL-LHC}{51}{subsection.5.3.4}%
-\contentsline {section}{\numberline {5.4}Summary and discussion }{51}{section.5.4}%
+\contentsline {part}{\numberline {I}Higgs Physics}{3}{part.1}%
+\contentsline {chapter}{\numberline {1}The Standard Model Higgs boson}{5}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Spontaneous symmetry breaking}{5}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Nambu-Goldstone theorem}{8}{subsection.1.1.1}%
+\contentsline {section}{\numberline {1.2}The Higgs mechanism}{9}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Yukawa interaction}{12}{section.1.3}%
+\contentsline {section}{\numberline {1.4}The Higgs and EW precision observables}{12}{section.1.4}%
+\contentsline {subsection}{\numberline {1.4.1}Custodial symmetry}{14}{subsection.1.4.1}%
+\contentsline {chapter}{\numberline {2}Constraints on the Higgs properties}{19}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Theoretical constraints}{19}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Partial-wave unitarity}{19}{subsection.2.1.1}%
+\contentsline {section}{\numberline {2.2}Experimental}{22}{section.2.2}%
+\contentsline {chapter}{\numberline {3}Higgs and effective field theories}{25}{chapter.3}%
+\contentsline {part}{\numberline {II}Single Higgs Processes at the LHC}{27}{part.2}%
+\contentsline {chapter}{\numberline {4}Overview of Higgs production at colliders}{29}{chapter.4}%
+\contentsline {subsubsection}{\nonumberline The LO amplitude}{29}{section*.10}%
+\contentsline {chapter}{\numberline {5}Four top operator in Higgs production and decay}{31}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Four-fermion operators in SMEFT }{32}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Contribution of four-fermion operators to Higgs production and decay }{34}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Higgs coupling to gluons and photons}{34}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Higgs decay to bottom quarks}{38}{subsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.2.3}Associated production of a Higgs boson with top quarks}{39}{subsection.5.2.3}%
+\contentsline {subsection}{\numberline {5.2.4}Results}{42}{subsection.5.2.4}%
+\contentsline {section}{\numberline {5.3}Fit to Higgs observables }{44}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Fit methodology}{45}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}Fit to LHC Run-II data}{47}{subsection.5.3.2}%
+\contentsline {subsection}{\numberline {5.3.3}Two parameter fits }{50}{subsection.5.3.3}%
+\contentsline {subsection}{\numberline {5.3.4}Prospects for HL-LHC}{50}{subsection.5.3.4}%
+\contentsline {section}{\numberline {5.4}Summary and discussion }{53}{section.5.4}%
 \contentsline {chapter}{\numberline {6}Virtual two-loop calculation of $Zh$ production via gluon fusion}{59}{chapter.6}%
 \contentsline {section}{\numberline {6.1}General notation }{61}{section.6.1}%
 \contentsline {subsection}{\numberline {6.1.1}The transverse momentum expansion}{63}{subsection.6.1.1}%
@@ -39,11 +40,57 @@
 \contentsline {section}{\numberline {6.4}Results and conclusions}{72}{section.6.4}%
 \contentsline {part}{\numberline {III}Higgs Pair at Hadron Colliders }{77}{part.3}%
 \contentsline {chapter}{\numberline {7}Overview of Higgs pair production at colliders}{79}{chapter.7}%
-\contentsline {subsubsection}{\nonumberline Theoretical systematic uncertainties}{80}{section*.33}%
-\contentsline {subsubsection}{\nonumberline results}{81}{section*.34}%
-\contentsline {chapter}{\numberline {8}Higgs pair as a probe for light Yukawas}{83}{chapter.8}%
-\contentsline {chapter}{\numberline {9}Optimised search for Higgs pair via Interpretable machine learning}{85}{chapter.9}%
-\contentsline {section}{\numberline {9.1}Overview of Light Yukawa searches}{85}{section.9.1}%
-\contentsline {chapter}{\numberline {A}Details of $Zh$ calculation}{89}{appendix.A}%
-\contentsline {section}{\numberline {A.1}Orthogonal Projectors in $gg \to ZH$}{89}{section.A.1}%
-\contentsline {section}{\numberline {A.2}Two-loop Results}{90}{section.A.2}%
+\contentsline {subsubsection}{\nonumberline Theoretical systematic uncertainties}{80}{section*.35}%
+\contentsline {subsubsection}{\nonumberline results}{81}{section*.36}%
+\contentsline {section}{\numberline {7.1}Overview of Light Yukawa searches}{81}{section.7.1}%
+\contentsline {chapter}{\numberline {8}Higgs pair as a probe for light Yukawas}{85}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Introduction}{85}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Effective Field Theory of light Yukawa couplings}{87}{section.8.2}%
+\contentsline {section}{\numberline {8.3}Higgs pair production and Higgs decays with modified light Yukawa couplings }{90}{section.8.3}%
+\contentsline {subsection}{\numberline {8.3.1}Higgs pair production via gluon fusion }{91}{subsection.8.3.1}%
+\contentsline {subsubsection}{\nonumberline Results}{92}{section*.41}%
+\contentsline {subsection}{\numberline {8.3.2}Higgs pair production via quark anti-quark annihilation}{93}{subsection.8.3.2}%
+\contentsline {subsubsection}{\nonumberline NLO QCD correction }{94}{section*.44}%
+\contentsline {subsubsection}{\nonumberline Results}{96}{section*.46}%
+\contentsline {subsection}{\numberline {8.3.3}Higgs decays }{98}{subsection.8.3.3}%
+\contentsline {section}{\numberline {8.4}Phenomenological analysis }{101}{section.8.4}%
+\contentsline {subsection}{\numberline {8.4.1}Event generation}{102}{subsection.8.4.1}%
+\contentsline {subsection}{\numberline {8.4.2}Analysis strategy }{102}{subsection.8.4.2}%
+\contentsline {subsection}{\numberline {8.4.3}Statistical analysis}{105}{subsection.8.4.3}%
+\contentsline {subsection}{\numberline {8.4.4}Results for the $b\bar {b}\gamma \gamma $ final state}{106}{subsection.8.4.4}%
+\contentsline {subsubsection}{\nonumberline Results for non-linear EFT}{107}{section*.55}%
+\contentsline {subsection}{\numberline {8.4.5}Charm-tagging and second generation bounds}{107}{subsection.8.4.5}%
+\contentsline {section}{\numberline {8.5}Conclusion }{111}{section.8.5}%
+\contentsline {chapter}{\numberline {9}Optimised search for Higgs pair via Interpretable machine learning}{113}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Introduction}{113}{section.9.1}%
+\contentsline {subsection}{\numberline {9.1.1}Considerations of experimental constraints}{114}{subsection.9.1.1}%
+\contentsline {section}{\numberline {9.2}Events simulation for HL-LHC and FCC-hh}{115}{section.9.2}%
+\contentsline {section}{\numberline {9.3}Exploring higher dimensional kinematic distributions}{118}{section.9.3}%
+\contentsline {subsection}{\numberline {9.3.1}Interpretable machine learning}{119}{subsection.9.3.1}%
+\contentsline {section}{\numberline {9.4}The $hh$ channel at future hadron colliders}{120}{section.9.4}%
+\contentsline {subsection}{\numberline {9.4.1}Constraints on $C_\phi $ at the HL-LHC and FCC-hh}{122}{subsection.9.4.1}%
+\contentsline {subsection}{\numberline {9.4.2}Two and three parameter constraints on $C_\phi $, $C_{u\phi }$ and $C_{d\phi }$}{124}{subsection.9.4.2}%
+\contentsline {subsection}{\numberline {9.4.3}Interpretation of Shapley values}{128}{subsection.9.4.3}%
+\contentsline {section}{\numberline {9.5}Summary}{132}{section.9.5}%
+\contentsline {section}{\numberline {9.6}Discussion of theoretical and systematic uncertainties}{134}{section.9.6}%
+\contentsline {section}{\numberline {9.7}Light-quark Yukawa and Self Coupling at Future Lepton Colliders}{135}{section.9.7}%
+\contentsline {part}{\numberline {IV}Flavour physics }{137}{part.4}%
+\contentsline {chapter}{\numberline {10}Higgs and flavour}{139}{chapter.10}%
+\contentsline {section}{\numberline {10.1}Effective Field Theory for Higgs pair production}{139}{section.10.1}%
+\contentsline {section}{\numberline {10.2}Models of flavour alignment and large light-quark Yukawa couplings}{142}{section.10.2}%
+\contentsline {subsection}{\numberline {10.2.1}Model realizations}{143}{subsection.10.2.1}%
+\contentsline {chapter}{\numberline {11}Flavour anomalies and Electroweak precision tests}{147}{chapter.11}%
+\contentsline {section}{\numberline {11.1}Introduction}{147}{section.11.1}%
+\contentsline {section}{\numberline {11.2}Theoretical preamble}{150}{section.11.2}%
+\contentsline {section}{\numberline {11.3}Analysis strategy}{154}{section.11.3}%
+\contentsline {section}{\numberline {11.4}Results from the SMEFT}{156}{section.11.4}%
+\contentsline {subsection}{\numberline {11.4.1}Analysis of EW and $b \to s \ell \ell $ data}{156}{subsection.11.4.1}%
+\contentsline {subsection}{\numberline {11.4.2}A minimal EFT picture}{161}{subsection.11.4.2}%
+\contentsline {section}{\numberline {11.5}Directions for UV models}{162}{section.11.5}%
+\contentsline {subsection}{\numberline {11.5.1}Z$^{\prime }$ with vector-like partners}{163}{subsection.11.5.1}%
+\contentsline {subsection}{\numberline {11.5.2}Leptoquark scenarios}{167}{subsection.11.5.2}%
+\contentsline {section}{\numberline {11.6}Summary}{169}{section.11.6}%
+\contentsline {section}{\numberline {11.7}Discussions on EW fits}{170}{section.11.7}%
+\contentsline {chapter}{\numberline {A}Details of $Zh$ calculation}{179}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Orthogonal Projectors in $gg \to ZH$}{179}{section.A.1}%
+\contentsline {section}{\numberline {A.2}Two-loop Results}{180}{section.A.2}%

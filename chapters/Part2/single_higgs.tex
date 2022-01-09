@@ -1,7 +1,36 @@
 %!TEX encoding = UTF-8 Unicode
 % !TeX spellcheck = en_GB
-
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{ Overview of Higgs production at colliders }\label{chap:overviewSingleHiggs}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+The precise determination of the Higgs boson properties is one of the main focus of the Large Hadron Collider (LHC) physics programme. Within the current experimental precision, the measurement of the Higgs couplings so far appear to be in agreement with the Standard Model (SM) prediction within an accuracy of, typically, ten percent \cite{Aad:2019mbh, Sirunyan:2018koj}. In many beyond the SM (BSM) scenarios, however, it is expected that new physics will introduce modifications in the Higgs properties. 
+\subsubsection{The LO amplitude}
+We recall the projected LO on shell amplitude~\cite{Gunion:1989we}
+\begin{equation}
+	\mathcal{M}_{LO} = \frac{ T_f \alpha_s \ght }{2 \sqrt{2} \pi } \mathcal F^{(1 \ell)}  S_\epsilon ,
+\end{equation}
+with the projector
+\begin{equation}
+	\mathbb{P}^{\mu \nu} = g^{\mu \nu}- 2\frac{p^\mu_{2} p^\nu }{m_h^2},
+\end{equation}
+and the 1 loop form factor
+\begin{align}
+	\mathcal F^{(1 \ell)} &= m_h\,\sqrt{\tau} \left( (1-\tau) H(0,0,x)+2\right) ,\nonumber  \\
+	x &= \frac{\tau+2 \sqrt{1-\tau}-2}{\tau},
+	\label{f1l}
+\end{align}
+where $ \tau = 4 m_t^2/m_h^2$,  $H(m,n,x)$ is the harmonic ploylogarithm function~(HPL), and
+\begin{equation}
+	S_\epsilon = \Gamma(1+\epsilon) (\mu/m_t)^{2\epsilon}.
+\end{equation}
+\\
+The decay width is therefore given by
+\begin{equation}
+	\Gamma_{LO}(h\to gg) = \frac{\alpha_s^2\, G_F\,m_h^3 \,m_t^2\,\tau }{8 \pi^3 \sqrt{2}}  \, \left( 3(\tau-1)^2 H(0,0,0,0,x)+2(\tau-1)H(0,0,x)+2\right)
+\end{equation}
+With the following definitions
+\begin{align}
+	\ght &=\ght^{SM} = {\sqrt{2} m_t \over v}, \nonumber \\
+	v &= \left( G_F \sqrt{2}\right) ^{-1/2}, \nonumber \\
+	T_f &= \frac{1}{2} .
+\end{align}
