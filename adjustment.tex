@@ -43,6 +43,11 @@
 % Command \topline consists of a (slightly modified)
 % \toprule followed by a \heavyrule rule of colour tableheadcolor
 % (hence, 2 separate rules)
+\newcommand{\toplinetwo}{ %
+	\arrayrulecolor{rulecolor}\specialrule{0.1em}{\abovetopsep}{0pt}%
+	\arrayrulecolor{white}\specialrule{\belowrulesep}{0pt}{0pt}%
+	\arrayrulecolor{rulecolor}}
+
 \newcommand{\topline}{ %
 	\arrayrulecolor{rulecolor}\specialrule{0.1em}{\abovetopsep}{0pt}%
 	\arrayrulecolor{tableheadcolor}\specialrule{\belowrulesep}{0pt}{0pt}%
@@ -393,8 +398,8 @@
 \newcommand\deltaO{\delta_{\sss O}}
 \newcommand\deltaI{\delta_{\sss I}}
 \newcommand\NC{N_{\sss c}}
-\newcommand\CA{C_{\sss A}}
-\newcommand\CF{C_{\sss F}}
+\newcommand\CA{c_{\sss A}}
+\newcommand\CF{c_{\sss F}}
 \newcommand\TF{T_{\sss F}}
 \newcommand\DA{D_{\sss A}}
 \newcommand\eikint{{\cal E}}

@@ -11,3 +11,102 @@ in which energy scales $E\ll \Lambda$ are probed.
 	\mathcal{L}_{\mathrm{SMEFT}}^{d=6}=\mathcal{L}_{\SM} + \frac{1}{\Lambda^2}\sum_i C_i  {\cal O}_i.
 \end{equation}
 A complete basis of independent dimension-six operators was presented for the first time in \cite{Grzadkowski:2010es}, the so-called \textit{ Warsaw basis}.
+
+%%%%%%
+This note aims at summarising the ongoing efforts for EFT tools for $HH$ and intends to give recommendations for the use of various EFT parameterisations for $HH$. The note will map the current efforts and outlines where further efforts are needed.
+\\
+We distinguish between two different kind of EFTs with different assumptions made on the Higgs field, SM effective field theory (SMEFT) and Higgs effective field theory (HEFT), the latter is also referred to as non-linear chiral electroweak Lagrangian. In SM effective field theory the Higgs boson is assumed to transform as in the SM as a SU(2) doublet. The effective Lagrangian the allows for all operators compatible with the symmetries of the SM. For the Higgs boson sector, the leading operators arise at the dimension-6 level. 
+We define the SM Lagrangian as 
+\begin{equation}
+	\begin{split}
+		\mathcal{L}&=(D_{\mu} \phi)^{\dagger} (D^{\mu}\phi)-\mu^2 |\phi|^2-\lambda |\phi|^4-\left(y_d \bar{q}_L \phi d_R+y_u  \epsilon_{ab}\bar{q}_{La} \phi^{\dagger}_b u_R +\text{h.c}\right)\\
+		& - \frac{1}{4}B_{\mu\nu}B^{\mu\nu}- \frac{1}{4}W_{\mu\nu}^a W^{\mu\nu,a} -\frac{1}{4}G_{\mu\nu}^aG^{\mu\nu,a}+\sum_{\psi=q,u,d,\ell}\bar{\psi}\slashed{D}\psi
+	\end{split}
+\end{equation}
+A summation over the different generations of quarks ($q$, $u$ and $d$) and leptons ($\ell$) is assumed implicitly. The $\text{SU(2)}_L$ doublet field in the unitary gauge is given by $\phi=1/\sqrt{2}(0,v+h)^T$ with $v$ denoting the vacuum expectation value, $v\approx 246\,\text{GeV}$. The covariant derivative is defined as conventionally with the plus sign and $G_{\mu\nu}$, $W_{\mu\nu}$ and $B_{\mu\nu}$ are the SU(3), SU(2) and U(1) field strengths. We have assumed CP-conservation. For di-Higgs production allowing also for CP-violating operators see ref.~\cite{Grober:2017gut}.
+The effective Lagrangian at dimension-6 can be generally be written in various basis, with the different operators connected by equations of motions. Two different complete basis are the Warsaw basis \cite{Grzadkowski:2010es} and the strongly-interacting light Higgs basis (SILH), originally proposed by \cite{Giudice:2007fh} and completed in \cite{Contino:2013kra, Elias-Miro:2013eta}. In addition, in \cite{Hagiwara:1993ck} the so-called HISZ subset of operators was presented.
+In the Warsaw basis the effective operators relevant for di-Higgs production are given by 
+\begin{equation}
+	\begin{split}
+		\Delta\mathcal{L}_{\text{Warsaw}}&=\frac{C_{\phi,\Box}}{\Lambda^2} (\phi^{\dagger} \phi)\Box (\phi^{\dagger } \phi)+ \frac{C_{\phi D}}{\Lambda^2}(\phi^{\dagger} D_{\mu}\phi)^*(\phi^{\dagger}D^{\mu}\phi)+ \frac{C_\phi}{\Lambda^2} (\phi^{\dagger}\phi)^3 \\ &+\left( \frac{C_{u\phi}}{\Lambda^2} \phi^{\dagger}{\phi}\bar{q}_L\phi^c t_R + h.c.\right)+\frac{C_{\phi G}}{\Lambda^2} \phi^{\dagger} \phi G_{\mu\nu}^a G^{\mu\nu,a} \\ &+\frac{\bar C_{uG}}{\Lambda^2} 
+		(\bar q_L\sigma^{\mu\nu}T^aG_{\mu\nu}^a\tilde\phi t_R +{\rm h.c.})\,, \label{eq:warsaw}
+	\end{split}
+\end{equation}
+where $\tilde\phi_i=\epsilon_ik \phi_k^*$.
+While the Warsaw basis is constructed such that derivative operators are systematically removed by equations of motion, two derivative Higgs interactions remain. They contain covariant derivatives rather than simple derivatives and hence cannot be removed by gauge-independent field redefinitions. In order to obtain a canonically normalised Higgs kinetic term the standard field redefinition is 
+\begin{equation}
+	H=\left( \begin{array}{c} 0 \\ h(1+c_{H,kin}) + v \end{array} \right)
+\end{equation} 
+with 
+\begin{equation}
+	c_{H,kin}=\left(C_{H,\Box}-\frac{1}{4}C_{HD}\right) \frac{v^2}{\Lambda^2}\,.
+\end{equation}
+This field redefinition though generates derivative Higgs self-interactions, $h(\partial_{\mu}h)^2$ and $h^2(\partial_{\mu}h)^2$.
+For an easier comparison with other effective descriptions which do not appear in the HEFT Lagrangian.  Instead one can use a gauge-dependent field redefinition (which transforms Goldstone/Higgs components in a different way). Such a choice is tricky but we do not need to care for any issues regarding gauge dependence since we do not have gauge fields in the considered process. While the full gauge dependent field redefinition is given for instance in \cite{Hartmann:2015aia}, we just need the one of the Higgs  
+\begin{equation}
+	h \to h + c_{H,kin}\left( h +\frac{h^2}{v}+\frac{h^3}{3v^2}\right)\,. \label{fieldref}
+\end{equation}
+This field redefinition hence leads to a dependence on $c_{H,kin}$ of all Higgs boson couplings.
+\par
+The SILH Lagrangian instead can be written as
+\begin{align}\label{eq:lsmeft}
+	\Delta{\cal L}_{\text{SILH}} &=
+	\frac{\bar c_H}{2 v^2}\partial_\mu(\phi^\dagger\phi)\partial^\mu(\phi^\dagger\phi)
+	+\frac{\bar c_u}{v^2} y_t(\phi^\dagger\phi\, \bar q_L\tilde\phi t_R +{\rm h.c.})
+	-\frac{\bar c_6}{2 v^2}\frac{m^2_h}{v^2} (\phi^\dagger\phi)^3
+	\nonumber\\
+	&+\frac{\bar c_{ug}}{v^2} g_s
+	(\bar q_L\sigma^{\mu\nu}G_{\mu\nu}\tilde\phi t_R +{\rm h.c.})
+	+\frac{4\bar c_g}{v^2} g^2_s \phi^\dagger\phi\, G^a_{\mu\nu}G^{a\mu\nu}\;.
+\end{align}
+A canonical definition of the Higgs kinetic term can be obtained by means of the field redefinition
+\begin{equation}
+	h \to h - \frac{\bar{c}_{H}}{2}\left( h +\frac{h^2}{v}+\frac{h^3}{3v^2}\right)\,, \label{fieldrefSILH}
+\end{equation}
+again leading to a dependence on $\bar{c}_H$ of all Higgs boson couplings.
+While the operators relevant for di-Higgs production between the SILH and Warsaw basis are basically the same, we have adopted different power counting rules of the coefficients in front of the operators.  For eq.~\eqref{eq:warsaw} a purely dimensional power counting was used, while eq.~\eqref{eq:lsmeft}  reflects the UV predjuice regarding the scaling of the operators, e.g. new physics generating an operator $\phi^\dagger\phi\, G^a_{\mu\nu}G^{a\mu\nu}$ usually stems from colored new particles that couple with the strong coupling constant to the gluons. In ref.~\cite{Giudice:2007fh} for instance the coefficient in front of this operator contains an extra $1/16\pi^2$ to reflect the loop-suppression of weakly coupled new physics to the effective Higgs gluon coupling. 
+%Later on, we show that the inclusion of such a power counting rule for the $\phi^\dagger\phi\, G^a_{\mu\nu}G^{a\mu\nu}$ is important what regards the translation between different effective theories since $g_s$ is a running parameter to be evaluated at the scale $\mu=M_{hh}/2$.
+\par
+The relevant terms for di-Higgs production of the HEFT Lagrangian is given by
+\begin{align}
+	\Delta{\cal L}_{\text{HEFT}}=
+	-m_t\left(c_t\frac{h}{v}+c_{tt}\frac{h^2}{v^2}\right)\,\bar{t}\,t -
+	c_{hhh} \frac{m_h^2}{2v} h^3+\frac{\alpha_s}{8\pi} \left( c_{ggh} \frac{h}{v}+
+	c_{gghh}\frac{h^2}{v^2}  \right)\, G^a_{\mu \nu} G^{a,\mu \nu}\;.
+	\label{eq:ewchl}
+\end{align}
+In contrast to eqs.~\eqref{eq:warsaw} and \eqref{eq:lsmeft} the couplings of one and two Higgs bosons to fermions or gluons become de-correlated. We noted that we have omitted the top quark dipole operator. From the UV point of view of a weakly interacting model such a coupling would enter at the loop level hence effectively have an extra suppression factor of $1/16\pi^2$. In contrast to the $\phi^\dagger\phi\, G^a_{\mu\nu}G^{a\mu\nu}$ operator that carries such a suppression as well, the dipole-operator enters only via loop diagrams and is hence suppressed compared to all the other operators assuming a weakly-interacting UV model.
+\begin{table}[htb]
+	\begin{center}
+		\begin{tabular}{ |c | c |c| }
+			\hline
+			HEFT& SILH&Warsaw\\
+			\hline
+			$c_{hhh}$ & $1-\frac{3}{2}\bar c_H +\bar c_6$&$1-2\frac{v^4}{m_h^2}C_H+3c_{H,kin}$ \\
+			\hline
+			$c_t$ & $1-\frac{\bar c_H}{2}-\bar c_u $& $1+c_{H,kin} -C_{uH} \frac{v^3}{\sqrt{2} m_t}$\\
+			\hline
+			$ c_{tt} $ & $-\frac{\bar c_H + 3\bar c_u}{4} $ &$-C_{uH} \frac{3 v^3}{2\sqrt{2} m_t} + c_{H,kin}$\\
+			\hline
+			$c_{ggh}$ & $128\pi^2\bar c_g $ & $8\pi/\alpha_s v^2 C_{HG}$ \\
+			\hline
+			$c_{gghh}$ & $ 64\pi^2\bar c_g$ & $4\pi/\alpha_s v^2 C_{HG}$ \\
+			\hline
+		\end{tabular}
+	\end{center}
+	\caption{Leading order translation between different operator basis choices.\label{tab:translation}}
+\end{table}
+In table \ref{tab:translation} we give the translation among the various choices for an effective field theory description.
+The HEFT is more general than SMEFT allowing for di-Higgs production to vary the couplings of two Higgs bosons
+to fermions or gluons in an uncorrelated way from the corresponding couplings with a single Higgs boson.
+While being more general, this obviously also has the disadvantage that more barely constrained couplings enter 
+into di-Higgs production leading potentially to degeneracies in their determination.
+In table \ref{tab:translation} we also see that the translation between the Warsaw basis as defined from eq.~\eqref{ eq:warsaw}
+contains an $\alpha_s$. Since $\alpha_s$ is a running parameter and for di-Higgs production typically evaluated at $M_{hh}/2$ a translation between the coupling between Warsaw and SILH/HEFT needs to consider this fact. This can be rectified by including the running of $C_{HG}$ at the order at which the running of $\alpha_s$ is considered or by redefining 
+\begin{equation}
+	C_{HG} \to C'_{HG}=\frac{1}{\alpha_s} C_{HG}.
+\end{equation}
+Finally, we would like to comment on the models which are realised by the different choices for the EFT. Typically, HEFT is the correct choice in strongly-interacting models where the Higgs boson arises as a pseudo-Goldstone boson. Since HEFT does not assume that the Higgs boson transforms within a SM doublet, Goldstone boson scattering is not unitarised by the Higgs boson implying that the HEFT description cannot stay valid for new physics above scales of $\Lambda > 4 \pi v$. Generically speaking HEFT assumes larger deviations from the SM. UV models that are generically described by HEFT tend to linearise in the limit in which the coupling deviations are small with respect to the SM. 
+For instance, models like Minimal Composite Higgs Models given the current coupling constraints can in good approximation be described by a linear EFT (SMEFT). Another prime example for HEFT, the dilaton, in its simplest description generically predicts too large coupling deviations in the gluon Higgs couplings \cite{Bellazzini:2012vz} and hence also its description via HEFT is challenged. 
+A further example for a UV realisation of HEFT is the singlet model in the strong coupling regime keeping the vacuum expectation value of the singlet close to the electroweak scale \cite{Buchalla:2016bse,}. 
+The regime where the HEFT should be the preferred description is though where the mixing between singlet and doublet Higgs fields is rather large hence again strongly constrained by single Higgs coupling measurements. In the limit where both the new mass scale, singlet mass and singlet vacuum expectation value, decouple, is well described within SMEFT. A UV dynamics that is described by HEFT and not SMEFT given the current coupling constraints hence remains an open question. Nevertheless, one should keep in mind that HEFT for di-Higgs production is more general and that Higgs pair production is THE place of probing potential de-correlation among couplings of one or two Higgs bosons to fermions or gauge bosons. 

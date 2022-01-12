@@ -15,7 +15,7 @@ A level-1 auxiliary file: chapters/Part4/HiggsAndFlavour.aux
 A level-1 auxiliary file: chapters/Part4/FlavourAnomalies.aux
 A level-1 auxiliary file: chapters/Part2/Appendix_hz.aux
 The style file: utphys.bst
-Reallocated field_info (elt_size=4) to 19976 items from 5000.
+Reallocated field_info (elt_size=4) to 20264 items from 5000.
 Database file #1: bibliography.bib
 I was expecting a `,' or a `}'---line 552 of file bibliography.bib
  :  title        
@@ -59,6 +59,7 @@ Repeated entry---line 3911 of file bibliography.bib
  : @article{Aad:2019mbh
  :                     ,
 I'm skipping whatever remains of this entry
+Reallocated str_pool (elt_size=1) to 130000 items from 65000.
 Repeated entry---line 3934 of file bibliography.bib
  : @article{Patel:2015tea
  :                       ,
@@ -359,7 +360,6 @@ Repeated entry---line 4815 of file bibliography.bib
  : @article{Cepeda:2019klc
  :                        ,
 I'm skipping whatever remains of this entry
-Reallocated str_pool (elt_size=1) to 130000 items from 65000.
 Repeated entry---line 5032 of file bibliography.bib
  : @inbook{Cepeda:2019klc
  :                       ,
@@ -660,6 +660,59 @@ Repeated entry---line 9689 of file bibliography.bib
  : @article{deBlas:2017xtg
  :                        ,
 I'm skipping whatever remains of this entry
+Repeated entry---line 9738 of file bibliography.bib
+ : @article{Buchmuller:1985jz
+ :                           ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 9749 of file bibliography.bib
+ : @article{Grzadkowski:2010es
+ :                            ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 9775 of file bibliography.bib
+ : @article{Contino:2013kra
+ :                         ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 9841 of file bibliography.bib
+ : @article{Buchalla:2018yce
+ :                          ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 9881 of file bibliography.bib
+ : @article{DiMicco:2019ngk
+ :                         ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 9896 of file bibliography.bib
+ : @article{deFlorian:2016spz
+ :                           ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 9947 of file bibliography.bib
+ : @article{Contino:2010mh
+ :                        ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 9960 of file bibliography.bib
+ : @article{Alonso:2013hga
+ :                        ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 9976 of file bibliography.bib
+ : @article{Heinrich:2020ckp
+ :                          ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 9990 of file bibliography.bib
+ : @article{Heinrich:2019bkc
+ :                          ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 10003 of file bibliography.bib
+ : @article{Heinrich:2017kxx
+ :                          ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 10057 of file bibliography.bib
+ : @article{Grober:2017gut
+ :                        ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 10069 of file bibliography.bib
+ : @article{Giudice:2007fh
+ :                        ,
+I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for ""
 Warning--there's a number but no series in minlos2000introduction
 Warning--empty booktitle in Freed1993LecturesOT
 Warning--empty author in ATLAS:2020qdt
@@ -698,45 +751,45 @@ Warning--empty pages in shapley1951notes
 Warning--empty pages in 2018arXiv180203888L
 Warning--empty author in ATLAS-CONF-2021-016
 Warning--empty author in ATL-PHYS-PUB-2018-053
-You've used 468 entries,
+You've used 476 entries,
             2328 wiz_defined-function locations,
-            3960 strings with 102827 characters,
-and the built_in function-call counts, 146545 in all, are:
-= -- 14511
-> -- 5078
+            4017 strings with 104332 characters,
+and the built_in function-call counts, 149236 in all, are:
+= -- 14760
+> -- 5181
 < -- 17
-+ -- 1869
-- -- 1401
-* -- 15770
-:= -- 17277
-add.period$ -- 696
-call.type$ -- 468
-change.case$ -- 526
++ -- 1906
+- -- 1430
+* -- 16073
+:= -- 17595
+add.period$ -- 704
+call.type$ -- 476
+change.case$ -- 534
 chr.to.int$ -- 0
-cite$ -- 506
-duplicate$ -- 7882
-empty$ -- 14085
-format.name$ -- 1401
-if$ -- 37600
+cite$ -- 514
+duplicate$ -- 8022
+empty$ -- 14343
+format.name$ -- 1430
+if$ -- 38283
 int.to.chr$ -- 0
-int.to.str$ -- 468
-missing$ -- 1705
-newline$ -- 1722
-num.names$ -- 446
-pop$ -- 2154
+int.to.str$ -- 476
+missing$ -- 1737
+newline$ -- 1746
+num.names$ -- 454
+pop$ -- 2192
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 5494
+skip$ -- 5596
 stack$ -- 0
-substring$ -- 5959
-swap$ -- 3923
+substring$ -- 6088
+swap$ -- 3999
 text.length$ -- 17
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 38
-while$ -- 1073
-width$ -- 471
-write$ -- 3987
-(There were 159 error messages)
+while$ -- 1095
+width$ -- 479
+write$ -- 4050
+(There were 172 error messages)

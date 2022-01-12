@@ -339,6 +339,63 @@ B.~Grzadkowski, M.~Iskrzynski, M.~Misiak, and J.~Rosiek, ``{Dimension-Six Terms
   (2010) 085}, \href{http://arxiv.org/abs/1008.4884}{{\ttfamily arXiv:1008.4884
   [hep-ph]}}.
 
+\bibitem{Grober:2017gut}
+R.~Grober, M.~Muhlleitner, and M.~Spira, ``{Higgs Pair Production at NLO QCD
+  for CP-violating Higgs Sectors},''
+  \href{http://dx.doi.org/10.1016/j.nuclphysb.2017.10.002}{{\em Nucl. Phys. B}
+  {\bfseries 925} (2017) 1--27},
+  \href{http://arxiv.org/abs/1705.05314}{{\ttfamily arXiv:1705.05314
+  [hep-ph]}}.
+
+\bibitem{Giudice:2007fh}
+G.~F. Giudice, C.~Grojean, A.~Pomarol, and R.~Rattazzi, ``{The
+  Strongly-Interacting Light Higgs},''
+  \href{http://dx.doi.org/10.1088/1126-6708/2007/06/045}{{\em JHEP} {\bfseries
+  06} (2007) 045}, \href{http://arxiv.org/abs/hep-ph/0703164}{{\ttfamily
+  arXiv:hep-ph/0703164}}.
+
+\bibitem{Contino:2013kra}
+R.~Contino, M.~Ghezzi, C.~Grojean, M.~Muhlleitner, and M.~Spira, ``{Effective
+  Lagrangian for a light Higgs-like scalar},''
+  \href{http://dx.doi.org/10.1007/JHEP07(2013)035}{{\em JHEP} {\bfseries 07}
+  (2013) 035}, \href{http://arxiv.org/abs/1303.3876}{{\ttfamily arXiv:1303.3876
+  [hep-ph]}}.
+
+\bibitem{Elias-Miro:2013eta}
+J.~Elias-Mir\'o, C.~Grojean, R.~S. Gupta, and D.~Marzocca, ``{Scaling and
+  tuning of EW and Higgs observables},''
+  \href{http://dx.doi.org/10.1007/JHEP05(2014)019}{{\em JHEP} {\bfseries 05}
+  (2014) 019}, \href{http://arxiv.org/abs/1312.2928}{{\ttfamily arXiv:1312.2928
+  [hep-ph]}}.
+
+\bibitem{Hagiwara:1993ck}
+K.~Hagiwara, S.~Ishihara, R.~Szalapski, and D.~Zeppenfeld, ``{Low-energy
+  effects of new interactions in the electroweak boson sector},''
+  \href{http://dx.doi.org/10.1103/PhysRevD.48.2182}{{\em Phys. Rev. D}
+  {\bfseries 48} (1993) 2182--2203}.
+
+\bibitem{Hartmann:2015aia}
+C.~Hartmann and M.~Trott, ``{Higgs Decay to Two Photons at One Loop in the
+  Standard Model Effective Field Theory},''
+  \href{http://dx.doi.org/10.1103/PhysRevLett.115.191801}{{\em Phys. Rev.
+  Lett.} {\bfseries 115} no.~19, (2015) 191801},
+  \href{http://arxiv.org/abs/1507.03568}{{\ttfamily arXiv:1507.03568
+  [hep-ph]}}.
+
+\bibitem{Bellazzini:2012vz}
+B.~Bellazzini, C.~Csaki, J.~Hubisz, J.~Serra, and J.~Terning, ``{A Higgslike
+  Dilaton},'' \href{http://dx.doi.org/10.1140/epjc/s10052-013-2333-x}{{\em Eur.
+  Phys. J. C} {\bfseries 73} no.~2, (2013) 2333},
+  \href{http://arxiv.org/abs/1209.3299}{{\ttfamily arXiv:1209.3299 [hep-ph]}}.
+
+\bibitem{Buchalla:2016bse}
+G.~Buchalla, O.~Cata, A.~Celis, and C.~Krause, ``{Standard Model Extended by a
+  Heavy Singlet: Linear vs. Nonlinear EFT},''
+  \href{http://dx.doi.org/10.1016/j.nuclphysb.2017.02.006}{{\em Nucl. Phys. B}
+  {\bfseries 917} (2017) 209--233},
+  \href{http://arxiv.org/abs/1608.03564}{{\ttfamily arXiv:1608.03564
+  [hep-ph]}}.
+
 \bibitem{Aad:2019mbh}
 {\bfseries ATLAS} Collaboration, G.~Aad {\em et~al.}, ``{Combined measurements
   of Higgs boson production and decay using up to $80$ fb$^{-1}$ of
@@ -514,6 +571,13 @@ J.~de~Blas, M.~Chala, and J.~Santiago, ``{Renormalization Group Constraints on
   {\bfseries 11} (2021) 089}, \href{http://arxiv.org/abs/2105.00006}{{\ttfamily
   arXiv:2105.00006 [hep-ph]}}.
 
+\bibitem{Dedes:2017zog}
+A.~Dedes, W.~Materkowska, M.~Paraskevas, J.~Rosiek, and K.~Suxho, ``{Feynman
+  rules for the Standard Model Effective Field Theory in $R_{\xi}$ -gauges},''
+  \href{http://dx.doi.org/10.1007/JHEP06(2017)143}{{\em JHEP} {\bfseries 06}
+  (2017) 143}, \href{http://arxiv.org/abs/1704.03888}{{\ttfamily
+  arXiv:1704.03888 [hep-ph]}}.
+
 \bibitem{Patel:2015tea}
 H.~Patel, ``{Package-X: A Mathematica package for the analytic calculation of
   one-loop integrals},''
@@ -529,11 +593,11 @@ P.~Maierh{\"o}fer, J.~Usovitsch, and P.~Uwer, ``{Kira---A Feynman integral
   \href{http://arxiv.org/abs/1705.05610}{{\ttfamily arXiv:1705.05610
   [hep-ph]}}.
 
-\bibitem{Smirnov:2008iw}
-A.~Smirnov, ``{Algorithm FIRE -- Feynman Integral REduction},''
-  \href{http://dx.doi.org/10.1088/1126-6708/2008/10/107}{{\em JHEP} {\bfseries
-  10} (2008) 107}, \href{http://arxiv.org/abs/0807.3243}{{\ttfamily
-  arXiv:0807.3243 [hep-ph]}}.
+\bibitem{Hahn:2000kx}
+T.~Hahn, ``{Generating Feynman diagrams and amplitudes with FeynArts 3},''
+  \href{http://dx.doi.org/10.1016/S0010-4655(01)00290-9}{{\em Comput. Phys.
+  Commun.} {\bfseries 140} (2001) 418--431},
+  \href{http://arxiv.org/abs/hep-ph/0012260}{{\ttfamily arXiv:hep-ph/0012260}}.
 
 \bibitem{Alloul:2013bka}
 A.~Alloul, N.~D. Christensen, C.~Degrande, C.~Duhr, and B.~Fuks, ``{FeynRules
@@ -542,18 +606,11 @@ A.~Alloul, N.~D. Christensen, C.~Degrande, C.~Duhr, and B.~Fuks, ``{FeynRules
   Commun.} {\bfseries 185} (2014) 2250--2300},
   \href{http://arxiv.org/abs/1310.1921}{{\ttfamily arXiv:1310.1921 [hep-ph]}}.
 
-\bibitem{Hahn:2000kx}
-T.~Hahn, ``{Generating Feynman diagrams and amplitudes with FeynArts 3},''
-  \href{http://dx.doi.org/10.1016/S0010-4655(01)00290-9}{{\em Comput. Phys.
-  Commun.} {\bfseries 140} (2001) 418--431},
-  \href{http://arxiv.org/abs/hep-ph/0012260}{{\ttfamily arXiv:hep-ph/0012260}}.
-
-\bibitem{Dedes:2017zog}
-A.~Dedes, W.~Materkowska, M.~Paraskevas, J.~Rosiek, and K.~Suxho, ``{Feynman
-  rules for the Standard Model Effective Field Theory in $R_{\xi}$ -gauges},''
-  \href{http://dx.doi.org/10.1007/JHEP06(2017)143}{{\em JHEP} {\bfseries 06}
-  (2017) 143}, \href{http://arxiv.org/abs/1704.03888}{{\ttfamily
-  arXiv:1704.03888 [hep-ph]}}.
+\bibitem{Smirnov:2008iw}
+A.~Smirnov, ``{Algorithm FIRE -- Feynman Integral REduction},''
+  \href{http://dx.doi.org/10.1088/1126-6708/2008/10/107}{{\em JHEP} {\bfseries
+  10} (2008) 107}, \href{http://arxiv.org/abs/0807.3243}{{\ttfamily
+  arXiv:0807.3243 [hep-ph]}}.
 
 \bibitem{Dawson:2018pyl}
 S.~Dawson and P.~P. Giardino, ``{Higgs decays to $ZZ$ and $Z\gamma$ in the
@@ -615,6 +672,18 @@ G.~Ossola, C.~G. Papadopoulos, and R.~Pittau, ``{On the Rational Terms of the
   05} (2008) 004}, \href{http://arxiv.org/abs/0802.1876}{{\ttfamily
   arXiv:0802.1876 [hep-ph]}}.
 
+\bibitem{Ball:2012cx}
+R.~D. Ball {\em et~al.}, ``{Parton distributions with LHC data},''
+  \href{http://dx.doi.org/10.1016/j.nuclphysb.2012.10.003}{{\em Nucl. Phys. B}
+  {\bfseries 867} (2013) 244--289},
+  \href{http://arxiv.org/abs/1207.1303}{{\ttfamily arXiv:1207.1303 [hep-ph]}}.
+
+\bibitem{Brivio:2017btx}
+I.~Brivio, Y.~Jiang, and M.~Trott, ``{The SMEFTsim package, theory and
+  tools},'' \href{http://dx.doi.org/10.1007/JHEP12(2017)070}{{\em JHEP}
+  {\bfseries 12} (2017) 070}, \href{http://arxiv.org/abs/1709.06492}{{\ttfamily
+  arXiv:1709.06492 [hep-ph]}}.
+
 \bibitem{Alonso:2013hga}
 R.~Alonso, E.~E. Jenkins, A.~V. Manohar, and M.~Trott, ``{Renormalization Group
   Evolution of the Standard Model Dimension Six Operators III: Gauge Coupling
@@ -622,12 +691,6 @@ R.~Alonso, E.~E. Jenkins, A.~V. Manohar, and M.~Trott, ``{Renormalization Group
   \href{http://dx.doi.org/10.1007/JHEP04(2014)159}{{\em JHEP} {\bfseries 04}
   (2014) 159}, \href{http://arxiv.org/abs/1312.2014}{{\ttfamily arXiv:1312.2014
   [hep-ph]}}.
-
-\bibitem{Ball:2012cx}
-R.~D. Ball {\em et~al.}, ``{Parton distributions with LHC data},''
-  \href{http://dx.doi.org/10.1016/j.nuclphysb.2012.10.003}{{\em Nucl. Phys. B}
-  {\bfseries 867} (2013) 244--289},
-  \href{http://arxiv.org/abs/1207.1303}{{\ttfamily arXiv:1207.1303 [hep-ph]}}.
 
 \bibitem{Salvatier2016}
 J.~Salvatier, T.~V. Wiecki, and C.~Fonnesbeck, ``Probabilistic programming in
@@ -2147,13 +2210,6 @@ L.~M. Carpenter, T.~Han, K.~Hendricks, Z.~Qian, and N.~Zhou, ``{Higgs Boson
   \href{http://dx.doi.org/10.1103/PhysRevD.95.053003}{{\em Phys. Rev. D}
   {\bfseries 95} no.~5, (2017) 053003},
   \href{http://arxiv.org/abs/1611.05463}{{\ttfamily arXiv:1611.05463
-  [hep-ph]}}.
-
-\bibitem{Contino:2013kra}
-R.~Contino, M.~Ghezzi, C.~Grojean, M.~Muhlleitner, and M.~Spira, ``{Effective
-  Lagrangian for a light Higgs-like scalar},''
-  \href{http://dx.doi.org/10.1007/JHEP07(2013)035}{{\em JHEP} {\bfseries 07}
-  (2013) 035}, \href{http://arxiv.org/abs/1303.3876}{{\ttfamily arXiv:1303.3876
   [hep-ph]}}.
 
 \bibitem{Harnik:2012pb}
