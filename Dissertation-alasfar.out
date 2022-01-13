@@ -8,79 +8,8 @@
 \BOOKMARK [2][-]{subsection.1.4.1}{1.4.1 Custodial symmetry}{section.1.4}% 8
 \BOOKMARK [0][-]{chapter.2}{2 Constraints on the Higgs properties}{part.1}% 9
 \BOOKMARK [1][-]{section.2.1}{2.1 Theoretical constraints}{chapter.2}% 10
-\BOOKMARK [2][-]{subsection.2.1.1}{2.1.1 Partial-wave unitarity}{section.2.1}% 11
-\BOOKMARK [1][-]{section.2.2}{2.2 Experimental}{chapter.2}% 12
-\BOOKMARK [0][-]{chapter.3}{3 Higgs and effective field theories}{part.1}% 13
-\BOOKMARK [-1][-]{part.2}{II Single Higgs Processes at the LHC}{}% 14
-\BOOKMARK [0][-]{chapter.4}{4 Overview of Higgs production at colliders}{part.2}% 15
-\BOOKMARK [0][-]{chapter.5}{5 Four top operator in Higgs production and decay}{part.2}% 16
-\BOOKMARK [1][-]{section.5.1}{5.1 Four-fermion operators in SMEFT }{chapter.5}% 17
-\BOOKMARK [1][-]{section.5.2}{5.2 Contribution of four-fermion operators to Higgs rates at NLO }{chapter.5}% 18
-\BOOKMARK [2][-]{subsection.5.2.1}{5.2.1 Analytic calculations}{section.5.2}% 19
-\BOOKMARK [2][-]{subsection.5.2.2}{5.2.2 NLO corrections to tbarth}{section.5.2}% 20
-\BOOKMARK [2][-]{subsection.5.2.3}{5.2.3 Results}{section.5.2}% 21
-\BOOKMARK [1][-]{section.5.3}{5.3 Fit to Higgs observables }{chapter.5}% 22
-\BOOKMARK [2][-]{subsection.5.3.1}{5.3.1 Fit results}{section.5.3}% 23
-\BOOKMARK [2][-]{subsection.5.3.2}{5.3.2 Fit to LHC Run-II data}{section.5.3}% 24
-\BOOKMARK [2][-]{subsection.5.3.3}{5.3.3 Two parameter fits }{section.5.3}% 25
-\BOOKMARK [2][-]{subsection.5.3.4}{5.3.4 Prospects for HL-LHC}{section.5.3}% 26
-\BOOKMARK [1][-]{section.5.4}{5.4 Summary and discussion }{chapter.5}% 27
-\BOOKMARK [0][-]{chapter.6}{6 Virtual two-loop calculation of Zh production via gluon fusion}{part.2}% 28
-\BOOKMARK [1][-]{section.6.1}{6.1 General notation }{chapter.6}% 29
-\BOOKMARK [2][-]{subsection.6.1.1}{6.1.1 The transverse momentum expansion}{section.6.1}% 30
-\BOOKMARK [1][-]{section.6.2}{6.2 Born cross-section in the pT-expansion}{chapter.6}% 31
-\BOOKMARK [1][-]{section.6.3}{6.3 NLO calculation}{chapter.6}% 32
-\BOOKMARK [2][-]{subsection.6.3.1}{6.3.1 Renormalisation}{section.6.3}% 33
-\BOOKMARK [2][-]{subsection.6.3.2}{6.3.2 Calculation of the exact virtual corrections}{section.6.3}% 34
-\BOOKMARK [2][-]{subsection.6.3.3}{6.3.3 Calculation of the pT-expanded virtual corrections}{section.6.3}% 35
-\BOOKMARK [1][-]{section.6.4}{6.4 Results and conclusions}{chapter.6}% 36
-\BOOKMARK [-1][-]{part.3}{III Higgs Pair at Hadron Colliders }{}% 37
-\BOOKMARK [0][-]{chapter.7}{7 Overview of Higgs pair production at colliders}{part.3}% 38
-\BOOKMARK [1][-]{section.7.1}{7.1 Overview of Light Yukawa searches}{chapter.7}% 39
-\BOOKMARK [0][-]{chapter.8}{8 Higgs pair as a probe for light Yukawas}{part.3}% 40
-\BOOKMARK [1][-]{section.8.1}{8.1 Introduction}{chapter.8}% 41
-\BOOKMARK [1][-]{section.8.2}{8.2 Effective Field Theory of light Yukawa couplings}{chapter.8}% 42
-\BOOKMARK [1][-]{section.8.3}{8.3 Higgs pair production and Higgs decays with modified light Yukawa couplings }{chapter.8}% 43
-\BOOKMARK [2][-]{subsection.8.3.1}{8.3.1 Higgs pair production via gluon fusion }{section.8.3}% 44
-\BOOKMARK [2][-]{subsection.8.3.2}{8.3.2 Higgs pair production via quark anti-quark annihilation}{section.8.3}% 45
-\BOOKMARK [2][-]{subsection.8.3.3}{8.3.3 Higgs decays }{section.8.3}% 46
-\BOOKMARK [1][-]{section.8.4}{8.4 Phenomenological analysis }{chapter.8}% 47
-\BOOKMARK [2][-]{subsection.8.4.1}{8.4.1 Event generation}{section.8.4}% 48
-\BOOKMARK [2][-]{subsection.8.4.2}{8.4.2 Analysis strategy }{section.8.4}% 49
-\BOOKMARK [2][-]{subsection.8.4.3}{8.4.3 Statistical analysis}{section.8.4}% 50
-\BOOKMARK [2][-]{subsection.8.4.4}{8.4.4 Results for the bbarb final state}{section.8.4}% 51
-\BOOKMARK [2][-]{subsection.8.4.5}{8.4.5 Charm-tagging and second generation bounds}{section.8.4}% 52
-\BOOKMARK [1][-]{section.8.5}{8.5 Conclusion }{chapter.8}% 53
-\BOOKMARK [0][-]{chapter.9}{9 Optimised search for Higgs pair via Interpretable machine learning}{part.3}% 54
-\BOOKMARK [1][-]{section.9.1}{9.1 Introduction}{chapter.9}% 55
-\BOOKMARK [2][-]{subsection.9.1.1}{9.1.1 Considerations of experimental constraints}{section.9.1}% 56
-\BOOKMARK [1][-]{section.9.2}{9.2 Events simulation for HL-LHC and FCC-hh}{chapter.9}% 57
-\BOOKMARK [1][-]{section.9.3}{9.3 Exploring higher dimensional kinematic distributions}{chapter.9}% 58
-\BOOKMARK [2][-]{subsection.9.3.1}{9.3.1 Interpretable machine learning}{section.9.3}% 59
-\BOOKMARK [1][-]{section.9.4}{9.4 The hh channel at future hadron colliders}{chapter.9}% 60
-\BOOKMARK [2][-]{subsection.9.4.1}{9.4.1 Constraints on CH at the HL-LHC and FCC-hh}{section.9.4}% 61
-\BOOKMARK [2][-]{subsection.9.4.2}{9.4.2 Two and three parameter constraints on CH, CuH and CdH}{section.9.4}% 62
-\BOOKMARK [2][-]{subsection.9.4.3}{9.4.3 Interpretation of Shapley values}{section.9.4}% 63
-\BOOKMARK [1][-]{section.9.5}{9.5 Summary}{chapter.9}% 64
-\BOOKMARK [1][-]{section.9.6}{9.6 Discussion of theoretical and systematic uncertainties}{chapter.9}% 65
-\BOOKMARK [1][-]{section.9.7}{9.7 Light-quark Yukawa and Self Coupling at Future Lepton Colliders}{chapter.9}% 66
-\BOOKMARK [-1][-]{part.4}{IV Flavour physics }{}% 67
-\BOOKMARK [0][-]{chapter.10}{10 Higgs and flavour}{part.4}% 68
-\BOOKMARK [1][-]{section.10.1}{10.1 Effective Field Theory for Higgs pair production}{chapter.10}% 69
-\BOOKMARK [1][-]{section.10.2}{10.2 Models of flavour alignment and large light-quark Yukawa couplings}{chapter.10}% 70
-\BOOKMARK [2][-]{subsection.10.2.1}{10.2.1 Model realizations}{section.10.2}% 71
-\BOOKMARK [0][-]{chapter.11}{11 Flavour anomalies and Electroweak precision tests}{part.4}% 72
-\BOOKMARK [1][-]{section.11.1}{11.1 Introduction}{chapter.11}% 73
-\BOOKMARK [1][-]{section.11.2}{11.2 Theoretical preamble}{chapter.11}% 74
-\BOOKMARK [1][-]{section.11.3}{11.3 Analysis strategy}{chapter.11}% 75
-\BOOKMARK [1][-]{section.11.4}{11.4 Results from the SMEFT}{chapter.11}% 76
-\BOOKMARK [2][-]{subsection.11.4.1}{11.4.1 Analysis of EW and b to s ll data}{section.11.4}% 77
-\BOOKMARK [2][-]{subsection.11.4.2}{11.4.2 A minimal EFT picture}{section.11.4}% 78
-\BOOKMARK [1][-]{section.11.5}{11.5 Directions for UV models}{chapter.11}% 79
-\BOOKMARK [2][-]{subsection.11.5.1}{11.5.1 Z' with vector-like partners}{section.11.5}% 80
-\BOOKMARK [2][-]{subsection.11.5.2}{11.5.2 Leptoquark scenarios}{section.11.5}% 81
-\BOOKMARK [1][-]{section.11.6}{11.6 Summary}{chapter.11}% 82
-\BOOKMARK [1][-]{section.11.7}{11.7 Discussions on EW fits}{chapter.11}% 83
-\BOOKMARK [0][-]{appendix.A}{A Details of Zh calculation}{part.4}% 84
-\BOOKMARK [1][-]{section.A.1}{A.1 Orthogonal Projectors in gg ZH}{appendix.A}% 85
-\BOOKMARK [1][-]{section.A.2}{A.2 Two-loop Results}{appendix.A}% 86
+\BOOKMARK [2][-]{subsection.2.1.1}{2.1.1 Electroweak precision data fits}{section.2.1}% 11
+\BOOKMARK [2][-]{subsection.2.1.2}{2.1.2 Partial-wave unitarity}{section.2.1}% 12
+\BOOKMARK [2][-]{subsection.2.1.3}{2.1.3 Other bounds}{section.2.1}% 13
+\BOOKMARK [1][-]{section.2.2}{2.2 Experimental measurements in the Higgs sector}{chapter.2}% 14
+\BOOKMARK [0][-]{chapter.3}{3 Higgs and effective field theories}{part.1}% 15

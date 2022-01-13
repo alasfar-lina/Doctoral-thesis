@@ -94,6 +94,12 @@ The Higgs mechanism starts by considering the spontaneous symmetry breaking~(SSB
 \begin{equation}
     SU(2)_L \otimes U(1)_Y \longrightarrow U(1)_{Q} 
 \end{equation}
+\begin{figure}[t!]
+	\begin{center}
+		\includegraphics[width=8cm]{figures/HiggsPotential}
+		\caption{The Higgs potential, taken from~\cite{Erler:2019hds}. \la{incooperate here } \label{fig:higgs_hat} }
+	\end{center}
+\end{figure}
 This is  achieved by the vacuum expectation value~(vev) of a complex scalar field $\phi\sim (\irrep{1},\irrep{2},+1/2)$, with the Lagrangian 
 \begin{equation}
     \mathcal{L} = D_\mu \phi^* D^\mu \phi -V,\;\;\;\;\;\; V:= \mu^2  \phi^* \phi +\lambda (\phi^* \phi)^2,
@@ -181,16 +187,21 @@ with $ \tilde{\phi}= i\sigma_2 \phi$ and $ y_e, y_d, y_u$ are $3\times 3$ matric
 \begin{equation}
     y_{q} \longrightarrow y^\prime_f= \mathcal{V}^\dagger_{q} \,y_q\, \mathcal{U}_{q} = \text{diag}\left(m_{q_1}, m_{q_2},m_{q_3}\right).
 \end{equation}
-However, the is no degeneracy here as the Hamiltonian does not commute with the quark flavour operator. This is because the transformation matrices for the up and down-type quarks are not the same.  The charged EW quark currents contains flavour mixing described by the Kabibbo-Kobayashi-Maskawa~(CKM) matrix~\cite{PhysRevLett.10.531,10.1143/PTP.49.652}. More details on the flavour sector of the SM is discussed in~\la{Update the section}\\
+However, the is no degeneracy here as the Hamiltonian does not commute with the quark flavour operator. This is because the transformation matrices for the up and down-type quarks are not the same.  The charged EW quark currents contains flavour mixing described by the Kabibbo-Kobayashi-Maskawa~(CKM) matrix~\cite{PhysRevLett.10.531,10.1143/PTP.49.652}. More details on the flavour sector of the SM is discussed in~\autoref{chap:flavhiggs}\\
 \autoref{fig:SMcouplings} shows all the SM couplings' strengths, with the thickness of the chord is proportional to the strength of the coupling, on can see the Higgs couplings in orange. 
 %%%%
 \begin{figure}[htpb!]
     \centering
     \includegraphics[width=\linewidth]{./figures/SM}
-    \caption{A chord diagram showing the SM couplings, with the coupling strength illustrated by the chord thickness. Higgs couplings are coloured in orange.}  \label{fig:SMcouplings}
+    \caption{The SM Yukawa couplings are proportional to the quark masses, because of the the Higgs Yukawa couplings span about $6$ orders of magnitude, as seen in the case of quarks here. This large hierarchy cannot be explained by the SM. }  \label{fig:SMcouplings}
 \end{figure}
 %%%%
-%%%%
+In this figure, we cannot easily see Higgs coupling to the fermions, except for its couplings to the third generation. Strictly speaking, if we further examined the Yukawa coupling using a logarithmic scale and focused on the quark sector as ~\autoref{fig:SMYuk} illustrates. We observe that these Yukawa couplings span about 6 orders of magnitudes with marked hierarchy amongst generations.  As these couplings are in fact free parameters in the SM, and only determined by the experimental measurements of the quark ~(or equally applies lepton) masses. This hierarchy of quark masses therefore cannot be explain by the SM Higgs mechanism, and sometimes known as \text{the old flavour puzzle}.  \\ In later chapters, we will examine the experimental effort to better measure these couplings and how Higgs pair production can be used to probe them in~\autoref{chap:lightyuk}. Even the potential of using techniques from \emph{interpretable machine learning} to further improve Higgs pair sensitivity to probing light Yukawas~\autoref{chap:MLLightYuk}. Then in ~\autoref{chap:flavhiggs} we'll examine the EFT and UV models to modify them. 
+\begin{figure}[htpb!]
+	\centering
+	\includegraphics[width=0.5\linewidth]{./figures/yukawa}
+	\caption{A chord diagram showing the SM couplings, with the coupling strength illustrated by the chord thickness. Higgs couplings are coloured in orange.}  \label{fig:SMYuk}
+\end{figure}
 \section{The Higgs and EW precision observables}
 \par Higgs physics is intertwined with the EW sector for example, the Higgs vev is determined from Fermi's constant~$v =(\sqrt{2}G_F)^{-1/2}$, and is fixed by muon lifetime measurements, and comparing it with the theoretical predictions~\cite{PhysRev.101.866,PhysRev.113.1652,Mohammad:1976qd,PhysRevLett.82.488} 
 \begin{equation}
@@ -278,11 +289,16 @@ Where the dominant contributions are given by~\cite{EINHORN1981146}
 \end{align}
 Since $m_b\ll m_t$, the correction is non-vanishing, and~\eqref{eq:deltarho} shows clearly how the radiative corrections are proportional to the spurions of the custodial symmetry. However, this radiative correction is absorbed into the SM definition of $\rho$, i.e. the $\MSbar$ definition of the $\rho$-parameter~$\rho^{\MSbar}$.
 \par One can study  new physics~(NP) effects that violates custodial symmetry, by looking at deviations from $\rho=1$ from it. Given the experimentally measured value of~$\rho$~\eqref{eq:rhoexp} many NP models violating custodial symmetry can already be excluded. Nevertheless, $\rho$ alone does not capture the full story of~EWPO's. For instance, adding a new quark doublet would not necessarily violate the custodial symmetry though it still can be excluded by EWPO. It is hence useful to introduce new parameters known as \textbf{Peskin-Takeuchi parameters}~\cite{PhysRevLett.65.964,Peskin91estimationof,peskin1995introduction}
+ \begin{tcolorbox}[title=Peskin-Takeuchi parameters,
+	title filled=false,
+	colback=Mahogany!5!white,
+	colframe=Mahogany]
 \begin{align}
 	S &:=\frac{4 c_W^2 s_W^2}{\alpha} \left[ \frac{\Pi_{ZZ}^{\NP} (m_Z^2)- \Pi_{ZZ}^{\NP} (0)}{m_Z^2}  - \frac{c_W^2-s_W^2}{c_Ws_W}\,\frac{\Pi_{Z\gamma}^\NP(m_Z^2)}{m_Z^2}-\frac{\Pi_{\gamma\gamma}^\NP(m_Z^2)}{m_Z^2}\right],  \nonumber \\
 	T &:=\frac{\rho^{\MSbar}-1}{\alpha}  = \frac{1}{\alpha} \left[ \frac{\Pi^\NP_{WW}(0)}{m_W^2}- \frac{\Pi^\NP_{ZZ}(0)}{m_Z^2} \right] , \\
 	U&:= \frac{4 s_W^2}{\alpha} \left[ \frac{\Pi_{WW}^{\NP} (m_W^2)- \Pi_{WW}^{\NP} (0)}{m_W^2}   - \frac{c_W}{s_W}\,\frac{\Pi_{Z\gamma}^\NP(m_Z^2)}{m_Z^2}-\frac{\Pi_{\gamma\gamma}^\NP(m_Z^2)}{m_Z^2}\right] -S .\nonumber 
 \end{align}
+\end{tcolorbox}
 The NP contributions to the EW vacuum polarisations $\Pi_{VV}^{\NP}(p^2)$) could either come from loop or tree-level effects. Typically both $T$ and $U$ are related to custodial symmetry violation. However, $U$ has an extra suppression factor of $m_\NP^2/m_Z^2$ compared to $T$ and $S$. The most recent fit result for these parameters is~\cite{Zyla:2020zbs}
 \begin{align}
 	S &=-0.01\pm0.10,  \nonumber \\
@@ -307,4 +323,4 @@ The Peskin-Takeuchi parameters are important in constraining effective operators
  \hat{O}_S &= \phi^\dagger \sigma_i \phi W^i_{\mu \nu} B^{\mu \nu}, \nonumber \\
 \hat{O}_T &= |\phi^\dagger D_\mu \phi|^2.
 \end{align}
-For example, $\hat{O}_S$ appears in Technicolour models causing large deviations of $S$ compared to its measured value~\cite{GOLDEN19913,HOLDOM199088,ALTARELLI19923,PhysRevLett.65.964}. Moreover, The constraints on $T$ parameter is important for top mass generation ans well as modifications to~$Z  b \bar{b}$ coupling in such models~\cite{PhysRevLett.69.575,Simmons:1995df}. We will revisit the $\hat{O}_T$ when we discuss the Higgs and effective field theories in section \la{update here}.
+For example, $\hat{O}_S$ appears in Technicolour models causing large deviations of $S$ compared to its measured value~\cite{GOLDEN19913,HOLDOM199088,ALTARELLI19923,PhysRevLett.65.964}. Moreover, The constraints on $T$ parameter is important for top mass generation ans well as modifications to~$Z  b \bar{b}$ coupling in such models~\cite{PhysRevLett.69.575,Simmons:1995df}. We will revisit the $\hat{O}_T$ when we discuss the Higgs and effective field theories in~\autoref{chap:HiggsEFT}
