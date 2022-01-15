@@ -5,6 +5,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \epigraph{	It's very nice to be right sometimes... it has certainly been a long wait.}{\textit{Peter Higgs }}
 
+\la{Write intro here}
 \section{Spontaneous symmetry breaking}
 \par Before talking about symmetry breaking, we need to discuss the concept of symmetry in physics. Symmetry has an essential role in studying physical systems. It manifests not only as a geometric feature of physical objects but also in the dynamics of physical systems. For example, one can find symmetries in the equation of motion, Lagrangians/Hamiltonians and actions. The magnetisation of materials is a good example of the role that symmetry plays in describing physical behaviour. For instance, \textbf{paramagnetic} materials have a positive magnetic susceptibility~$\chi_B$ due to the random arrangement of their electrons' spins.  The paramagnetic material spins arrangement will therefore possess rotational symmetry. The material has no \textit{ preferred direction} in space~\cite{minlos2000introduction}. On the contrary, \textbf{ferromagnetic} materials with the electrons' spins aligned in a certain direction, will not have such symmetry as there will be a preferred direction, see~\autoref{fig:paravsferro}. 
 %%%%
@@ -97,7 +98,7 @@ The Higgs mechanism starts by considering the spontaneous symmetry breaking~(SSB
 \begin{figure}[t!]
 	\begin{center}
 		\includegraphics[width=8cm]{figures/HiggsPotential}
-		\caption{The Higgs potential, taken from~\cite{Erler:2019hds}. \la{incooperate here } \label{fig:higgs_hat} }
+		\caption{The characteristic shape of the Higgs potential showing a non-zero vacuum. While thee physical Higgs boson is an oscillation within the energy well illustrated in the diagram with blue arrows., this illustration is taken from~\cite{Erler:2019hds}. \label{fig:higgs_hat} }
 	\end{center}
 \end{figure}
 This is  achieved by the vacuum expectation value~(vev) of a complex scalar field $\phi\sim (\irrep{1},\irrep{2},+1/2)$, with the Lagrangian 
@@ -105,7 +106,7 @@ This is  achieved by the vacuum expectation value~(vev) of a complex scalar fiel
     \mathcal{L} = D_\mu \phi^* D^\mu \phi -V,\;\;\;\;\;\; V:= \mu^2  \phi^* \phi +\lambda (\phi^* \phi)^2,
     \label{higgspot}
 \end{equation}
- were $\phi$ is given explicitly by 
+ with $V$ denoting the Higgs potential, illustrated in~\autoref{fig:higgs_hat}, which gives non-vanishing vacuum for $ \mu^2 <0$ . The field $\phi$ is given explicitly by 
  \begin{equation}
   \phi = \begin{pmatrix}
       \phi^1 + i \phi^2\\  \frac{1}{\sqrt{2}}(h+v)-i \phi^3
@@ -324,3 +325,160 @@ The Peskin-Takeuchi parameters are important in constraining effective operators
 \hat{O}_T &= |\phi^\dagger D_\mu \phi|^2.
 \end{align}
 For example, $\hat{O}_S$ appears in Technicolour models causing large deviations of $S$ compared to its measured value~\cite{GOLDEN19913,HOLDOM199088,ALTARELLI19923,PhysRevLett.65.964}. Moreover, The constraints on $T$ parameter is important for top mass generation ans well as modifications to~$Z  b \bar{b}$ coupling in such models~\cite{PhysRevLett.69.575,Simmons:1995df}. We will revisit the $\hat{O}_T$ when we discuss the Higgs and effective field theories in~\autoref{chap:HiggsEFT}
+\section{Theoretical constraints on the Higgs \label{sec:theoreticalconst}}
+\subsection{Electroweak precision data fits }
+Even prior to the discovery of the Higgs boson at LHC in 2012, many theoretical aspects of the Higgs sector provided marked bounds on the Higgs properties, particularly it mass. For instance, using the EWPO measurements at LEP provided an input for a fit based of radiative effects coming from the Higgs boson to such observables ~\cite{ALEPH:2005ab} as in diagram (a) of ~\autoref{fig:ewdiagrams}, the bounds improved with the improvements of EWPO measurements, these bounds were known as the `` blue band'' plots seen with their progression in~\autoref{fig:buleband}.
+\begin{figure}[b!]
+	\begin{center}
+		\includegraphics[width=.275 \linewidth]{figures/blueband/BlueBand_1996}
+		\hspace{-0.75 cm}
+		\includegraphics[width=.275 \linewidth]{figures/blueband/BlueBand_1997}
+		\hspace{-0.75 cm}
+		\includegraphics[width=.275 \linewidth]{figures/blueband/BlueBand_2005}
+		\hspace{-0.75 cm}
+		\includegraphics[width=.275 \linewidth]{figures/blueband/BlueBand_2012}
+		\caption{Progression of the ``blue band'' plots with LEP data from 1996 up to 2021 prior to the announcement of the Higgs boson discovery. There plots were taken from~\cite{Erler:2019hds}, based data from LEP~\cite{ALEPH:2005ab} \label{fig:buleband} }
+	\end{center}
+\end{figure}
+\begin{figure}[t!]
+	\begin{center}
+		\includegraphics[width=.7 \linewidth]{figures/theoretical_const}
+		\caption{Diagrams contributing to theoretical bounds on the Higgs, $(a) $ shows an example of radiative corrections to EWPO from the Higgs bosons. The diagrams in $(b)$ show an elastic scattering of EW vector bosons leading to a bound on the Higgs mass from perturbative unitarity, similarly in $(c)$ diagrams for $hh \to hh$ scattering leading to constraints on Higgs self-coupling.}
+		\label{fig:ewdiagrams}
+	\end{center}
+\end{figure}
+\subsection{Partial-wave unitarity}. This process
+Another bound on Higgs mass emerged from studying the amplitudes of EW vector bosons elastic scattering having longitudinal polarisations $V_L V_L \to V_L V_L$ at high energies~$ E \gg m_W$ (see diagrams (b) in~\autoref{fig:ewdiagrams} ), where the Goldstone equivalence theorem holds ~\cite{PhysRevD.42.853}. 
+This bound comes from applying the partial wave perturbative unitarity on the EW boson scattering amplitude. I will derive here this bound starting from the \textbf{Optical theorem}, which a direct result from the unitarity of the $\mathbf S$ matrix.
+\begin{tcolorbox}[title=The optical theorem,
+	title filled=false,
+	colback=Mahogany!5!white,
+	colframe=Mahogany]
+	Let $\mathcal M_{aa}$ be a covariant matrix element for an elastic  scattering process with for a particle $a$  then the following relation applies
+	\begin{equation}
+		\sum_{f}  \int d\Phi_n(p_a,p_i^f)| \mathcal M_{af}|^2 = 2 \mathfrak{I}( \mathcal M_{aa}),
+		\label{opt}
+	\end{equation}
+	where the sum is over all intermediate sates $n$-particle states $f$ with momenta $p_i^f$ and $d\Phi_n(p_a,p_i^f)$ is the $n$-particle phase space.
+\end{tcolorbox}
+If we only consider a $2 \to 2$ process with momentum states. $\ket{p_1,p_2} \to \ket{k_1,k_2}$, then~\eqref{opt}, after expanding the $2$-particle phase space ,
+simplifies to 
+\begin{align}
+	&\int  \frac{d^3k_1}{(2 \pi)^3\,2E_1} \int  \frac{d^3k_2}{(2 \pi)^3\,2E_2} (2 \pi)^4 \delta^4(p_1+p_2-k_1-k_2)\,| \mathcal M (s,t)|^2 ,\nonumber \\
+	&= \frac{1}{16 \pi} \int_{-1}^{1} d(\cos \theta) | \mathcal M (s,t)|^2,
+\end{align}
+with the Mandelstam variables 
+\begin{align}
+	s = &k_1+k_2, \nn \\
+	t =& k_1-p_1, \nn \\
+	u=& k_1-p_2, \\
+	s+t+&u = 4 m^. \nn
+\end{align}
+Recall that the relation between the Mandelstam variable $t$, and the scattering angle for the elastic scattering is given by
+\begin{equation}
+	t = \frac{1}{2} (s-4 m^2)(\cos \theta-1)
+\end{equation}
+We could expand the matrix element $\mathcal M (s,t)$ in terms of \emph{partial waves}, isolating $s$ from scattering angle dependence
+\begin{equation}
+	\mathcal M (s,t) = 16 \pi \sum_j (2j+1)a_j P_j(\cos \theta).
+\end{equation}
+Where $a_j $ are called the $j$th partial wave amplitude, and  $P_j(\cos \theta)$ are the Legendre polynomials 
+\begin{equation}
+	P_j(z) = \frac{1}{j!}\frac{1}{2^j} {d^j\over dz^j} (z^2-1)^j
+\end{equation}
+Which satisfies the orthonormality condition
+\begin{subequations}
+	\begin{align}
+		\int_{-1}^{1} dz \,P_j(z) P_k(z) &= \frac{1}{2j+1} \delta_{jk} \\
+		P_j(1) &= 1 \,\,\, \forall j.
+	\end{align}
+\end{subequations}
+We hence get for the LHS of \eqref{opt} scattering 
+\begin{align}
+	&\int  \frac{d^3k_1}{(2 \pi)^3\,2E_1} \int  \frac{d^3k_2}{(2 \pi)^3\,2E_2} (2 \pi)^4 \delta^4(p_1+p_2-k_1-k_2)\,| \mathcal M (s,t)|^2 ,\nonumber \\
+	&= \frac{1}{16 \pi} \int_{-1}^{1} d(\cos \theta) \left[ 16 \pi \sum_j (2j+1) a_j(s) P_j(\cos \theta)\right] \times \nonumber\\ & \qquad \left[ 16 \pi \sum_k (2k+1) a_k^*(s) P_k(\cos \theta)\right], \nonumber \\
+	&\Rightarrow \; = 32 \pi \sum_j (2j+1)| a_j(s)|^2.
+\end{align}
+And the RHS of \eqref{opt}
+\begin{equation}
+	2 \mathfrak{I}( \mathcal M_{aa}) = \underbrace{2 \mathfrak{I}( \mathcal M(s,0))}_{\color{Mahogany}\text{$t$ is integrated out.}} = 32 \pi  \sum_j (2j+1) \mathfrak{I} (a_j(s)). 
+\end{equation}
+Otherwise large cancellations needed, $a_j(s)$'s are hierarchal. Thus, we could compare the partial wave amplitudes term-by-term 
+\begin{equation}
+	| a_j(s)|^2 \leq \mathfrak{I} (a_j(s)) \;\;\; \Rightarrow \mathfrak{R} (a_j(s))^2+ \mathfrak{I} (a_j(s))^2 \leq \mathfrak{I} (a_j(s))
+\end{equation}
+Rearranging terms, we get
+\begin{equation}
+	\mathfrak{R} (a_j(s)) +\left( \mathfrak{I} (a_j(s))- \frac{1}{2} \right)^2 \leq \frac{1}{4}
+\end{equation}
+The partial wave amplitude has to lie within the unitarity circle. We use though perturbation theory if the  partial wave amplitude respects the inequality
+\begin{equation}
+	\mathfrak{R} (a_j(s)) \leq \frac{1}{2}
+	\label{pwu}
+\end{equation}
+This is known as the perturbative partial wave unitarity bound.  \\
+When~\eqref{pwu} is applied for  $V_L V_L \to V_L V_L$, in the Goldstone boson equivalence theorem regime in particular for $V=W$ boson, we get for the $S$-wave partial amplitude
+\begin{equation}
+	a_0 \sim \frac{m_h^2}{16 \pi  v^2} \left( 2+\mathcal{O} \left(m_h^2/s \right) \right) .
+\end{equation}
+Looking at the asymptotic behaviour as $ s \to \infty$, we obtain the bound
+\begin{equation}
+	\frac{m_h^2}{8 \pi v^2} < {1\over 2}  \Leftrightarrow  m_h \leq 870 \,\GeV.
+\end{equation}
+Indeed this bound is obsolete now after th Higgs mass measurement, however it is very important to demonstrate the power of this technique in constraining Higgs parameters. As this method can be applied to any elastic scattering with the Higgs acts as a mediator like $ZZ\to ZZ$, $WW \to ff$ and constrain the correspong couplings $ g_{ZZh}, g_{f\bar f h}$ and so on. An important bound can be derived by examining the Higgs elastic scattering~$hh \to hh$ shown in $(c)$ of~\autoref{fig:ewdiagrams} in order to set bounds on Higgs self-interactions~$g_{hhh}$ and $g_{hhhh}$. This is what exactly has been done in ref.~\cite{DiLuzio:2017tfn}  where they have found that the $S$-wave partial amplitude for this process is given by
+\beq 
+\label{a0hhtohh}
+a_0= - \frac{1}{2} \frac{\sqrt{s(s-4 m^2_h)}}{16 \pi s} \left[ g_{hhh}^2\left(\frac{1}{s- m_h^2} 
+- 2 \frac{\log\frac{s-3m^2_h}{m^2_h}}{s-4m^2_h} \right) + g_{hhhh} \right] \, ,
+\eeq
+which leads to unitarity bounds on the trilinear~$g_{hhh}$ and the quartic ~$g_{hhhh}$ couplings 
+\beq
+\label{unitaritybounds}
+\abs{g_{hhh} / g^{\rm SM}_{hhh}} \lesssim 6.5 
+\qquad \text{and} \qquad
+\abs{g_{hhhh} / g^{\rm SM}_{hhhh}} \lesssim 65 \, .
+\eeq
+A stringer constrained can be obtained by looking at the one-loop correction to the $hh\to hh$ scattering amplitude, within the full kinematic range.
+% The bound on the trilinear Higgs self-coupling becomes
+%\beq 
+%\label{deltahhhkin}
+%\Delta g_{hhh} (\sqrt{s}, m_h) = - \frac{1}{16 \pi^2} g_{hhh}^3 C_0 (m_h^2, m_h^2, s; m_h, m_h, m_h) \, ,
+%\eeq 
+%where $C_0$ is the scalar three-point one-loop function.
+The unitarity bound here is obtained by looking at the one-loop  amplitude at the threshold, and is given by
+\beq 
+\label{pertboundhhhmax}
+\abs{g_{hhh} / g_{hhh}^{\text{SM}}} \lesssim 6 \, .
+\eeq
+These bounds are, hitherto, the strongest on these two couplings even when compared to the ones coming from current experimental searches. 
+\subsection{Other bounds}
+\par Further theoretical bounds could be obtained by studying quantum effects on the Higgs potential. For example, if we looked at the solution of the renormalisation group equation~(RGE) for the Higgs self-coupling~$\lambda$ with the boundary condition $ \lambda(v)=\lambda_0$ and ignoring other SM particle-contributions
+\begin{equation}
+	\lambda (Q^2) = \frac{\lambda_0}{1-\frac{3}{4 \pi^2} \log {Q^2\over v^2}}
+	\label{eq_lambdarunnung}
+\end{equation}
+We see that the running of $\lambda$ will hit a pole, known as \textbf{Landau pole} when the denominator vanishes. This will happen at the scale
+\begin{equation}
+	Q_{{\rm c}} = v e^{4 \pi^2/3 \lambda_0} =  v e^{4 \pi^2 v^2/3 m_h^2}
+\end{equation}
+This indicates that the theory will break down at scales larger or equal to $ Q_{{\rm c}} $. Since the ``critical scale'' is a function of the Higgs mass, this allows us to set an upper limit on the Higgs mass assuming the SM will be valid up to a certain scale~$ Q_{{\rm c}} $. This bound is known as \textbf{quantum triviality } bound~\cite{Lindner:1985uk}. This is because the low energy behaviour of ~\eqref{eq_lambdarunnung} leads to a vanishing interaction, and if we want the Higgs Lagrangian to bee perturbative for all scales, then $\lambda$ has to be vanishing and the theory becomes non-interacting or \emph{trivial}. 
+\par Another bound coming from the RGE of $\lambda$ is the \textbf{stability bound }, which considers the stability of the Higgs potential given the running of $\lambda$  by requiring that the Higgs potential is an operator bounded from below. This bound is obtained by approximating the solution of the RGE at small $\lambda$ 
+\begin{equation}
+	\lambda(Q^2)\sim \lambda_0 +\frac{1}{16 \pi^2} \left[ - \frac{12m_t^4}{v^4} + \frac{3}{16} \left( 2g_2^4+(g_2^2+g_1^2)^2\right) \right] \log{Q^2\over v^2}
+\end{equation}
+For the Higgs potential to be bounded from below $\lambda(Q^2)$ ought to be $\lambda(Q^2) > 0$. With th relation for $\lambda_0$ in terms of the mass, we get a bound on $m_h$ 
+\begin{equation}
+	m_h^2 > \frac{v^2}{8 \pi^2} \left[ - \frac{12m_t^4}{v^4} + \frac{3}{16} \left( 2g_2^4+(g_2^2+g_1^2)^2\right) \right] \log{Q^2\over v^2}
+\end{equation}
+Which leads to $ m_h \approx 130$\ \GeV \ if we assume that the SM is valid up to the Grand Unified Theory~(GUT) scale of $ \sim 10^{16}$ \ \GeV \ and $ m_h \approx 180$ \GeV \ for $Q$ being at the Planck scale ~$ \sim 10^{19}$ \ \GeV  . 
+\par More sophisticated calculations and discussion for the Higgs potential and vacuum stability has been a subject of great interest in pre and post-Higgs discovery eras cf.~\cite{Lindner:1985uk,Sher:1988mj,Casas:1996aq,Isidori:2001bm} and the most state-of-the-art calculation for the vacuum stability at NNLO has been preformed in ref.~\cite{Degrassi:2012ry} where they also included finite temperature effects to construct a phase diagram in the $m_t-m_h$  and $m_t-\lambda(M_{pl})$ planes as shown in~\autoref{fig:vacuum}.  
+Indicating that the measured Higgs mass in likely compatible with a metastable vacuum rather than absolute stability. This indicates that there is a finite probability for the Higgs vacuum  (false vacuum) to decay into a lower energy state (true vacuum) via quantum tunnelling.
+\begin{figure}[t!]
+	\begin{center}
+		\includegraphics[height=0.32\textwidth]{figures/deadoraliveG2012}
+		\includegraphics[height=0.32\textwidth]{figures/Ath}
+		\caption{Phase diagrams of the Higgs vacuum in the $m_t-m_h$ (left) and  $m_t-\lambda(M_{pl})$ (right) planes showing areas of instability, meta stability and absolute stability. In the  $m_t-\lambda(M_{pl})$ diagram, the allowed range of the Higgs self-coupling $\lambda$ in the Minimal Supersymmetric SM~(MSSM), this plot is taken from ~\cite{Degrassi:2012ry} }
+		\label{fig:vacuum}
+	\end{center}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

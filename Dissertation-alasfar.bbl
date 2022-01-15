@@ -349,13 +349,59 @@ G.~Degrassi, S.~Di~Vita, J.~Elias-Miro, J.~R. Espinosa, G.~F. Giudice,
   (2012) 098}, \href{http://arxiv.org/abs/1205.6497}{{\ttfamily arXiv:1205.6497
   [hep-ph]}}.
 
-\bibitem{Cepeda:2019klc}
-M.~Cepeda {\em et~al.}, ``{Report from Working Group 2}: {Higgs Physics at the
-  HL-LHC and HE-LHC},''
-  \href{http://dx.doi.org/10.23731/CYRM-2019-007.221}{{\em CERN Yellow Rep.
-  Monogr.} {\bfseries 7} (2019) 221--584},
-  \href{http://arxiv.org/abs/1902.00134}{{\ttfamily arXiv:1902.00134
-  [hep-ph]}}.
+\bibitem{ellis2000physics}
+J.~Ellis, ``Physics goals of the next century@ cern,'' in {\em AIP Conference
+  Proceedings}, vol.~542, pp.~267--292, American Institute of Physics.
+\newblock 2000.
+
+\bibitem{cernfacts}
+``{LHC-facts}.''
+\newblock \url{http://www.lhc-facts.ch}.
+
+\bibitem{welt-machine}
+``{Weltmaschine- CERN und LHC}.''
+\newblock \url{https://www.weltmaschine.de/cern_und_lhc/lhc/}.
+
+\bibitem{Bruning:2004ej}
+``{LHC Design Report Vol.1: The LHC Main Ring},''.
+
+\bibitem{lhckomission}
+``{LHC lomg term schedule }.''
+\newblock
+  \url{https://lhc-commissioning.web.cern.ch/schedule/LHC-long-term.htm}.
+
+\bibitem{Apollinari:2015bam}
+``{High-Luminosity Large Hadron Collider (HL-LHC) : Preliminary Design
+  Report},''.
+
+\bibitem{lhcpreformance}
+``{LHC preformance tracking}.''
+\newblock \url{https://bpt.web.cern.ch/lhc/}.
+
+\bibitem{closer}
+``{Taking a look at the LHC}.''
+\newblock
+  \url{https://www.lhc-closer.de/taking_a_closer_look_at_lhc/0.luminosity}.
+
+\bibitem{atlaslumi1}
+``{ATLAS Run 2 luminosity public results }.''
+\newblock
+  \url{https://twiki.cern.ch/twiki/bin/view/AtlasPublic/LuminosityPublicResults}.
+
+\bibitem{cmslumi}
+``{CMS luminosity public results }.''
+\newblock
+  \url{https://twiki.cern.ch/twiki/bin/view/CMSPublic/LumiPublicResults}.
+
+\bibitem{atlaslumi2}
+``{ATLAS Run 2 luminosity public results }.''
+\newblock
+  \url{https://twiki.cern.ch/twiki/bin/view/AtlasPublic/LuminosityPublicResultsRun2}.
+
+\bibitem{Fartoukh:2790409}
+{S. Fartoukh \textit{et al.}}, ``{LHC Configuration and Operational Scenario
+  for Run 3},'' tech. rep., CERN, Geneva, Nov, 2021.
+\newblock \url{https://cds.cern.ch/record/2790409}.
 
 \bibitem{ATLAS:2020qdt}
 {\bfseries ATLAS} Collaboration, ``{A combination of measurements of Higgs

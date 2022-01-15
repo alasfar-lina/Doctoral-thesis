@@ -1,180 +1,49 @@
 %!TEX encoding = UTF-8 Unicode
 % !TeX spellcheck = en_GB
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\chapter{Constraints on the Higgs properties }\label{chap:HiggsConstr}
+\chapter{Experimental measurements of the Higgs boson }\label{chap:HiggsConstr}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-In this chapter, I will discuss some of the bounds on the Higgs sector . Starting from an overview of the theoretical constraints on the Higgs potential, like the quantum triviality and unitarity. Then, the state-of-the-art experimental results on Higgs properties and couplings measurements will be discussed. However, despite many of the Higgs boson properties have been measured with good accuracy, there are still difficult observables in the Higgs sector and some open problems. These will be addressed at the end of this chapter.   
+%In this chapter, I will discuss some of the bounds on the Higgs sector . Starting from an overview of the theoretical constraints on the Higgs potential, like the quantum triviality and unitarity. Then, the state-of-the-art experimental results on Higgs properties and couplings measurements will be discussed. However, despite many of the Higgs boson properties have been measured with good accuracy, there are still difficult observables in the Higgs sector and some open problems. These will be addressed at the end of this chapter.   
 %%
-\section{Theoretical constraints}
- \subsection{Electroweak precision data fits }
-Even prior to the discovery of the Higgs boson at LHC in 2012, many theoretical aspects of the Higgs sector provided marked bounds on the Higgs properties, particularly it mass. For instance, using the EWPO measurements at LEP provided an input for a fit based of radiative effects coming from the Higgs boson to such observables ~\cite{ALEPH:2005ab} as in diagram (a) of ~\autoref{fig:ewdiagrams}, the bounds improved with the improvements of EWPO measurements, these bounds were known as the `` blue band'' plots seen with their progression in~\autoref{fig:buleband}.
-  \begin{figure}[b!]
-  	\begin{center}
-  		\includegraphics[width=.275 \linewidth]{figures/blueband/BlueBand_1996}
-  		\hspace{-0.75 cm}
-  		\includegraphics[width=.275 \linewidth]{figures/blueband/BlueBand_1997}
-  			\hspace{-0.75 cm}
-  		\includegraphics[width=.275 \linewidth]{figures/blueband/BlueBand_2005}
-  			\hspace{-0.75 cm}
-  			\includegraphics[width=.275 \linewidth]{figures/blueband/BlueBand_2012}
-  		\caption{Progression of the ``blue band'' plots with LEP data from 1996 up to 2021 prior to the announcement of the Higgs boson discovery. There plots were taken from~\cite{Erler:2019hds}, based data from LEP~\cite{ALEPH:2005ab} \label{fig:buleband} }
-  	\end{center}
-  \end{figure}
-  \begin{figure}[t!]
-	\begin{center}
-		\includegraphics[width=.7 \linewidth]{figures/theoretical_const}
-		\caption{Diagrams contributing to theoretical bounds on the Higgs, $(a) $ shows an example of radiative corrections to EWPO from the Higgs bosons. The diagrams in $(b)$ show an elastic scattering of EW vector bosons leading to a bound on the Higgs mass from perturbative unitarity, similarly in $(c)$ diagrams for $hh \to hh$ scattering leading to constraints on Higgs self-coupling.}
-		\label{fig:ewdiagrams}
-	\end{center}
-\end{figure}
- \subsection{Partial-wave unitarity}. This process
- Another bound on Higgs mass emerged from studying the amplitudes of EW vector bosons elastic scattering having longitudinal polarisations $V_L V_L \to V_L V_L$ at high energies~$ E \gg m_W$ (see diagrams (b) in~\autoref{fig:ewdiagrams} ), where the Goldstone equivalence theorem holds ~\cite{PhysRevD.42.853}. 
- This bound comes from applying the partial wave perturbative unitarity on the EW boson scattering amplitude. I will derive here this bound starting from the \textbf{Optical theorem}, which a direct result from the unitarity of the $\mathbf S$ matrix.
- \begin{tcolorbox}[title=The optical theorem,
- 	title filled=false,
- 	colback=Mahogany!5!white,
- 	colframe=Mahogany]
- 	Let $\mathcal M_{aa}$ be a covariant matrix element for an elastic  scattering process with for a particle $a$  then the following relation applies
+The observation of the Higgs boson, then the extensive measurement of its properties and couplings has been on the top of the LHC programme priorities~\cite{ellis2000physics}. In the time this thesis was in the writing, the particle physics community will be celebrating a decade since the Higgs boson's discovery. Looking back 10 years ago, when I have witnessed the discovery of the Higgs boson via news press-conference in summer of 2012, and decided to be a part of this enormous step that humanity has taken, 
+I feel astonished by the progress made in understanding this newly discovered particle!  \\ In this chapter, I will start by an overview of the extraordinary LHC and its experiments~in~\autoref{sec:theLHC}. Then, I will review the state-of-the-art status of experimental measurements of the Higgs properties in~\autoref{sec:Higgsprop}, cross-sections  and couplings in ~\autoref{sec:Higgscoupl}, and at the end I will discuss the challenges and outlook for the future runs of the LHC~\autoref{sec:Higgscouplchallenge}, of which the of the rest of this thesis is going to be aim address a small part of them.
+\section{Overview of the Large Hadron Collider \label{sec:theLHC}}
+\par The Large Hadron Collider~(LHC) is the largest particle accelerator in the CERN accelerators complex, with a circumference of about 26 \si{\kilo\metre},with over 9590 superconducting magnets cooled to 1.9 \si{\kelvin}. It was built as an upgrade to the  Large electron positron collider~(LEP) which ended its operation in the year 2000. The LHC contains four main experiments situated at the four beam collision points and detectors, and these experiments are: ATLAS, CMS, LHCb and ALICE, there also smaller experiments such as LHCf, MilliQan,TOTEM and others. For more details about the LHC cf.~\cite{cernfacts,welt-machine} or see the LHC technical design report~\cite{Bruning:2004ej} for more technical details.\\   The LHC started operation in September of 2008, with low energy proton beams, then gradually increased to an energy of 3.5 \TeV\ per proton to reach a centre of mass energy~$\sqrt{s}$ of 7 \TeV, and data-taking period started from 2011 . By 2012, its energy has increased to $\sqrt{s}= 8\ \TeV$ and operated at this energy for about year and half, then stopping in mid 2013 concluding what is known as \textbf{Run-I}. In 2015, the \textbf{Run-II} started with almost double the energy $\sqrt{s}= 13\ \TeV$, and lasted for ca. 3 years. As this thesis being written, preparations are being made to get \textbf{Run-III} started until 2024. During these runs, heavier nuclei such as $\prescript{207}{}{\mathbf{Pb}}$ and $\prescript{131}{}{\mathbf{Xe}}$ have been collided either with protons or with themselves~\cite{lhckomission}.  \\  From, 2025 and beyond, the High-Luminosity LHC~(HL-LHC) era will commence, see~\autoref{fig:lhcplan}.   Where the LHC will be shutdown for extensive upgrades ~\cite{Apollinari:2015bam} to potentially increase its energy to  $\sqrt{s}= 14\ \TeV$ and higher collision rates hence the term \emph{high luminosity}. Which leads us to an important notion in particle physics phenomenology ~\emph{integrated luminosity}.\\
+\par The performance of colliders depends on many factors, but for phenomenological studies, like this thesis, one mainly considers the centre of mass energy $\sqrt{s}$ and the integrated luminosity~$\mathscr{L}$.
+This is mainly due to the fact that particle colliders experiments are basically ``counting experiments'', and all of the bounds on physical observables or model parameters are obtained from the number of signal versus background events, and the number of expected events~$N_{expec}$ for a given resonance $R$ and a subsequent decay final state $X$ at any collider experiments is given by
 \begin{equation}
-	\sum_{f}  \int d\Phi_n(p_a,p_i^f)| \mathcal M_{af}|^2 = 2 \mathfrak{I}( \mathcal M_{aa}),
-	\label{opt}
+	N_{expec} = \sigma(pp\to R) \, \mathcal B(R \to X)\,\mathscr{L}  \, \epsilon_{\mathrm{SEL}}.
 \end{equation}
-where the sum is over all intermediate sates $n$-particle states $f$ with momenta $p_i^f$ and $d\Phi_n(p_a,p_i^f)$ is the $n$-particle phase space.
- \end{tcolorbox}
-If we only consider a $2 \to 2$ process with momentum states. $\ket{p_1,p_2} \to \ket{k_1,k_2}$, then~\eqref{opt}, after expanding the $2$-particle phase space ,
- simplifies to 
-\begin{align}
-	&\int  \frac{d^3k_1}{(2 \pi)^3\,2E_1} \int  \frac{d^3k_2}{(2 \pi)^3\,2E_2} (2 \pi)^4 \delta^4(p_1+p_2-k_1-k_2)\,| \mathcal M (s,t)|^2 ,\nonumber \\
-	&= \frac{1}{16 \pi} \int_{-1}^{1} d(\cos \theta) | \mathcal M (s,t)|^2.
-\end{align}
-
-
-Where $d\Phi_n(p_a,p_i^f)$ is the $n$-particle phase space, for the $2\to2$ case, the equality is substituted by $\leq$. \\ From now one, we shall only consider the $2\to2$ case  ($\ket{p_1,p_2} \to \ket{k_1,k_2}$) in which we could simplify the phase space further, rewriting the LHS of \eqref{opt} as
-\begin{align}
-	&\int  \frac{d^3k_1}{(2 \pi)^3\,2E_1} \int  \frac{d^3k_2}{(2 \pi)^3\,2E_2} (2 \pi)^4 \delta^4(p_1+p_2-k_1-k_2)\,| \mathcal M (s,t)|^2 ,\nonumber \\
-	&= \frac{1}{16 \pi} \int_{-1}^{1} d(\cos \theta) | \mathcal M (s,t)|^2,
-\end{align}
-with the Mandelstam variables 
-\begin{align}
-          s = &k_1+k_2 \nn \\
-          t =& k_1-p_1 \nn \\
-          u=& k_1-p_2 \\
-          s+t+&u = 4 m^2 \nn
-\end{align}
-Recall that the relation between the Mandelstam variable $t$, and the scattering angle for the elastic scattering is given by
+Here $ \epsilon_{\mathrm{SEL}}$ is the selection efficiency, which depends on many factors like the detector geometry and particle identification performance etc. , as well as the signal one searches for, it can be improved by better detected or selection cuts. The production cross-section increases typically with quadratically with $\sqrt {s}$, hence comes the need for higher energies but this can only achieved by building new colliders from scratch. The integrated luminosity can be increased much more easily, by longer running time of the same collider as it is the time integral of the collider's luminosity $L(t)$ over its operation time $T$
 \begin{equation}
-	t = \frac{1}{2} (s-4 m^2)(\cos \theta-1)
+\mathscr{L} = \int^{T} L(t) .
 \end{equation}
-We could expand the matrix element $\mathcal M (s,t)$ in terms of \emph{partial waves}, isolating $s$ from scattering angle dependence
-\begin{equation}
-	\mathcal M (s,t) = 16 \pi \sum_j (2j+1)a_j P_j(\cos \theta).
-\end{equation}
-Where $a_j $ are called the $j$th partial wave amplitude, and  $P_j(\cos \theta)$ are the Legendre polynomials 
-\begin{equation}
-	P_j(z) = \frac{1}{j!}\frac{1}{2^j} {d^j\over dz^j} (z^2-1)^j
-\end{equation}
-Which satisfies the orthonormality condition
-\begin{subequations}
-	\begin{align}
-		\int_{-1}^{1} dz \,P_j(z) P_k(z) &= \frac{1}{2j+1} \delta_{jk} \\
-		P_j(1) &= 1 \,\,\, \forall j.
-	\end{align}
-\end{subequations}
-We hence get for the LHS of \eqref{opt} scattering 
-\begin{align}
-	&\int  \frac{d^3k_1}{(2 \pi)^3\,2E_1} \int  \frac{d^3k_2}{(2 \pi)^3\,2E_2} (2 \pi)^4 \delta^4(p_1+p_2-k_1-k_2)\,| \mathcal M (s,t)|^2 ,\nonumber \\
-	&= \frac{1}{16 \pi} \int_{-1}^{1} d(\cos \theta) \left[ 16 \pi \sum_j (2j+1) a_j(s) P_j(\cos \theta)\right] \times \nonumber\\ & \qquad \left[ 16 \pi \sum_k (2k+1) a_k^*(s) P_k(\cos \theta)\right], \nonumber \\
-	&\Rightarrow \; = 32 \pi \sum_j (2j+1)| a_j(s)|^2.
-\end{align}
-And the RHS of \eqref{opt}
-\begin{equation}
-	2 \mathfrak{I}( \mathcal M_{aa}) = \underbrace{2 \mathfrak{I}( \mathcal M(s,0))}_{\color{Mahogany}\text{$t$ is integrated out.}} = 32 \pi  \sum_j (2j+1) \mathfrak{I} (a_j(s)). 
-\end{equation}
-Otherwise large cancellations needed, $a_j(s)$'s are hierarchal. Thus, we could compare the partial wave amplitudes term-by-term 
-
-\begin{equation}
-	| a_j(s)|^2 \leq \mathfrak{I} (a_j(s)) \;\;\; \Rightarrow \mathfrak{R} (a_j(s))^2+ \mathfrak{I} (a_j(s))^2 \leq \mathfrak{I} (a_j(s))
-\end{equation}
-Rearranging terms, we get
-\begin{equation}
-	\mathfrak{R} (a_j(s)) +\left( \mathfrak{I} (a_j(s))- \frac{1}{2} \right)^2 \leq \frac{1}{4}
-\end{equation}
-The partial wave amplitude has to lie within the unitarity circle. We use though perturbation theory if the  partial wave amplitude respects the inequality
-\begin{equation}
-	\mathfrak{R} (a_j(s)) \leq \frac{1}{2}
-	\label{pwu}
-\end{equation}
-This is known as the perturbative partial wave unitarity bound.  \\
-When~\eqref{pwu} is applied for  $V_L V_L \to V_L V_L$, in the Goldstone boson equivalence theorem regime in particular for $V=W$ boson, we get for the $S$-wave partial amplitude
-\begin{equation}
-a_0 \sim \frac{m_h^2}{16 \pi  v^2} \left( 2+\mathcal{O} \left(m_h^2/s \right) \right) .
-\end{equation}
-Looking at the asymptotic behaviour as $ s \to \infty$, we obtain the bound
-\begin{equation}
-	\frac{m_h^2}{8 \pi v^2} < {1\over 2}  \Leftrightarrow  m_h \leq 870 \,\GeV.
-\end{equation}
-Indeed this bound is obsolete now after th Higgs mass measurement, however it is very important to demonstrate the power of this technique in constraining Higgs parameters. As this method can be applied to any elastic scattering with the Higgs acts as a mediator like $ZZ\to ZZ$, $WW \to ff$ and constrain the correspong couplings $ g_{ZZh}, g_{f\bar f h}$ and so on. An important bound can be derived by examining the Higgs elastic scattering~$hh \to hh$ shown in $(c)$ of~\autoref{fig:ewdiagrams} in order to set bounds on Higgs self-interactions~$g_{hhh}$ and $g_{hhhh}$. This is what exactly has been done in ref.~\cite{DiLuzio:2017tfn}  where they have found that the $S$-wave partial amplitude for this process is given by
-\beq 
-\label{a0hhtohh}
-a_0= - \frac{1}{2} \frac{\sqrt{s(s-4 m^2_h)}}{16 \pi s} \left[ g_{hhh}^2\left(\frac{1}{s- m_h^2} 
-- 2 \frac{\log\frac{s-3m^2_h}{m^2_h}}{s-4m^2_h} \right) + g_{hhhh} \right] \, ,
-\eeq
-which leads to unitarity bounds on the trilinear~$g_{hhh}$ and the quartic ~$g_{hhhh}$ couplings 
-\beq
-\label{unitaritybounds}
-\abs{g_{hhh} / g^{\rm SM}_{hhh}} \lesssim 6.5 
-\qquad \text{and} \qquad
-\abs{g_{hhhh} / g^{\rm SM}_{hhhh}} \lesssim 65 \, .
-\eeq
-A stringer constrained can be obtained by looking at the one-loop correction to the $hh\to hh$ scattering amplitude, within the full kinematic range.
-% The bound on the trilinear Higgs self-coupling becomes
-%\beq 
-%\label{deltahhhkin}
-%\Delta g_{hhh} (\sqrt{s}, m_h) = - \frac{1}{16 \pi^2} g_{hhh}^3 C_0 (m_h^2, m_h^2, s; m_h, m_h, m_h) \, ,
-%\eeq 
-%where $C_0$ is the scalar three-point one-loop function.
- The unitarity bound here is obtained by looking at the one-loop  amplitude at the threshold, and is given by
-\beq 
-\label{pertboundhhhmax}
-\abs{g_{hhh} / g_{hhh}^{\text{SM}}} \lesssim 6 \, .
-\eeq
-These bounds are, hitherto, the strongest on these two couplings even when compared to the ones coming from current experimental searches. 
-\subsection{Other bounds}
-\par Further theoretical bounds could be obtained by studying quantum effects on the Higgs potential. For example, if we looked at the solution of the renormalisation group equation~(RGE) for the Higgs self-coupling~$\lambda$ with the boundary condition $ \lambda(v)=\lambda_0$ and ignoring other SM particle-contributions
-\begin{equation}
-  \lambda (Q^2) = \frac{\lambda_0}{1-\frac{3}{4 \pi^2} \log {Q^2\over v^2}}
-  \label{eq_lambdarunnung}
-\end{equation}
-We see that the running of $\lambda$ will hit a pole, known as \textbf{Landau pole} when the denominator vanishes. This will happen at the scale
-\begin{equation}
-	Q_{{\rm c}} = v e^{4 \pi^2/3 \lambda_0} =  v e^{4 \pi^2 v^2/3 m_h^2}
-\end{equation}
-This indicates that the theory will break down at scales larger or equal to $ Q_{{\rm c}} $. Since the ``critical scale'' is a function of the Higgs mass, this allows us to set an upper limit on the Higgs mass assuming the SM will be valid up to a certain scale~$ Q_{{\rm c}} $. This bound is known as \textbf{quantum triviality } bound~\cite{Lindner:1985uk}. This is because the low energy behaviour of ~\eqref{eq_lambdarunnung} leads to a vanishing interaction, and if we want the Higgs Lagrangian to bee perturbative for all scales, then $\lambda$ has to be vanishing and the theory becomes non-interacting or \emph{trivial}. 
-\par Another bound coming from the RGE of $\lambda$ is the \textbf{stability bound }, which considers the stability of the Higgs potential given the running of $\lambda$  by requiring that the Higgs potential is an operator bounded from below. This bound is obtained by approximating the solution of the RGE at small $\lambda$ 
-\begin{equation}
-\lambda(Q^2)\sim \lambda_0 +\frac{1}{16 \pi^2} \left[ - \frac{12m_t^4}{v^4} + \frac{3}{16} \left( 2g_2^4+(g_2^2+g_1^2)^2\right) \right] \log{Q^2\over v^2}
-\end{equation}
-For the Higgs potential to be bounded from below $\lambda(Q^2)$ ought to be $\lambda(Q^2) > 0$. With th relation for $\lambda_0$ in terms of the mass, we get a bound on $m_h$ 
-\begin{equation}
-m_h^2 > \frac{v^2}{8 \pi^2} \left[ - \frac{12m_t^4}{v^4} + \frac{3}{16} \left( 2g_2^4+(g_2^2+g_1^2)^2\right) \right] \log{Q^2\over v^2}
-\end{equation}
-Which leads to $ m_h \approx 130$\ \GeV \ if we assume that the SM is valid up to the Grand Unified Theory~(GUT) scale of $ \sim 10^{16}$ \ \GeV \ and $ m_h \approx 180$ \GeV \ for $Q$ being at the Planck scale ~$ \sim 10^{19}$ \ \GeV  . 
-\par More sophisticated calculations and discussion for the Higgs potential and vacuum stability has been a subject of great interest in pre and post-Higgs discovery eras cf.~\cite{Lindner:1985uk,Sher:1988mj,Casas:1996aq,Isidori:2001bm} and the most state-of-the-art calculation for the vacuum stability at NNLO has been preformed in ref.~\cite{Degrassi:2012ry} where they also included finite temperature effects to construct a phase diagram in the $m_t-m_h$  and $m_t-\lambda(M_{pl})$ planes as shown in
-Indicating that the measured Higgs mass in likely compatible with a metastable vacuum rather than absolute stability. This indicates that there is a finite probability for the Higgs vacuum  (false vacuum) to decay into a lower energy state (true vacuum) via quantum tunnelling.
-   \begin{figure}[t!]
- 	\begin{center}
- 		\includegraphics[width=.46 \linewidth]{figures/SMht}
- 		\includegraphics[width=.46 \linewidth]{figures/Ath}
- 		\caption{.}
- 		\label{fig:vacuum}
- 	\end{center}
- \end{figure}
-%%%%%% HERE
-\section{Experimental measurements in the Higgs sector}
-We also provide in this appendix the experimental measurements of the signal strengths at the LHC Run II and the CMS projections for the HL-LHC (scenario S2, see \cite{Cepeda:2019klc}) that we used in the fits in this paper. These inputs are summarised in table~\ref{table:resHiggsExp}.
+Therefore, we see that the integrated luminosity for the LHC experiments will increase over time, when more collisions taking place, as seen in figure~\autoref{fig:lumi} showing the integrated luminosity for ATLAS and CMS experiments. 
 \begin{figure}[t!]
 	\begin{center}
-		\includegraphics[width=8cm]{figures/kaappa_higgs}
+		\includegraphics[width=8cm]{figures/lhc_lumi}
+		\caption{The integrated luminosity of the CMS and ATLAS experiments combined over the period from 2011-2018, source~\cite{lhcpreformance}.  \label{fig:lumi} }
+	\end{center}
+\end{figure}
+As thee protons travel in the LHC in \textbf{bunches}, and as these bunches cross, protons collide at a certain frequency $f$,  when two bunches with $N_1$ and $N_2$ protons per bunch, respectively. Each bunch will have an effective cross-section~$4 \pi \sigma_i$ corresponding to their physical sizes $\sigma \sim \SI{16}{\micro \meter}$, the luminosity is therefore given -approximately- by 
+\begin{equation}
+	L = \frac{f N_1 N_2}{4 \pi  \sigma_1 \sigma_2},
+\end{equation}
+which is for the LHC averages to about $ 10^{34}$ collisions \si{\per \centi\metre\squared \per \second}~\cite{closer,lhcpreformance}.  \\ The total physics-viable $pp$-collisions  integrated luminosity for Run-I was \SI{4.57}{\per \femtobarn} for \SI{7}{\tera\electronvolt} and \SI{20.3}{\per \femtobarn} for \SI{8}{\tera\electronvolt} (ATLAS~\cite{atlaslumi1}) and  \SI{5.55}{\per \femtobarn} at \SI{7}{\tera\electronvolt} and \SI{21.8}{\per \femtobarn} at \SI{8}{\tera\electronvolt} (CMS ~\cite{cmslumi}). As for Run-II the integrated luminosity is \SI{139}{\per \femtobarn} at \SI{13}{\tera\electronvolt } (ATLAS~\cite{atlaslumi2})  and \SI{137}{\per \femtobarn} at \SI{13}{\tera\electronvolt } (CMS ~\cite{cmslumi}). The expected integrated luminosity by the end of Run-III is  \SI{300}{\per \femtobarn}~\cite{Fartoukh:2790409} and \SI{3000}{\per \femtobarn} by the end of the HL-LHC at energy of \SI{14}{\tera\electronvolt }~\cite{Apollinari:2015bam}. 
+\begin{sidewaysfigure}[ht]
+	\centering
+		\includegraphics[width=\textwidth]{figures/HL-LHC-plan-2021-1}
+	\caption{ A timeline of the LHC operation showing Run-I, Run-II and future planned runs of the LHC, including the HL-LHC, source~~\cite{lhckomission}. 
+	}
+\label{fig:lhcplan}
+\end{sidewaysfigure}
+\FloatBarrier
+\section{Measurements of Higgs properties \label{sec:Higgsprop} }
+
+\section{Measurements of Higgs rates and couplings \label{sec:Higgscoupl} }
+\begin{figure}[t!]
+	\begin{center}
+		\includegraphics[width=12cm]{figures/Higgs_couplings_poster}
 		\caption{ff.\label{fig:higgs_kappa} }
 	\end{center}
 \end{figure}
@@ -182,3 +51,5 @@ We also provide in this appendix the experimental measurements of the signal str
 \begingroup
 \input{fitobservables} 
 \endgroup
+\section{Challenges and outlook \label{sec:Higgscouplchallenge} }
+%We also provide in this appendix the experimental measurements of the signal strengths at the LHC Run II and the CMS projections for the HL-LHC (scenario S2, see \cite{Cepeda:2019klc}) that we used in the fits in this paper. These inputs are summarised in table~\ref{table:resHiggsExp}.

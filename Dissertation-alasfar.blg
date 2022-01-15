@@ -11,10 +11,6 @@ I was expecting a `,' or a `}'---line 539 of file bibliography.bib
  :  title        
  :               = {Breaking of isospin symmetry in theories with a dynamical Higgs mechanism},
 I'm skipping whatever remains of this entry
-Repeated entry---line 1433 of file bibliography.bib
- : @article{Cepeda:2019klc
- :                        ,
-I'm skipping whatever remains of this entry
 Repeated entry---line 2095 of file bibliography.bib
  : @article{DiLuzio:2017tfn
  :                         ,
@@ -57,14 +53,6 @@ Repeated entry---line 4641 of file bibliography.bib
  : @techreport{CMS-PAS-FTR-18-011
  :                               ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 4802 of file bibliography.bib
- : @article{Cepeda:2019klc
- :                        ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 5019 of file bibliography.bib
- : @inbook{Cepeda:2019klc
- :                       ,
-I'm skipping whatever remains of this entry
 Repeated entry---line 5515 of file bibliography.bib
  : @article{ATLAS:2020qdt
  :                       ,
@@ -105,9 +93,28 @@ Repeated entry---line 10106 of file bibliography.bib
  : @article{Erler:2019hds
  :                       ,
 I'm skipping whatever remains of this entry
+Warning--entry type for "cernfacts" isn't style-file defined
+--line 10216 of file bibliography.bib
+Warning--entry type for "welt-machine" isn't style-file defined
+--line 10220 of file bibliography.bib
+Warning--entry type for "lhckomission" isn't style-file defined
+--line 10232 of file bibliography.bib
+Warning--entry type for "closer" isn't style-file defined
+--line 10236 of file bibliography.bib
+Warning--entry type for "lhcpreformance" isn't style-file defined
+--line 10240 of file bibliography.bib
+Warning--entry type for "atlaslumi2" isn't style-file defined
+--line 10244 of file bibliography.bib
+Warning--entry type for "atlaslumi1" isn't style-file defined
+--line 10248 of file bibliography.bib
+Warning--entry type for "cmslumi" isn't style-file defined
+--line 10252 of file bibliography.bib
 Warning--I didn't find a database entry for ""
 Warning--there's a number but no series in minlos2000introduction
 Warning--empty booktitle in Freed1993LecturesOT
+Warning--can't use both volume and number fields in ellis2000physics
+Warning--empty author in Bruning:2004ej
+Warning--empty author in Apollinari:2015bam
 Warning--empty author in ATLAS:2020qdt
 Warning--empty institution in ATLAS:2020qdt
 Warning--empty author in CMS-PAS-FTR-18-011
@@ -115,36 +122,36 @@ Warning--empty author in CMS:2020gsy
 Warning--empty institution in CMS:2020gsy
 Warning--empty author in CMS:2021ixs
 Warning--empty institution in CMS:2021ixs
-You've used 70 entries,
+You've used 81 entries,
             2328 wiz_defined-function locations,
-            1150 strings with 18289 characters,
-and the built_in function-call counts, 22506 in all, are:
-= -- 2393
-> -- 580
+            1188 strings with 19386 characters,
+and the built_in function-call counts, 23977 in all, are:
+= -- 2570
+> -- 590
 < -- 3
-+ -- 223
++ -- 234
 - -- 153
-* -- 2216
-:= -- 2620
-add.period$ -- 107
-call.type$ -- 70
-change.case$ -- 100
+* -- 2253
+:= -- 2761
+add.period$ -- 120
+call.type$ -- 81
+change.case$ -- 114
 chr.to.int$ -- 0
-cite$ -- 79
-duplicate$ -- 1151
-empty$ -- 2247
+cite$ -- 93
+duplicate$ -- 1230
+empty$ -- 2485
 format.name$ -- 153
-if$ -- 5777
+if$ -- 6212
 int.to.chr$ -- 0
-int.to.str$ -- 70
-missing$ -- 248
-newline$ -- 224
-num.names$ -- 66
-pop$ -- 320
+int.to.str$ -- 81
+missing$ -- 251
+newline$ -- 267
+num.names$ -- 67
+pop$ -- 395
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 811
+skip$ -- 872
 stack$ -- 0
 substring$ -- 1461
 swap$ -- 557
@@ -152,8 +159,8 @@ text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 9
-while$ -- 212
-width$ -- 72
-write$ -- 580
-(There were 24 error messages)
+warning$ -- 12
+while$ -- 213
+width$ -- 83
+write$ -- 662
+(There were 21 error messages)
