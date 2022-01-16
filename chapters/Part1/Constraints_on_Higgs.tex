@@ -8,7 +8,7 @@
 The observation of the Higgs boson, then the extensive measurement of its properties and couplings has been on the top of the LHC programme priorities~\cite{ellis2000physics}. In the time this thesis was in the writing, the particle physics community will be celebrating a decade since the Higgs boson's discovery. Looking back 10 years ago, when I have witnessed the discovery of the Higgs boson via news press-conference in summer of 2012, and decided to be a part of this enormous step that humanity has taken, 
 I feel astonished by the progress made in understanding this newly discovered particle!  \\ In this chapter, I will start by an overview of the extraordinary LHC and its experiments~in~\autoref{sec:theLHC}. Then, I will review the state-of-the-art status of experimental measurements of the Higgs properties in~\autoref{sec:Higgsprop}, cross-sections  and couplings in ~\autoref{sec:Higgscoupl}, and at the end I will discuss the challenges and outlook for the future runs of the LHC~\autoref{sec:Higgscouplchallenge}, of which the of the rest of this thesis is going to be aim address a small part of them.
 \section{Overview of the Large Hadron Collider \label{sec:theLHC}}
-\par The Large Hadron Collider~(LHC) is the largest particle accelerator in the CERN accelerators complex, with a circumference of about 26 \si{\kilo\metre},with over 9590 superconducting magnets cooled to 1.9 \si{\kelvin}. It was built as an upgrade to the  Large electron positron collider~(LEP) which ended its operation in the year 2000. The LHC contains four main experiments situated at the four beam collision points and detectors, and these experiments are: ATLAS, CMS, LHCb and ALICE, there also smaller experiments such as LHCf, MilliQan,TOTEM and others. For more details about the LHC cf.~\cite{cernfacts,welt-machine} or see the LHC technical design report~\cite{Bruning:2004ej} for more technical details.\\   The LHC started operation in September of 2008, with low energy proton beams, then gradually increased to an energy of 3.5 \TeV\ per proton to reach a centre of mass energy~$\sqrt{s}$ of 7 \TeV, and data-taking period started from 2011 . By 2012, its energy has increased to $\sqrt{s}= 8\ \TeV$ and operated at this energy for about year and half, then stopping in mid 2013 concluding what is known as \textbf{Run-I}. In 2015, the \textbf{Run-II} started with almost double the energy $\sqrt{s}= 13\ \TeV$, and lasted for ca. 3 years. As this thesis being written, preparations are being made to get \textbf{Run-III} started until 2024. During these runs, heavier nuclei such as $\prescript{207}{}{\mathbf{Pb}}$ and $\prescript{131}{}{\mathbf{Xe}}$ have been collided either with protons or with themselves~\cite{lhckomission}.  \\  From, 2025 and beyond, the High-Luminosity LHC~(HL-LHC) era will commence, see~\autoref{fig:lhcplan}.   Where the LHC will be shutdown for extensive upgrades ~\cite{Apollinari:2015bam} to potentially increase its energy to  $\sqrt{s}= 14\ \TeV$ and higher collision rates hence the term \emph{high luminosity}. Which leads us to an important notion in particle physics phenomenology ~\emph{integrated luminosity}.\\
+\par The Large Hadron Collider~(LHC) is the largest particle accelerator in the CERN accelerators complex, with a circumference of about 26 \si{\kilo\metre},with over 9590 superconducting magnets cooled to 1.9 \si{\kelvin}. It was built as an upgrade to the  Large electron positron collider~(LEP) which ended its operation in the year 2000. The LHC contains four main experiments situated at the four beam collision points and detectors, and these experiments are: ATLAS, CMS, LHCb and ALICE, there also smaller experiments such as LHCf, MilliQan,TOTEM and others. For more details about the LHC cf.~\cite{cernfacts,welt-machine} or see the LHC technical design report~\cite{Bruning:2004ej} for more technical details.\\   The LHC started operation in September of 2008, with low energy proton beams, then gradually increased to an energy of 3.5 \TeV\ per proton to reach a centre of mass energy~$\sqrt{s}$ of 7 \TeV, and data-taking period started from 2011 . By 2012, its energy has increased to $\sqrt{s}= 8\ \TeV$ and operated at this energy for about year and half, then stopping in mid 2013 concluding what is known as \textbf{Run-I}. In 2015, the \textbf{Run-II} started with almost double the energy $\sqrt{s}= 13\ \TeV$, and lasted for ca. 3 years. As this thesis being written, preparations are being made to get \textbf{Run-III} started until 2024. During these runs, heavier nuclei such as $\prescript{207}{}{\mathbf{Pb}}$ and $\prescript{131}{}{\mathbf{Xe}}$ have been collided either with protons or with themselves~\cite{lhckomission}.  \\  From, 2025 and beyond, the \textbf{High-Luminosity} LHC~(HL-LHC) era will commence, see~\autoref{fig:lhcplan}.   Where the LHC will be shutdown for extensive upgrades ~\cite{Apollinari:2015bam} to potentially increase its energy to  $\sqrt{s}= 14\ \TeV$ and higher collision rates hence the term \emph{high luminosity}. Which leads us to an important notion in particle physics phenomenology ~\emph{integrated luminosity}.\\
 \par The performance of colliders depends on many factors, but for phenomenological studies, like this thesis, one mainly considers the centre of mass energy $\sqrt{s}$ and the integrated luminosity~$\mathscr{L}$.
 This is mainly due to the fact that particle colliders experiments are basically ``counting experiments'', and all of the bounds on physical observables or model parameters are obtained from the number of signal versus background events, and the number of expected events~$N_{expec}$ for a given resonance $R$ and a subsequent decay final state $X$ at any collider experiments is given by
 \begin{equation}
@@ -38,13 +38,48 @@ which is for the LHC averages to about $ 10^{34}$ collisions \si{\per \centi\met
 \label{fig:lhcplan}
 \end{sidewaysfigure}
 \FloatBarrier
-\section{Measurements of Higgs properties \label{sec:Higgsprop} }
-
+\section{Higgs properties \label{sec:Higgsprop} }
+\subsection{Higgs boson mass measurements}
+In order to measure the mass of thee Higgs boson with high precision, one need to consider final states that can be reconstructed with high momentum and mass resolution, this is typically achieved when no hadronic constituents in the decays involved, such as  $ h \to \gamma \gamma$ and $ h \to Z Z^*\to 4 \ell$. Reconstructing the invariant mass distributions $m_{\gamma \gamma}$ and $m_{4\ell}$ one observes that the Higgs peak is narrow over a relatively smooth background, see~\autoref{fig:higgs_mass}, which is ideal for the measurement of the Higgs mass. It should be noted that the width of the resonance is due to the detector resolution and does not correspond to the actual Higgs width.\\
+\begin{figure}[t!]
+	\begin{center}
+		\includegraphics[width=0.45\textwidth]{figures/Higgs_results/CMS-HIG-19-004_Figure_005-b}
+		\includegraphics[width=0.45\textwidth]{figures/Higgs_results/dataAll_H4l_m4l_pdf_constrained} 
+		\caption{The invariant mass distributions of diphoton~$m_{\gamma \gamma}$ (CMS~\cite{CMS:2020xrn}) and four lepton $m_{4 \ell}$ (ATLAS~\cite{ATLAS:2018tdk}) final states showing a clear peak at the Higgs mass, with smooth background. These final states are ideal for Higgs mass measurements. \label{fig:higgs_mass} }
+	\end{center}
+\end{figure}
+There have been consistent improvements of the Higgs mass measurements since its discovery. In~\autoref{fig:meta_mass} I have preformed a meta analysis on ATLAS and CMS measurements of the Higgs mass in Run-I and Run-II of the LHC for both diphoton and $ZZ^*$ final states based on the data from the studies~\cite{ATLAS:2015yey,ATLAS:2018tdk,CMS:2017dib,CMS:2020xrn} using a random effects model~\cite{aronow_miller_2019}. The pooling of the studies yielded a mass measurement of $ m_h = 125.21 \pm 0.10$, which translates to a $0.11\%$ accuracy, the heterogeneity off the studies was found to be $I^2 =49\%$ ($p=0.05$) . Different measurements combination techniques were used in ~\cite{CMS:2020xrn} and ~\cite{Zyla:2020zbs} yielded different central values but all of the results agree within the uncertainties. 
+\begin{figure}[h!]
+	\begin{center}
+\includegraphics[width=1.\textwidth]{figures/foreest_pllot_higgs_mass}
+		\caption{A meta analysis preformed to combine all the measurements of the Higgs mass from Run-I and Run-II, the combined result was obtained from pooling all of the studies using the random effects model method.\label{fig:meta_mass} }
+	\end{center}
+\end{figure}
+\subsection{Higgs full width}
+The SM values of the Higgs boson full width is ~$\Gamma_h=4.1$ \GeV\, and it can be accessed in the LHC by looking at the ratio of on-shell versus off-shell Higgs production and decay to the $ZZ^{(*)}$ state, and $ZZ^{(*)}\to 4 \ell, 2 \ell 2 \nu$, namely
+\begin{equation}
+\frac{\sigma(gg \to h\to Z Z^*)}{\sigma(gg \to h^*\to Z Z)} = \kappa_g^2 \kappa_Z^2 \frac{4 m_Z^2}{m_h \Gamma_h},
+\label{widthform}
+\end{equation}
+where the $\kappa$ here denote the ratio between the measured/ or modified coupling with the Higgs and the SM prediction, i.e.
+\begin{equation}
+\kappa_X := \frac{g_{XX h}}{g_{XXh}^{\SM}}.
+\label{kappa}
+\end{equation}
+Which is commonly used in reporting experimental constrains/ measurements of the Higgs couplings, as in the next section~\autoref{sec:Higgscoupl}. We shall discuss the $\kappa$ formalism more in~\autoref{chap:HiggsEFT}. \\ We see from~\eqref{widthform} that if one fixes the coupling between the gluons and the $Z$ boson and the Higgs it is possible to access the full width directly.  Unfortunately, it is not possible to directly measure the Higgs full width at the LHC, as this requires full reconstruction of the collision event and study the recoil mass which is only possible at lepton colliders~\cite{DeBlas:2019qco,Banerjee:2021huv}. 
+Alas, it is still possible to extract bounds on $\Gamma_h$ using ~\eqref{widthform}. ATLAS used this method to constrain the full width of the Higgs using Run-II data~\cite{ATLAS:2018jym}, while CMS has preformed the same analysis using Run-I and Run-II data combined~\cite{CMS:2019ekd}, the results are 95\% CL bounds of $\Gamma_h$
+\begin{align}
+\Gamma_h &< \SI{14.4}{\giga\electronvolt} \,\,\,\, (\text{ATLAS}) & \SI{0.08}{\giga\electronvolt} <&\Gamma_h < \SI{9.16}{\giga\electronvolt}  \,\,\,\, (\text{CMS}),
+\end{align}
+with the combined bound being  $\sim 3 \Gamma_h^{\SM}$. 
 \section{Measurements of Higgs rates and couplings \label{sec:Higgscoupl} }
+
+\subsection{Anomalous couplings  }
+to measure $HVV$ CMS used the same data for extraction of the $\Gamma_h$ to study this~\cite{CMS:2019ekd}
 \begin{figure}[t!]
 	\begin{center}
 		\includegraphics[width=12cm]{figures/Higgs_couplings_poster}
-		\caption{ff.\label{fig:higgs_kappa} }
+		\caption{ddd  \label{fig:higgs_kappa}}
 	\end{center}
 \end{figure}
 \newpage

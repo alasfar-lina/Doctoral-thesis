@@ -403,6 +403,78 @@ J.~Ellis, ``Physics goals of the next century@ cern,'' in {\em AIP Conference
   for Run 3},'' tech. rep., CERN, Geneva, Nov, 2021.
 \newblock \url{https://cds.cern.ch/record/2790409}.
 
+\bibitem{CMS:2020xrn}
+{\bfseries CMS} Collaboration, A.~M. Sirunyan {\em et~al.}, ``{A measurement of
+  the Higgs boson mass in the diphoton decay channel},''
+  \href{http://dx.doi.org/10.1016/j.physletb.2020.135425}{{\em Phys. Lett. B}
+  {\bfseries 805} (2020) 135425},
+  \href{http://arxiv.org/abs/2002.06398}{{\ttfamily arXiv:2002.06398
+  [hep-ex]}}.
+
+\bibitem{ATLAS:2018tdk}
+{\bfseries ATLAS} Collaboration, M.~Aaboud {\em et~al.}, ``{Measurement of the
+  Higgs boson mass in the $H\rightarrow ZZ^* \rightarrow 4\ell$ and $H
+  \rightarrow \gamma\gamma$ channels with $\sqrt{s}=13$ TeV $pp$ collisions
+  using the ATLAS detector},''
+  \href{http://dx.doi.org/10.1016/j.physletb.2018.07.050}{{\em Phys. Lett. B}
+  {\bfseries 784} (2018) 345--366},
+  \href{http://arxiv.org/abs/1806.00242}{{\ttfamily arXiv:1806.00242
+  [hep-ex]}}.
+
+\bibitem{ATLAS:2015yey}
+{\bfseries ATLAS, CMS} Collaboration, G.~Aad {\em et~al.}, ``{Combined
+  Measurement of the Higgs Boson Mass in $pp$ Collisions at $\sqrt{s}=7$ and 8
+  TeV with the ATLAS and CMS Experiments},''
+  \href{http://dx.doi.org/10.1103/PhysRevLett.114.191803}{{\em Phys. Rev.
+  Lett.} {\bfseries 114} (2015) 191803},
+  \href{http://arxiv.org/abs/1503.07589}{{\ttfamily arXiv:1503.07589
+  [hep-ex]}}.
+
+\bibitem{CMS:2017dib}
+{\bfseries CMS} Collaboration, A.~M. Sirunyan {\em et~al.}, ``{Measurements of
+  properties of the Higgs boson decaying into the four-lepton final state in pp
+  collisions at $ \sqrt{s}=13 $ TeV},''
+  \href{http://dx.doi.org/10.1007/JHEP11(2017)047}{{\em JHEP} {\bfseries 11}
+  (2017) 047}, \href{http://arxiv.org/abs/1706.09936}{{\ttfamily
+  arXiv:1706.09936 [hep-ex]}}.
+
+\bibitem{aronow_miller_2019}
+P.~M. Aronow and B.~T. Miller,
+  \href{http://dx.doi.org/10.1017/9781316831762}{{\em Foundations of Agnostic
+  Statistics}}.
+\newblock Cambridge University Press, 2019.
+
+\bibitem{DeBlas:2019qco}
+J.~De~Blas, G.~Durieux, C.~Grojean, J.~Gu, and A.~Paul, ``{On the future of
+  Higgs, electroweak and diboson measurements at lepton colliders},''
+  \href{http://dx.doi.org/10.1007/JHEP12(2019)117}{{\em JHEP} {\bfseries 12}
+  (2019) 117}, \href{http://arxiv.org/abs/1907.04311}{{\ttfamily
+  arXiv:1907.04311 [hep-ph]}}.
+
+\bibitem{Banerjee:2021huv}
+S.~Banerjee, R.~S. Gupta, O.~Ochoa-Valeriano, and M.~Spannowsky, ``{High energy
+  lepton colliders as the ultimate Higgs microscopes},''
+  \href{http://arxiv.org/abs/2109.14634}{{\ttfamily arXiv:2109.14634
+  [hep-ph]}}.
+
+\bibitem{ATLAS:2018jym}
+{\bfseries ATLAS} Collaboration, M.~Aaboud {\em et~al.}, ``{Constraints on
+  off-shell Higgs boson production and the Higgs boson total width in
+  $ZZ\to4\ell$ and $ZZ\to2\ell2\nu$ final states with the ATLAS detector},''
+  \href{http://dx.doi.org/10.1016/j.physletb.2018.09.048}{{\em Phys. Lett. B}
+  {\bfseries 786} (2018) 223--244},
+  \href{http://arxiv.org/abs/1808.01191}{{\ttfamily arXiv:1808.01191
+  [hep-ex]}}.
+
+\bibitem{CMS:2019ekd}
+{\bfseries CMS} Collaboration, A.~M. Sirunyan {\em et~al.}, ``{Measurements of
+  the Higgs boson width and anomalous $HVV$ couplings from on-shell and
+  off-shell production in the four-lepton final state},''
+  \href{http://dx.doi.org/10.1103/PhysRevD.99.112003}{{\em Phys. Rev. D}
+  {\bfseries 99} no.~11, (2019) 112003},
+  \href{http://arxiv.org/abs/1901.00174}{{\ttfamily arXiv:1901.00174
+  [hep-ex]}}.
+
 \bibitem{ATLAS:2020qdt}
 {\bfseries ATLAS} Collaboration, ``{A combination of measurements of Higgs
   boson production and decay using up to $139$ fb$^{-1}$ of proton--proton

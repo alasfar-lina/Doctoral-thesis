@@ -122,45 +122,45 @@ Warning--empty author in CMS:2020gsy
 Warning--empty institution in CMS:2020gsy
 Warning--empty author in CMS:2021ixs
 Warning--empty institution in CMS:2021ixs
-You've used 81 entries,
+You've used 90 entries,
             2328 wiz_defined-function locations,
-            1188 strings with 19386 characters,
-and the built_in function-call counts, 23977 in all, are:
-= -- 2570
-> -- 590
+            1246 strings with 21166 characters,
+and the built_in function-call counts, 26748 in all, are:
+= -- 2842
+> -- 677
 < -- 3
-+ -- 234
-- -- 153
-* -- 2253
-:= -- 2761
-add.period$ -- 120
-call.type$ -- 81
-change.case$ -- 114
++ -- 266
+- -- 176
+* -- 2551
+:= -- 3078
+add.period$ -- 130
+call.type$ -- 90
+change.case$ -- 122
 chr.to.int$ -- 0
-cite$ -- 93
-duplicate$ -- 1230
-empty$ -- 2485
-format.name$ -- 153
-if$ -- 6212
+cite$ -- 102
+duplicate$ -- 1386
+empty$ -- 2760
+format.name$ -- 176
+if$ -- 6928
 int.to.chr$ -- 0
-int.to.str$ -- 81
-missing$ -- 251
-newline$ -- 267
-num.names$ -- 67
-pop$ -- 395
+int.to.str$ -- 90
+missing$ -- 284
+newline$ -- 295
+num.names$ -- 76
+pop$ -- 437
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 872
+skip$ -- 988
 stack$ -- 0
-substring$ -- 1461
-swap$ -- 557
+substring$ -- 1573
+swap$ -- 637
 text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 12
-while$ -- 213
-width$ -- 83
-write$ -- 662
+while$ -- 233
+width$ -- 92
+write$ -- 740
 (There were 21 error messages)
