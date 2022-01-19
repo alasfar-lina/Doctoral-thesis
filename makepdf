@@ -1,0 +1,4 @@
+pdflatex Dissertation-alasfar
+bibtex   Dissertation-alasfar
+pdflatex Dissertation-alasfar
+pdflatex Dissertation-alasfar

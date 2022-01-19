@@ -72,19 +72,54 @@ Alas, it is still possible to extract bounds on $\Gamma_h$ using ~\eqref{widthfo
 \Gamma_h &< \SI{14.4}{\giga\electronvolt} \,\,\,\, (\text{ATLAS}) & \SI{0.08}{\giga\electronvolt} <&\Gamma_h < \SI{9.16}{\giga\electronvolt}  \,\,\,\, (\text{CMS}),
 \end{align}
 with the combined bound being  $\sim 3 \Gamma_h^{\SM}$. 
+\subsection{Higgs spin and parity \label{higgscp}}
+As we have seen in ~\autoref{Higgsmech}, the Higgs boson in a scalar and $\mathcal{CP}$ even ($J^p= 0^+$) in the SM. However, the discovery of  a peak in the $m_\gamma \gamma$ distribution, would not automatically imply that the particle discovered is scalar, it could be a spin-$2$ boson, or a pseudoscalar  ($J^p= 0^-$). In order to study the $J^p$ properties of the Higgs, one needs to examine the differential distributions of angular variables such as rapidity~$y$ or transverse momentum~$\pt$. Both ATLAS and CMS collaborations studied using Run-I data the angular distributions of the Higgs decays $ h \to ZZ^*$, $h \to W W^*$ and $ h \to \gamma$. Then test the alternative hypothesis for $J^p$ against the SM~\cite{ATLAS:2015zhl,CMS:2014nkk}. As seen in~\autoref{fig:jcphiggs}, showing CMS results, that the SM ~$0^+$ hypothesis is favoured at $ >99.9\%$ CL.  
+\begin{figure}[htb!]
+	\begin{center}
+		\includegraphics[width=1\textwidth]{figures/Higgs_results/CMS-HIG-14-018_Figure_018}
+		\caption{The test-statistic distributions for the SM Higgs hypothesis versus other $J^p$ hypothesises in the $x$ axis. The hypothesis testing was conducted using the  $ h \to ZZ^*$, $h \to W W^*$  final-states. The SM hypothesis is indicated in orange, while the alternatives are in blue. Measurements are indicated in black points. This plot is from the CMS collaboration~\cite{CMS:2014nkk}}	
+		\label{fig:jcphiggs}
+	\end{center}
+\end{figure}
 \section{Measurements of Higgs rates and couplings \label{sec:Higgscoupl} }
-
-\subsection{Anomalous couplings  }
+\subsection{Higgs cross-sections}
+\par The total inclusive Higgs cross-section has been measured using the the final states $ h \to \gamma \gamma$ and $ h\to Z Z^* \to 4 \ell$. and their combinations.  The measurements has been done at the three energies the LHC was operating at: 7 TeV, 8 TeV ~\cite{CMS:2015zpx} and 13 TeV~\cite{TheATLAScollaboration:2015uuh,CMS:2018gwt,CMS:2021ugl} and combined with more data and compared to the SM prediction as show in~\cite{ATLAS:2019mju}. As shown in~\autoref{fig:xstothiggs}, the measured inclusive cross-section is in agreement with the SM prediction across al of the LHC operation energies.
+\begin{figure}[htb!]
+	\begin{center}
+		\includegraphics[height=0.35\textheight]{figures/Higgs_results/fig_01}
+		\caption{The total inclusive cross-section measurements by ATLAS collaboration~\cite{ATLAS:2019mju} for $7$, $8$ and $13$ TeV using  $ h \to \gamma \gamma$ and $ h\to Z Z^* \to 4 \ell$. channels and their combination (black points) compared to the SM prediction with the  uncertainties shown as blue line with light and dark blue bands for QCD scale uncertainties and total uncertainties, respectively. }	
+		\label{fig:xstothiggs}
+	\end{center}
+\end{figure}
+%\FloatBarrier
+\par In addition to the inclusive cross-section measurements,  differential cross-sections of the Higgs has been measured for $\pt$ and  $y$ as we have seen in~\autoref{higgscp} for Higgs's $J^p$ determination. Additional,  the differential cross-sections for other variables have been measured, and they include $N_{jets}, \pt^{jet}, m_{jj},\delta \phi_{jj]}$ and others using the channels $ h \to ZZ^*$, $h \to W W^*$ and $ h \to \gamma$. The most recent results using the full Run-II data can be found in Refs.~\cite{CMS:2018gwt,ATLAS:2019jst,ATLAS:2019mju,CMS:2019chr}.  
+\par In addition to the total inclusive cross-section, a collection of measurements of Higgs production and decay rates has been carried out by both ATLAS and CMS. These measurements also carried out in , what is known as Standard Template Cross-Sections~(STXS) framework.The STXS's are fiducial cross-sections in exclusive phase-space regions or bins separately per Higgs boson production channel. They have the advantage of standardisation of cuts and final results such that measurements could be easily combined across analyses. More details about the STXS framework can be found in the reports of  LHC Higgs cross-sections working group~(LHCHXSWG) cf.~\cite{Berger:2019wnu}.  In~\autoref{table:resHiggsExp} I summarise the state-of-art measurements of the Higgs rates separated into production and decay channels using the total LHC Run-II data from ATLAS and CMS experiments. Additionally, I give the HL-LHC projections from CMS experiment as a comparison. The results in this table are written in terms of the signal strength, which is directly extracted from measuring the number of events dividing them by the standard model,
+\begin{equation}
+	\mu_{\mathrm{Exp}} := \frac{ \sigma \cdot \mathcal{B}}{ \sigma^{\SM} \cdot \mathcal{B}^{\SM}}.
+\end{equation}
+\newpage
+\begingroup
+\input{fitobservables} 
+\endgroup
+\FloatBarrier
+\subsection{Constraints on Higgs couplings}
+The measurements of the Higgs rates and their combination (also including STXS) have been used to set bounds on the Higgs couplings, the most recent bounds - as this thesis being written - have been reported by ATLAS using the Higgs inclusive rates and STXS for the full Run-II data~\cite{ATLAS2021vrm}, and  by CMS using Higgs rates shown in ~\autoref{table:resHiggsExp} ~\cite{CMS:2020gsy}. In~\autoref{fig:couplings-bound}, I present the aggregation the ATLAS and CMS bounds on the Higgs coupling modifiers in the $\kappa$ formalism defined in eq.~\eqref{kappa}. The aggregation of these bounds was preformed using the method described in~\cite{BHHR} assuming there is no correlation between ATLAS and CMS measurements.  
+\begin{figure}[htb!]
+	\begin{center}
+		\includegraphics[height=0.35\textheight]{figures/agg_higgs_couplings}
+		\caption{Meta analysis aggravating the most recent bounds from ATLAS~\cite{ATLAS2021vrm} and CMS~\cite{CMS:2020gsy} on the Higgs couplings modifiers $\kappa$.   }	
+		\label{fig:couplings-bound}
+	\end{center}
+\end{figure}
+\par Examining~\autoref{fig:couplings-bound}, we observe that the bounds on the Higgs boson's coupling to the gauge boson, including the effective couplings to $\gamma$ and $g$, as well as the couplings to the third-generation fermions are in few percent within the SM prediction. The bounds on the coupling to the $W$ seems to  favour a negative value in CMS fits, due to the channel used to constraint it $ h \to WW$ which depends on $ \kappa_W^2$, thus making the best fit value of $ \sim -1$ within the SM prediction. An independent analysis on the relative signs of $\kappa_W$ and $\kappa_t$ was preformed using $th$ process in Ref.~\cite{CMS:2018jeh}
+\subsection{Anomalous couplings }
 to measure $HVV$ CMS used the same data for extraction of the $\Gamma_h$ to study this~\cite{CMS:2019ekd}
+\newpage
 \begin{figure}[t!]
 	\begin{center}
 		\includegraphics[width=12cm]{figures/Higgs_couplings_poster}
 		\caption{ddd  \label{fig:higgs_kappa}}
 	\end{center}
 \end{figure}
-\newpage
-\begingroup
-\input{fitobservables} 
-\endgroup
 \section{Challenges and outlook \label{sec:Higgscouplchallenge} }
 %We also provide in this appendix the experimental measurements of the signal strengths at the LHC Run II and the CMS projections for the HL-LHC (scenario S2, see \cite{Cepeda:2019klc}) that we used in the fits in this paper. These inputs are summarised in table~\ref{table:resHiggsExp}.

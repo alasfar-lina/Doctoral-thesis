@@ -1,4 +1,4 @@
-\providecommand{\href}[2]{#2}\begingroup\raggedright\begin{thebibliography}{10}
+\providecommand{\href}[2]{#2}\begingroup\raggedright\begin{thebibliography}{100}
 
 \bibitem{minlos2000introduction}
 R.~A. Minlos, {\em Introduction to mathematical statistical physics}.
@@ -475,6 +475,75 @@ S.~Banerjee, R.~S. Gupta, O.~Ochoa-Valeriano, and M.~Spannowsky, ``{High energy
   \href{http://arxiv.org/abs/1901.00174}{{\ttfamily arXiv:1901.00174
   [hep-ex]}}.
 
+\bibitem{ATLAS:2015zhl}
+{\bfseries ATLAS} Collaboration, G.~Aad {\em et~al.}, ``{Study of the spin and
+  parity of the Higgs boson in diboson decays with the ATLAS detector},''
+  \href{http://dx.doi.org/10.1140/epjc/s10052-015-3685-1}{{\em Eur. Phys. J. C}
+  {\bfseries 75} no.~10, (2015) 476},
+  \href{http://arxiv.org/abs/1506.05669}{{\ttfamily arXiv:1506.05669
+  [hep-ex]}}. [Erratum: Eur.Phys.J.C 76, 152 (2016)].
+
+\bibitem{CMS:2014nkk}
+{\bfseries CMS} Collaboration, V.~Khachatryan {\em et~al.}, ``{Constraints on
+  the spin-parity and anomalous HVV couplings of the Higgs boson in proton
+  collisions at 7 and 8 TeV},''
+  \href{http://dx.doi.org/10.1103/PhysRevD.92.012004}{{\em Phys. Rev. D}
+  {\bfseries 92} no.~1, (2015) 012004},
+  \href{http://arxiv.org/abs/1411.3441}{{\ttfamily arXiv:1411.3441 [hep-ex]}}.
+
+\bibitem{CMS:2015zpx}
+{\bfseries CMS} Collaboration, V.~Khachatryan {\em et~al.}, ``{Measurement of
+  differential and integrated fiducial cross sections for Higgs boson
+  production in the four-lepton decay channel in pp collisions at $ \sqrt{s}=7
+  $ and 8 TeV},'' \href{http://dx.doi.org/10.1007/JHEP04(2016)005}{{\em JHEP}
+  {\bfseries 04} (2016) 005}, \href{http://arxiv.org/abs/1512.08377}{{\ttfamily
+  arXiv:1512.08377 [hep-ex]}}.
+
+\bibitem{TheATLAScollaboration:2015uuh}
+``{Measurements of the total cross sections for Higgs boson production
+  combining the $H \to \gamma \gamma$ and $H \to ZZ^* \to 4\ell$ decay channels
+  at 7, 8 and 13 TeV center-of-mass energies with the ATLAS detector},''.
+
+\bibitem{CMS:2018gwt}
+{\bfseries CMS} Collaboration, A.~M. Sirunyan {\em et~al.}, ``{Measurement and
+  interpretation of differential cross sections for Higgs boson production at
+  $\sqrt{s} =$ 13 TeV},''
+  \href{http://dx.doi.org/10.1016/j.physletb.2019.03.059}{{\em Phys. Lett. B}
+  {\bfseries 792} (2019) 369--396},
+  \href{http://arxiv.org/abs/1812.06504}{{\ttfamily arXiv:1812.06504
+  [hep-ex]}}.
+
+\bibitem{CMS:2021ugl}
+{\bfseries CMS} Collaboration, A.~M. Sirunyan {\em et~al.}, ``{Measurements of
+  production cross sections of the Higgs boson in the four-lepton final state
+  in proton\textendash{}proton collisions at $\sqrt{s} = 13\,\text {Te}\text
+  {V} $},'' \href{http://dx.doi.org/10.1140/epjc/s10052-021-09200-x}{{\em Eur.
+  Phys. J. C} {\bfseries 81} no.~6, (2021) 488},
+  \href{http://arxiv.org/abs/2103.04956}{{\ttfamily arXiv:2103.04956
+  [hep-ex]}}.
+
+\bibitem{ATLAS:2019mju}
+{\bfseries ATLAS} Collaboration, ``{Combined measurement of the total and
+  differential cross sections in the $H \rightarrow \gamma \gamma$ and the $H
+  \rightarrow ZZ^* \rightarrow 4\ell$ decay channels at $\sqrt{s} = $13 TeV
+  with the ATLAS detector},''.
+
+\bibitem{ATLAS:2019jst}
+{\bfseries ATLAS} Collaboration, ``{Measurements and interpretations of
+  Higgs-boson fiducial cross sections in the diphoton decay channel using 139
+  fb$^-1$ of $pp$ collision data at $\sqrt{s}$ = 13 TeV with the ATLAS
+  detector},''.
+
+\bibitem{CMS:2019chr}
+{\bfseries CMS} Collaboration, ``{Measurements of properties of the Higgs boson
+  in the four-lepton final state in proton-proton collisions at
+  $\sqrt{s}=13~\mathrm{TeV}$},''.
+
+\bibitem{Berger:2019wnu}
+N.~Berger {\em et~al.}, ``{Simplified Template Cross Sections - Stage 1.1},''
+  \href{http://arxiv.org/abs/1906.02754}{{\ttfamily arXiv:1906.02754
+  [hep-ph]}}.
+
 \bibitem{ATLAS:2020qdt}
 {\bfseries ATLAS} Collaboration, ``{A combination of measurements of Higgs
   boson production and decay using up to $139$ fb$^{-1}$ of proton--proton
@@ -504,6 +573,23 @@ S.~Banerjee, R.~S. Gupta, O.~Ochoa-Valeriano, and M.~Spannowsky, ``{High energy
 {\bfseries CMS} Collaboration, ``{Measurement of Higgs boson production in
   association with a W or Z boson in the H $\rightarrow$ WW decay channel},''
   Tech. Rep. CMS-PAS-HIG-19-017, 2021.
+
+\bibitem{ATLAS2021vrm}
+{\bfseries ATLAS} Collaboration, ``{Combined measurements of Higgs boson
+  production and decay using up to $139$ fb$^{-1}$ of proton-proton collision
+  data at $\sqrt{s}= 13$ TeV collected with the ATLAS experiment},''.
+
+\bibitem{BHHR}
+
+
+\bibitem{CMS:2018jeh}
+{\bfseries CMS} Collaboration, A.~M. Sirunyan {\em et~al.}, ``{Search for
+  associated production of a Higgs boson and a single top quark in
+  proton-proton collisions at $\sqrt{s} = 13$ TeV},''
+  \href{http://dx.doi.org/10.1103/PhysRevD.99.092005}{{\em Phys. Rev. D}
+  {\bfseries 99} no.~9, (2019) 092005},
+  \href{http://arxiv.org/abs/1811.09696}{{\ttfamily arXiv:1811.09696
+  [hep-ex]}}.
 
 \bibitem{Grzadkowski:2010es}
 B.~Grzadkowski, M.~Iskrzynski, M.~Misiak, and J.~Rosiek, ``{Dimension-Six Terms
