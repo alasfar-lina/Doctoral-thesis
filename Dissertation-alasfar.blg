@@ -7,22 +7,78 @@ A level-1 auxiliary file: chapters/Part1/Constraints_on_Higgs.aux
 A level-1 auxiliary file: chapters/Part1/EFT.aux
 The style file: utphys.bst
 Database file #1: bibliography.bib
+Repeated entry---line 4115 of file bibliography.bib
+ : @article{McCullough:2013rea
+ :                            ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 4130 of file bibliography.bib
+ : @article{Gorbahn:2016uoy
+ :                         ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 4143 of file bibliography.bib
+ : @article{Bizon:2016wgr
+ :                       ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 4156 of file bibliography.bib
+ : @article{Degrassi:2016wml
+ :                          ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 4169 of file bibliography.bib
+ : @article{Degrassi:2021uik
+ :                          ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 4181 of file bibliography.bib
+ : @article{Degrassi:2019yix
+ :                          ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 4194 of file bibliography.bib
+ : @article{Maltoni:2017ims
+ :                         ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 4691 of file bibliography.bib
+ : @article{Haisch:2021hvy
+ :                        ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 6092 of file bibliography.bib
+ : @article{McCullough:2013rea
+ :                            ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 6107 of file bibliography.bib
+ : @article{Gorbahn:2016uoy
+ :                         ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 6120 of file bibliography.bib
+ : @article{Bizon:2016wgr
+ :                       ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 6133 of file bibliography.bib
+ : @article{Degrassi:2016wml
+ :                          ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 6146 of file bibliography.bib
+ : @article{Degrassi:2021uik
+ :                          ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 6155 of file bibliography.bib
+ : @article{Maltoni:2017ims
+ :                         ,
+I'm skipping whatever remains of this entry
 Warning--entry type for "cernfacts" isn't style-file defined
---line 10014 of file bibliography.bib
+--line 10000 of file bibliography.bib
 Warning--entry type for "welt-machine" isn't style-file defined
---line 10018 of file bibliography.bib
+--line 10004 of file bibliography.bib
 Warning--entry type for "lhckomission" isn't style-file defined
---line 10030 of file bibliography.bib
+--line 10016 of file bibliography.bib
 Warning--entry type for "closer" isn't style-file defined
---line 10034 of file bibliography.bib
+--line 10020 of file bibliography.bib
 Warning--entry type for "lhcpreformance" isn't style-file defined
---line 10038 of file bibliography.bib
+--line 10024 of file bibliography.bib
 Warning--entry type for "atlaslumi2" isn't style-file defined
---line 10042 of file bibliography.bib
+--line 10028 of file bibliography.bib
 Warning--entry type for "atlaslumi1" isn't style-file defined
---line 10046 of file bibliography.bib
+--line 10032 of file bibliography.bib
 Warning--entry type for "cmslumi" isn't style-file defined
---line 10050 of file bibliography.bib
+--line 10036 of file bibliography.bib
 Database file #2: bibliography2.bib
 Repeated entry---line 26 of file bibliography2.bib
  : @article{CMS:2020gsy
@@ -32,6 +88,14 @@ I was expecting a `,' or a `}'---line 39 of file bibliography2.bib
  :  
  :  title = "The handbook of research synthesis and meta-analysis 2nd edition",
 (Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Repeated entry---line 141 of file bibliography2.bib
+ : @techreport{ATLAS-CONF-2021-021
+ :                                ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 193 of file bibliography2.bib
+ : @techreport{ATL-PHYS-PUB-2018-016
+ :                                  ,
 I'm skipping whatever remains of this entry
 Warning--I didn't find a database entry for ""
 Warning--there's a number but no series in minlos2000introduction
@@ -55,45 +119,48 @@ Warning--empty author and editor in BHHR
 Warning--empty title in BHHR
 Warning--empty publisher in BHHR
 Warning--empty year in BHHR
-You've used 103 entries,
+Warning--empty author in CMS:2019pyn
+Warning--empty author in ATLAS-CONF-2021-021
+Warning--empty author in ATL-PHYS-PUB-2018-016
+You've used 125 entries,
             2328 wiz_defined-function locations,
-            1312 strings with 23617 characters,
-and the built_in function-call counts, 29529 in all, are:
-= -- 3118
-> -- 739
-< -- 3
-+ -- 293
-- -- 190
-* -- 2846
-:= -- 3380
-add.period$ -- 144
-call.type$ -- 103
-change.case$ -- 134
+            1456 strings with 27680 characters,
+and the built_in function-call counts, 35561 in all, are:
+= -- 3707
+> -- 913
+< -- 4
++ -- 360
+- -- 235
+* -- 3516
+:= -- 4067
+add.period$ -- 169
+call.type$ -- 125
+change.case$ -- 161
 chr.to.int$ -- 0
-cite$ -- 124
-duplicate$ -- 1554
-empty$ -- 3058
-format.name$ -- 190
-if$ -- 7652
+cite$ -- 149
+duplicate$ -- 1910
+empty$ -- 3660
+format.name$ -- 235
+if$ -- 9224
 int.to.chr$ -- 0
-int.to.str$ -- 103
-missing$ -- 327
-newline$ -- 334
-num.names$ -- 83
-pop$ -- 504
+int.to.str$ -- 125
+missing$ -- 404
+newline$ -- 402
+num.names$ -- 102
+pop$ -- 598
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 1090
+skip$ -- 1341
 stack$ -- 0
-substring$ -- 1647
-swap$ -- 699
-text.length$ -- 3
+substring$ -- 1809
+swap$ -- 878
+text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 21
-while$ -- 248
-width$ -- 106
-write$ -- 835
-(There were 2 error messages)
+warning$ -- 24
+while$ -- 286
+width$ -- 128
+write$ -- 1024
+(There were 18 error messages)

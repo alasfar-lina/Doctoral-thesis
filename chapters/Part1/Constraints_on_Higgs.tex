@@ -30,14 +30,16 @@ As thee protons travel in the LHC in \textbf{bunches}, and as these bunches cros
 	L = \frac{f N_1 N_2}{4 \pi  \sigma_1 \sigma_2},
 \end{equation}
 which is for the LHC averages to about $ 10^{34}$ collisions \si{\per \centi\metre\squared \per \second}~\cite{closer,lhcpreformance}.  \\ The total physics-viable $pp$-collisions  integrated luminosity for Run-I was \SI{4.57}{\per \femtobarn} for \SI{7}{\tera\electronvolt} and \SI{20.3}{\per \femtobarn} for \SI{8}{\tera\electronvolt} (ATLAS~\cite{atlaslumi1}) and  \SI{5.55}{\per \femtobarn} at \SI{7}{\tera\electronvolt} and \SI{21.8}{\per \femtobarn} at \SI{8}{\tera\electronvolt} (CMS ~\cite{cmslumi}). As for Run-II the integrated luminosity is \SI{139}{\per \femtobarn} at \SI{13}{\tera\electronvolt } (ATLAS~\cite{atlaslumi2})  and \SI{137}{\per \femtobarn} at \SI{13}{\tera\electronvolt } (CMS ~\cite{cmslumi}). The expected integrated luminosity by the end of Run-III is  \SI{300}{\per \femtobarn}~\cite{Fartoukh:2790409} and \SI{3000}{\per \femtobarn} by the end of the HL-LHC at energy of \SI{14}{\tera\electronvolt }~\cite{Apollinari:2015bam}. 
-\begin{sidewaysfigure}[ht]
+%\begin{sidewaysfigure}[ht]
+\begin{figure}[htbp!]
 	\centering
 		\includegraphics[width=\textwidth]{figures/HL-LHC-plan-2021-1}
 	\caption{ A timeline of the LHC operation showing Run-I, Run-II and future planned runs of the LHC, including the HL-LHC, source~~\cite{lhckomission}. 
 	}
 \label{fig:lhcplan}
-\end{sidewaysfigure}
-\FloatBarrier
+\end{figure}
+%\end{sidewaysfigure}
+%\FloatBarrier
 \section{Higgs properties \label{sec:Higgsprop} }
 \subsection{Higgs boson mass measurements}
 In order to measure the mass of thee Higgs boson with high precision, one need to consider final states that can be reconstructed with high momentum and mass resolution, this is typically achieved when no hadronic constituents in the decays involved, such as  $ h \to \gamma \gamma$ and $ h \to Z Z^*\to 4 \ell$. Reconstructing the invariant mass distributions $m_{\gamma \gamma}$ and $m_{4\ell}$ one observes that the Higgs peak is narrow over a relatively smooth background, see~\autoref{fig:higgs_mass}, which is ideal for the measurement of the Higgs mass. It should be noted that the width of the resonance is due to the detector resolution and does not correspond to the actual Higgs width.\\
@@ -73,14 +75,14 @@ Alas, it is still possible to extract bounds on $\Gamma_h$ using ~\eqref{widthfo
 \end{align}
 with the combined bound being  $\sim 3 \Gamma_h^{\SM}$. 
 \subsection{Higgs spin and parity \label{higgscp}}
-As we have seen in ~\autoref{Higgsmech}, the Higgs boson in a scalar and $\mathcal{CP}$ even ($J^p= 0^+$) in the SM. However, the discovery of  a peak in the $m_\gamma \gamma$ distribution, would not automatically imply that the particle discovered is scalar, it could be a spin-$2$ boson, or a pseudoscalar  ($J^p= 0^-$). In order to study the $J^p$ properties of the Higgs, one needs to examine the differential distributions of angular variables such as rapidity~$y$ or transverse momentum~$\pt$. Both ATLAS and CMS collaborations studied using Run-I data the angular distributions of the Higgs decays $ h \to ZZ^*$, $h \to W W^*$ and $ h \to \gamma$. Then test the alternative hypothesis for $J^p$ against the SM~\cite{ATLAS:2015zhl,CMS:2014nkk}. As seen in~\autoref{fig:jcphiggs}, showing CMS results, that the SM ~$0^+$ hypothesis is favoured at $ >99.9\%$ CL.  
-\begin{figure}[htb!]
-	\begin{center}
-		\includegraphics[width=1\textwidth]{figures/Higgs_results/CMS-HIG-14-018_Figure_018}
-		\caption{The test-statistic distributions for the SM Higgs hypothesis versus other $J^p$ hypothesises in the $x$ axis. The hypothesis testing was conducted using the  $ h \to ZZ^*$, $h \to W W^*$  final-states. The SM hypothesis is indicated in orange, while the alternatives are in blue. Measurements are indicated in black points. This plot is from the CMS collaboration~\cite{CMS:2014nkk}}	
-		\label{fig:jcphiggs}
-	\end{center}
-\end{figure}
+As we have seen in ~\autoref{Higgsmech}, the Higgs boson in a scalar and $\mathcal{CP}$ even ($J^p= 0^+$) in the SM. However, the discovery of  a peak in the $m_\gamma \gamma$ distribution, would not automatically imply that the particle discovered is scalar, it could be a spin-$2$ boson, or a pseudoscalar  ($J^p= 0^-$). In order to study the $J^p$ properties of the Higgs, one needs to examine the differential distributions of angular variables such as rapidity~$y$ or transverse momentum~$\pt$. Both ATLAS and CMS collaborations studied using Run-I data the angular distributions of the Higgs decays $ h \to ZZ^*$, $h \to W W^*$ and $ h \to \gamma$, to study an anomalous $VVh$ coupling. Then test the alternative hypothesis for $J^p$ against the SM~\cite{ATLAS:2015zhl,CMS:2014nkk}.  The analysis results show that the SM ~$0^+$ hypothesis is favoured at $ >99.9\%$ CL. 
+%\begin{figure}[htb!]
+%	\begin{center}
+%		\includegraphics[width=1\textwidth]{figures/Higgs_results/CMS-HIG-14-018_Figure_018}
+%		\caption{The test-statistic distributions for the SM Higgs hypothesis versus other $J^p$ hypothesises in the $x$ axis. The hypothesis testing was conducted using the  $ h \to ZZ^*$, $h \to W W^*$  final-states. The SM hypothesis is indicated in orange, while the alternatives are in blue. Measurements are indicated in black points. This plot is from the CMS collaboration~\cite{CMS:2014nkk}}	
+%		\label{fig:jcphiggs}
+%	\end{center}
+%\end{figure}
 \section{Measurements of Higgs rates and couplings \label{sec:Higgscoupl} }
 \subsection{Higgs cross-sections}
 \par The total inclusive Higgs cross-section has been measured using the the final states $ h \to \gamma \gamma$ and $ h\to Z Z^* \to 4 \ell$. and their combinations.  The measurements has been done at the three energies the LHC was operating at: 7 TeV, 8 TeV ~\cite{CMS:2015zpx} and 13 TeV~\cite{TheATLAScollaboration:2015uuh,CMS:2018gwt,CMS:2021ugl} and combined with more data and compared to the SM prediction as show in~\cite{ATLAS:2019mju}. As shown in~\autoref{fig:xstothiggs}, the measured inclusive cross-section is in agreement with the SM prediction across al of the LHC operation energies.
@@ -106,20 +108,26 @@ As we have seen in ~\autoref{Higgsmech}, the Higgs boson in a scalar and $\mathc
 The measurements of the Higgs rates and their combination (also including STXS) have been used to set bounds on the Higgs couplings, the most recent bounds - as this thesis being written - have been reported by ATLAS using the Higgs inclusive rates and STXS for the full Run-II data~\cite{ATLAS2021vrm}, and  by CMS using Higgs rates shown in ~\autoref{table:resHiggsExp} ~\cite{CMS:2020gsy}. In~\autoref{fig:couplings-bound}, I present the aggregation the ATLAS and CMS bounds on the Higgs coupling modifiers in the $\kappa$ formalism defined in eq.~\eqref{kappa}. The aggregation of these bounds was preformed using the method described in~\cite{BHHR} assuming there is no correlation between ATLAS and CMS measurements.  
 \begin{figure}[htb!]
 	\begin{center}
-		\includegraphics[height=0.35\textheight]{figures/agg_higgs_couplings}
-		\caption{Meta analysis aggravating the most recent bounds from ATLAS~\cite{ATLAS2021vrm} and CMS~\cite{CMS:2020gsy} on the Higgs couplings modifiers $\kappa$.   }	
+		\includegraphics[height=0.3\textheight]{figures/agg_higgs_couplings}
+		\includegraphics[height=0.3\textheight]{figures/Higgs_couplings_poster}
+		\caption{Meta analysis aggravating the most recent bounds from ATLAS~\cite{ATLAS2021vrm} and CMS~\cite{CMS:2020gsy} on the Higgs couplings modifiers $\kappa$. \la{update the fig}  }	
 		\label{fig:couplings-bound}
 	\end{center}
 \end{figure}
-\par Examining~\autoref{fig:couplings-bound}, we observe that the bounds on the Higgs boson's coupling to the gauge boson, including the effective couplings to $\gamma$ and $g$, as well as the couplings to the third-generation fermions are in few percent within the SM prediction. The bounds on the coupling to the $W$ seems to  favour a negative value in CMS fits, due to the channel used to constraint it $ h \to WW$ which depends on $ \kappa_W^2$, thus making the best fit value of $ \sim -1$ within the SM prediction. An independent analysis on the relative signs of $\kappa_W$ and $\kappa_t$ was preformed using $th$ process in Ref.~\cite{CMS:2018jeh}
-\subsection{Anomalous couplings }
-to measure $HVV$ CMS used the same data for extraction of the $\Gamma_h$ to study this~\cite{CMS:2019ekd}
-\newpage
-\begin{figure}[t!]
+\par Examining~\autoref{fig:couplings-bound}, we observe that the bounds on the Higgs boson's coupling to the gauge boson, including the effective couplings to $\gamma$ and $g$, as well as the couplings to the third-generation fermions are in few percent within the SM prediction. The bounds on the coupling to the $W$ boson seems to favour a negative value in CMS fits, due to the channel used to constraint it $ h \to WW$ which depends on $ \kappa_W^2$, thus making the best fit value of $ \sim -1$ within the SM prediction. An independent analysis on the relative signs of $\kappa_W$ and $\kappa_t$ was preformed using $th/t \bar{t} h$ processes in Ref.~\cite{CMS:2018jeh}, hence only the absolute value of $\kappa_W$ is reported in my combination of the analysis results.  Additionally,  the observation of the decays $ h \to b \bar{b}$~\cite{CMS:2018nsn,ATLAS:2018kot,ATLAS:2019yhn} and $h \to \tau \tau$~\cite{ATLAS:2018ynr,CMS:2019pyn} leading to direct measurements of the beauty and $\tau$ Yukawa couplings has  made their bounds comparable to the gauge bosons and top couplings with the Higgs, having less than $10\%$ uncertainty.  Au contraire, bounds on the Yukawa couplings of second and first generation fermions remain very weak.  
+\par Recently, searches for the decay  $ h\to \mu \mu$~\cite{ATLAS:2020fzp,CMS:2020xwi} using the whole Run-II data by both collaborations, yielded an evidence fr its observation of about $ 3 \sigma$. Improving the constraints on $\kappa_\mu$, though as seen in ~\autoref{fig:couplings-bound}, the uncertainty remains high $ \sim 36 \%$.  Searches for the Higgs decaying to charm pairs is significantly more challenging than the dimuon decays and only yielded an upper 95\% CL  bounds on $ |\kappa_c|$ of $8.5$ for ATLAS~\cite{ATLAS-CONF-2021-021} and $70$ for CMS~\cite{CMS:2019hve}. There is no planned direct searches for the first generation Yukawa couplings (\emph{direct}) measurements planned for the LHC as it is not possible to directly access decays of the Higgs to up or down quarks. Other methods for probing these couplings will be extensively discussed in  ~\autoref{chap:MLLightYuk}.
+\par By the end of the HL-LHC, it is projected that the couplings of the Higgs, including the couplings with gauge bosons, third generation fermions as well as the muon Yukawa will be measured at few percent level, particularly the couplings with the gauge bosons will be reaching $ \sim 1\%$ level uncertainty~\cite{Bernius:2666331}. This is highlighted by~\autoref{fig:couplings-hlhlc}, this figure shows the improvement in the $\kappa$ measurement uncertainty expected by the HL-LHC over Run-II.
+\begin{figure}[htb!]
 	\begin{center}
-		\includegraphics[width=12cm]{figures/Higgs_couplings_poster}
-		\caption{ddd  \label{fig:higgs_kappa}}
+		\includegraphics[height=0.35\textheight]{figures/run2-hl-dumble}
+		\caption{ \textit{How much the HL-LHC is projected to improve Higgs couplings' measurement?}  The combining ATLAS and CMS projections }	
+		\label{fig:couplings-hlhlc}
 	\end{center}
 \end{figure}
+%\subsection{Miscellaneous Higgs measurements }
+
 \section{Challenges and outlook \label{sec:Higgscouplchallenge} }
-%We also provide in this appendix the experimental measurements of the signal strengths at the LHC Run II and the CMS projections for the HL-LHC (scenario S2, see \cite{Cepeda:2019klc}) that we used in the fits in this paper. These inputs are summarised in table~\ref{table:resHiggsExp}.
+\par The future runs of the LHC  hold a lot of potential for further understanding of the 10-year old Higgs boson ! Although, for some processes and couplings there will still be a lot of challenges. For instance, the observation of $h \to c \bar{c}$ will require highly efficient charm-tagging, which is expected to improve at the HL-LHC by a factor of 2.5~\cite{ATL-PHYS-PUB-2018-016}.  The signal strength with rare decay $ h \to Z \gamma$ currently is constrained to $3.6$ times the SM values at 95\% CL ~\cite{ATLAS:2020qcv} and it is projected to be measured at the HL-LHC with~$\sim 10\%$ uncertainty. 
+\par One of the couplings of the Higgs which we did not discuss above is the Higgs self-interaction (trilinear and quartic), as I have shown in~\autoref{pwusection} that the perturbative unitarity bound derived in Ref.~\cite{DiLuzio:2017tfn}  is the strongest bound on these couplings so far. This is due to the fact that to experimentally measure the Higgs self-coupling, one needs to search for double Higgs  production to access the trilinear self-coupling, and triple Higgs production for the quartic. These processes are very challenging, due to their low inclusive cross-section $\sim 30$ fb for~$hh$~\cite{Dawson:1998py} and $<0.1$ fb for $hhh$ at LHC maximum expected operational energy of $14$ TeV and the latter is challenging even for future colliders of inclusive cross section at $100$ TeV of only $\sim 5$ fb~\cite{Papaefstathiou:2015paa}; as opposed to single Higgs production with inclusive cross-section of $\sim 70$ pb. Certainly the difficulty is aggrivated when one considers that the second Higgs would also decay, further lowering the signal strength. The triple Higgs production thus, will not be accessable at the LHC and consequently the quartic self-coupling. However, there is a lot of potential for the trilinear self-coupling, particularly at the HL-LHC. 
+\par In ~\autoref{chap:4topSingleHiggs} I will discuss the potential for using single Higgs processes as proposed by several studies, cf.~ \cite{McCullough:2013rea, Gorbahn:2016uoy, Degrassi:2016wml, Bizon:2016wgr, Maltoni:2017ims, Degrassi:2019yix, Degrassi:2021uik, Haisch:2021hvy} and the challenges accompanying it. Later in~\autoref{chap:overviewDiHiggs} the Higgs pair production at the LHC will be overviewed along the current and future searches for this process and the bounds from them on the trilinear Higgs self-coupling. 
+\par Another elusive couplings that we have came across are the light Yukawas. In particular light quark Yukawa couplings of the first generation. After overviewing the proposed methods for constraining them, in~\autoref{chap:lightyuk} I will discuss a novel method for directly measuring light quark Yukawa coupling using Higgs pair production. And in~\autoref{chap:MLLightYuk} a sophisticated method based on interpretable machine learning will be showcased, by which, it is possible to simultaneously constrain the two elusive Higgs interactions: light Yukawas and the trilinear self-coupling using Higgs pair production !
