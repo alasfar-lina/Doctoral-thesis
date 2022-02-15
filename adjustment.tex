@@ -4,7 +4,7 @@
 \usepackage{centernot} 
 \usepackage{multirow,mathtools}
 \usepackage{pdfpages}
-\usepackage{currvita}
+\usepackage{currvita,geometry}
 \renewcommand*{\cvheadingfont}{\large\bfseries} % CV Titel
 \renewcommand*{\cvlistheadingfont}{\bfseries\sffamily} % sub-�berschriften
 \renewcommand*{\cvlabelfont}{\sffamily} % items
@@ -35,7 +35,8 @@
 \definecolor{myblue}{HTML}{003366}
 \usepackage{pgfplotstable}
 \pgfplotsset{compat=1.8}
-
+% see https://tex.stackexchange.com/a/60761/5001 for source of \breakingcomma
+% (requires the "breqn" package; that's why it's loaded above)
 \definecolor{rulecolor}{HTML}{003366}
 \definecolor{tableheadcolor}{gray}{0.92}
 % Following is taken from Werner: http://tex.stackexchange.com/a/33761/3061
