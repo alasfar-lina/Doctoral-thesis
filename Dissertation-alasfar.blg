@@ -2,19 +2,10 @@ This is BibTeX, Version 0.99d (TeX Live 2020)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: Dissertation-alasfar.aux
 A level-1 auxiliary file: chapters/End/list_of_publications.aux
-A level-1 auxiliary file: chapters/Part1/Higgs_and_SM.aux
-A level-1 auxiliary file: chapters/Part1/Constraints_on_Higgs.aux
-A level-1 auxiliary file: chapters/Part1/EFT.aux
 A level-1 auxiliary file: chapters/Part2/single_higgs.aux
 A level-1 auxiliary file: chapters/Part2/single_higgs_4tops.aux
 A level-1 auxiliary file: chapters/Part2/hz_nlo.aux
-A level-1 auxiliary file: chapters/Part3/higgs_pair.aux
-A level-1 auxiliary file: chapters/Part3/dihiggs_yukawa_cut.aux
-A level-1 auxiliary file: chapters/Part3/dihiggs_yukawa_bdt.aux
-A level-1 auxiliary file: chapters/Part4/HiggsAndFlavour.aux
-A level-1 auxiliary file: chapters/Part4/FlavourAnomalies.aux
 The style file: utphys.bst
-Reallocated field_info (elt_size=4) to 23464 items from 5000.
 Database file #1: bibliography.bib
 Warning--entry type for "twiki" isn't style-file defined
 --line 1375 of file bibliography.bib
@@ -29,15 +20,6 @@ I'm skipping whatever remains of this entry
 Repeated entry---line 2502 of file bibliography.bib
  : @article{Bonciani:2018omm
  :                          ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 2854 of file bibliography.bib
- : @article{Butterworth:2008iy
- :                            ,
-I'm skipping whatever remains of this entry
-Reallocated str_pool (elt_size=1) to 130000 items from 65000.
-Repeated entry---line 3816 of file bibliography.bib
- : @article{Aad:2019mbh
- :                     ,
 I'm skipping whatever remains of this entry
 Repeated entry---line 3839 of file bibliography.bib
  : @article{Patel:2015tea
@@ -70,10 +52,6 @@ I'm skipping whatever remains of this entry
 Repeated entry---line 3926 of file bibliography.bib
  : @article{Gauld:2015lmb
  :                       ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 3952 of file bibliography.bib
- : @article{Aad:2019mbh
- :                     ,
 I'm skipping whatever remains of this entry
 Repeated entry---line 3982 of file bibliography.bib
  : @article{Hartland:2019bjb
@@ -115,10 +93,6 @@ Repeated entry---line 4101 of file bibliography.bib
  : @article{Sirunyan:2020kgar
  :                           ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 4115 of file bibliography.bib
- : @article{McCullough:2013rea
- :                            ,
-I'm skipping whatever remains of this entry
 Repeated entry---line 4130 of file bibliography.bib
  : @article{Gorbahn:2016uoy
  :                         ,
@@ -135,10 +109,6 @@ Repeated entry---line 4169 of file bibliography.bib
  : @article{Degrassi:2021uik
  :                          ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 4181 of file bibliography.bib
- : @article{Degrassi:2019yix
- :                          ,
-I'm skipping whatever remains of this entry
 Repeated entry---line 4194 of file bibliography.bib
  : @article{Maltoni:2017ims
  :                         ,
@@ -150,14 +120,6 @@ I'm skipping whatever remains of this entry
 Repeated entry---line 4221 of file bibliography.bib
  : @techreport{ATLAS:2018gug
  :                          ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 4228 of file bibliography.bib
- : @techreport{ATLAS:2019pbo
- :                          ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 4235 of file bibliography.bib
- : @techreport{CMS:2018rig
- :                        ,
 I'm skipping whatever remains of this entry
 Repeated entry---line 4242 of file bibliography.bib
  : @article{Degrande:2020evl
@@ -174,10 +136,6 @@ I'm skipping whatever remains of this entry
 Repeated entry---line 4282 of file bibliography.bib
  : @article{Anisha:2021hgc
  :                        ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 4292 of file bibliography.bib
- : @article{Grojean:2020ech
- :                         ,
 I'm skipping whatever remains of this entry
 Repeated entry---line 4341 of file bibliography.bib
  : @article{Brivio:2019ius
@@ -267,10 +225,6 @@ Repeated entry---line 4661 of file bibliography.bib
  : @article{DiVita:2017vrr
  :                        ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 4677 of file bibliography.bib
- : @article{Haisch:2021hvy
- :                        ,
-I'm skipping whatever remains of this entry
 Repeated entry---line 4686 of file bibliography.bib
  : @online{twiki
  :              ,
@@ -283,14 +237,6 @@ Repeated entry---line 4909 of file bibliography.bib
  : @inbook{Cepeda:2019klc
  :                       ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 4950 of file bibliography.bib
- : @article{deBlas:2019rxi
- :                        ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 4995 of file bibliography.bib
- : @article{deFlorian:2016spz
- :                           ,
-I'm skipping whatever remains of this entry
 Repeated entry---line 5008 of file bibliography.bib
  : @article{Aaboud:2018zhk
  :                        ,
@@ -299,49 +245,9 @@ Repeated entry---line 5022 of file bibliography.bib
  : @article{Sirunyan:2018kst
  :                          ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 5134 of file bibliography.bib
- : @article{Butterworth:2008iy
- :                            ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 5146 of file bibliography.bib
- : @article{Ball:2017nwa
- :                      ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 5161 of file bibliography.bib
- : @article{Buckley:2014ana
- :                         ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 5175 of file bibliography.bib
- : @article{Harlander:2003ai
- :                          ,
-I'm skipping whatever remains of this entry
 Repeated entry---line 5569 of file bibliography.bib
  : @article{Salvatier2016
  :                       ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 5733 of file bibliography.bib
- : @article{Blankenburg:2012ex
- :                            ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 5759 of file bibliography.bib
- : @article{Egana-Ugrinovic:2019dqu
- :                                 ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 5773 of file bibliography.bib
- : @article{Egana-Ugrinovic:2018znw
- :                                 ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 5786 of file bibliography.bib
- : @article{Bar-Shalom:2018rjs
- :                            ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 5799 of file bibliography.bib
- : @article{DAmbrosio:2002vsn
- :                           ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 5824 of file bibliography.bib
- : @article{Falkowski:2019tft
- :                           ,
 I'm skipping whatever remains of this entry
 Repeated entry---line 5890 of file bibliography.bib
  : @article{Bambade:2019fyw
@@ -351,29 +257,13 @@ Repeated entry---line 5900 of file bibliography.bib
  : @article{CEPCStudyGroup:2018ghi
  :                                ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 5924 of file bibliography.bib
- : @article{Bishara:2016jga
- :                         ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 5938 of file bibliography.bib
- : @article{Soreq:2016rae
- :                       ,
-I'm skipping whatever remains of this entry
 Repeated entry---line 5960 of file bibliography.bib
  : @article{DiVita:2017vrr
- :                        ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 6053 of file bibliography.bib
- : @article{Brivio:2015fxa
  :                        ,
 I'm skipping whatever remains of this entry
 Repeated entry---line 6068 of file bibliography.bib
  : @article{Ellis:2020unq
  :                       ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 6078 of file bibliography.bib
- : @article{McCullough:2013rea
- :                            ,
 I'm skipping whatever remains of this entry
 Repeated entry---line 6093 of file bibliography.bib
  : @article{Gorbahn:2016uoy
@@ -399,109 +289,17 @@ Repeated entry---line 6155 of file bibliography.bib
  : @article{DiVita:2017eyz
  :                        ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 6197 of file bibliography.bib
- : @article{ATLAS:2019pbo
- :                       ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 6207 of file bibliography.bib
- : @article{CMS:2018rig
- :                     ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 6217 of file bibliography.bib
- : @article{Bodwin:2013gca
- :                        ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 6230 of file bibliography.bib
- : @article{Kagan:2014ila
- :                       ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 6318 of file bibliography.bib
- : @article{Perez:2015lra
- :                       ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 6356 of file bibliography.bib
- : @article{Contino:2012xk
- :                        ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 6368 of file bibliography.bib
- : @article{Binoth:2006ym
- :                       ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 6380 of file bibliography.bib
- : @article{Bauer:2017cov
- :                       ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 6423 of file bibliography.bib
- : @article{Delaunay:2016brc
- :                          ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 6449 of file bibliography.bib
- : @article{Heinrich:2019bkc
- :                          ,
-I'm skipping whatever remains of this entry
 Repeated entry---line 6475 of file bibliography.bib
  : @article{Alloul:2013bka
  :                        ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 6525 of file bibliography.bib
- : @article{Branco:1996bq
- :                       ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 6563 of file bibliography.bib
- : @article{Grojean:2020ech
- :                         ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 6599 of file bibliography.bib
- : @article{Djouadi:1997yw
- :                        ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 6613 of file bibliography.bib
- : @article{Djouadi:2018xqq
- :                         ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 6663 of file bibliography.bib
- : @article{Dicus:1998hs
- :                      ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 6675 of file bibliography.bib
- : @article{Balazs:1998sb
- :                       ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 6701 of file bibliography.bib
- : @article{Grazzini:2018bsd
- :                          ,
 I'm skipping whatever remains of this entry
 Repeated entry---line 6727 of file bibliography.bib
  : @article{Alwall:2014hca
  :                        ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 6753 of file bibliography.bib
- : @article{Borowka:2016ehy
- :                         ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 6768 of file bibliography.bib
- : @article{Borowka:2016ypz
- :                         ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 6781 of file bibliography.bib
- : @article{Baglio:2018lrj
- :                        ,
-I'm skipping whatever remains of this entry
 Repeated entry---line 6820 of file bibliography.bib
  : @article{Bonciani:2018omm
  :                          ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 6846 of file bibliography.bib
- : @article{deFlorian:2013jea
- :                           ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 6858 of file bibliography.bib
- : @article{deFlorian:2015moa
- :                           ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 6882 of file bibliography.bib
- : @article{Grigo:2014jma
- :                       ,
 I'm skipping whatever remains of this entry
 Repeated entry---line 6997 of file bibliography.bib
  : @article{Larin:1993tq
@@ -510,10 +308,6 @@ I'm skipping whatever remains of this entry
 Repeated entry---line 7033 of file bibliography.bib
  : @article{Aglietti:2006tp
  :                         ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 7166 of file bibliography.bib
- : @article{Aad:2019mbh
- :                     ,
 I'm skipping whatever remains of this entry
 Repeated entry---line 7892 of file bibliography.bib
  : @article{deBlas:2015aea
@@ -527,17 +321,9 @@ Repeated entry---line 7922 of file bibliography.bib
  : @article{Jenkins:2013wua
  :                         ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 8042 of file bibliography.bib
- : @article{deBlas:2019rxi
- :                        ,
-I'm skipping whatever remains of this entry
 Repeated entry---line 8079 of file bibliography.bib
  : @article{CEPCStudyGroup:2018ghi
  :                                ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 9050 of file bibliography.bib
- : @article{DAmbrosio:2002vsn
- :                           ,
 I'm skipping whatever remains of this entry
 Repeated entry---line 9472 of file bibliography.bib
  : @article{Bambade:2019fyw
@@ -551,71 +337,19 @@ Repeated entry---line 9495 of file bibliography.bib
  : @article{deBlas:2017xtg
  :                        ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 9544 of file bibliography.bib
- : @article{Buchmuller:1985jz
- :                           ,
-I'm skipping whatever remains of this entry
 Repeated entry---line 9662 of file bibliography.bib
  : @article{DiMicco:2019ngk
  :                         ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 9677 of file bibliography.bib
- : @article{deFlorian:2016spz
- :                           ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 9728 of file bibliography.bib
- : @article{Contino:2010mh
- :                        ,
 I'm skipping whatever remains of this entry
 Repeated entry---line 9741 of file bibliography.bib
  : @article{Alonso:2013hga
  :                        ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 9757 of file bibliography.bib
- : @article{Heinrich:2020ckp
- :                          ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 9771 of file bibliography.bib
- : @article{Heinrich:2019bkc
- :                          ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 9784 of file bibliography.bib
- : @article{Heinrich:2017kxx
- :                          ,
-I'm skipping whatever remains of this entry
-Warning--entry type for "cernfacts" isn't style-file defined
---line 9973 of file bibliography.bib
-Warning--entry type for "welt-machine" isn't style-file defined
---line 9977 of file bibliography.bib
-Warning--entry type for "lhckomission" isn't style-file defined
---line 9989 of file bibliography.bib
-Warning--entry type for "closer" isn't style-file defined
---line 9993 of file bibliography.bib
-Warning--entry type for "lhcpreformance" isn't style-file defined
---line 9997 of file bibliography.bib
-Warning--entry type for "atlaslumi2" isn't style-file defined
---line 10001 of file bibliography.bib
-Warning--entry type for "atlaslumi1" isn't style-file defined
---line 10005 of file bibliography.bib
-Warning--entry type for "cmslumi" isn't style-file defined
---line 10009 of file bibliography.bib
 Database file #2: bibliography2.bib
-Repeated entry---line 26 of file bibliography2.bib
- : @article{CMS:2020gsy
- :                     ,
-I'm skipping whatever remains of this entry
 I was expecting a `,' or a `}'---line 39 of file bibliography2.bib
  :  
  :  title = "The handbook of research synthesis and meta-analysis 2nd edition",
 (Error may have been on previous line)
-I'm skipping whatever remains of this entry
-Repeated entry---line 141 of file bibliography2.bib
- : @techreport{ATLAS-CONF-2021-021
- :                                ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 193 of file bibliography2.bib
- : @techreport{ATL-PHYS-PUB-2018-016
- :                                  ,
 I'm skipping whatever remains of this entry
 Repeated entry---line 322 of file bibliography2.bib
  : @article{Grzadkowski:2010es
@@ -625,115 +359,60 @@ Repeated entry---line 335 of file bibliography2.bib
  : @article{Alonso:2013hga
  :                        ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 402 of file bibliography2.bib
- : @article{Ellis:2018gqa
- :                       ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 458 of file bibliography2.bib
- : @article{Falkowski:2019tft
- :                           ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 530 of file bibliography2.bib
- : @article{Buchalla:2013rka
- :                          ,
-I'm skipping whatever remains of this entry
 Repeated entry---line 557 of file bibliography2.bib
  : @article{LHCHiggsCrossSectionWorkingGroup:2016ypw
  :                                                  ,
 I'm skipping whatever remains of this entry
 Warning--entry type for "HXSWG" isn't style-file defined
 --line 945 of file bibliography2.bib
-Warning--I didn't find a database entry for ""
-Warning--there's a number but no series in minlos2000introduction
-Warning--empty booktitle in Freed1993LecturesOT
-Warning--can't use both volume and number fields in ellis2000physics
-Warning--empty author in Bruning:2004ej
-Warning--empty author in Apollinari:2015bam
-Warning--empty author in TheATLAScollaboration:2015uuh
-Warning--empty author in ATLAS:2019mju
 Warning--empty author in ATLAS:2019jst
-Warning--empty author in CMS:2019chr
-Warning--empty author in ATLAS:2020qdt
-Warning--empty institution in ATLAS:2020qdt
-Warning--empty author in CMS-PAS-FTR-18-011
-Warning--empty author in CMS:2020gsy
-Warning--empty institution in CMS:2020gsy
-Warning--empty author in CMS:2021ixs
-Warning--empty institution in CMS:2021ixs
-Warning--empty author in ATLAS2021vrm
-Warning--empty author and editor in BHHR
-Warning--empty title in BHHR
-Warning--empty publisher in BHHR
-Warning--empty year in BHHR
-Warning--empty author in CMS:2019pyn
-Warning--empty author in ATLAS-CONF-2021-021
-Warning--empty author in ATL-PHYS-PUB-2018-016
-Warning--empty author in ATLAS:2019dhi
-Warning--empty author in ATLAS:2019pbo
-Warning--empty institution in ATLAS:2019pbo
 Warning--empty author in ATLAS:2018gug
 Warning--empty institution in ATLAS:2018gug
 Warning--empty author in ATLAS:2021jki
 Warning--empty institution in ATLAS:2021jki
 Warning--empty pages in IML
+Warning--empty author in CMS-PAS-FTR-18-011
 Warning--empty author in CMS:2018ccd
 Warning--empty pages in CMS:2018ccd
-Warning--empty author in CMS:2018rig
-Warning--empty institution in CMS:2018rig
-Warning--empty author in CMS-PAS-SMP-19-014
-Warning--empty author in CMS-PAS-HIG-18-031
-Warning--empty author in ATLAS-CONF-2018-031
-Warning--empty author in CERN-EP-2019-119
-Warning--empty author in CMS:2013vea
-Warning--empty author in ATL-PHYS-PUB-2013-009
-Warning--empty author in CMS:2013aoa
-Warning--empty pages in heard2018choosing
-Warning--empty author in ATLAS-CONF-2013-063
-Warning--empty institution in Capeans:1291633
-Warning--empty author in ATL-PHYS-PUB-2015-018
-Warning--empty pages in shapley1951notes
-Warning--empty pages in 2018arXiv180203888L
-Warning--empty author in ATLAS-CONF-2021-016
-Warning--empty author in ATL-PHYS-PUB-2018-053
-You've used 576 entries,
+You've used 142 entries,
             2328 wiz_defined-function locations,
-            4606 strings with 122963 characters,
-and the built_in function-call counts, 178926 in all, are:
-= -- 17729
-> -- 6060
-< -- 17
-+ -- 2241
-- -- 1665
-* -- 19092
-:= -- 20941
-add.period$ -- 828
-call.type$ -- 576
-change.case$ -- 644
+            1628 strings with 34817 characters,
+and the built_in function-call counts, 44374 in all, are:
+= -- 4121
+> -- 1685
+< -- 2
++ -- 615
+- -- 473
+* -- 4920
+:= -- 5276
+add.period$ -- 155
+call.type$ -- 142
+change.case$ -- 153
 chr.to.int$ -- 0
-cite$ -- 627
-duplicate$ -- 9679
-empty$ -- 17339
-format.name$ -- 1665
-if$ -- 46024
+cite$ -- 151
+duplicate$ -- 2379
+empty$ -- 4302
+format.name$ -- 473
+if$ -- 11306
 int.to.chr$ -- 0
-int.to.str$ -- 576
-missing$ -- 2070
-newline$ -- 2064
-num.names$ -- 536
-pop$ -- 2693
+int.to.str$ -- 142
+missing$ -- 529
+newline$ -- 440
+num.names$ -- 135
+pop$ -- 686
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 6835
+skip$ -- 1678
 stack$ -- 0
-substring$ -- 7379
-swap$ -- 4830
-text.length$ -- 17
+substring$ -- 1768
+swap$ -- 1220
+text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 51
-while$ -- 1300
-width$ -- 579
-write$ -- 4868
-(There were 151 error messages)
+warning$ -- 9
+while$ -- 324
+width$ -- 145
+write$ -- 1142
+(There were 88 error messages)
