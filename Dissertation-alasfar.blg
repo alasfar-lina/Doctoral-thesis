@@ -2,10 +2,14 @@ This is BibTeX, Version 0.99d (TeX Live 2020)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: Dissertation-alasfar.aux
 A level-1 auxiliary file: chapters/End/list_of_publications.aux
+A level-1 auxiliary file: chapters/Part1/Higgs_and_SM.aux
+A level-1 auxiliary file: chapters/Part1/Constraints_on_Higgs.aux
+A level-1 auxiliary file: chapters/Part1/EFT.aux
 A level-1 auxiliary file: chapters/Part2/single_higgs.aux
 A level-1 auxiliary file: chapters/Part2/single_higgs_4tops.aux
 A level-1 auxiliary file: chapters/Part2/hz_nlo.aux
 The style file: utphys.bst
+Reallocated field_info (elt_size=4) to 14536 items from 5000.
 Database file #1: bibliography.bib
 Warning--entry type for "twiki" isn't style-file defined
 --line 1375 of file bibliography.bib
@@ -93,6 +97,10 @@ Repeated entry---line 4101 of file bibliography.bib
  : @article{Sirunyan:2020kgar
  :                           ,
 I'm skipping whatever remains of this entry
+Repeated entry---line 4115 of file bibliography.bib
+ : @article{McCullough:2013rea
+ :                            ,
+I'm skipping whatever remains of this entry
 Repeated entry---line 4130 of file bibliography.bib
  : @article{Gorbahn:2016uoy
  :                         ,
@@ -109,6 +117,10 @@ Repeated entry---line 4169 of file bibliography.bib
  : @article{Degrassi:2021uik
  :                          ,
 I'm skipping whatever remains of this entry
+Repeated entry---line 4181 of file bibliography.bib
+ : @article{Degrassi:2019yix
+ :                          ,
+I'm skipping whatever remains of this entry
 Repeated entry---line 4194 of file bibliography.bib
  : @article{Maltoni:2017ims
  :                         ,
@@ -119,6 +131,10 @@ Repeated entry---line 4208 of file bibliography.bib
 I'm skipping whatever remains of this entry
 Repeated entry---line 4221 of file bibliography.bib
  : @techreport{ATLAS:2018gug
+ :                          ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 4228 of file bibliography.bib
+ : @techreport{ATLAS:2019pbo
  :                          ,
 I'm skipping whatever remains of this entry
 Repeated entry---line 4242 of file bibliography.bib
@@ -225,6 +241,10 @@ Repeated entry---line 4661 of file bibliography.bib
  : @article{DiVita:2017vrr
  :                        ,
 I'm skipping whatever remains of this entry
+Repeated entry---line 4677 of file bibliography.bib
+ : @article{Haisch:2021hvy
+ :                        ,
+I'm skipping whatever remains of this entry
 Repeated entry---line 4686 of file bibliography.bib
  : @online{twiki
  :              ,
@@ -249,6 +269,10 @@ Repeated entry---line 5569 of file bibliography.bib
  : @article{Salvatier2016
  :                       ,
 I'm skipping whatever remains of this entry
+Repeated entry---line 5824 of file bibliography.bib
+ : @article{Falkowski:2019tft
+ :                           ,
+I'm skipping whatever remains of this entry
 Repeated entry---line 5890 of file bibliography.bib
  : @article{Bambade:2019fyw
  :                         ,
@@ -264,6 +288,10 @@ I'm skipping whatever remains of this entry
 Repeated entry---line 6068 of file bibliography.bib
  : @article{Ellis:2020unq
  :                       ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 6078 of file bibliography.bib
+ : @article{McCullough:2013rea
+ :                            ,
 I'm skipping whatever remains of this entry
 Repeated entry---line 6093 of file bibliography.bib
  : @article{Gorbahn:2016uoy
@@ -288,6 +316,10 @@ I'm skipping whatever remains of this entry
 Repeated entry---line 6155 of file bibliography.bib
  : @article{DiVita:2017eyz
  :                        ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 6197 of file bibliography.bib
+ : @article{ATLAS:2019pbo
+ :                       ,
 I'm skipping whatever remains of this entry
 Repeated entry---line 6475 of file bibliography.bib
  : @article{Alloul:2013bka
@@ -345,11 +377,43 @@ Repeated entry---line 9741 of file bibliography.bib
  : @article{Alonso:2013hga
  :                        ,
 I'm skipping whatever remains of this entry
+Repeated entry---line 9757 of file bibliography.bib
+ : @article{Heinrich:2020ckp
+ :                          ,
+I'm skipping whatever remains of this entry
+Warning--entry type for "cernfacts" isn't style-file defined
+--line 9973 of file bibliography.bib
+Warning--entry type for "welt-machine" isn't style-file defined
+--line 9977 of file bibliography.bib
+Warning--entry type for "lhckomission" isn't style-file defined
+--line 9989 of file bibliography.bib
+Warning--entry type for "closer" isn't style-file defined
+--line 9993 of file bibliography.bib
+Warning--entry type for "lhcpreformance" isn't style-file defined
+--line 9997 of file bibliography.bib
+Warning--entry type for "atlaslumi2" isn't style-file defined
+--line 10001 of file bibliography.bib
+Warning--entry type for "atlaslumi1" isn't style-file defined
+--line 10005 of file bibliography.bib
+Warning--entry type for "cmslumi" isn't style-file defined
+--line 10009 of file bibliography.bib
 Database file #2: bibliography2.bib
+Repeated entry---line 26 of file bibliography2.bib
+ : @article{CMS:2020gsy
+ :                     ,
+I'm skipping whatever remains of this entry
 I was expecting a `,' or a `}'---line 39 of file bibliography2.bib
  :  
  :  title = "The handbook of research synthesis and meta-analysis 2nd edition",
 (Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Repeated entry---line 141 of file bibliography2.bib
+ : @techreport{ATLAS-CONF-2021-021
+ :                                ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 193 of file bibliography2.bib
+ : @techreport{ATL-PHYS-PUB-2018-016
+ :                                  ,
 I'm skipping whatever remains of this entry
 Repeated entry---line 322 of file bibliography2.bib
  : @article{Grzadkowski:2010es
@@ -359,60 +423,106 @@ Repeated entry---line 335 of file bibliography2.bib
  : @article{Alonso:2013hga
  :                        ,
 I'm skipping whatever remains of this entry
+Repeated entry---line 402 of file bibliography2.bib
+ : @article{Ellis:2018gqa
+ :                       ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 458 of file bibliography2.bib
+ : @article{Falkowski:2019tft
+ :                           ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 530 of file bibliography2.bib
+ : @article{Buchalla:2013rka
+ :                          ,
+I'm skipping whatever remains of this entry
 Repeated entry---line 557 of file bibliography2.bib
  : @article{LHCHiggsCrossSectionWorkingGroup:2016ypw
  :                                                  ,
 I'm skipping whatever remains of this entry
 Warning--entry type for "HXSWG" isn't style-file defined
 --line 945 of file bibliography2.bib
+Repeated entry---line 1190 of file bibliography2.bib
+ : @article{Dawson:2022bxd
+ :                        ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1199 of file bibliography2.bib
+ : @article{Silvestrini:2018dos
+ :                             ,
+I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for ""
+Warning--there's a number but no series in minlos2000introduction
+Warning--empty booktitle in Freed1993LecturesOT
+Warning--can't use both volume and number fields in ellis2000physics
+Warning--empty author in Bruning:2004ej
+Warning--empty author in Apollinari:2015bam
+Warning--empty author in TheATLAScollaboration:2015uuh
+Warning--empty author in ATLAS:2019mju
 Warning--empty author in ATLAS:2019jst
+Warning--empty author in CMS:2019chr
+Warning--empty author in ATLAS:2020qdt
+Warning--empty institution in ATLAS:2020qdt
+Warning--empty author in CMS-PAS-FTR-18-011
+Warning--empty author in CMS:2020gsy
+Warning--empty institution in CMS:2020gsy
+Warning--empty author in CMS:2021ixs
+Warning--empty institution in CMS:2021ixs
+Warning--empty author in ATLAS2021vrm
+Warning--empty author and editor in BHHR
+Warning--empty title in BHHR
+Warning--empty publisher in BHHR
+Warning--empty year in BHHR
+Warning--empty author in CMS:2019pyn
+Warning--empty author in ATLAS-CONF-2021-021
+Warning--empty author in ATL-PHYS-PUB-2018-016
+Warning--empty author in ATLAS:2019dhi
+Warning--empty author in ATLAS:2019pbo
+Warning--empty institution in ATLAS:2019pbo
 Warning--empty author in ATLAS:2018gug
 Warning--empty institution in ATLAS:2018gug
 Warning--empty author in ATLAS:2021jki
 Warning--empty institution in ATLAS:2021jki
 Warning--empty pages in IML
-Warning--empty author in CMS-PAS-FTR-18-011
 Warning--empty author in CMS:2018ccd
 Warning--empty pages in CMS:2018ccd
-You've used 142 entries,
+You've used 297 entries,
             2328 wiz_defined-function locations,
-            1628 strings with 34817 characters,
-and the built_in function-call counts, 44374 in all, are:
-= -- 4121
-> -- 1685
-< -- 2
-+ -- 615
-- -- 473
-* -- 4920
-:= -- 5276
-add.period$ -- 155
-call.type$ -- 142
-change.case$ -- 153
+            2657 strings with 64085 characters,
+and the built_in function-call counts, 89468 in all, are:
+= -- 8818
+> -- 2890
+< -- 7
++ -- 1084
+- -- 787
+* -- 9386
+:= -- 10452
+add.period$ -- 374
+call.type$ -- 297
+change.case$ -- 350
 chr.to.int$ -- 0
-cite$ -- 151
-duplicate$ -- 2379
-empty$ -- 4302
-format.name$ -- 473
-if$ -- 11306
+cite$ -- 331
+duplicate$ -- 4790
+empty$ -- 8894
+format.name$ -- 787
+if$ -- 22997
 int.to.chr$ -- 0
-int.to.str$ -- 142
-missing$ -- 529
-newline$ -- 440
-num.names$ -- 135
-pop$ -- 686
+int.to.str$ -- 297
+missing$ -- 1039
+newline$ -- 938
+num.names$ -- 267
+pop$ -- 1429
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 1678
+skip$ -- 3378
 stack$ -- 0
-substring$ -- 1768
-swap$ -- 1220
-text.length$ -- 2
+substring$ -- 4094
+swap$ -- 2343
+text.length$ -- 7
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 9
-while$ -- 324
-width$ -- 145
-write$ -- 1142
-(There were 88 error messages)
+warning$ -- 34
+while$ -- 685
+width$ -- 300
+write$ -- 2412
+(There were 104 error messages)
