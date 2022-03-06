@@ -29,12 +29,7 @@ The primary objectives of this work are as follows:
 
 We show in \autoref{sec:EFT} the relevant EFT operators for the di-Higgs processes, discuss flavor bounds and minimal flavor violation (MFV). Then we introduce in \autoref{sec:Model} the concept of aligned flavor violation (AFV), and various "concrete" examples realising large enhancement to light yukawa while evading flavor bounds. We then study the leading contributing channels with simulation details explained in \autoref{sec:Sim}. Further we discuss in \autoref{sec:kinematics} the multivariate analysis and interpretable machine learning approach we adopt. We present prospected results in \autoref{sec:hadronC} at the HL-LHC and FCC. In \autoref{sec:Sum} we summarize our main findings.
 
-\begin{figure}[t]
-	\centering
-	\includegraphics[width=0.75\textwidth]{fig/pph_hh_14Tev.pdf}
-	\caption{\it The production cross-section of single Higgs and di-Higgs at $14$ TeV from the quark anti-quark annihilation $q\bar{q}A$ as a function of the Wilson coefficients $C_{u\phi}$ and $C_{d\phi}$ versus the SM gluon fusion cross-sections (the horizontal solid line for $gg \to h$ and the dashed-dotted one for $gg \to hh$). One can observe that for values of $C_{u\phi}=0.22\, (0.43)$ and $C_{d\phi}=0.26\, (0.47)$ the $q\bar{q}A$ channel becomes the dominant di-Higgs (single Higgs) production channel. The UV scale is set to $\Lambda = 1$ TeV. }
-	\label{fig:pphhvsh}
-\end{figure} 
+
 
 In the general framework of SMEFT, additional assumptions on UV-motivated flavor structure avoids stringent low energy FCNC and EDM bounds, making collider probe on the Yukawa and related Wilson coefficients competitive and relevant. See a recent overview of Yukawa coupling bounds from flavor and collider Higgs data, in the SMEFT framework given certain flavor structure. \cite{Alonso-Gonzalez:2021tpo}
 
@@ -98,42 +93,9 @@ From the discussion in this section we see that several models are present in th
 \label{sec:Sim}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 We consider the final state~$b \bar{b} \gamma \gamma$, as this channel has the most potential for Higgs pair searches~\cite{Cepeda:2019klc}. It has the ``clean'' $h \to \gamma \gamma$ decay, but also the other Higgs decay to $b$-quark pair is a channel with large branching ratio~$\sim 58\%$ and b-tagging capabilities for ATLAS and CMS are continuously improving.
-\begin{table}[h!]
-	\centering
-	\begin{tabular}{cccc}
-		\specialrule{.8pt}{0pt}{0pt}
-		Channel	        &LO $\sigma$ [fb]	&NLO $K$-fact	&6$\inab$ [\#evt @ NLO]   \\ %& 2$b$-jets[\%]  \\ 
-		\specialrule{.8pt}{0pt}{0pt}
-		$y_b^2$	        &0.0648	            &1.5	    &583                \\%&7.7\%  \\
-		$y_by_t$        &-0.00829	        &1.9        &-95                \\%&4.0\%	\\
-		$y_t^2$	        &0.123	            &2.5	    &1,840              \\%&12\%	\\
-		$Zh$	        &0.0827	            &1.3	    &645                \\%&21\%   \\
-		$\sum\bbh$	    &0.262	            &-	        &2,970              \\%&-      \\
-		$\bbaa$	        &12.9	            &1.5	    &116,000            \\%&14\%	\\
-		$t\bar th$	    &1.156	            &1.2	    &6,938              \\%&42\%	\\
-		%$hh_{\rm SM}$	&0.567	\la{0.053}            &1.72	    &3,492  \la{316}              \\%&32\%	\\ 
-		\specialrule{.8pt}{0pt}{2pt}
-	\end{tabular}
-	\caption{\it SM cross-section for the main background processes at 14\,$\tev$ with 6\,$\iab$ data at the HL-LHC, and the number of events after the basic cuts as defined in \autoref{eqn:bcuts}. For $\bbh$ production, the Higgs boson is decayed to a pair of photons. The total production of Higgs associated with $b\bar{b}$ is denoted by $\sum\bbh$ and is the sum of the top four channels.
-	}
-	\label{tab:xsec14}
-\end{table}
 
-\begin{figure}[t]
-	\centering
-	\includegraphics[width=0.25\textwidth]{fig/ggfbox} 	\hspace*{0.5 cm}
-	\includegraphics[width=0.29\textwidth]{fig/ggftri}
-	\caption{\it The cross-section of the $gg$F channel can be decomposed into three subprocesses based on its dependence on the trilinear coupling $\lambda$. The triangle topology depends on $\lambda^2$, the box one does not depend on it and the interference amongst the latter two is linear in $\lambda$. }
-	\label{fig:ggfsub}
-\end{figure}  
-\begin{figure}[t]
-	\centering
-	\includegraphics[width=0.125\textwidth]{fig/qqh_dim6}
-	\hspace*{0.5 cm}
-	\includegraphics[width=0.25\textwidth]{fig/qqh_higgs_prpg}
-	\caption{\it The dominant Feynman diagrams for the quark anti-quark annihilation~($q\bar q$A)  production of Higgs pair, via the SMEFT operator $ \mathcal O_{q\phi}$. }
-	\label{fig:qqa}
-\end{figure}
+
+
 
 To be able to study the effects of enhanced light-quark Yukawa couplings or Higgs trilinear coupling, we need to simulate events for HL-LHC and FCC-hh which we use to train a machine learning model to identify the signal from the background. We consider the $b\bar bh$, $t\bar th$, $b\bar b \gamma\gamma$ processes as the main sources of background for the $hh$ signal. For the $b\bar bh$ processes, the contributions proportional to $y_b^2$, $y_by_t$ and $y_t^2$ are simulated separately with $y_b$ running effects. The details of the simulation can be found in Ref.~\cite{Grojean:2020ech}. The $Zh, Z\to b\bar b$ events are generated at leading order (LO), then scaled to NLO by $K$-factors, defined as the ratio of higher order cross section over its LO counterpart. The $K$-factors were taken from $t\bar{t}h$~\cite{Beenakker:2001rj}, $b\bar b \gamma\gamma$~\cite{Fah:2017wlf}, $Zh$~\cite{Campanario:2014lza} and the remaining part of the $b\bar bh$ processes from~\cite{Dawson:2005vi}. The Higgs particles are further decayed to $\gamma\gamma$ following the Higgs cross-section working group recommendations~\cite{LHCHiggsCrossSectionWorkingGroup:2016ypw}. The parton-level results are showered using \texttt{Pythia 8.3}~\cite{Sjostrand:2014zea} and a detector simulation is done using \texttt{Delphes 3}~\cite{deFavereau:2013fsa}. To be inclusive and to explore the capabilities and importance of the full detector coverage, no generator-level cuts were applied on these processes except for the $b\bar b \gamma\gamma$ processes to avoid divergences. These minimal generator-level cuts for $b\bar b\gamma\gamma$ are
 \begin{equation}
@@ -523,57 +485,3 @@ In this section we present an estimate of the systematic uncertainties that can 
 
 In \autoref{fig:systematics} we show the significance~$\mathcal{Z}$ for the three Wilson coefficient, $C_\phi$, $C_{u\phi}$ and $C_{d\phi}$, at the HL-LHC from single parameter fits with no systematic uncertainties (black), LHC Run-II (violet) and HL-LHC baseline (blue) systematic uncertainties ansatze. We observe that for the current Run-II ansatz, the bounds for all three Wilson coefficients is diluted by 100\% or more. As for the HL-LHC baseline, the bounds are diluted by $\sim$ 70\%. However, it should be noted, that both systematic uncertainties scenarios are rather conservative. It is likely that the HL-LHC detector upgrade and new theoretical developments in higher-order corrections to di-Higgs cross-section will reduce the systematic uncertainties from the baseline. 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Light-quark Yukawa and Self Coupling at Future Lepton Colliders}
-\label{sec:Lep}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%
-Future high energy lepton colliders~\cite{Charles:2018vfv,Bambade:2019fyw,CEPCStudyGroup:2018ghi} offer further alternative and clean signals for measurement of Higgs properties. 
-%Among the many advantages, the Higgs decay to flavor-tagged jets, especially $c$ and $b$ quarks will benefit from the clean environment at a lepton collider and reach sensitivities improved by orders of magnitude of (1.8\% and 1.3\% at 250 GeV 5ab$^{-1}$) compared with ($\mathcal{O}(1)$ and 3.6\%) at the HL-LHC inclusive $\kappa$ fit or kinematic study~\cite{deBlas:2019rxi,Bishara:2016jga}. % We are not conserned with c and b 
-For example, Higgs decays to ``un-tagged'' light jets including $u,d,s$ quarks can be further disentangled from $H\to gg$ using event shape analysis~\cite{Gao:2016jcm} and can reach a sensitivity of $\kappa_d \approx 90$ and $\kappa_u \approx192$ at 250 GeV with 5ab$^{-1}$ data compared with a sensitivity of $\kappa_d \approx 470$ and $\kappa_u \approx900$ at the 6ab$^{-1}$ HL-LHC~\cite{Carpenter:2016mwd,Soreq:2016rae}.
-
-The sensitivity to Higgs self-coupling comes indirectly for center of mass energy below 250 GeV from the precision measurement of the $Zh$ production channel ($\delta \kappa_\lambda$  ($1\sigma$)~$0.4$ at 250 GeV), and at 500 GeV directly from the $Zhh$ channel ( $\delta \kappa_\lambda$  ($1\sigma$)~$0.27$ at 500 GeV), and from vector boson fusion like production to $hh\nu\nu$ when 1 TeV or higher energy scales are available ($\delta \kappa_\lambda$  ($1\sigma$)~10\% at 1 TeV). The prospective sensitivity depends on the collider setup, mainly the integrated luminosity and polarization of initial lepton beams. Given the updated prospects of future machine designs~\cite{deBlas:2019rxi}, 
-we list a short summary in \autoref{tab:exp_yqyl} of the expected sensitivities on the individual parameters in the $\kappa$ framework. These numbers are all assuming one-parameter fits in $\kappa$ or (translated from) SMEFT framework. No simultaneous fit including both $\kappa_q$ and $\kappa_\lambda$ (or using the corresponding SMEFT operators) have been performed yet. 
-
-
-%\begin{table}[]
-%    \centering
-%   {\footnotesize
-	%   \begin{tabular}{c|c|c|c|c}
-		%   \hline
-		%         \ &  $\kappa_u$ &  $\kappa_d$ & $y_s/y_b^{\rm SM}$ & %$\lambda_3/\lambda_3^{\rm SM}$  ($1\sigma$) \\ \hline
-		%        300 fb$^{-1}$ (LHC) & $ 0.36$ \cite{Soreq:2016rae} (820) & $ %0.41$ \cite{Soreq:2016rae} (430) &  - & -\\ 
-		%     3000 fb$^{-1}$ (HL-LHC) &  0.48 \cite{deBlas:2019rxi} &  0.5 %\cite{deBlas:2019rxi} & $ 0.58$ \cite{Bishara:2016jga} (30)& %$50\%$ \cite{deBlas:2019rxi}\\
-		%        250 GeV 1 ab$^{-1}$ (ILC) & 0.28*\cite{deBlas:2019rxi} & %0.16*\cite{deBlas:2019rxi}& & \\
-		%       240GeV 5ab$^{-1}$ (CECP/FCC) & $0.09$ \cite{Gao:2016jcm} (204) & %$0.09$ \cite{Gao:2016jcm} (94) & $ 0.09$ \cite{Gao:2016jcm} (4.8) %& 100\% (Indirect\cite{DiVita:2017vrr})\\
-		%         350 GeV 1.5 ab$^{-1}$ (FCC) & 0.2*\cite{deBlas:2019rxi} & %0.12*\cite{deBlas:2019rxi} & & 40\% %(Indirect\cite{DiVita:2017vrr})\\ 
-		%      500 GeV 4 ab$^{-1}$ (ILC) & 0.2*\cite{deBlas:2019rxi} & %0.13*\cite{deBlas:2019rxi}& & 27\% \cite{Bambade:2019fyw} \\
-		%       1 TeV 8 ab$^{-1}$ (ILC) & 0.14*\cite{deBlas:2019rxi} & %0.12*\cite{deBlas:2019rxi} & & 10\% \cite{deBlas:2019rxi} \\
-		%  %       100 TeV 30 ab$^{-1}$ (FCC-hh) & 0.1*\cite{deBlas:2019rxi} & %0.14*\cite{deBlas:2019rxi} & & 5\% \cite{deBlas:2019rxi}\\
-		%      10 TeV 10 ab$^{-1}$ (Muon) & & & & 3\% \cite{deBlas:2019rxi}\\ %\hline
-		%     \end{tabular}
-	%\caption{Prospective light-quark Yukawa and Higgs self-coupling %sensitivities at future lepton colliders. The light-quark Yukawa %bounds are 95\% CL, while the self-coupling bounds are $1\sigma$ or %68\% CL sensitivity reach. The starred (*) numbers are translated from %one-parameter SMEFT fit results. The translation is done by taking %$\delta y_q = \delta(\frac{c_{qH}}{\Lambda^2}) \frac{v^2}{2}$, and %normalizing to the SM b-Yukawa coupling around Higgs mass %$m_b(\mu=M_H) = \frac{y_b^{\rm SM}v}{\sqrt{2}}= 2.7$ GeV.}
-	%  \label{tab:exp_yqyl}
-	%   }
-%\end{table}
-
-
-\begin{table}[t!]
-	\centering
-	{\small
-		\begin{tabular}{cccc}
-			\toprule
-			Collider &  $|\kappa_u|$ &  $|\kappa_d|$  & $\delta \kappa_\lambda$  ($1\sigma$) \\ \midrule
-			%250 GeV 1 ab$^{-1}$ (ILC) & 343*\cite{deBlas:2019rxi} & 91*\cite{deBlas:2019rxi} &-- \\
-			240GeV 5ab$^{-1}$ (CECP/FCC) & 192 \cite{Gao:2016jcm}  & 90 \cite{Gao:2016jcm}   & 100\% (Indirect\cite{DiVita:2017vrr})\\
-			350 GeV 1.5 ab$^{-1}$ (FCCee) & 310\cite{deBlas:2019rxi} & 140\cite{deBlas:2019rxi} &  40\% (Indirect\cite{DiVita:2017vrr})\\ 
-			500 GeV 4 ab$^{-1}$ (ILC) & 330\cite{deBlas:2019rxi} & 160\cite{deBlas:2019rxi}&  27\% \cite{Bambade:2019fyw} \\
-			1 TeV 8 ab$^{-1}$ (ILC) & -- & -- &  10\% \cite{deBlas:2019rxi} \\
-			3 TeV 1 ab$^{-1}$ (CLIC) & 430\cite{deBlas:2019rxi} & 200\cite{deBlas:2019rxi} &  10\% \cite{deBlas:2019rxi}\\
-			10 TeV 10 ab$^{-1}$ (Muon) & --& --&  3\% \cite{deBlas:2019rxi}\\ \bottomrule
-		\end{tabular}
-		\caption{\it Prospective light-quark Yukawa and Higgs self-coupling sensitivities at future lepton colliders. The light-quark Yukawa bounds are 95\% CL, while the self-coupling bounds are $1\sigma$ or 68\% CL sensitivity reach.}
-		\label{tab:exp_yqyl}
-	}
-\end{table}
-
-%From ~\cite{Alasfar:2019pmn}, we see that the two could be correlated in di-Higgs observable especially in the SMEFT framework, where contact interaction of $q\bar q HH$ contribution to di-Higgs production become dominant with enhanced light-quark Yukawa coupling. Thus a separation of sensitivity to the various channel in the di-Higgs signal is essential to disentangle the different source of NP contribution from expected future collider data. \rg{I am not sure what the last few lines have to do with a future lepton collider. I have the feeling that the major correlation in this case would come from the fact that the light Yukawas would modify the decay rates so this would need to be considered in fits.}

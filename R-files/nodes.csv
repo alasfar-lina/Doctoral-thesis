@@ -1,0 +1,14 @@
+node,type
+Higgs Pair, Core
+ATLAS, Exp
+CMS,Exp
+ggF, Channel
+VBF, Channel
+ggF1, Channel
+VBF1, Channel
+4b resolved, FinalState
+bbll resolved, FinalState
+bbττ resolved, FinalState
+bbγγ resolved, FinalState
+4b boosted, FinalState
+bbZZ(4l) resolved,FinalState

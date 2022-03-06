@@ -1,0 +1,15 @@
+parent,child
+Higgs Pair,ATLAS
+Higgs Pair,CMS
+ATLAS,ggF
+ATLAS,VBF
+CMS,ggF1
+CMS,VBF1
+VBF,4b resolved
+ggF,bbll resolved
+ggF,bbττ resolved
+ggF,bbγγ resolved
+VBF1,4b resolved
+ggF1,4b boosted
+ggF1,bbZZ(4l) resolved
+ggF1,bbγγ resolved

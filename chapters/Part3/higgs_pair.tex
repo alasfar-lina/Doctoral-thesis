@@ -18,6 +18,16 @@ The dominant process for Higgs pair production at the LHC~(and hadron colliders 
 	\label{fig_ggf_sm}
 \end{figure}
 %
+<<<<<<< HEAD
+This process is well-studied at leading order~(LO) analytically~\cite{EBOLI1987269,GLOVER1988282,DICUS1988457,Plehn:1996wb}.  The higher order computations are significantly more complicated to preform compared to the gluon fusion production of a single Higgs. This is due to the fact that multi-scale amplitudes at two-loops (and more) cannot be always computed analytically using the current computational techniques.  The first attempt to compute the NLO corrections to di-Higgs were via the infinite top limit (HTL/LME)  approximation~\cite{Dawson:1998py, Altenkamp:2012sx,Grigo:2014jma} and implemented in~\texttt{HPAIR}. These corrections were found to be large, with a K-factor of $ \sim 2$.  This prompted more calculations with inclusion of top mass effects~\cite{deFlorian:2013uza,Grigo:2013rya,Maltoni:2014eza,Grigo:2015dia,Degrassi:2016vss}, which improved the stability of the LME expansion as well as corrected the cross-section by $\sim 10\%$. In addition, the threshold resummation effects of the LME has been included in \cite{Shao:2013bz}. This approach, however, is not sufficient to produce corrections to the differential cross-section, as the LME fails for $m_{hh}^2/4m_t^2 \lesssim 1$. Using numerical evaluation of the two-loop integrals, it is possible to obtain exact results with full top mass dependence, see refs.~\cite{Borowka:2016ypz,Borowka:2016ehy,Baglio:2018lrj}. But this comes at the cost of computational power required to evaluate the cross-section.  Hence, approximation methods were imperative in obtaining more flexible results for use at simulations and BSM Higgs pair production predictions.  These approximations methods are analogous, and sometimes connected  to the ones used for $Zh$ production discussed in~\autoref{chap:hz}. This includes, small final particle transverse momentum ~\cite{Bonciani:2018omm}, and high energy~(HE) expansions~\cite{Davies:2018ood,Davies:2018qvx}. In addition to a method developed in refs. ~\cite{Xu:2018eos,Wang:2020nnr} which considers both $\hat s , \hat t$ and $m_t$ as large quantities while keeping the Higgs mass as small one. This method has a wide coverage of the $m_{hh}$ spectrum.  The use of Pad\'e approximation to improve the $\pt$--expanded amplitude coverage as well as to obtain a description for the three-loop~(NNLO) form factors was demonstrated in~\cite{Davies:2019nhm}. The NNLO cross section with top mass effects has been computed numerically in~\cite{Grazzini:2018bsd} and also at differential level~\cite{deFlorian:2016uhr}, and analytically only in the LME~\cite{deFlorian:2013jea}. Also, NLO+ NNL analytic results have been obtained by~\cite{deFlorian:2015moa}. Parton shower matching for NLO Higgs pair production has been computed  in~\cite{Jones:2017giv,Heinrich:2019bkc}, which was essential for the \texttt{POWHEG} implementation for di-Higgs, with NLO corrections computed from a grid has been made available by ~\cite{Heinrich:2017kxx,Heinrich:2019bkc,Heinrich:2020ckp}. \autoref{dihiggs-gridplot} shows the Higgs pair virtual partonic cross-section defined in~eq.\eqref{eq:deltasigma} vs the  $\pt$ and HE expansions bridged using Pad\'e  approximants~\cite{Bellafronte:2022jmo}.  The matching between the results across low and high energy intervals of $m_{hh}$ shows the strength of Pad\'e  approximants technique.  This is the most recent analytic higher order correction result for Higgs pair production.\\
+%
+The LO Higgs pair production with SMEFT operators is available in \texttt{SMEFTatNLO} mode~\cite{Degrande:2020evl} for ~\texttt{MadGraph}.
+
+\begin{figure}[!htpb]
+	\centering
+	\includegraphics[width = 0.8\textwidth]{./figures/HH_NLO}
+	\caption{Combination of the HE and $\pt$ expansions of the virtual two-loop NLO corrections using  Pad\'e  approximants,  confronted with the NLO results from a numerical grid. This plot is taken from~\cite{Bellafronte:2022jmo}. } 
+=======
 This process is well-studied at leading order~(LO) analytically~\cite{EBOLI1987269,GLOVER1988282,DICUS1988457,Plehn:1996wb}.  The higher order computations are significantly more complicated to preform compared to the gluon fusion production of a single Higgs. This is due to the fact that multi-scale amplitudes at two-loops (and more) cannot be always computed analytically using the current computational techniques.  The first attempt to compute the NLO corrections to di-Higgs were via the infinite top limit (HTL/LME)  approximation~\cite{Dawson:1998py, Altenkamp:2012sx,Grigo:2014jma} and implemented in~\texttt{HPAIR}. These corrections were found to be large, with a K-factor of $ \sim 2$.  This prompted more calculations with inclusion of top mass effects~\cite{deFlorian:2013uza,Grigo:2013rya,Maltoni:2014eza,Grigo:2015dia,Degrassi:2016vss}, which improved the stability of the LME expansion as well as corrected the cross-section by $\sim 10\%$. In addition, the threshold resummation effects of the LME has been included in \cite{Shao:2013bz}. This approach, however, is not sufficient to produce corrections to the differential cross-section, as the LME fails for $m_{hh}^2/4m_t^2 \lesssim 1$. Using numerical evaluation of the two-loop integrals, it is possible to obtain exact results with full top mass dependence, see refs.~\cite{Borowka:2016ypz,Borowka:2016ehy,Baglio:2018lrj}. But this comes at the cost of computational power required to evaluate the cross-section.  Hence, approximation methods were imperative in obtaining more flexible results for use at simulations and BSM Higgs pair production predictions.  These approximations methods are analogous, and sometimes connected  to the ones used for $Zh$ production discussed in~\autoref{chap:hz}. This includes, small final particle transverse momentum ~\cite{Bonciani:2018omm}, and high energy~(HE) expansions~\cite{Davies:2018ood,Davies:2018qvx}. In addition to a method developed in refs. ~\cite{Xu:2018eos,Wang:2020nnr} which considers both $\hat s , \hat t$ and $m_t$ as large quantities while keeping the Higgs mass as small one. This method has a wide coverage of the $m_{hh}$ spectrum.  The use of Pad\'e approximation to improve the $\pt$--expanded amplitude coverage as well as to obtain a description for the three-loop~(NNLO) form factors was demonstrated in~\cite{Davies:2019nhm}. The NNLO cross section with top mass effects has been computed numerically in~\cite{Grazzini:2018bsd} and also at differential level~\cite{deFlorian:2016uhr}, and analytically only in the LME~\cite{deFlorian:2013jea}. Also, NLO+ NNL analytic results have been obtained by~\cite{deFlorian:2015moa}. Parton shower matching for NLO Higgs pair production has been computed  in~\cite{Jones:2017giv,Heinrich:2019bkc}, which was essential for the \texttt{POWHEG} implementation for di-Higgs, with NLO corrections computed from a grid has been made available by ~\cite{Heinrich:2017kxx,Heinrich:2019bkc,Heinrich:2020ckp}. \autoref{dihiggs-gridplot} shows the Higgs pair virtual partonic cross-section defined in~eq.\eqref{eq:deltasigma} vs the  $\pt$ and HE expansions bridged using Pad\'e  approximants~\la{add ref}. \\
 %
 Moreover, the NLO Higgs pair production with SMEFT operators is available in \texttt{SMEFTatNLO} mode~\cite{Degrande:2020evl} for ~\texttt{MadGraph}.
@@ -25,6 +35,7 @@ Moreover, the NLO Higgs pair production with SMEFT operators is available in \te
 	\centering
 	%\includegraphics[width = 0.8\textwidth]{./figures/di-higgs-LO-SM}
 	\caption{Feynman diagrams for the ggF process of Higgs pair production in the SM.} 
+>>>>>>> a1a14be19a42a35e9f84a4fd32a51a854ffc3ee4
 	\label{dihiggs-gridplot}
 \end{figure}
 %
@@ -71,8 +82,16 @@ The total 14 TeV ggF $hh$, cross-section at different orders in computation with
 \end{table}
 
 \section{Other processes\label{otherhh}  }
+<<<<<<< HEAD
+Like the single Higgs production at hadron colliders, the production of Higgs pairs has the same subdominant channels VBF, di-Higgsstrahlung $ Vhh$ and associates production of Higgs pair with tops $t\bar hh /t j hh$. Their cross-sections and uncertainties at 14 TeV are shown in~\autoref{table:di-higgs}, while in~\autoref{dihiggs-all} their cross-sections as a function of the centre-of-mass energy $\sqrt{s}$ is shown~\cite{DiMicco:2019ngk}. 
+\begin{table}[htbp!]
+	\includegraphics[width=1\textwidth]{hh-table}
+	\caption{ Summery of the Higgs pair production processes at 14 TeV LHC. \label{table:di-higgs} }
+\end{table}
+=======
 Like the single Higgs production at hadron colliders, the production of Higgs pairs has the same subdominant channels VBF, di-Higgsstrahlung $ Vhh$ and associates production of Higgs pair with tops $t\bar hh /t j hh$. Their cross-sections and uncertainties at 14 TeV are shown in the \la{table}, while in~\autoref{dihiggs-all} their cross-sections as a function of the centre-of-mass energy $\sqrt{s}$ is shown~\cite{DiMicco:2019ngk}. 
 
+>>>>>>> a1a14be19a42a35e9f84a4fd32a51a854ffc3ee4
 \subsection{VBF $hh$}
 Vector boson fusion $hh$ production has the second largest cross-section after ggF $hh$, which is calculated up to N$^3$LO~\cite{Baglio:2012np,Ling:2014sne,Dreyer:2018qbw} inclusively and differentially at NNLO~\cite{Dreyer:2018rfu}. The dominant diagrams are analigious to the single Higgs VBF, which involve the $W/Z$ bosons exchanged in the $t-$channel. The process has the same topology as the -off shell- single Higgs VBF, with the off-shell Higgs giving two final states ones via the trilinear self-coupling. 
 \subsection{Di-Higgsstrahlung}
@@ -89,6 +108,51 @@ Sometimes called the di-Higgs bremsstrahlung off top quarks~\cite{DiMicco:2019ng
 %%%%%%%%
 
 \section{Experimental overview for Higgs pair production \label{exphh}  }
+<<<<<<< HEAD
+The search for Higgs pair production can be divided into two categories, resonant and non-resonant searches. The first searches for a heavy scalar or spin-2 resonance that decays into a Higgs pair. While the latter is concerned about the SM or if the new particle has a mass beyond the reach of the LHC, i.e. when the EFT limit is valid. In this review, I shall focus on the non-resonant searches, as these are the ones relevant to focus of this thesis, for detailed overview of the resonant searches, and non-resonant ones, see~\cite{DiMicco:2019ngk}.\\
+%
+\autoref{dihigs-exp} shows the current searches for non-resonant Higgs pair production by both ATLAS and CMS. The searches are summarised according to the final state:
+\begin{figure}[!htpb]
+	\centering
+	\includegraphics[width = 0.8\textwidth]{./figures/HH-exp-network}
+	\caption{The non-resonant Higgs pair searches conducted by ATLAS and CMS using the full Run-II data.} 
+	\label{dihigs-exp}
+\end{figure}
+\subsection*{$hh \to b\bar b b \bar b $}
+ The final state $ hh \to b\bar b b \bar b$ has the highest cross-section possible for Higgs pair, but poses a difficulty due to the large QCD background  coming from production of 4 b-tagged jets. CMS~\cite{CMS-PAS-HIG-20-005} has used Boosted decision trees~(BDT) for studying this final state for ggF and VBF channels, separated. This allowed for sinsitivity for the trilinear and $hhVV$ coupling. This analysis lead to 95\% CL bounds on $\kappa_\lambda \in [-2.3;9.4]$ and $\kappa_{2V} \in [-0.1; 2.2]$.  They have also preformed boosted analysis for the VBF channel, by defining two large jets with jet radius of $\Delta R =0.8$. This analysis is not sensitive to the trilinear self-coupling, but it is sensitive to both $\kappa_V$ and  $\kappa_{2V} $, which leads to the most stringent bound on the latter coupling modifier so far  $\kappa_{2V}  \in [0.6;1.4]$. The $\kappa_{2V}=0$ hypothesis is excluded with $ p<0.001$~\cite{CMS-PAS-B2G-21-001}. On the other hand, ATLAS has preformed only a resolved analysis for this final state and only for the VBF production channel~\cite{ATLAS:2020jgy}, hence they were able to only report bounds on $hhVV$ coupling $\kappa_{2V} \in [-0.43;2.56]$. 
+\subsection*{$hh \to b\bar b VV $}
+ATLAS has considered the gluon fusion final state~$hh \to b\bar b \ell \ell$, with the leptons coming from $WW/ZZ$ decays~\cite{ATLAS:2019vwv}. This states covers around $90\%$ of the total~$hh \to b\bar b VV $ signal. Their analysis was divided into two categorise, same-flavour and different-flavour leptons. The observed signal strength were higher than the expected one. Hence, no bounds on the self-coupling could be extracted from this search. Similar analysis has been carried out by CMS, but with a requirement to observe four leptons instead of two, hence they searched for the final state$hh \to b\bar b( ZZ^*\to 4\ell)$. The 95\% CL upper limit on the signal strength was 30 times the SM one, with bounds on Higgs self-coupling of $\kappa_\lambda \in [-9;14]$~\cite{CMS-PAS-HIG-20-004}. 
+\subsection*{$hh \to b\bar b \tau \tau $}
+This channel has backgrounds coming from real $\tau$'s, such as $t\bar t$ and $Z j$ with heavy jets. Also, fake $\tau$'s coming from QCD multijet process. A neural network has been used by ATLAS~\cite{ATLAS-CONF-2021-052} for this channel's search, using resolved b jets. The extracted bounds on $\kappa_\lambda$ are $[-2.4;9.2]$. 
+\subsection*{$hh \to b\bar b \gamma \gamma $}
+This final is the most promising for Higgs pair searches and observation. Despite having a lower cross-section that the previous final states with BR of  0.27\% in the SM, it has the highest selection efficiency.  This is due to the low backgrounds and the ability to fully reconstruct the photons. The dominant non-reducible background is $b\bar b \gamma \gamma$ which has a cross-section of ~$\sim13\si{\femtobarn}$ at the 14 TeV LHC, more details about the backgrounds of this final states are stated in~\autoref{tab:xsec14}. \\
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{cccc}
+		\specialrule{.8pt}{0pt}{0pt}
+		Channel	        &LO $\sigma$ [fb]	&NLO $K$-fact	&6$\inab$ [\#evt @ NLO]   \\ %& 2$b$-jets[\%]  \\ 
+		\specialrule{.8pt}{0pt}{0pt}
+		$b\bar b h, y_b^2$	        &0.0648	            &1.5	    &583                \\%&7.7\%  \\
+		$b\bar b h, y_by_t$        &-0.00829	        &1.9        &-95                \\%&4.0\%	\\
+		$b\bar b h, y_t^2$	        &0.123	            &2.5	    &1,840              \\%&12\%	\\
+		$Zh$	        &0.0827	            &1.3	    &645                \\%&21\%   \\
+		$\sum\bbh$	    &0.262	            &-	        &2,970              \\%&-      \\
+		$\bbaa$	        &12.9	            &1.5	    &116,000            \\%&14\%	\\
+		$t\bar th$	    &1.156	            &1.2	    &6,938              \\%&42\%	\\
+		%$hh_{\rm SM}$	&0.567	\la{0.053}            &1.72	    &3,492  \la{316}              \\%&32\%	\\ 
+		\specialrule{.8pt}{0pt}{2pt}
+	\end{tabular}
+	\caption{ SM cross-section for the main background processes at 14\,$\tev$ with 6\,$\iab$ data at the HL-LHC. For $\bbh$ production, the Higgs boson is decayed to a pair of photons. The total production of Higgs associated with $b\bar{b}$ is denoted by $\sum\bbh$ and is the sum of the top four channels.
+	}
+	\label{tab:xsec14}
+\end{table}
+Both ATLAS and CMS have published searches of this channel using resolved b-jets and BDT and neural networks~\cite{ATLAS:2021jki,CMS:2020tkr}. With ATLAS reporting the strongest 95\% CL bound on $\kappa_\lambda$ yet, which was used in the comparisons in~\autoref{fig:summcphihl-lhc}. While CMS has reported bounds on $\kappa_\lambda$ and $\kappa_{2V}$ : $\kappa_{\lambda} \in [-3.3;8.5]$ and $\kappa_{2V} \in [-1.3; 3.5]$.                                                                                       
+\subsection{Prospects for the HL-LHC}
+The highlight of the HL-LHC programme is the search for the Higgs pair production. It is projected that the Higgs pair signal to be observed at $\sim  4- 4.5\sigma $ level. The use of machine learning techniques in the event analysis of $hh$ searches will be a key factor in the potential discovery of this process~\cite{Cepeda:2019klc}. In~\autoref{chap:MLLightYuk} the interpretable machine learning technology will be exploited in improving the sensitivity for $hh$ signals at the HL-LHC. With the main focus on the $\bbaa$ final state. As this channel has the highest potential for discovery of di-Higgs production~\cite{Azatov:2015oxa, Baur:2003gp, Baglio:2012np, Kling:2016lay, Barger:2013jfa, Adhikary:2017jtu,Alves:2017ued}. The expected bounds on $\kappa_\lambda$ at the HL-LHC for combined ATLAS and CMS is~$\kappa_{\lambda} \in [0.1,2.3]$~\cite{DiMicco:2019ngk,Cepeda:2019klc}
+ 
+\section{Summery \label{summtrilinear}  }
+The Higgs pair production is a missing key measurement of the SM, it is essential for the determination of the Higgs potential by directly constraining the Higgs trilinear self-coupling. Moreover, this channel is sensitive to non-linear couplings with the Higgs, like $hhVV$ and $hh f\bar f$. Due to the small cross-section of this channel, current searches obtain rather weak bounds on $\kappa_{\lambda}$ that are comparable with the perturbative unitarity bounds~\cite{DiLuzio:2017tfn}. Hence, the need for higher luminosity is imperative. Consequently, the HL-LHC is expected to result in an observation or even discovery of this process. Particularly with the help of advanced machine learning techniques.\\ The observation of Higgs pair production is expected to provide a direct measurement on one of the two `` difficult'' couplings of the Higgs, which is the trilinear self-coupling. However, as we shall explore in the upcoming chapters, it could also provide a window for observing the second difficult coupling discussed in the first chapter; the coupling between the Higgs and light quarks. 
+=======
 
 \section{Summery \label{summtrilinear}  }
 
@@ -116,3 +180,4 @@ Sometimes called the di-Higgs bremsstrahlung off top quarks~\cite{DiMicco:2019ng
 %For future colliders, like the FCC-hh at $100$ TeV, in addition to Higgs pair production triple Higgs production might be an interesting channel for constraining the operators with Wilson coefficient $C_{u\phi}$ and $C_{d\phi}$ due to the energy increase of a Feynman diagram coupling the quarks to three Higgs bosons.   In this case, a similar study to ours should be performed to see whether also in this case it will be important to do a combined fit on the light quark Yukawa couplings together with the trilinear and quartic Higgs self-couplings.\footnote{In~\cite{Papaefstathiou:2047255}, it was shown that $\sim \mathcal{O}(1)$ bounds on the quartic Higgs self-coupling can be reached at the FCC-hh.}
 %
 %Finally, we note that there are also non collider signatures for enhanced light-quark Yukawa couplings, manifesting in frequency shifts in atomic clocks from Higgs forces at the atomic level~\cite{Delaunay:2016brc}. 
+>>>>>>> a1a14be19a42a35e9f84a4fd32a51a854ffc3ee4
