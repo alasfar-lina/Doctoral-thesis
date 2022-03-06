@@ -8,8 +8,9 @@ A level-1 auxiliary file: chapters/Part1/EFT.aux
 A level-1 auxiliary file: chapters/Part3/higgs_pair.aux
 A level-1 auxiliary file: chapters/Part3/dihiggs_yukawa_cut.aux
 A level-1 auxiliary file: chapters/Part3/dihiggs_yukawa_bdt.aux
+A level-1 auxiliary file: chapters/Part4/FlavourAnomalies.aux
 The style file: utphys.bst
-Reallocated field_info (elt_size=4) to 14728 items from 5000.
+Reallocated field_info (elt_size=4) to 20008 items from 5000.
 Database file #1: bibliography.bib
 Repeated entry---line 1381 of file bibliography.bib
  : @article{Cepeda:2019klc
@@ -25,6 +26,10 @@ Repeated entry---line 3117 of file bibliography.bib
 I'm skipping whatever remains of this entry
 Repeated entry---line 3888 of file bibliography.bib
  : @article{Alloul:2013bka
+ :                        ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 4021 of file bibliography.bib
+ : @article{deBlas:2015aea
  :                        ,
 I'm skipping whatever remains of this entry
 Repeated entry---line 4047 of file bibliography.bib
@@ -79,6 +84,10 @@ Repeated entry---line 4256 of file bibliography.bib
  : @article{Alwall:2014hca
  :                        ,
 I'm skipping whatever remains of this entry
+Repeated entry---line 4269 of file bibliography.bib
+ : @article{deBlas:2017xtg
+ :                        ,
+I'm skipping whatever remains of this entry
 Repeated entry---line 4292 of file bibliography.bib
  : @article{Grojean:2020ech
  :                         ,
@@ -87,9 +96,29 @@ Repeated entry---line 4397 of file bibliography.bib
  : @techreport{ATLAS:2021jki
  :                          ,
 I'm skipping whatever remains of this entry
+Repeated entry---line 4488 of file bibliography.bib
+ : @article{Jenkins:2013zja
+ :                         ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 4500 of file bibliography.bib
+ : @article{Jenkins:2013wua
+ :                         ,
+I'm skipping whatever remains of this entry
 Repeated entry---line 4513 of file bibliography.bib
  : @article{Alonso:2013hga
  :                        ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 4588 of file bibliography.bib
+ : @article{Bambade:2019fyw
+ :                         ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 4623 of file bibliography.bib
+ : @article{deBlas:2018mhx
+ :                        ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 4649 of file bibliography.bib
+ : @article{CEPCStudyGroup:2018ghi
+ :                                ,
 I'm skipping whatever remains of this entry
 Repeated entry---line 4661 of file bibliography.bib
  : @article{DiVita:2017vrr
@@ -107,9 +136,17 @@ Repeated entry---line 4909 of file bibliography.bib
  : @inbook{Cepeda:2019klc
  :                       ,
 I'm skipping whatever remains of this entry
+Repeated entry---line 4950 of file bibliography.bib
+ : @article{deBlas:2019rxi
+ :                        ,
+I'm skipping whatever remains of this entry
 Repeated entry---line 4995 of file bibliography.bib
  : @article{deFlorian:2016spz
  :                           ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 5146 of file bibliography.bib
+ : @article{Ball:2017nwa
+ :                      ,
 I'm skipping whatever remains of this entry
 Repeated entry---line 5161 of file bibliography.bib
  : @article{Buckley:2014ana
@@ -122,10 +159,6 @@ I'm skipping whatever remains of this entry
 Repeated entry---line 5733 of file bibliography.bib
  : @article{Blankenburg:2012ex
  :                            ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 5759 of file bibliography.bib
- : @article{Egana-Ugrinovic:2019dqu
- :                                 ,
 I'm skipping whatever remains of this entry
 Repeated entry---line 5773 of file bibliography.bib
  : @article{Egana-Ugrinovic:2018znw
@@ -142,6 +175,14 @@ I'm skipping whatever remains of this entry
 Repeated entry---line 5824 of file bibliography.bib
  : @article{Falkowski:2019tft
  :                           ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 5890 of file bibliography.bib
+ : @article{Bambade:2019fyw
+ :                         ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 5900 of file bibliography.bib
+ : @article{CEPCStudyGroup:2018ghi
+ :                                ,
 I'm skipping whatever remains of this entry
 Repeated entry---line 5924 of file bibliography.bib
  : @article{Bishara:2016jga
@@ -291,8 +332,45 @@ Repeated entry---line 6882 of file bibliography.bib
  : @article{Grigo:2014jma
  :                       ,
 I'm skipping whatever remains of this entry
+Repeated entry---line 7892 of file bibliography.bib
+ : @article{deBlas:2015aea
+ :                        ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 7906 of file bibliography.bib
+ : @article{Jenkins:2013zja
+ :                         ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 7922 of file bibliography.bib
+ : @article{Jenkins:2013wua
+ :                         ,
+I'm skipping whatever remains of this entry
+Reallocated str_pool (elt_size=1) to 130000 items from 65000.
+Repeated entry---line 8042 of file bibliography.bib
+ : @article{deBlas:2019rxi
+ :                        ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 8079 of file bibliography.bib
+ : @article{CEPCStudyGroup:2018ghi
+ :                                ,
+I'm skipping whatever remains of this entry
 Repeated entry---line 9050 of file bibliography.bib
  : @article{DAmbrosio:2002vsn
+ :                           ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 9472 of file bibliography.bib
+ : @article{Bambade:2019fyw
+ :                         ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 9482 of file bibliography.bib
+ : @article{deBlas:2018mhx
+ :                        ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 9495 of file bibliography.bib
+ : @article{deBlas:2017xtg
+ :                        ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 9544 of file bibliography.bib
+ : @article{Buchmuller:1985jz
  :                           ,
 I'm skipping whatever remains of this entry
 Repeated entry---line 9662 of file bibliography.bib
@@ -389,6 +467,10 @@ Repeated entry---line 1190 of file bibliography2.bib
  : @article{Dawson:2022bxd
  :                        ,
 I'm skipping whatever remains of this entry
+Repeated entry---line 1199 of file bibliography2.bib
+ : @article{Silvestrini:2018dos
+ :                             ,
+I'm skipping whatever remains of this entry
 Repeated entry---line 1212 of file bibliography2.bib
  : @article{Plehn:2005nk
  :                      ,
@@ -429,7 +511,6 @@ Repeated entry---line 1393 of file bibliography2.bib
  : @article{Baglio:2012np
  :                       ,
 I'm skipping whatever remains of this entry
-Reallocated str_pool (elt_size=1) to 130000 items from 65000.
 Database file #3: hh.bib
 Repeated entry---line 3 of file hh.bib
  : @article{JMLR:v20:18-760
@@ -479,9 +560,17 @@ Repeated entry---line 264 of file hh.bib
  : @inbook{Cepeda:2019klc
  :                       ,
 I'm skipping whatever remains of this entry
+Repeated entry---line 308 of file hh.bib
+ : @article{deBlas:2019rxi
+ :                        ,
+I'm skipping whatever remains of this entry
 Repeated entry---line 357 of file hh.bib
  : @article{deFlorian:2016spz
  :                           ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 522 of file hh.bib
+ : @article{Ball:2017nwa
+ :                      ,
 I'm skipping whatever remains of this entry
 Repeated entry---line 538 of file hh.bib
  : @article{Buckley:2014ana
@@ -515,10 +604,6 @@ Repeated entry---line 1169 of file hh.bib
  : @article{Blankenburg:2012ex
  :                            ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1195 of file hh.bib
- : @article{Egana-Ugrinovic:2019dqu
- :                                 ,
-I'm skipping whatever remains of this entry
 Repeated entry---line 1209 of file hh.bib
  : @article{Egana-Ugrinovic:2018znw
  :                                 ,
@@ -542,6 +627,14 @@ I'm skipping whatever remains of this entry
 Repeated entry---line 1298 of file hh.bib
  : @article{Alasfar:2019pmn
  :                         ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1339 of file hh.bib
+ : @article{Bambade:2019fyw
+ :                         ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1352 of file hh.bib
+ : @article{CEPCStudyGroup:2018ghi
+ :                                ,
 I'm skipping whatever remains of this entry
 Repeated entry---line 1376 of file hh.bib
  : @article{Bishara:2016jga
@@ -892,53 +985,51 @@ Warning--empty author in CMS-PAS-HIG-20-004
 Warning--empty author in ATLAS-CONF-2021-052
 Warning--empty author in ATLAS:2021jki
 Warning--empty institution in ATLAS:2021jki
-Warning--empty author in ATLAS-CONF-2018-031
-Warning--empty author in CERN-EP-2019-119
 Warning--empty author in CMS:2018rig
 Warning--empty institution in CMS:2018rig
 Warning--empty author in CMS-PAS-SMP-19-014
 Warning--empty pages in shapley1951notes
 Warning--empty pages in 2018arXiv180203888L
 Warning--empty author in ATLAS-CONF-2021-016
-You've used 301 entries,
+You've used 466 entries,
             2328 wiz_defined-function locations,
-            2740 strings with 67218 characters,
-and the built_in function-call counts, 91903 in all, are:
-= -- 9248
-> -- 3012
-< -- 9
-+ -- 1126
-- -- 825
-* -- 9527
-:= -- 10761
-add.period$ -- 443
-call.type$ -- 301
-change.case$ -- 359
+            3910 strings with 102398 characters,
+and the built_in function-call counts, 144633 in all, are:
+= -- 14342
+> -- 4935
+< -- 7
++ -- 1823
+- -- 1357
+* -- 15432
+:= -- 16938
+add.period$ -- 679
+call.type$ -- 466
+change.case$ -- 528
 chr.to.int$ -- 0
-cite$ -- 343
-duplicate$ -- 4941
-empty$ -- 8976
-format.name$ -- 825
-if$ -- 23643
+cite$ -- 506
+duplicate$ -- 7825
+empty$ -- 13981
+format.name$ -- 1357
+if$ -- 37218
 int.to.chr$ -- 0
-int.to.str$ -- 301
-missing$ -- 1029
-newline$ -- 1057
-num.names$ -- 267
-pop$ -- 1424
+int.to.str$ -- 466
+missing$ -- 1676
+newline$ -- 1672
+num.names$ -- 434
+pop$ -- 2181
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 3468
+skip$ -- 5545
 stack$ -- 0
-substring$ -- 4050
-swap$ -- 2400
-text.length$ -- 9
+substring$ -- 5856
+swap$ -- 3904
+text.length$ -- 7
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 42
-while$ -- 674
-width$ -- 304
-write$ -- 2538
-(There were 206 error messages)
+warning$ -- 40
+while$ -- 1044
+width$ -- 469
+write$ -- 3944
+(There were 229 error messages)

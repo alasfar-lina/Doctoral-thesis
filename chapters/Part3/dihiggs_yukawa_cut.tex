@@ -80,39 +80,16 @@ Higgs pair production offers an extra advantage for probing light Yukawa interac
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Higgs pair production and Higgs decays with modified light Yukawa couplings \label{sec:qqHH}}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-In this section we will describe how the Higgs pair production process for modified light quark Yukawa couplings is affected.
-While in the SM Higgs pair production is dominantly mediated by gluons fusing into a heavy quark loop coupling to the Higgs boson, for large first and second generation quark Yukawa couplings
-also quark annihilation becomes relevant.
-For a phenomenological analysis we also need to take into account the Higgs boson decays, which we describe in the last part of the section.
-\subsection{Higgs pair production via gluon fusion \label{sec:ggFly}}
-
-For our analysis, we have calculated the $ \sqrt{s} = 14$ \text{TeV}  LO ggF inclusive cross section and distributions with modified light Yukawa couplings by including the light quark loops and the coupling $hh q \bar q$ shown in fig.~\ref{fig_ggf_diag}.
-
-The calculation was carried out using a private FORTRAN implementation of the LO cross section utilising the \texttt{VEGAS} integration algorithm, and NNPDF30 parton distribution functions~(PDF's)\cite{Ball:2017nwa} implemented via the \texttt{LHAPDF-6} package \cite{Buckley:2014ana}. For the one-loop integrals appearing in the form factors of the box and triangle diagrams, we have used the \textsc{Collier} library~\cite{Denner:2014gla} to ensure numerical stability of the loop integral calculation for massless quarks inside the loops.
-
-\subsubsection{Results}
-For comparison of the results with modified Yukawa couplings with the SM results, we define as a benchmark point the case where all first and second generation quark Yukawa couplings are scaled to the SM bottom Yukawa coupling, which we will refer to in plots and tables as $g_{hq \bar q} = g_{h b \bar b}^{\SM}$. This means we scale the Yukawa couplings by $\kappa_q=g_{h\bar{q}q}/g_{h\bar q q}^{\SM}$ with
-\begin{equation}
-	\kappa_u=  1879\,, \hspace*{0.5cm} \kappa_d= 889 \,, \hspace*{0.5cm}\kappa_s= 44\,, \hspace*{0.5cm} \kappa_c =3.3\,, \label{eq:fitbounds}
-\end{equation}
-and use only flavour-diagonal modifications of the quark Yukawa couplings.
-This benchmark is inspired by ref.~\cite{Bar-Shalom:2018rjs}.
-
-From the distributions it is evident, that the change of the ggF process in the presence of enhanced light Yukawa couplings is quite small. The reason is that the box contribution which is the major part of the cross section has two fermion coupling insertions and hence is strongly suppressed for all the light quarks with respect to the top quark loop diagrams. The bottom quark contribution to the ggF process in the SM is less than 1\% and comes mainly from the triangle diagram, so adding several contributions from similar size does not change the cross section by much. Also the new diagrams (\textit{cf.}~fig.~\ref{fig_ggf_diag}) are suppressed compared to the box diagrams of the top quark.
-In the presence of enhanced light quark Yukawa couplings the Higgs boson pair can though be directly produced by quark annihilation. We turn to discuss this process in the next part. In the meanwhile we can conclude that for the ggF process we can improve on the LO predictions by using SM $K$-factors and that the effects of light Yukawa coupling modifications for the ggF process are small for the still allowed modifications.
+As we have briefly discussed in the introduction, the gluon fusion channel Higgs pair production is affected by enhanced light Yukawa couplings in two ways. First, the inclusion of light quark loops in the triangle and box diagrams. Second, the new diagrams introduced by the contact $hh q\bar q$ coupling shown in~\autoref{fig_ggf_diag}. However, these effects are negligible, this is due to the mass-suppression of these diagrams by the light quark masses. Therefore, effectively, one could consider the ggF channel as purely derived by third generation quarks. 
+%This benchmark is inspired by ref.~\cite{Bar-Shalom:2018rjs}.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Higgs pair production via quark anti-quark annihilation}
-If the Yukawa couplings of the light quark generations are sufficiently increased, the Higgs bosons will be produced directly from the constituents of the proton with a sizeable rate. The quark anti-quark annihilation (qqA) process becomes then relevant for Higgs pair production.
-The qqA process has four Feynman diagrams shown in the fig.~\ref{qqA_fd}.
-%%
-The differential cross section given by
+Contrary to the ggF channel, the $\qqA$ one does not exist in the SM for the first and second generation quarks, due to the assumptions of 4(or 5)-flavour scheme, that the these quarks are massless.  This channel contains four-diagrams shown in~\autoref{qqA_fd}, and its  differential partonic cross-section is given by 
 \begin{align}
-	\frac{d \hat \sigma_{q_i\bar{q}_j}}{d \hat t} &= \frac{1}{16 \pi}\, \frac{1}{12  \hat{s}} \bigg[ \left| 2  g_{hh q_i \bar q_j} + \frac{g_{hhh}\, g_{h q_i \bar q_j}}{\hat{s}-m_h^2-im_h\Gamma_h}\right|^2+ \mathcal{O}(g_{h q_i \bar q_j}^4) \bigg].
+	\frac{d \hat \sigma_{q_i\bar{q}_j}}{d \hat t} &= \frac{1}{16 \pi}\, \frac{1}{12  \hat{s}} \bigg[ \left| 2  g_{hh q_i \bar q_j} + \frac{g_{hhh}\, g_{h q_i \bar q_j}}{\hat{s}-m_h^2-im_h\Gamma_h}\right|^2+ \mathcal{O}(g_{h q_i \bar q_j}^4) \bigg],
 	\label{sigmaqqa}
 \end{align}
-
-We neglect here the $\hat{t}$ and $\hat{u}$ channel diagrams, as their contribution is typically only $\sim 0.1 \%$ of the total cross section.
-
+where the~$ \mathcal{O}(g_{h q_i \bar q_j}^4)$ terms stem from the $\hat{t}$ and $\hat{u}$ channel diagrams, and their contribution is typically only $\sim 0.1 \%$ of the total cross-section.
 The hadronic cross section is then obtained by
 \begin{equation}
 	\sigma_{\mathrm{hadronic}} =  \int_{\tau_0}^1 d\tau \int_{\hat{t}_-}^{\hat{t}_+} d\hat{t} \sum_{i,j} \frac{d\mathcal{L}^{q_i\bar{q}_j}}{d\tau}\frac{ d\hat \sigma_{q_i\bar{q}_j}}{d \hat t}\,, \label{eq:sigmahadron}
@@ -125,16 +102,15 @@ The parton luminosity is given by
 \begin{equation}
 	\frac{d{\cal L}^{q_i \bar q_j}}{d\tau} = \int_\tau ^1 \frac{dx}{x} \,\left[  f_{q_i}(x/\tau,\mu_F^2) f_{\bar{q}_j}(x,\mu_F^2) + \,f_{\bar{q}_j}(x/\tau,\mu_F^2) f_{q_i}(x,\mu_F^2)\right]\,.
 \end{equation}
-We neglected all the kinematic masses in accordance with the 5-flavour scheme of the PDFs while the coupling of the Higgs boson to the light quarks (for flavour diagonal couplings) is
+All the kinematic masses were neglected, in accordance with the 5-flavour scheme of the PDFs while the coupling of the Higgs boson to the light quarks (for flavour diagonal couplings) is
 \begin{equation}
 	g_{hq_i\bar{q}_j}=\frac{m^{\bar{MS}}_q(\mu_R)}{v}  \kappa_q \delta_{ij}\,,
 \end{equation}
-and analogously for the $g_{hhq_i\bar{q}_j}$ coupling.\footnote{We note that there is no inconsistency with such an assumption since in scenarios of modified Yukawa couplings, the masses of the quarks need not to be generated by electroweak symmetry breaking.}
+and analogously for the $g_{hhq_i\bar{q}_j}$ coupling.  It is worth noting that there is no inconsistency with such an assumption since in scenarios of modified Yukawa couplings, the masses of the quarks need not to be generated by electroweak symmetry breaking.
 %
 \subsubsection{NLO QCD correction \label{sec:qqA_NLO}}
 %
-Since NLO QCD corrections are sizeable, we will take them into account in our analysis. For this purpose, we will detail here how we obtained them.
-Since the $\hat{t}$ and $\hat{u}$ channel diagrams are strongly suppressed we can take the NLO QCD corrections over from $ b \bar b \to h$ in the 5-flavour scheme~\cite{Dicus:1998hs, Balazs:1998sb, Harlander:2003ai}\footnote{Note that the NLO and NNLO QCD corrections for $b\bar{b}hh$ have been given in \cite{Dawson:2006dm,  H:2018hqz}.}  by some adjustments taking into account the modified LO cross section and the different kinematics of the process.
+Since the ggF NLO QCD corrections are sizeable,  it is important to investigate these effects for the $\qqA$ channel.  Computing such effects is relatively straight-forward task, as they are only one-loop. More simplifications can be made by neglecting the NLO corrections of the $\hat{t}$ and $\hat{u}$ channels because they are strongly suppressed.  This enables us to use the NLO QCD corrections results from $ b \bar b \to h$ in the 5-flavour scheme~\cite{Dicus:1998hs, Balazs:1998sb, Harlander:2003ai}\footnote{Note that the NLO and NNLO QCD corrections for $b\bar{b}hh$ have been given in \cite{Dawson:2006dm,  H:2018hqz}.}  by some adjustments taking into account the modified LO cross section and the different kinematics of the process.
 The Feynman diagrams at NLO QCD are shown in fig.~\ref{qqA_nlo}.
 %%
 \begin{figure}[!t]
@@ -187,59 +163,35 @@ and the `plus' distribution is
 \begin{equation}
 	{\cal D}_n(z) := \left(\frac{\ln(1-z)^n}{1-z} \right)_+.
 \end{equation}
-We have chosen the renormalisation scale $ \mu_R = M_{hh}$ and the factorisation scale $ \mu_F= M_{hh}/4$, as central values.
-We define the NLO $K$-factor, as
+The renormalisation scale $ \mu_R = M_{hh}$ and the factorisation scale $ \mu_F= M_{hh}/4$, were chosen as central values. \\
+The NLO $\qqA$ cross-section as well as the LO ggF were implemented in a private FORTRAN code utilising the \texttt{VEGAS} integration algorithm, and NNPDF30 parton distribution functions~(PDF's)\cite{Ball:2017nwa} implemented via the \texttt{LHAPDF-6} package \cite{Buckley:2014ana}. For the one-loop integrals appearing in the form factors of the box and triangle diagrams, we have used the \textsc{Collier} library~\cite{Denner:2014gla} to ensure numerical stability of the loop integral calculation for massless quarks inside the loops~\footnote{I have expanded code to include other SMEFT operators, and it can be found in the \texttt{GitHub} repository \url{https://github.com/alasfar-lina/HH_XS_in_SMEFT} }. 
+The resulting NLO $K$-factor was found to be
 \begin{equation}
 	K_{NLO}=\frac{\sigma_{NLO}}{\sigma_{LO}} = 1.28 \pm 0.02\,,
 \end{equation}
 with the error denoting the theoretical uncertainty.
-The $K$-factor does not depend on the scaling of the couplings, nor the flavour of the initial $q \bar q$ since the LO cross section factors out (with exception of the different integration in the real contributions).
-
-\subsubsection{Results}
-While in the SM, the contribution from quark annihilation to a Higgs boson pair is below $0.11$ fb at NLO, it scales like $ \sim \kappa_q^2 m_q^2/v^4$, dominated by the $hh \bar q q$ diagram as can be seen from eq.~\eqref{sigmaqqa}, hence showing significant enhancement for enhanced Yukawa couplings.
-For our benchmark scenario $(g_{hq \bar q} = g_{h b \bar b}^{\SM})$ we find for the cross section
-\begin{equation}
-	\sigma^{qqA}_{NLO}= 284 \pm 25 \text{ fb}\,,
-\end{equation}
-and therefore a significantly larger cross section as for the ggF process.
-\begin{figure}[!t]
-	\centering
-	\includegraphics[width = 0.75\textwidth]{./fig/xs_qqa_kf}
-	\caption{The NLO cross section for the qqA process for different scalings of the quark Yukawa couplings. The solid black line shows the NNLO ggF process width rescaled charm Yukawa coupling, whose effect though is unrecognisable in the plot. }
-	\label{qqA_ggF}
-\end{figure}
-In fig.~\ref{qqA_ggF} we compare the ggF process (black line) for rescaled charm coupling to the Higgs boson(s) with the qqA process for different scalings of the light quark Yukawa couplings  (different coloured, dashed, dotted solid and dashed dotted lines).
-We find that for sufficiently large scaling of the Yukawa couplings still allowed by current data, qqA can be even  the dominant di-Higgs production channel. Note that in the figure we scale the Yukawa couplings for the different quark mass eigenstates differently. For the up and down quark Yukawa coupling the scaling is the same, hence the effect from rescaling the down Yukawa coupling is larger even though the up quark is more abundant in the proton. The plot shows nicely for which values of the coupling modifications the qqA process surpasses ggF. \\
-We would also like to give a qualitative argument for the dominance of qqA for large $\kappa_q$.
-The dominant term for the qqA comes from the $hh q \bar q$ vertex diagram, such that the qqA cross section behaves for large values of $\kappa$ as (assuming that $ \sigma^{qqA}_{SM}\sim 0 $)
+The $K$-factor does not depend on the scaling of the couplings, nor the flavour of the initial $q \bar q$ since the LO cross section factors out (with exception of the different integration in the real contributions). \\
+The $\qqA$ channel will enhance the overall Higgs pair production cross-section, but if one considers the ggF as a SM background for the Yukawa enhancement  ``signal'' $\qqA$ channel, it would be interesting to estimate qualitatively when this signal becomes dominant. This estimates how sensitive is Higgs pair to enhanced light Yukawa couplings as~\autoref{pphhvsh} demonstrates.
+The dominant term for  $\qqA$ comes from the $hh q \bar q$ vertex diagram, such that the $\qqA$ cross section behaves for large values of $\kappa$ as (assuming that $ \sigma^{qqA}_{SM}\sim 0 $)
 \begin{equation}
 	(\sigma^{qqA}-\sigma^{qqA}_{SM}) \sim  g_{hh q \bar q}^2 \sim v^{-4}\,{m_q^2\,\kappa_q^2}.
 \end{equation}
-The ggF cross section instead gets contributions from light quark loops from  the diagram in fig.~\ref{fig_ggf_diag} interfering with top quark loops in the triangle SM diagram,  leading to a scaling of
+The ggF cross-section instead gets contributions from light quark loops interfering with top quark loops in the triangle SM diagram,  leading to a scaling of
 \begin{equation}
 	(\sigma^{ggF} - \sigma^{ggF}_{SM} ) \sim  \kappa_q\, \frac{m_q^2}{ v^2\,M_{hh}^2}\,\ln^2{\left(\frac{M_{hh}}{m_q}\right)}\,.
 \end{equation}
 Taking the ratio we get
 \begin{equation}
 	\frac{(\sigma^{qqA}-\sigma^{qqA}_{SM})}{(\sigma^{ggF} - \sigma^{ggF}_{SM} )} \sim  \frac{\kappa_q}{ v^2\left(\frac{
-					\ln^2{\left(\frac{M_{hh}}{m_q}\right)}}{M_{hh}^2}\right)}\,.
+			\ln^2{\left(\frac{M_{hh}}{m_q}\right)}}{M_{hh}^2}\right)}\,.
 \end{equation}
 This ratio approaches one (neglecting effects from different PDFs) when
 \begin{equation}
 	\kappa_q^{qqA = ggF} \sim  \frac{v^2\,\ln^2{\left(\frac{M_{hh}}{m_q}\right)}}{M_{hh}^2}\,.
 \end{equation}
 Using this order of magnitude estimate, we see that  the two cross sections are roughly equal if $\kappa_c^{qqA = ggF} \sim 1$, $\kappa_s^{qqA = ggF} \sim 10$ and $\kappa_u^{qqA = ggF} \sim \kappa_d^{qqA = ggF} \sim 10^3$.
-The actual values of $\kappa_q^{qqA = ggF}$ can be read from fig.~\ref{qqA_ggF}. We observe that $ \kappa_q^{qqA = ggF}$ values  are not yet excluded, particularly for the first family.
-\par
-In fig.~\ref{qqA_dsigdmhh} we show the di-Higgs invariant mass  normalised differential cross section distributions for the $g_{hq \bar q} = g_{h b \bar b}^{\SM}$ benchmark point at NLO compared to the NNLO SM ggF cross section extracted from~\cite{Grazzini:2018bsd}. We notice a considerable shape difference, with shifted peak to the left, and a larger tail. This will allow us later on to use kinematical information to extract the light quark Yukawa couplings.
-\begin{figure}[!b]
-	\centering
-	\includegraphics[width = 0.75\textwidth]{./fig/uh_shnnlo_shape.pdf}
-	\caption{The qqA normalised NLO invariant mass differential cross section distribution for the benchmark point ($g_{hq \bar q} = g_{h b \bar b}^{\SM}$) (solid line) and the NNLO SM ggF cross section obtained from~\cite{Grazzini:2018bsd} (dashed line).
-		}
-	\label{qqA_dsigdmhh}
-\end{figure}
-
+The actual values of $\kappa_q^{qqA = ggF}$ for the first generation quarks can be read from fig.~\ref{pphhvsh}.It is interesting to point out to the pact that these $\kappa_q$ values are not yet excluded.
+%###### HERE 
 \subsection{Higgs decays \label{sec:Hdecay}}
 The light fermion decay channels will no longer be negligible for enhanced light Yukawa couplings. The decay channels $ h \to gg$, $h \to \gamma \gamma$  and $h \to Z \gamma$ containing fermion loops will get modified, but similarly to the production, the modification is ~$\sim 2\,\kappa_q\,(m_q^2/m_h^2) \,\ln^2(m_q/m_h)$. Thus, the main effect on the Higgs boson branching ratios and width is the `opening' of the new light fermion channels. \\ In order to compute the Higgs partial widths and branching ratios (BR) at higher orders in QCD, we have modified the FORTRAN programme \texttt{HDECAY}~\cite{Djouadi:1997yw,Djouadi:2018xqq} to include the light fermion decay channels and loops in the above-mentioned decays. In the SM, light fermion BRs are of order $\mathcal{O}(10^{-4})$ for $ h \to c \bar{c} $,  $\mathcal{O}(10^{-6})$ for $ h \to s \bar{s} $  and  $<\mathcal{O}(10^{-9})$ for the first generation quarks \cite{deFlorian:2016spz}. In our benchmark point ($g_{hq \bar q} = g_{h b \bar b}^{\SM}$) these would increase to $ \sim 18 \%$. Correspondingly, the BRs for  $ h \to b \bar b/VV/\tau^+\tau^-$ decrease due to the increased Higgs width in the model.
 \par
