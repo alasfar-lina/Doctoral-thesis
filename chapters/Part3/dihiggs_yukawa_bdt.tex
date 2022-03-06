@@ -11,15 +11,7 @@
 
 
 The primary objectives of this work are as follows:
-\begin{figure}[t]
-	\centering
-	\includegraphics[width=0.35\textwidth]{fig/shape-MAA} 	\hspace*{0.25 cm}
-	\includegraphics[width=0.35\textwidth]{fig/shape-HT}  \\
-		\includegraphics[width=0.35\textwidth]{fig/shape-PTA2} \hspace*{0.25 cm}
-		\includegraphics[width=0.35\textwidth]{fig/shape-ETAa1} 
-	\caption{The . }
-	\label{fig:voilen}
-\end{figure}  
+
 
 \begin{itemize}
 	\item We show some well motivated BSM scenarios where light-quark Yukawas can be enhanced simultaneously with the Higgs trilinear coupling.
@@ -86,64 +78,64 @@ In the 2HDM with AFV or SFV, there is an interplay between light quark Yukawa an
 
 From the discussion in this section we see that several models are present in the literature that are able to accommodate for large deviations of the light-quark Yukawa couplings from their SM values while avoiding excessive contributions to FCNCs that are well measured and particularly limiting for models with additional flavour structures due to the implementation of AFV or SFV. The primary new physics deviation, complementary to direct searches, in the presented models will show up in the modification of the light quark Yukawa couplings. Armed with this knowledge, we motivate a study of how light-quark Yukawa couplings can be constrained at future experiments from Higgs pair production.
 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \section{Signal and background simulation for the final state $b\bar{b}\gamma \gamma$}
-\section{Events simulation for HL-LHC and FCC-hh}
-\label{sec:Sim}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%
-We consider the final state~$b \bar{b} \gamma \gamma$, as this channel has the most potential for Higgs pair searches~\cite{Cepeda:2019klc}. It has the ``clean'' $h \to \gamma \gamma$ decay, but also the other Higgs decay to $b$-quark pair is a channel with large branching ratio~$\sim 58\%$ and b-tagging capabilities for ATLAS and CMS are continuously improving.
-
-
-
-
-To be able to study the effects of enhanced light-quark Yukawa couplings or Higgs trilinear coupling, we need to simulate events for HL-LHC and FCC-hh which we use to train a machine learning model to identify the signal from the background. We consider the $b\bar bh$, $t\bar th$, $b\bar b \gamma\gamma$ processes as the main sources of background for the $hh$ signal. For the $b\bar bh$ processes, the contributions proportional to $y_b^2$, $y_by_t$ and $y_t^2$ are simulated separately with $y_b$ running effects. The details of the simulation can be found in Ref.~\cite{Grojean:2020ech}. The $Zh, Z\to b\bar b$ events are generated at leading order (LO), then scaled to NLO by $K$-factors, defined as the ratio of higher order cross section over its LO counterpart. The $K$-factors were taken from $t\bar{t}h$~\cite{Beenakker:2001rj}, $b\bar b \gamma\gamma$~\cite{Fah:2017wlf}, $Zh$~\cite{Campanario:2014lza} and the remaining part of the $b\bar bh$ processes from~\cite{Dawson:2005vi}. The Higgs particles are further decayed to $\gamma\gamma$ following the Higgs cross-section working group recommendations~\cite{LHCHiggsCrossSectionWorkingGroup:2016ypw}. The parton-level results are showered using \texttt{Pythia 8.3}~\cite{Sjostrand:2014zea} and a detector simulation is done using \texttt{Delphes 3}~\cite{deFavereau:2013fsa}. To be inclusive and to explore the capabilities and importance of the full detector coverage, no generator-level cuts were applied on these processes except for the $b\bar b \gamma\gamma$ processes to avoid divergences. These minimal generator-level cuts for $b\bar b\gamma\gamma$ are
-\begin{equation}
-	\begin{aligned}
-		& Xp_T^b>20\,\gev, \\
-		\textrm{generator level cuts:}\qquad& \eta_\gamma<4.2,~ \Delta R_{b\gamma}>0.2, \\
-		& 100< m_{\gamma\gamma} \,(\gev) < 150.
-	\end{aligned}
-\end{equation}
-Here $Xp_T$ implies a minimum $p_T$ cut for at least one $b$-jet. 
-After the showering and detector simulation, further basic selection cuts were applied to select events with
-\begin{equation}
-	\textrm{basic cuts:}\qquad
-	\begin{array}{l}
-		n_{\mathrm{eff}}^{bjet}\geq 1,~n_{eff}^{\gamma jet} \geq 2,\\
-		p_T^{bjet}>30\,\gev,~p_T^{\gamma jet}>5\,\gev,\\
-		\eta_{bjet,\gamma jet}<4,~ 110\, \gev < m_{\gamma_1\gamma_2} < 140\,\gev,
-	\end{array}
-	\label{eqn:bcuts}
-\end{equation}
-and $n_{eff}^{b/\gamma jet}$ representing the number of $b/\gamma$-jets that pass the basic selection. The cross-section, $K$-factors, number of events with 6ab$^{-1}$ luminosity at 14 TeV are given in \autoref{tab:xsec14}. 
-
-\begin{table}[t]
-	\centering
-	\begin{tabular}{ccccc}
-		\toprule
-		Channel	        &LO $\sigma $ [fb]	&$K$-fact.	&Order&6$\inab$ [\#evt @ order]   \\
-		\midrule
-		$\hhtri$	        &  $7.288 \cdot10^{-3}$    & 2.28 &\multirow{3}{*}{NNLO}   &  96   \\ 
-		$\hhbox$            & $0.054$    & 1.98 &  & 680   \\ 
-		$\hhint$            &$-0.036$    & 2.15 &  &-460   \\ 
-		$\uuA$ $(C_{d\phi}=0.1)$ &  $2.753$    & 1.29&\multirow{2}{*}{NLO} &  28   \\ 
-		$\ddA$ $(C_{u\phi}=0.1)$ &  $4.270$    & 1.30 & &  43   \\ 
-		\bottomrule
-	\end{tabular}
-	\caption{  The LO cross-section for di-Higgs production at the HL-LHC for 6$\inab$ of data multiplied by the $hh \to b \bar b \gamma \gamma$ branching ratio, $K$-factors (taken from \cite{ deFlorian:2021azd} for the gluon channels and \cite{Alasfar:2019pmn} for the quark channels) and the number of events after the basic cuts for the separated gluon fusion~($gg$F) and quark annihilation~($\qqA$) at $\sqrt{s}=14$ TeV. }
-	\label{tab:kfact}
-\end{table}
-
-While the backgrounds are generated using \texttt{MadGraph\_aMC@NLO}~\cite{Alwall:2014hca}, the $hh$ signal is separated into two main channels. The first is the gluon-fusion~($gg$F) channel which is the dominant channel in the SM and which can be further decomposed into three subprocesses based on their dependence on the Higgs trilinear self-interaction, $\lambda$, as seen in \autoref{fig:ggfsub}. Amongst these subprocesses, the first is the amplitude squared of the contribution from the triangle diagram. It is proportional to $\lambda^2$. The second is the squared amplitude of the contribution from the box diagram that does not depend on the trilinear coupling. The third is the contribution from the interference between the triangle and box diagrams, which is proportional to~$\lambda$. Using this separation allows us to remove the dependence of the total $K$-factor for $hh$ production on rescaling of the trilinear Higgs coupling~\cite{Heinrich:2019bkc}. The individual $K$-factors for each of the subprocesses are independent of the rescaling of the trilinear Higgs coupling making our analysis computationally much simpler. The $gg$F process is generated using the \texttt{HH} production program implemented in \texttt{POWHEG}~\cite{Heinrich:2017kxx,Heinrich:2019bkc,Heinrich:2020ckp}, which has been modified to separate the individual contributions from the three diagrams. The cross-section for these individual contributions and the corresponding $K$-factors can be found in \autoref{tab:kfact}. 
-%\rg{What about fakes? I remember we had some discussion about fake backgrounds some time ago...}\la{I am not sure what do you mean by fakes here.. do you mean $c\bar c \gamma \gamma$?  }
-%\rg{I think we need to cite here all the works on NLO corrections in HH}\la{Done, but do you want me to describe the references in more detail ?} \rg{reminder to me, select the relevant ones after we clarfied of using NNLO or not...}
-%\cite{Dawson:1998py,Shao:2013bz,Maltoni:2014eza,Borowka:2016ehy,Borowka:2016ypz,Jones:2017giv,Baglio:2018lrj,Bonciani:2018omm}, see also~\cite{deFlorian:2013jea,deFlorian:2013uza,Grigo:2014jma,deFlorian:2015moa,deFlorian:2016uhr} for beyond NLO calculations, and for QCD corrections to di-Higgs within EFT's see~\cite{Grober:2015cwa,Grober:2017gut,deFlorian:2017qfk,Buchalla:2018yce}
-
-The other main process, the quark anti-quark annihilation~($q\bar q$A), is strongly suppressed in the SM for first generation quarks since the SM Yukawa couplings are proportional to the mass of the considered quark flavour. However, since this channel is a tree-level process, with sufficient large enhancement factors of the light quark Yukawa coupling, it becomes dominant as shown in \autoref{fig:pphhvsh}. The $q\bar q$A cross section scales like $\tilde{C}_{q\phi}^2/\Lambda^4$,  while the gluon fusion production cross-section remains almost unchanged. Therefore, for constraining enhancements of the light-quark Yukawa, we consider this channel as the signal and the $gg$F channel as part of the background. The $q\bar q$A process is generated with~\texttt{MadGraph\_aMC@NLO} with a UFO model created with \texttt{FeynRules}~\cite{Alloul:2013bka}. Samples for both up- and down-quark initiated $q\bar q$A processes is generated. For all the $hh$ signals, the samples are generated at LO and later scaled by the NLO $K$-factors given in \autoref{tab:kfact}. The $K$-factors are obtained from ref.~\cite{Buchalla:2018yce} for the gluon fusion process in EFT and adapted from \cite{Dicus:1998hs,Balazs:1998sb, Harlander:2003ai} as described in \cite{Alasfar:2019pmn} for the $q\bar q$A channel. Moreover, the two Higgs bosons are decayed to $b\bar b$ and $\gamma\gamma$ respectively, with \texttt{Pythia 8.3} and then showered. The same detector simulation and basic cuts as for the background are then performed. In addition, the same sets of parton distribution function (\texttt{NNPDF31\_nlo\_as\_0118\_nf\_4}) are used for the signal and the background, implemented via \texttt{LHAPDF}~\cite{Buckley:2014ana}. The calculation of the Higgs full width and branching ratios is done using a modified version of~\texttt{Hdecay}~\cite{Djouadi:1997yw,Djouadi:2018xqq} to include the new SMEFT operators $\mathcal{O}_{q\phi}$. It should be noted, that in both di-Higgs production and decay calculation, the light-quark masses are set to zero. However, when converting between SMEFT and $\kappa$-formalism, the $\overline{\mathrm{MS}}$ quark masses are used, in accordance to the PDG.
-
-For FCC-hh, almost everything is done similarly after setting the energy to 100 TeV and the luminosity to 30 ab$^{-1}$. Since we do not have all $K$-factors available at a collider energy of 100 TeV we rescaled the LO samples by the same ones as for HL-LHC. We note that we explicitly checked that at least within the SM, for Higgs pair production via gluon fusion the difference is of $\mathcal{O}(1\%)$~\cite{Maltoni:2014eza} and hence small.
-
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% \section{Signal and background simulation for the final state $b\bar{b}\gamma \gamma$}
+%\section{Events simulation for HL-LHC and FCC-hh}
+%\label{sec:Sim}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%We consider the final state~$b \bar{b} \gamma \gamma$, as this channel has the most potential for Higgs pair searches~\cite{Cepeda:2019klc}. It has the ``clean'' $h \to \gamma \gamma$ decay, but also the other Higgs decay to $b$-quark pair is a channel with large branching ratio~$\sim 58\%$ and b-tagging capabilities for ATLAS and CMS are continuously improving.
+%
+%
+%
+%
+%To be able to study the effects of enhanced light-quark Yukawa couplings or Higgs trilinear coupling, we need to simulate events for HL-LHC and FCC-hh which we use to train a machine learning model to identify the signal from the background. We consider the $b\bar bh$, $t\bar th$, $b\bar b \gamma\gamma$ processes as the main sources of background for the $hh$ signal. For the $b\bar bh$ processes, the contributions proportional to $y_b^2$, $y_by_t$ and $y_t^2$ are simulated separately with $y_b$ running effects. The details of the simulation can be found in Ref.~\cite{Grojean:2020ech}. The $Zh, Z\to b\bar b$ events are generated at leading order (LO), then scaled to NLO by $K$-factors, defined as the ratio of higher order cross section over its LO counterpart. The $K$-factors were taken from $t\bar{t}h$~\cite{Beenakker:2001rj}, $b\bar b \gamma\gamma$~\cite{Fah:2017wlf}, $Zh$~\cite{Campanario:2014lza} and the remaining part of the $b\bar bh$ processes from~\cite{Dawson:2005vi}. The Higgs particles are further decayed to $\gamma\gamma$ following the Higgs cross-section working group recommendations~\cite{LHCHiggsCrossSectionWorkingGroup:2016ypw}. The parton-level results are showered using \texttt{Pythia 8.3}~\cite{Sjostrand:2014zea} and a detector simulation is done using \texttt{Delphes 3}~\cite{deFavereau:2013fsa}. To be inclusive and to explore the capabilities and importance of the full detector coverage, no generator-level cuts were applied on these processes except for the $b\bar b \gamma\gamma$ processes to avoid divergences. These minimal generator-level cuts for $b\bar b\gamma\gamma$ are
+%\begin{equation}
+%	\begin{aligned}
+%		& Xp_T^b>20\,\gev, \\
+%		\textrm{generator level cuts:}\qquad& \eta_\gamma<4.2,~ \Delta R_{b\gamma}>0.2, \\
+%		& 100< m_{\gamma\gamma} \,(\gev) < 150.
+%	\end{aligned}
+%\end{equation}
+%Here $Xp_T$ implies a minimum $p_T$ cut for at least one $b$-jet. 
+%After the showering and detector simulation, further basic selection cuts were applied to select events with
+%\begin{equation}
+%	\textrm{basic cuts:}\qquad
+%	\begin{array}{l}
+%		n_{\mathrm{eff}}^{bjet}\geq 1,~n_{eff}^{\gamma jet} \geq 2,\\
+%		p_T^{bjet}>30\,\gev,~p_T^{\gamma jet}>5\,\gev,\\
+%		\eta_{bjet,\gamma jet}<4,~ 110\, \gev < m_{\gamma_1\gamma_2} < 140\,\gev,
+%	\end{array}
+%	\label{eqn:bcuts}
+%\end{equation}
+%and $n_{eff}^{b/\gamma jet}$ representing the number of $b/\gamma$-jets that pass the basic selection. The cross-section, $K$-factors, number of events with 6ab$^{-1}$ luminosity at 14 TeV are given in \autoref{tab:xsec14}. 
+%
+%\begin{table}[t]
+%	\centering
+%	\begin{tabular}{ccccc}
+%		\toprule
+%		Channel	        &LO $\sigma $ [fb]	&$K$-fact.	&Order&6$\inab$ [\#evt @ order]   \\
+%		\midrule
+%		$\hhtri$	        &  $7.288 \cdot10^{-3}$    & 2.28 &\multirow{3}{*}{NNLO}   &  96   \\ 
+%		$\hhbox$            & $0.054$    & 1.98 &  & 680   \\ 
+%		$\hhint$            &$-0.036$    & 2.15 &  &-460   \\ 
+%		$\uuA$ $(C_{d\phi}=0.1)$ &  $2.753$    & 1.29&\multirow{2}{*}{NLO} &  28   \\ 
+%		$\ddA$ $(C_{u\phi}=0.1)$ &  $4.270$    & 1.30 & &  43   \\ 
+%		\bottomrule
+%	\end{tabular}
+%	\caption{  The LO cross-section for di-Higgs production at the HL-LHC for 6$\inab$ of data multiplied by the $hh \to b \bar b \gamma \gamma$ branching ratio, $K$-factors (taken from \cite{ deFlorian:2021azd} for the gluon channels and \cite{Alasfar:2019pmn} for the quark channels) and the number of events after the basic cuts for the separated gluon fusion~($gg$F) and quark annihilation~($\qqA$) at $\sqrt{s}=14$ TeV. }
+%	\label{tab:kfact}
+%\end{table}
+%
+%While the backgrounds are generated using \texttt{MadGraph\_aMC@NLO}~\cite{Alwall:2014hca}, the $hh$ signal is separated into two main channels. The first is the gluon-fusion~($gg$F) channel which is the dominant channel in the SM and which can be further decomposed into three subprocesses based on their dependence on the Higgs trilinear self-interaction, $\lambda$, as seen in \autoref{fig:ggfsub}. Amongst these subprocesses, the first is the amplitude squared of the contribution from the triangle diagram. It is proportional to $\lambda^2$. The second is the squared amplitude of the contribution from the box diagram that does not depend on the trilinear coupling. The third is the contribution from the interference between the triangle and box diagrams, which is proportional to~$\lambda$. Using this separation allows us to remove the dependence of the total $K$-factor for $hh$ production on rescaling of the trilinear Higgs coupling~\cite{Heinrich:2019bkc}. The individual $K$-factors for each of the subprocesses are independent of the rescaling of the trilinear Higgs coupling making our analysis computationally much simpler. The $gg$F process is generated using the \texttt{HH} production program implemented in \texttt{POWHEG}~\cite{Heinrich:2017kxx,Heinrich:2019bkc,Heinrich:2020ckp}, which has been modified to separate the individual contributions from the three diagrams. The cross-section for these individual contributions and the corresponding $K$-factors can be found in \autoref{tab:kfact}. 
+%%\rg{What about fakes? I remember we had some discussion about fake backgrounds some time ago...}\la{I am not sure what do you mean by fakes here.. do you mean $c\bar c \gamma \gamma$?  }
+%%\rg{I think we need to cite here all the works on NLO corrections in HH}\la{Done, but do you want me to describe the references in more detail ?} \rg{reminder to me, select the relevant ones after we clarfied of using NNLO or not...}
+%%\cite{Dawson:1998py,Shao:2013bz,Maltoni:2014eza,Borowka:2016ehy,Borowka:2016ypz,Jones:2017giv,Baglio:2018lrj,Bonciani:2018omm}, see also~\cite{deFlorian:2013jea,deFlorian:2013uza,Grigo:2014jma,deFlorian:2015moa,deFlorian:2016uhr} for beyond NLO calculations, and for QCD corrections to di-Higgs within EFT's see~\cite{Grober:2015cwa,Grober:2017gut,deFlorian:2017qfk,Buchalla:2018yce}
+%
+%The other main process, the quark anti-quark annihilation~($q\bar q$A), is strongly suppressed in the SM for first generation quarks since the SM Yukawa couplings are proportional to the mass of the considered quark flavour. However, since this channel is a tree-level process, with sufficient large enhancement factors of the light quark Yukawa coupling, it becomes dominant as shown in \autoref{fig:pphhvsh}. The $q\bar q$A cross section scales like $\tilde{C}_{q\phi}^2/\Lambda^4$,  while the gluon fusion production cross-section remains almost unchanged. Therefore, for constraining enhancements of the light-quark Yukawa, we consider this channel as the signal and the $gg$F channel as part of the background. The $q\bar q$A process is generated with~\texttt{MadGraph\_aMC@NLO} with a UFO model created with \texttt{FeynRules}~\cite{Alloul:2013bka}. Samples for both up- and down-quark initiated $q\bar q$A processes is generated. For all the $hh$ signals, the samples are generated at LO and later scaled by the NLO $K$-factors given in \autoref{tab:kfact}. The $K$-factors are obtained from ref.~\cite{Buchalla:2018yce} for the gluon fusion process in EFT and adapted from \cite{Dicus:1998hs,Balazs:1998sb, Harlander:2003ai} as described in \cite{Alasfar:2019pmn} for the $q\bar q$A channel. Moreover, the two Higgs bosons are decayed to $b\bar b$ and $\gamma\gamma$ respectively, with \texttt{Pythia 8.3} and then showered. The same detector simulation and basic cuts as for the background are then performed. In addition, the same sets of parton distribution function (\texttt{NNPDF31\_nlo\_as\_0118\_nf\_4}) are used for the signal and the background, implemented via \texttt{LHAPDF}~\cite{Buckley:2014ana}. The calculation of the Higgs full width and branching ratios is done using a modified version of~\texttt{Hdecay}~\cite{Djouadi:1997yw,Djouadi:2018xqq} to include the new SMEFT operators $\mathcal{O}_{q\phi}$. It should be noted, that in both di-Higgs production and decay calculation, the light-quark masses are set to zero. However, when converting between SMEFT and $\kappa$-formalism, the $\overline{\mathrm{MS}}$ quark masses are used, in accordance to the PDG.
+%
+%For FCC-hh, almost everything is done similarly after setting the energy to 100 TeV and the luminosity to 30 ab$^{-1}$. Since we do not have all $K$-factors available at a collider energy of 100 TeV we rescaled the LO samples by the same ones as for HL-LHC. We note that we explicitly checked that at least within the SM, for Higgs pair production via gluon fusion the difference is of $\mathcal{O}(1\%)$~\cite{Maltoni:2014eza} and hence small.
+%
 
 
 
