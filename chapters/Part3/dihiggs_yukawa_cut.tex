@@ -26,7 +26,7 @@ The pragmatic approach to unravelling this mystery , however, would be to measur
 \end{figure} 
 \begin{figure}[!hb]
 	\centering
-	\includegraphics[width = 0.25\textwidth]{./fig/ggfdim6}
+	\includegraphics[width = 0.5\textwidth]{./fig/ggfdim6}
 	\caption{The new diagram for ggF emerging from the $hh q \bar q$ coupling stemming from an effective dim-6 operator.}
 	\label{fig_ggf_diag}
 \end{figure}
@@ -259,9 +259,71 @@ and $n_{eff}^{b/\gamma jet}$ representing the number of $b/\gamma$-jets that pas
 	\caption{  The LO cross-section for Higgs pair production processes (including the decay $hh \to b \bar b \gamma \gamma$ ) for 6$\inab$ 14 TeV HL-LHC.}
 	\label{tab:kfact}
 \end{table}
-Both analysis methods included sensitivity analysis for the HL-LHC, i.e. 14 TeV and 6$\inab$~\footnote{In the published cut-based analysis~\cite{Alasfar:2019pmn} 3$\inab$ luminosity for the HL-LHC was used. However, here I used 6$\inab$ when reporting fit results} luminosity and projections for a future hadron circular collider (FCC-hh), with 100 TeV and the luminosity of 30 ab$^{-1}$. With the caveat of using the 14 TeV $K$-factors for the 100 TeV cross-section scaling, as the 100 TeV $K$-factors were not available for all processes. I should note that we have explicitly checked that at least within the SM, for Higgs pair production via gluon fusion the difference is of $\mathcal{O}(1\%)$~\cite{Maltoni:2014eza} and hence small.
+Both analysis methods included sensitivity analysis for the HL-LHC, i.e. 14 TeV and 6$\inab$~\footnote{In the published cut-based analysis~\cite{Alasfar:2019pmn} 3$\inab$ luminosity for the HL-LHC was used. However, here I used 6$\inab$ when reporting fit results} luminosity and projections for a future hadron circular collider (FCC-hh), with 100 TeV and the luminosity of 30 ab$^{-1}$ has been done for the ML based analysis. With the caveat of using the 14 TeV $K$-factors for the 100 TeV cross-section scaling, as the 100 TeV $K$-factors were not available for all processes. I should note that we have explicitly checked that at least within the SM, for Higgs pair production via gluon fusion the difference is of $\mathcal{O}(1\%)$~\cite{Maltoni:2014eza} and hence small.
 
 \section{Cut-based analysis \label{sec:cutbasedly}}
+A cut and count analysis has been preformed mainly as a ``proof of concept'', in order to demonstrate the sensitivity of Higgs pair production for probing light quark Yukawa couplings.  The analysis used the same cuts and $m_{hh}$ binning as ref.~\cite{Azatov:2015oxa} such that their background events counts can be used. 
+\subsection{Analysis strategy}
+In order to derive sensitivity bounds, the number of expected background $N_b$ and signal $N_s$ events needs to be estimated from simulated events. Since  $N_b$ is  taken from ~\cite{Azatov:2015oxa}, the task is to estimate $N_s$ for the $\qqA$ process as a function of $C_{q\phi}$, and to reproduce $N_s$ of the ggF SM process published in the reference as a cross-check.\\ 
+Since the cross-section, branching fraction and the integrated luminosity, it is only needed to estimate the selection efficiency $\epsilon_{SEL}$ from the applied cuts appearing in eq~\eqref{nevents} to obtain the number of signal events.\\
+The basic cuts of trigger-level selection are jets and photons with minimal $\pt$ and maximal $\eta$.
+\begin{equation}
+	p_T(\gamma/j) > 25 \, \GeV\,, \; \; \; \; |\eta(\gamma/j)| < 2.5\,.
+	\label{tricut1}
+\end{equation}
+Additionally, a veto on the events with hard leptons is applied  
+\begin{equation}
+	p_T(\ell) > 20 \, \GeV, \; \; \; \; |\eta(\ell)| < 2.5\,,
+		\label{tricut2}
+\end{equation}
+Jets were clustered using \texttt{fastjet}~\cite{Cacciari:2011ma} with the anti-kt algorithm with a radius parameter of $R=0.5$. \\
+The $b$-tagging efficiency of $ \epsilon_b = 0.7$, as well as the photon identification efficiency~$ \epsilon_\gamma = 0.8$ have been simulated, in accordance with the ATLAS and CMS performance~\cite{Chatrchyan:2012dk,CMS:2013vea,ATL-PHYS-PUB-2013-009,ATL-PHYS-PUB-2013-009,CMS:2013aoa}.
+The selection cuts we used are the same ones as in~\cite{Azatov:2015oxa}, starting with the cuts of the transverse momentum $p_T$ of the photons and $b$-tagged jets. The two hardest photons/$b$-tagged jets,  with transverse momentum $p_{T>}$, and the softer ones with $p_{T<}$ are selected to satisfy
+\begin{equation}
+	p_{T>}(b/ \gamma) > 50 \, \GeV, \quad \text{and} \quad   p_{T<}(b/ \gamma) > 30 \, \GeV\,.
+	\label{cut1}
+\end{equation}
+In order to ensure well-separation of the photons and $b$-jets, we require the following cuts on the jet radius,
+\begin{equation}
+	\Delta R(b,b) < 2  ,\; \; \; \; \Delta R(\gamma,\gamma) < 2, \; \;  \; \; \Delta R(b,\gamma) > 1.5\,.
+	\label{cut2}
+\end{equation}
+The mass windows used used are about three times the photon resolution of ATLAS and CMS~\cite{ATL-PHYS-PUB-2013-009,CMS:2013aoa}, such wide windows were used in order to avoid significant signal loss.
+\begin{equation}
+	105\,\GeV < m_{b \bar b} < 145 \, \GeV, \; \; \; \;123\, \GeV < m_{\gamma \gamma} < 130 \, \GeV\,.
+	\label{cut3}
+\end{equation}
+The selection cuts are summarised in table~\autoref{cuts_eff} with their corresponding efficiency. 
+\begin{table}[!t]
+	\centering
+	\begin{tabular}{l cc }
+			\toprule
+			cut  & $\epsilon_{\mathrm{cut}}$  &  $ \delta \epsilon_{\mathrm{cut}}$ \\
+			\midrule
+			Trigger-level in eq.~\eqref{tricut1} and~\eqref{tricut2} &0.71 & 0.04 \\
+			$p_T$ cuts in eq.~\eqref{cut1} & 0.35 & 0.07\\
+			$\Delta R$ cuts  in eq.~\eqref{cut2} & 0.69 & 0.21 \\
+			\hline
+			total    & 0.11 & 0.06 \\
+			\bottomrule
+		\end{tabular}
+	\caption{The cuts used in the analysis with their efficiency $\epsilon_{\mathrm{cut}}$ and uncertainties on these efficiencies $ \delta \epsilon_{\mathrm{cut}} = \sqrt{\epsilon(1-\epsilon)\,N}$, where $N$ is the total number of events. The analysis was performed on 100K SM simulated events. This table is published in~\cite{Alasfar:2019pmn}.}
+	\label{cuts_eff}
+\end{table}
+%
+The total selection effeciency for the ggF channel was found to be $\epsilon_{ggF} = 0.044$, consistent with the results of~\cite{Azatov:2015oxa}, while the $\qqA$ channel efficiency is slightly higher $\epsilon_{qq} = 0.05 \pm 0.001$ for the up and down quark initiated $ \qqA$, results for second generation quarks can be found in~\cite{Alasfar:2019pmn}.
+\subsection{Statistical analysis}
+The likelihood ratio test statistic~$q_\mu$ was used  in order to estimate the HL-LHC sensitivity, and set projected limits on the SMEFT Wilson coefficients $C_{q\phi}$, with and without the modifier of the trilinear coupling~$C_\phi$. Additionally to the HEFT parameters $c_q$ and $c_{qq}$. The likelihood function was constructed from the signal and background events in each bin of the $m_{hh}$ distribution described in ~\cite{Azatov:2015oxa} 
+\begin{equation} \label{loglik}
+	- \ln \mathscr L (\mu) = \sum_{i \in \mathrm{bins}} (N_{bi} + \mu\, N_{si}) - n_i\, \ln(N_{bi} + \mu\, N_{si}),
+\end{equation}
+with  $N_{bi}$ and $N_{si}$ being the number of background  and signal events in the $i$th $ m_{hh}$ distribution, respectively. In order to include the theoretical uncertainties on the expected number of signal events, the above likelihood was extended by a Gaussian distribution for $N_{si}$ in which the mean equals to the central value of the bin values and standard deviation $\sigma$ equals to its theoretical uncertainty.
+The signal strength $ \mu$ was then estimated by minimising $- \ln \mathscr L (\mu)$ to obtain the estimator for $\hat \mu$ by injecting SM signal + background events $n_i$. The test statistic is then given by
+\begin{equation}
+	q_\mu = 2 (\ln \mathscr L (\mu)- \ln \mathscr L ( \hat \mu) ),
+\end{equation}
+following the procedure described in~\cite{Cowan:2010js}, and using the Python package~\texttt{pyhf}~\cite{pyhf,pyhf_joss}.
+The expected  6 $\inab$HL-LHC sensitivity for the signal strength  at 95\% (68 \%) CL is found to be $\mu  = 1.5 (1.1)$.
 \section{Optimised search for Higgs pair via Interpretable machine learning \label{sec:mlanalysisly}}
 \begin{figure}[t]
 	\centering
