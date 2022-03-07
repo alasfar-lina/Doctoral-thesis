@@ -259,11 +259,17 @@ and $n_{eff}^{b/\gamma jet}$ representing the number of $b/\gamma$-jets that pas
 	\caption{  The LO cross-section for Higgs pair production processes (including the decay $hh \to b \bar b \gamma \gamma$ ) for 6$\inab$ 14 TeV HL-LHC.}
 	\label{tab:kfact}
 \end{table}
-Both analysis methods included sensitivity analysis for the HL-LHC, i.e. 14 TeV and 6$\inab$~\footnote{In the published cut-based analysis~\cite{Alasfar:2019pmn} 3$\inab$ luminosity for the HL-LHC was used. However, here I used 6$\inab$ when reporting fit results} luminosity and projections for a future hadron circular collider (FCC-hh), with 100 TeV and the luminosity of 30 ab$^{-1}$ has been done for the ML based analysis. With the caveat of using the 14 TeV $K$-factors for the 100 TeV cross-section scaling, as the 100 TeV $K$-factors were not available for all processes. I should note that we have explicitly checked that at least within the SM, for Higgs pair production via gluon fusion the difference is of $\mathcal{O}(1\%)$~\cite{Maltoni:2014eza} and hence small.
+Both analysis methods included sensitivity analysis for the HL-LHC, i.e. 14 TeV and 6$\inab$~\footnote{In the published cut-based analysis~\cite{Alasfar:2019pmn} 3$\inab$ luminosity for the HL-LHC was used. However, here I used 6$\inab$ when reporting fit results} luminosity and projections for a future hadron circular collider (FCC-hh), with 100 TeV and the luminosity of 30 ab$^{-1}$ has been done for the ML based analysis, the results for the FCC can be foun in the~\autoref{app:fcc}
 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Cut-based analysis \label{sec:cutbasedly}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 A cut and count analysis has been preformed mainly as a ``proof of concept'', in order to demonstrate the sensitivity of Higgs pair production for probing light quark Yukawa couplings.  The analysis used the same cuts and $m_{hh}$ binning as ref.~\cite{Azatov:2015oxa} such that their background events counts can be used. 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Analysis strategy}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 In order to derive sensitivity bounds, the number of expected background $N_b$ and signal $N_s$ events needs to be estimated from simulated events. Since  $N_b$ is  taken from ~\cite{Azatov:2015oxa}, the task is to estimate $N_s$ for the $\qqA$ process as a function of $C_{q\phi}$, and to reproduce $N_s$ of the ggF SM process published in the reference as a cross-check.\\ 
 Since the cross-section, branching fraction and the integrated luminosity, it is only needed to estimate the selection efficiency $\epsilon_{SEL}$ from the applied cuts appearing in eq~\eqref{nevents} to obtain the number of signal events.\\
 The basic cuts of trigger-level selection are jets and photons with minimal $\pt$ and maximal $\eta$.
@@ -311,8 +317,10 @@ The selection cuts are summarised in table~\autoref{cuts_eff} with their corresp
 	\label{cuts_eff}
 \end{table}
 %
-The total selection effeciency for the ggF channel was found to be $\epsilon_{ggF} = 0.044$, consistent with the results of~\cite{Azatov:2015oxa}, while the $\qqA$ channel efficiency is slightly higher $\epsilon_{qq} = 0.05 \pm 0.001$ for the up and down quark initiated $ \qqA$, results for second generation quarks can be found in~\cite{Alasfar:2019pmn}.
+The total selection efficiency for the ggF channel was found to be $\epsilon_{ggF} = 0.044$, consistent with the results of~\cite{Azatov:2015oxa}, while the $\qqA$ channel efficiency is slightly higher $\epsilon_{qq} = 0.05 \pm 0.001$ for the up and down quark initiated $ \qqA$, results for second generation quarks can be found in~\cite{Alasfar:2019pmn}.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Statistical analysis}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 The likelihood ratio test statistic~$q_\mu$ was used  in order to estimate the HL-LHC sensitivity, and set projected limits on the SMEFT Wilson coefficients $C_{q\phi}$, with and without the modifier of the trilinear coupling~$C_\phi$. Additionally to the HEFT parameters $c_q$ and $c_{qq}$. The likelihood function was constructed from the signal and background events in each bin of the $m_{hh}$ distribution described in ~\cite{Azatov:2015oxa} 
 \begin{equation} \label{loglik}
 	- \ln \mathscr L (\mu) = \sum_{i \in \mathrm{bins}} (N_{bi} + \mu\, N_{si}) - n_i\, \ln(N_{bi} + \mu\, N_{si}),
@@ -324,18 +332,117 @@ The signal strength $ \mu$ was then estimated by minimising $- \ln \mathscr L (\
 \end{equation}
 following the procedure described in~\cite{Cowan:2010js}, and using the Python package~\texttt{pyhf}~\cite{pyhf,pyhf_joss}.
 The expected  6 $\inab$HL-LHC sensitivity for the signal strength  at 95\% (68 \%) CL is found to be $\mu  = 1.5 (1.1)$.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Optimised search for Higgs pair via Interpretable machine learning \label{sec:mlanalysisly}}
-\begin{figure}[t]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+When dealing with a multi-variate problem, such as the separation of the Higgs pair signal from its backgrounds, the use of ``simple'' cuts is not the most efficient method for accomplishing this task. This is mainly due to the fact that in multivariate analysis, the various features used in the classification correlate with each other. This is not captured with the cut and count method. With boasted decision tree~(BDT) classifier, it is possible to capture these correlations and introduce highly non-trivial cuts .
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Constructing features}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+The simulated events of the signal and background described in the event selection section are required to contain at least two reconstructed photons and at a $b$-tagged jet. From these events, the following high-level features were constructed
+\begin{itemize}
+	\setlength{\itemsep}{0pt}
+	\item $p_T^{b_1}$, $p_T^{b_2}$, $p_T^{\gamma_1}$, $p_T^{\gamma\gamma}$, 
+	\item $\eta_{b_{j1}}$, $\eta_{b_{j2}}$, $\eta_{\gamma_1}$, $\eta_{\gamma\gamma}$,
+	\item $n_{bjet}$, $n_{jet}$, $\Delta R_{\rm min}^{b\gamma}$, $\Delta \varphi_{\rm min}^{bb}$, 
+	\item $m_{\gamma\gamma}$, $m_{bb}$, $m_{b_{1} h}$, $m_{b\bar b h}$, $H_T$.
+\end{itemize}
+$p_T^{{b/\gamma}_{1,2}}$ and $\eta^{{b/\gamma}_{1,2}}$ are the $p_T$ and pseudorapidity for the tagged leading and sub-leading $b/\gamma$-jets (in our definition the subleading $b$-jet could be a null four-vector since we require one $b$-jet inclusive), $n_{bj}$ is the number of tagged and passed $b$-jets. $\Delta R_{\rm min}^{b\gamma}$ and $\Delta \varphi_{\rm min}^{bb}$ are the minimum $R$-distance and $\varphi$-angle between a tagged $b$-jet and a photon jet. The remaining variables are the invariant masses and $H_T$ is the scalar sum of the transverse mass of the system. \\ These features are the same as the ones studied in ref..~\cite{Grojean:2020ech} for $\bbh$. However, they are, by no means, unique. It is possible to run the analysis with another set of features and obtain the same results, as long as these features are independent and highly correlated. \autoref{fig:voilen} shows the distributions four most important features from this list, the $m_{\gamma \gamma}$ is very important in distinguishing the large $b \bar b \gamma \gamma$ background from the signal and $ t\bar t h$ ( or other background that contain $ h \to \gamma \gamma$). While the rest, particularly $ H_T$ distinguishes the different $hh$ channels and also $hh$ from other Higgs channels backgrounds.  
+\begin{figure}[htpb!]
 	\centering
 	\includegraphics[width=0.35\textwidth]{fig/shape-MAA} 	\hspace*{0.25 cm}
 	\includegraphics[width=0.35\textwidth]{fig/shape-HT}  \\
 	\includegraphics[width=0.35\textwidth]{fig/shape-PTA2} \hspace*{0.25 cm}
 	\includegraphics[width=0.35\textwidth]{fig/shape-ETAa1} 
-	\caption{The . }
+	\caption{violin plots of the most significant features used by the BDT classifier for the signal channels, and the two most significant backgrounds $ b \bar b \gamma \gamma$. }
 	\label{fig:voilen}
 \end{figure}  
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Interpretable machine learning}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{table}[]
+	\centering
+	{\footnotesize
+		\begin{tabular}{ll|rrrrr|r}
+			\multirow{7}{*}{\rb{\bf Actual no. of events\hspace{0.45cm}}} & \multicolumn{7}{c}{\bf Predicted no. of events at HL-LHC}\\
+			\cmidrule[\heavyrulewidth]{2-8}
+			& Channel & $\hhtri$ & $\hhtri$ &  $\hhbox$&      $\QQh$ & $\bbaa$ &   total \\
+			\cline{2-8}
+			&$\hhtri$         &   28 &	14 &	18&	38&	10&	108 \\
+			&$\hhint$         &   	89&	80&	129&	178&	41&	517\\
+			&$\hhbox$         &   77&	105&	266&	265&	50&	763 \\
+			&$\QQh$           &  177&	98&	191&	5,457&	1,835& 7,758 \\
+			&$\bbaa$          & 1,743&	845&	1,074& 30,849&	287,280&	321,791 \\
+			\cline{2-8}
+			&$\mathcal{Z}_j$& 0.61&	2.37&	6.49&	28.45&	534.1	&       \\
+			\cmidrule[\heavyrulewidth]{2-8}
+		\end{tabular}
+	}
+	\caption{\it Trained BDT classification (confusion matrix) of the five channel used to extract constraints on $C_\phi$ (or $\kappa_\lambda$) at HL-LHC with 6 $\iab$ luminosity (ATLAS+CMS), assuming SM signal injection. The right-most column gives the total number of events expected in each channel in the SM and the bottom-most row gives the signal significance.}
+	\label{tab:HL-LHC-confusion-CH}
+\end{table}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Statistical fits ?}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Fit results\label{sec:resultsly}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{figure}[htpb!]
+	\centering
+	\includegraphics[width=0.48\textwidth]{fig/kukl-HL-LHC} % \hspace*{0.25 cm}
+	\includegraphics[width=0.48\textwidth]{fig/kdkl-HL-LHC} 
+	\includegraphics[width=0.48\textwidth]{fig/kdku-HL-LHC}  \\
+	\caption{The . }
+	\label{fig:rescut}
+\end{figure}  
+
+A better portrayal of the advantages gained by using a multivariate analysis can be made by comparing the constraints set on $C_{u\phi}$, or $\kappa_u$, and $C_{d\phi}$, or $\kappa_d$, from a cut-and-count (CC) analysis  and a multivariate (MV) analysis allowing for the variation of only one Wilson coefficient at a time. The projected $1\sigma$ bounds at HL-LHC for 6$\inab$ of luminosity for a CC are given in~\cite{Alasfar:2019pmn} and compare to our results as follows
+\begin{eqnarray}
+	C_{u\phi}^{MV} \left(\kappa_u^{MV}\right) = [-0.09, 0.10] \;([-466, 454]),\quad C_{u\phi}^{CC} (\kappa_u^{CC}) = [-0.18, 0.17] \;([-841, 820]), \nonumber\\
+	C_{d\phi}^{MV} (\kappa_d^{MV}) = [-0.16, 0.16] \;([-360, 360]),\quad C_{d\phi}^{CC} (\kappa_d^{CC}) = [-0.18, 0.18] \;([-405, 405]). \nonumber\\
+\end{eqnarray}
+From this we clearly see a factor of $\sim$2 improvement in the bounds on $C_{u\phi}$ and $\mathcal O(10\%)$ improvement in the determination of $C_{d\phi}$.
+\begin{table}[]
+	\centering
+	{\footnotesize
+		\begin{tabular}{cccc||ccc}
+			\toprule
+			Operators &  $C_{u\phi}$&   $C_{d\phi}$&   $C_{\phi}$&    $\kappa_{u}$&   $\kappa_{d}$&   $\kappa_\lambda$\\
+			\midrule
+			\multicolumn{7}{c}{HL-LHC 14 TeV 6$\inab$}\\
+			\midrule
+			$\mathcal O_{\phi}$ &--   & --            &[-1.57, 1.00] &--  & -- &[0.53, 1.73]\\
+			$\mathcal O_{u\phi}$&[-0.09, 0.10]   & --            &-- &[-477, 431]  & -- &--\\
+			$\mathcal O_{d\phi}$&--   & [-0.16, 0.16]            &-- &--  & [-360, 360] &--\\
+			$\mathcal O_{u\phi}$ \& $\mathcal O_{\phi}$ &[-0.087, 0.091]  & --            &[-2.42, 0.79] &[-434, 417] & -- &[0.63, 2.13]\\
+			$\mathcal O_{d\phi}$ \& $\mathcal O_{\phi}$ & --             &[-0.17, 0.17]  &[-2.73, 0.77]& -- &[-381, 379] &[0.63, 2.27]\\
+			$\mathcal O_{u\phi}$ \& $\mathcal O_{d\phi}$&[-0.065, 0.069]&[-0.12, 0.12]& --            &[-331, 312] &[-268, 272] & -- \\
+			All                                   &[-0.077, 0.084]&[-0.160, 0.162]& [-2.77, 0.43]&[-400, 369] &[-362, 359] & [0.79, 2.30] \\
+			\bottomrule
+		\end{tabular}
+	}
+	\caption{\it The 1$\sigma$ bounds on $C_{u\phi}$, $C_{d\phi}$ and $C_\phi$ from one-, two- and three-parameter fits for HL-LHC with 6$\inab$ of data and FCC-hh with 30$\inab$ of data. The corresponding bounds on the rescaling of the effective couplings, $\kappa_u$, $\kappa_d$ and $\kappa_\lambda$ are presented on the right side of the table.}
+	\label{tab:twoparambounds}
+\end{table}
+
+\begin{figure}[t!]
+	\centering
+	\includegraphics[width=0.47\linewidth]{fig/kappa_u-kappa_l-HL-LHC.pdf}
+	\includegraphics[width=0.47\linewidth]{fig/kappa_d-kappa_l-HL-LHC.pdf}
+	\includegraphics[width=0.47\linewidth]{fig/kappa_u-kappa_d-HL-LHC.pdf}
+	\caption{\it Constraints on pairs of Wilson coefficients for $C_\phi$, $C_{u\phi}$ and $C_{d\phi}$, The panels of the left are for HL-LHC with 6 $\iab$ of luminosity and the ones on the right are for FCC-hh with 30 $\iab$ of luminosity.}
+	\label{fig:constraint2d}
+\end{figure}
+\FloatBarrier
+
+\begin{figure}[t!]
+	\centering
+	\includegraphics[width =0.47\linewidth]{fig/kappa_u-kappa_d-kappa_l-HL-LHC.pdf}
+	\caption{\it Three parameter fits with $C_{u\phi}$, $C_{d\phi}$ and $C_\phi$, 6$\inab$ of luminosity at 14 TeV for HL-LHC (left panel) and 30$\inab$ of luminosity at 100 TeV for FCC-hh (right panel).}
+	\label{fig:constraint3d}
+\end{figure}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Overview of Light Yukawa searches \label{sec:comparetoothers}}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -361,9 +468,9 @@ On the contrary, Higgs pair production is inaccessible with the runs I-III of th
 
 For future colliders, like the FCC-hh at $100$ TeV, in addition to Higgs pair production triple Higgs production might be an interesting channel for constraining the operators with Wilson coefficient $C_{u\phi}$ and $C_{d\phi}$ due to the energy increase of a Feynman diagram coupling the quarks to three Higgs bosons.   In this case, a similar study to ours should be performed to see whether also in this case it will be important to do a combined fit on the light quark Yukawa couplings together with the trilinear and quartic Higgs self-couplings.\footnote{In~\cite{Papaefstathiou:2047255}, it was shown that $\sim \mathcal{O}(1)$ bounds on the quartic Higgs self-coupling can be reached at the FCC-hh.}
 Finally, it should be noted that there are also non collider signatures for enhanced light-quark Yukawa couplings, manifesting in frequency shifts in atomic clocks from Higgs forces at the atomic level~\cite{Delaunay:2016brc}. 
-
-\section{Conclusions \label{sec:concly}}
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Discussion and conclusion \label{sec:concly}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[!t]
 	\centering
 	\includegraphics[width = 0.25\textwidth]{./fig/qqh_2hdm}
