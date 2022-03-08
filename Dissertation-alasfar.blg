@@ -2,15 +2,13 @@ This is BibTeX, Version 0.99d (TeX Live 2020)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: Dissertation-alasfar.aux
 A level-1 auxiliary file: chapters/Part0/list_of_abbreviations.aux
-A level-1 auxiliary file: chapters/Part1/Higgs_and_SM.aux
 A level-1 auxiliary file: chapters/Part1/Constraints_on_Higgs.aux
 A level-1 auxiliary file: chapters/Part1/EFT.aux
 A level-1 auxiliary file: chapters/Part3/higgs_pair.aux
 A level-1 auxiliary file: chapters/Part3/dihiggs_yukawa_cut.aux
-A level-1 auxiliary file: chapters/Part3/dihiggs_yukawa_bdt.aux
 A level-1 auxiliary file: chapters/Part4/FlavourAnomalies.aux
 The style file: utphys.bst
-Reallocated field_info (elt_size=4) to 20296 items from 5000.
+Reallocated field_info (elt_size=4) to 18536 items from 5000.
 Database file #1: bibliography.bib
 Repeated entry---line 1381 of file bibliography.bib
  : @article{Cepeda:2019klc
@@ -332,7 +330,6 @@ Repeated entry---line 6882 of file bibliography.bib
  : @article{Grigo:2014jma
  :                       ,
 I'm skipping whatever remains of this entry
-Reallocated str_pool (elt_size=1) to 130000 items from 65000.
 Repeated entry---line 7892 of file bibliography.bib
  : @article{deBlas:2015aea
  :                        ,
@@ -353,6 +350,7 @@ Repeated entry---line 8079 of file bibliography.bib
  : @article{CEPCStudyGroup:2018ghi
  :                                ,
 I'm skipping whatever remains of this entry
+Reallocated str_pool (elt_size=1) to 130000 items from 65000.
 Repeated entry---line 9050 of file bibliography.bib
  : @article{DAmbrosio:2002vsn
  :                           ,
@@ -584,10 +582,6 @@ Repeated entry---line 802 of file hh.bib
  : @article{ATLAS:2020qdt
  :                       ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 819 of file hh.bib
- : @misc{tensorflow2015-whitepaper
- :                                ,
-I'm skipping whatever remains of this entry
 Repeated entry---line 993 of file hh.bib
  : @article{Dawson:2005vi
  :                       ,
@@ -804,14 +798,6 @@ Repeated entry---line 2095 of file hh.bib
  : @article{Djouadi:2018xqq
  :                         ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 2112 of file hh.bib
- : @article{Alonso-Gonzalez:2021tpo
- :                                 ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 2122 of file hh.bib
- : @article{ATLAS-CONF-2021-016
- :                             ,
-I'm skipping whatever remains of this entry
 Repeated entry---line 2141 of file hh.bib
  : @article{ATL-PHYS-PUB-2018-053
  :                               ,
@@ -950,11 +936,10 @@ Repeated entry---line 2789 of file hh.bib
 I'm skipping whatever remains of this entry
 Warning--entry type for "pyhf" isn't style-file defined
 --line 2803 of file hh.bib
+Warning--I didn't find a database entry for "CMS:2021ugl.ATLAS:2019mju"
 Warning--I didn't find a database entry for ""
 Warning--I didn't find a database entry for "Davies:2018ood"
 Warning--I didn't find a database entry for "aglio:2012np"
-Warning--there's a number but no series in minlos2000introduction
-Warning--empty booktitle in Freed1993LecturesOT
 Warning--can't use both volume and number fields in ellis2000physics
 Warning--empty author in Bruning:2004ej
 Warning--empty author in Apollinari:2015bam
@@ -990,51 +975,50 @@ Warning--empty institution in ATLAS:2021jki
 Warning--empty author in CMS:2013vea
 Warning--empty author in ATL-PHYS-PUB-2013-009
 Warning--empty author in CMS:2013aoa
+Warning--empty pages in shapley1951notes
+Warning--empty pages in 2018arXiv180203888L
 Warning--empty author in CMS:2018rig
 Warning--empty institution in CMS:2018rig
 Warning--empty author in CMS-PAS-SMP-19-014
-Warning--empty pages in shapley1951notes
-Warning--empty pages in 2018arXiv180203888L
-Warning--empty author in ATLAS-CONF-2021-016
-You've used 475 entries,
+You've used 419 entries,
             2328 wiz_defined-function locations,
-            3971 strings with 104156 characters,
-and the built_in function-call counts, 146886 in all, are:
-= -- 14582
-> -- 5003
+            3596 strings with 94140 characters,
+and the built_in function-call counts, 128652 in all, are:
+= -- 12585
+> -- 4558
 < -- 10
-+ -- 1850
-- -- 1375
-* -- 15663
-:= -- 17210
-add.period$ -- 697
-call.type$ -- 475
-change.case$ -- 537
++ -- 1678
+- -- 1259
+* -- 13951
+:= -- 15097
+add.period$ -- 603
+call.type$ -- 419
+change.case$ -- 448
 chr.to.int$ -- 0
-cite$ -- 518
-duplicate$ -- 7953
-empty$ -- 14212
-format.name$ -- 1375
-if$ -- 37808
+cite$ -- 459
+duplicate$ -- 7042
+empty$ -- 12396
+format.name$ -- 1259
+if$ -- 33108
 int.to.chr$ -- 0
-int.to.str$ -- 475
-missing$ -- 1696
-newline$ -- 1709
-num.names$ -- 440
-pop$ -- 2223
+int.to.str$ -- 419
+missing$ -- 1493
+newline$ -- 1534
+num.names$ -- 385
+pop$ -- 1966
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 5610
+skip$ -- 4948
 stack$ -- 0
-substring$ -- 5892
-swap$ -- 3953
+substring$ -- 4603
+swap$ -- 3511
 text.length$ -- 10
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 43
-while$ -- 1055
-width$ -- 478
-write$ -- 4033
-(There were 229 error messages)
+warning$ -- 40
+while$ -- 874
+width$ -- 422
+write$ -- 3574
+(There were 226 error messages)

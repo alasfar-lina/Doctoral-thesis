@@ -337,7 +337,7 @@ The expected  6 $\inab$HL-LHC sensitivity for the signal strength  at 95\% (68 \
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 When dealing with a multi-variate problem, such as the separation of the Higgs pair signal from its backgrounds, the use of ``simple'' cuts is not the most efficient method for accomplishing this task. This is mainly due to the fact that in multivariate analysis, the various features used in the classification correlate with each other. This is not captured with the cut and count method. With boasted decision tree~(BDT) classifier, it is possible to capture these correlations and introduce highly non-trivial cuts .
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Constructing features}
+\subsection{Constructing features \label{constructingfeat}}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 The simulated events of the signal and background described in the event selection section are required to contain at least two reconstructed photons and at a $b$-tagged jet. From these events, the following high-level features were constructed
 \begin{itemize}
@@ -358,8 +358,50 @@ $p_T^{{b/\gamma}_{1,2}}$ and $\eta^{{b/\gamma}_{1,2}}$ are the $p_T$ and pseudor
 	\label{fig:voilen}
 \end{figure}  
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Interpretable machine learning}
+\subsection{Network analysis}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+The intra feature correlations stratified according to the signal (ggF, $\uuA$, $ddA$ ) and backgrounds drawn as network diagrams in (a) of~\autoref{fig:cor-net} shows mild difference amongst the different signal strata.\footnote{for network plots of the backgrounds see~\cite{Grojean:2020ech}}. This can be further investigated by a post-hoc hypothesis test, based on a linear model mixed effects for each pair of the features~$X_i, X_j$ stratified according to the processes ~(ggF, $\uuA$, $ddA$ and background )~$S_k$, given as follows
+\begin{equation}
+X_i = \beta_{ij} X_j + \beta_k S_k + \beta_0,
+\label{gemisteseffekt}
+\end{equation}
+where $\beta_{ij}$, $\beta_k$ and $\beta_0$ are the constants for the fit . The hypothesis test is therefore preformed by taking  the ratio of log likelihood for the linear model of eq.~\eqref{gemisteseffekt}, defined as
+\begin{equation}
+	t = \frac{\mathscr{L} (\beta_{ij},\beta_k,\beta_0) }{\mathscr{L}(\beta_{ij},\beta_k=0,\beta_0)}.
+\end{equation}
+This analysis of variation~(ANOVA) results in a $p$-value for each feature pair, then these $p$-values are false discovery rate~(FDR)-corrected, and the correlation difference amongst the strata is considered significant if the FDR-corrected $p$-values pass the threshold $ p<0.01$. The result of these comparisons can be seen in sub-figures (b). The variation of  the Pearson $\rho$ is the most significant between the  ggF (equivalently $\qqA$) and the Higgs pair backgrounds. While for the $\qqA$ channels, the correlation patters are almost identical except for the correlation between the angular observables~$\eta_{b_{j1}}$, $\eta_{\gamma_1}$, $\eta_{\gamma\gamma}$, which is expected since the only kinematic difference between the up- and down- initiated $\qqA$ emerges from the PDF's of the two .\\
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.9\linewidth]{fig/netzwerk/networks-signal-HL-LHC}\\
+	\vspace{-0.2 cm}
+	{  \footnotesize  (a)}\\
+			\includegraphics[width=0.29\linewidth]{fig/netzwerk/corr-ku-kd}
+		%	\includegraphics[width=0.29\linewidth]{fig/netzwerk/corr-ggF-kd}
+			\includegraphics[width=0.29\linewidth]{fig/netzwerk/corr-ggF-bkg}
+			\includegraphics[width=0.29\linewidth]{fig/netzwerk/corr-ggF-ku} \\
+				 	{  \footnotesize  (b)}\\
+				%	\includegraphics[width=0.375\linewidth]{fig/netzwerk/corr-ggF-bkg}
+					\includegraphics[height=0.25\textheight]{fig/netzwerk/download}
+						\includegraphics[height=0.25\textheight]{fig/netzwerk/pca_unsupervised-1}\\
+							  \hspace{.8 cm} 			  { \footnotesize  (c)}    \hspace{6. cm}        { \footnotesize  (d)} 
+	\caption{(a) Network diagrams of the signal channels of their Pearson correlation $\rho$ between the features, showing slightly different patterns of correlation amongst these channels. (b1) The same  Pearson correlations of figure (a) plotted against each other for the different signals, with the colouring indicating whether the difference between the correlation passes the hypothesis testing (ANOVA) passes the threshold  FDR-corrected $p$-value $ p< 0. 01$. (b2) The same as (b1) but for the SM ggF against the backgrounds, showing much more notable difference of the feature correlations between the di-Higgs signal and its backgrounds. (c) Scree plot of the Principal-component clustering (PCo) of the the signal channels and the backgrounds, almost full variance coverage is obtained by the first four PCo's .(d) The clustering in the first two PCo's, one can see that even with unsupervised clustering the di-Higgs signals have a significantly different distribution than the background. However, it is harder to distinguish between the background categories themselves.}
+	\label{fig:cor-net}
+\end{figure}
+\FloatBarrier
+This network analysis allows for better understanding of the feature set at hand. For example, by looking at (a) of~\autoref{fig:cor-net} , it is evident that some features cluster together in small groups. Hence, it is tempting to preform an unsupervised clustering using Principle Component analysis~(PCoA),  (c) in ~\autoref{fig:cor-net}. The variance explained by the first few PCo's is very high, thus reducing the dimensionality of our feature space significantly. When the first two PCo's are plotted (d), the clustering of signal and the background channels' events can be seen. The distinction between the signals  and the backgrounds is visible, but not so much between the signal channel themselves.  The first PCo contains, from highest weight to lowest, $m_{\gamma \gamma}, H_T, n_{jet}, m_{bb}$ and $p_T^{\gamma_1}$. The rest of the of features have a negligible weight. \\ It is not surprising to see these feature contribute the most in the clustering of events given how they are distributed as we have seen in~\autoref{fig:voilen}. In the next step of the analysis we will see then appear once more.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Classification analysis }
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+The unsupervised clustering and network analysis merely offers a method to explore how the Higgs pair signal is different from the backgrounds. It is useful to reduce the dimensionality of the feature space and offer ``hints'' on which subset of features has the highest discriminant power. However, for analysis of the sensitivity and full resolution of the signal against backgrounds, the gold standard is rule-based machine learning. 
+The use of BDT's and random forests in particle physics analysis has been explored since early LHC era, and now it became widespread, as by only examining the literature-review of this thesis, one can see that many of the recent Higgs experimental analyses were preformed using some rule-based ML algorithm. \footnote{Rule-based ML algorithms outperform deep neural networks in terms of simplicity of implementation and computational requirements. In addition, rule-based algorithms, such as decision trees, are more transparent as far as the signal vs.~background separation is concerned }\\
+In this analysis, the EXtreme gradient BDT~(XGBoost), with its Python implementation ~\cite{10.1145/2939672.2939785}, has been used as the classifier algorithm. The standard procedure for training and testing the classifier was followed, starting with the complete list of features listed in~\autoref{constructingfeat} but then the list was shortened to improve the efficiency and performance of the classifier. This was possible due to the introduction of interpretability to the ML analysis, which provided variable importance measures, by which features with low importance index can be removed. \\
+Interpretability is achieved by incorporating a mathematical robust measure from game theory  known as Shapley values~\cite{shapley1951notes}. Shapley values formulate an axiomatic prescription for fairly distributing the payoff of a game amongst the players in a $n$-player cooperative game. When applied to machine learning, Shapley values estimate the significance of the features used in the classification. The process naturally and mathematically lends itself to examining the correlations amongst the features used in the classification, since all possible combinations of variables can be taken out of the game to check the outcome. Further information regarding the application of Shapley values in particle physics analysis can be found in refs.~\cite{Grojean:2020ech,Alvestad:2021sje,Cornell:2021gut}.  For Higgs pair production study presented here, the saame procedure described in ~\cite{Grojean:2020ech} was followed, The importance of a variable in determining the outcome of a classification will be quantified by the mean of the absolute Shapley value, $\overline{|S_v|}$, larger values signifying higher importance. The SHAP (SHapley Additive exPlanations)~\cite{NIPS2017_7062} package implemented in Python was used. This package computes the feature importance using Shapley values calculated exactly from  tree-explainers~\cite{2018arXiv180203888L,Lundberg:2020vt}.\\
+\subsubsection*{Classifier output}
+The trained BDT, output is extracted in terms of confusion matrices,  with number of events as entries. The diagonal elements of these matrices represent the true positive~(TP) identification of the signal and true negative~(TN) rejection of the background, while the upper triangular part represents the signal loss, or false negative rate~(FN) . Finally the lower triangular part shows the remaining background contamination of the signal, or the false positive rate~(FP). Using these rates it is possible to estimate the accuracy score ACC
+\begin{equation}
+	ACC = \frac{TP+TN}{TP+TN+FP+FN} \approx 0.7,
+\end{equation}
+With sensitivity $ TP/P \approx 0.2$, which corresponds to the $\epsilon_{SEL}$ of the cut-based analysis. Here we see that the ML- based analysis yielded a five-fold increase in~ $\epsilon_{SEL}$ compared to the cut and count method. ~\autoref{tab:HL-LHC-confusion-CH} shows one of these matrices from the classification of the ggF SM signal separated into the topologies according to their dependence on $C_\phi$. 
 \begin{table}[]
 	\centering
 	{\footnotesize
@@ -373,17 +415,28 @@ $p_T^{{b/\gamma}_{1,2}}$ and $\eta^{{b/\gamma}_{1,2}}$ are the $p_T$ and pseudor
 			&$\hhbox$         &   77&	105&	266&	265&	50&	763 \\
 			&$\QQh$           &  177&	98&	191&	5,457&	1,835& 7,758 \\
 			&$\bbaa$          & 1,743&	845&	1,074& 30,849&	287,280&	321,791 \\
-			\cline{2-8}
-			&$\mathcal{Z}_j$& 0.61&	2.37&	6.49&	28.45&	534.1	&       \\
+		%	\cline{2-8}
+		%	&$\mathcal{Z}_j$& 0.61&	2.37&	6.49&	28.45&	534.1	&       \\
 			\cmidrule[\heavyrulewidth]{2-8}
 		\end{tabular}
-	}
-	\caption{\it Trained BDT classification (confusion matrix) of the five channel used to extract constraints on $C_\phi$ (or $\kappa_\lambda$) at HL-LHC with 6 $\iab$ luminosity (ATLAS+CMS), assuming SM signal injection. The right-most column gives the total number of events expected in each channel in the SM and the bottom-most row gives the signal significance.}
+	} 
+	\caption{The confusion matrix output of the trained BDT  five-channel classifier. The separation between the ggF topologies allows for setting constraints on $C_\phi$. The number of events shown are for the HL-LHC at 14 TeV and integrated luminosity of 6 $\iab$, assuming the SM signal.}
 	\label{tab:HL-LHC-confusion-CH}
 \end{table}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Statistical fits ?}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+For up- and down-quark $ \qqA$, the same matrices were constructed, and sense the number of events for these processes scale with $C_{q\phi}^2$ it is only required to produce one matrices for each classification procedure, like the case of the ggF channel. For the fitting procedure, a Bayesian framework based on an MCMC method was used, analogous to the procedure described in~\autoref{sec:fit} \\  The full analysis code, including the BDT training and fits as well as the confusion matrices for the classification procedures preformed can be found in the~\texttt{Github} repository: \href{https://github.com/talismanbrandi/IML-diHiggs.git}{https://github.com/talismanbrandi/IML-diHiggs.git}. 
+\begin{figure}[t!]
+	\centering
+	\includegraphics[width=0.45\linewidth]{fig/HL-LHC-shap-bbxaa-bbh-tth-hhsm.pdf}
+		\includegraphics[width=0.45\linewidth]{fig/HL-LHC-shap-ku-kd-hhsm.pdf}
+				  \hspace{.8 cm} 			  { \footnotesize  (a)}    \hspace{6. cm}        { \footnotesize  (b)}  \\
+	\includegraphics[width=0.45\linewidth]{fig/HL-LHC-shap-ku-kd.pdf}\\
+		{  \footnotesize  (c)}
+	\caption{\it Top panels: The hierarchy of variables important for the separation of $\hhtri$ from $\hhint$ events from $\hhbox$, $\QQh$ and $\bbaa$ QCD-QED background at HL-LHC (left panel) and FCC-hh (right panel). Middle panels: The hierarchy of variables important for the separation of $\uuA$ from $\ddA$ events at HL-LHC (left panel) and FCC-hh (right panel). Lower panels: The hierarchy of variables important for the separation of $hh^{gg\rm F}$, $\uuA$ and $\ddA$ events at HL-LHC (left panel) and FCC-hh (right panel). The higher the value of $\overline{|S_v|}$ is, the more important the kinematic variable is in separating the different channels.}
+	\label{fig:shap}
+\end{figure}
+\FloatBarrier
+\subsubsection*{Feature importance and Shapley values}
+Another output of the interpretable BDT is the SHAP scores for the features used in the classification.  The $\overline{|S_v|}$ values are used to order the features used for the classification. The most important features in different classifiers used in this analysis is seen in ~\autoref{fig:shap}. Panel (a) shows the hierarchy of the features used for the separation of the SM ggF signal from the backgrounds, the same features that showed the most significant change in the network analysis and unsupervised clustering appear in the top of the list. However, the BDT was able to  distinguish between the the different signals, a task the unsupervised clustering was unable to fulfil. Figure (b) shows the list of feature importance for the ggF vs $\qqA$ classification, while (c) demonstrates the full strength of the BDT in distinguishing $\uuA$ from $\ddA$ despite having very little variation of their kinematic distributions.  As expected, $\uuA$ vs $\ddA$ classification, the angular features appeared on top of the list, which is expected from the physics of these channels. However, due to the small variation of the kinematics between these channels, this classification is a truly a multivariate problem, where the intra-variable correlations have been fully extorted. 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Fit results\label{sec:resultsly}}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
