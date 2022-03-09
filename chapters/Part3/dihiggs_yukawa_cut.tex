@@ -426,11 +426,11 @@ For up- and down-quark $ \qqA$, the same matrices were constructed, and sense th
 \begin{figure}[t!]
 	\centering
 	\includegraphics[width=0.4\linewidth]{fig/HL-LHC-shap-bbxaa-bbh-tth-hhsm.pdf}
-		\includegraphics[width=0.4\linewidth]{fig/HL-LHC-shap-ku-kd-hhsm.pdf}
-				  \hspace{.8 cm} 			  { \footnotesize  (a)}    \hspace{6. cm}        { \footnotesize  (b)}  \\
+		\includegraphics[width=0.4\linewidth]{fig/HL-LHC-shap-ku-kd-hhsm.pdf}\\
+				  \hspace{.5 cm} 			  { \footnotesize  (a)}    \hspace{5. cm}        { \footnotesize  (b)}  \\
 	\includegraphics[width=0.4\linewidth]{fig/HL-LHC-shap-ku-kd.pdf}\\
 		{  \footnotesize  (c)}
-	\caption{\it Top panels: The hierarchy of variables important for the separation of $\hhtri$ from $\hhint$ events from $\hhbox$, $\QQh$ and $\bbaa$ QCD-QED background at HL-LHC (left panel) and FCC-hh (right panel). Middle panels: The hierarchy of variables important for the separation of $\uuA$ from $\ddA$ events at HL-LHC (left panel) and FCC-hh (right panel). Lower panels: The hierarchy of variables important for the separation of $hh^{gg\rm F}$, $\uuA$ and $\ddA$ events at HL-LHC (left panel) and FCC-hh (right panel). The higher the value of $\overline{|S_v|}$ is, the more important the kinematic variable is in separating the different channels.}
+	\caption{The feature importance output in terms of $\overline{|S_v|}$. The higher the value of $\overline{|S_v|}$, the more important the kinematic variable is in separating the different channels : (a) The hierarchy of variables important for the separation of $\hhtri$ from $\hhint$ events from $\hhbox$, $\QQh$ and $\bbaa$ QCD-QED background  (b) The hierarchy of variables important for the separation of $hh^{gg\rm F}$, $\uuA$ and $\ddA$ events. (c) The hierarchy of variables important for the separation of $\uuA$ from $\ddA$ events.}
 	\label{fig:shap}
 \end{figure}
 \FloatBarrier
@@ -453,17 +453,15 @@ The fit from the cut-bases analysis was originally made for 3$\inab$ and publish
 	\label{fig:rescut}
 \end{figure}  
 A significant improvement of the bounds from using MV analysis over CC one of two-fold for $C_{u \phi}$,  but a mild one for $C_{d\phi}$ with $\mathcal O(10\%)$ improvement.\\ 
-First, we will show the projections of the limits that can be set on $C_\phi$ (or equivalently, $\kappa_\lambda$) from HL-LHC and FCC-hh. In \autoref{tab:HL-LHC-confusion-CH} we provide the output of the BDT classification for 6 $\iab$ of data collected at HL-LHC and in \autoref{tab:FCC-hh-confusion-CH} we provide the same for 30 $\iab$ of data at FCC-hh. It can be seen from these matrices that while the $\bbaa$ QCD-QED channel is the dominant background, the BDT performs better in separating it from the signal channels than separating $\QQh$. This is due to the kinematic similarities between the signal and the $\QQh$ background.
 
-In \autoref{fig:constraintkl} we present the constraints on $C_\phi$ (or $\kappa_\lambda$) that can be set from HL-LHC in the left panel and FCC-hh in the right panel. The $\hhbox$ topology is not modified by $C_\phi$ and serves as a background to the measurement of $C_\phi$. We separate the constraints from the $\hhtri$, which is quadratic in $C_\phi$ from the $\hhint$ which is linear in $C_\phi$. The combination of the two is given by the red dot-dashed line and is asymmetric around the best fit point, for SM signal injection, $C_\phi=0 \; (\kappa_\lambda=1)$. The projected $1\sigma$ bound on $C_\phi$ is $[-1.57, 1.00]$ at HL-LHC. There is a vast improvement projected for the FCC-hh which is not only due to increased luminosity but also due to the measurement being at a higher energy. The projected $1\sigma$ bound is $C_\phi = [-0.066, 0.064]$. The latter corresponds to a 3\% bound on $\kappa_\lambda$.
+In order to compare the ML multi-variate analysis used to other sensitivity projections, the projections on the trilinear coupling modifier $C_\phi$ are shown in~\autoref{fig:constraintkl}. These bounds are obtained by using the we pe BDT classification showcased in~~\autoref{tab:HL-LHC-confusion-CH}. These bounds are similar or slightly better than the results quoted by the experimental sensitivity analysis quoted before. This was achieved by optimising the BDT with spearating the signal and background channels, as well as the exclusion of less-important features. The projected $1\sigma$ bound on $C_\phi$ is $[-1.57, 1.00]$ at HL-LHC. 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.47\linewidth]{fig/HL-LHC-sig14.pdf}
+	\includegraphics[width=0.55\linewidth]{fig/HL-LHC-sig14.pdf}
 	%	\includegraphics[width=0.47\linewidth]{fig/FCC-hh-sig100.pdf}
-	\caption{\it Bounds on $C_\phi$ (or $\kappa_\lambda$) at the HL-LHC (left panel) and the FCC-hh (right panel). The solid blue lines are the constraints coming from the $\hhint$ contribution which scales linearly with the modified coupling and the solid purple line is that from the $\hhtri$ contribution that scales quadratically with the modified coupling. The red dashed line is the combination of the quadratic and linear channel. The horizontal light red dashed lines marks the 68\% and 95\% confidence intervals.}
+	\caption{ Bounds on $C_\phi$ (or $\kappa_\lambda$) at the HL-LHC from single parameter fit. The solid blue lines are the constraints coming from the $\hhint$ contribution which scales linearly with the modified coupling and the solid purple line is that from the $\hhtri$ contribution that scales quadratically with the modified coupling. The red dashed line is the combination of the quadratic and linear channel. The horizontal light red dashed lines marks the 68\% and 95\%CI's.}
 	\label{fig:constraintkl}
 \end{figure}
-
 Another advantage of the optimised multi-variate analysis is the ability to preform two-parameter fits in the same planes described above, shown in~\autoref{fig:constraint2d} while maintaining the improvement over the cut-based one. 
 Since the BDT training was able to achieve sufficient accuracy for seven-channel classifier, including up and down $\qqA$, the three ggF topologies and the backgrounds. It was possible to resolve all of the signal channels strata and their parametric dependence on the three Wilson coefficients $C_{u\phi},\ C_{d \phi}$ and $C_\phi$. A three-parameter fit is possible without degeneracies, as seen in~\autoref{fig:constraint3d}.  However, the posterior distribution of the three-parameter fit show no marked correlations amongst the Wilson coefficients. In both two- and three-parameter fits degeneracy in the $C_{d\phi}$ direction is observed at 99.7\$ CI. This  due to the reduction of the Higgs pair signal when the $ h \to d \bar d$ decay channel is opened, particularly for high values of this Wilson coefficient as highlighted by~\autoref{signal_strength_hh}. In fact, when this analysis is applied for the strange quark, the overall effect of enhanced strange quark is a reduction in the $ b \bar b \gamma \gamma$ signal, making this Higgs pair final state insensitive to strange Yukawa enhancements, more details on this were discussed in~\cite{Alasfar:2019pmn}. 
 \begin{figure}[htpb!]
@@ -480,8 +478,7 @@ Since the BDT training was able to achieve sufficient accuracy for seven-channel
 	\caption{ Three parameter Bayesian fits with $C_{u\phi}$, $C_{d\phi}$ and $C_\phi$, the HDP contours are the same as~\autoref{fig:constraint2d} .}
 	\label{fig:constraint3d}
 \end{figure}
-Comparing with the constraints on $C_\phi$ given in \autoref{sec:CH} and~\autoref{fig:constraintkl}, it can be seen from the top and middle left panels of~\autoref{fig:constraint2d} that, indeed, the constraints on $C_\phi$ are diluted when the light-quark Yukawa couplings are allowed to vary. This effect is somewhat more prominent for $C_{d\phi}$ than for $C_{u\phi}$ and stems from the fact that away from $C_{u\phi,d\phi} = 0$ larger negative values of $C_\phi$ are allowed by the crescent shaped curves in~\autoref{fig:constraint2d}. For $C_{d\phi}$ vs.~$C_\phi$ the 3$\sigma$ region is unbounded in the domain $|C_{d\phi}| \gtrsim 0.6$. The bounds on $C_{u\phi}$ and $C_{d\phi}$ from the fit with two-parameters including $C_\phi$ remain the same as the bounds on these Wilson coefficient from the single parameter $C_{u\phi,d\phi}$ fits. We summarize the results in~\autoref{tab:twoparambounds}. 
-
+Comparing with the constraints on $C_\phi$ from a single parameter fit in~\autoref{fig:constraintkl}, it can be seen from the two- and three-parameter fits in~\autoref{fig:constraint2d} and~\autoref{fig:constraint3d}, respectively,  that, the constraints on $C_\phi$ become diluted when the light-quark Yukawa coupling modifiers $C_{q\phi}$ are taken into an account. This effect is somewhat more prominent for $C_{d\phi}$ than for $C_{u\phi}$ and stems from the fact that away from $C_{u\phi,d\phi} = 0$ larger negative values of $C_\phi$ are allowed by the crescent shaped curves of the HDP contours. The bounds on $C_{u\phi}$ and $C_{d\phi}$ from the fit with two-parameters including $C_\phi$ remain the same as the bounds on these Wilson coefficient from the single parameter $C_{u\phi,d\phi}$ fits.  The fit results are summarised in~\autoref{tab:twoparambounds}. 
 \begin{table}[]
 	\centering
 	{\footnotesize
@@ -501,7 +498,7 @@ Comparing with the constraints on $C_\phi$ given in \autoref{sec:CH} and~\autore
 			\bottomrule
 		\end{tabular}
 	}
-	\caption{\it The 1$\sigma$ bounds on $C_{u\phi}$, $C_{d\phi}$ and $C_\phi$ from one-, two- and three-parameter fits for HL-LHC with 6$\inab$ of data and FCC-hh with 30$\inab$ of data. The corresponding bounds on the rescaling of the effective couplings, $\kappa_u$, $\kappa_d$ and $\kappa_\lambda$ are presented on the right side of the table.}
+	\caption{Summary of the 68\% projected bounds on $C_{u\phi}$, $C_{d\phi}$ and $C_\phi$ from single-, two- and three-parameter fits for HL-LHC with 6$\inab$ of data and FCC-hh with 30$\inab$ of data. The corresponding bounds on the rescaling of the effective couplings, $\kappa_u$, $\kappa_d$ and $\kappa_\lambda$ are presented on the right side of the table.}
 	\label{tab:twoparambounds}
 \end{table}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
