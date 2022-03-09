@@ -8,7 +8,7 @@ A level-1 auxiliary file: chapters/Part3/higgs_pair.aux
 A level-1 auxiliary file: chapters/Part3/dihiggs_yukawa_cut.aux
 A level-1 auxiliary file: chapters/Part4/FlavourAnomalies.aux
 The style file: utphys.bst
-Reallocated field_info (elt_size=4) to 18536 items from 5000.
+Reallocated field_info (elt_size=4) to 18440 items from 5000.
 Database file #1: bibliography.bib
 Repeated entry---line 1381 of file bibliography.bib
  : @article{Cepeda:2019klc
@@ -510,18 +510,6 @@ Repeated entry---line 1393 of file bibliography2.bib
  :                       ,
 I'm skipping whatever remains of this entry
 Database file #3: hh.bib
-Repeated entry---line 3 of file hh.bib
- : @article{JMLR:v20:18-760
- :                         ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 86 of file hh.bib
- : @article{Breiman2001
- :                     ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 101 of file hh.bib
- : @inproceedings{10.1145/2939672.2939778
- :                                       ,
-I'm skipping whatever remains of this entry
 Repeated entry---line 118 of file hh.bib
  : @article{Cornell:2021gut
  :                         ,
@@ -798,6 +786,10 @@ Repeated entry---line 2095 of file hh.bib
  : @article{Djouadi:2018xqq
  :                         ,
 I'm skipping whatever remains of this entry
+Repeated entry---line 2134 of file hh.bib
+ : @article{ATLAS:2018rvj
+ :                       ,
+I'm skipping whatever remains of this entry
 Repeated entry---line 2141 of file hh.bib
  : @article{ATL-PHYS-PUB-2018-053
  :                               ,
@@ -977,48 +969,49 @@ Warning--empty author in ATL-PHYS-PUB-2013-009
 Warning--empty author in CMS:2013aoa
 Warning--empty pages in shapley1951notes
 Warning--empty pages in 2018arXiv180203888L
+Warning--empty author in ATLAS:2018rvj
 Warning--empty author in CMS:2018rig
 Warning--empty institution in CMS:2018rig
 Warning--empty author in CMS-PAS-SMP-19-014
-You've used 419 entries,
+You've used 416 entries,
             2328 wiz_defined-function locations,
-            3596 strings with 94140 characters,
-and the built_in function-call counts, 128652 in all, are:
-= -- 12585
-> -- 4558
+            3568 strings with 93382 characters,
+and the built_in function-call counts, 127437 in all, are:
+= -- 12445
+> -- 4529
 < -- 10
-+ -- 1678
-- -- 1259
-* -- 13951
-:= -- 15097
-add.period$ -- 603
-call.type$ -- 419
-change.case$ -- 448
++ -- 1667
+- -- 1251
+* -- 13861
+:= -- 14958
+add.period$ -- 594
+call.type$ -- 416
+change.case$ -- 444
 chr.to.int$ -- 0
-cite$ -- 459
-duplicate$ -- 7042
-empty$ -- 12396
-format.name$ -- 1259
-if$ -- 33108
+cite$ -- 457
+duplicate$ -- 6966
+empty$ -- 12272
+format.name$ -- 1251
+if$ -- 32784
 int.to.chr$ -- 0
-int.to.str$ -- 419
-missing$ -- 1493
-newline$ -- 1534
-num.names$ -- 385
-pop$ -- 1966
+int.to.str$ -- 416
+missing$ -- 1485
+newline$ -- 1521
+num.names$ -- 381
+pop$ -- 1947
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 4948
+skip$ -- 4893
 stack$ -- 0
-substring$ -- 4603
-swap$ -- 3511
+substring$ -- 4543
+swap$ -- 3475
 text.length$ -- 10
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 40
-while$ -- 874
-width$ -- 422
-write$ -- 3574
-(There were 226 error messages)
+warning$ -- 41
+while$ -- 863
+width$ -- 419
+write$ -- 3537
+(There were 224 error messages)
