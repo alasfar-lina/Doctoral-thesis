@@ -357,9 +357,10 @@ $p_T^{{b/\gamma}_{1,2}}$ and $\eta^{{b/\gamma}_{1,2}}$ are the $p_T$ and pseudor
 	\label{fig:voilen}
 \end{figure}  
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Network analysis}
+\subsection{ Exploratory network analysis}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-The intra-feature correlations stratified according to the signal channels (ggF, $\uuA$, $ddA$ ) and background drawn as network diagrams can be seen in (a) of~\autoref{fig:cor-net}. The Pearson's correlation networks show some differences amongst the different signal strata.\footnote{for network plots of the backgrounds see~\cite{Grojean:2020ech}}. The difference between correlation amongst the different channels can be further investigated by a post-hoc hypothesis test, based on a linear mixed effects model for each pair of the features~$X_i, X_j$ stratified according to the processes ~(ggF, $\uuA$, $\ddA$ and background )~$S_k$, given as follows
+
+The aim of this analysis is to explore how the kinematic variables constructed in the previous section are related to each other. Moreover, we are interested in examining their variation from channel to channel.  This can be achieved by calculating the intra-feature correlations stratified according to the signal channels (ggF, $\uuA$, $ddA$ ) and background. Then draw them as network diagrams that can be seen in (a) of~\autoref{fig:cor-net}. The Pearson's correlation networks show some differences amongst the different signal strata.\footnote{for network plots of the backgrounds see~\cite{Grojean:2020ech}}. These differences can be further investigated by a post-hoc hypothesis test, based on a linear mixed effects model for each pair of the features~$X_i, X_j$ stratified according to the processes ~(ggF, $\uuA$, $\ddA$ and background )~$S_k$, given as follows
 \begin{equation}
 X_i = \beta_{ij} X_j + \beta_k S_k + \beta_0,
 \label{gemisteseffekt}
@@ -387,7 +388,7 @@ This analysis of variation~(ANOVA) yields a $p$-value for each feature pair, the
 	\label{fig:cor-net}
 \end{figure}
 \FloatBarrier
-This network analysis allows for better understanding of the feature set at hand. When considering that many features do not vary much across the channels as seen in (b) of~\autoref{fig:cor-net}, it is tempting to reduce the dimensionality of the feature space by preforming an unsupervised clustering via Principle Component analysis~(PCoA). Panel (c) in ~\autoref{fig:cor-net} contains a scree plot showing that the variance explained by the first few PCo's is very high, thus reducing the dimensionality of our feature space significantly. When the first two PCo's are plotted (d), the clustering of signal and the background channels  can be seen. The distinction between  the signals vs. backgrounds is visible, but less marked between the signal channel themselves, in particular $\uuA$ against $\ddA$ .  The first PCo contains, from highest weight to lowest, $m_{\gamma \gamma}, H_T, n_{jet}, m_{bb}$ and $p_T^{\gamma_1}$. The rest of the of features have a negligible weight. \\ It is not surprising to see these feature contribute the most in the clustering of events given how they are distributed as we have seen in~\autoref{fig:voilen}. In the next step of the analysis we will see then appear once more.
+This network analysis allows for better understanding of the feature set at hand. When considering that many intra-feature correlations do not vary much across the channels as seen in (b) of~\autoref{fig:cor-net} and the features themselves cluster into four groups according to their correlations, it is tempting to further reduce the dimensionality of the feature space by preforming an unsupervised clustering via Principle Component analysis~(PCoA). Panel (c) in ~\autoref{fig:cor-net} contains a scree plot showing that the variance explained by the first few PCo's is very high, thus reducing the dimensionality of our feature space significantly. When the first two PCo's are plotted (d), the clustering of signal and the background channels  can be seen. The distinction between  the signals vs. backgrounds is visible, but less marked between the signal channel themselves, in particular $\uuA$ against $\ddA$ .  The first PCo contains, from highest weight to lowest, $m_{\gamma \gamma}, H_T, n_{jet}, m_{bb}$ and $p_T^{\gamma_1}$. The rest of the of features have a negligible weight. \\ It is not surprising to see these feature contribute the most in the clustering of events given how they are distributed as we have seen in~\autoref{fig:voilen}. In the next step of the analysis we will see then appear once more.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Classification analysis }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -528,9 +529,28 @@ Finally, it should be noted that there are also non collider signatures for enha
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Discussion and conclusion \label{sec:concly}}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+In this work we walk through an analysis of how kinematic shapes can be used to glean information about the nuances of various production modes with the same final states but deformed differentially by the existence of degrees of freedom beyond the Standard Model. We show that this information can be extracted by using an interpretable machine learning framework which is not only very effective separating these differences in kinematic shapes, but also yields itself to interpretations in terms of physics that is know and well understood. The example we chose is Higgs pair production in the $b\bar{b}\gamma \gamma$ final state.
+
+We emphasized that probing Higgs pair production is an important next step for an understanding of the model underlying the fundamental interactions of particles and hence a potential gateway to new physics. We show that even beyond the trilinear Higgs couplings, the light-quark Yukawa couplings can be probed through this production mode. In fact, the $\qqA$ channel opens up only in the presence of BSM physics and well motivated models of new dynamics bring about the simultaneous modification of the trilinear Higgs coupling and the light-quark Yukawa couplings. Indeed, we motivated our study by showing that in different frameworks large modifications of the light quark Yukawa couplings can be obtained. Knowing the difficulty of measuring these couplings we propose an interpretable machine learning framework that significantly outperforms traditional cut-based analyses.
+
+
+As opposed to using black-box models, the interpretable framework allows us to gain physics insights into how signal and background separation can be brought into effect, pointing to kinematic variables like $H_T$ and $m_{\gamma\gamma}$ as being important variables that instrument this separation. As a result we find enhanced sensitivities to $C_\phi$ or $\kappa_\lambda$ that quantify the modification to the Higgs trilinear coupling. Furthermore, we see that the measurement of the light-quark Yukawa couplings is aided by using the methods we advocate bringing about far greater sensitivities than would be possible with a cut-based analysis at the HL-LHC and the FCC-hh. The advantage of using an interpretable framework using Shapley values is that it provides added confidence to the robustness of the multivariate analyses that we perform using simulated data.
+
+The salient results of this work are:
+\begin{itemize}
+	\itemsep0em
+	\item The modification of the Higgs trilinear coupling can be measures at $\mathcal{O}(1)$ precision at the HL-LHC and at $\mathcal{O}(1\%)$ precision at the FCC-hh. 
+	\item The rescaling of the light-quark Yukawa couplings, $\kappa_u$ and $\kappa_d$, can be measured to $\mathcal{O}(100)$ at the HL-LHC and $\mathcal{O}(10)$ at FCC-hh. This translated to $C_{u\phi}$ and $C_{d\phi}$ constrained at $\mathcal{O}(10\%)$ at the HL-LHC and $\mathcal{O}(1\%)$ at FCC-hh.
+	\item The measurement of $C_\phi$, or $\kappa_\lambda$, is significantly diluted once the light-quark Yukawa couplings are allowed to vary. Hence, in a joint fit, the bounds on $C_\phi$ are much weaker. 
+	\item There are theoretical models that motivate the simultaneous modification of the trilinear Higgs coupling and the light-quark Yukawa couplings. Hence, the dilution of the bounds on $C_\phi$ due to the presence of NP in the light-quark Yukawa sector should be taken into consideration in future phenomenological extraction of $C_\phi$.
+	\item The bounds obtained with the interpretable machine learning framework that we use not only outperforms cut-based analyses by far, but also allows for physics insights into kinematic distributions of the various channels that helps distinguish them in an experiment.
+\end{itemize}
+
+In conclusion, we stress that the interplay between the Yukawa sector and the Higgs trilinear coupling is non-trivial and requires careful consideration. Future experiments at the HL-LHC and FCC-hh will bring significant improvements in the sensitivities to $C_\phi$, $C_{u\phi}$ and $C_{d\phi}$ through the Higgs pair production channel. In particular, the bounds on the light-quark Yukawa couplings from Higgs pair production can possibly be the most stringent bounds amongst all other experimental probes of the light quark Yukawa couplings.
+
 \begin{figure}[!t]
 	\centering
-	\includegraphics[width = 0.25\textwidth]{./fig/qqh_2hdm}
+	\includegraphics[width = 0.25\textwidth]{./fig/2HDM-bound_full}
 	\hspace{0.5 cm}
 	\includegraphics[width = 0.2\textwidth]{./fig/VLQ}
 	\caption{Examples of potential UV-complete models leading to a  $hh f \bar{f} $ coupling. The left Feynman diagram shows a heavy Higgs $H$, the right diagram a vector-like quark $\mathcal Q $.} % verify the notation

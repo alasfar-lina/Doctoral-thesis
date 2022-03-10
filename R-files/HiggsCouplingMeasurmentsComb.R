@@ -13,9 +13,9 @@ data = data.frame(
   'std'= c(0.06,0.115, 0.065,0.115, 0.06,0.07,0.06,0.115,0.10,0.11,0.11,0.23, 0.07,0.12,0.275,0.71) )
 data2 <- data %>% group_by(Exp) %>% nest()
 
+?agg
 
-
-aggrivated<- agg(id=id, es=k, var=std, method = "BHHR", cor = 0.5,  mod=NULL, data=data)
+aggrivated<- MAd::agg(id=id, es=k, var=std, method = "BHHR", cor = 0.5,  mod=NULL, data=data)
 
 pdf(file = "./higgs_couplings.pdf", width = 7.5, height = 5.5)
 ggplot(aggrivated) + 

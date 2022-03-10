@@ -15,6 +15,8 @@ library(mdthemes)
 library(ggpubr)
 library(ggrepel)
 library(latex2exp)
+library(igraph)
+
 setwd("/Users/lina/Dropbox/Doctoral-thesis")
 
 netz<- read.csv(file="./R-files/network.csv")
@@ -99,4 +101,33 @@ netz<- read.csv(file="./R-files/network.csv")
      # panel.border=element_blank()
    )
 
+ str1$ch <- NULL
+ gr <- cor(str1,str1) %>% as.matrix()
+ diag(gr)<-0
+ graph<-graph.adjacency(gr,weighted=TRUE,mode="lower")
+ g=delete.edges(graph, which(E(graph)$weight <=.5)) # here's my condition.
+ 
+ plot(g)
+ deg <- degree(g, mode="all")
+ deg.dist <- degree_distribution(g, cumulative=F, mode="all") 
+ plot( x=log10(0:max(deg)), y=log10(deg.dist), pch=19, cex=1.2, col="orange",xlab="Degree", ylab="Cumulative Frequency")
+ ceb <- cluster_edge_betweenness(g) 
+ dendPlot(ceb, mode="hclust")
+ plot(ceb, g)
+ membership(ceb) # community membership for each node
+ 
+ hs <- hub_score(g, weights=NA)$vector
+ as <- authority_score(g, weights=NA)$vector
+ par(mfrow=c(1,2))
+ plot(g, vertex.size=hs*50, main="Hubs")
+ plot(g, vertex.size=as*30, main="Authorities")
+ 
+ deg
+ deg.dist
+ 
+ library("pdfcount")
+ 
+ # count
+ rintro <- file.path("/Users/lina/Dropbox/Doctoral-thesis/Dissertation-alasfar.pdf")
+ word_count(rintro)
  
