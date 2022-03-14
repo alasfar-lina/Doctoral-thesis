@@ -9,7 +9,7 @@
 %%%%%%%%%%%%%%%%
 Recent results from $B$-factories including Belle and Babar as well as the LHCb-experiment involving the semileptonic decays of the beauty mesons $B^0, B^\pm,B_s \dots$ point to marked deviation of $ \sim 2.5 \sigma$ from the SM prediction, particularly in the branching fractions ratios
 \begin{equation}
-R_{K^{(*)}} \equiv Br(B \to K^{(*)} \mu^{+} \mu^{-}) / Br(B \to K^{(*)} e^{+} e^{-}),
+R_{K^{(*)}} \equiv {Br(B \to K^{(*)} \mu^{+} \mu^{-}) \over Br(B \to K^{(*)} e^{+} e^{-})},
 \end{equation}
 in the low dilepton mass bins ~\cite{Aaij:2014ora,Aaij:2017vbb,Aaij:2019wad,Abdesselam:2019wac,LHCb:2021trn}~\footnote{The data from the most recent measurement of the $R_{K^*}$~\cite{LHCb:2021trn} has not been used in this work, as the fits shown in this chapter predates these results.}. In addition to the results of angular analysis of the decay~$B \to K^{*} \mu^{+} \mu^{-}$~\cite{Descotes-Genon:2013wba,Descotes-Genon:2015uva}, with the observable $P_5^\prime$  showing similar deviation from the SM, the most recent measurement was published by LHCb~\cite{LHCb:2020lmf}. Other observables derived from the branching fractions of semileptonic and full leptonic final states of $B$ mesons decays, e.g. $ B_{s} \to e^{+} e^{-}$ also showed deviations from the SM with the $2\sigma-3\sigma$ range ~\cite{Chatrchyan:2013bka,Aaij:2017vad,Aaboud:2018mst,Aaij:2020nol}. These observables have in common the FCNC transition $ b \to s \ell \ell\, \, \ell = e, \mu$, and are in conflict with the SM lepton universality of EW couplings. This tension could be translated into a strong case for the evidence of BSM physics with lepton flavour universality violation~(LUV)~\cite{Hiller:2014yaa,Hiller:2014ula,Bordone:2016gaq}.\\
 When these aberrant results are added to the recent muon anomalous magnetic moment $g-2$ measurement by Fermilab~\cite{Muong-2:2021ojo} or measurements of differential dilepton braching fractions of $B$-mesons,  grounds for the muons being the source of LUV are established, i.e.  the NP degrees of freedom contain muon-flavoured couplings.  However, long-distant effects present in the decay amplitudes ir $g-2$ corrections~\cite{Khodjamirian:2010vf,Lyon:2014hpa,Chobanova:2017ghn,Blake:2017fyh,Bobeth:2017vxj} -- involving hadronic contributions that are theoretically difficult to handle~\cite{Jager:2014rwa,Ciuchini:2015qxb,Arbey:2018ics,Chrzaszcz:2018yza} -- make such a conclusion debatable, see, e.g.~\cite{Ciuchini:2018anp,Hurth:2020rzx}. \\
@@ -38,120 +38,89 @@ This chapter aims to extend the theme of this thesis of interconnectivity betwee
 %%%%%%
 This chapter is organized as follows: in \autoref{sec:theory} a theoretical review the ingredients of the EFT analysis is presented; in \autoref{sec:strategy} details on the strategy adopted for the combined EW+flavour fit in the SMEFT are discussed, the results from which are collected in \autoref{sec:EFT_results}; in \autoref{sec:UVtoymodels} I discuss the most economic viable $Z^{\prime}$ model in relation to our EFT results and also mention possible alternative leptoquark scenarios. Lastly, the conclusions are summarised in \autoref{sec:sum}.
 %%%%%%%%%%%%%%%%%%
-\section{RGE SMEFT operator-mixing}
+\section{Flavour anomalies in SMEFT }
 \label{sec:theory}
 %%%%%%%%%%%%%%%%%%
-
-Previous global analyses of $b \to s \ell \ell$ anomalies have highlighted the appearance of new dynamics at a scale of $\mathcal{O}(10)$~TeV for $\mathcal{O}(1)$ effective couplings encoding NP effects at the tree level~\cite{DAmico:2017mtc,Geng:2017svp,Capdevila:2017bsm,Ciuchini:2017mik,Hiller:2017bzc}. The mass gap with the weak scale, characterized by the Higgs vacuum expectation value (VEV) $v \approx 246$ GeV, justifies the BSM translation of these results in the gauge-invariant formalism of the SMEFT~\cite{Buchmuller:1985jz,Grzadkowski:2010es}. At dimension six, in an operator product expansion in inverse powers of the NP scale $\Lambda$, and working in the Warsaw basis~\cite{Grzadkowski:2010es}, the operators of interest for the explanation of these $B$ anomalies are~\cite{Celis:2017doq,Ciuchini:2019usw,Aebischer:2019mlg}: 
+Global fits from $ b \to s \ell \ell$ anomalies show that  if NP degrees of freedom  enter at tree-level, they would have an energy scale $ \Lambda \sim 10$ TeV~\cite{DAmico:2017mtc,Geng:2017svp,Capdevila:2017bsm,Ciuchini:2017mik,Hiller:2017bzc}. Highlighting that for LHC phenomenology, the use of SMEFT is justified.  The operators of interest for the explanation of these $B$ anomalies are~\cite{Celis:2017doq,Ciuchini:2019usw,Aebischer:2019mlg}: 
 \begin{eqnarray}
 	\label{eq:tree_LUV_SMEFT}
-	O^{LQ^{(1)}}_{\ell \ell 23} & = & \bar{L}_{\ell} \gamma_{\mu}  L_{\ell} \, \bar{Q}_{2} \gamma^{\mu}  Q_{3} \ , \nonumber \\
-	O^{LQ^{(3)}}_{\ell \ell 23} & = & \bar{L}_{\ell} \gamma_{\mu} \tau^{A} L_{\ell} \, \bar{Q}_{2} \gamma^{\mu} \tau^{A} Q_{3} \ , \nonumber \\
-	O^{Qe}_{23 \ell \ell} & = & \bar{Q}_{2} \gamma_{\mu} Q_{3} \, \bar{e}_{\ell} \gamma^{\mu}  e_{\ell} \ ,\nonumber \\
-	O^{Ld}_{ \ell \ell 23} & = & \bar{L}_{\ell} \gamma_{\mu} L \, \bar{d}_{2} \gamma^{\mu} d_{3} \ , \\
-	O^{ed}_{\ell \ell 23 } & = & \bar{d}_{2} \gamma_{\mu} d_{3} \, \bar{e}_{\ell} \gamma^{\mu}  e_{\ell} \ ,\nonumber
+	\mathcal{O}_{LQ^{(1)}}^{\ell \ell 23}, \,	(\mathcal{O}_{LQ}^{(1,3)})^{\ell \ell 23}, \, \mathcal{O}_{Qe}^{23 \ell \ell}, \,  \mathcal{O}_{Ld}^{ \ell \ell 23}, \, \mathcal{O}_{ed}^{\ell \ell 23 }.
 \end{eqnarray}
-where weak doublets are represented in upper case, $SU(2)_{\rm L}$ singlets in lower case, and Pauli matrices $\tau^{A}$ characterize $SU(2)_{\rm L}$ triplet currents. Within available light-cone sum-rule results on long-distance effects in $B \to K^{*} \mu^{+} \mu^{-}$~\cite{Khodjamirian:2010vf,Bobeth:2017vxj}, data point to the presence of both the operators with $b \to s$ left-handed and right-handed currents with muonic flavour ($\ell = 2$) in eq.~\eqref{eq:tree_LUV_SMEFT}~\cite{Ciuchini:2019usw,Alok:2019ufo,Alguero:2019ptt,Kowalska:2019ley}. However, it is important to observe that: 
-\begin{itemize}
-	\item The current statistical significance for the need of right-handed $b \to s$ couplings remain small, hinted only by the ratio $R_{K^{*}}/R_{K} \neq 1$ at the $1\sigma$ level~\cite{Hiller:2017bzc,Ciuchini:2019usw}. Hence, the present $B$ anomalies can be essentially addressed by $O^{LQ^{(1,3)}}_{22 23}$ and $O^{Qe}_{23 22}$.
-	\item Within a conservative approach to hadronic uncertainties~\cite{Jager:2014rwa,Ciuchini:2015qxb,Arbey:2018ics}, the preference for muonic NP effects in global analyses gets mitigated to a large extent and electro-phillic scenarios become viable too~\cite{Ciuchini:2017mik}; moreover, the fully left-handed operator(s)\footnote{The most promising observables that will allow  to genuinely disentangle NP effects in the future in the fully left-handed operator $O^{LQ^{(3)}}_{\ell \ell 23}$ from the ones of $O^{LQ^{(1)}}_{\ell \ell 23}$, are $B \to K^{(*)} \nu \bar{\nu}$ decays~\cite{Altmannshofer:2009ma,Buras:2014fpa,Descotes-Genon:2020buf}.} $O^{LQ^{(1,3)}}_{\ell \ell 23}$ offers the minimal model-independent resolution to $b \to s$ anomalies~\cite{Ciuchini:2019usw}.
-\end{itemize}
-
-Interestingly, with a leading expansion in the top-quark Yukawa coupling of the RGE computed in~\cite{Jenkins:2013zja,Jenkins:2013wua}, the Wilson coefficients associated to $O^{LQ}_{22 23}$ and $O^{Qe}_{23 22}$ can be generated at one loop by two distinct sets of dimension-six operators~\cite{Celis:2017doq} that can lead to LUV effects in $b \to s \ell \ell$ amplitudes without flavour violation in the quark current. A first set involves operators built of Higgs and leptonic currents:
+Following the same convention for the SM fields in~\autoref{tab:thesm} and operator definitions in the Warsaw basis presented in~\autoref{warsaw}.  Current data, taking non-perturbative QCD effects into an account using light-cone sum rules, both left- and right-handed operators are permitted ~\cite{Ciuchini:2019usw,Alok:2019ufo,Alguero:2019ptt,Kowalska:2019ley}. Nevertheless, the statistical significance for the right-handed $b \to s$ interaction remains small, coming only from~$R_{K^{*}}/R_{K} \neq 1$ ~\cite{Hiller:2017bzc,Ciuchini:2019usw}. Hence, one can effective only consider the left-handed operators ~$(	\mathcal{O}_{LQ}^{(1,3)} )^{22 23}$ and~$\mathcal{O}_{Qe}^{23 22}$ for addressing the flavour anomalies. Additionally, when conservative hadronic uncertainties are considered ~\cite{Jager:2014rwa,Ciuchini:2015qxb,Arbey:2018ics}, the preference of NP coupling to the muons exclusively becomes mitigated and the inclusion of electron interactions becomes viable as well ~\cite{Ciuchini:2017mik}. From these considerations, we conclude that the operator ~$(	\mathcal{O}_{LQ}^{(1,3)} )^{\ell \ell 23}$ with either or both$ \ell=e, \mu$  offers the minimal resolution of these anomalies within the SMEFT framework~\cite{Ciuchini:2019usw}.\\
+Introducing these operators at tree-level will lead to flavour violation beyond the SM, as these operators are flavour spurions unrelated to the SM ones. This can be avoided if they get generated at loop level from the RGE of operators involving the leptons and the Higgs~\cite{Celis:2017doq} 
 \begin{eqnarray} 
 	\label{eq:SMEFT_op_HL}
-	O^{HL^{(1)}}_{\ell \ell} &=& ( H^{\dagger} i \overset{\leftrightarrow}{D}_{\mu}H ) (\bar{L}_{\ell} \gamma^{\mu}  L_{\ell} )\,, \nonumber \\
-	O^{HL^{(3)}}_{\ell \ell} &=& ( H^{\dagger} i \overset{\, \leftrightarrow_A}{D_{\mu}}H ) (\bar{L}_{\ell} \gamma^{\mu} \tau^{A} L_{\ell} )\,, \nonumber \\
-	O^{He}_{\ell \ell} &=& ( H^{\dagger} i \overset{\leftrightarrow}{D}_{\mu}H ) (\bar{e}_{\ell} \gamma^{\mu}  e_{\ell} )\,.
+	(	\mathcal{O}_{\phi L}^{(1,3)})^{\ell \ell},	\,\,\, 	\mathcal{O}_{\phi e}^{\ell \ell},
 \end{eqnarray}
-A second one corresponds to semileptonic four-fermion (SL-4F) operators with right-handed top-quark currents:
+or alternatively, from the semileptonic four-fermion (SL-4F) operators with right-handed top-quark currents:
 \begin{eqnarray} 
 	\label{eq:SMEFT_op_loop_lu}
-	O^{Lu}_{\ell \ell 3 3} &=& (\bar{L}_{\ell} \gamma_\mu L_{\ell})(\bar{u}_{3}\gamma^\mu u_{3})\,, \nonumber \\
-	O^{eu}_{\ell \ell 3 3} &=& (\bar{e}_{\ell} \gamma_\mu e_{\ell})(\bar{u}_{3}\gamma^\mu u_{3})\,.
+		\mathcal{O}_{Lu}^{\ell \ell 3 3}, \,	\,\,	\mathcal{O}_{eu}^{\ell \ell 3 3} 
 \end{eqnarray}
-
-Solving the RGE in  a leading-logarithmic approximation, the matching conditions for the left-handed quark-current operators in eq.~\eqref{eq:tree_LUV_SMEFT} at the scale $\mu_{\textrm{\tiny{EW}}}\sim v $ are:\footnote{In this work, for one-loop effects,  we assume the NP scale to be $\Lambda = 1$~TeV. We also set $\mu_{\rm EW} = m_t\simeq v/\sqrt{2}$ to minimize the matching-scale dependence with the inclusion of next-to-leading corrections~\cite{Aebischer:2015fzz,Bobeth:2017xry}.}
+The leading log solution of the RGE for these operators ~\cite{Jenkins:2013zja,Jenkins:2013wua}, with the matching conditions for the left-handed quark-current operators in eq.~\eqref{eq:tree_LUV_SMEFT} at the  EW scale $\mu_{\textrm{\tiny{EW}}}\sim v $ are:\footnote{similar to the previous chapters, for one-loop effects,  the NP scale is set to be $\Lambda = 1$~TeV.  The renormalisation scale is set to $\mu_{\rm EW} = m_t\simeq v/\sqrt{2}$ to minimise the matching-scale dependence with the inclusion of the NLO	 corrections~\cite{Aebischer:2015fzz,Bobeth:2017xry}.}
 \begin{eqnarray}
 	\label{eq:SMEFT_matching_1loop}
-	C^{LQ^{(1)}}_{\ell \ell 23} &=& V_{ts}^{*} V^{ }_{tb} \left(\frac{y_{t} }{4 \pi}\right)^2 \log \left( \frac{\Lambda}{\mu_{\textrm{\tiny{EW}}}} \right)   \, \left(C^{Lu}_{\ell \ell 3 3} - C^{HL^{(1)}}_{\ell \ell} \right)\,,\nonumber \\
-	C^{LQ^{(3)}}_{\ell \ell 23} &=& V_{ts}^{*} V^{ }_{tb} \left(\frac{y_{t} }{4 \pi}\right)^2 \log \left( \frac{\Lambda}{\mu_{\textrm{\tiny{EW}}}} \right)   \,   C^{HL^{(3)}}_{\ell \ell} \,,\nonumber \\
-	C^{Qe}_{23\ell \ell} &=& V_{ts}^{*} V^{ }_{tb} \left(\frac{y_{t} }{4 \pi}\right)^2 \log \left( \frac{\Lambda}{\mu_{\textrm{\tiny{EW}}}} \right)   \, \left( C^{eu}_{\ell \ell 3 3} - C_{\ell \ell}^{He}\right) \, .
+	C_{LQ}^{(1)}\ ^{\ell \ell 23} &=& V_{ts}^{*} V^{ }_{tb} \left(\frac{y_{t} }{4 \pi}\right)^2 \log \left( \frac{\Lambda}{\mu_{\textrm{\tiny{EW}}}} \right)   \, \left(C_{Lu}^{\ell \ell 3 3} - C_{\phi L}^{(1)}\ ^{\ell \ell} \right)\,,\nonumber \\
+		C_{LQ}^{(3)}\ ^{\ell \ell 23} &=& V_{ts}^{*} V^{ }_{tb} \left(\frac{y_{t} }{4 \pi}\right)^2 \log \left( \frac{\Lambda}{\mu_{\textrm{\tiny{EW}}}} \right)  \ C_{\phi L}^{(3)}\ ^{\ell \ell}  \,,\nonumber \\
+	C_{Qe}^{23\ell \ell} &=& V_{ts}^{*} V^{ }_{tb} \left(\frac{y_{t} }{4 \pi}\right)^2 \log \left( \frac{\Lambda}{\mu_{\textrm{\tiny{EW}}}} \right)   \, \left( C_{eu}^{\ell \ell 3 3} - C^{\ell \ell}_{\phi e}\right) \, .
 \end{eqnarray}
-
-In terms of vectorial and axial currents typically discussed in the context of the weak effective theory at low energies~\cite{Buchalla:1995vs,Buras:1998raa,Silvestrini:2019sey}, the operators in eq.~\eqref{eq:SMEFT_matching_1loop} are matched to
+%%%%%%
+In heavy quark physics, $B$ decays are typically studied within the low energy weak effective theory~\cite{Buchalla:1995vs,Buras:1998raa,Silvestrini:2019sey}, in which we have the vector and axial currents defined as
 \begin{eqnarray}
 	\label{eq:_Q9_Q10}
-	O_{9 V, \ell} & = & \frac{\alpha_{e}}{8 \pi} (\bar{s} \gamma_{\mu} (1-\gamma_{5})b) ( \bar{\ell} \gamma^{\mu} \ell ) \nonumber \ , \ \\
-	O_{10 A, \ell} & = & \frac{\alpha_{e}}{8 \pi} (\bar{s} \gamma_{\mu} (1-\gamma_{5})b) ( \bar{\ell} \gamma^{\mu} \gamma_{5} \ell ) \ ,
+	\mathcal{O}_{9 V, \ell} & = & \frac{\alpha_{e}}{8 \pi} (\bar{s} \gamma_{\mu} (1-\gamma_{5})b) ( \bar{\ell} \gamma^{\mu} \ell ) \nonumber \ , \ \\
+	\mathcal{O}_{10 A, \ell} & = & \frac{\alpha_{e}}{8 \pi} (\bar{s} \gamma_{\mu} (1-\gamma_{5})b) ( \bar{\ell} \gamma^{\mu} \gamma_{5} \ell ) \ ,
 \end{eqnarray}
-so that the matching conditions at the scale $\mu_{\textrm{\tiny{EW}}}$ for the set of operators in eq.~\eqref{eq:SMEFT_op_HL}~-~\eqref{eq:SMEFT_op_loop_lu} follow:
+and matched at the EW scale $\mu_{\textrm{\tiny{EW}}}$  with the SMEFT operators in  eq.~\eqref{eq:SMEFT_op_HL}~-~\eqref{eq:SMEFT_op_loop_lu} follow:
 \begin{eqnarray} 
 	\label{eq:_C9_C10}
-	C_{9,\ell}^{\rm NP}&=& \frac{\pi v^{2}}{\alpha_{e} \Lambda^2} \left(\frac{y_{t} }{4 \pi}\right)^2 \log \left( \frac{\Lambda}{\mu_{\textrm{\tiny{EW}}}} \right)   \, \left(C^{HL^{(3)}}_{\ell \ell} - C^{HL^{(1)}}_{\ell \ell} -C^{He}_{\ell \ell} + C^{Lu}_{\ell \ell 3 3} + C^{eu}_{\ell \ell 3 3} \right)\,,\nonumber \\
-	C_{10,\ell}^{\rm NP}&=& \frac{\pi v^{2}}{\alpha_{e} \Lambda^2} \left(\frac{y_{t} }{4 \pi}\right)^2 \log \left( \frac{\Lambda}{\mu_{\textrm{\tiny{EW}}}} \right)   \, \left(C^{HL^{(1)}}_{\ell \ell} - C^{HL^{(3)}}_{\ell \ell} -C^{He}_{\ell \ell} - C^{Lu}_{\ell \ell 3 3} + C^{eu}_{\ell \ell 3 3} \right)\, ,
+	C_{9,\ell}^{\rm NP}&=& \frac{\pi v^{2}}{\alpha \Lambda^2} \left(\frac{y_{t} }{4 \pi}\right)^2 \log \left( \frac{\Lambda}{\mu_{\textrm{\tiny{EW}}}} \right)   \, \left(C_{\phi L}^{(3)}\ ^{\ell \ell}-C_{\phi L}^{(1)}\ ^{\ell \ell}-C^{\ell \ell}_{\phi e}+ C_{Lu}^{\ell \ell 3 3} + C_{eu}^{\ell \ell 3 3} \right)\,,\nonumber \\
+	C_{10,\ell}^{\rm NP}&=& \frac{\pi v^{2}}{\alpha \Lambda^2} \left(\frac{y_{t} }{4 \pi}\right)^2 \log \left( \frac{\Lambda}{\mu_{\textrm{\tiny{EW}}}} \right)   \, \left(C_{\phi L}^{(1)}\ ^{\ell \ell}-C_{\phi L}^{(1)}\ ^{\ell \ell}-C^{\ell \ell}_{\phi e}-s C_{Lu}^{\ell \ell 3 3} + C_{eu}^{\ell \ell 3 3} \right)\, .
 \end{eqnarray} 
-where $\alpha_{e}\equiv e^2/(4 \pi)$, $e$ being the electric charge, and the overall normalization in the weak Hamiltonian follows the standard conventions adopted in refs.~\cite{Ciuchini:2015qxb,Ciuchini:2017mik,Ciuchini:2019usw}.
-
-As anticipated in the Introduction, the set of operators of interest for the study of $R_{K^{(*)}}$ in eq.~\eqref{eq:SMEFT_matching_1loop} is also probed by EW precision data. Indeed, operators involving the Higgs field and lepton bilinears in the SMEFT induce modifications to EW-boson couplings that have been precisely measured at LEP/SLC, providing also an important test bed for lepton universality~\cite{Efrati:2015eaa,deBlas:2016ojx}. Modifications of the $Z$ couplings to the leptons can be induced also at loop level through the top-loop contribution~\cite{deBlas:2015aea}. In the leading-log approximation and at the leading order in the top Yukawa coupling, LUV effects can be generated by:
+The overall normalization in the weak Hamiltonian follows the standard conventions adopted in refs.~\cite{Ciuchini:2015qxb,Ciuchini:2017mik,Ciuchini:2019usw}.
+%%
+As anticipated, the set of operators of interest for the study of $R_{K^{(*)}}$ in eq.~\eqref{eq:SMEFT_matching_1loop} is also sensitive to EWPO.  The operators involving the Higgs field and lepton bilinears in the SMEFT induce tree-level modifications to EW-boson couplings, while modifications of the $Z$ couplings to the leptons can be also induced via top-loop
+ contribution~\cite{deBlas:2015aea}. In the leading-log approximation and at the leading order in the top Yukawa coupling, LUV effects can be generated by:
 %
 \begin{eqnarray}
 	\label{eq:OLuedRGE}
 	\left.\Delta g_{Z,L}^{\ell\ell}\right|_{\mathrm{LUV}} & = &
-	- \frac 12 \left( C_{\ell\ell}^{HL^{(1)}}+C_{\ell\ell}^{HL^{(3)}}\right)\frac{v^2}{\Lambda^2}-
-	3 \left( \frac{ y_t \, v}{4 \pi \Lambda} \right)^2 \log\left(\frac{\Lambda}{\mu_{\textrm{\tiny{EW}}}} \right) \, C^{Lu}_{\ell\ell33}  \ , \\ \nonumber
+	- \frac 12 \left( C_{\phi L}^{(1)}\ ^{\ell \ell} +C_{\phi L}^{(3)}\ ^{\ell \ell} \right)\frac{v^2}{\Lambda^2}-
+	3 \left( \frac{ y_t \, v}{4 \pi \Lambda} \right)^2 \log\left(\frac{\Lambda}{\mu_{\textrm{\tiny{EW}}}} \right) \, C_{Lu}^{\ell\ell33}  \ , \\ \nonumber
 	\left.\Delta g_{Z,R}^{\ell\ell}\right|_{\mathrm{LUV}} & = & 
-	- \frac 12 C_{\ell\ell}^{He}\frac{v^2}{\Lambda^2}-
-	3 \left( \frac{ y_t \, v}{4 \pi \Lambda} \right)^2 \log\left(\frac{\Lambda }{\mu_{\textrm{\tiny{EW}}}}\right) \, C^{eu}_{\ell\ell33} \ ,
+	- \frac 12 C^{\ell\ell}_{\phi e}\frac{v^2}{\Lambda^2}-
+	3 \left( \frac{ y_t \, v}{4 \pi \Lambda} \right)^2 \log\left(\frac{\Lambda }{\mu_{\textrm{\tiny{EW}}}}\right) \, C_{eu}^{\ell\ell33} \ ,
 \end{eqnarray}
-where $\Delta g_{Z,L (R)}^{\ell\ell} \equiv g_{Z,L(R)}^{\ell\ell} - g_{Z,L (R)}^{\ell\ell,\textrm{SM}}$ is the deviation with respect to the left-handed (right-handed) leptonic couplings to the $Z$ boson in the SM theory.
+where $\Delta g_{Z,L (R)}^{\ell\ell} \equiv g_{Z,L(R)}^{\ell\ell} - g_{Z,L (R)}^{\ell\ell,\textrm{SM}}$ is the deviation with respect to the left-handed (right-handed) leptonic couplings to the $Z$ boson in the SM theory. Since  EW couplings to leptons have been precisely measured at LEP/SLC, they provide an important test bed for lepton universality~\cite{Efrati:2015eaa,deBlas:2016ojx}.\\
 
-Motivated by the previous observations, we would like to perform an EFT analysis of new physics models that can explain the flavour anomalies in the above-mentioned fashion, but exploring more generally the interplay of such SM extensions with EWPO. For that purpose, we consider an EFT analysis of new physics with the following assumptions:
-\begin{itemize}
-	\setlength\itemsep{0em}
-	\item The solution to the flavour anomalies is obtained via radiative effects, such as those described in eq.~(\ref{eq:_C9_C10}).
-	% %
-	\item Such NP can also contribute to EWPO at tree-level, in a flavour non-universal way.
-	% %
-	\item Other effects that could enter in the previous observables via renormalization group (RG) mixing are either small or can be constrained better via other processes.
-\end{itemize}
-% %
-As we will see in \autoref{sec:UVtoymodels}, and can also be deduced using the results in \cite{deBlas:2017xtg}, it is not difficult to construct minimal BSM models where the previous conditions are satisfied.
-%
-From an EFT point of view, fulfilling these considerations requires the enlarging of the set of operators considered in eq.~\eqref{eq:SMEFT_op_HL} and also including the corresponding dimension-six interactions modifying the neutral and charged quark currents:
+These observations motivates a global SMEFT fit  of the operators explaining the  $B$-anomalies, as well as their interplay with EWPO.  Assuming that the LUV affects are generated by NP via radiative effects, matching what is see in  eq.~(\ref{eq:_C9_C10}). Consequently, the NP will contribute to EWPO at tree-level, whilst other SMEFT operators appearing from the REG mixing are assumed to be small or constrained from other processes.  In order for these assumptions to be fulfilled within SMEFT, the operators modifying the EW coupling of the quarks need to be included as well 
 \begin{eqnarray} 
 	\label{eq:SMEFT_op_HQ}
-	O^{HQ^{(1)}}_{qq} &=& ( H^{\dagger} i \overset{\leftrightarrow}{D}_{\mu}H ) (\bar{Q}_{q} \gamma^{\mu}  Q_{q} )\,, \nonumber \\
-	O^{HQ^{(3)}}_{qq} &=& ( H^{\dagger} i \overset{\, \leftrightarrow_A}{D_{\mu}}H ) (\bar{Q}_{q} \gamma^{\mu} \tau^{A} Q_{q} )\,, \nonumber \\
-	O^{Hu}_{qq} &=& ( H^{\dagger} i \overset{\leftrightarrow}{D}_{\mu}H ) (\bar{u}_{q} \gamma^{\mu}  u_{q} )\,,\nonumber\\
-	O^{Hd}_{qq} &=& ( H^{\dagger} i \overset{\leftrightarrow}{D}_{\mu}H ) (\bar{d}_{q} \gamma^{\mu}  d_{q} )\,,
+		\mathcal{O}_{\phi Q}^{(1)} \ ^{qq} , \,
+		\mathcal{O}_{\phi Q}^{(3)}\ ^{qq} ,\,  
+		\mathcal{O}_{\phi u}^{qq}, \, 
+		\mathcal{O}_{\phi d}^{qq}, 
 \end{eqnarray}
-where $q=1,2,3$ identifies quark generations.\footnote{
-	In our SMEFT analysis we require these quark operators to be diagonal in a basis that is aligned, as much as possible, with the down-quark physical basis. This will be convenient to avoid possible dangerous tree-level FCNC effects~\cite{Silvestrini:2018dos}.
-	Similarly, we also assume lepton-flavour alignment with the charged-lepton mass basis.
-}
-In this regard, we note that EWPO cannot separate in a clean way contributions from the first family quarks, in particular in the $d$ sector. Therefore, and analogously to what was done in ref.~\cite{deBlas:2019wgy}, we identify deviations in the couplings of the EW bosons to the first and second family of the quarks via $C^{{HQ}^{(1,3)}}_{11} = C^{{HQ}^{(1,3)}}_{22} $, $C^{Hu}_{11} = C^{Hu}_{22} $, and $C^{Hd}_{11} = C^{Hd}_{22} $. This implicit $U(2)^3$ symmetry in the quark sector would in general also help to mitigate large contributions to FCNC. Note that, even in this situation, not all the Wilson coefficients related to eq.~\eqref{eq:SMEFT_op_HQ} can be well constrained with the EWPO. This is the case for the Wilson coefficient of $O^{Hu}_{33}$, which modifies the right-handed top quark coupling to the $Z$. This cannot be probed at tree level by $Z$-pole measurements. 
-
-Introducing eq.~\eqref{eq:SMEFT_op_HQ} also modifies the EW couplings of the $Z$ to all fermions at the one-loop level, and in particular the leptonic couplings, $g_{Z,L(R)}^{\ell\ell}$. These are, however, flavour-universal effects. In our study, we propagate the leading $y_t$ effects of this kind, coming from the RG mixing with $O_{33}^{HQ^{(1)}}$. As we will see, given the comparatively weaker bound on the Wilson coefficient of that operator compared to the leptonic ones, these effects can be sizeable in the fit. It must be noted that, at the same order in the perturbative expansions we are considering, similar effects from $O_{33}^{Hu}$ could also have a non-negligible phenomenological impact. However, as explained before, $C_{33}^{Hu}$ cannot be directly bound in the EWPO fit. Hence, to avoid flat directions in our EFT analysis, we assume the RGE boundary condition $C_{33}^{Hu}=0$ to hold true. Excluding ${\cal O}_{33}^{Hu}$ and taking into account the aforementioned assumptions in the quark sector, eq.~\eqref{eq:SMEFT_op_HQ} adds a total of 7 new degrees of freedom into our EFT analysis.
-
-Finally, for completeness, we also consider the effects of the four-lepton operator:
+where $q=1,2,3$ identifies quark generations. These operators are considered to be flavour aligned, in a similar fashion to $C_{q\phi}$ of the previous chapter, in particular they are assumed to be aligned with the down-quark basis. This is needed to avoid pathological tree-level FCNC ~\cite{Silvestrini:2018dos}. The same holds for the leptonic operators, being aligned with the charged lepton mass bases.\\
+%
+The EWPO have a degeneracy between the first and second generation quarks, particularly in the down-type quarks sector. Therefore, it is natural to impose a $U(2)^3$ symmetry between first and second generator quark operators, thus imposing $C_{\phi Q}^{(1,3)}\ ^{11} = C_{\phi Q}^{(1,3)}\ ^{22} $, $C_{\phi u}^{11} = C_{\phi u}^{22}$. This also helps to suppress large FCNC contributions from these operators.  Additionally, the RGE boundary condition $C^{33}_{\phi u}=0$ is assumed. This is motivated by the fact that this Wilson coefficient cannot be constraint by EWPO, as modifications to $Z$-coupling to right-handed top quarks cannot be probed by by $Z$-pole measurements. 
+%
+%Introducing eq.~\eqref{eq:SMEFT_op_HQ} also modifies the EW couplings of the $Z$ to all fermions at the one-loop level, and in particular the leptonic couplings, $g_{Z,L(R)}^{\ell\ell}$. These are, however, flavour-universal effects. In our study, we propagate the leading $y_t$ effects of this kind, coming from the RG mixing with $O_{33}^{HQ^{(1)}}$. As we will see, given the comparatively weaker bound on the Wilson coefficient of that operator compared to the leptonic ones, these effects can be sizeable in the fit. It must be noted that, at the same order in the perturbative expansions we are considering, similar effects from $O_{33}^{Hu}$ could also have a non-negligible phenomenological impact. However, as explained before, $C_{33}^{Hu}$ cannot be directly bound in the EWPO fit. Hence, to avoid flat directions in our EFT analysis, we assume the RGE boundary condition $C_{33}^{Hu}=0$ to hold true. Excluding ${\cal O}_{33}^{Hu}$ and taking into account the aforementioned assumptions in the quark sector, eq.~\eqref{eq:SMEFT_op_HQ} adds a total of 7 new degrees of freedom into our EFT analysis.
+Finally, for completeness, the four-lepton operator is also included in the fit:
 \begin{equation}
 	\label{eq:SMEFT_op_LLLL}
-	O_{1221}^{LL}=(\bar{L}_1 \gamma^\mu L_2) (\bar{L}_2 \gamma_\mu L_1) \ ,
+	O^{1221}_{LL}=(\bar{L}_1 \gamma^\mu L_2) (\bar{L}_2 \gamma_\mu L_1) \ ,
 \end{equation}
 which contributes to the muon decay amplitude, and therefore alters the extraction of the value of the Fermi constant, $G_F$, which is one of the inputs of the SM EW sector.
 
-The operators in eqs.~\eqref{eq:SMEFT_op_HL}, \eqref{eq:SMEFT_op_HQ} and \eqref{eq:SMEFT_op_LLLL}, with the assumptions mentioned before, saturate all the 17 degrees of freedom, i.e. combinations of operators, that can be constrained in a fit to EWPO in the dimension-six SMEFT framework~\footnote{In this regard, we should mention that at dimension six, in the Warsaw basis, EW observables are also affected by two more operators not discussed so far: ${ O}_{HWB}=(H^\dagger \tau^A H) W_{\mu\nu}^A B^{\mu\nu}$ and ${ O}_{HD}=\left|H^\dagger D_\mu H\right|^2$. Contrary to the set in eqs.~\eqref{eq:SMEFT_op_HL} and \eqref{eq:SMEFT_op_HQ}, these operators only induce oblique, and therefore flavour-universal, corrections in EW observables. Given our focus on LUV effects, we assume for ${O}_{HWB}$ and ${O}_{HD}$ that the corresponding Wilson coefficients are not generated by the NP at the scale $\Lambda$.}, while keeping flavour changing neutral currents in the light quark sector under control. Together with the 4 four-fermion operators from eq.~\eqref{eq:SMEFT_op_loop_lu}, this completes a total of 21 operators, which we include in the fit setup described in the next section. 
-
+The operators in eqs.~\eqref{eq:SMEFT_op_HL}, \eqref{eq:SMEFT_op_HQ} and \eqref{eq:SMEFT_op_LLLL}, with the assumptions mentioned before, saturate all the 17 degrees of freedom, i.e. combinations of operators, that can be constrained in a fit to EWPO in the dimension-six SMEFT framework while keeping flavour changing neutral currents in the light quark sector under control. Together with the 4 four-fermion operators from eq.~\eqref{eq:SMEFT_op_loop_lu}, this completes a total of 21 operators, which is included in the fit setup described in the next section. 
 %%%%%%%%%%%%%%%%%%
-\section{Analysis strategy}
+\section{Analysis technique}
 \label{sec:strategy}
 %%%%%%%%%%%%%%%%%%
-We now proceed to discuss in more detail our EFT analysis. {Our aim is to pin down the picture that should address the present $B$ anomalies via one-loop SM RGE effects of flavour-conserving dimension-six operators, and respect at the same time the constraints from EW precision.} We can achieve this goal with a comprehensive global analysis that aims at combining EWPO and $b \to s \ell \ell$ data.\footnote{See ref.~\cite{Capdevila:2020rrl} for another recent analysis where $b \to s \ell \ell$ data and EW measurements have been combined, with the different scope of resolving tensions in the determination of the Cabibbo angle~\cite{Belfatto:2019swo,Grossman:2019bzp}.}
-
-We perform a Bayesian analysis on the most recent set of $b \to s \ell \ell$ measurements together with the state-of-the-art theoretical information already implemented and described in ref.~\cite{Ciuchini:2019usw}. We include in our study EW physics following what originally done in ref.~\cite{Ciuchini:2013pca} and, more recently, in ref.~\cite{deBlas:2016ojx}. In particular, we adopt the list of observables reported in Table~1 of this reference, and allow for lepton non-universal contributions from heavy BSM physics in EWPO~\cite{Efrati:2015eaa,deBlas:2019wgy} within the framework described in \autoref{sec:theory}.
-
-For this purpose we adopt the publicly available \HEPfit~\cite{deBlas:2019okz} package, a Markov Chain Monte Carlo (MCMC) framework built using the Bayesian Analysis Toolkit~\cite{2009CoPhC.180.2197C}.\footnote{All code and configuration files can be made available upon request.} In our analyses we vary $\mathcal{O}(100)$ parameters including nuisance parameters. The data that we use for the fits can be categorized as follows:
+%We now proceed to discuss in more detail our EFT analysis. {Our aim is to pin down the picture that should address the present $B$ anomalies via one-loop SM RGE effects of flavour-conserving dimension-six operators, and respect at the same time the constraints from EW precision.} We can achieve this goal with a comprehensive global analysis that aims at combining EWPO and $b \to s \ell \ell$ data.\footnote{See ref.~\cite{Capdevila:2020rrl} for another recent analysis where $b \to s \ell \ell$ data and EW measurements have been combined, with the different scope of resolving tensions in the determination of the Cabibbo angle~\cite{Belfatto:2019swo,Grossman:2019bzp}.}
+The global fit combining both flavour observables related to the $ b \to s \ell \ell$ anomalies, in addition to EWPO is carried out in a Bayesian statistical framework. The experimental observables are modelled via state-of-the-art theoretical information already implemented and described in ref.~\cite{Ciuchini:2019usw} for flavour physics, and for EW and Higgs physics in ref.~\cite{Ciuchini:2013pca} and, more recently, in ref.~\cite{deBlas:2016ojx}. EWPO are extended by flavour non-universal  SMEFT contributions described in ref.~\cite{Efrati:2015eaa,deBlas:2019wgy}. The statistical and physics frameworks are both available within the publicly available \HEPfit~\cite{deBlas:2019okz} package, a Markov Chain Monte Carlo (MCMC) framework built using the Bayesian Analysis Toolkit~\cite{2009CoPhC.180.2197C}~\footnote{ \HEPfit is developed by some of my collaborators, who have co-authored this work}\\
+The experimental input used for the global is summarised in the following, which are also implemented in \HEPfit code : 
 \begin{itemize}
 	\setlength\itemsep{0em}
 	{\item The set of EWPO including the $Z$-pole measurements from LEP/SLD, the measurements of the $W$ properties at LEP-II, as well as several related inputs from the Tevatron and LHC measurements of the properties of the EW bosons~\cite{ALEPH:2005ab,Abe:2000uc,Group:2012gb,Schael:2013ita,Aaboud:2017svj,Khachatryan:2014iya,Abazov:2011ws}. The following lists the bulk of the EWPO included in the fits:
@@ -163,27 +132,23 @@ For this purpose we adopt the publicly available \HEPfit~\cite{deBlas:2019okz} p
 		\end{gather*}
 		%
 	}
-	\item The angular distribution of $B\to K^{(*)}\ell^+\ell^-$ decays for both $\mu$ and $e$ final states in the large-recoil region.\footnote{We do not consider in this work low-recoil data, plagued by broad charmonium resonances, implying very large hadronic uncertainties. For analogous reasoning, we do not attempt to study here the baryon rare decay $\Lambda_{b} \to  \Lambda \, \mu^{+} \mu^{-}$ as well.} These include data from ATLAS~\cite{Aaboud:2018krd}, Belle~\cite{Wehle:2016yoi}, CMS~\cite{Khachatryan:2015isa,Sirunyan:2017dhj} and LHCb~\cite{Aaij:2015dea,Aaij:2020nrf}; we also include the branching fractions from LHCb~\cite{Aaij:2016flj}, and of $B\to K^*\gamma$\footnote{NP effects from dipole operators are strongly constrained as extensively investigated in ref.~\cite{Paul:2016urs}. However, radiative exclusive $B$ decays still provide relevant information about hadronic effects~\cite{Ciuchini:2018anp}.} for which we use the HFLAV average~\cite{Amhis:2019ckw};
+	\item The angular distribution of $B\to K^{(*)}\ell^+\ell^-$ decays for both $\mu$ and $e$ final states in the large-recoil region.These include data from ATLAS~\cite{Aaboud:2018krd}, Belle~\cite{Wehle:2016yoi}, CMS~\cite{Khachatryan:2015isa,Sirunyan:2017dhj} and LHCb~\cite{Aaij:2015dea,Aaij:2020nrf}; in addition to the branching fractions from LHCb~\cite{Aaij:2016flj}, and of $B\to K^*\gamma$\footnote{NP effects from dipole operators are strongly constrained as extensively investigated in ref.~\cite{Paul:2016urs}. However, radiative exclusive $B$ decays still provide relevant information about hadronic effects~\cite{Ciuchini:2018anp}.} for which the HFLAV average is used~\cite{Amhis:2019ckw}; 
 	\item Branching ratios for $B^{(+)} \to K^{(+)} \mu^+\mu^-$ decays in the large-recoil region measured by LHCb~\cite{Aaij:2014pli};
 	\item The angular distribution of $B_s\to \phi\mu^+\mu^-$~\cite{Aaij:2015esa} and the branching ratio of  the decay $B_s\to\phi\gamma$~\cite{Aaij:2012ita}, measured by LHCb;
-	\item The lepton universality violating ratios $R_K$~\cite{Aaij:2019wad} and $R_{K^*}$~\cite{Aaij:2017vbb} from LHCb and Belle~\cite{Abdesselam:2019wac};
+	\item The LUV ratios $R_K$~\cite{Aaij:2019wad} and $R_{K^*}$~\cite{Aaij:2017vbb} from LHCb and Belle~\cite{Abdesselam:2019wac};
 	\item Branching ratio of $B_{(s)}\to \mu^+\mu^-$ measured by LHCb~\cite{Aaij:2017vad}, CMS~\cite{Chatrchyan:2013bka}, and ATLAS~\cite{Aaboud:2018mst}; we also use the upper limit on $B_s\to e^+e^-$ decay reported recently by LHCb~\cite{Aaij:2020nol}. 
 \end{itemize}
-
-For the $B\to K^*\ell^+\ell^-$ channel, as in previous works~\cite{Ciuchini:2016weo,Ciuchini:2017mik,Ciuchini:2017gva,Ciuchini:2018xll,Ciuchini:2018anp,Ciuchini:2019usw}, we consider two different scenarios for hadronic contributions stemming from long-distance effects~\cite{Khodjamirian:2010vf,Jager:2014rwa,Lyon:2014hpa}. We take into account a conservative approach (Phenomenological Data Driven or PDD) as originally proposed in \cite{Ciuchini:2015qxb}, and refined in ref.~\cite{Ciuchini:2018anp}, and a more optimistic approach based on the results in~\cite{Khodjamirian:2010vf} (Phenomenological Model Driven or PMD). For the PDD model, a quite generic model of hadronic contributions is simultaneously fitted to $b \to s \ell \ell$ data together with the effects coming from NP. Within this approach, a net assessment of the presence of BSM physics is only possible via observables sensitive to LUV effects. See the discussion in ref.~\cite{Ciuchini:2019usw} for more details. For the PMD approach we use the dispersion relations specified in~\cite{Khodjamirian:2010vf} to constrain the hadronic contributions in the entire large-recoil region considered in the analysis. This leads to much smaller hadronic effects in the~$B\to K^*\ell^+\ell^-$ amplitudes~\cite{Ciuchini:2016weo}, which significantly affects NP results of global analysis~\cite{Ciuchini:2019usw}.
-
-We have characterized our study by considering several different scenarios for the SMEFT fit. In particular, we would like to clarify the sets of data and operators used in each of these fit scenarios, which are organized as follows:
-
+The measurements of  $B\to K^{(*)}\ell^+\ell^-$ decays in the low di-lepton invariant mass region are plagued by large uncertainties for the charmonium resonance, and thus not included win the fit.  Moreover, the rare beauty baryonic decay $\Lambda_{b} \to  \Lambda \, \mu^{+} \mu^{-}$  is not considered as well. \\  Modelling the decays of hadrons involves factorisable (in terms of decay constant) and non-factorisable non-perturbative QCD effects. The non-factorisable effects emerge from long-distance hadronic contributions to~\cite{Khodjamirian:2010vf,Jager:2014rwa,Lyon:2014hpa} QCD loops appearing in radiative corrections to these decays. In this analysis, the  $B\to K^*\ell^+\ell^-$ has two different scenarios to describe these hadronic effects, discussed also in other previous works of my collaborators ~\cite{Ciuchini:2016weo,Ciuchini:2017mik,Ciuchini:2017gva,Ciuchini:2018xll,Ciuchini:2018anp,Ciuchini:2019usw}. The first is a conservative approach (Phenomenological Data Driven or PDD) as originally proposed in \cite{Ciuchini:2015qxb}, and refined in ref.~\cite{Ciuchini:2018anp}, whilst the second is a more optimistic one based on the results in~\cite{Khodjamirian:2010vf} (Phenomenological Model Driven or PMD). The PDD scenario is based on a generic model of the hadronic effects, which is simultaneously fitted to $b \to s \ell \ell$ data alongside the NP effects. Contrary to PDD approach, the PMD scenario the dispersion relations specified in~\cite{Khodjamirian:2010vf} is used constrain the hadronic contributions in the entire large-recoil region considered in the analysis, ergo PMD has smaller hadronic effects in the~$B\to K^*\ell^+\ell^-$ amplitudes~\cite{Ciuchini:2016weo}. Th choice of the hadronic uncertainties model significantly affects the outcome of the  fits to the $B$-decays observables~\cite{Ciuchini:2019usw}. \\ In order to be as general as possible, the SMEFT global fit is done for four different scenarios, described as follows:
 \begin{itemize}
 	\setlength\itemsep{0em}
-	\item {\bf EW}:
-	In this fit we simultaneously vary the Wilson coefficients of the {\it 17 operators} in eqs.~\eqref{eq:SMEFT_op_HL},~\eqref{eq:SMEFT_op_HQ}, and \eqref{eq:SMEFT_op_LLLL}, as presented in \autoref{sec:theory}. This fit includes EW precision measurements only, and it is performed under the assumptions listed in \autoref{sec:theory}.
+	\item {\bf EW}: 
+	Using EWPO data only with the assumptions discussed in~\autoref{sec:theory}. This fit includes the operators in eqs.~\eqref{eq:SMEFT_op_HL},~\eqref{eq:SMEFT_op_HQ}, and \eqref{eq:SMEFT_op_LLLL}, summing up to a total of 17 Wilson coefficients.
 	%
-	\item  {\bf EW (SL-4F Only)}: This refers to a fit done with the Wilson coefficients of the {\em SL-4F operators} involving the right-handed top current, reported in eq.~\eqref{eq:SMEFT_op_loop_lu}. This scenario incorporates the assumption that BSM enters the modifications of the $Z$ couplings to muons and electrons through top-quark loops only.
+	\item  {\bf EW (SL-4F Only)}: This refers to a fit done with the Wilson coefficients of the { SL-4F operators} involving the right-handed top current, reported in eq.~\eqref{eq:SMEFT_op_loop_lu}. This scenario incorporates the assumption that BSM enters the modifications of the $Z$ couplings to muons and electrons through top-quark loops only.
 	%
-	\item {\bf EW \& Flavour}: In these fits we vary the Wilson coefficients of all the {\em 21 operators} given in eq.~\eqref{eq:SMEFT_op_HL},~\eqref{eq:SMEFT_op_HQ}, and eq.~\eqref{eq:SMEFT_op_LLLL}, together with eq.~\eqref{eq:SMEFT_op_loop_lu}.
-	We use all the EW data and include all the flavour observables listed at the beginning of this section. This scenario comes in two varieties, PDD and PMD, as explained above.
-	\item {\bf Flavour}: These fits exclusively include the Wilson coefficients of the {\em 4 operators} (both electrons and muons) appearing in eq.~\eqref{eq:SMEFT_op_loop_lu}, and are done including only flavour data, i.e. excluding EW measurements. Results are again distinguished for the PDD and PMD cases. 
+	\item {\bf EW \& Flavour}: Wilson coefficients of all the { 21 operators} given in eq.~\eqref{eq:SMEFT_op_HL},~\eqref{eq:SMEFT_op_HQ}, and eq.~\eqref{eq:SMEFT_op_LLLL}, together with eq.~\eqref{eq:SMEFT_op_loop_lu} are varied.\\
+   All of the EW data  as well as the flavour observables listed above are used. This scenario comes in two varieties, PDD and PMD, as explained above.
+	\item {\bf Flavour}: These fits exclusively include the Wilson coefficients of the {\em 4 operators} (both electrons and muons) appearing in eq.~\eqref{eq:SMEFT_op_loop_lu}, and are done including only flavour data, i.e. excluding EW measurements. Results are again distinguished for the PDD and PMD cases. This fit is typically done when flavour anomalies are discussed in the literature. Hence, it was included here to emphasize the importance of including EWPO .
 \end{itemize}
 
 
@@ -201,8 +166,8 @@ We have characterized our study by considering several different scenarios for t
 As a first step in our analysis, we reproduced the outcome of the EW fit originally obtained in ref.~\cite{Efrati:2015eaa} using \HEPfit. %, briefly revisited in \autoref{app:EW}. 
 Then, we expanded upon the standard EW results through the study of the {\bf EW} scenario introduced in the previous section, yielding constraints on the Wilson coefficients of the SMEFT operators involving, in particular, dimension-six operators with a Higgs-doublet current, and including also leading-loop effects under the working hypotheses stated in \autoref{sec:theory}. The subset of these operators containing leptonic currents can give rise to non-universal modifications of EW gauge-boson couplings. Assuming NP integrated out at the heavy scale $\Lambda > v$, these operators also contribute via RGE flow to $b \to s \ell \ell $ observables at one loop, see eq.~\eqref{eq:SMEFT_matching_1loop}.
 
-{On the left side of \autoref{fig:ew_flav_bounds}, we show in orange the bounds from the {\bf EW} fit on the Wilson coefficients of the operators with leptonic currents in terms of mean and standard deviation of the marginalized posterior probability density function. We observe compatibility with the SM within the 2$\sigma$ level. Note that EW data strongly correlate the operators under consideration among themselves, as can be seen in the correlation matrix presented in \autoref{fig:ew_corr}.\unskip\parfillskip 0pt \par}
-
+{On the left side of \autoref{fig:ew_flav_bounds}, we show in orange the bounds from the {\bf EW} fit on the Wilson coefficients of the operators with leptonic currents in terms of mean and standard deviation of the marginalized posterior probability density function. We observe compatibility with the SM within the 2$\sigma$ level. Note that EW data strongly correlate the operators under consideration among themselves, as can be seen in the correlation matrix presented in~\autoref{fig:ew_corr}}
+\newpage
 \begin{sidewaysfigure}[ht]
 	\centering
 	\includegraphics[width=\textwidth]{figures/errorbar.pdf}
@@ -278,7 +243,7 @@ In \autoref{fig:ew_flav_bounds} the imprint of these correlations is a shift of 
 Finally, let us draw what would be the minimal picture for NP out of the general analysis obtained with the 21 operators considered in the {\bf EW \& Flavour} scenario. Indeed, a simpler picture will serve as a guideline for the UV models discussed in \autoref{sec:UVtoymodels}. 
 As mentioned before, given the hadronic uncertainties at hand, the most economic explanation addressing in particular $R_{K^{(*)}}$ anomalies resides in the NP contribution from the fully left-handed operator, $O^{LQ}_{\ell \ell 2 3}$. In the present context this operator is generated at one loop by $O^{Lu}_{\ell \ell 3 3}$, according to eq.~\eqref{eq:SMEFT_matching_1loop}.
 
-\begin{figure}[tp]
+\begin{figure}[htpb!]
 	\includegraphics[width=\textwidth]{figures/CHL_CLu.pdf}
 	\caption{\it The most economic EFT picture where $B$ anomalies can be reconciled at one loop with EWPO. In (dashed) magenta the 1(2)$\sigma$ correlation between the Wilson coefficients of the operators responsible of addressing $B$ anomalies without any source of flavour violation beyond the Yukawa couplings of the SM. The minimal scenario involves LUV effects in the (electron) muon sector as highlighted by the 1$\sigma$ orange band in the (right) left panel, originated from $b \to s \ell \ell$ data analyzed with a conservative approach to hadronic uncertainties. In same figure, the 1$\sigma$ region allowed by EWPO within a single-operator analysis, horizontal and vertical grey bands.}    
 	\label{fig:2D_correlations}
@@ -406,7 +371,7 @@ together with four-fermion operators built of $t_{R}$ or $\mu_{L},\nu$  fields t
 
 From eq.~\eqref{eq:CLu_Zprime} it is clear that in order to have $|C^{L u}_{2233}| \sim 2 $ TeV$^{-2}$ as highlighted in \autoref{fig:2D_correlations}, one needs to rely on a relatively low symmetry-breaking scale $\eta \lesssim$~TeV;\footnote{Note that even for masses as low as $\mu_{\mathcal{S}} \sim \mathcal{O}(v)$, for $\eta \simeq v$ and $\lambda_{\mathcal{S}} \sim \mathcal{O}(1)$, the interactions of $\mathcal{S}$ do not alter the phenomenology discussed here since the largest $\mathcal{S}$-generated effects are still suppressed as $\mathcal{O}(\varepsilon_{t}^2/\xi^2_{\mathcal{T}})$.} for $m_{Z^{\prime}} \sim$~TeV this implies $g_{X} \gtrsim$~1. In \autoref{fig:Zp_constraints} we show the $1\sigma$ region corresponding to the explanation of $B$ anomalies via eq.~\eqref{eq:CLu_Zprime} in the parameter space $\xi_{\mathcal{T,M}}$, fixing the gauge coupling $g_{X} = m_{Z^{\prime}}/\eta$ for a tentative $Z^{\prime}$ gauge boson at the~TeV scale and the VEV of the new scalar field $\mathcal{S}$ set to $\eta = 250$~GeV and $\eta = 500$~GeV  in the left and right panel, respectively. In the same plot, we re-interpret in our scenario the most relevant collider constraints originally identified in ref.~\cite{Camargo-Molina:2018cwu}. 
 
-\begin{figure}[tp]
+\begin{figure}[htpb!]
 	\includegraphics[scale=0.235]{figures/Zprime_constraint_CLu.pdf}
 	\caption{\it 68\% (95\%) probability region in (lighter) magenta for the minimal $Z^{\prime}$ model that addresses $B$ anomalies in the parameter space identified by eq.~\eqref{eq:CLu_Zprime}, with $\eta = m_{Z^{\prime}}/4$ (left panel), and $\eta =  m_{Z^{\prime}}/2$ (right panel), for $m_{Z^{\prime}} = 1~\textrm{TeV}$. Relevant LHC constraints are reported in blue and cyan regions according to the analysis originally performed in ref.~\cite{Camargo-Molina:2018cwu}, together with the corresponding collider projections at 300~fb$^{-1}$. Finally, the gray regions underlie the parameter space where the mass of the vector-like partner lies below current collider limits for a fixed Yukawa coupling as explicitly reported, while dashed lines show the corresponding shift of the limit due to a smaller value of the same type of Yukawa coupling.}    
 	\label{fig:Zp_constraints}
@@ -509,7 +474,7 @@ leading to the corresponding matching condition:
 \end{equation}
 In \autoref{fig:LQ_constraints} we report in (lighter) magenta the underlying 1(2)$\sigma$ region where $B$ anomalies are addressed in concordance with the minimal EFT picture of \autoref{fig:2D_correlations}. In the same plot, we also show a conservative estimate of the present LHC constraint on the mass of the LQ states considered, based on the dedicated collider study of ref.~\cite{Angelescu:2018tyl}.
 
-\begin{figure}[tp]
+\begin{figure}[htpb!]
 	\centering 
 	\includegraphics[width=0.45\linewidth]{figures/Scalar_LQ.pdf}
 	\includegraphics[width=0.435\linewidth]{figures/Vector_LQ.pdf}
