@@ -113,9 +113,9 @@
          \include{chapters/Part0/list_of_abbreviations}
     \mainmatter
         % Part 0
-        %\include{chapters/Part1/01-Introtext}
-        %\include{chapters/Part1/02-Formal}
-        %\include{chapters/Part1/03-Outlook}
+     %   \include{chapters/Part0/01-Introtext}
+        %\include{chapters/Part0/02-Formal}
+        %\include{chapters/Part0/03-Outlook}
      %    \include{chapters/End/list_of_publications}
         % Part 1
         \part{Higgs Physics}
@@ -125,26 +125,27 @@
         % Part 2
 
         \part{Single Higgs Processes at the LHC }
-      %  \include{chapters/Part2/single_higgs}
+        \include{chapters/Part2/single_higgs}
               %\include{chapters/Part2/hz_nlo}
-        % \include{chapters/Part2/single_higgs_4tops}
+         \include{chapters/Part2/single_higgs_4tops}
 %         % Part 3
         \part{Higgs Pair Production \label{part:hh} }
        \include{chapters/Part3/higgs_pair}
         \include{chapters/Part3/dihiggs_yukawa_cut}
   %    \include{chapters/Part3/dihiggs_yukawa_bdt}
       \part{Flavour physics \label{part:flav} }
-         %\include{chapters/Part4/HiggsAndFlavour}
           \include{chapters/Part4/FlavourAnomalies}
 %    %\backmatter
 %      % \include{chapters/End/conclusion}
-%        \appendix
-%       \include{chapters/Part2/Appendix_hz}
+        \appendix
+          \part*{Appendices \label{app-part} }
+       \include{chapters/Part2/Appendix_hz}
+       \include{chapters/Part4/appendix_flavew}
         %\include{chapters/End/Acknowledgements}
         
         %\nocite{*}                
         \bibliographystyle{utphys}
-        \bibliography{bibliography,bibliography2,hh,qqdihiggs}
+        \bibliography{bibliography,bibliography2,hh,qqdihiggs,Flavour-EW}
         %\listoffigures
         %\listoftables    
        % \include{chapters/End/declaration}    % Use our template or write your own.
