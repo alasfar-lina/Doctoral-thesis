@@ -16,8 +16,8 @@ data2 <- data %>% group_by(Exp) %>% nest()
 ?agg
 
 aggrivated<- MAd::agg(id=id, es=k, var=std, method = "BHHR", cor = 0.5,  mod=NULL, data=data)
-
-pdf(file = "./higgs_couplings.pdf", width = 7.5, height = 5.5)
+aggrivated
+0.07pdf(file = "./higgs_couplings.pdf", width = 7.5, height = 5.5)
 ggplot(aggrivated) + 
   geom_boxplot(aes(x=reorder(id,var),lower=es-var,upper=es+var,middle=es,ymin=es-2*var,ymax=es+2*var,fill = (var)*100),stat="identity")+
   labs(x = 'Coupling', y = 'Value') + 
