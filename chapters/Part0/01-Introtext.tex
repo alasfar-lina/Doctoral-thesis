@@ -1,152 +1,26 @@
-%\part{Setting the frame}
+%!TEX encoding = UTF-8 Unicode
+% !TeX spellcheck = en_GB
+
 
 \chapter{Introduction}
+Since the discovery of the Higgs particle in 2012 by a collaborative efforts between ATLAS~\cite{ATLAS:2012yve} and CMS~\cite{CMS:2012qbp} experiments at the { L}arge { H}adron {C}ollider~(LHC), and the Standard Model of particle physics~(SM)~\cite{salam1,salam2,PhysRevLett.19.1264}, has been completed~\cite{PhysRevLett.13.321,PhysRevLett.13.508,HIGGS1964132,PhysRevLett.13.585,Guralnik:2009jd}, albeit leaving us with more questions than what is has answered. The most prominent question was: \textit{What are the properties of this newly-discovered particle ?}\\
 %
-\paragraph{Models for epidemics\color{Cayenne}{.}}
-Epidemics have always been a serious issue for societies and therefore, the understanding and prediction of the spread of infectious diseases became an important area of research.
-Medieval disease outbreaks, such as the spread of black death in Europe, showed a traveling wave spreading pattern \citep{noble:nature}.
-%The disease eradicated half of the European population between 1347 and 1351 \citep{Bos:2011kr}.
-%An example of a severe disease outbreak is the spread of black death in Europe, which eradicated half of the European population between 1347 and 1351 \citep{Bos:2011kr} and showed a traveling wave spreading pattern \citep{noble:nature}.
-Although the course of this particular outbreak was rather simple from a present-day perspective, modeling the dynamics of an infectious disease is in general a challenging endeavor.
-Early attempts go back to the 18th century; in his review about the mathematics of infectious diseases, \citeauthor{Hethcote:2000} reports that a model for smallpox was formulated already in 1760 by D. Bernoulli (see \citet{Hethcote:2000} and references therein).
-
-In the early 20th century, the foundations for modern mathematical models of epidemics were developed: a discrete time model in 1906 \citep{Hamer} and a differential equation model in 1911 \citep{Ross}.
-Major contributions to the modern theoretical framework were provided by \citet{kermack:27}, \citet{bailey:57}, and \citet{andersonmay:92}.
-In particular, \citeauthor{kermack:27} found the existence of an epidemic threshold, i.e. a disease requires a critical infection rate in order to propagate \citep{kermack:27}.
-Starting from Bailey's book \citep{bailey:57} in the 1950s, the modeling of infectious diseases became a major scientific research field.
-Modern models of infectious diseases increase in complexity:
-They include vaccination, demographic structure, disease vectors and quarantine (see references in \citep{Hethcote:2000}).
-In addition to that, the actual usage of vaccines in the population can be modeled in terms of game theory \citep{Bauch:2004}.
-The availability of host contact data in recent years led to a strong impact of network analysis on epidemiology \citep{Mossong:2008vz}.
-Well-known concepts of mathematics, such as graph theory \citep{Bollobas:1985}, and social sciences, such as social network analysis \citep{WassermanFaust}, have been adopted to disease modeling, since the links between individuals are related to their epidemic spreading potential \citep{Keeling:2005}.
-
-Besides infectious diseases of humans, many methods from human epidemiology have also been adopted to animal diseases and livestock diseases in particular.
-Livestock epidemics are a major economic issue in agriculture.
-A prominent example is foot-and-mouth disease, which caused tremendous economic losses in the UK in 2001 \citep{Kitching:2005dd}.
-Due to legislation introduced 2001 after the BSE crisis, large amounts of data on livestock movements have been collected in Europe.
-Network models reflecting livestock trade movements have gained particular attention in recent years \citep{Christley:2005,Green:2006,Kao:2007,Bigras:2007,Dube:2009gx,MartinezLopez2009,Lentz:2011,Konschake:2013js,Fournie:2013dp}.
-Livestock trade network analysis provides support for the planning of surveillance and vaccination strategies in livestock disease management.
-
-Epidemic models can be divided into two classes: \emph{forecast} models and \emph{conceptional} models. 
-Forecast models incorporate as much information as necessary to predict the course of a disease.
-Conceptional models are used in the context of understanding the principles behind epidemic spreading processes, i.e. the way how a disease is transmitted through a population.
-They make use of simple assumptions for the local dynamics and focus on a macroscopic picture of the process.
-Conceptional models are very similar to models in theoretical physics, because they focus on the very essence of the problem.
-However, they have to neglect many details of the real problem -- such as physiology, symptoms, individual behavior, infection pathways and many more! -- in order to be mathematically feasible.
-
-In this work, we use conceptional models in combination with different network topologies in order to gain insights into the impact of certain network properties on the course of a disease outbreak.
-
-\paragraph{Complex networks as spreading substrates\color{Cayenne}{.}}
-Network analysis has become an essential element of epidemiology, where networks are used to model interactions between the individuals of a population.
-Besides epidemiological substrates, networks can be anything comprising actors (nodes) that are connected by links (edges).
-Modern network science is concerned in the broadest sense with the description and development of complex networks, regardless of what the network structure describes in particular.
-Reviews on network science are provided by \citet{Newman2003} and \citet{RevModPhys.74}.
-
-The mathematical roots of network science go back to \emph{graph theory} developed by \citeauthor{euler:1736} in the 18th century.
-\citeauthor{euler:1736} solved the so-called seven bridges of Kšnigsberg problem by showing that there is no closed path traversing all edges of a network exactly once, if more than two nodes have an odd number of adjacent links \citep{euler:1736}, say an odd degree.
-Since detailed information about most networks was not available until the end of the 20th century, early network science focused on the study of random networks.
-In 1959, \citeauthor{ER:1959} studied dense random networks and later analyzed the percolation properties of these systems \citep{ER:1960,ER:1961}.
-
-Beyond the tools and methods of graph theory, the origins of modern network science also go back to \emph{sociology}.
-More specifically, the complexity of human interactions was modeled in terms of social networks.
-The analysis of social networks raised a lot of questions about the roles of particular individuals in these systems.
-In fact, many of the measures used in modern network science have been defined in the sociological literature decades ago \citep{Milgram:1967,Merton:1968fh,Granovetter:1973wj,Zachary:1977p5449,Freeman,WassermanFaust}.
-
-In recent years, data of huge scale have emerged by the proliferation of computerized data acquisition and storage volumes.
-These data can be used in order to gain a deeper insight into many networked systems such as the trade of livestock animals between farms \citep{Euro-Lex} or the structure of the world-wide web \citep{Albert:1999uu,Barabasi99}.
-Other prominent examples are food webs \citep{Martinez:1991wv}, citation networks \citep{egghe90}, power grids \citep{Watts:1998}, or mobile phone call networks \citep{Schneider:2013ug}.
-As a particular case study, we analyze the network of livestock trade in Germany \citep{Euro-Lex} in detail in this thesis.
-
-The analysis of real-world networks lead to the formulation of network models which structurally deviate from random graphs.
-It was found that many real-world networks show a high degree of clustering, i.e. a relatively large number of closed triangles.
-This fact was first reported by \citet{Milgram:1967} and finally incorporated into the small-world model by \citet{Watts:1998}.
-Additionally, observations of real-world network datasets showed that many networks are scale-free, i.e. their degree distribution can be approximated by power laws \citep{Albert:1999uu,Newman2003}.
-The existence of these power laws can be explained using a preferential attachment model for the formation of the network \citep{Barabasi99}.
-It has been shown that scale-free networks are particularly vulnerable to targeted attacks \citep{Albert:2000} and the epidemic threshold vanishes in these systems \citep{Pastor-Satorras_vespi:2001}.
-
-The very essence of the investigation of spread of infectious diseases on networks is to determine the \emph{paths} that a spreading process can unfold on.
-The path structure between the nodes of a network is closely related to its percolation properties, i.e. the existence of a giant connected component or percolating cluster.
-In fact, percolation is inherently related to the epidemic threshold \citep{Sander2002293,Sander20031}.
-Furthermore, the structure of the percolating cluster is generally comprised of other complex substructures in directed networks \citep{Dorogovtsev:2001jd}.
-As a concept similar to connected components, densely connected subgraphs -- so called modules -- were introduced by \citet{Newman06062006}.
-Modules allow for a statistically small number of paths between each other.
-These structures have been observed in the livestock network analyzed in this thesis (see Section~\ref{sec:modules} and \citet{Lentz:2011}) and in other networks \citep{Clauset_greedy,Fortunanto2010}.
-
-The impact of modular structure on disease spreading has been studied for social networks by \citet{Salathe:2010p6333}.
-However, livestock trade networks differ from social networks in the sense that in livestock trade networks, nodes are not individuals and edges appear as directed links.
-For the case livestock trade networks, the impact of a modular structure has not been analyzed systematically yet.
-Moreover, the directed nature of these systems requires investigation of the role of edge direction.
-The following unanswered questions remain:
-\begin{itemize}
-\item What role does the direction of edges play for the spread of infectious diseases?
-\item How does a modular structure affect epidemics in a livestock trade network?
-\end{itemize}
-We address these questions in Chapter~\ref{chap:static}, where we derive a model for infection dynamics on a network of metapopulations connected by directed edges.
-
-Although network analysis in the sense above provides a powerful tool for the understanding and forecast of epidemics, it neglects the fact that most real world networks are not static systems.
-As a matter of fact, the edges of many networks show heavy fluctuations over time.
-Therefore, the analysis of \emph{temporal networks} has attracted significant attention during the last years.
-Reviews about temporal networks are provided by \citet{Casteights_review} and \citet{Holme_review}.
-In contrast to static network analysis, a number of problems arise from the significance of causality in temporal network analysis \citep{Casteights_review,Nicosia:2012hz}.
-
-%%%%%%
-For this reason, the majority of contributions to temporal network analysis has made use of data-driven approaches.
-In the first instance, a quasi static treatment of temporal networks can be considered in order to examine the usability of static network analysis tools.
-Different time aggregation windows have been investigated in data-driven analyses of livestock trade networks of different European countries in \citep{Vernon:2009p5068,Bajardi:2011iv}.
-\citet{Vernon:2009p5068} and \citet{Bajardi:2011iv} showed that time aggregated networks may fail to capture the epidemic behavior of the temporal system.
-The stability of node rankings in a temporal livestock trade network was analyzed by \citet{Konschake:2013js} for different infectious periods, where stability regions of node rankings have been found numerically.
-
-Considering human mobility networks, temporal distances between nodes have been analyzed in an air transportation network, where systematical deviations between static shortest path distances and temporal shortest path durations were observed \citep{Pan:2011dga}.
-On a more local mobility level, a network of bike sharing locations has been investigated by \citet{Vogel:2011bb}, where the authors found different node classes according to a similarity of temporal degree patterns.
-Temporal contact patterns in form of a growing network of sexual contacts were analyzed by \citet{Rocha_pnas,Rocha_plosbc}.
-\citeauthor{Rocha_pnas} found a preferential attachment rule for a growing web community.
-
-%Algorithms for the computation of shortest paths in temporal networks are provided in \citep{Xuan:2003ts}.
-%An algorithmic detection of modules in temporal networks was reported in \citep{Mucha:2010}.
-
-%%%%%%
-%For this reason, the majority of contributions to temporal network analysis uses data-driven approaches.
-%Extensive data-driven analyses of livestock trade networks of different European countries were done in \citep{Vernon:2009p5068,Bajardi:2011iv,Konschake:2013js}.
-%The analysis of a temporal human sexual contact network is found in \citep{Rocha_pnas,Rocha_plosbc}.
-%Temporal distances between nodes in a communication network and an air transportation network were determined in \citep{Pan:2011dga}, where the authors also defined a temporal closeness.
-
-Beyond data-driven approaches, there have been only a few approaches to provide a graph centric, formal view on temporal networks.
-This is attributed to the central role of causality in temporal networks. 
-In fact, it has been shown that even the detection of connected components in is an intractable problem in most temporal networks \citep{Bhadra:2003uv,Nicosia:2012hz}.
-Nevertheless, network snapshots can be used to generalize static centrality concepts.
-\citeauthor{Grindrod:2011fg} found a convenient way to quantify the ability of every node to receive and broadcast information \citep{Grindrod:2011fg}.
-Network snapshots have also been used in order to generalize the concept of small-world networks in \citep{Tang:2010dn}, where clustering is measured in terms of the persistence of links over time.
-Besides the temporal network model introduced by \citet{Tang:2010dn}, random walk models can be used in order to generate synthetic temporal networks reproducing the bursty behavior of real-world datasets \citep{Barrat:2013da}.
-
-%The clustering coefficient known from static small-world networks has been generalized using correlations between different network snapshots in \citep{Tang:2010dn}.
-%Finally, random walk models have been successfully used in order to generate random temporal networks with temporal bursty behavior \citep{Barrat:2013da}.
-What is still missing is a closed mathematical formalism for temporal network analysis preserving the causality of paths.
-As a fundamental element, this formalism must contain the mere topological path structure and the time-scales needed for path traversal.
-Central questions in this context are
-\begin{itemize}
-\item How can causal paths be computed using adjacency matrices?
-\item What is the distribution of shortest path durations?
-\item How can the causal goodness of the static approximation of a temporal network be quantified?
-%\item how can the degree of temporal and topological randomness in temporal networks be measured?
-\end{itemize}
-We address these questions in Chapter~\ref{sec:temporal_networks}, where we introduce the novel method of \emph{unfolding accessibility} for temporal networks.
-The method is capable of answering all questions above.
-We believe that providing the causal path structure of temporal networks contributes a key element for the construction of a variety of other temporal network analysis tools.
-
+Answering this very question has become the preeminent goal of the LHC. Higgs measurements are getting progressively accurate, and our understanding of this particle is approaching few percent-level. The future runs of the LHC, will open the doors of Higgs-precision era. However, increased luminosity, i.e. data acquisition from the LHC, without improving the theoretical prediction of Higgs processes is futile. Therefore, to insure the success of the experimental efforts in probing Higgs couplings and properties at the precision-level, it is imperative to include higher-order calculations for Higgs production cross-sections. \\ 
+An example of such processes, is the associated production of Higgs with $Z$ bosons, which suffers from higher theoretical uncertainties compared to its sister process the $Wh$ production, deu to the presence of the gluon fusion sub-process $ gg \to Zh$. These uncertainties can be improved by including the two-loop corrections to the gluon fusion sub-process efficiently using state-of-the-art analytic techniques~\cite{Bonciani:2018omm}. 
+%
+ \\ After a decade of \emph{Higgs physics}, and over ten-thousand Higgs-related publications, we still have a lot to learn about the Higgs boson.  In particular,  the structure of the Higgs potential is still unknown, as well as its couplings to the light quarks and leptons. We want to know more about the Higgs potential, as it will reveal to us whether there are new scalars beyond the Higgs boson which we have observed. Measuring Higgs coupling to light fermions is essential in understanding the source of masses, and explaining the significant hierarchy between the  masses across the three generations of matter. \\ 
+ The High Energy Physics community, anticipated that the Higgs discovery, particularly given its mass $ m_h <130$ GeV, will be followed by the detection of a \emph{Zoo} of particles stemming from Supersymmetric extension of the SM, cf.~\cite{handle:20.500.11811/5384}. Unfortunately, this was not the case, and we have not seen any new particles discovered after the Higgs boson. This motivated parametrising new physics~(NP) effects in a model-independent manner, specially within the Standard Model Effective Field Theory~(SMEFT) framework~\cite{Grzadkowski:2010es,Alonso:2013hga}. In this formalism, all NP interactions are summarised in 56 terms, which make very little assumptions about what physics beyond the SM might be, guaranteeing a  model-independent approach to collider searches. \\ 
+ %
+ The use of SMEFT in higher-order calculations of Higgs rates has revealed insights on the Higgs potential by the appearance of Higgs trilinear self-coupling within electroweak loop corrections of single-Higgs processes ~\cite{DiVita:2017vrr} . With the help of precision measurements of the Higgs, the trilinear coupling could be constrained\cite{DiMicco:2019ngk}. Nevertheless, more SMEFT observables can also enter in single-Higgs loops that alters the constraining power of these measurements. In fact, the interconnectivity between the Higgs and top-quark sectors are further emphasized within the SMEFT framework, as recent global fits have established strong correlations between observables from both sectors as well as the electroweak precision observables~(EWPO)~\cite{Ellis:2020unq}. Strong correlations between the top and EWPO are also seen at loop-level~\cite{Dawson:2020oco}, thus one expects to see similar correlations emerging from loop effects of top operators  on Higgs processes. \\
+%%
+ The observation of Higgs pairs is slated for the High-Luminosity (HL) LHC operating phase. This rare --if observed-- process will be the pi\`ece de r\'esistance of the LHC Higgs physics programme~\cite{Bernius:2666331}, directly measuring the Higgs self-interaction. Also, untangling Higgs potential measurements  from the top-sector interactions. Furthermore,  this process could be of great utility in probing Higgs coupling to light quarks, as well. The full potential of Higgs pair production can be exploited when it is treated an a multivariate problem by implementing interpretable machine learning analysis technique~\cite{Grojean:2020ech}. In this manner, it is possible to have a simultaneous measurement of the two most elusive Higgs interactions, the trilinear self-coupling and light Yukawas.\\
+ %%
+ Recent measurements, by  Belle and Babar, in addition to the LHCb experiment at CERN, of $B$-mesons semi-leptonic decays showed some tension with the SM predictions of lepton flavour universality of electroweak couplings ~\cite{Aaij:2014ora,Aaij:2017vbb,Aaij:2019wad,Abdesselam:2019wac,LHCb:2021trn}, with up to $\sim 3\sigma$ deviation from the SM  ~\cite{Chatrchyan:2013bka,Aaij:2017vad,Aaboud:2018mst,Aaij:2020nol}. These  anomalies require typically models with some flavour violation, that makes model-building for explaining these anomalies az tree-level an Augean task~\cite{DiLuzio:2017vat,Calibbi:2017qbu,Bordone:2017bld,Barbieri:2017tuq,Assad:2017iib,Heeck:2018ntp,Fornal:2018dqn,Crivellin:2018yvo,Crivellin:2019dwb,Bordone:2019uzc}. Additionally, to complicate things further, these anomalies are in dissension with EWPO. Hence, promoting for a more careful treatment of these anomalies; introducing them at loop-level in SMEFT and preforming a global fit combining both flavour and EWPO data. Thus allowing for a SMEFT guided UV-model building for these anomalies, with extended Higgs and top sectors. \\
+ 
 \paragraph{This work is structured as follows\color{Cayenne}{:}}
-We review some fundamental results of mathematical epidemiology and network science necessary for understanding the other chapters in \textbf{Chapter~\ref{sec:theory}}.
-Classic models for the spread of infectious diseases are discussed in Section~\ref{sec:inf_diseases}.
-In Section~\ref{sec:network_theory}, we report basic concepts of network theory and discuss the relevance of different network types for epidemiological questions in Section~\ref{sec:network_models}.
-%
-In \textbf{Chapter~\ref{chap:static}}, for the first time we systematically analyze the trade of livestock pigs in Germany as a static network.
-Hereby, we identify its path structure as a crucial epidemiological factor in Section~\ref{sec:network_analysis}.
-The spreading potential of the observed path structure is analyzed in Section~\ref{sec:PRE}.
-%
-\textbf{Chapter~\ref{sec:temporal_networks}} is devoted to the investigation of the full temporal information of the livestock trade network.
-After a general discussion of temporal networks in Section~\ref{sec:temporal_networks_basics}, we analyze the network data systematically in Section~\ref{sec:Plos}.
-Moreover, we introduce the unfolding accessibility method as a new approach to measure the causal path structure in temporal networks in Section~\ref{sec:PRL}.
-We use accessibility in order to quantify the goodness of an aggregated representation of a temporal network in Section~\ref{sec:causal_fidelity}.
-Finally, we demonstrate the capability of the introduced methods for additional datasets in Section~\ref{sec:further_cases}.
+We start by an introduction to the theory of the Higgs field and its role in the SM in~\autoref{chap:HiggsSM}, followed by a theoretical constraints on the Higgs. In~\autoref{chap:HiggsConstr}, a review of the state-of-the-art Higgs measurements and the constraints on Higgs couplings derived from the latest LHC data. After that, I present the basics of Effective Fields Theories relevant to Higgs physics at the LHC in~\autoref{chap:HiggsEFT}. \\ The second part of the thesis focuses on the production of -single- Higgs at the LHC, starting with an overview in~\autoref{chap:overviewSingleHiggs}, followed by a discussion of the use of $\pt$-expansion technique for obtaining an analytic expression for the virtual correction of the gluon fusion $Zh$ production in~\autoref{chap:hz}. \autoref{chap:4topSingleHiggs} showcases the potential for single-Higgs processes to probing four-fermion operators from the top sector of SMEFT along with the trilinear self-coupling by preforming Higher-order computations of these processes in SMEFT, followed by a Bayesian fit. \\ The third part of the thesis focuses on the production of Higgs in pairs, namely at the HL-LHC in~\autoref{chap:overviewDiHiggs}. Then, I show the potential for employing Higgs pair production to probe light quark coupling to the Higgs.In addition the methods of multivariate analysis to maximise the efficiency of  extracting the di-Higgs signal using Interpretable machine learning.  The last part of the thesis, has only~\autoref{chap:flav} and it is about potential UV models for the $B$ anomalies, inspired by a global SMEFT fit and minimal flavour violation~(MFV). 
+
+
 
 
 
