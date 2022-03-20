@@ -2,7 +2,7 @@
 % !TeX spellcheck = en_GB
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\chapter{Models for $b \to s \ell \ell$ anomalies within MFV}\label{chap:flav}
+\chapter{Data-inspired models for $b \to s \ell \ell$ anomalies}\label{chap:flav}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%
 %\section{Introduction}
@@ -108,15 +108,14 @@ which contributes to the muon decay amplitude, and therefore alters the extracti
 
 The operators in eqs.~\eqref{eq:SMEFT_op_HL}, \eqref{eq:SMEFT_op_HQ} and \eqref{eq:SMEFT_op_LLLL}, with the assumptions mentioned before, saturate all the 17 degrees of freedom, i.e. combinations of operators, that can be constrained in a fit to EWPO in the dimension-six SMEFT framework while keeping flavour changing neutral currents in the light quark sector under control. Together with the 4 four-fermion operators from eq.~\eqref{eq:SMEFT_op_loop_lu}, this completes a total of 21 operators, which is included in the fit setup described in the next section. 
 %%%%%%%%%%%%%%%%%%
-\section{Analysis technique}
+\subsection{SMEFT fit}
 \label{sec:strategy}
 %%%%%%%%%%%%%%%%%%
-%We now proceed to discuss in more detail our EFT analysis. {Our aim is to pin down the picture that should address the present $B$ anomalies via one-loop SM RGE effects of flavour-conserving dimension-six operators, and respect at the same time the constraints from EW precision.} We can achieve this goal with a comprehensive global analysis that aims at combining EWPO and $b \to s \ell \ell$ data.\footnote{See ref.~\cite{Capdevila:2020rrl} for another recent analysis where $b \to s \ell \ell$ data and EW measurements have been combined, with the different scope of resolving tensions in the determination of the Cabibbo angle~\cite{Belfatto:2019swo,Grossman:2019bzp}.}
-The global fit combining both flavour observables related to the $ b \to s \ell \ell$ anomalies, in addition to EWPO is carried out in a Bayesian statistical framework. The experimental observables are modelled via state-of-the-art theoretical information already implemented and described in ref.~\cite{Ciuchini:2019usw} for flavour physics, and for EW and Higgs physics in ref.~\cite{Ciuchini:2013pca} and, more recently, in ref.~\cite{deBlas:2016ojx}. EWPO are extended by flavour non-universal  SMEFT contributions described in ref.~\cite{Efrati:2015eaa,deBlas:2019wgy}. The statistical and physics frameworks are both available within the publicly available \HEPfit~\cite{deBlas:2019okz} package, a Markov Chain Monte Carlo (MCMC) framework built using the Bayesian Analysis Toolkit~\cite{2009CoPhC.180.2197C}~\footnote{ \HEPfit is developed by some of my collaborators, who have co-authored this work}\\
+The global fit combining both flavour observables related to the $ b \to s \ell \ell$ anomalies, in addition to EWPO is carried out in a Bayesian statistical framework. The experimental observables are modelled via state-of-the-art theoretical information already implemented and described in ref.~\cite{Ciuchini:2019usw} for flavour physics, and for EW and Higgs physics in ref.~\cite{Ciuchini:2013pca} and, more recently, in ref.~\cite{deBlas:2016ojx}. EWPO are extended by flavour non-universal  SMEFT contributions described in ref.~\cite{Efrati:2015eaa,deBlas:2019wgy}. The statistical and physics frameworks are both available within the publicly available \HEPfit~\cite{deBlas:2019okz} package,  a MCMC framework built using the Bayesian Analysis Toolkit~\cite{2009CoPhC.180.2197C}~\footnote{ \HEPfit is developed by some of my collaborators, who have co-authored this work}\\
 The experimental input used for the global is summarised in the following, which are also implemented in \HEPfit code : 
 \begin{itemize}
 	\setlength\itemsep{0em}
-	{\item The set of EWPO including the $Z$-pole measurements from LEP/SLD, the measurements of the $W$ properties at LEP-II, as well as several related inputs from the Tevatron and LHC measurements of the properties of the EW bosons~\cite{ALEPH:2005ab,Abe:2000uc,Group:2012gb,Schael:2013ita,Aaboud:2017svj,Khachatryan:2014iya,Abazov:2011ws}. The following lists the bulk of the EWPO included in the fits:
+	{\item The set of EWPO including the $Z$-pole and $W$ properties measurements from LEP and SLD, in addition to  Tevatron and LHC measurements of  EW bosons properties and rates ~\cite{ALEPH:2005ab,Abe:2000uc,Group:2012gb,Schael:2013ita,Aaboud:2017svj,Khachatryan:2014iya,Abazov:2011ws}. The following EWPO used in the fit are
 		%
 		\begin{gather*}
 			M_H,~m_t,~\alpha_S(M_Z),~\Delta \alpha_{\mathrm{had}}^{(5)}(M_Z),\\
@@ -125,13 +124,12 @@ The experimental input used for the global is summarised in the following, which
 		\end{gather*}
 		%
 	}
-	\item The angular distribution of $B\to K^{(*)}\ell^+\ell^-$ decays for both $\mu$ and $e$ final states in the large-recoil region.These include data from ATLAS~\cite{Aaboud:2018krd}, Belle~\cite{Wehle:2016yoi}, CMS~\cite{Khachatryan:2015isa,Sirunyan:2017dhj} and LHCb~\cite{Aaij:2015dea,Aaij:2020nrf}; in addition to the branching fractions from LHCb~\cite{Aaij:2016flj}, and of $B\to K^*\gamma$\footnote{NP effects from dipole operators are strongly constrained as extensively investigated in ref.~\cite{Paul:2016urs}. However, radiative exclusive $B$ decays still provide relevant information about hadronic effects~\cite{Ciuchini:2018anp}.} for which the HFLAV average is used~\cite{Amhis:2019ckw}; 
-	\item Branching ratios for $B^{(+)} \to K^{(+)} \mu^+\mu^-$ decays in the large-recoil region measured by LHCb~\cite{Aaij:2014pli};
+	\item The angular distribution of the decay $B\to K^{(*)}\ell^+\ell^-$ including both the$\mu$ and $e$ final states in the large $m_{\ell \ell}$ bins~\footnote{The measurements of  $B\to K^{(*)}\ell^+\ell^-$ decays in the low di-lepton invariant mass region are plagued by large uncertainties for the charmonium resonance, and thus not included in the fit.}.   The data from ATLAS~\cite{Aaboud:2018krd}, Belle~\cite{Wehle:2016yoi}, CMS~\cite{Khachatryan:2015isa,Sirunyan:2017dhj} and LHCb~\cite{Aaij:2015dea,Aaij:2020nrf}, in addition to the branching fractions from LHCb~\cite{Aaij:2016flj}, the charged $B^+$ meson measured by LHCb~\cite{Aaij:2014pli}, and the HFLAV average~\cite{Amhis:2019ckw} for the branching fraction of the decay~$B\to K^*\gamma$; 
 	\item The angular distribution of $B_s\to \phi\mu^+\mu^-$~\cite{Aaij:2015esa} and the branching ratio of  the decay $B_s\to\phi\gamma$~\cite{Aaij:2012ita}, measured by LHCb;
 	\item The LUV ratios $R_K$~\cite{Aaij:2019wad} and $R_{K^*}$~\cite{Aaij:2017vbb} from LHCb and Belle~\cite{Abdesselam:2019wac};
-	\item Branching ratio of $B_{(s)}\to \mu^+\mu^-$ measured by LHCb~\cite{Aaij:2017vad}, CMS~\cite{Chatrchyan:2013bka}, and ATLAS~\cite{Aaboud:2018mst}; we also use the upper limit on $B_s\to e^+e^-$ decay reported recently by LHCb~\cite{Aaij:2020nol}. 
+	\item Branching ratio of $B_{(s)}\to \mu^+\mu^-$ measured by LHCb~\cite{Aaij:2017vad}, CMS~\cite{Chatrchyan:2013bka}, and ATLAS~\cite{Aaboud:2018mst}; in addition to the upper bound on the decay $B_s\to e^+e^-$ reported by LHCb~\cite{Aaij:2020nol}. 
 \end{itemize}
-The measurements of  $B\to K^{(*)}\ell^+\ell^-$ decays in the low di-lepton invariant mass region are plagued by large uncertainties for the charmonium resonance, and thus not included win the fit.  Moreover, the rare beauty baryonic decay $\Lambda_{b} \to  \Lambda \, \mu^{+} \mu^{-}$  is not considered as well. \\  Modelling the decays of hadrons involves factorisable (in terms of decay constant) and non-factorisable non-perturbative QCD effects. The non-factorisable effects emerge from long-distance hadronic contributions to~\cite{Khodjamirian:2010vf,Jager:2014rwa,Lyon:2014hpa} QCD loops appearing in radiative corrections to these decays. In this analysis, the  $B\to K^*\ell^+\ell^-$ has two different scenarios to describe these hadronic effects, discussed also in other previous works of my collaborators ~\cite{Ciuchini:2016weo,Ciuchini:2017mik,Ciuchini:2017gva,Ciuchini:2018xll,Ciuchini:2018anp,Ciuchini:2019usw}. The first is a conservative approach (Phenomenological Data Driven or PDD) as originally proposed in \cite{Ciuchini:2015qxb}, and refined in ref.~\cite{Ciuchini:2018anp}, whilst the second is a more optimistic one based on the results in~\cite{Khodjamirian:2010vf} (Phenomenological Model Driven or PMD). The PDD scenario is based on a generic model of the hadronic effects, which is simultaneously fitted to $b \to s \ell \ell$ data alongside the NP effects. Contrary to PDD approach, the PMD scenario the dispersion relations specified in~\cite{Khodjamirian:2010vf} is used constrain the hadronic contributions in the entire large-recoil region considered in the analysis, ergo PMD has smaller hadronic effects in the~$B\to K^*\ell^+\ell^-$ amplitudes~\cite{Ciuchini:2016weo}. Th choice of the hadronic uncertainties model significantly affects the outcome of the  fits to the $B$-decays observables~\cite{Ciuchini:2019usw}. \\ In order to be as general as possible, the SMEFT global fit is done for four different scenarios, described as follows:
+ Modelling the decays of hadrons involves factorisable (in terms of decay constant) and non-factorisable non-perturbative QCD effects. The non-factorisable effects emerge from long-distance hadronic contributions to~\cite{Khodjamirian:2010vf,Jager:2014rwa,Lyon:2014hpa} QCD loops appearing in radiative corrections to these decays. In this analysis, the  $B\to K^*\ell^+\ell^-$ has two different scenarios to describe these hadronic effects, discussed also in other previous works of my collaborators ~\cite{Ciuchini:2016weo,Ciuchini:2017mik,Ciuchini:2017gva,Ciuchini:2018xll,Ciuchini:2018anp,Ciuchini:2019usw}. The first is a conservative approach (Phenomenological Data Driven or PDD) as originally proposed in \cite{Ciuchini:2015qxb}, and refined in ref.~\cite{Ciuchini:2018anp}, whilst the second is a more optimistic one based on the results in~\cite{Khodjamirian:2010vf} (Phenomenological Model Driven or PMD). The PDD scenario is based on a generic model of the hadronic effects, which is simultaneously fitted to $b \to s \ell \ell$ data alongside the NP effects. Contrary to PDD approach, the PMD scenario the dispersion relations specified in~\cite{Khodjamirian:2010vf} is used constrain the hadronic contributions in the entire large-recoil region considered in the analysis, ergo PMD has smaller hadronic effects in the~$B\to K^*\ell^+\ell^-$ amplitudes~\cite{Ciuchini:2016weo}. Th choice of the hadronic uncertainties model significantly affects the outcome of the  fits to the $B$-decays observables~\cite{Ciuchini:2019usw}. \\ In order to be as general as possible, the SMEFT global fit is done for four different scenarios, described as follows:
 \begin{itemize}
 	\setlength\itemsep{0em}
 	\item {\bf EW}: 
@@ -143,21 +141,21 @@ The measurements of  $B\to K^{(*)}\ell^+\ell^-$ decays in the low di-lepton inva
    All of the EW data  as well as the flavour observables listed above are used. This scenario comes in two varieties, PDD and PMD, as explained above.
 	\item {\bf Flavour}: These fits exclusively include the Wilson coefficients of the {\em 4 operators} (both electrons and muons) appearing in eq.~\eqref{eq:SMEFT_op_loop_lu}, and are done including only flavour data, i.e. excluding EW measurements. Results are again distinguished for the PDD and PMD cases. This fit is typically done when flavour anomalies are discussed in the literature. Hence, it was included here to emphasize the importance of including EWPO .
 \end{itemize}
-
-
 %%%%%%%%%%%%%%%%%%
-\section{Results from the SMEFT}
+\subsection{Fit results}
 \label{sec:EFT_results}
 %%%%%%%%%%%%%%%%%%
-
-%%%%%%%%%%%%%%%%%%
-%\subsection[Analysis of EW and \texorpdfstring{$b \to s \ell \ell$}{b to s ll} data]
-%{Analysis of EW and \boldmath$b \to s \ell \ell$ data}
-%\label{sec:GEN_EFT_results}
-%%%%%%%%%%%%%%%%%%
-As a cross-check of the analysis code, the results of the EW fit produced ref.~\cite{Efrati:2015eaa} using \HEPfit were reproduced. 
-The, these results were further expanded by the inclusion of the measurements and observables list in the {\bf EW} scenario introduced in the previous section, giving new constraints of the SMEFT Wilson coefficients involving of the operators with a Higgs-doublet current, also including loop effects under the hypotheses stated in \autoref{sec:theory}. The operators with leptonic currents produce non-universal couplings modifications between the leptons and the EW gauge bosons. Consequently, they also contribute though the RGE to the $B$- decays observables, as seen in eq.~\eqref{eq:SMEFT_matching_1loop}. The {\bf EW} fit results of these operators are plotted on the left panel of~\autoref{fig:ew_flav_bounds}, highlighted in orange. The error bars correspond to the 68\% CI bounds on these operators after marginalising the posterior distribution.  We observe compatibility with the SM within the 2$\sigma$ level. Note that EW data strongly correlate the operators under consideration among themselves, as can be seen in the correlation matrix presented in~\autoref{fig:ew_corr}.\\
-\newpage
+The fit was preformed for each of the aforementioned scenarios and the extracted average values of the Wilson coefficients and the corresponding 68\% CI are summarised in ~\autoref{fig:ew_flav_bounds}.\\ The EW only fits, involving 17 out of the total 21 Wilson coefficients are shown in~\textcolor[HTML]{be3d04}{orange}. The EWPO fit shows good agreements with the SM within $2\sigma$ level. Furthermore, the Wilson coefficients involved in the fit seems to be highly correlated from the EWPO data as indicated by the correlation matrix in~\autoref{fig:ew_corr}. \\
+The impact of these operators on the $ b \to s \ell \ell$ observables is shown in~\autoref{fig:ew_flav_dg}, where  it collects the mean and standard deviation on the shift in the $Z$ coupling to light leptons w.r.t the SM, it should be noted that these deviations of the $Z$ couplings are related to the LUV ratios   $R_{K^{(*)}}$ in the dilepton-mass range $[1.0,6.0]$~GeV$^2$ by: 
+\begin{equation}
+	\label{eq:SMdev}
+	\delta g_{Z,L(R)}^{ee(\mu\mu)} \equiv g_{Z,L(R)}^{ee(\mu\mu)}{\big/}g_{Z,L(R)}^{ee(\mu\mu),\textrm{\tiny SM}}-1  \ , \ \delta R_{K^{(*)}} \equiv R_{K^{(*)}}^{ } - R_{K^{(*)}}^{\textrm{\tiny SM}} \ ,
+\end{equation}
+which is tightly constraint by the EWPO data to per-mille level. \\
+The other fit scenario only involves the \textbf{ SL-4F} coefficients constraint from EWPO data, shown in \textcolor[HTML]{c2b109}{yellow}  in~\autoref{fig:ew_flav_bounds}. Although EW data allows for more relaxed constraints on these operators, for example $\mathcal{O}_{Lu}^{\ell \ell 33}$ compared to the ones modifying $Z$ couplings at tree-level e.g. $\mathcal{O}_{\phi L}$, the bounds remain compatible with the null (SM) Hypothesis and in about $3\sigma$ conflict with the experimental measurements on~$R_{K^{(*)}}$  (indicated by the shaded red boxes in the right side of~\autoref{fig:ew_flav_dg}).  
+\\
+We now move to the flavour data fits, with both ans\"atze for the hadronic contributions PDD highlighted in~\textcolor[HTML]{0843a5}{blue} and PMD in~ \textcolor[HTML]{c00054}{pink}. For this fit, deviations of the muonic ~$C_{Lu}^{22 33}$ shows deviation from the SM hypothesis of $3\sigma$ for PDD and up to $6\sigma$ for the optimistic PMD scenario. The difference of the significance between the two cases stems from the interpretation of the angular analysis --namely the $P^\prime_5$ observable-- of the $B \to K^{*} \mu \mu$ decay. The PDD approach favours the fully left-handed NP coupling, i.e.  $C_{9, \ell} = - C_{10, \ell}$, and allows for NP coupling to electrons, while the PMD exclusively predicts the muonic resolution~\cite{Ciuchini:2017mik,Ciuchini:2019usw}.\\ Flavour data seem to predict deviations in the $Z$ coupling modifiers, which implies tension between the flavour fits and EWPO exacerbated by the PMD modelling of the long distance QCD effects.  This tension between $B$- anomalies and EW data reaches  3(6)$\sigma$ level for PDD(PMD). Of course, introducing a tree-level resolution of the $b \to s \ell \ell$ anomalies would decouple EW sensitive SMEFT operators from the four-fermion operators required for these anomalies, but it will not be compatible with the MFV ansatz. In fact, the size of flavour violation introduced by the tree-level resolution of the $B$ anomalies brings any model with such structure to the brick of exclusion by other flavour observables ~\cite{Bona:2007vi,Silvestrini:2018dos,Greljo:2017vvb,Baker:2019sli}.
+\\
 \begin{sidewaysfigure}[ht]
 	\centering
 	\includegraphics[width=\textwidth]{figures/errorbar.pdf}
@@ -173,7 +171,6 @@ The, these results were further expanded by the inclusion of the measurements an
 	\caption{ The correlation matrix resulting from the Bayesian fit of the Wilson coefficient of the operators listed in in eqs.~\eqref{eq:SMEFT_op_HL}, \eqref{eq:SMEFT_op_HQ}, \eqref{eq:SMEFT_op_LLLL} in the \textbf{EW} scenario introduced in \autoref{sec:strategy}. The two distinct groups of Wilson coefficients associated to leptonic and quark interactions are remarked as ``leptons'' and ``quarks'', respectively. This figure is published in~\cite{Alasfar:2020mne}. }
 	\label{fig:ew_corr}
 \end{figure}
-%\noindent where away from the photon pole, $R_{K^{(*)}}^{\textrm{\tiny SM}}$ are predicted to be unity at percent level~\cite{Bordone:2016gaq}.
 \begin{figure}[htp!]
 	\centering
 	\includegraphics[width=\textwidth]{figures/errorbar_dg.pdf}
@@ -181,9 +178,7 @@ The, these results were further expanded by the inclusion of the measurements an
 	}
 	\label{fig:ew_flav_dg}
 \end{figure}
-Strong correlations can be observed between the Wilson coefficients from the leptonic and quark sectors, which are induced by the universal loop effects of the operator ${\cal O}_{\phi Q}^{(1)}\ ^{33}$ to all the EW couplings, as anticipated at the end of \autoref{sec:EFT_results}. 
-This leads to a relaxation of the naive bounds on $C_{\phi L}^{(1)}\ ^{\ell\ell}$,$C_{\phi L}^{(3)}\ ^{\ell\ell}$ and $C_{\phi e}\ ^{\ell\ell}$ that one would obtain in a tree-level analysis.
-The comparison between the tree-level fits and the ones presented in this section is presented in~\autoref{app:EW}. The results in \autoref{fig:ew_corr} can then be compared to those in \autoref{fig:ew_corr_tree} where, as it is apparent, there is a substantial decoupling between the dimension-six operators made of Higgs doublets and quark bilinears from the leptonic ones.
+A global fit  with the 21 coefficients, combining both flavour and EW data is the way to reach consensus between what is required by $ b \to e \ell \ell$ observations resolution and EW precision tests. Similarly to the flavour scenario, the fits is preformed for PDD in \textcolor[HTML]{0f7678}{teal}  and PMD in \textcolor[HTML]{760003}{red} in~\autoref{fig:ew_flav_bounds} and \autoref{fig:ew_flav_dg}. In these scenarios, the tension between EWPO and flavour data is lifted as the deviation from the SM $Z$-couplings remain within the EW data predictions, also the LUV generated by the Wilson coefficients matches the experimental observations. The resolution comes from deviation of $C_{\phi L (e)}^{\ell \ell}$ and the 4F operators $\mathcal{O}_{(L)eu}^{\ell \ell 3 3}$ from the SM hypothesis. \\ Another interesting observation from the global fit can be seen in the network graphs in~\cite{fig:ew_flav_corr}, where in the EW only fits the SL-4F Wilson coefficients are degenerate with the Higgs-lepton bilinear currents $C_{\phi L (e)}^{\ell \ell}$, having Pearson's correlation of  $\rho \sim -1.0$. This degeneracy is broken once both EW and flavour data are taken into an account, as seen in the lowe panels of this figure. The breaking of the degeneracy is the reason for the shifts in the posterior distributions of $C_{\phi L (e)}^{\ell \ell}$ from the SM hypothesis. \\
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=0.9\textwidth]{figures/fixed_EW_flavour.pdf}
@@ -191,116 +186,90 @@ The comparison between the tree-level fits and the ones presented in this sectio
 	}
 	\label{fig:ew_flav_corr}
 \end{figure}
-The impact of these operators on the key observables for the present discussion is reported in \autoref{fig:ew_flav_dg}, where  it collects the mean and standard deviation on the shift in the $Z$ coupling to light leptons (normalized to the corresponding SM value),and on the effect on $R_{K^{(*)}}$ in the dilepton-mass range $[1.0,6.0]$~GeV$^2$: 
-\begin{equation}
-	\label{eq:SMdev}
-	\delta g_{Z,L(R)}^{ee(\mu\mu)} \equiv g_{Z,L(R)}^{ee(\mu\mu)}{\big/}g_{Z,L(R)}^{ee(\mu\mu),\textrm{\tiny SM}}-1  \ , \ \delta R_{K^{(*)}} \equiv R_{K^{(*)}}^{ } - R_{K^{(*)}}^{\textrm{\tiny SM}} \ ,
-\end{equation}
-We can observe that that EW measurements tightly constrain NP effects modifying the $Z$-boson couplings to electrons, and also forbid deviations beyond the per-mille level in the case of couplings to muons. Therefore, the one-loop SMEFT contributions to $R_{K^{(*)}}$ are projected to be tiny. \\
-The same conclusions can be derived when the fit is repeated for the  {\bf EW (SL-4F Only)} scenario, which is highlighted in yellow in \autoref{fig:ew_flav_bounds} and \autoref{fig:ew_flav_dg}. However, there is one exception, this scenario only allows for loop contributions to $\delta g_{Z,L(R)}^{\ell\ell}$ and $\delta R_{K^{(*)}}$ from  $C_{Lu,eu}^{\ell \ell 3 3}$ as depicted in eq.~\eqref{eq:SMdev}. This in turn allows for larger $b \to s  \ell \ell$ flavour observables  than the {\bf EW} scenario, see \autoref{fig:ew_flav_dg}. Though this does not affect the tension between the EWPO's and the experimental measurements of  $R_K$ and $R_{K^*}$ (indicated by the shaded red boxes in the right side of the figure) at the 3$\sigma$ level.\\
-%%%
-Moving on to the {\bf Flavour} scenario, using more recent flavour data, but effectively the same analysis strategy as ref.~\cite{Ciuchini:2019usw}. The fit results in the figures above for {\bf Flavour} scenario are highlighted in blue for the PDD and pink for PMD ans\"atze for the hadronic contributions. The fits favours non-zero $C_{Lu}^{2233}$ at more than 3$\sigma$ in the PDD case, and at roughly 6$\sigma$ in the PMD one. The main difference between these two ans\"atze stems from the results of the angular analysis of $B \to K^{*} \mu \mu$ decay. The PDD approach favours the fully left-handed NP coupling, i.e.  $C_{9, \ell} = - C_{10, \ell}$, and allows for NP coupling to electrons, while the PMD exclusively predicts the muonic resolution~\cite{Ciuchini:2017mik,Ciuchini:2019usw}. Looking at the flavour data fit results in \autoref{fig:ew_flav_dg}, we observe an apparent conflict between EWPO predictions of the $Z$ couplings and the $b \to s \ell \ell$ measurements. The inconsistency between the resolution of $B$ anomalies and EW data is exacerbated further for PMD case, where the tension between EWPO and $B$ anomalies  reaches up to $6\sigma$ for $g^{\mu \mu}_{Z,L}$. \\ 
-Consensus between $b \to s \ell \ell$ measurements and EWPO can be reached in a true global fit manifesting in the {\bf EW \& Flavour}  scenario. This fit is shown in ref and green in the previously mentioned figures for the PDD and PMD cases, respectively. Revisiting  \autoref{fig:ew_flav_dg}, and looking at the red and green points for this fit  scenario, we observe that the $R_{K^{(*)}}$ anomalies are solved whilst EW precision being respected . Additionally,  this fit offers a new insight into this matter: it highlights strong correlations between the dimension-six operators $\mathcal{O}_{Lu(eu)}^{\ell\ell33}$ and $\mathcal{O}_{\phi L}^{(1)}\ ^{\ell\ell}/\mathcal{O}_{\phi e}^ {\ell\ell}$ as is evident from the network plot in\autoref{fig:ew_flav_corr}. This figure presents a pictorial representation of the correlations between the leptonic operators included in the different fits. \\
-%\noindent Succinctly, an obvious solution which satisfies these constraints is a class of models where $R_{K^{(*)}}$ anomalies are addressed at tree level and where modifications to $Z$-lepton-lepton vertices are at the same time suppressed. However, these models would not offer a solution to $B$ anomalies of the MFV type envisaged so far, namely they would rely on the existence of sizeable new sources of flavour violation. 
-Apart from the fits introduced in the previous section, for illustration purposes we also show in \autoref{fig:ew_flav_corr} the correlations obtained in a variant of the ${\bf EW}$ fit including also the four-fermion operators $O_{Lu(eu)}^{\ell\ell33}$, labelled as {\bf EW (including SL-4F operators)}. 
-This is shown in the upper-right corner of the figure. As can be seen in that panel, and one could deduce from the relations in eq.~\eqref{eq:OLuedRGE}, in a pure EW fit adding the four-fermion operators would simply introduce 4 flat directions. These are illustrated by the links connecting the $C_{eu}^{\ell\ell 33}$ ($C_{Lu}^{\ell\ell 33}$) and $C_{\phi e}^{\ell\ell}$ ($C_{\phi L}^{(1)}\ ^{\ell\ell}$) operators, corresponding to 100\% anti-correlation.
-Such flat directions are lifted upon the introduction of the flavour measurements of $R_{K}$ and $R_{K^*}$, as can be seen in the lower panels of \autoref{fig:ew_flav_corr} for the {\bf EW \& Flavour} fits.
-%
-Even then, due again to relations in eq.~\eqref{eq:SMEFT_matching_1loop} and~\eqref{eq:OLuedRGE} and the comparatively different precision of the EW and flavour measurements, sizeable correlations remain. 
-
-%%
-%In \autoref{fig:ew_flav_bounds} the imprint of these correlations is a shift of central values and an increase on the bounds on the corresponding Wilson coefficients, with red and green bars representing the outcome of the fit in the {\bf EW \& Flavour} scenario within the {\bf PMD} and {\bf PDD} approaches, respectively. The interplay between $O^{Lu(eu)}_{\ell\ell33}$ and $O^{HL^{(1)}(He)}_{\ell\ell}$ is evident when comparing the reported red and green bounds versus the orange EW constraints on $C^{HL^{(1)}(He)}_{\ell\ell}$, and the yellow ones for $C^{Lu(eu)}_{\ell\ell33}$. Consequently, as clearly depicted in \autoref{fig:ew_flav_dg}, looking at the red and green ranges reported for the {\bf EW \& Flavour} scenario, $R_{K^{(*)}}$ puzzles are solved with EW precision being respected. It is important to emphasize that, despite the significant correlation between quark and lepton operators introduced by the one-loop effects of $C_{33}^{HQ^{(1)}}$, quark operators play no significant role in reconciling the EWPO constraints with the solution to $B$ anomalies. This will become clearer in the next section, but can be easily understood from the fact that, as mentioned before, quark and lepton constraints are somewhat uncorrelated in the tree-level EW fit, and the fact that the one-loop corrections effect induced by $C_{33}^{HQ^{(1)}}$ are flavour universal.
-
-
 %\subsection{A minimal EFT picture}
-It is not necessary to invoke all of the 21 SMEFT operators considered in the {\bf EW \& Flavour} scenario in order to have a resolution for the flavour anomalies and EWPO. A simpler picture using two or four operator suffices to fulfil the experimental need to explain LUV and respect EW measurements. This picture contain the fully left-handed operator, $\mathcal{O}_{LQ}^{\ell \ell 2 3}$ and $\mathcal{O}_{\phi L}^{(1)} \ ^{\ell \ell}$. The former operator would be generated at a loop-level by $\mathcal{O}_{Lu}^{\ell \ell 3 3}$, while the latter at tree-level.  This minimalist SMEFT approach would then include only  $\mathcal{O}_{\phi L}^{(1)} \ ^{\ell \ell}$ and $\mathcal{O}_{Lu}^{\ell \ell 3 3}$, and $\ell= \mu, e$. So the model could involves either muons, electrons or both of them.\\ 
+It is not necessary to invoke all of the 21 SMEFT operators considered in the { EW \& Flavour} scenario in order to have a resolution for the flavour anomalies and EWPO. A simpler picture using two or four operator suffices to fulfil the experimental need to explain LUV and respect EW measurements. This picture contain the fully left-handed operator, $\mathcal{O}_{LQ}^{\ell \ell 2 3}$ and $\mathcal{O}_{\phi L}^{(1)} \ ^{\ell \ell}$. The former operator would be generated at a loop-level by $\mathcal{O}_{Lu}^{\ell \ell 3 3}$, while the latter at tree-level.  This minimalist SMEFT approach would then include only  $\mathcal{O}_{\phi L}^{(1)} \ ^{\ell \ell}$ and $\mathcal{O}_{Lu}^{\ell \ell 3 3}$, and $\ell= \mu, e$. So the model could involves either muons, electrons or both of them.\\ 
 In~ \autoref{fig:2D_correlations}, the EWPO (grey), flavour with PDD (orange) and combined (magenta) fits for this minimal SMEFT model. For the muonic (left) and electronic (right) solutions. We observe that the tension between EWPO and $b \to s \ell \ell$ data if individual fits were preformed, whilst this is resolved in the combined fit. However, this induces correlation between the four-fermion operator $\mathcal{O}_{Lu}^{\ell \ell 3 3}$ and the one involving the Higgs-doublet and lepton bilinears. This model also obeys MFV assumptions, which protects it from other flavour observables. However, as mentioned earlier, the $B$ anomalies has to be explained at one-loop level. 
 \begin{figure}[htpb!]
 	\includegraphics[width=\textwidth]{figures/CHL_CLu.pdf}
 	\caption{ A minimal solution for the flavour anomalies within SMEFT, while respecting EWPO. The left panel shows the four-fermion operators involving the muon and on the right the electronic solution is shown. EWPO fits are the grey regions, while the $b \to s\ell \ell$ measurements fits with PDD ansatz are highlighted by the orange bands. The combined fit's 1 and 2$\sigma$ contours are magenta coloured.This plot has been published in~\cite{Alasfar:2020mne}.  } 
 	\label{fig:2D_correlations}
 \end{figure}
-
-%Then, in \autoref{fig:2D_correlations} we show in orange the overall constraint from $b \to s \ell \ell$ data on $C^{Lu}_{\ell \ell 3 3}$ within the most conservative approach to long-distance effects, i.e. the PDD one. In particular, in the left (right) panel we report the constraint on the muonic (electronic) scenario. In the same figure, we highlight with the vertical gray band the bound derived from the full correlated set of EWPO on the same operator. From the comparison of the orange and gray single-operator bounds, the tension between flavour and EW measurements is manifest at the 3$\sigma$ level in the left panel of \autoref{fig:2D_correlations}. 
-%
-%Most importantly, in the same figure we display in (dashed) magenta the 1(2)$\sigma$ contour where EW data are reconciled with the one-loop MFV explanation of $B$ anomalies when a combined fit of the NP contributions from these two operators is performed. {Therefore, heavy BSM degrees of freedom that, once integrated out, generate sizeable contributions both  to the Wilson coefficient of $O^{HL^{(1)}}_{\ell \ell}$ and of $C^{Lu}_{\ell \ell33}$ are the key aspect of this scenario that addresses $B$ anomalies without requiring sources of flavour violation beyond SM ones.}
-%It gets even more pronounced in the right panel due to the precise probe of NP that EW gauge-boson couplings to electrons provide. In the same \autoref{fig:2D_correlations}, we also show with the horizontal gray band the result of the EWPO constraints applied this time on the NP contribution coming exclusively from the operator $C^{HL^{(1)}}_{\ell \ell}$. Note that this operator would also contribute to $R_{K^{(*)}}$ at one loop, but the size needed would be $\mathcal{O}(1)$ and it is out of scale in the vertical axis of the plot.
 Finally, note that the role played here by $\mathcal{O}_{Lu}^{\ell \ell 3 3}$ could be shared, in part, with $\mathcal{O}_{eu}^{\ell \ell 3 3}$, depending on how much departure is actually required from the fully left-handed solution to $B$ anomalies. As already noted, this fact critically depends on the information stemming from the angular analysis of $B \to K^{*} \mu \mu$~\cite{Ciuchini:2019usw}. On general grounds, to relieve the bounds from EWPO, the presence of $\mathcal{O}_{eu}^{\ell \ell 3 3}$ would also necessitate sizeable NP effects from $\mathcal{O}_{\phi e}^{\ell \ell}$, thus leaving us with a maximum of four needed operators to explain the flavour anomalies without being excluded by EWPO or including complex flavour structures.
-
-
 %%%%%%%%%%%%%%%%%%
-\section{Potential UV models}
-\label{sec:UVtoymodels}
-%%%%%%%%%%%%%%%%%%
-%As a last comment of this section we would also like to highlight that in the class of models considered the prediction for the LUV observable $R_{K}$ is always close to the one for $R_{K^{*}}$: any hint of NP coming from $R_{K^{*}}/R_{K} \neq 1$~\cite{Hiller:2014ula,Hurth:2014vma,Hiller:2014yaa,Hiller:2017bzc} would not be addressed within the NP models considered here, mainly involving the operators in eq.~\eqref{eq:SMEFT_op_HL} and~\eqref{eq:SMEFT_op_loop_lu}. In the following sections we will put our focus on the economic EFT scenario captured in \autoref{fig:2D_correlations} to build up simple UV scenarios realizing the EFT picture here delineated.
-In this section we discuss how the lesson derived from the SMEFT picture illustrated, in particular, in \autoref{fig:2D_correlations}, can be realized in a minimal extension of the SM. Here, we explicitly show how models involving a new $Z^\prime$ gauge boson around the TeV scale provide the most economic example of the correlations advertised in the previous section. 
-This can be achieved if we have a $Z^\prime$ coupled both to top and lepton SM fields.
-These couplings can be obtained introducing vector-like top and muon/electron partners reasonably close to the EW scale~\cite{Kamenik:2017tnu,Fox:2018ldq}, making this class of models potentially interesting also from the point of view of naturalness in the Higgs sector.
-Finally, we will also briefly comment on possible alternative scenarios that can be obtained with leptoquarks.
-
-%%%%%%%%%%%%%%%%%%
-\subsection{\texorpdfstring{Z$^{\prime}$}{Z'} with vector-like partners}
+\section{\texorpdfstring{Z$^{\prime}$}{Z'} with vector-like partners}
 \label{sec:mod_Zprime}
+%In this section we discuss how the lesson derived from the SMEFT picture illustrated, in particular, in \autoref{fig:2D_correlations}, can be realized in a minimal extension of the SM. Here, we explicitly show how models involving a new $Z^\prime$ gauge boson around the TeV scale provide the most economic example of the correlations advertised in the previous section. 
+%This can be achieved if we have a $Z^\prime$ coupled both to top and lepton SM fields.
+%These couplings can be obtained introducing vector-like top and muon/electron partners reasonably close to the EW scale~\cite{Kamenik:2017tnu,Fox:2018ldq}, making this class of models potentially interesting also from the point of view of naturalness in the Higgs sector.
+%Finally, we will also briefly comment on possible alternative scenarios that can be obtained with leptoquarks.
 %%%%%%%%%%%%%%%%%%
-
-Let us start with the baseline presented originally in ref.~\cite{Kamenik:2017tnu}. A simple extension of the SM, able to address $B$ anomalies, and  that does not introduce any explicit new source of flavour violation, can be conceived as follows:
-\begin{itemize}
-	\item The SM gauge group, $SU(3)_{c} \otimes SU(2)_{L} \otimes U(1)_{Y}$, is extended by a new Abelian gauge group, $U(1)_{X}$, under which SM fields are neutral;
-	\item There is a new complex scalar field $\mathcal{S}$ that spontaneously breaks $U(1)_{X}$, giving a mass to the gauge boson $X_{\mu}$ equal to $m_{Z^{\prime}} = g_{X} \langle \mathcal{S} \rangle $;
-	\item A coloured vector-like top partner, $\mathcal{T}$, properly charged under $U(1)_{X}$ and $U(1)_{Y}$ can mix with the right-handed top-quark field $u_{3}$ via a Yukawa interaction with $\mathcal{S}$; 
-	\item A vector-like muonic partner, $\mathcal{M}$, doublet of $SU(2)_{L}$ and charged under $U(1)_{X,Y}$, can mix with the muonic doublet $L_2$ via another Yukawa coupling of $\mathcal{S}$;
-	\item The couplings controlling the kinetic-mixing term, $X_{\mu \nu} B^{\mu \nu}$, and the quadratic scalar mixing, $\mathcal{S}^{\dagger}\mathcal{S} H^{\dagger} H$, are set to be phenomenologically negligible.\footnote{Using naive dimensional analysis, both kinetic and scalar quadratic mixing should appear beyond the tree level suppressed at least by a loop factor and the corresponding SM-partner rotation angles.} 
-\end{itemize}
-
-Then, the UV model is completely characterized by eight new parameters: the gauge coupling $g_{X}$, the mass $\mu_{\mathcal{S}}$ and quartic $\lambda_{\mathcal{S}}$ of the renormalizable potential of $\mathcal{S}$, the new Yukawa couplings $Y_{\mathcal{T},\mathcal{M}}$, here taken to be real, and the vector-like mass-term parameters $M_{\mathcal{T},\mathcal{M}}$.
+Exhilarated by the SMEFT fit and the consequent simplified model discussed in the previous section, we discuss some UV-complete models that explain the $B$-anomalies at loop-level; without adding extra flavour violation; and respects the EWPO bounds.  \\  The first model that satisfies these requirements is based on a $Z^\prime$ model published in ref.~\cite{Kamenik:2017tnu}.  This model is a simple extension of the SM gauge group by an additional Abelian group $U(1)_X$ with a corresponding gauge boson $\mathsf{X}_{\mu}$ identified as the $Z^\prime$. All of the SM fields have no $X$ charge. This gauge symmetry is spontaneously broken by a vev of an additional scalar singlet $\mathsf{S}$, which gives a mass to the $Z^\prime$ boson~$m_{Z^{\prime}} = g_{X} \langle \mathsf{S} \rangle $. A top-quark~$\mathsf{T}$, (VLQ) and a muonic partners~$\mathsf{M}$ are added as well. These two fields  mix with the top~$u_3$ and muon~$L_2$ via a Yukawa interaction terms with the scalar field $\mathsf S$. Kinematic mixing between the $Z^\prime$ and the SM $Z$ boson, as well as the between the Higgs and the new scalar are assumed to be negligible. The new fields and their representation under the SM plus the new gauge group are summarised in~\autoref{tab:zrpime}. \\
+This model is completely characterized by eight new parameters: the gauge coupling $g_{X}$, the mass $\mu_{\mathsf{S}}$ and quartic $\lambda_{\mathsf{S}}$ of the renormalizable potential of $\mathsf{S}$, the new Yukawa couplings $Y_{\mathsf{T},\mathsf{M}}$, here taken to be real, and the vector-like mass-term parameters $M_{\mathsf{T},\mathsf{M}}$.
 In particular, the Lagrangian of the model contains the following terms:
-\begin{equation}
+\begin{align}
 	\label{eq:new_Yukawa_Mu}
-	M_{\mathcal{T}} \bar{\mathcal{T}_R} \mathcal{T}_L + M_{\mathcal{M}} \bar{\mathcal{M}}_R \mathcal{M}_L +
-	Y_{t} \bar{u}_{3} \tilde{H}^\dagger Q_{3}  
-	+ Y_{\mathcal{T}} \bar{u}_{3} \mathcal{T}_L \mathcal{S} 
-	+ Y_{\mu} \bar{e}_{2}  H^\dagger  L_{2}
-	+ Y_{\mathcal{M}}\bar{\mathcal{M}}_R L_{2} \mathcal{S} + \mathrm{h.c.}  \ , 
-\end{equation}
-that characterize the mixing pattern of SM fields and vector-like partners.\footnote{Note that upon an opposite $U(1)_{X}$ charge assignment for the vector-like fermionic partners than the one implicitly assumed, one should replace in eq.~\eqref{eq:new_Yukawa_Mu} $\mathcal{S}$ with $S^{\dagger}$.}
-Symmetry breaking of $U(1)_X$ is triggered by $\langle \mathcal{S} \rangle^2 = -\mu^2_{\mathcal{S}}/(2 \lambda_{\mathcal{S}}) \equiv \eta^2 \neq 0$, that implies the following fermionic mixing patterns:
+	\mathcal{L} &=
+	M_{\mathsf{T}} \bar{\mathsf{T}}_R \mathsf{T}_L + M_{\mathsf{M}} \bar{\mathsf{M}}_R \mathsf{M}_L +
+	Y_{t} \bar{u}_{3} \tilde{\phi}^\dagger Q_{3}  \nn \\ \qquad&+ Y_{\mathsf{T}} \bar{u}_{3} \mathsf{T}_L \mathcal{S} 
+	+ Y_{\mu} \bar{e}_{2}  \phi^\dagger  L_{2}
+	+ Y_{\mathsf{M}}\bar{\mathsf{M}}_R L_{2} \mathsf{S} + \mathrm{h.c.}  \ .
+\end{align}
+\begin{table}[htpb!]
+	\centering
+	\begin{tabular}{cc}
+		\toprule
+   Particle/Field& $G_\SM \otimes U(1)_X$ multiplicity  \\
+		\midrule
+		\topmidheader{2}{\textbf{VL fermions}} 
+		$\mathsf{T}$ & $(\irrep{3},\irrep{2})_{Y={1\over 6},X={-1} }$\\
+		$\mathsf{M}$ & $(\irrep{1},\irrep{2})_{{1\over 2},{-1} }$\\
+		\midrule
+		\topmidheader{2}{\textbf{Gauge boson}} 
+	$\mathsf{X}_\mu$ & $(\irrep{1},\irrep{1})_{{0},{0} }$\\
+			\midrule
+		\topmidheader{2}{\textbf{Scalar}} 
+			$\mathsf{S}$ & $(\irrep{1},\irrep{1})_{{0},{1} }$\\
+		\bottomrule
+	\end{tabular}   
+	\caption{The added fields of this model and their representation under the SM gauge group and the new $U(1)_X$.Note that the  new charge assignment here is not unique, and the model would produce the same phenomenology with different but consistent assignment. }\label{tab:zrpime}
+\end{table}
+From this Lagrangian, we can read off the mixing terms between the SM fields and vector-like~(VL) partners.\footnote{Note that upon an opposite $U(1)_{X}$ charge assignment for the vector-like fermionic partners than the one implicitly assumed, one should replace in eq.~\eqref{eq:new_Yukawa_Mu} $\mathsf{S}$ with $\mathsf{S}^{\dagger}$.}
+The spontaneous symmetry breaking of $U(1)_X$ is achieved in the way discussed at the beginning of this thesis in~\autoref{sec:ssb} by a non-vanishing vev $\langle \mathsf{S} \rangle^2 = -\mu^2_{\mathsf{S}}/(2 \lambda_{\mathsf{S}}) \equiv \eta^2 \neq 0$, that implies the following fermionic mixing patterns:
 \begin{eqnarray}
 	\label{eq:Mixing_Partner}
 	& \textrm{top sector:} & \ 
 	\left(  \begin{array}{cc}
-		\bar{u}_3 & \overline{\mathcal{T}}_R
+		\bar{u}_3 & \overline{\mathsf{T}}_R
 	\end{array} \right) \, \begin{pmatrix}
-		\frac{Y_t  \, v}{\sqrt{2}} \ &  \frac{Y_{\mathcal{T}} \eta}{\sqrt{2}} \ \\
-		0 \ & \ M_\mathcal{T}
+		\frac{Y_t  \, v}{\sqrt{2}} \ &  \frac{Y_{\mathsf{T}} \eta}{\sqrt{2}} \ \\
+		0 \ & \ M_\mathsf{T}
 	\end{pmatrix} \,
 	\left(  \begin{array}{c}
-		U_3 \\  \mathcal{T}_L
+		U_3 \\  \mathsf{T}_L
 	\end{array} \right) \ + \ \mathrm{h.c.} \, , \\
 	& \textrm{muon sector:} & \ 
 	\left(  \begin{array}{cc}
-		\bar{e}_2 & \overline{\mathcal{M}}_{R}
+		\bar{e}_2 & \overline{\mathsf{M}}_{R}
 	\end{array} \right) \, \begin{pmatrix}
 		\frac{Y_\mu v}{\sqrt{2}} \ & 0\ \\
-		\frac{Y_{\mathcal{M}} \eta }{ \sqrt{2}}  \ & \ M_\mathcal{M}
+		\frac{Y_{\mathsf{M}} \eta }{ \sqrt{2}}  \ & \ M_\mathsf{M}
 	\end{pmatrix} \,
 	\left(  \begin{array}{c}
-		E_{2} \\  \mathcal{M}_L
+		E_{2} \\  \mathsf{M}_L
 	\end{array} \right) \ + \ \mathrm{h.c.} \, , \nonumber
 \end{eqnarray}
-where $U_{i}$ ($E_{i}$) indicates the $Q_{i}$-component ($L_{i}$-component) with weak isospin $1/2$ (-1/2). Using the determinant and trace of the squared mass matrices, one can easily show that the eigenvalues $m_{t,\mathcal{T}}$ and $m_{\mu,\mathcal{M}}$ must satisfy~\cite{Kamenik:2017tnu}:
+where $U_{i}$ ($E_{i}$) indicates the $Q_{i}$-component ($L_{i}$-component) with weak isospin $1/2$ (-1/2). Using the determinant and trace of the squared mass matrices, one can easily show that the eigenvalues $m_{t,\mathsf{T}}$ and $m_{\mu,\mathsf{M}}$ must satisfy~\cite{Kamenik:2017tnu}:
 \begin{eqnarray}
 	\label{eq:Mass_Eigenvalues}
-	m_{t,\mu} \,  m_{\mathcal{T,M}} & = & \frac{1}{\sqrt{2}} Y_{t,\mu} v M_{\mathcal{T,M}} \ , \\ m_{t,\mu}^2 + m_{\mathcal{T,M}}^2 & = & 
-	M_{\mathcal{T,M}}^2 + \frac{1}{2} (Y_{t,\mu} \, v)^2 + \frac{1}{2} (Y_{\mathcal{T,M}} \, \eta)^2 \ , \nonumber
+	m_{t,\mu} \,  m_{\mathsf{T,M}} & = & \frac{1}{\sqrt{2}} Y_{t,\mu} v M_{\mathsf{T,M}} \ , \\ m_{t,\mu}^2 + m_{\mathsf{T,M}}^2 & = & 
+	M_{\mathsf{T,M}}^2 + \frac{1}{2} (Y_{t,\mu} \, v)^2 + \frac{1}{2} (Y_{\mathsf{T,M}} \, \eta)^2 \ , \nonumber
 \end{eqnarray}
-that in the decoupling limit clearly yield: $m_{t,\mu} \simeq Y_{t,\mu} v / \sqrt{2}$, $m_{\mathcal{T,M}} \simeq M_{\mathcal{T,M}}$.
-
+that in the decoupling limit clearly yield: $m_{t,\mu} \simeq Y_{t,\mu} v / \sqrt{2}$, $m_{\mathsf{T,M}} \simeq M_{\mathsf{T,M}}$.
 Defining for the top sector the rotation matrix from the interaction to the mass basis following the convention:
-
 \begin{equation}
 	\label{eq:rot_phys_states} 
 	\left(  \begin{array}{c}
-		t_{R (L)} \\  \mathcal{T}^{\prime}_{R (L)}
+		t_{R (L)} \\  \mathsf{T}^{\prime}_{R (L)}
 	\end{array} \right) = \,
 	\begin{pmatrix}
 		\cos \theta^{t}_{R(L)} \ & \ - \sin \theta^{t}_{R(L)} \ \\
@@ -308,104 +277,106 @@ Defining for the top sector the rotation matrix from the interaction to the mass
 	\end{pmatrix} \,
 	\left(  \begin{array}{c}
 		u_{3} (U_{3}) \\  
-		\mathcal{T}_{R (L)}
+		\mathsf{T}_{R (L)}
 	\end{array} \right) \ ,
 \end{equation}
-and doing similarly for the muonic sector, the mixing angles between SM fields, $t$ and $\mu$,  and their partner mass eigenstates, $\mathcal{T}^{\prime}$ and $\mathcal{M}^{\prime}$, can be conveniently expressed in terms of the dimensionless ratios $\xi_{\mathcal{T,M}}$ and $\varepsilon_{t,\mu}\, $:
+and doing similarly for the muonic sector, the mixing angles between SM fields, $t$ and $\mu$,  and their partner mass eigenstates, $\mathsf{T}^{\prime}$ and $\mathsf{M}^{\prime}$, can be conveniently expressed in terms of the dimensionless ratios $\xi_{\mathsf{T,M}}$ and $\varepsilon_{t,\mu}\, $:
 \begin{eqnarray}
 	\label{eq:partner_mixing}
-	& \  \tan 2 \theta_{R}^{t} = \frac{2 \xi_{\mathcal{T}}}{\xi_{\mathcal{T}}^2-\varepsilon_{t}^2-1} \, , \, 
-	\ \, \tan 2 \theta_{L}^{t} = \frac{2 \varepsilon_{t}}{\xi_{\mathcal{T}}^2-\varepsilon_{t}^2 +1} \, , \,   \textrm{with} \ \varepsilon_{t} \equiv \frac{Y_{t} v}{Y_{\mathcal{T}} \eta},~\xi_{\mathcal{T}} \equiv \frac{\sqrt{2} M_{\mathcal{T}}}{\eta Y_{\mathcal{T}}} \, ; \ \\
-	& \  \tan 2 \theta_{R}^{\mu} = \frac{2 \varepsilon_{\mu}}{\xi_{\mathcal{M}}^2-\varepsilon_{\mu}^2+1} \, , \, 
-	\tan 2 \theta_{L}^{\mu} = \frac{2 \xi_{\mathcal{M}}}
-	{\xi_{\mathcal{M}}^2-\varepsilon_{\mu}^2 -1}  \, , \, 
-	\textrm{with} \ \varepsilon_{\mu} \equiv \frac{Y_{\mu} v}{Y_{\mathcal{M}} \eta},~\xi_{\mathcal{M}} \equiv \frac{\sqrt{2} M_{\mathcal{M}}}{\eta Y_{\mathcal{M}}} \, .
+	& \  \tan 2 \theta_{R}^{t} = \frac{2 \xi_{\mathsf{T}}}{\xi_{\mathsf{T}}^2-\varepsilon_{t}^2-1} \, , \, 
+	\ \, \tan 2 \theta_{L}^{t} = \frac{2 \varepsilon_{t}}{\xi_{\mathsf{T}}^2-\varepsilon_{t}^2 +1} \, , \,   \textrm{with} \ \varepsilon_{t} \equiv \frac{Y_{t} v}{Y_{\mathsf{T}} \eta},~\xi_{\mathsf{T}} \equiv \frac{\sqrt{2} M_{\mathsf{T}}}{\eta Y_{\mathsf{T}}} \, ; \ \\
+	& \  \tan 2 \theta_{R}^{\mu} = \frac{2 \varepsilon_{\mu}}{\xi_{\mathsf{M}}^2-\varepsilon_{\mu}^2+1} \, , \, 
+	\tan 2 \theta_{L}^{\mu} = \frac{2 \xi_{\mathsf{M}}}
+	{\xi_{\mathsf{M}}^2-\varepsilon_{\mu}^2 -1}  \, , \, 
+	\textrm{with} \ \varepsilon_{\mu} \equiv \frac{Y_{\mu} v}{Y_{\mathsf{M}} \eta},~\xi_{\mathsf{M}} \equiv \frac{\sqrt{2} M_{\mathsf{M}}}{\eta Y_{\mathcal{M}}} \, .
 	\nonumber
 \end{eqnarray}
-In a perturbative expansion in $\varepsilon_{t,\mu}$, eq.~\eqref{eq:partner_mixing} clearly shows that the mixing in the top sector proceeds mainly through $\tan\theta^{t}_{R} \simeq 1/\xi_{\mathcal{T}}$, while in the muonic sector one has  $\tan\theta^{\mu}_{L} \simeq 1/\xi_{\mathcal{M}}$ and very tiny $\tan\theta^{\mu}_{R}$.
+In a perturbative expansion in $\varepsilon_{t,\mu}$, eq.~\eqref{eq:partner_mixing} clearly shows that the mixing in the top sector proceeds mainly through $\tan\theta^{t}_{R} \simeq 1/\xi_{\mathsf{T}}$, while in the muonic sector one has  $\tan\theta^{\mu}_{L} \simeq 1/\xi_{\mathsf{M}}$ and negligible $\tan\theta^{\mu}_{R}$.
 
-Hence, for $\varepsilon_{t,\mu}/\xi_{\mathcal{T,M}}= Y_{t,\mu} v/\sqrt{2} M_{\mathcal{T,M}} < 1$, the leading couplings of the $Z^{\prime}$ boson to the SM fields correspond to right-handed tops and to left-handed muons as well as neutrinos according to:\footnote{In what follows, for $\eta \sim \mathcal{O}(v)$ we will have $\xi_{T} \sim \mathcal{O}(1)$; consequently, $\varepsilon_{t} \sim \mathcal{O}(v/M_{\mathcal{T}})$.}
+Hence, for $\varepsilon_{t,\mu}/\xi_{\mathsf{T,M}}= Y_{t,\mu} v/\sqrt{2} M_{\mathsf{T,M}} < 1$, the leading couplings of the $Z^{\prime}$ boson to the SM fields correspond to right-handed top-quarks and to left-handed muons as well as neutrinos, these couplings are given by
 \begin{eqnarray}
 	\label{eq:Zprime_to_SM}
-	g_{Z^{\prime} t_{R}} & = & g_{X} \sin^2 \theta_{R}^{t} = \frac{g_{X}}{ 1+ \xi^2_{\mathcal{T}}} + \mathcal{O}\left( \varepsilon_{t}^2/\xi_{\mathcal{T}}^2 \right) \, , \\
-	g_{Z^{\prime} \mu_{L} (\nu)} & = &  g_{X} \sin^2 \theta_{L}^{\mu} = \frac{g_{X}}{1 + \xi^2_{\mathcal{M}}} 
-	+ \mathcal{O}\left( \varepsilon_{\mu}^2 /\xi_{\mathcal{M}}^2 \right) \, ,
+	g_{Z^{\prime} t_{R}} & = & g_{X} \sin^2 \theta_{R}^{t} = \frac{g_{X}}{ 1+ \xi^2_{\mathsf{T}}} + \mathcal{O}\left( \varepsilon_{t}^2/\xi_{\mathsf{T}}^2 \right) \, , \\
+	g_{Z^{\prime} \mu_{L} (\nu)} & = &  g_{X} \sin^2 \theta_{L}^{\mu} = \frac{g_{X}}{1 + \xi^2_{\mathsf{M}}} 
+	+ \mathcal{O}\left( \varepsilon_{\mu}^2 /\xi_{\mathsf{M}}^2 \right) \, ,
 \end{eqnarray}
-with $g_{Z^{\prime} t_{L} (\mu_{R})}$ being non-negligible only at order $\varepsilon_{t  (\mu)}^2/\xi_{\mathcal{T(M)}}^2$.
-Consequently, integrating out the $Z^{\prime}$ relevantly generates the operator $O^{L u}_{2233}$ with Wilson coefficient:
+with $g_{Z^{\prime} t_{L} (\mu_{R})}$ contributing only at order $\varepsilon_{t  (\mu)}^2/\xi_{\mathsf{T(M)}}^2$.
+\begin{figure}[htpb!]
+	\centering
+	\includegraphics[scale=.75]{figures/zp_penguin.pdf}
+	\caption{FCNC penguins with LUV emerging from the $Z^\prime$ model, explaining the $b \to s \ell \ell$ anomalies at loop-level. The penguin diagrams with the top-partners in the loop are the dominant ones. }
+	\label{fig:peng}
+\end{figure}
+The $ b \to s \ell \ell$ anomalies can be explained in this model via penguin (also box) diagrams with LUV as shown in~\autoref{fig:peng}. Since the $Z^\prime$ couples to the muons and not the electrons, LUV is generated at loop-level. 
+%%%
+\subsection{SMEFT matching and constraints}
+Integrating out the $Z^{\prime}$ will generate the operator $\mathcal O_{L u}^{2233}$ with the the matching condition:
 \begin{equation}
 	\label{eq:CLu_Zprime}
-	C^{L u}_{2233} = - \frac{g_{Z^{\prime} t_{R} } g_{Z^{\prime} \mu_{L}} }{m_{Z^{\prime}}^2} \simeq - \frac{1}{(1+ \xi^2_{\mathcal{T}})(1+ \xi^2_{\mathcal{M}}) \, \eta^{2}} \ ,
+	C_{L u}^{2233} = - \frac{g_{Z^{\prime} t_{R} } g_{Z^{\prime} \mu_{L}} }{m_{Z^{\prime}}^2} \simeq - \frac{1}{(1+ \xi^2_{\mathsf{T}})(1+ \xi^2_{\mathsf{M}}) \, \eta^{2}} \ ,
 \end{equation}
 %
 together with four-fermion operators built of $t_{R}$ or $\mu_{L},\nu$  fields that can be potentially probed at collider and by experimental signatures like $\nu$-trident production. 
-
-From eq.~\eqref{eq:CLu_Zprime} it is clear that in order to have $|C^{L u}_{2233}| \sim 2 $ TeV$^{-2}$ as highlighted in \autoref{fig:2D_correlations}, one needs to rely on a relatively low symmetry-breaking scale $\eta \lesssim$~TeV;\footnote{Note that even for masses as low as $\mu_{\mathcal{S}} \sim \mathcal{O}(v)$, for $\eta \simeq v$ and $\lambda_{\mathcal{S}} \sim \mathcal{O}(1)$, the interactions of $\mathcal{S}$ do not alter the phenomenology discussed here since the largest $\mathcal{S}$-generated effects are still suppressed as $\mathcal{O}(\varepsilon_{t}^2/\xi^2_{\mathcal{T}})$.} for $m_{Z^{\prime}} \sim$~TeV this implies $g_{X} \gtrsim$~1. In \autoref{fig:Zp_constraints} we show the $1\sigma$ region corresponding to the explanation of $B$ anomalies via eq.~\eqref{eq:CLu_Zprime} in the parameter space $\xi_{\mathcal{T,M}}$, fixing the gauge coupling $g_{X} = m_{Z^{\prime}}/\eta$ for a tentative $Z^{\prime}$ gauge boson at the~TeV scale and the VEV of the new scalar field $\mathcal{S}$ set to $\eta = 250$~GeV and $\eta = 500$~GeV  in the left and right panel, respectively. In the same plot, we re-interpret in our scenario the most relevant collider constraints originally identified in ref.~\cite{Camargo-Molina:2018cwu}. 
-
+From eq.~\eqref{eq:CLu_Zprime} it is clear that in order to have $|C_{L u}^{2233}| \sim 2 $ TeV$^{-2}$ as required  by the fit in \autoref{fig:2D_correlations}, the SSB of the new gauge group needs to happen at a scale close to the EW, namely $\eta \lesssim$~TeV;\footnote{Note that even for masses as low as $\mu_{\mathsf{S}} \sim \mathcal{O}(v)$, for $\eta \simeq v$ and $\lambda_{\mathsf{S}} \sim \mathcal{O}(1)$, the interactions of $\mathsf{S}$ do not alter the phenomenology discussed here since the largest $\mathcal{S}$-generated effects are still suppressed as $\mathcal{O}(\varepsilon_{t}^2/\xi^2_{\mathsf{T}})$.} for $m_{Z^{\prime}} \sim$~TeV this leads to a natural coupling~$g_{X} \gtrsim$~1. \\ The main collider constraints come from the production of top pair $ pp \to Z^\prime \to t \bar t$, with the most stringent bounds at the time of conducting this work came from ATLAS~\cite{ATLAS:2019npw}. In addition to the resonant di-muon searches~\cite{ATLAS-CONF-2019-001}. In~\autoref{fig:Zp_constraints1} these searches are projected onto our model, with the choice of $\eta=1$ TeV and other parameters chosen to be preferred by the $B$ anomalies observables, we see that the constraints on this model are dominated by the resonant di-muon searches. The theoretical prediction of the resonant top pair and di-muon production via gluon fusion $ gg \to Z^\prime \to t \bar t /\mu \mu$ in this model has been calculated at NLO using the two-loop triangle calculations presented in~\autoref{chap:hz}. Further emphasizing the importance of the calculation of Higher order corrections for the gluon fusion $ gg \to Z^*$ for NP processes on top of Higgs measurements. \\
+In \autoref{fig:Zp_constraints} collects the constraints on this model, starting with the $1\sigma$ region corresponding to the explanation of $B$ anomalies via eq.~\eqref{eq:CLu_Zprime} in the parameter space $\xi_{\mathsf{T,M}}$, fixing the gauge coupling $g_{X} = m_{Z^{\prime}}/\eta$ for a tentative $Z^{\prime}$ gauge boson at the~TeV scale and the VEV of the new scalar field $\mathsf{S}$ set to $\eta = 250$~GeV and $\eta = 500$~GeV  in the left and right panel, respectively. In the same plot, the collider searches are also presented, re-interpreted from the results presented in ref.~\cite{Camargo-Molina:2018cwu}. 
+\begin{figure}[htpb!]
+	\includegraphics[scale=0.235]{figures/bounds_xs.pdf}
+	\includegraphics[scale=0.235]{figures/zmumu.pdf}
+	\caption{Direct searches for $Z^\prime$ using top pair production~\cite{ATLAS:2019npw} and di-muon searches~\cite{ATLAS:2019npw}, the gluon fusion cross-sections for this model were calculated at NLO using the results of the two-loop triangle calculations of the process $ gg \to Z^*$ preformed in~\autoref{chap:hz}.}
+	\label{fig:Zp_constraints1}
+\end{figure}
 \begin{figure}[htpb!]
 	\includegraphics[scale=0.235]{figures/Zprime_constraint_CLu.pdf}
-	\caption{\it 68\% (95\%) probability region in (lighter) magenta for the minimal $Z^{\prime}$ model that addresses $B$ anomalies in the parameter space identified by eq.~\eqref{eq:CLu_Zprime}, with $\eta = m_{Z^{\prime}}/4$ (left panel), and $\eta =  m_{Z^{\prime}}/2$ (right panel), for $m_{Z^{\prime}} = 1~\textrm{TeV}$. Relevant LHC constraints are reported in blue and cyan regions according to the analysis originally performed in ref.~\cite{Camargo-Molina:2018cwu}, together with the corresponding collider projections at 300~fb$^{-1}$. Finally, the gray regions underlie the parameter space where the mass of the vector-like partner lies below current collider limits for a fixed Yukawa coupling as explicitly reported, while dashed lines show the corresponding shift of the limit due to a smaller value of the same type of Yukawa coupling.}    
+	\caption{ Collective of the constraints on the $Z^\prime$ model. the magenta regions show the  $68\%$ and $ 95\%$ CL  constraints from $ b \to s \ell \ell$ anomalies, while the rest are the collider searches re-interpreted from the ones in ref.~\cite{Camargo-Molina:2018cwu}. The projections for the early HL-LHC  (at 300~fb$^{-1}$) constraints are shown as dashed lines. Gray regions underlie the parameter space where the mass of the vector-like partner lies below current collider limits for a fixed Yukawa coupling as explicitly reported, while dashed lines show the corresponding shift of the limit due to a smaller value of the same type of Yukawa coupling. The left panel is for $\eta = m_Z^\prime /4$
+		and the right panel is for $\eta = m_Z^\prime /2$. This figure is published in~\cite{Alasfar:2020mne}.}
 	\label{fig:Zp_constraints}
 \end{figure}
-
-For small values of $\xi_{\mathcal{M}}$, the measurement of neutrino-trident production performed in~\cite{Mishra:1991bv} is effective, and its constraint is reported at the 2$\sigma$ level with the orange vertical band.
-Under the reasonable assumption that the $Z^{\prime}$ boson is mainly produced at tree level in association with the $ t \bar{t}$ pair, in the blue region we show the 95\% high-$p_{T}$ constraint stemming from the recasting of the $p p \to \mu^{-} \mu^{+} t \bar{t}  $ search at ATLAS~\cite{Aaboud:2017buh}, while in cyan we report the expected constraint on the model from the 4-tops analysis of CMS~\cite{Sirunyan:2017roi}, see ref.~\cite{Camargo-Molina:2018cwu} for further details. From the same work, we also adopt the expected collider constraints for future projected luminosity corresponding to 300~fb$^{-1}$, shown with dashed lines.  Note that these projections become of fundamental importance when it comes to probe the interesting 1$\sigma$ region connected to $B$ anomalies. 
-In particular, the right panel in \autoref{fig:Zp_constraints} captures the benchmark for a promising discovery at the High-Luminosity LHC.
-
-Finally, in the same figure, fixing the partner Yukawa coupling to  $\mathcal{O}(1)$ values as reported in the two panels, we mark in gray the region corresponding to the bound on the mass of the vector-like partner expected from collider, taken to be $m_{\mathcal{T}} = 1.4$~TeV from the search at ATLAS in ref.~\cite{Aaboud:2018uek}, and $m_{\mathcal{M}} = 0.8$~TeV from the CMS analysis of ref.~\cite{Sirunyan:2019ofn}.
-
-As already discussed, the scenario depicted in \autoref{fig:Zp_constraints} remains viable under the lens of EW precision as long as we also have some heavy new dynamics yielding at the EW scale an imprint of $O^{HL^{(1)}}_{22}$ consistently with the correlation obtained in the left panel of \autoref{fig:2D_correlations}. 
-
-A simple way to obtain such NP contribution would be to consider the joint effect that the leptonic mixing of the vector-like partner would have together with the kinetic mixing of the $Z^{\prime}$, so far neglected. The $Z$-$Z^{\prime}$ mixing could also originate from charging the new scalar field $\mathcal{S}$ under both Abelian gauge groups, introducing a small misalignment with the standard hypercharge $U(1)_{Y}$ in the UV. However, the required mixing of the $Z^{\prime}$ would end up mediating light-quark pair annihilation into muons: the typical size of the Wilson coefficient of this four-fermion operator would be $\mathcal{O}(g_{Y}^2/m^2_{Z^{\prime}})$, in net tension with the di-muon bound from ATLAS~\cite{Aaboud:2017buh}, probing NP scales as high as $20$~-~$40$~TeV for $\mathcal{O}(1)$ (dimensionless) couplings. Hence, we rule out here this possibility.
-
-Interestingly, it is still possible to generate $O^{HL^{(1)}}_{22}$ without relying on the $Z$-$Z^{\prime}$ mixing, but rather invoking the presence in the UV theory of additional new vector-like leptonic states~\cite{Thomas:1998wy,delAguila:2008pw}. These ones may be phenomenologically interesting in relation  to the problem of the origin of neutrino masses as well as for the prediction of the anomalous magnetic moment $(g-2)_{\mu}$~\cite{Kannike:2011ng}, and may give peculiar multi-lepton signatures at colliders~\cite{Kumar:2015tna,Bhattiprolu:2019vdu}.
-
-In the most economic scenario, we may consider the presence in the UV theory of a pair of new vector-like muonic partners: a singlet of $SU(2)_{L}$, $S_{Y}$, and a triplet of $SU(2)_{L}$, $T_{Y}$, 
-where in both cases the subscript $Y$ denotes the hypercharge of the fermion.
-%of hypercharge $Y$. 
-These fields would have their own mass terms controlled by the parameters $M_{S_{Y},T_{Y}}$, and interact with the SM doublet $L_{2}$ via the Yukawa couplings $\mathcal{Y}_{S_{Y},T_{Y}}$ according to:
+The bounds from neutrino-trident production performed in~\cite{Mishra:1991bv} constrain small $\xi_{\mathsf{M}}$, where the 95 \%CL bounds are shown in the orange band of the plot.  The top-phillic $Z^{\prime}$  is predominantly produced at tree-level in association with top-pair, in the blue region we show the 95\% high-$p_{T}$ constraint stemming from the recasting of the $p p \to \mu^{-} \mu^{+} t \bar{t}  $ search at ATLAS~\cite{Aaboud:2017buh,ATLAS-CONF-2019-001}. The cyan contours are constraints coming from four-tops production analysis from CMS~\cite{Sirunyan:2017roi}, see ref.~\cite{Camargo-Molina:2018cwu} for more details.  These constraints' prospects for the early runs of the HL-LHC at 300~fb$^{-1}$ are also explored and indicated with  the dashed lines. One can see that the model benchmark shown in the right panel of ~\autoref{fig:Zp_constraints} old promising potential for discovery at the HL-LHC. 
+Finally, in the same figure, fixing the partner Yukawa coupling to  $\mathcal{O}(1)$ values as reported in the two panels, we mark in gray the region corresponding to the bound on the mass of the vector-like partner expected from collider, taken to be $m_{\mathsf{T}} = 1.4$~TeV from the search at ATLAS in ref.~\cite{Aaboud:2018uek}, and $m_{\mathsf{M}} = 0.8$~TeV from the CMS analysis of ref.~\cite{Sirunyan:2019ofn}.\\
+%%%%%
+\subsection{Expanding the model}
+For this model to survive EWPO constraints, it needs to induce  $O_{\phi L}^{(1)}\ ^{22}$ with the same correlation patterns observed in\autoref{fig:2D_correlations}.  In principle, it is possible to achieve that by inducing tree-level $z-Z^\prime$ mixing by charging $\mathsf{S}$ under $U_Y(1)$ in addition to $U_X(1)$, thereby inducing some misalignment in the weak hypercharge $Y$. However, this will create a tree-level (Drell Yan-like) resonant di-muon production enhancement, far beyond what is allowed by current collider searches~\cite{ATLAS-CONF-2019-001}.  Therefore, this mechanism is not possible. \\ In order to accommodate for EW precision constraints, this model needs to be expanded further by including new VL leptonic states, like the ones discussed in refs.~\cite{Thomas:1998wy,delAguila:2008pw}. These new degrees of freedom are interesting by their own merit, in particular with resolving the anomaly associated with $(g-2)_{\mu}$~\cite{Kannike:2011ng,Muong-2:2021ojo}, also for neutrino mass source and other interesting collider phenomenology ~\cite{Kumar:2015tna,Bhattiprolu:2019vdu}.\\ 
+The simplest resolution can be accomplished by the inclusion of  two new vector-like muonic partners: a singlet under $SU(2)_{L}$, $S_{Y}$, and a triplet of $SU(2)_{L}$, $T_{Y}$, 
+where in both cases the subscript $Y$ denotes the hypercharge of the fermion. Since they are VL fermions, they have a mass term , thus adding new parameters~$M_{S_{Y},T_{Y}}$. Their mixing with the SM leptons comes -like $\mathsf{M}$- from Yukawa term, which for $Y=0$ is given by
 \begin{equation}
 	\label{eq:Yuk_singl_tripl}
-	\mathcal{Y}_{S_{0}} \bar{S}_{0,R} \tilde{H}^{\dagger} L_{2} + \mathcal{Y}_{T_{0}} \bar{T}^{A}_{0,R} \tau^{A} \tilde{H}^{\dagger} L_{2} + \textrm{h.c.}  \ ,
+	\mathcal{Y}_{S_{0}} \bar{S}_{0,R} \tilde{\phi}^{\dagger} L_{2} + \mathcal{Y}_{T_{0}} \bar{T}^{A}_{0,R} \tau^{A} \tilde{\phi}^{\dagger} L_{2} + \textrm{h.c.}  \ ,
 \end{equation} 
-where we have reported the case of vector-like muonic partners with hypercharge $Y=0$. We assume the new Yukawa couplings to be real. Another possibility of interest may be the one of replacing in eq.~\eqref{eq:Yuk_singl_tripl} $\tilde{H} = i \tau^{2} H^*$
-with the Higgs doublet, $H$, and involve then the pair of vector-like partners with hypercharge $Y=1$. 
-
-Integrating out these vector-like states from the theory would generate contributions related to $\mathcal{O}^{HL^{(1,3)}}$ ~\cite{delAguila:2008pw,Kannike:2011ng} of the form:
+Another possibility of interest may be the one of replacing in eq.~\eqref{eq:Yuk_singl_tripl} $\tilde{\phi} $
+with the Higgs doublet, $\phi$, and involve then the pair of vector-like partners with hypercharge $Y=1$.  The matching condition for these new fields produces the needed SMEFT operators, and the values and sign of the corresponding Wilson coefficients is given by the interplay between these fields ~\cite{delAguila:2008pw,Kannike:2011ng} of the form:
 \begin{eqnarray} 
 	\label{eq:matching_CHL}
-	C^{HL^{(1)}}_{22 } & = &
+	C_{\phi L}^{(1)}\ ^{22 } & = &
 	\ \ \frac{ \mathcal{Y}^{2}_{S_{0}}}{4 M_{S_{0}}^2} 
 	- \frac{ \mathcal{Y}^{2}_{S_{1}}}{4 M_{S_{1}}^2}
 	+ \frac{ 3 \mathcal{Y}^{2}_{T_{0}}}{4 M_{T_{0}}^2}
 	- \frac{ 3 \mathcal{Y}^{2}_{T_{1}}}{4 M_{T_{1}}^2} \ , \\
-	C^{HL^{(3)}}_{22} & = & 
+	C_{\phi L}^{(3)} \ ^ {22} & = & 
 	- \frac{ \mathcal{Y}^{2}_{S_{0}}}{4 M_{S_{0}}^2}
 	- \frac{ \mathcal{Y}^{2}_{S_{1}}}{4 M_{S_{1}}^2}
 	+ \frac{ \mathcal{Y}^{2}_{T_{0}}}{4 M_{T_{0}}^2}
 	+ \frac{ \mathcal{Y}^{2}_{T_{1}}}{4 M_{T_{1}}^2} \ . \nonumber
 \end{eqnarray}
-Clearly, in order to have $C^{HL^{(1)}}_{22} \sim 0.1$ and negligible $C^{HL^{(3)}}_{22}$\footnote{We have indeed verified that a scenario involving at the same time $C^{Lu}$ and $C^{HL^{(1,3)}}$ would not alter what already highlighted in~\autoref{fig:2D_correlations}, with the best-fit value for $|C^{HL^{(3)}}|$ turning out to be of $\mathcal{O}(10^{-2})$.}, 
-one would need to rely on a tuning of the $Y=0$ triplet Wilson coefficient with one of the contributions coming from the singlet vector-like muonic partner. However, once generated at the NP scale $\Lambda \sim \mathcal{O}(M_{T_{0}}) \gg v$, we observe that the relation established between the triplet and singlet contributions to $O^{HL^{(1,3)}}$ would be stable under the RG flow of the SMEFT.
+In order to obtain the needed value and sign of  $C_{\phi L}^{(1)}\ ^{22} \sim 0.1$ but also vanishing or negligible  $C_{\phi L}^{(3)}\ ^{22}$ some tuning between the singlet and the $Y=0$ triplet is needed, although this tuning is stable under the RGE once generated at the NP scale. \\
+Working under the PDD ansatz, it is possible to consider that the model would couple to the electron instead of the muon. Not much would change in terms of the particle content of this model, except for opposite charge assignment to get correct signs for the Wilson coefficients of $O^{Lu}$ and $O_{\phi L}^{(1)}$ seen in the right panel off~\autoref{fig:2D_correlations}, but making the electron and top partners having opposite $X$ charges and then making the proper adjustments to the Lagrangian. 
+A final comment is needed for the electron scenario reported in the right panel of~\autoref{fig:2D_correlations}, that involves opposite signs for the Wilson coefficients of $O^{Lu}$ and $O_{\phi L}^{(1)}$ discussed so far. For the former, we note that the sign highlighted in the matching in eq.~\eqref{eq:CLu_Zprime} follows from having assumed the same sign for the charge of the vector-like top and muon partners under $U(1)_{X}$. For what concerns the generation of $C_{\phi L}^{(1)} \ ^{11} < 0 $, according to eq.~\eqref{eq:matching_CHL} one needs to correlate once again the contribution stemming from $S_{0}$, or from $S_{1}$, with the effect coming from a $SU(2)_{L}$ triplet, that now needs to be identified with $T_{1}$, namely the triplet of hypercharge $Y=1$.
 
-A final comment is needed for the electron scenario reported in the right panel of~\autoref{fig:2D_correlations}, that involves opposite signs for the Wilson coefficients of $O^{Lu}$ and $O^{HL^{(1)}}$ discussed so far. For the former, we note that the sign highlighted in the matching in eq.~\eqref{eq:CLu_Zprime} follows from having assumed the same sign for the charge of the vector-like top and muon partners under $U(1)_{X}$.
-Hence, assuming the vector-like electron partner to have the opposite  $U(1)_{X}$ charge of the top-partner one would be sufficient to  accomplish $C^{Lu}_{1133} > 0$. (Of course, this would also imply a distinct use in eq.~\eqref{eq:new_Yukawa_Mu} of $\mathcal{S}$ and $\mathcal{S}^{\dagger}$ couplings in the Yukawa terms of the vector-like partners involved to keep the theory invariant under $U(1)_{X}$.) For what concerns the generation of $C^{HL^{(1)}}_{11} < 0 $, according to eq.~\eqref{eq:matching_CHL} one needs to correlate once again the contribution stemming from $S_{0}$, or from $S_{1}$, with the effect coming from a $SU(2)_{L}$ triplet, that now needs to be identified with $T_{1}$, namely the triplet of hypercharge $Y=1$.
-
-Eventually, we wish also to comment on the possible role of the $O^{eu}$ operator, so far neglected in this discussion, but of potential relevance more in general. In fact, as mentioned earlier, the presence of $O^{eu}$ would be particularly needed in the case where hadronic corrections entering in the amplitude of $B \to K^* \ell \ell $ would be of the size originally estimated in~\cite{Khodjamirian:2010vf}. 
-In that case, a solution to flavour anomalies would be preferred in the muonic channel with NP Wilson coefficient $C^{eu}_{2233}$ also substantially deviating from 0, as already discussed in \autoref{sec:GEN_EFT_results}. Then, one would need to involve also the operator $C^{He}_{22}$ to relieve possible tensions with EW precision. In a general picture, the required NP effects from $O^{He}_{11,22}$ can be obtained integrating out heavy vector-like $SU(2)_{L}$ leptonic doublets.
-
+%Eventually, we wish also to comment on the possible role of the $O_{eu}$ operator, so far neglected in this discussion, but of potential relevance more in general. In fact, as mentioned earlier, the presence of $O_{eu}$ would be particularly needed in the case where hadronic corrections entering in the amplitude of $B \to K^* \ell \ell $ would be of the size originally estimated in~\cite{Khodjamirian:2010vf}. 
+%In that case, a solution to flavour anomalies would be preferred in the muonic channel with NP Wilson coefficient $C_{eu}^{2233}$ also substantially deviating from 0, as already discussed in \autoref{sec:GEN_EFT_results}. Then, one would need to involve also the operator $C_{\phi e}\ ^{22}$ to relieve possible tensions with EW precision. In a general picture, the required NP effects from $O_{\phi e}_{11,22}$ can be obtained integrating out heavy vector-like $SU(2)_{L}$ leptonic doublets.
 
 %%%%%%%%%%%%%%%%%%
-\subsection{Leptoquark scenarios}
+\section{Leptoquark scenarios}
 \label{sec:mod_Leptoquarks}
 %%%%%%%%%%%%%%%%%%
-An alternative way to reproduce the minimal EFT scenario of \autoref{fig:2D_correlations} would be via \emph{leptoquarks}~(LQ), particles generically predicted in grand unified  theories~(GUTs)~\cite{Pati:1974yy,PhysRevLett.32.438}.
-Notoriously, LQ-induced dimension-six operators could be potentially dangerous as they would lead to proton decay at tree level, forcing to push their scale up to the GUT scale. However, the outcome may drastically change in models where the couplings of the LQs would be non-universal with respect to lepton and/or quark flavours. In such a case their mass could be much lower than what typically expected in GUTs and their signatures may actually be probed at present colliders. Interestingly, such LQs are candidates that could explain the lepton flavour universality violation -- even at the loop level here considered~\cite{Camargo-Molina:2018cwu,Coy:2019rfr} -- hinted in the recent LHCb and Belle data. However, this would imply generically a rather non-trivial flavour structure in the theory~\cite{Becirevic:2017jtw}. For a comprehensive survey of LQ models, see for instance~\cite{Buchmuller:1986zs,delAguila:2010mx,Alonso:2015sja,Dorsner:2016wpm,deBlas:2017xtg}. 
-
-Here, we limit ourselves to the case of toy models that specifically generate the operators of interest, namely $C^{Lu}_{\ell \ell33}$ and $C^{eu}_{\ell \ell33} $, for $ \ell=1$ (electron)  or $ \ell=2$ (muon). In these peculiar LQ models we then assume that couplings between right-handed top quarks and light leptons are the only ones that actually matter for TeV phenomenology. 
-
-In~\autoref{tab:LQmodels} we list the vector and scalar LQs that constitute the potential LQ candidates able to generate the solutions for $b \to s \ell \ell$ anomalies at one loop under scrutiny.  
-
+Leptoquark models generically predicted in grand unified  theories~(GUTs)~\cite{Pati:1974yy,PhysRevLett.32.438}. They typically generate baryon violating process that lead to proton decay, which are severely constrained. However, in light of the simplified SMEFT model discussed earlier \autoref{fig:2D_correlations}, it is possible to introduce leptoquarks~(LQ) that couple non-universally to quark and lepton generations.  These LQs are within reach of colliders, and not pushed to the GUT scale like their flavour-universal counterparts. Actually, they are potential candidates for explaining the flavour anomalies ~\cite{Camargo-Molina:2018cwu,Coy:2019rfr}.  Such models typically involve highly non-trivial flavour structure.  For a comprehensive survey of LQ models, see for instance~\cite{Buchmuller:1986zs,delAguila:2010mx,Alonso:2015sja,Dorsner:2016wpm,deBlas:2017xtg}. \\
+In this section, we limit ourselves to LQs that generate  $C_ {Lu}^{\ell \ell33}$ and $C_{eu}^{\ell \ell33} $, and introduce LUV in $b \to s \ell \ell$ transition at loop-level as shown in~\autoref{fig:lqflav}. With that in mind, only a handful of LQs models remain, they are summarised in ~\autoref{tab:LQmodels}.
+\begin{figure}[htpb!]
+	\centering 
+	\includegraphics[width=0.45\linewidth]{figures/x_bsllSLQ}
+	\includegraphics[width=0.45\linewidth]{figures/x_bsllVLQ}
+	\caption{Box diagrams generates by scalar $\mathcal S$ (left) and vector $\mathcal V$ leptoquarks, of the $b \to s \ell \ell$ transition with LUV. }    
+	\label{fig:lqflav}
+\end{figure}
 \begin{table}[!ht]
 	\centering
 	{
@@ -413,62 +384,68 @@ In~\autoref{tab:LQmodels} we list the vector and scalar LQs that constitute the 
 			\toprule
 			Vector LQ: $\mathcal{V^\mu}$ & $SU(3)_{c} \otimes SU(2)_{L} \otimes U(1)_{Y}$ & Comments \\
 			\midrule
-			$ \bar L_\ell  \gamma_\mu (\tau^A) Q_3 \, \mathcal{V}^{\mu (A)} $ & $(\overline{\irrep{3}},\irrep{1}\,\text{or}\,\irrep{3}, -2/3 )$ & not of interest \\
-			$  ( \mathcal{V^\mu} )^{\dagger} \,\bar e_\ell^c  \gamma_\mu Q_3 $ & $(\overline{\irrep{3}},\irrep{2}\,, 5/6 )$ & not of interest \\
-			$\bar{L}^c_\ell \gamma_\mu u_3\, i\tau^2 \, \mathcal{V^\mu}$ & $(\overline{\irrep{3}},\irrep{2}, -1/6 )$ & generates $C^{Lu}_{\ell \ell 33} > 0$\\
-			$ \overline {e}_\ell \gamma_\mu u_3\, \mathcal{V^\mu}$ & $(\overline{\irrep{3}},\irrep{1}, -5/3 )$ & generates $C^{eu}_{\ell \ell 33} < 0$ \\    
+			$ \bar L_\ell  \gamma_\mu (\tau^A) Q_3 \, \mathcal{V}^{\mu (A)} $ & $(\overline{\irrep{3}},\irrep{1}\,\text{or}\,\irrep{3} )_{-{2\over3}}$ & not of interest \\
+			$  ( \mathcal{V^\mu} )^{\dagger} \,\bar e_\ell^c  \gamma_\mu Q_3 $ & $(\overline{\irrep{3}},\irrep{2} )_{5\over6}$ & not of interest \\
+			$\bar{L}^c_\ell \gamma_\mu u_3\, i\tau^2 \, \mathcal{V^\mu}$ & $(\overline{\irrep{3}},\irrep{2} )_{-{1\over6}}$ & generates $C^{Lu}_{\ell \ell 33} > 0$\\
+			$ \overline {e}_\ell \gamma_\mu u_3\, \mathcal{V^\mu}$ & $(\overline{\irrep{3}},\irrep{1} )_{-{5\over3}}$ & generates $C^{eu}_{\ell \ell 33} < 0$ \\    
 			\midrule
 			Scalar LQ: $\mathcal{S}$ &  &  \\
 			\midrule
 			$\bar L_\ell (\tau^A) (i \tau^{2}) \, Q_3^{c} \,\mathcal{S}^{\dagger (A)} $ & $(\overline{\irrep{3}},\irrep{1}\,\text{or}\,\irrep{3} ,1/3 )$ & not of interest  \\    
-			$\bar e_\ell Q_3 \,  i \tau^2 \mathcal{S} $ & $(\overline{\irrep{3}},\irrep{2} ,-7/6 )$ & not of interest \\
-			$\bar L_\ell u_3\, \mathcal{S} $  & $(\overline{\irrep{3}},\irrep{2} ,-7/6 )$  & generates $C^{Lu}_{\ell \ell 33} < 0$ \\
-			$\bar e_\ell^c u_3\, \mathcal{S}$ & $(\overline{\irrep{3}},\irrep{1} ,1/3 )$ & generates $C^{eu}_{\ell \ell 33} > 0$ \\
+			$\bar e_\ell Q_3 \,  i \tau^2 \mathcal{S} $ & $(\overline{\irrep{3}},\irrep{2} )_{-{7\over6}}$ & not of interest \\
+			$\bar L_\ell u_3\, \mathcal{S} $  & $(\overline{\irrep{3}},\irrep{2} )_{-{7\over6}}$  & generates $C^{Lu}_{\ell \ell 33} < 0$ \\
+			$\bar e_\ell^c u_3\, \mathcal{S}$ & $(\overline{\irrep{3}},\irrep{1})_{1\over3}$ & generates $C^{eu}_{\ell \ell 33} > 0$ \\
 			\bottomrule
 		\end{tabular}
 	}
-	\caption{Scalar and vector LQ interactions under scrutiny: LQs of interest for our analysis have to generate the dimension-six operators $O^{Lu,eu}_{\ell \ell 33}$.}
+	\caption{Scalar and vector LQ interactions under scrutiny: LQs of interest for this analysis have to generate the dimension-six operators $O_{Lu,eu}^{\ell \ell 33}$.This table is published in~\cite{Alasfar:2020mne}.}
 	\label{tab:LQmodels}
 \end{table}
-
-Looking back at \autoref{fig:2D_correlations}, from the table above we recognize as the most economic LQ scenario for the resolution of $B$ anomalies at one loop, the case of the vector LQ $ \mathcal V^\mu\sim(\overline{\irrep{3}},\irrep{2}, -1/6 )$ for LUV effects originating from electron couplings, and the scalar $\mathcal S\sim (\overline{\irrep{3}},\irrep{2} ,-7/6 )$ for the ones associated to muons.
+From this table, we can  recognise the suitable models that explain the $B$ anomalies at one loop as predicted in \autoref{fig:2D_correlations}. Unlike the $Z^\prime$ model, we have distinct cases for NP coupling to the electron or the muon. The case of the vector LQ $ \mathcal V^\mu\sim(\overline{\irrep{3}},\irrep{2}, -1/6 )$ for LUV effects originating from electron couplings, and the scalar $\mathcal S\sim (\overline{\irrep{3}},\irrep{2} ,-7/6 )$ for the ones associated to muons.
 The interaction terms of interest are:
 \begin{equation}
 	\mathcal{L}_{\mathcal V \bar f f} =  \tilde \lambda_{t e}  \, \bar L^c_1\gamma_\mu u_{3} \, i \tau^2 \mathcal V^\mu  + \mathrm{h.c.} 
 	\ \ , \ \
 	\mathcal{L}_{\mathcal S \bar f f} =  \lambda_{t \mu} \,  \bar L_2 u_{3} \mathcal{S}  + \mathrm{h.c.} ,
 \end{equation}
-leading to the corresponding matching condition:
+When the LQs are integrated out, we arrive to the matching to SMEFT
 \begin{equation}
-	C^{Lu}_{1133} = +\frac{| \tilde \lambda_{t e}|^2}{M_{\mathcal V} ^2 }  
-	\ \ , \ \ C^{Lu}_{2233} = -\frac{|  \lambda_{t \mu}|^2}{2 M_{\mathcal S}^2 } \ .
+	C_{Lu}^{1133} = +\frac{| \tilde \lambda_{t e}|^2}{M_{\mathcal V} ^2 }  
+	\ \ , \ \ C_{Lu}^{2233} = -\frac{|  \lambda_{t \mu}|^2}{2 M_{\mathcal S}^2 } \ .
 \end{equation}
-In \autoref{fig:LQ_constraints} we report in (lighter) magenta the underlying 1(2)$\sigma$ region where $B$ anomalies are addressed in concordance with the minimal EFT picture of \autoref{fig:2D_correlations}. In the same plot, we also show a conservative estimate of the present LHC constraint on the mass of the LQ states considered, based on the dedicated collider study of ref.~\cite{Angelescu:2018tyl}.
-
+The LQ models are simpler in terms of added fields and parameters than the $Z^\prime$, this also reflects on their collider constraints. The scalar LQ with muonic coupling, has only one constraint coming from $pp \to t \bar t \mu \mu$, while the vector electro-phillic LQ has bounds from $t \bar t 2 \nu$ searches. These bounds are based on the dedicated collider study of ref.~\cite{Angelescu:2018tyl}, and highlighted in orange in \autoref{fig:LQ_constraints}, thy are also confronted with the $b \to s \ell \ell$ predictions shown as magenta regions.
 \begin{figure}[htpb!]
 	\centering 
 	\includegraphics[width=0.45\linewidth]{figures/Scalar_LQ.pdf}
 	\includegraphics[width=0.435\linewidth]{figures/Vector_LQ.pdf}
-	\caption{68\% (95\%) probability region in magenta for the LQ candidates addressing $b \to s \ell \ell$ anomalies at one loop. The scalar (vector) LQ corresponds to a solution with LUV effects related to muon (electron) couplings. A conservative bound on the corresponding LQ mass is reported according to the analysis of ref.~\cite{Angelescu:2018tyl}.}    
+	\caption{Constraints on the mass and LQ coupling with the muon for the scalar LQ model $\mathcal S$ on the left panel; while on the right panel the vector eletro-phillic LQ model parameters constraints are shown. The orange band shown the collider bounds based on comprehensive analysis found in ref.~\cite{Angelescu:2018tyl} The magenta regions show the models phase space at 68\% and 95\% CL that explains the flavour anomalies at one-loop.}    
 	\label{fig:LQ_constraints}
 \end{figure}
-
-We conclude noting that from the point of view of realizing the economic EFT result in~\autoref{fig:2D_correlations}, these leptoquark models should again be supplied by the combination of a singlet and a triplet $SU(2)_{L}$ muon/electron partners. Otherwise, in these models the leading contribution to $C^{HL^{(1)}}_{\ell\ell}$ would appear only at the loop level, in net distinction with the $Z^{\prime}$ scenario, where the $Z$-$Z^{\prime}$ mixing could be a priori exploited.
-
+These leptoquarks can generate o $C_{\phi L}^{(1)}\ ^{\ell\ell}$ only at loop-level, see~\autoref{fig:genlqcphi}, which is insufficient to fulfil the requirements of the flavour + EWPO fit ~\autoref{fig:2D_correlations}. Hence, the addition of the extra singlet and triplet leptonic partners discussed in the previous section is again needed to survive EWPO constraints.
+\begin{figure}[htpb!]
+	\centering 
+	\includegraphics[width=\linewidth]{figures/LQ_tri}
+	\caption{The leptoquarks considered can only generate  $C_{\phi L}^{(1)}\ ^{\ell\ell}$via loop matching. }    
+	\label{fig:genlqcphi}
+\end{figure}
 %%%%%%%%%%%%%%%%%%
 \section{Conclusion}
 \label{sec:sum}
 %%%%%%%%%%%%%%%%%%
+This chapter addressed the $b \to s \ell \ell $ anomalies' resolution based on NP models that fall under the assumptions of MFV. Which required that LUV effects being generated at loop-level.  Moreover, the interplay between EWPO and these anomalies was portrayed in ~\autoref{fig:ew_flav_bounds} and, supported with \autoref{fig:ew_flav_dg}. \\
 
-In this work we have revisited the analysis of $b \to s \ell \ell $ anomalies looking for NP solutions that generate these FCNC processes at one loop and do not involve any new source of flavour violation beyond the SM ones. To this end, we have performed a broad analysis with dimension-six operators in the SMEFT, combining the experimental data on $B$-physics with measurements of EWPO. The general outcome of our study is summarized in~\autoref{fig:ew_flav_bounds} and, supported with \autoref{fig:ew_flav_dg}, shows that a resolution of $B$ anomalies of the MFV nature can be made fully compatible with EW precision.
+The global SMEFT fit preformed hints that a unifying solution for both EWPO and LUV anomalies can be achieved with the inclusion of the right operators. Furthermore, the picture can be simplified by only including a minimum of $2$-$4$ SMEFT operators, portrayed in ~\autoref{fig:2D_correlations}. Like any multivariate analysis, the correlation amongst the coefficients played an important role in finding the proper resolution of the EWPO and flavour observables conundrum. \\ 
+Inspired by the simplified SMEFT model, we have discussed a top-phillic $Z^\prime$ model with top and muon vector-like partners. Moreover, an alternative, simpler models based on leptoquarks can also produce the $B$ anomalies at loop-level. Both models can be amended to include muonic or electronic solutions as in the SMEFT simplified scenario. For the $Z^\prime$ model, the top and lepton partners need to have the same $X$ charge for the muon case, while they need to carry an opposite one for the electronic NP coupling.  The LQ models are different for the muonic and electronic, the former is compatible with scalar and the latter with a vector LQs. \\ 
 
-From the SMEFT results derived we have then proceeded to identifying a minimal EFT scenario as captured in~\autoref{fig:2D_correlations}, that served as a simple guidance for SM UV completions. In this regard, we have explored in some detail the top-phillic and muon/electron-phillic $Z^{\prime}$, interesting for direct searches at collider as highlighted in \autoref{fig:Zp_constraints}. We have also commented on the viable leptoquark scenarios, collected in~\autoref{tab:LQmodels}. For both $Z^{\prime}$ and leptoquark solutions we have found that additional contributions  were necessary in order to maintain $Z$ coupling measurements under control:
-in particular, we have shown that a correlated pair of vector-like leptons, a $SU(2)_L$ singlet and a triplet, can realize the minimal EFT scenario depicted on~\autoref{fig:2D_correlations}. We observe that the existence of these particles may be independently motivated by the heavy new dynamics underlying the origin of neutrino masses and/or by a tentative explanation of the $(g-2)_{\mu}$ anomaly~\cite{Kannike:2011ng}.
+Both of these models required the inclusion of correlated pair of vector-like leptons, a $SU(2)_L$ singlet and a triplet, in order to realise the minimal EFT scenario depicted on~\autoref{fig:2D_correlations}. We observe that the existence of these particles may be independently motivated by the heavy new dynamics underlying the origin of neutrino masses and/or by a tentative explanation of the $(g-2)_{\mu}$ anomaly~\cite{Kannike:2011ng,Muong-2:2021ojo}.\\
 
-We conclude by noting that the measurement of $B$ decays at the scale of a few GeV is expected to reach a precision regime with the completion of the future runs at LHC and SuperKEKB. Hence, better measurements of the LUV observables and angular distributions of $b\to s \ell \ell$ will be available in the next few years from Belle~II~\cite{Kou:2018nap} and LHCb~\cite{Bediaga:2018lhg}. These will add a fundamental verification of the current interpretation of $B$ anomalies and of the direction in our search for NP signatures. 
+Future measurements of $B$ decays by the LHCb and Belle-II  is expected to reach precision regime in the upcoming years ~\cite{Kou:2018nap,Bediaga:2018lhg}. These measurements, in addition to high-energy ones at linear colliders ~\cite{deBlas:2019rxi,deBlas:2019wgy} will reveal more on the nature of these anomalies and their connection with Higgs physics. This is already hinted by the global fits done here with the current data predicting NP Higgs operators like $ C_{\phi L/e}$. Understanding how observables from different sectors correlate is an essential kex to understanding the nature of NP underlying these anomalies amongst others.
+
+
+%We conclude by noting that the measurement of $B$ decays at the scale of a few GeV is expected to reach a precision regime with the completion of the future runs at LHC and SuperKEKB. Hence, better measurements of the LUV observables and angular distributions of $b\to s \ell \ell$ will be available in the next few years from Belle~II~\cite{Kou:2018nap} and LHCb~\cite{Bediaga:2018lhg}. These will add a fundamental verification of the current interpretation of $B$ anomalies and of the direction in our search for NP signatures. 
 %
-Along these lines, should these signals of LUV persist, their interplay with EW precision measurements could be further tested at future $e^+ e^-$ colliders. In particular, circular $e^+ e^-$ colliders running at the $Z$ pole, such as the FCC-ee~\cite{Abada:2019lih,Abada:2019zxq} or CEPC~\cite{CEPCStudyGroup:2018ghi}, could test deviations in the lepton universality of neutral weak currents with more than one order of magnitude improvement in precision compared to current data. At linear colliders, like the ILC~\cite{Bambade:2019fyw} or CLIC~\cite{deBlas:2018mhx}, where there is no proposed run at the $Z$ pole, it would still be possible to obtain a significant improvement in the measurements of EWPO via radiative return to the $Z$~\cite{Fujii:2019zll}. 
+%Along these lines, should these signals of LUV persist, their interplay with EW precision measurements could be further tested at future $e^+ e^-$ colliders. In particular, circular $e^+ e^-$ colliders running at the $Z$ pole, such as the FCC-ee~\cite{Abada:2019lih,Abada:2019zxq} or CEPC~\cite{CEPCStudyGroup:2018ghi}, could test deviations in the lepton universality of neutral weak currents with more than one order of magnitude improvement in precision compared to current data. At linear colliders, like the ILC~\cite{Bambade:2019fyw} or CLIC~\cite{deBlas:2018mhx}, where there is no proposed run at the $Z$ pole, it would still be possible to obtain a significant improvement in the measurements of EWPO via radiative return to the $Z$~\cite{Fujii:2019zll}. 
 %
-Furthermore, the high-energy regime achievable at linear colliders would allow, after crossing the $t\bar{t}$ threshold, to directly test the effects of the interactions $O^{Lu,eu}_{1133}$ via $e^+ e^- \to t\bar{t}$. 
-For the muon case, on the other hand, to test $O^{Lu,eu}_{2233}$ one would still need to rely on more complicated signals, such as $t\bar{t}\mu^+\mu^-$, which would be in any case cleaner than at the LHC. (However, ideal optimal tests of these 4-fermion operators in 2-to-2 scattering processes would require a high-energy muon collider.) All of these could represent valuable additions from a ``flavour'' perspective in the interpretation of EW (and Higgs) measurements at these future machines within the EFT framework~\cite{deBlas:2019rxi,deBlas:2019wgy}.
+%Furthermore, the high-energy regime achievable at linear colliders would allow, after crossing the $t\bar{t}$ threshold, to directly test the effects of the interactions $O^{Lu,eu}_{1133}$ via $e^+ e^- \to t\bar{t}$. 
+%For the muon case, on the other hand, to test $O^{Lu,eu}_{2233}$ one would still need to rely on more complicated signals, such as $t\bar{t}\mu^+\mu^-$, which would be in any case cleaner than at the LHC. (However, ideal optimal tests of these 4-fermion operators in 2-to-2 scattering processes would require a high-energy muon collider.) All of these could represent valuable additions from a ``flavour'' perspective in the interpretation of EW (and Higgs) measurements at these future machines within the EFT framework~\cite{deBlas:2019rxi,deBlas:2019wgy}.
 
