@@ -3,9 +3,9 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{ Virtual two-loop calculation of  $Zh$ production via gluon fusion}\label{chap:hz}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\par As we have seen in~\autoref{sec:Higgscoupl}, Higgs couplings to the weak vector bosons, i.e. $Z$ and $W$ is approaching the precision level. For their measurements both VBF and $Vh$ channels are used, the associated Higgs production with the vector bosons are not only important for measuring the $VVh$ coupling but also other couplings and properties as discussed in~\autoref{vhproduction}. The most notable example emphasising the importance of this channel is the measurement of the Higgs decaying to beauty quarks~$h \rightarrow b \bar{b}$ by both ATLAS and CMS~\cite{Aaboud:2018zhk, Sirunyan:2018kst}. Hence, the~$Vh$ Higgs production is an important channel to look for in the future runs of the LHC. As the statistical and systematic uncertainties coming from the experimental setup of the LHC will be eventually reduced in the future runs, due to higher integrated luminosity,  upgraded detectors and improved analysis techniques. There is an exigency to reduce theoretical uncertainties emerging from the perturbative calculations of  cross-sections. In order to accomplish that, one should include higher order terms to the theoretical prediction. Since $Wh$ production has no gluon fusion channel, and the main source of $Zh$ uncertainties actually come from its gluon fusion part. Higher order correction to the $gg \to Zh$ is the key to improve the theoretical modelling for $Vh$. \\ 
-It should be noted that the $Zh$ channel can receive contributions from new particles \cite{Harlander:2013mla}, particularly at the large invariant-mass region where the gluon fusion contribution becomes more important, and HTL approximation would typically fail. Therefore, better understanding of the SM prediction of the $Zh$ gluon fusion channel is crucial for both the SM precision measurements of Higgs production within the SM and for testing NP in this channel, e.g. new vector-like leptons.  \\ This chapter aims to demonstrate the use of $\pt$--expansion technique, developed in ~\cite{Bonciani:2018omm} as an approach to compute the two-loop virtual corrections to $gg \to Zh$ analytically, including top mass effects. This method also allows for the use of  Pad\'e approximants, in order to extend the range of validity of this calculation.\la{cite the paper once it is out}
-\par This chapter is structured as follows : In~\autoref{chap6sec:GenNot} contains the general notation we have used for the gluon fusion $Zh$ process calculation. Then, in~\autoref{sec:ptexp} the transverse momentum expansion method is discussed.  Calculation of the LO form-factors in the transverse momentum expansion is illustrated in~\autoref{sec:LOPtExp} as a proof of concept for the $\pt$-expansion technique. Outline of the two-loop calculation is discussed in~\autoref{sec:quattro}. Finally, in~\autoref{sec:hzres}, the results of our calculation are shown with concluding remarks at the end.  This chapter is based on the work my collaborators and I have published in ~\cite{Alasfar:2021ppe}. 
+\par  Higgs couplings to the weak vector bosons are approaching the precision level. For their measurements both VBF and $Vh$ channels are used, the associated Higgs production with the vector bosons are not only important for measuring the $VVh$ coupling amongst others, as discussed in~\autoref{vhproduction}. The most notable example emphasising the importance of this channel is the measurement of the Higgs decaying to beauty quarks~$h \rightarrow b \bar{b}$ by both ATLAS and CMS~\cite{Aaboud:2018zhk, Sirunyan:2018kst}. Hence, the~$Vh$ Higgs production has significant potential for the future runs of the LHC. The statistical and systematic uncertainties coming from the experimental setup of the LHC will be eventually reduced in the future runs, due to higher integrated luminosity,  upgraded detectors and improved analysis techniques. There is an exigency to reduce theoretical uncertainties emerging from the perturbative calculations of  cross-sections,  to achieve that, one should include higher order terms. Since $Wh$ production has no gluon fusion channel, and the main source of $Zh$ uncertainties stem from its gluon fusion part. Higher order corrections to the $gg \to Zh$ is therefore essential for improving the theoretical modelling for this process. \\ 
+It should be noted that the $Zh$ channel can receive contributions from new particles~\cite{Harlander:2013mla}, also as we shall see in~\autoref{chap:flav}; particularly at the large invariant-mass region where the gluon fusion contribution becomes more important, and HTL approximation would typically fail. Therefore, better understanding of the SM prediction of the $Zh$ gluon fusion channel is crucial for both the SM precision measurements of Higgs production within the SM and for testing NP in this channel.  \\ This chapter aims to demonstrate the use of $\pt$--expansion technique, developed in ~\cite{Bonciani:2018omm} as an approach to compute the two-loop virtual corrections to $gg \to Zh$ analytically, including top mass effects. This method also allows for the use of  Pad\'e approximants, in order to extend the range of validity of this calculation~\cite{Bellafronte:2022jmo}.
+\par This chapter is structured as follows: \autoref{chap6sec:GenNot} contains the general notation we have used for the gluon fusion $Zh$ process calculation. Then in~\autoref{sec:ptexp}, the transverse momentum expansion method is discussed.  Calculation of the LO form-factors in the transverse momentum expansion is illustrated in~\autoref{sec:LOPtExp} as a proof of concept for the $\pt$-expansion technique. Outline of the two-loop calculation is discussed in~\autoref{sec:quattro}. Finally, in~\autoref{sec:hzres}, the results of our calculation are shown with concluding remarks at the end.  This chapter is based on the work my collaborators and I published in~\cite{Alasfar:2021ppe}. 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{General notation \label{chap6sec:GenNot} }
 \par The amplitude  $g^\mu_a(p_1)g^\nu_b(p_2)\to Z^\rho(p_3) h(p_4)$ can be written as
@@ -24,7 +24,7 @@ tensors $\mathcal{P}_i^{\mu\nu\rho}$. Due to the presence of the~$\gamma_5$ thes
 proportional to the Levi-Civita total anti-symmetric tensor
 $\epsilon^{\alpha\beta\gamma\delta}$. One can choose to an orthogonal basis explicitly shown in~\autoref{app:uno}, such that
 \begin{equation}
-	\mathcal{P}_i^{\mu\nu\rho} \mathcal{P}_j\,_{\mu\nu\rho} = 0, \,\,\, \,\, \text{for}\, i \neq j 
+	\mathcal{P}_i^{\mu\nu\rho} \mathcal{P}_j\,_{\mu\nu\rho} = 0, \,\,\, \,\, \text{for}\, i \neq j .
 \end{equation}
 By this choice one obtains unique form factors corresponding to each projector
 \begin{equation}
@@ -40,7 +40,7 @@ where $\hat{s}+\hat{t}+\hat{u}=\mz^2+\mh^2$ and all the momenta are considered t
 be incoming. 
 The form-factors~ $\amp_i$ can be perturbatively expanded in orders of~$\alpha_s$, 
 \begin{equation}
-\amp_{i} = \sum_{k=0} \left(\frac{\alpha_s}{\pi} \right) ^k \amp_i^{(k)}
+\amp_{i} = \sum_{k=0} \left(\frac{\alpha_s}{\pi} \right) ^k \amp_i^{(k)}.
 \label{eq:ampexp}
 \end{equation}
 Where~$\amp_i^{(0)}$ and $\amp_i^{(1)}$ are the LO and NLO terms, respectively. Using Fermi's Golden Rule, we can write thee Born partonic cross-section as
@@ -54,15 +54,15 @@ $\hat{t}^\pm=[-\hat{s}+\mh^2+\mz^2\pm\sqrt{(\hat{s}-\mh^2-\mz^2)^2-4\mh^2\mz^2}\
 \begin{figure}
 	\begin{center}
 		\includegraphics[width=12cm]{./figures/Feynman_LO}
-		\caption{Feynman diagrams type for the LO $gg \to Zh$ process. The triangle diagrams in a general $\xi$ gauge involve $Z$ and the neutral Goldstone~$G^0$ propagators. }
+		\caption{Example Feynman diagrams for the LO $gg \to Zh$ process. The triangle diagrams in a general $\xi$ gauge involve $Z$ and the neutral Goldstone~$G^0$ propagators. }
 		\label{fig:dialo}
 	\end{center}
 \end{figure}
 \par The LO has two sets of diagrams, the triangle, and box diagrams shown in~\autoref{fig:dialo}. In (a), the triangle diagrams contains a neutral Goldstone boson~$G^0$, instead in (b) the $Z$ boson is mediated. The interplay between these two diagram types depends on the~$\xi$ gauge. Moreover, the $Z$ boson is strictly off-shell, due to Furry's theorem.
-In the Landau gauge the $Z$- mediated diagrams will also vanish, this can be seen by considering the subamplitude~$ggZ^*$ which in the Landau gauge can be related to the decay of a massive vector boson
+In the Landau gauge the $Z$- mediated diagrams will also vanish, this can be seen by considering the sub-amplitude~$ggZ^*$ which in the Landau gauge can be related to the decay of a massive vector boson
 with mass $\sqrt{\hat{s}}$ into two massless ones, a process that is
 forbidden by the Landau-Yang theorem \cite{Landau:1948kw,Yang:1950rg}.
-The triangle diagrams are also proportional to the mass difference between the up and down type quarks. In this calculation, the first and second generation quarks are assumed to be massless, as well as the $b$ quark, hence light quarks loops  do not contribute to this process. The same would apply to the box diagrams (c), as they are proportional to the quark Yukawa coupling, and vanish in the massless quarks case. Moreover, triangle diagrams with $b-$ quark loops contribute to $ \sim 1\%$ of the total amplitude, computed in the limit $m_b \to 0$.  
+The triangle diagrams are also proportional to the mass difference between the up and down type quarks. In this calculation, only the top quark is considered massive, hence light quarks loops do not contribute to this process. It should be noted that, triangle diagrams with $b-$ quark loops contribute to $ \sim 1\%$ of the total amplitude, computed in the limit $m_b \to 0$.  
 %%%%%%%
 \subsection{The transverse momentum expansion}
 \label{sec:ptexp}
@@ -81,7 +81,7 @@ where
 $\dm = (\mh^2 -\mz^2)/2$. Eq.(\ref{ptexp}) implies 
 $\pt^2/\hat{s} < 1$ that, together with the kinematical constraints
 $\mh^2/\hat{s}< 1$ and
-$\mz^2/\hat{s} < 1$. With these relations in mind, one can expand the amplitudes in terms of small  $\pt^2/\hat s$, $\mh^2/\hat{s}$ and $\mz^2/\hat{s}$, which is technically valid throughout the whole phase space, contrary to the LME and HE limits.  The caveat for this expansion is that, the amplitude does not depend on $\pt$ explicitly. Instead, one would expand in the reduced Mandelstam variables~$t^\prime/s^\prime\ll 1$ or $u^\prime/s^\prime\ll 1$, defined as
+$\mz^2/\hat{s} < 1$. With these relations in mind, one can expand the amplitudes in terms of small  $\pt^2/\hat s$, $\mh^2/\hat{s}$ and $\mz^2/\hat{s}$, which is technically valid throughout the whole phase space, contrary to the HTL and HE limits.  The caveat for this expansion is that, the amplitude does not depend on $\pt$ explicitly. Instead, one would expand in the reduced Mandelstam variables~$t^\prime/s^\prime\ll 1$ or $u^\prime/s^\prime\ll 1$, defined as
 \beq
 s^\prime=p_1\cdot p_2=\frac{\hat{s}}{2},~~
 t^\prime=p_1\cdot p_3=\frac{\hat{t}-\mz^2}{2},~~ u^\prime =
@@ -91,10 +91,10 @@ and satisfy
 \beq
 s^\prime + t^\prime + u^\prime =\dm.
 \eeq
-The choice of the expansion parameter~$t^\prime$ or ~$u^\prime$  depends whether one expands in the forward or backwards kinematics. Because the process $gg \to Zh$, has two particles in the final states with different masses, the amplitude is not symmetric under the their exchange. One therefore cannot compute the cross-section by integrating only the forward-expanded amplitude~\cite{Alasfar:2021ppe}, contrary what has been done for the Higgs pair~\cite{Bonciani:2018omm}. In order to overcome this issue, one could further examine the projectors in~\autoref{app:uno} and observe that they can be split into symmetric and anti-symmetric parts with respect to the exchange $ t^\prime \leftrightarrow u^\prime$. Then, expand the symmetric part in the forward kinematics, like the Higgs pair case. As for the anti-symmetric part, the antisymmetric factor is simply extracted by multiplying the form-factors by $1/(\hat{t}-\hat{u})$,
+The choice of the expansion parameter~$t^\prime$ or ~$u^\prime$  depends whether one expands in the forward or backwards kinematics. Because the process $gg \to Zh$, has two particles in the final states with different masses, the amplitude is not symmetric under the their exchange. One therefore cannot compute the cross-section by integrating only the forward-expanded amplitude, contrary what has been done for the Higgs pair~\cite{Bonciani:2018omm}. In order to overcome this issue, one could further examine the projectors in~\autoref{app:uno} and observe that they can be split into symmetric and anti-symmetric parts with respect to the exchange $ t^\prime \leftrightarrow u^\prime$. Then, expand the symmetric part in the forward kinematics, like the Higgs pair case. Regarding the anti-symmetric part, the antisymmetric factor is simply extracted by multiplying the form-factors by $1/(\hat{t}-\hat{u})$,
 written as $1/( 2 s^\prime - 4 t^\prime - 2 \dm)$, then perform the expansion in the forward kinematics and finally multiply back by $(\hat{t}-\hat{u})$.
 
-\par In order to implement the $\pt$-expansion at the Feynman diagrams level we start by splitting the momenta into longitudinal and transverse with respect to the beam direction, by introducing the vector~\cite{Bonciani:2018omm}, 
+\par In order to implement the $\pt$-expansion at the Feynman diagrams level we start by splitting the momenta into longitudinal and transverse components with respect to the beam direction, by introducing the vector~\cite{Bonciani:2018omm}, 
 \begin{align}
 r^\mu &= p_1^\mu +p_3^\mu,
 \end{align}
@@ -124,14 +124,14 @@ t^\prime = -\frac{s^\prime}2 \left\{ 1 - \frac{\dm}{s^\prime} \pm
 \label{tpdef}
 \eeq
 implying  that the expansion in
-small $\pt$ (the minus sign case in eq.(\ref{tpdef})) can be realized
+small $\pt$ (the minus sign case in eq.(\ref{tpdef})) can be realised
 at the level of Feynman diagrams, by expanding the propagators
 in terms of the vector $r^\mu$ around $r^\mu \sim 0$ or, equivalently,
 $p_3^\mu \sim -p_1^\mu$, see eq.(\ref{rpp}). 
 
 \section{Born cross-section in the $\pt$-expansion }
 \label{sec:LOPtExp}
-\par As a baseline test for the validity and convergence behaviour of the~$\pt$ expansion we start by computing the LO amplitude, and consequently the Born partonic cross-section in the $\pt$ expansion then compare it with the exact results found in~\cite{Kniehl:1990iva, Dicus:1988yh} . \\ Starting by defining the one-loop functions appearing in the similar calculation of the Born cross-section for ~$gg \to hh$ in the same expansion carried out in ref.~\cite{Bonciani:2018omm}
+\par As a baseline test for the validity and convergence behaviour of the~$\pt$-expansion we start by computing the LO amplitude, and consequently the Born partonic cross-section in the $\pt$ expansion then compare it with the exact results found in~\cite{Kniehl:1990iva, Dicus:1988yh}. \\ Starting by defining the one-loop functions appearing in the similar calculation of the Born cross-section for ~$gg \to hh$ in the same expansion carried out in ref.~\cite{Bonciani:2018omm}
 \bea
 B_0[\hat{s},\mt^2,\mt^2] \equiv  B_0^+, &
 B_0[- \hat{s},\mt^2,\mt^2]  \equiv B_0^- , &\\
@@ -151,7 +151,7 @@ B_0[q^2,m_1^2,m_2^2] = \frac1{i\pi^2}
 	\label{Czero}
 \end{align}
 are the Passarino-Veltman functions \cite{Passarino:1978jh},
-with $d$ the dimension of spacetime and $\mu$ the 't Hooft mass.
+with~$d$ being the spacetime dimension and $\mu$ the 't Hooft mass.
 %
 There are only two non-vanishing form-factors at LO, one is symmetric~${\cal A}_2$, and the other is antisymmetric~${\cal A}_6$, in the $\pt$-expansion, these form-factors are give by, up to order ~${\mathcal O}(\pt^2)$
 \bea
@@ -204,9 +204,9 @@ and
 where these form-factors were divided into triangle ($\triangle$) and
 box ($\square$) contributions, and $B_0$ functions are understood as the
 finite part of the integrals on the right hand side of eq.\eqref{Bzero}.
-\par Using several truncations of the $\pt$-expansion, and comparing it to the exact LO result, one can see in~\autoref{fig:LO} the exact Born partonic LO cross section (red line) as a function of the invariant mass of the $Zj$ system, $M_{Zh}$, in comparison to the $\pt$-expansions. 
-For the numerical evaluation of the cross section here and in
-the following, we used as SM input parameters
+\par Using several truncations of the $\pt$-expansion, and comparing it to the exact LO result, one can see in~\autoref{fig:LO} the exact Born partonic LO cross section (red line) as a function of the invariant mass of the $Zh$ system, $M_{Zh}$, in comparison to the $\pt$-expansions. 
+For the numerical evaluation of the cross-section here and in
+the following, the SM parameters were used 
 \begin{equation}
 	\begin{split}
 		\mz=91.1876 \,\gev, ~~\mh=125.1 \gev, ~~  \mt=173.21\, \gev, \nn\\
@@ -221,13 +221,13 @@ the following, we used as SM input parameters
 		The exact (red line) is plotted together with results at
 		different orders in the $\pt$-expansion (dashed lines). In the bottom part,
 		the ratio of the full result over the $\pt$-expanded one at
-		various orders is shown. This plot has been already published in~\cite{Alasfar:2021ppe}}
+		various orders is shown. This plot has been published in~\cite{Alasfar:2021ppe}}
 	\label{fig:LO}
 \end{figure}
 From the ratio plotted in the lower panel of ~\autoref{fig:LO} , we observe that the~$\mathcal{O}(\pt^0)$ expansion is in good agreement with the exact result  when $M_{Zh}\lesssim 2\mt$. Inclusion of higher order terms up tp~$\mathcal{O}(\pt^6)$ extended the validity of the expansion to reach  $M_{Zh}\lesssim 750\gev$. This is the similar behaviour seen in ~\cite{Bonciani:2018omm} for Higgs pair.  Therefore, one would expect the $\pt$-expanded two-loop virtual correction to be an accurate approximation with the exact (numerical) result for the region of the invariant mass of  $M_{Zh}\sim 700-750\gev$. 
 Similar conclusions can be seen more explicitly in~\autoref{tab:partonic}, where it is shown that the partonic cross-section
 at $\mathcal{O}(\pt^4)$ agrees with the full result for
-$M_{ZH} \lesssim 600 \gev$  on the permille level 
+$M_{ZH} \lesssim 600 \gev$  on the per-mille level 
 and the agreement further improves when $\mathcal{O}(\pt^6)$ terms are included.
 \begin{table}
 	\renewcommand{\arraystretch}{1.2}
@@ -241,7 +241,7 @@ and the agreement further improves when $\mathcal{O}(\pt^6)$ terms are included.
 		\cellcolor{lightgray} 750 & 0.5129 & 0.2482 & 0.3129 & 0.2841 &  0.2919 \\ \hline
 	\end{tabular}
 	\caption{The partonic cross section $\hat{\sigma}^{(0)}$ at
-		various orders in $\pt$ and the full computation for several values of $M_{Zh}$, This table has been already published in~\cite{Alasfar:2021ppe}. \label{tab:partonic}}
+		various orders in $\pt$ and the full computation for several values of $M_{Zh}$, This table has been published in~\cite{Alasfar:2021ppe}. \label{tab:partonic}}
 \end{table}
 %%%%%%%
 \section{ NLO calculation }
@@ -276,7 +276,7 @@ The $q \bar q g$ vertex correction involves a renormalisation of the strong coup
 	\Zas = 1- \frac{\alpha_s}{4 \pi} \, \frac{1}{ \epsilon}\,  \left( \beta_0-\frac{2}{3} \right) \left(\frac{\mu_R^2}{m_t^2} \right) ^\epsilon,
 \end{equation}
 and the constant $ \beta_0 = \frac{11}{3} C_A -\frac{2}{3}N_f$, where $N_f$ is the number of ``active'' flavours. The 5-flavour scheme $N_f=5$ is adopted here. 
-\par The loop integrals were evaluated via dimensional regularisation in $d= 4-2\epsilon$ dimensions. Which requires some caution when $\gamma_5$ is present in the amplitude. We let $\gamma_5$ naively anti-commute with all $d$-dimensional $\gamma_\mu$'s and then correct that with the finite renormalisation constant known as \textbf{ Larin counter-term}~\cite{Larin:1993tq}
+\par The loop integrals were evaluated via dimensional regularisation in $d= 4-2\epsilon$ dimensions. Which requires some caution when $\gamma_5$ is present in the amplitude. We let $\gamma_5$ naively anti-commute with all $d$-dimensional $\gamma_\mu$'s and then correct that with the finite renormalisation constant known as \textbf{Larin counter-term}~\cite{Larin:1993tq}
 \begin{equation}
 	Z_5 = 1- 2\, C_F.
 \end{equation}
@@ -284,7 +284,7 @@ The renormalised amplitude is written as
 \begin{equation}
 	\mathcal M  (\alpha_s, m, \mu_R) = Z_A \mathcal M( \alpha_s^0, m^0).
 \end{equation}
-Putting all the above substitutions together, we get the renormalised  two-loop form-factor:
+Putting all the above substitutions together, we get the renormalised two-loop form-factor:
 \begin{align}
 	( \mathcal A ^{(1)})^R &= 	\mathcal A ^{(1)} -	\mathcal A_{UV} ^{(0)}- 	\mathcal A_{UV, m} ^{(0)} + \mathcal A_{\text{Larin}} ^{(0)}   \\
 	\mathcal A_{UV} ^{(0)} &= \asr\,\frac{\beta_0}{\epsilon} \left( \frac{\mu_R^2}{\hat s} \right) ^{ -\epsilon} 	\mathcal A ^{(0)}.  \nonumber \\
@@ -337,12 +337,12 @@ resulting MI's were identical to the one for Higgs pair
 production \cite{Bonciani:2018omm}. Nearly all of them are expressed
 in terms of generalised harmonic polylogarithms with the exception of
 two elliptic integrals \cite{vonManteuffel:2017hms, Bonciani:2018uvv}. The renormalisation and IR pole subtraction procedure was carried out like prescribed~\autoref{subsec:ren}.\\
-As a control, the two-loop box diagrams were also computed in the LME up to  $\mathcal{O}(1/\mt^6)$. Since this expansion should be included within the $\pt$-expansion. We have retained the LME analytic expression by further expanding the $\pt$-expanded amplitude in small ~$\hat{s}/\mt^2$. Providing an additional cross-check for the validity of the $\pt$-expansion.
+As a control, the two-loop box diagrams were also computed in the HTL up to  $\mathcal{O}(1/\mt^6)$. Since this expansion should be included within the $\pt$-expansion. We have retained the HTL analytic expression by further expanding the $\pt$-expanded amplitude in small ~$\hat{s}/\mt^2$. Providing an additional cross-check for the validity of the $\pt$-expansion.
 %%%%%
 \section{Results and conclusions} \label{sec:hzres}
 The virtual corrections to the gluon fusion $Zh$ production have been implemented in a  \texttt{FORTRAN} code using  \texttt{handyG} \cite{Naterop:2019xaf}, for the evaluation of generalised harmonic polylogarithms, \texttt{Chaplin}~\cite{Buehler:2011ev} for the harmonic polylogarithms appearing in the triangle two-loop functions  while 
 the elliptic integrals are evaluated using the routines of
-ref.\cite{Bonciani:2018uvv}. Since the result is analytic, the code is significantly faster than the numerical evaluation of the two-loop amplitude~\cite{Chen:2020gae}, with evalution time of ca. 0.5 min per one phase space point on a personal laptop.\\
+ref.\cite{Bonciani:2018uvv}. Since the result is analytic, the code is significantly faster than the numerical evaluation of the two-loop amplitude~\cite{Chen:2020gae}, with evaluation time of ca. 0.5 min per one phase space point on a personal laptop.\\
 In order to facilitate the comparison of our results with the ones
 presented in the literature, we define the finite part of the virtual corrections
 as in
@@ -361,24 +361,23 @@ ref.\cite{Davies:2020drs}\footnote{The definition of the matrix elements here
 \end{equation}
 and in the numerical evaluation of eq.(\ref{eq:vfin}) we fixed
 $\mu_R= \sqrt{\hat{s}}$.
-Triangle and LME box toopologies were validated against the results of refs.\cite{Hasselhuhn:2016rqt,Davies:2020drs} finding perfect
+Triangle and HTL box toopologies were validated against the results of refs.~\cite{Hasselhuhn:2016rqt,Davies:2020drs} finding perfect
 agreement at the form-factor level, i,.e.$\mathcal{A}_i^{(1)}$. 
 
 The virtual part of the partonic cross-section
-from the finite part of the virtual corrections in eq.\eqref{eq:vfin} is defined  by
+from the finite part of the virtual corrections in eq.~\eqref{eq:vfin} is defined  by
 \begin{equation}
 	\Delta \hat{\sigma}_{virt}=
 	\int_{\hat{t}^-}^{\hat{t}^+} d\hat{t}
 	\frac{\alpha_s}{16\pi^2}\frac{1}{\hat{s}^2}\mathcal{V}_{fin}\,
 	\label{eq:deltasigma}
 \end{equation}
-This function is used to confront $\pt$-expanded results. Starting with low $M_{Zh}$ we have compared the $\pt$-expanded with the LME 	$\mathcal{V}_{fin}$, finding a  good numerical agreement.
+This function is used to confront $\pt$-expanded results. Starting with low $M_{Zh}$ we have compared the $\pt$-expanded with the HTL 	$\mathcal{V}_{fin}$, finding a  good numerical agreement.
 It is important to note that, at the same order in the expansion, 
 the $\pt$-expanded terms are more accurate than
-the LME ones, although computationally more demanding.  Additional checks have been done using the numerical evaluation of the NLO amplitude by \cite{Chen:2020gae}, where they have evaluated the exact two-loop MI's using \texttt{pySecDec}
-\cite{Borowka:2017idc,Borowka:2018goh}.  \autoref{tab:comparison} shows a comparison between our $\pt$-expanded~$\mathcal{V}_{fin} 4/(\as^2 \alpha^2)$ versus the exact numerical result of ~\cite{Chen:2020gae} for several phase space points. 
+the HTL ones, although computationally more demanding.  Additional checks have been done using the numerical evaluation of the NLO amplitude by \cite{Chen:2020gae}, where they have evaluated the exact two-loop MI's using \texttt{pySecDec}~\cite{Borowka:2017idc,Borowka:2018goh}.  \autoref{tab:comparison} shows a comparison between our $\pt$-expanded~$\mathcal{V}_{fin} 4/(\as^2 \alpha^2)$ versus the exact numerical result of ~\cite{Chen:2020gae} for several phase space points. 
 As can be seen from the table the relative difference 
-between the two results is less than half a permille.
+between the two results is less than half a per-mille.
 \begin{table}
 	\renewcommand{\arraystretch}{1.2}
 	\centering
@@ -389,12 +388,12 @@ between the two results is less than half a permille.
 		\cellcolor{lightgray} 4.130574250302561 & \cellcolor{lightgray} -1.750372271104745 & 6912.361(3) & 6915.797 \\
 		\cellcolor{lightgray} 4.130574250302561 & \cellcolor{lightgray} -2.595461551488002 & 6981.09(2) & 6984.20  \\ \hline
 	\end{tabular}
-	\caption{Comparison of $\mathcal{V}_{fin} 4/(\alpha_s^2 \alpha^2)$ with the numerical results of ref.\cite{Chen:2020gae}. This plot has been already published in~\cite{Alasfar:2021ppe}. \label{tab:comparison}}
+	\caption{Comparison of $\mathcal{V}_{fin} 4/(\alpha_s^2 \alpha^2)$ with the numerical results of ref.\cite{Chen:2020gae}. This plot has been published in~\cite{Alasfar:2021ppe}. \label{tab:comparison}}
 \end{table}
 \begin{figure}[th]
 	\centering
 	\includegraphics[width=0.7\textwidth]{./figures/sigma_part_virt_LMEreweighted.pdf}
-	\caption{$\Delta \hat{\sigma}_{virt}$ defined by eq.\eqref{eq:deltasigma}, shown as a function of $M_{ZH}$. The various orders of the $\pt$-expansion are plotted as dashed lines, while the black and red continuous lines stand for the LME and  reweighted $m_t \rightarrow \infty$ results, respectively.This plot has been already published in~\cite{Alasfar:2021ppe}.}
+	\caption{$\Delta \hat{\sigma}_{virt}$ defined by eq.\eqref{eq:deltasigma}, shown as a function of $M_{Zh}$. The various orders of the $\pt$-expansion are plotted as dashed lines, while the black and red continuous lines stand for the HTL and reweighted $m_t \rightarrow \infty$ results, respectively.This plot has been published in~\cite{Alasfar:2021ppe}.}
 	\label{fig:deltasigma}
 \end{figure}
 %%%%%%%%%%
@@ -406,15 +405,15 @@ available, i.e.~both $\mathcal{A}^{(0)}$ were used and the double-triangle
 contribution are evaluated exactly, while for
 $\mathcal{A}^{(1)}$ we use the various orders in the $\pt$-expansion.
 For comparison, the results are shown were
-$\mathcal{A}^{(1)}$ is replaced by the one computed in LME up to
+$\mathcal{A}^{(1)}$ is replaced by the one computed in HTL up to
 $\mathcal{O}(1/m_t^6)$ (full black line), which as mentioned before is valid
-up to $M_{ZhH}< 2 \mt$. We observe that within the validity of the LME our
+up to $M_{ZhH}< 2 \mt$. We observe that within the validity of the HTL our
 results agree well with it.
 Furthermore, the results in the infinite top
 mass limit reweighted by the full amplitudes squared can be seen as the full red line in the plot, corresponding to the
 approach of ref.\cite{Altenkamp:2012sx}, keeping though the double triangle
 contribution in full top mass dependence. 
-Differently from the LME line, the $\mt \to \infty$ reweighted one
+Differently from the HTL line, the $\mt \to \infty$ reweighted one
 shows a behaviour, for  $M_{Zh} \gtrsim 400\gev$, similar to the behaviour of
 the $\pt$ lines. Still,   the difference
 between the reweighted result and the $\pt$-expanded ones is  significant.
@@ -425,13 +424,13 @@ three results are very close up to $M_{Zh} \sim 500\gev$.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \par  The calculation of the virtual two-loop corrections to the $gg \to Zh$ is done using exact results for the triangle and double-triangle topologies, and in the $\pt$-expansion for the box one.  The result of the calculation showed that we get the exact same MI's that was found for Higgs pair production \cite{Bonciani:2018omm} , mostly these MI's are expressed in terms of generalised harmonic polylogarithms with the
 exception of two elliptic integrals. Using the LO calculation, we have shown the validity of the $\pt$-expansion covering the invariant mass interval  $M_{Zh}\lesssim 750\text{ GeV}$ which covers $\sim 98\%$ of the total phase space for~$13-14$ TeV energies.\\
-The $\pt$-expansion agrees with per mill level with the numerical results found in ~\cite{Chen:2020gae}. However, it allows for fast computation of the amplitude with circa one second per phase space point using a modern laptop with mid-range specifications. Additionally. the integration over the $\hat{t}$ variable
-in eq.(\ref{eq:deltasigma}) converges very well.  The flexibility of our analytic
+The $\pt$-expansion agrees with per mill level with the numerical results found in~\cite{Chen:2020gae}. However, it allows for fast computation of the amplitude with circa one second per phase space point using a modern laptop with mid-range specifications. Additionally. the integration over the $\hat{t}$ variable
+in eq.(\ref{eq:deltasigma}) converges superbly.  The flexibility of our analytic
 results, an application to beyond-the-Standard Model is certainly
 possible.\\ 
 Finally, it should be noted that this calculation complements
-nicely the results obtained in ref.\cite{Davies:2020drs} using a high-energy
+nicely the results obtained in ref.~\cite{Davies:2020drs} using a HE
 expansion, that according to the authors provides precise results for
 $\pt \gtrsim 200\gev$. The merging of the two analyses is going to provide
 a result that covers the whole phase space, can be easily implemented into a
-Monte Carlo code using v which is currently a work in progress in \la{Cite the new paper here-later}
+Monte Carlo code using, the virtual correction results of this bridging procedure is published in~\cite{Bellafronte:2022jmo}.

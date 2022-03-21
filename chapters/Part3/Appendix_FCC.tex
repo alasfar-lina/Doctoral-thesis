@@ -3,14 +3,11 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{ Prospects for Higgs pair production at the FCC }\label{app:fcc}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Orthogonal Projectors in $gg \to ZH$}
- With the caveat of using the 14 TeV $K$-factors for the 100 TeV cross-section scaling, as the 100 TeV $K$-factors were not available for all processes. I should note that we have explicitly checked that at least within the SM, for Higgs pair production via gluon fusion the difference is of $\mathcal{O}(1\%)$~\cite{Maltoni:2014eza} and hence small.
- 
- 
+The analysis done in~\autoref{sec:mlanalysisly} for Higgs pair at the HL-LHC can be repeated for the future hadron circular collider~(FCC-hh), with centre-of-mass energy of $100$ TeV and integrated luminosity of 30$\inab$. The Higgs pair events and the backgrounds were generated in the same manner for the FCC-hh as for the HL-LHC. Moreover, the ML analysis  and the consequent statistical framework were also identical to the ones done for the HL-LHC. 
+ With the caveat of using the 14 TeV $K$-factors for the 100 TeV cross-section scaling, as the 100 TeV $K$-factors were not available for all processes. I should note that we have explicitly checked that at least within the SM, for Higgs pair production via gluon fusion the difference is of $\mathcal{O}(1\%)$~\cite{Maltoni:2014eza} and hence small. An example output of the BDT-classifier for the FCC-hh is shown for the SM signal as a confusion matrix in~\autoref{tab:FCC-hh-confusion-CH}\\
  \begin{table}[]
  	\centering
  	{\footnotesize
- 		
  		\begin{tabular}{ll|rrrrr|r}
  			\multirow{7}{*}{\rb{\bf Actual no. of events\hspace{0.45cm}}} & \multicolumn{7}{c}{\bf Predicted no. of events at FCC-hh}\\
  			\cmidrule[\heavyrulewidth]{2-8}
@@ -26,23 +23,23 @@
  			\cmidrule[\heavyrulewidth]{2-8}
  		\end{tabular}
  	}
- 	\caption{\it Trained BDT classification (confusion matrix) of the five channel used to extract constraints on $C_\phi$ (or $\kappa_\lambda$) at FCC-hh with 30 $\iab$ luminosity, assuming SM signal injection. The right-most column gives the total number of events expected in each channel in the SM and the bottom-most row gives the signal significance.}
+ 		\caption{The confusion matrix output of the trained BDT  five-channel classifier for the FCC-hh analysis. This table is antireligious to for the HL-LHC~\autoref{ab:HL-LHC-confusion-CH}}
  	\label{tab:FCC-hh-confusion-CH}
  \end{table}
- The projected bounds on these operators at FCC-hh with 30$\inab$ of data using our framework are
+Preforming a single-parameter fit on the light Yukawa modifiers, we see the projected bounds on these operators at FCC-hh are given by
 \begin{equation}
 	\begin{split}
 		C_{u\phi}^{MV} \left(\kappa_u^{MV}\right) = [-0.012, 0.011] \;([-57.8, 54.7])\,,\\
 		C_{d\phi}^{MV} (\kappa_d^{MV}) = [-0.012, 0.012] \;([-26.3, 28.4])\,.
 	\end{split}
 \end{equation}
+These projected bounds for FCC-hh are an order of magnitude better than those for HL-LHC. In addition, the bounds on $C_{u\phi}$ and $C_{d\phi}$ are numerically the same displaying a much greater improvement in the bounds on $C_{d\phi}$ than on $C_{u\phi}$ at the higher energy collider.  The results of the FCC-hh analysis are summarised in~\autoref{tab:twoparamboundsfcc}\\
 \begin{table}[]
 	\centering
 	{\footnotesize
 		\begin{tabular}{cccc||ccc}
 			\toprule
 			Operators &  $C_{u\phi}$&   $C_{d\phi}$&   $C_{\phi}$&    $\kappa_{u}$&   $\kappa_{d}$&   $\kappa_\lambda$\\
-			\multicolumn{7}{c}{FCC-hh 100 TeV 30$\inab$}\\
 			\midrule
 			$\mathcal O_{\phi}$ &--   & --            &[-0.066, 0.064] &--  & -- &[0.97, 1.03]\\
 			$\mathcal O_{u\phi}$&[-0.012, 0.011]   & --            &-- &[-57.8, 54.7]  & -- &--\\
@@ -54,23 +51,22 @@
 			\bottomrule
 		\end{tabular}
 	}
-	\caption{\it The 1$\sigma$ bounds on $C_{u\phi}$, $C_{d\phi}$ and $C_\phi$ from one-, two- and three-parameter fits for HL-LHC with 6$\inab$ of data and FCC-hh with 30$\inab$ of data. The corresponding bounds on the rescaling of the effective couplings, $\kappa_u$, $\kappa_d$ and $\kappa_\lambda$ are presented on the right side of the table.}
-	\label{tab:twoparambounds}
+	\caption{ The 1$\sigma$ bounds on $C_{u\phi}$, $C_{d\phi}$ and $C_\phi$ from one-, two- and three-parameter fits for  FCC-hh with 30$\inab$ integrated luminosity.}
+	\label{tab:twoparamboundsfcc}
 \end{table}
-These projected bounds for FCC-hh are an order of magnitude better than those for HL-LHC. In addition, the bounds on $C_{u\phi}$ and $C_{d\phi}$ are numerically the same displaying a much greater improvement in the bounds on $C_{d\phi}$ than on $C_{u\phi}$ at the higher energy collider. 
+From this table, we observe that the constraints on the trilinear self-coupling reach the precision-level of $ \sim 4\%$ at 68\% CI. As for light Yukawa, the up-type will reach $\mathcal{O}(50)$ times the SM value showing significant improvement over the HL-LHC, and  $\mathcal{O}(20-30)$ for the down Yukawa. The posterior distributions for the two-parameter fits are shown in~\autoref{fig:constraint2dfcc}, while the three-parameter analysis in~\autoref{fig:constraint3dfcc}. These plots show more significant correlation patterns between $C:\phi$ and the light Yukawa modifiers compared to the HL-LHC fits in~\autoref{fig:constraint2d} and~\autoref{fig:constraint3d}
 \begin{figure}[t!]
 	\centering
 	\includegraphics[width=0.47\linewidth]{fig/kappa_u-kappa_l-FCC-hh.pdf}
 	\includegraphics[width=0.47\linewidth]{fig/kappa_d-kappa_l-FCC-hh.pdf}
 	\includegraphics[width=0.47\linewidth]{fig/kappa_u-kappa_d-FCC-hh.pdf}
-	\caption{\it Constraints on pairs of Wilson coefficients for $C_\phi$, $C_{u\phi}$ and $C_{d\phi}$, The panels of the left are for HL-LHC with 6 $\iab$ of luminosity and the ones on the right are for FCC-hh with 30 $\iab$ of luminosity.}
-	\label{fig:constraint2d}
+	\caption{ Constraints on pairs of Wilson coefficients for $C_\phi$, $C_{u\phi}$ and $C_{d\phi}$ for FCC-hh with 30 $\iab$ integrated luminosity.}
+	\label{fig:constraint2dfcc}
 \end{figure}
 \FloatBarrier
-
 \begin{figure}[t!]
 	\centering
-	\includegraphics[width =0.47\linewidth]{fig/kappa_u-kappa_d-kappa_l-FCC-hh.pdf}
-	\caption{\it Three parameter fits with $C_{u\phi}$, $C_{d\phi}$ and $C_\phi$, 6$\inab$ of luminosity at 14 TeV for HL-LHC (left panel) and 30$\inab$ of luminosity at 100 TeV for FCC-hh (right panel).}
-	\label{fig:constraint3d}
+	\includegraphics[width =0.75\linewidth]{fig/kappa_u-kappa_d-kappa_l-FCC-hh.pdf}
+	\caption{\it Three parameter fits with $C_{u\phi}$, $C_{d\phi}$ and $C_\phi$, using projection for the FCC-hh.}
+	\label{fig:constraint3dfcc}
 \end{figure}
