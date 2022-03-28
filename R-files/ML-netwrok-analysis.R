@@ -65,7 +65,8 @@ netz<- read.csv(file="./R-files/network.csv")
  df = data_frame(corr1=spr0,corr2=spr1,qval1=q1,qval2=q2,anovp=pvalstat1, names=featpairs)
  dff <- subset(df,replace_na((qval1<0.001 &qval2 <0.01 & anovp< 0.01), FALSE))
   
-  
+ #pdf(file = "./WGCNAPlots/4-module_tree_blockwise.pdf", width = 8, height = 6);
+ 
  ggplot(df, aes(x=corr1, y=corr2, colour = replace_na((qval1<0.01 &qval2 <0.01 & anovp< 0.01), FALSE),labels=names ))  +  theme_bw()  + 
    geom_point(size= 3,aes(alpha= replace_na((qval1<0.01 &qval2 <0.01 & anovp< 0.01), FALSE)))+   # draw points
    scale_colour_manual(name = 'FDR corr. pval < 0.01', values = setNames(c('grey','#b5838d'),c(FALSE, TRUE)),guide=FALSE) +
@@ -79,7 +80,7 @@ netz<- read.csv(file="./R-files/network.csv")
                    segment.curvature = -0.1,
                    segment.ncp = 3,
                    segment.angle = 20,
-                   size          = 3.15,
+                   size          = 4.15,
    )+
    labs(subtitle="", 
         y=TeX("Pearson $\\rho$ $u\\bar{u}\\to hh$"), 
@@ -125,9 +126,4 @@ netz<- read.csv(file="./R-files/network.csv")
  deg
  deg.dist
  
- library("pdfcount")
- 
- # count
- rintro <- file.path("/Users/lina/Dropbox/Doctoral-thesis/Dissertation-alasfar.pdf")
- word_count(rintro)
  
