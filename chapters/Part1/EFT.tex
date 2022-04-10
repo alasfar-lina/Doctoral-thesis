@@ -149,9 +149,9 @@ The HEFT coefficients modifying the Higgs pair production via gluon fusion are
 \end{equation}
 with the same colours highlighted in the operator insertions of~\autoref{fig:hh-smeftw} and the letter next to the coefficient indicates the diagram, in which the coefficient appears.  Full parametrisation of the Higgs pair cross-section at NLO (inclusive and differential) and NNLO (inclusive) can be found in refs.~\cite{Buchalla:2018yce,Capozi:2019xsi,deFlorian:2021azd} and implemented at NLO in \texttt{POWHEG-BOX}~\cite{Heinrich:2020ckp}. \\ UV-complete models that are related to the EWChL are composite Higgs models~\cite{Contino:2010rs,Panico:2015jxa,AGASHE2005165}, dilaton theories~\cite{PhysRevLett.100.111802}, techni-dilaton models~\cite{Habaa:2010rbs}, technicolour models~\cite{Delgado:2010bb} and other models with induced EW symmetry breaking~\cite{Galloway:2013dma,Chang:2014ida}.
 \subsection{Translation between SMEFT and HEFT }
-In order to facilitate the translation between SMEFT and HEFT or to the $\kappa$-formalism, one needs to put the SMEFT Lagrangian into the canonical form, that is to convert the operators with covariant derivatives acting on the Higgs to  canonically normalised Higgs kinetic term. This is done done by the field redefinition.
+In order to facilitate the translation between SMEFT and HEFT or to the $\kappa$-formalism, one needs to put the SMEFT Lagrangian into the canonical form, that is to convert the operators with covariant derivatives acting on the Higgs to canonically normalised Higgs kinetic term. This is done done by the field redefinition.
 \begin{equation}
-	\phi=\left( \begin{array}{c} 0 \\ h(1+c_{h,kin}) + v \end{array} \right)
+	\phi=\left( \begin{array}{c} 0 \\ h(1+c_{h,kin}) + v \end{array} \right),
 \end{equation} 
 with 
 \begin{equation}
@@ -162,7 +162,7 @@ This field redefinition will generate derivative interactions of the form $h(\pa
 	h \to h + c_{h,kin}\left( h +\frac{h^2}{v}+\frac{h^3}{3v^2}\right)\,. \label{fieldref}
 \end{equation}
 This field redefinition leads to n $c_{h,kin}$ modifying all Higgs couplings. \\
-Before we discuss the translation between SMEFT and HEFT, some words of caution are in order: First, HEFT is less restrictive than SMEFT; therefore, it contains more degrees of freedom. This makes some points of the HEFT parameter space unmappable to SMEFT. In addition, the power counting is different in both formalisms. As mentioned before, some operators present in SMEFT will be absent in HEFT and vice-versa.  In ~\autoref{tab:translation}, the translation between the HEFT and SMEFT Wilson coefficients of the operators relevant to Higgs pair production at LO is shown. 
+Before discussing the translation between SMEFT and HEFT, some words of caution are in order: First, HEFT is less restrictive than SMEFT; therefore, it contains more degrees of freedom. This makes some points of the HEFT parameter space unmappable to SMEFT. In addition, the power counting is different in both formalisms, as mentioned before. Some operators present in SMEFT will be absent in HEFT and vice-versa.  In ~\autoref{tab:translation}, the translation between the HEFT and SMEFT Wilson coefficients of the operators relevant to Higgs pair production at LO is shown. 
 \begin{table}[htb]
 	\begin{center}
 		\begin{tabular}{ c c }
@@ -181,10 +181,10 @@ Before we discuss the translation between SMEFT and HEFT, some words of caution 
 \end{table}
 More general translation between SMEFT in Warsaw and SILH basis and HEFT can be done automatically using \texttt{Rosetta} package~\cite{Falkowski:2015wza}
 \subsection{EFT and $\kappa$-formalism \label{eftkappa}}
-The $\kappa$ formalism provides an experimentally accessible and well-defined QFT-wise approach to studying the Higgs properties. The $\kappa$ parameters are part of a more generalised formalism called the Higgs \textbf{Pseudo-observables}~\cite{Gonzalez-Alonso:2014eva} 
+The $\kappa$-formalism provides an experimentally accessible and well-defined QFT-wise approach to study the Higgs boson properties. The $\kappa$ parameters are part of a more generalised formalism called the Higgs \textbf{Pseudo-observables}~\cite{Gonzalez-Alonso:2014eva}. 
 If the new physics contributions do not generate new Lorentz structures, there is a possible translation between the Wilson coefficients in the SMEFT Warsaw basis and the $\kappa$ formalism. In particular, taking the rescaling of the trilinear coupling, $\kappa_\lambda$, the translation is given by
 \begin{equation}
-	\kappa_\lambda = 1-\frac{2v^4}{m_h^2} \frac{C_\phi}{\Lambda^2}+3 c_{h,kin},
+	\kappa_\lambda = 1-\frac{2v^4}{m_h^2} \frac{C_\phi}{\Lambda^2}+3 c_{h,kin}.
 \end{equation}
 A similar relation exists for the rescaling of the quark Yukawa couplings~$\kappa_q$
 \begin{equation}
@@ -195,9 +195,9 @@ However, one should be careful while interpreting results quoted in terms of Wil
 \begin{equation}
 	g_{hhq\bar{q}}^{\mathrm{linear-EFT}} = -\frac{3}{2}\frac{1-\kappa_q}{v} \, g_{h q\bar{q}}^{\mathrm{SM}}.
 \end{equation}
-This relation will no longer hold once a non-linear EFT, like HEFT, is used. Hence, the $\kappa$-formalism, in a strict sense, does not generally apply to multi-Higgs studies.
+This relation will no longer hold once a non-linear EFT, like HEFT, is used. Hence, the $\kappa$-formalism must be applied carefully when multi-Higgs signals are considered.
 \section{Conclusions \label{sec:concefts}}
-Effective field theories provide a systematic yet simplified approach for NP searches by simplifying its complex interaction structures. This can be viewed as a dimensionality reduction approach by collapsing all the NP interactions into effective ones. They would be observed at colliders with energy reaches below the NP scale $\Lambda$. The linear approach to EFT is called the SMEFT, which preserves the SM fields and symmetries, and the Higgs boson is a part of an $SU(2)_L$ doublet $\phi$ like the SM case. In contrast, non-linear approaches such as HEFT treat the Higgs boson as an added singlet. The latter approach is more general and introduces independent parameters involving multiple Higgs bosons. For example, the couplings $f\bar f h$ and $ f\bar f hh$ will be generated in SMEFT and HEFT. Still, in SMEFT, both are related by the Wilson coefficient $C_{\phi f}$, while in HEFT, they have independent  Wilson coefficients $c_f$ and $c_{ff}$, respectively. \\  Most of the Wilson coefficients involving Higgs interactions are strongly constrained by EWPOs and Higgs and top data. However, the bounds on the Wilson coefficient modifying Higgs self-couplings $C_\phi$ remain dominated by theoretical constraints from perturbative unitarity~\cite{DiLuzio:2017tfn,DiVita:2017vrr}. This can be improved by the searches for Higgs pair production at the HL-LHC, as this process is more sensitive to the trilinear Higgs self-coupling than EWPO and single-Higgs data.
+Effective field theories provide a systematic yet simplified approach for NP searches by simplifying its complex interaction structures. This can be viewed as a dimensionality reduction approach and collapsing all the NP interactions into effective ones. They would be observed at colliders with energy reaches below the NP scale $\Lambda$. The linear approach to EFT is called the SMEFT that preserves the SM fields and symmetries, and the Higgs boson is a part of an $SU(2)_L$ doublet $\phi$ like the SM. In contrast, non-linear approaches such as HEFT/EWChL treat the Higgs boson as an added singlet. The latter approach is more general and introduces independent parameters involving multiple Higgs bosons. For example, the couplings $f\bar f h$ and $ f\bar f hh$ will be generated in SMEFT and HEFT. Still, in SMEFT, both are related by the Wilson coefficient $C_{\phi f}$, while in HEFT, they have independent  Wilson coefficients $c_f$ and $c_{ff}$, respectively. \\  Most of the Wilson coefficients involving Higgs interactions are strongly constrained by EWPOs and Higgs and top-quark data. However, the bounds on the Wilson coefficient modifying Higgs self-couplings $C_\phi$ remain dominated by theoretical constraints from perturbative unitarity~\cite{DiLuzio:2017tfn,DiVita:2017vrr}. This can be improved by the searches for Higgs pair production at the HL-LHC, as this process is more sensitive to the trilinear Higgs self-coupling than EWPO and single-Higgs data.
 %\begin{figure}[htbp!]
 %	\begin{center}
 	%		\includegraphics[width=\textwidth]{figures/smeft_heatmap}
