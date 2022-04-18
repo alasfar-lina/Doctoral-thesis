@@ -31,9 +31,9 @@ netz<- read.csv(file="./R-files/network.csv")
  ts=c()
  netzX <- netz
  netzX$chn <- NULL
- str1 <-  netzX%>% filter(.,ch==2)
- srt2 <-  netzX%>% filter(.,ch==1)
- ch1vsch2<- subset(netzX, ch==2|ch==1)
+ str1 <-  netzX%>% filter(.,ch==0)
+ srt2 <-  netzX%>% filter(.,ch==3)
+ ch1vsch2<- subset(netzX, ch==0|ch==3)
  netzY <- netzX
  netzY$ch <- NULL
  featnames <-  netzY%>% colnames()
@@ -83,8 +83,8 @@ netz<- read.csv(file="./R-files/network.csv")
                    size          = 4.15,
    )+
    labs(subtitle="", 
-        y=TeX("Pearson $\\rho$ $u\\bar{u}\\to hh$"), 
-        x=TeX("Pearson $\\rho$ $d\\bar{d}\\to hh$"), 
+        y=TeX("Pearson $\\rho$ bkg."), 
+        x=TeX("Pearson $\\rho$ $gg\\to hh$ (SM)"), 
        # title="*_Enterobacteriaceae_* (family) ", 
         #caption="Bootsrapping & permutation tests & FDR corrected p < 0.05 "
    )+
