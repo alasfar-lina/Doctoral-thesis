@@ -1,0 +1,13 @@
+@Article{Pich2009,
+  author        = {Pich, Antonio and Tuzon, Paula},
+  journal       = {Phys. Rev. D},
+  title         = {{Yukawa Alignment in the Two-Higgs-Doublet Model}},
+  year          = {2009},
+  pages         = {091702},
+  volume        = {80},
+  archiveprefix = {arXiv},
+  doi           = {10.1103/PhysRevD.80.091702},
+  eprint        = {0908.1554},
+  primaryclass  = {hep-ph},
+  reportnumber  = {IFIC-09-36, FTUV-09-0810},
+}

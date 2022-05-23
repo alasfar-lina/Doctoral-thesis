@@ -248,19 +248,14 @@ This section will demonstrate the calculation of NLO Higgs production and decay 
 		C_{QtQb}^+= (2N_c+1 )C_{QtQb}^{(1)} + c_F   C_{QtQb}^{(8)}.
 		\label{eq:CQtQbplus}
 	\end{equation}
-	%
+
 	%%%%%%%%%%%%%%%%%%%
 	\section{Fit to Higgs observables \label{sec:fit}}
 	%%%%%%%%%%%%%%%%%%%
 	
 	\par Using the results from the  NLO calculations discussed above and combining them with the calculations of NLO Higgs rates from the trilinear Higgs self-coupling~$\lambda_3$, performed in refs.~\cite{Gorbahn:2016uoy, Degrassi:2016wml, Bizon:2016wgr, Maltoni:2017ims, Degrassi:2021uik}, the previous fits on $\lambda_3$ from single-Higgs observables can be extended with the inclusion of these four-fermion SMEFT Wilson coefficients. Hence, we revisit the sensitivity studies of single Higgs observables to the trilinear coupling~$\lambda_3$.  
 	Although combined fits from Higgs data, including $\lambda_3$ and SMEFT operators modifying Higgs rates at LO, have been preformed already, e.g. in ref.~\cite{DiVita:2017eyz}. Such fits would not be sufficient to determine the actual sensitivity for $\lambda_3$. In particular, if the SMEFT operators are weakly constrained and induce significant modifications to Higgs rates, which can be seen in~\autoref{table:res4top}. This chapter does not include a global SMEFT fit; instead merely motivates it by illustrating how the sensitivity for probing the Higgs-self coupling from single Higgs data gets mitigated when the four-fermion operators are included in the fit.
-	%
-	\newpage
-	\begingroup
-	\input{fitobservables} 
-	\endgroup
-	\FloatBarrier
+
 	\par In the antecedent studies, the modification to Higgs self coupling was reported in terms of the $\kappa$-formalism, for the consistency of this analysis, the NLO corrections from the trilinear self-coupling will be converted to the SMEFT notation, in terms of the Wilson coefficient~$C_\phi$, for more details on the conversion between SMEFT and $\kappa$-formalism see~\autoref{eftkappa}. In order to keep track of he SMEFT power-counting, the results of ~\cite{Degrassi:2016wml} are rewritten in terms of the SMEFT Wilson coefficient $C_\phi$
 	\begin{equation}
 		\delta R_{\lambda_3}\equiv\frac{R_\mathrm{ NLO}(\lambda_3)-R_\mathrm{ NLO}(\lambda_3^\mathrm{{SM}})}{R_\mathrm{ LO}}=-2\frac{C_{\phi}v^4}{\Lambda^2 m_h^2}C_1 + \left(-4\frac{C_{\phi}v^4}{\Lambda^2 m_h^2}+4\frac{C_{\phi}^2 v^8}{m_h^4\Lambda^4}\right) C_2 . \;\;\;\;\;
@@ -291,7 +286,7 @@ This section will demonstrate the calculation of NLO Higgs production and decay 
 		\begin{equation}
 			\mu_{\mathrm{Exp}}\equiv \sigma_{\mathrm{obs}}/\sigma_\SM.
 		\end{equation}
-		These measurements as taken from LHC Run II for centre-of-mass energy of $\sqrt{s} = 13$ TeV and  integrated luminosity of $ 139\, \mathrm{fb}^{-1}$ for ATLAS and  $ 137\,\mathrm{fb}^{-1}$ for CMS. In addition to HL-LHC projections by CMS for $\sqrt{s} = 14$ TeV and integrated luminosity of $ 3000\, \mathrm{fb}^{-1}$. Both of these inputs have been already discussed in~\autoref{chap:HiggsConstr} and summarised in~\autoref{table:resHiggsExp}.
+		These measurements as taken from LHC Run II for centre-of-mass energy of $\sqrt{s} = 13$ TeV and  integrated luminosity of $ 139\, \mathrm{fb}^{-1}$ for ATLAS and  $ 137\,\mathrm{fb}^{-1}$ for CMS. In addition to HL-LHC projections by CMS for $\sqrt{s} = 14$ TeV and integrated luminosity of $ 3000\, \mathrm{fb}^{-1}$. Both of these inputs are summarised in~\autoref{table:resHiggsExp}.
 		\item [Theoretical predictions $\vec{\mu}$ ]  The corresponding theoretical predictions for each of the experimental measurement /projections have been built using the modification to the cross-sections and branching ratios coming from the SMEFT four-fermion operators and $C_\phi$. To keep with the power-counting, the signal strength is also expanded in powers of $\Lambda$, keeping only $ \Lambda^{-2}$ terms. 
 		\begin{equation}
 			\mu(C_\phi,C_i)=\frac{\sigma_\mathrm{ Prod}(C_\phi,C_i) \times \mathrm{ BR}(C_\phi,C_i)}{\sigma_\mathrm{ Prod, SM}\times \mathrm{BR}_\mathrm{ SM}} \approx 1+\delta \sigma(C_\phi,C_i)+\delta\Gamma(C_\phi,C_i)-\delta \Gamma_h(C_\phi,C_i).
@@ -305,6 +300,12 @@ This section will demonstrate the calculation of NLO Higgs production and decay 
 	Note that, since the four-quark operators only enter into the virtual corrections at NLO, Higgs production and decay contain only linear terms in $1/\Lambda^{2}$ in the corresponding Wilson coefficients, i.e.~the quadratic terms coming from squaring the amplitudes are technically NNLO. 
 	Hence, the quadratic effects in the signal strengths coming from not linearising the corrections to the product $\sigma_\mathrm{ Prod} \times \mathrm{ BR}$~\!.  These effects have been investigated and found to have a negligible impact on the fit. 
 	The operators of single chirality~$\mathcal O_{tt}$ and $\mathcal{O}_{QQ}^{(1)/(3)}$ were not included in the fit, as their effect on Higgs rates is limited to small $\delta R$ for $t\bar t h$. Thus, they cannot be contained simultaneously with $C_\phi$ using single Higgs data.  
+		%
+	\newpage
+	\begingroup
+	\input{fitobservables} 
+	\endgroup
+	\FloatBarrier
 	\subsection{Fit results}
 	\par 
 	In~\autoref{2param-cqt} and~\autoref{2param-cqtqb}, I show the $68\%$ and $ 95\%$  CIs of the two-parameter posterior distributions and their marginalisation for the two-parameter fits involving $C_\phi$ and one of the four-heavy quark Wilson coefficients, evaluated at the scale $\Lambda=1$ TeV for Run-II LHC measurements.  
