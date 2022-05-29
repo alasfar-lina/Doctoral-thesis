@@ -3,8 +3,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{ Prospects for Higgs pair production at the FCC }\label{app:fcc}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-The analysis done in~\autoref{sec:mlanalysisly} for Higgs pair at the HL-LHC can be repeated for the future hadron circular collider~(FCC-hh), with centre-of-mass energy of $100$ TeV and integrated luminosity of 30$\inab$. The Higgs pair events and the backgrounds were generated in the same manner for the FCC-hh as for the HL-LHC. Moreover, the ML analysis  and the consequent statistical framework were also identical to the ones done for the HL-LHC. 
- With the caveat of using the 14 TeV $K$-factors for the 100 TeV cross-section scaling, as the 100 TeV $K$-factors were not available for all processes. I should note that we have explicitly checked that at least within the SM, for Higgs pair production via gluon fusion the difference is of $\mathcal{O}(1\%)$~\cite{Maltoni:2014eza} and hence small. An example output of the BDT-classifier for the FCC-hh is shown for the SM signal as a confusion matrix in~\autoref{tab:FCC-hh-confusion-CH}\\
+The analysis done in~\autoref{sec:mlanalysisly} for Higgs pair at the HL-LHC can be repeated for the future hadron circular collider~(FCC-hh), with centre-of-mass energy of $100$ TeV and integrated luminosity of 30$\inab$. The Higgs pair events and the backgrounds were generated in the same manner for the FCC-hh as for the HL-LHC. Moreover, the ML analysis  and the consequent statistical framework were also identical to the ones done for the HL-LHC, with the caveat of using the 14 TeV $K$-factors for the 100 TeV cross-section scaling, as the 100 TeV $K$-factors were not available for all processes. We have explicitly checked that at least within the SM, for Higgs pair production via gluon fusion the difference is of $\mathcal{O}(1\%)$~\cite{Maltoni:2014eza} and hence small. An example output of the BDT-classifier for the FCC-hh is shown for the SM signal as a confusion matrix in~\autoref{tab:FCC-hh-confusion-CH}.\\
  \begin{table}[]
  	\centering
  	{\footnotesize
@@ -23,10 +22,10 @@ The analysis done in~\autoref{sec:mlanalysisly} for Higgs pair at the HL-LHC can
  			\cmidrule[\heavyrulewidth]{2-8}
  		\end{tabular}
  	}
- 		\caption{The confusion matrix output of the trained BDT  five-channel classifier for the FCC-hh analysis. This table is antireligious to for the HL-LHC~\autoref{ab:HL-LHC-confusion-CH}}
+ 		\caption{The confusion matrix output of the trained BDT  five-channel classifier for the FCC-hh analysis. This table is analogous to for the HL-LHC~\autoref{tab:HL-LHC-confusion-CH}}
  	\label{tab:FCC-hh-confusion-CH}
  \end{table}
-Preforming a single-parameter fit on the light Yukawa modifiers, we see the projected bounds on these operators at FCC-hh are given by
+Performing a single-parameter fit on the light Yukawa modifiers, we see the projected bounds on these operators at FCC-hh are given by
 \begin{equation}
 	\begin{split}
 		C_{u\phi}^{MV} \left(\kappa_u^{MV}\right) = [-0.012, 0.011] \;([-57.8, 54.7])\,,\\
@@ -54,7 +53,7 @@ These projected bounds for FCC-hh are an order of magnitude better than those fo
 	\caption{ The 1$\sigma$ bounds on $C_{u\phi}$, $C_{d\phi}$ and $C_\phi$ from one-, two- and three-parameter fits for  FCC-hh with 30$\inab$ integrated luminosity.}
 	\label{tab:twoparamboundsfcc}
 \end{table}
-From this table, we observe that the constraints on the trilinear self-coupling reach the precision-level of $ \sim 4\%$ at 68\% CI. As for light Yukawa, the up-type will reach $\mathcal{O}(50)$ times the SM value showing significant improvement over the HL-LHC, and  $\mathcal{O}(20-30)$ for the down Yukawa. The posterior distributions for the two-parameter fits are shown in~\autoref{fig:constraint2dfcc}, while the three-parameter analysis in~\autoref{fig:constraint3dfcc}. These plots show more significant correlation patterns between $C:\phi$ and the light Yukawa modifiers compared to the HL-LHC fits in~\autoref{fig:constraint2d} and~\autoref{fig:constraint3d}
+From this table, we observe that the constraints on the trilinear self-coupling reach the precision-level of $ \sim 4\%$ at 68\% CI. As for light Yukawa couplings, the up-type will reach $\mathcal{O}(50)$ times the SM value showing significant improvement over the HL-LHC, and  $\mathcal{O}(20-30)$ for the down Yukawa couplings. The posterior distributions for the two-parameter fits are shown in~\autoref{fig:constraint2dfcc}, while the three-parameter analysis in~\autoref{fig:constraint3dfcc}. These plots show more significant correlation patterns between $C_\phi$ and  $C_{u\phi}$ or $C_{d\phi}$ compared to the HL-LHC fits in~\autoref{fig:constraint2d} and~\autoref{fig:constraint3d}.s
 \begin{figure}[t!]
 	\centering
 	\includegraphics[width=0.47\linewidth]{fig/kappa_u-kappa_l-FCC-hh.pdf}
@@ -67,6 +66,6 @@ From this table, we observe that the constraints on the trilinear self-coupling 
 \begin{figure}[t!]
 	\centering
 	\includegraphics[width =0.75\linewidth]{fig/kappa_u-kappa_d-kappa_l-FCC-hh.pdf}
-	\caption{\it Three parameter fits with $C_{u\phi}$, $C_{d\phi}$ and $C_\phi$, using projection for the FCC-hh.}
+	\caption{ Three parameter fits with $C_{u\phi}$, $C_{d\phi}$ and $C_\phi$, for FCC-hh with 30 $\iab$ integrated luminosity.}
 	\label{fig:constraint3dfcc}
 \end{figure}
