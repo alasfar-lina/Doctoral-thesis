@@ -1,0 +1,212 @@
+%!TEX encoding = UTF-8 Unicode
+% !TeX spellcheck = en_GB 
+\special{papersize=8.5in,11in}
+\documentclass[12pt]{article}
+% \usepackage[active,tightpage]{preview}
+%---- needed packages -------------------------------------------------
+\usepackage{titling}
+\usepackage{amsmath}
+\usepackage{slashed}
+\usepackage{amssymb}
+\usepackage{epsfig}
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{color}
+\usepackage[normal]{subfigure}
+\usepackage{rotating}
+\usepackage{hyperref}
+\usepackage[margin=1.0in]{geometry}
+\usepackage[table]{xcolor}
+\usepackage{enumitem}
+\usepackage[utf8x]{inputenc}
+\usepackage[compress,numbers,sort]{natbib}
+\usepackage{authblk}
+\usepackage{colortbl}
+\usepackage{pdflscape}
+\usepackage{color}
+\usepackage{makecell}
+\usepackage[ngerman,english]{babel}
+\renewcommand\theadalign{bc}
+\renewcommand\theadfont{\bfseries}
+\renewcommand\theadgape{\Gape[4pt]}
+\renewcommand\cellgape{\Gape[4pt]}
+
+
+% \usepackage{hepunits}
+\usepackage{hepnames}
+\usepackage{numprint}
+\usepackage{booktabs}
+\usepackage{xparse}
+\usepackage{mathrsfs}
+\usepackage{bbold}
+\usepackage{siunitx}
+% Feynman diagrams
+% \usepackage{/Users/lina/HEP/FeynArts/feynarts}
+\usepackage{feynmp-auto}
+\usepackage{tikz-feynman,tikz}
+
+% \DeclareGraphicsRule{*}{mps}{*}{} % for being able to read the produced file
+%\usepackage[utf8]{inputenc}
+\unitlength = 1mm
+\graphicspath{{./fig/}}
+\definecolor{nicered}{rgb}{0.6,0.1,0.1}
+\definecolor{nicegreen}{rgb}{0.1,0.5,0.1}
+\definecolor{mediumcandyapplered}{rgb}{0.99, 0.12, 0.07}
+\definecolor{red}{rgb}{1.0, 0, 0}
+\hypersetup{colorlinks,citecolor= nicegreen,linkcolor= nicered}
+\usetikzlibrary{shapes.callouts}
+\usepackage{xparse}
+\usetikzlibrary{decorations.text}
+\definecolor{mygray}{RGB}{208,208,208}
+\definecolor{mymagenta}{RGB}{226,0,116}
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+\tikzset{
+	invisible/.style={opacity=0,text opacity=0},
+	visible on/.style={alt=#1{}{invisible}},
+	alt/.code args={<#1>#2#3}{%
+		\alt<#1>{\pgfkeysalso{#2}}{\pgfkeysalso{#3}} % \pgfkeysalso doesn't change the path
+		notice/.style  = { draw, rectangle callout, callout relative pointer={#1} },
+	},
+}
+%~~~~
+
+\usepackage[scale=2]{ccicons}
+\usetikzlibrary{arrows,shapes}
+\tikzstyle{every picture}+=[remember picture]
+\newcommand*{\mytextstyle}{\sffamily\Large\bfseries\color{black!85}}
+\newcommand{\arcarrow}[3]{%
+	% inner radius, middle radius, outer radius, start angle,
+	% end angle, tip protusion angle, options, text
+	\pgfmathsetmacro{\rin}{1.7}
+	\pgfmathsetmacro{\rmid}{2.2}
+	\pgfmathsetmacro{\rout}{2.7}
+	\pgfmathsetmacro{\astart}{#1}
+	\pgfmathsetmacro{\aend}{#2}
+	\pgfmathsetmacro{\atip}{5}
+	\fill[mygray, very thick] (\astart+\atip:\rin)
+	arc (\astart+\atip:\aend:\rin)
+	-- (\aend-\atip:\rmid)
+	-- (\aend:\rout)   arc (\aend:\astart+\atip:\rout)
+	-- (\astart:\rmid) -- cycle;
+	\path[
+	decoration = {
+		text along path,
+		text = {|\mytextstyle|#3},
+		text align = {align = center},
+		raise = -1.0ex
+	},
+	decorate
+	](\astart+\atip:\rmid) arc (\astart+\atip:\aend+\atip:\rmid);
+}
+%---- symbol short-hands and redefinitions -----------------------------
+%%%%%%%%%%%%%%%%%%%%%%%%% referencing %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\eq#1{{Eq.~(\ref{#1})}}
+\def\eqs#1#2{{Eqs.~(\ref{#1})--(\ref{#2})}}
+\def\fig#1{{Fig.~\ref{#1}}}
+\def\figs#1#2{{Figs.~\ref{#1}--\ref{#2}}}
+\def\Table#1{{Table~\ref{#1}}}
+\def\Tables#1#2{{Tables~\ref{#1}--\ref{#2}}}
+\def\sect#1{{Sect.~\ref{#1}}}
+\def\sects#1#2{{Sects.~\ref{#1}--\ref{#2}}}
+\def\app#1{{Appendix~\ref{#1}}}
+\def\apps#1#2{{Apps.~\ref{#1}--\ref{#2}}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% math %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\vev#1{\left\langle #1\right\rangle}
+\def\abs#1{\left| #1\right|}
+\def\mod#1{\abs{#1}}
+\def\Im{\mbox{Im}\,}
+\def\Re{\mbox{Re}\,}
+\def\Tr{\mbox{Tr}\,}
+\def\det{\mbox{det}\,}
+\def\etal{\hbox{\it et al.}}
+\def\ie{\hbox{\it i.e.}{}}
+\def\eg{\hbox{\it e.g.}{}}
+\def\etc{\hbox{\it etc}{}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\neff}{n_{\rm eff}}
+\renewcommand{\d}{{\rm d}}
+\renewcommand{\bar}{\overline}
+\newcommand{\hoppet}{\textsc{Hoppet}}
+\newcommand{\R}[2]{$R_{#1#2}$}
+%\newcommand{\as}{$\alpha_s$}
+\newcommand{\rr}[1]{{\color{red}#1}}
+\newcommand{\bb}[1]{{\color{blue}#1}}
+\newcommand{\vs}{v_{\scriptscriptstyle S}}
+\newcommand{\vh}{v_{\scriptscriptstyle H}}
+\newcommand{\lambdah}{\lambda_{\scriptscriptstyle H}}
+\newcommand{\muh}{\mu_{\scriptscriptstyle H}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%% 2hdm shortcuts
+\newcommand{\sinb}{\sin\beta}
+\newcommand{\cosb}{\cos\beta}
+\newcommand{\tb}{\tan\beta}
+\newcommand{\ctb}{\cot\beta}
+%\newcommand{\sba}{\sin\left(\beta-\alpha\right)}
+%\newcommand{\cba}{\cos\left(\beta-\alpha\right)}
+\newcommand{\sba}{s_{\beta-\alpha}}
+\newcommand{\cba}{c_{\beta-\alpha}}
+\newcommand{\SM}{\text{SM}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%% commemnts by name, makes tracking easier
+\definecolor{myv}{HTML}{885B8D}
+\definecolor{darkpastelgreen}{rgb}{0.01, 0.75, 0.24}
+\newcommand{\Ramona}[1]{\textcolor{red}{#1}}
+\newcommand{\Lina}[1]{\textcolor{myv}{#1}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\definecolor{LightCyan}{rgb}{0.88,1,1}
+\definecolor{piggypink}{rgb}{0.99, 0.87, 0.9}
+\definecolor{applegreen}{rgb}{0.55, 0.71, 0.0}
+\definecolor{green-yellow}{rgb}{0.68, 1.0, 0.18}
+\newcommand{\GeV}{\si{\GeV}}
+\newcommand{\TeV}{\si{\TeV}}
+\newcommand{\invab}{\si{\per \atto\barn}}
+\newcommand{\femtobarn}{\si{\femto\barn}}
+% \newcommand{\beq}{\begin{equation}}
+% \newcommand{\eeq}{\end{equation}}
+% \newcommand{\bea}{\begin{eqnarray}}
+% \newcommand{\eea}{\end{eqnarray}}
+\renewcommand\bibname{Papers}
+\newcommand{\Red}[1]{{\color{nicered}{#1}}}
+\newcommand{\published}[1]{%
+\gdef\puB{#1}}
+\newcommand{\puB}{}
+\renewcommand{\maketitlehooka}{%
+\par\noindent \puB}
+
+\renewcommand{\refname}{Publications}
+
+
+
+
+\title{\bf{Phenomenology of the Higgs and flavour in the Standard Model and beyond }}
+
+\author{Lina Alasfar}
+%\author[2]{Doctoral Advisor: Prof. Dr. Ramona Gr\"{o}ber}
+
+\affil[1]{\emph{\normalsize Humboldt-Universit\"at zu Berlin, Institut f\"ur Physik,
+Newtonstr.~15, 12489 Berlin,  Germany.}}
+%\affil[2]{\emph{\normalsize CAFPE and Departamento de F\`isica T\'eorica y del Cosmos, Universidad de Granada, E18071 Granada, Spain.}}
+\date{}
+\begin{document}
+	\maketitle
+\selectlanguage{english}
+\begin{abstract}
+	This thesis investigates some future aspects of Higgs measurements a decade after its discovery, focusing on the potential for future runs of the Large Hadron Collider~(LHC).  In particular, it aims to probe challenging couplings of the Higgs like its self-coupling and interaction with light quarks.\\ The first part provides an overview of Higgs physics within the Standard Model Effective Field theory~(SMEFT). The second part is about single-Higgs production, starting with a two-loop calculation of the gluon fusion component of $Zh$ to reduce its theoretical uncertainties. Then, the potential for constraining the Higgs trilinear self-coupling from single Higgs rates is revisited; by including equally weakly-constrained four-heavy-quark operators entering at the next-to-leading order in single Higgs rates.  These operators highly correlate with the trilinear self-coupling, thus affecting the fits made on this coupling from single Higgs data.  \\ The third part focuses on the Higgs pair production, an essential process for measuring Higgs-self coupling, employing multivariate analysis to study its potential for probing light Yukawa couplings; thereby exploring the sensitivity of Higgs pair production for the light-quark Yukawa interactions.\\ Finally, the fourth part showcases some models aiming to explain the recent flavour anomalies in the light of a global SMEFT Bayesian analysis combining flavour and electroweak precision measurements. 
+	\paragraph{Keywords\color{gray}{:}} Higgs Physics, Standard Model Effective Field Theory, Flavour observables, Statistical data analysis.
+\end{abstract}
+
+\cleardoublepage
+
+
+\selectlanguage{ngerman}
+\begin{abstract}
+	In dieser Arbeit werden einige zukünftige Aspekte der Higgs-Messungen ein Jahrzehnt nach seiner Entdeckung untersucht, wobei der Schwerpunkt auf dem Potenzial für zukünftige Läufe des Large Hadron Collider (LHC) liegt.  Insbesondere sollen anspruchsvolle Kopplungen des Higgs, wie seine Selbstkopplung und die Wechselwirkung mit leichten Quarks, untersucht werden. Der erste Teil gibt einen Überblick über die Higgs-Physik innerhalb der effektiven Feldtheorie des Standardmodells (SMEFT). Der zweite Teil befasst sich mit der Single-Higgs-Produktion, beginnend mit einer Zweischleifenberechnung der Gluonenfusionskomponente von $Zh$, um deren theoretische Unsicherheiten zu reduzieren. Dann wird das Potenzial für die Einschränkung der trilinearen Higgs-Selbstkopplung aus Einzel-Higgs-Raten erneut untersucht, indem ebenso schwach eingeschränkte Vier-Schwer-Quark-Operatoren einbezogen werden, die bei der nächsthöheren Ordnung in die Einzel-Higgs-Raten eingehen.  Diese Operatoren korrelieren in hohem Maße mit der trilinearen Selbstkopplung, was sich auf die Anpassungen auswirkt, die für diese Kopplung anhand von Einzel-Higgs-Daten vorgenommen wurden.  \\\ Der dritte Teil konzentriert sich auf die Higgs-Paarproduktion, einen wesentlichen Prozess zur Messung der Higgs-Selbstkopplung, und setzt eine multivariate Analyse ein, um ihr Potenzial zur Untersuchung der leichten Yukawa-Kopplungen zu untersuchen; dadurch wird die Empfindlichkeit der Higgs-Paarproduktion für die leichten Quark-Yukawa-Wechselwirkungen erforscht.\\\ Schließlich werden im vierten Teil einige Modelle vorgestellt, die darauf abzielen, die jüngsten Flavour-Anomalien im Lichte einer globalen SMEFT-Bayesian-Analyse zu erklären, die Flavour- und elektroschwache Präzisionsmessungen kombiniert. 
+	%\vfill
+	\paragraph{Schlagw\"orter\color{gray}{:}} Higgs Physik, Standardmodell-Effektivfeld-Theorie,  Flavour Anomalies, Statistische Datenanalyse
+\end{abstract}
+
+% Back to main language
+\selectlanguage{english}
+\bibliographystyle{utphys.bst}
+\nocite{*}
+\bibliography{bibliography}
+\end{document}
